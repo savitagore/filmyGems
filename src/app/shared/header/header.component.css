@@ -1,5 +1,6 @@
-.header-Navbar {
-    /* background-image: url('assets/img/landing-img.png'); */
+
+.header-images{
+    background-image: url('/assets/img/landing-img.jpg');
     background-size: cover;
     height: 595px;
 }
@@ -132,5 +133,10 @@
     border: 1px solid #919191;
     margin-right: 108px;
 }
+.top-gems {
+    color: #FFC936;
+    padding-left: 63px;
+    font-size: 25px;
+}   
 
 
