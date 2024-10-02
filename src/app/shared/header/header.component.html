@@ -1,4 +1,5 @@
-<section class="header">
+<section class="header" style="background-image: url('assets/img/landing-img.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+ 
     <div class="header-Navbar">
         <div class="container">
             <div class="row">
@@ -95,12 +96,19 @@
         <div class="row pt-5 align-items-center justify-content-center">
             
             <div class="col-md-8 mb-3 bookmy-web d-flex justify-content-center">
-                <img src="./Images/made web.png" alt="Made Web" class="img-fluid">
+                <img src="assets/img/made web.png" alt="Made Web" class="img-fluid">
             </div>
        
             <div class="col-md-4 mb-3 bookmy d-flex justify-content-center">
-                <img src="./Images/bookmyspace.png" alt="Book My Space" class="img-fluid">
+                <img src="assets/img/bookmyspace.png" alt="Book My Space" class="img-fluid">
             </div>
+        </div>
+        <div class="row pt-3">
+          <span class="top-gems">To Gems Showcase</span>
         </div>
     </div>
 </section>  
+<div class="content">
+    <router-outlet></router-outlet>
+</div>
+<app-footer></app-footer>

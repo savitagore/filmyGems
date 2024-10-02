@@ -1,5 +1,5 @@
 .header-Navbar {
-    background-image: url('/Images/landing-img.jpg');
+    /* background-image: url('assets/img/landing-img.png'); */
     background-size: cover;
     height: 595px;
 }
@@ -128,9 +128,9 @@
 
 .bookmy img {
     height: auto;
-    max-height: 215px;
+    max-height: 251px;
     border: 1px solid #919191;
-    margin-right: 83px;
+    margin-right: 108px;
 }
 
 
