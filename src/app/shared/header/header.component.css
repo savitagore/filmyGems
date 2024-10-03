@@ -63,6 +63,13 @@
     right: 492px;
     top: 60px;
 }
+.linear {
+    height: 10px;
+    background-color: #F3AD3B;
+    position: relative;
+    top: 88px;
+   
+}
 
 /* .search-bar {
     margin-top: 20px;
@@ -128,13 +135,7 @@
     top: 10px; 
     z-index: 10;
 }
-.linear {
-    height: 10px;
-    background-color: #F3AD3B;
-    position: relative;
-    top: 119px;
-   
-}
+
 
 .dropdown-toggle {
     border-left: 1px solid #ddd;
