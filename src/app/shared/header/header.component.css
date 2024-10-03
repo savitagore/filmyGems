@@ -14,12 +14,9 @@
     color: #fff;
 }
 
-.navbar-nav  li {
-    position: relative;
-    left: 295px;
-}
 .navbar-nav {
     text-align: center;
+    margin-left: 80px;
 }
 .navbar-nav .nav-item {
     margin-bottom: 10px;
@@ -32,7 +29,7 @@
 }
 @media (max-width: 768px) {
     .navbar-nav {
-        display: block; /* Stack items vertically on small screens */
+        display: block; 
         text-align: center;
     }
     .navbar-nav .nav-item {
@@ -46,15 +43,19 @@
 .nav-link {
     font-size: 18px;
 }
-.collapse{
-    margin-left: -159px;
-    padding-top: 18px;
-}
+
 .custom-icon {
-  
     font-size: 20px;
 }
-
+.join-ig{
+    position: relative;
+    left: 41px;
+}
+.join-ig img{
+    position: absolute;
+    bottom: 9px;
+    left: 57px;
+}
 .build-high{
     padding-top: 81px;
 }
@@ -63,12 +64,92 @@
     right: 492px;
     top: 60px;
 }
+ .search-bar {
+    margin-top: 20px;
+}
+.search-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.search-box {
+    background-color: white;
+    border-radius: 50px;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 600px;
+    max-width: 100%;
+    border: 2px solid transparent;
+    transition: border 0.3s ease;
+    border-color: gold;
+}
+.right-dimond img{
+    position: absolute;
+    left: 1625px;
+    bottom: -235px;
+   
+}
+
+.search-box input {
+    border: none;
+    outline: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 50px;
+
+}
+
+.search-box input::placeholder {
+    color: #ccc;
+    transition: opacity 0.3s ease;
+}
+
+.search-box input:focus::placeholder {
+    opacity: 0;
+}
+
+.search-box i {
+    color: #aaa;
+    font-size: 1.2rem;
+    margin-right: 10px;
+    
+}
+.audition {
+    position: relative;
+    height: 200px;
+}
+
+.sticky-img {
+    position: sticky;
+    top: 10px; 
+    z-index: 10;
+}
 .linear {
     height: 10px;
     background-color: #F3AD3B;
     position: relative;
-    top: 88px;
+    top: 90px;
    
+}
+.searching-bar {
+    margin-left: 280px; /* Adjust as needed */
+    position: relative;
+    top: 48px; /* Adjust as needed */
+}
+
+/* Ensure responsiveness */
+@media (max-width: 992px) { /* Adjust breakpoint as needed */
+    .searching-bar {
+        margin-left: 0; /* Remove margin on smaller screens */
+        top: 20px; /* Adjust top position for smaller screens */
+    }
+}
+
+
+.dropdown-toggle {
+    border-left: 1px solid #ddd;
+    border-radius: 0px 50px 50px 0px;
 }
 
 /* .search-bar {
@@ -135,7 +216,13 @@
     top: 10px; 
     z-index: 10;
 }
-
+.linear {
+    height: 10px;
+    background-color: #F3AD3B;
+    position: relative;
+    top: 119px;
+   
+}
 
 .dropdown-toggle {
     border-left: 1px solid #ddd;
