@@ -51,15 +51,10 @@
     padding-top: 18px;
 }
 .custom-icon {
-    position: relative;
-    right: 118px;
+  
     font-size: 20px;
 }
-.custom-icons{
-    position: relative;
-    right: 99px;
-    font-size: 20px;
-}
+
 .build-high{
     padding-top: 81px;
 }
@@ -68,6 +63,7 @@
     right: 492px;
     top: 60px;
 }
+
 /* .search-bar {
     margin-top: 20px;
 }
