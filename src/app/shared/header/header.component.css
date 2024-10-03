@@ -56,9 +56,7 @@
     bottom: 9px;
     left: 57px;
 }
-.build-high{
-    padding-top: 81px;
-}
+
 .left-dimond img{
     position: relative;
     right: 492px;
@@ -129,13 +127,13 @@
     height: 10px;
     background-color: #F3AD3B;
     position: relative;
-    top: 90px;
+    top: 122px;
    
 }
 .searching-bar {
     margin-left: 280px; /* Adjust as needed */
     position: relative;
-    top: 48px; /* Adjust as needed */
+    top: 80px; /* Adjust as needed */
 }
 
 /* Ensure responsiveness */
