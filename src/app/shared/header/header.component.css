@@ -18,25 +18,58 @@
     position: relative;
     left: 295px;
 }
-.popular-gems-text{
-    padding-top: 7px ;
+.navbar-nav {
+    text-align: center;
 }
-.search-bar {
-    margin-top: 20px;
+.navbar-nav .nav-item {
+    margin-bottom: 10px;
+}
+@media (max-width: 768px) {
+    .d-flex {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: block; /* Stack items vertically on small screens */
+        text-align: center;
+    }
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+    .d-flex {
+        justify-content: center;
+        margin-top: 10px;
+    }
+}
+.nav-link {
+    font-size: 18px;
+}
+.collapse{
+    margin-left: -159px;
+    padding-top: 18px;
 }
 .custom-icon {
     position: relative;
-    top: 9px;
-    right: 15px;
+    right: 118px;
+    font-size: 20px;
 }
 .custom-icons{
     position: relative;
-    top: 10px;
-    right: 10px;
-    font-size: 19px;
+    right: 99px;
+    font-size: 20px;
 }
 .build-high{
     padding-top: 81px;
+}
+.left-dimond img{
+    position: relative;
+    right: 492px;
+    top: 60px;
+}
+/* .search-bar {
+    margin-top: 20px;
 }
 .search-container {
     display: flex;
@@ -59,8 +92,8 @@
 }
 .right-dimond img{
     position: absolute;
-    left: 1626px;
-    bottom: -275px;
+    left: 1625px;
+    bottom: -235px;
    
 }
 
@@ -88,19 +121,15 @@
     margin-right: 10px;
     
 }
-.left-dimond img{
-    position: relative;
-    right: 492px;
-    top: 60px;
-}
 .audition {
-    position: relative; /* Ensure the parent container has a relative or static position */
-    height: 2000px; /* Add sufficient height for the sticky to take effect when scrolling */
+    position: relative;
+    height: 2000px;
+    right: 473px;
 }
 
 .sticky-img {
     position: sticky;
-    top: 10px; /* Adjust the top value as needed */
+    top: 10px; 
     z-index: 10;
 }
 .linear {
@@ -131,7 +160,7 @@
 .category-tags-popular span{
     background-color: #f8f9fa;
     border: 1px solid #ced4da;
-    margin: 5px;
+    margin: 3px;
     border-color: #986708;
 }
 .category{
@@ -161,4 +190,4 @@
     font-size: 25px;
 }   
 
-
+ */
