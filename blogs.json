@@ -1,0 +1,31 @@
+[
+  {
+    "title": "It is the party time guys, let's j...",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "imageUrl": "assets/images/party.jpg",
+    "readMoreLink": "#",
+    "date": "January 24, 2024"
+  },
+  {
+    "title": "Ready for real life cinema aw...",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "imageUrl": "assets/images/cinema-award.jpg",
+    "readMoreLink": "#",
+    "date": "January 24, 2024"
+  },
+  {
+    "title": "Events? yes we are ready, but...",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "imageUrl": "assets/images/events.jpg",
+    "readMoreLink": "#",
+    "date": "January 24, 2024"
+  },
+  {
+    "title": "Show your inner side actor or...",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+    "imageUrl": "assets/images/talent-show.jpg",
+    "readMoreLink": "#",
+    "date": "January 24, 2024",
+    "isNew": true
+  }
+]

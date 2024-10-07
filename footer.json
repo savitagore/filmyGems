@@ -1,0 +1,52 @@
+{
+  "footer": {
+    "company": {
+      "title": "COMPANY",
+      "links": [
+        "About us",
+        "Blogs",
+        "Why FilmyGems?",
+        "Privacy Policy",
+        "Terms of Use"
+      ]
+    },
+    "specialties": {
+      "title": "SPECIALTIES",
+      "links": [
+        "All Gems Category",
+        "Special Offer",
+        "Best Plans",
+        "International Gems",
+        "Events"
+      ]
+    },
+    "careers": {
+      "title": "CAREERS",
+      "links": [
+        "Our Culture",
+        "Work with us",
+        "Policies"
+      ]
+    },
+    "contact": {
+      "title": "CONTACT",
+      "phone": "+91 16885 55666",
+      "email": "info@filmygems.com",
+      "website": "www.filmygems.com"
+    },
+    "what_we_offer": {
+      "title": "WHAT WE OFFER",
+      "services": [
+        "International Premiere",
+        "International Events",
+        "International Release"
+      ]
+    },
+    "newsletter": {
+      "prompt": "Get to know about our latest film news",
+      "email_placeholder": "enter your email",
+      "button_text": "►"
+    },
+    "footer_note": "© All rights reserved - FilmyGems, 2024"
+  }
+}
