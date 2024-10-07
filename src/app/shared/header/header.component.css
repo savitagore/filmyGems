@@ -378,7 +378,7 @@
 }
 .hot-checked{
     position: relative;
-    left: 203px;
+    left: 255px;
 }
 .overlay{
     position: absolute;
@@ -406,21 +406,21 @@
 }
 .check-aliya{
     position: relative;
-    left: 203px;
+    left: 245px;
     bottom: 2px;
  
 }
 .checked-ranbir{
     position: relative;
-    left: 524px;
+    left: 567px;;
 }
 .kirti-checked{
     position: relative;
-    left: 225px;
+    left: 267px;
 }
 .all-cheacked{
     position: relative;
-    left: 159px;
+    left: 200px;
 }
 .export{
     background-image: url('/assets/exports/exports_bg.png');
