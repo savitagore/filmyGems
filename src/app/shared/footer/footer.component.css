@@ -5,25 +5,37 @@
   top: 5524px;
   left: 979px;
 }
+.logo-size {
+  width: 245px;
+  height: 67.84px;
+}
+
 
 .company-name {
   color: #986708;
-
+  font-size: 20px;
   border-radius: 5px;
+  font-weight: bold;
+  height: 30px;
 }
-
+.custom-colors{
+color: #CFCFCF;
+font-size: 14px;
+}
 .footer-logo {
   max-width: 100%;
   height: auto;
   margin-top: 10px;
 }
-
+.bg-colors{
+  background-color: #5E5E5E;
+}
 .footer a {
   transition: color 0.3s ease;
 }
 
-.footer a:hover {
-  color: #ffdd57;
+.bg-custom {
+  background: #000000;
 }
 
 .margin {
@@ -44,7 +56,9 @@
   margin-left: 136px;
 }
 
-
+.custom-text{
+color:#595959;
+}
 
 @media (max-width: 768px) {
   .contact-img {
@@ -60,4 +74,208 @@
   margin-bottom: 2rem;
 }
 
+.filmy-custom{
+color:#595959;
+}
+/*--------------------------------------*/
 
+.roboto-font {
+  font-family: "Roboto";
+}
+
+.custom-bg {
+  background-color: #343232;
+}
+
+.card-title {
+  font-weight: bold;
+}
+
+.custom-color {
+  color: #ffc936;
+  font-size: 20px;
+}
+
+.custom-read {
+  color: #FFB62A;
+  font-size: 14px;
+  padding: 0px;
+}
+
+.custom-fontp {
+  font-size: 16px;
+}
+
+.small,
+small {
+  font-size: 14px;
+}
+
+.custom-font {
+  font-size: 11px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+
+.blog-container h2 {
+  color: white;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.btn-read-more {
+  background-color: #ffb62a;
+  color: #000;
+
+}
+
+/* .new-label {
+  background-color: #007bff;
+  color: white;
+  padding: 2px 8px;
+  border-radius: 10px;
+  position: absolute;
+  top: 0px
+  right: 10px;
+} */
+
+/* .custom img {
+  height: 400px;
+  background-color: #ffb62a;
+  background-position: center;
+} */
+
+.custom-section {
+  background-color: #ffb62a;
+  background-image: url("/assets/music/music_bg.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+
+
+
+}
+
+.btn-custom {
+  background-color: #ffc107;
+  border: 1px solid black;
+  color: black;
+}
+
+.cutom-font-color {
+  color: #ffb62a;
+}
+
+.font-custom {
+  font-size: 30px;
+  margin-left: 141px;
+}
+
+.header-text,
+.sub-text {
+  text-align: center;
+}
+
+
+/*
+.img-custom {
+  position: relative;
+  bottom: 21px;
+  height: 235px;
+} */
+.card {
+  border-radius: 10px;
+
+  overflow: hidden;
+}.card-body {
+  border-radius: 0 0 10px 10px;
+
+  background-color: #333;
+}
+.custom-ellipsis {
+  /* white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 200px;
+  display: inline-block;
+  position: relative; */
+  height: 70px;
+
+}
+.fixed-size-heading {
+  font-size: 40px;
+  color: #ffffff;
+}
+
+.favorites-font {
+  font-size: 24px;
+}
+@media (max-width: 768px) {
+  .font-custom {
+    font-size: 24px;
+  }
+
+  .btn-custom {
+    font-size: 16px;
+  }
+
+  .cutom-font-color {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .font-custom {
+    font-size: 26px;
+  }
+
+  .btn-custom {
+    font-size: 18px;
+  }
+}
+
+.btn-custom {
+  max-width: 200px;
+  width: 100%;
+}
+
+.kate-opsition {
+  position: absolute;
+}
+
+.common-kate {
+  position: relative;
+  bottom: 59px;
+  font-size: 20px;
+}
+
+.hollywod {
+  position: relative;
+  bottom: 61px;
+  font-size: 14px;
+}
+.custom-padding{
+  padding-left: 180px;
+}
+
+.icons {
+  position: absolute;
+}
+
+.checked-icons {
+  position: relative;
+  left: 199px;
+}
+
+@media (max-width: 768px) {
+  .custom-section {
+    padding: 20px 0;
+  }
+
+  .sub-text {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+}
