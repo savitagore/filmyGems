@@ -78,6 +78,9 @@ color:#595959;
 color:#595959;
 }
 /*--------------------------------------*/
+.bg-all{
+  background-color: #090909;
+}
 
 .roboto-font {
   font-family: "Roboto";
