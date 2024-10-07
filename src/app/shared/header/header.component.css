@@ -41,25 +41,25 @@
     }
 
     .build-high h1 {
-        font-size: 1.3rem; 
+        font-size: 1.3rem;
     }
 
     .build-high p {
-        font-size: 0.9rem; 
+        font-size: 0.9rem;
     }
 
     .form-control {
-        width: 100%; 
-        margin-bottom: 10px; 
+        width: 100%;
+        margin-bottom: 10px;
     }
 
     .btn-outline-light {
-        width: 100%; 
-        margin-top: 5px; 
+        width: 100%;
+        margin-top: 5px;
     }
 
     .left-dimond img {
-        max-width: 80%; 
+        max-width: 80%;
         height: auto;
     }
 }
@@ -67,7 +67,7 @@
 
 @media (min-width: 577px) and (max-width: 768px) {
     .navbar-nav {
-        display: block; 
+        display: block;
         text-align: center;
     }
 
@@ -76,7 +76,7 @@
     }
 
     .build-high h1 {
-        font-size: 1.5rem; 
+        font-size: 1.5rem;
     }
 
     .build-high p {
@@ -84,15 +84,15 @@
     }
 
     .form-control {
-        width: auto; 
+        width: auto;
     }
 
     .btn-outline-light {
-        width: auto; 
+        width: auto;
     }
 
     .left-dimond img {
-        max-width: 70%; 
+        max-width: 70%;
         height: auto;
     }
 } */
@@ -100,32 +100,32 @@
 
 /* @media (min-width: 769px) and (max-width: 992px) {
     .navbar-nav {
-        display: flex; 
+        display: flex;
         justify-content: center;
     }
 
     .navbar-nav .nav-item {
-        margin: 0 15px; 
+        margin: 0 15px;
     }
 
     .build-high h1 {
-        font-size: 1.8rem; 
+        font-size: 1.8rem;
     }
 
     .build-high p {
-        font-size: 1.1rem; 
+        font-size: 1.1rem;
     }
 
     .form-control {
-        width: auto; 
+        width: auto;
     }
 
     .btn-outline-light {
-        width: auto; 
+        width: auto;
     }
 
     .left-dimond img {
-        max-width: 60%; 
+        max-width: 60%;
         height: auto;
     }
 } */
@@ -133,19 +133,19 @@
 
 
 .search-box .form-control {
-    flex: 1; 
+    flex: 1;
 }
 
 .searching-bar .dropdown {
-    margin-left: 10px; 
+    margin-left: 10px;
 }
 
 
 /* @media (max-width: 576px) {
-    
+
 
     .search-box .form-control {
-        margin-bottom: 10px; 
+        margin-bottom: 10px;
     }
 
     .search-box .dropdown {
@@ -155,11 +155,11 @@
 
 @media (min-width: 577px) and (max-width: 768px) {
     .searching-bar {
-        margin-top: 15px; 
+        margin-top: 15px;
     }
 
     .search-box .form-control {
-        margin-right: 10px; 
+        margin-right: 10px;
     }
 } */
 
@@ -185,7 +185,7 @@
 }
 .left-dimond {
     position: absolute;
-  
+
 }
 .left-dimond img {
     position: relative;
@@ -212,7 +212,8 @@
     border-radius: 50px;
     padding: 10px 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    width: 963px;
+    /* width: 963px;  */
+    width: 688px;
     max-width: 100%;
     border: 2px solid transparent;
     transition: border 0.3s ease;
@@ -242,7 +243,7 @@
     color: #aaa;
     font-size: 1.2rem;
     margin-right: 10px;
-    
+
 }
 .search-box{
     position: relative;
@@ -255,7 +256,7 @@
 }
 
 .audition {
-    height: 100vh;  
+    height: 100vh;
 }
 
 /* Sticky image styles */
@@ -270,7 +271,7 @@
     background-color: #F3AD3B;
     position: relative;
     top: 66px;
-   
+
 }
 .dropdown-toggle {
     border-left: 1px solid #ddd;
@@ -307,13 +308,13 @@
 
 
 .right-dimond {
-    position: absolute; 
-    right: 0; 
-    transform: translateY(-50%); 
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
 }
 
 .right-dimond img {
-    max-width: 100%; 
+    max-width: 100%;
     height: auto;
 }
 
@@ -330,23 +331,23 @@
 
 
 /* Setting fixed image sizes */
-.madame-web  {
+/* .madame-web  {
     width: 1043px;
     height: 240px;
-    border-right: none; 
-}
+    border-right: none;
+} */
 
 .book-my-show  {
     width: 241px;
     height: 240px;
-    border-left: none; 
+    border-left: none;
 }
 
 .top-gems {
     color: #FFC936;
     font-size: 25px;
-   
-}    
+
+}
 /* .netflex{
     position: absolute;
 }
@@ -408,7 +409,7 @@
     position: relative;
     left: 245px;
     bottom: 2px;
- 
+
 }
 .checked-ranbir{
     position: relative;
@@ -439,7 +440,7 @@
     color: #ffffff;
     font-size: 18px;
     padding: 12px;
-    width: 170px; 
+    width: 170px;
 }
 .shitan img{
     height: 505px;
