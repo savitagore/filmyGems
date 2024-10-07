@@ -249,12 +249,14 @@ small {
   position: relative;
   bottom: 59px;
   font-size: 20px;
+  left: 10px;
 }
 
 .hollywod {
   position: relative;
   bottom: 61px;
   font-size: 14px;
+  left: 10px;
 }
 .custom-padding{
   padding-left: 180px;
@@ -267,6 +269,10 @@ small {
 .checked-icons {
   position: relative;
   left: 199px;
+}
+.verified-icons{
+  position: relative;
+  left: 463px;
 }
 
 @media (max-width: 768px) {
