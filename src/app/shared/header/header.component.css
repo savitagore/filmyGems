@@ -21,15 +21,16 @@
 .navbar-nav .nav-item {
     margin-bottom: 10px;
 }
-.build-high h1{
-    font-size: 50px ;
+.build-high strong{
+    font-size: 50px;
+    font-weight: bold;
 }
 .build-high p {
     font-size: 18px;
 }
 
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     .navbar-nav {
         display: block;
         text-align: center;
@@ -94,10 +95,10 @@
         max-width: 70%; 
         height: auto;
     }
-}
+} */
 
 
-@media (min-width: 769px) and (max-width: 992px) {
+/* @media (min-width: 769px) and (max-width: 992px) {
     .navbar-nav {
         display: flex; 
         justify-content: center;
@@ -127,11 +128,9 @@
         max-width: 60%; 
         height: auto;
     }
-}
+} */
 
-.search-box {
-    margin-top: 10px; 
-}
+
 
 .search-box .form-control {
     flex: 1; 
@@ -142,7 +141,7 @@
 }
 
 
-@media (max-width: 576px) {
+/* @media (max-width: 576px) {
     
 
     .search-box .form-control {
@@ -162,16 +161,10 @@
     .search-box .form-control {
         margin-right: 10px; 
     }
-}
-
-.join-ig .btn-warning {
-    text-decoration: none; /* Ensure no text decoration on the button */
-}
-
-/* /************************* */
+} */
 
 
-/* ************** */
+
 
 .nav-link {
     font-size: 18px;
@@ -182,25 +175,36 @@
 }
 .join-ig{
     position: relative;
-    left: 41px;
+    /* left: 256px; */
+    text-decoration: none;
 }
 .join-ig img{
     position: absolute;
     bottom: 16px;
     left: 57px;
 }
-.left-dimond img{
+.left-dimond {
+    position: absolute;
+  
+}
+.left-dimond img {
     position: relative;
-    right: 410px;
-    top: 15px;
+    top: 58px;
 }
- .search-bar {
-    margin-top: 20px;
+.l{
+    position: relative;
+    top: 200px;
 }
+.icons-join{
+    position: absolute;
+}
+.icons-join .links-chart {
+      position: relative;
+      top: 52px;
+}
+
 .search-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  position: absolute;
 
 }
 .search-box {
@@ -213,6 +217,8 @@
     border: 2px solid transparent;
     transition: border 0.3s ease;
     border-color: gold;
+    position: relative;
+    left: 355px;
 }
 .search-box input {
     border: none;
@@ -238,16 +244,16 @@
     margin-right: 10px;
     
 }
+.search-box{
+    position: relative;
+    left: 355px;
+}
+
 .audition {
     position: relative;
     height: 200px;
 }
-/* 
-.sticky-img {
-    position: sticky;
-    top: 10px; 
-    z-index: 10;
-} */
+
 .audition {
     height: 100vh;  
 }
@@ -263,19 +269,8 @@
     height: 10px;
     background-color: #F3AD3B;
     position: relative;
-    top: 88px;
+    top: 66px;
    
-}
-
-.searching-bar {
-    position: relative;
-    top: 37px; 
-}
-.join-ig a {
-    text-decoration: none !important; 
-}
-.audition{
-    margin-left: -155px;
 }
 .dropdown-toggle {
     border-left: 1px solid #ddd;
@@ -331,114 +326,17 @@
     background-color: #090909;
 }
 
-/* 
-@media (max-width: 768px) {
-    .category-tags {
-        padding-top: 60px;
-    }
-
-    .arrow-icon {
-        font-size: 16px;
-    }
-
-    .category {
-        height: auto;
-        padding: 20px 0;
-    }
-
-    .category-tags-popular {
-        flex-wrap: wrap;
-    }
-
-    .category-tags-popular h4 {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .right-dimond {
-        position: relative;
-        bottom: -95px;
-        transform: none;
-        margin-top: 20px; 
-    }
-
-    .right-dimond img {
-        max-width: 80%; 
-        margin: 0 auto;
-        display: block;
-    }
-}
-
-@media (max-width: 576px) {
-    .category-tags span {
-        padding: 4px 10px;
-        margin: 3px;
-    }
-
-    .category-tags-popular span {
-        padding: 5px 10px;
-        margin: 2px;
-    }
-    
-
-    .right-dimond img {
-        max-width: 70%; 
-    }
-}
-@media (max-width: 768px) {
-    .lights-span .lights {
-        margin-left: -78px;
-      }
-    .lights-span{
-        margin-top: -2px;
-    }
-}
-
-@media (min-width: 577px) and (max-width: 1024px) {
-    .category-tags {
-        padding-top: 40px;
-    }
-
-    .arrow-icon {
-        font-size: 18px;
-    }
-
-    .category {
-        height: auto;
-        padding: 30px 0;
-    }
-
-    .category-tags-popular h4 {
-        margin-bottom: 15px;
-        font-size: 1.2rem;
-    }
-} */
 
 
-.banner-container {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    /* width: 1240px; 
-    height: 240px;  */
-    padding: 0;
-    margin: 0 auto; /* Center the container on the page */
-    overflow: hidden; /* Ensure the images stay within the container */
-}
-
-.madame-web img, .book-my-show img {
-    display: block;
-    border: 1px solid gray; 
-}
 
 /* Setting fixed image sizes */
-.madame-web img {
+.madame-web  {
     width: 1043px;
     height: 240px;
     border-right: none; 
 }
 
-.book-my-show img {
+.book-my-show  {
     width: 241px;
     height: 240px;
     border-left: none; 
@@ -447,246 +345,107 @@
 .top-gems {
     color: #FFC936;
     font-size: 25px;
-    padding-left: 179px;
+   
 }    
-.netflex{
+/* .netflex{
     position: absolute;
 }
 .netflex img {
     position: relative;
     left: 1120px;
     bottom: 61px;
-}
-.celebrites{
-    padding-right: 75px;
-}
-/* .sahid-k img{
-    height:240px ;
-    width: 498px;
-    border-radius: 10px;
 } */
-/* .sahid-img img{
-    height:240px ;
-    width: 498px;
-}
-.overlay {
+ .choices{
     position: absolute;
-    top: 89%;
-    left: 19%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-.overlay span {
-    font-size: 18px;
-}
-.overlay p {
+ }
+.choices-icons{
     position: relative;
-    bottom: 10px;
-    font-size: 14px;
-    right: 13px;
-} */
-.sahid-img {
-    position: relative; /* Ensure the overlay is positioned correctly */
-    margin: 15px;
-    border-radius: 10px;
-    border: none; /* Add margin around the card */
+    display: flex;
+    justify-content: space-between;
+    top: 11px;
+    padding-left: 10px;
 }
-
-.sahid-img img {
-    height: 240px; /* Fixed height for the image */
-    width: 498px;  /* Fixed width for the image */
-    object-fit: cover;
-    border-radius: 10px; /* Maintain aspect ratio while covering the area */
-}
-
-.overlay {
-    position: absolute;
-    top: 84%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    color:#ffffff;
-    text-align: center;
-    padding: 10px;
-}
-
-.overlay span {
-    font-size: 18px; /* Font size for the title */
-}
-
-.overlay p {
+.hot{
     position: relative;
-    bottom: 4px;
-    font-size: 14px;
-    right: 7px;
+    left: 358px;
 }
-
-.alia-img img {
-    height: 240px;
-    width: 263px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.alia-img{
-    position: relative;
-    border-radius: 10px;
-    border: none;
-    top: 17px;
-    margin-left: -17px;
-    margin-right: 60px;
-}
-.overlay-alia{
-    position: absolute;
-    top: 84%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    color:#ffffff;
-    text-align: center;
-    padding: 10px;
-}
-
-.overlay-alia span {
-    font-size: 18px;
-    position: relative;
-    left: 24px;
-    top: 5px;
-}
-.overlay-alia p {
-    position: relative;
-    font-size: 14px;
-    left: 34px;
-}
-.overlay-arjit {
-    position: absolute;
-    top: 84%;
-    left: 15%;
-    transform: translate(-50%, -50%);
-    color:#ffffff;
-    text-align: center;
-    padding: 10px;
-}
-.arjit {
-    position: relative;
-    border-radius: 10px;
-    border: none;
-    margin-left: -67px;
-    margin-right: 44px;
-    top: 17px;
-}
-.arjit img {
-    height: 240px;
-    width: 439px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.overlay-arjit span {
-    font-size: 18px;
-    position: relative;
-    right: 15px;
-    top: 5px;
-}
-.overlay-arjit p {
-    position: relative;
-    font-size: 14px;
-    right: 16px;
-}
-.vicky-img{
-    position: relative;
-    border-radius: 10px;
-    border: none;
-    margin-left: 17px;
-    margin-right: 12px;
-}
-.vicky-img img {
-    height: 240px;
-    width: 315px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.overlay-vicky {
-    position: absolute;
-    top: 87%;
-    left: 32%;
-    transform: translate(-50%, -50%);
+.hot-choice{
+    background-color: #FFA800;
     color: #ffffff;
-    text-align: center;
-    padding: 10px;
-}
-.overlay-vicky span {
-    font-size: 18px;
-    position: relative;
-    right: 15px;
-    top: 5px;
-}
-.overlay-vicky p {
-    position: relative;
-    font-size: 14px;
-    right: 16px;
-}
-.amitab-img{
-    position: relative;
-    border-radius: 10px;
     border: none;
-    margin-left: -11px;
-    margin-right: 54px;
-}
-.amitab-img img {
-    height: 240px;
-    width: 263px;
-    object-fit: cover;
-    border-radius: 10px;
-}
-.overlay-amitab {
-    position: absolute;
-    top: 87%;
-    left: 32%;
-    transform: translate(-50%, -50%);
-    color: #ffffff;
-    text-align: center;
-    padding: 10px;
-}
-.overlay-amitab span {
-    font-size: 18px;
-    position: relative;
-    left: 3px;
-    top: 10px;
-}
-.overlay-amitab p {
-    position: relative;
     font-size: 14px;
-    top: 5px;
-    right: 21px;
+    width: 90px;
 }
-.ranbir-img{
+.hot-checked{
     position: relative;
-    border-radius: 10px;
+    left: 203px;
+}
+.overlay{
+    position: absolute;
+}
+
+.actor-name{
+    position: relative;
+    bottom: 49px;
+    left: 19px;
+    font-size: 18px;
+    color: #ffffff;
+}
+.role{
+    position: relative;
+    bottom: 54px;
+    font-size: 14px;
+    left: 19px;
+    color: #ffffff;
+}
+.view{
+    width: 130px;
+    height: 48px;
+    background-color: #F3AD3B;
     border: none;
-    margin-left: -52px;
-    margin-right: 66px;
 }
-.ranbir-img img {
-    height: 240px;
-    width: 622px;
-    object-fit: cover;
-    border-radius: 10px;
+.check-aliya{
+    position: relative;
+    left: 203px;
+    bottom: 2px;
+ 
 }
-.overlay-ranbir {
-    position: absolute;
-    top: 87%;
-    left: 32%;
-    transform: translate(-50%, -50%);
+.checked-ranbir{
+    position: relative;
+    left: 524px;
+}
+.kirti-checked{
+    position: relative;
+    left: 225px;
+}
+.all-cheacked{
+    position: relative;
+    left: 159px;
+}
+.export{
+    background-image: url('/assets/exports/exports_bg.png');
+    background-size: cover;
+    height: 120px;
+   border: 1px solid #919191;
+   padding-left: 13px;
+}
+.personal-exports{
+    font-size: 32px;
     color: #ffffff;
-    text-align: center;
-    padding: 10px;
 }
-.overlay-ranbir span {
+
+.book-set {
+    background-color: #3B90F3;
+    color: #ffffff;
     font-size: 18px;
-    position: relative;
-    right: 134px;
+    padding: 12px;
+    width: 170px; 
 }
-.overlay-ranbir p {
-    position: relative;
-    font-size: 14px;
-    right: 133px;
+.shitan img{
+    height: 505px;
+    border: 1px solid #919191;
+}
+.side-img img{
+    height:495px ;
+    width: 199px;
 }
