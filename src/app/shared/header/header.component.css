@@ -1,15 +1,17 @@
-
-.header-images{
+.header-images {
     background-image: url('/assets/landing_Img/landing-bg.png');
     background-size: cover;
     height: 448px;
 }
+
 .navbar {
- padding-top: 36px;
+    padding-top: 36px;
 }
+
 .navbar-brand {
     color: #ffd700;
 }
+
 .navbar-nav .nav-link {
     color: #fff;
 }
@@ -18,12 +20,15 @@
     text-align: center;
     margin-left: 80px;
 }
+
 .navbar-nav .nav-item {
     margin-bottom: 10px;
 }
+
 .build-high p {
     font-size: 18px;
 }
+
 .main-title {
     font-size: 50px;
     font-weight: bold;
@@ -134,15 +139,18 @@
 .search-box .form-control {
     flex: 1;
 }
+
 .searching-bar {
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 .searching-bar .dropdown {
     margin-left: 10px;
 }
-.search-box{
+
+.search-box {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -181,40 +189,47 @@
 .custom-icon {
     font-size: 20px;
 }
-.join-ig{
+
+.join-ig {
     position: relative;
     /* left: 256px; */
     text-decoration: none;
 }
-.join-ig img{
+
+.join-ig img {
     position: absolute;
     bottom: 16px;
     left: 57px;
 }
+
 .left-dimond {
     position: absolute;
 
 }
+
 .left-dimond img {
     position: relative;
     top: 58px;
 }
+
 /* .l{
     position: relative;
     top: 200px;
 } */
-.icons-join{
+.icons-join {
     position: absolute;
 }
+
 .icons-join .links-chart {
-      position: relative;
-      top: 52px;
+    position: relative;
+    top: 52px;
 }
 
 .search-container {
-  position: absolute;
+    position: absolute;
 
 }
+
 .search-box {
     background-color: white;
     border-radius: 50px;
@@ -227,9 +242,10 @@
     transition: border 0.3s ease;
     border-color: gold;
     position: relative;
-    top:24
-    /* left: 355px; */
+    top: 24
+        /* left: 355px; */
 }
+
 .search-box input {
     border: none;
     outline: none;
@@ -254,10 +270,11 @@
     margin-right: 10px;
 
 }
-.search-box{
+
+.search-box {
     position: relative;
     /* left: 355px; */
-    top:13px
+    top: 13px
 }
 
 .audition {
@@ -285,16 +302,20 @@
     top: 80px;
 
 }
+
 .dropdown-toggle {
     border-left: 1px solid #ddd;
     border-radius: 0px 50px 50px 0px;
 }
-.lights-span{
+
+.lights-span {
     margin-left: 272px;
 }
+
 .category-tags {
     padding-top: 100px;
 }
+
 .active-cat {
     background-color: #986708;
     color: #fff !important;
@@ -306,15 +327,18 @@
     padding: 6px 20px;
     margin: 5px;
 }
+
 .sticky-img-wrap {
     position: fixed;
     top: 364px;
 }
+
 .arrow-icon {
     margin: 4px 1px;
     font-size: 20px;
 }
-.category-tags-popular{
+
+.category-tags-popular {
     /* margin-left: 116px; */
 }
 
@@ -326,6 +350,8 @@
     padding: 4px 10px;
     color: #93763F;
     border-radius: 5px;
+    display: inline-block;
+    margin-bottom: 10px;
 }
 
 
@@ -360,7 +386,7 @@
     border-right: none;
 } */
 
-.book-my-show  {
+.book-my-show {
     width: 241px;
     height: 240px;
     border-left: none;
@@ -371,6 +397,7 @@
     font-size: 25px;
 
 }
+
 /* .netflex{
     position: absolute;
 }
@@ -379,81 +406,95 @@
     left: 1120px;
     bottom: 61px;
 } */
- .choices{
+.choices {
     position: absolute;
- }
-.choices-icons{
+}
+
+.choices-icons {
     position: relative;
     display: flex;
     justify-content: space-between;
     top: 11px;
     padding-left: 10px;
 }
-.hot{
+
+.hot {
     position: relative;
     left: 358px;
 }
-.hot-choice{
+
+.hot-choice {
     background-color: #FFA800;
     color: #ffffff;
     border: none;
     font-size: 14px;
     width: 90px;
 }
-.hot-checked{
+
+.hot-checked {
     position: relative;
     left: 255px;
 }
-.overlay{
+
+.overlay {
     position: absolute;
 }
 
-.actor-name{
+.actor-name {
     position: relative;
     bottom: 49px;
     left: 19px;
     font-size: 18px;
     color: #ffffff;
 }
-.role{
+
+.role {
     position: relative;
     bottom: 54px;
     font-size: 14px;
     left: 19px;
     color: #ffffff;
 }
-.view{
+
+.view {
     width: 130px;
     height: 48px;
     background-color: #F3AD3B;
     border: none;
 }
-.check-aliya{
+
+.check-aliya {
     position: relative;
     left: 245px;
     bottom: 2px;
 
 }
-.checked-ranbir{
+
+.checked-ranbir {
     position: relative;
-    left: 567px;;
+    left: 567px;
+    ;
 }
-.kirti-checked{
+
+.kirti-checked {
     position: relative;
     left: 267px;
 }
-.all-cheacked{
+
+.all-cheacked {
     position: relative;
     left: 200px;
 }
-.export{
+
+.export {
     background-image: url('/assets/exports/exports_bg.png');
     background-size: cover;
     height: 120px;
-   border: 1px solid #919191;
-   padding-left: 13px;
+    border: 1px solid #919191;
+    padding-left: 13px;
 }
-.personal-exports{
+
+.personal-exports {
     font-size: 32px;
     color: #ffffff;
 }
@@ -465,11 +506,13 @@
     padding: 12px;
     width: 170px;
 }
-.shitan img{
+
+.shitan img {
     height: 505px;
     border: 1px solid #919191;
 }
-.side-img img{
-    height:495px ;
+
+.side-img img {
+    height: 495px;
     width: 199px;
 }
