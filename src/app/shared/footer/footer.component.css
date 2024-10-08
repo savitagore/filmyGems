@@ -323,17 +323,24 @@ small {
 }
 
 .icons {
-  position: absolute;
+  position: relative;
+  top: 42px;
 }
+.icons-heart{
+  display: flex;
+  justify-content: space-between;
+  padding:0px  10px;
 
-.checked-icons {
+
+}
+/* .checked-icons {
   position: relative;
   left: 199px;
 }
 .verified-icons{
   position: relative;
-  left: 540px;
-}
+ left: 490px;
+} */
 
 @media (max-width: 768px) {
   .custom-section {
