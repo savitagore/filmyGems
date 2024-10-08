@@ -81,12 +81,6 @@
     position: relative;
     top: 58px;
 }
-
-
-.icons-join {
-    position: absolute;
-}
-
 .icons-join .links-chart {
     position: relative;
     top: 52px;
@@ -167,9 +161,9 @@
     border-radius: 0px 50px 50px 0px;
 }
 
-.lights-span {
+/* .lights-span {
     margin-left: 272px;
-}
+} */
 
 .category-tags {
     padding-top: 100px;
@@ -267,7 +261,6 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding-left: -3px;
     padding: 0px 10px;
 }
 
@@ -298,16 +291,12 @@
     left: 19px;
     color: #ffffff;
 }
-
 .view {
     width: 130px;
     height: 48px;
     background-color: #F3AD3B;
     border: none;
 }
-
-
-
 .export {
     background-image: url('/assets/exports/exports_bg.png');
     background-size: cover;
@@ -360,6 +349,20 @@
   .right-dimond {
     display: none;
   }
+  .export{
+    height: 60px;
+    padding: 2px;
+  }
+  .book-set{
+    background-color: #3B90F3;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 3px;
+    width: 35px;
+  }
+  .personal-exports{
+    font-size: 12px;
+  }
   }
   
   @media (min-width: 576px) { 
@@ -380,7 +383,6 @@
       display: none;
     }
   
-
   .main-title {
     font-size: 40px;
     font-weight: bold;
@@ -419,7 +421,7 @@
    .export{
     height: 82px;
    }
-   .book-set[_ngcontent-ng-c4043728232] {
+   .book-set {
     background-color: #3B90F3;
     color: #ffffff;
     font-size: 12px;
@@ -465,6 +467,31 @@
   .right-dimond {
     display: block;
   }
+  .actor-name{
+    bottom: 49px;
+    left: 19px;
+    font-size: 18px;
+  }
+  .role{
+    bottom: 54px;
+    font-size: 14px;
+    left: 19px;
+  }
+  .export{
+    height: 120px;
+  }
+  .personal-exports {
+    font-size: 32px;
+  }
+ .program{
+    padding: 6px 10px;
+ }
+ .book-set{
+    color: #ffffff;
+    font-size: 18px;
+    padding: 12px;
+    width: 170px;
+ }
    }
   
   
