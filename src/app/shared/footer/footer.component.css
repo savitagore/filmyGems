@@ -77,14 +77,75 @@ color:#595959;
 .filmy-custom{
 color:#595959;
 }
+.facebook-icons{
+  font-size: 30px;
+  color: #505050;
+}
+
+
+.custom-text {
+  padding-right: 40px;
+  z-index: 1;
+  border: none;
+  outline: none;
+  background-color: transparent;
+
+}
+
+.input-group-append {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+
+}
+
+.input-group-append img {
+  width: 20px;
+  height: auto;
+  /* color: #FFB62A; */
+  fill: #FFB62A;
+
+}
+
+.bg-colors {
+  background-color: #333;
+  /* color: #FFB62A; */
+}
+
+.input-group {
+  position: relative;
+  width: 100%;
+}
+
+
 /*--------------------------------------*/
 .bg-all{
   background-color: #090909;
 }
-
-.roboto-font {
-  font-family: "Roboto";
+/* .card {
+  position: relative;
 }
+
+.new-label-container {
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.btn-danger {
+  background-color: red;
+  border: none;
+  padding: 5px 15px;
+  font-size: 12px;
+} */
+
+
+
+
 
 .custom-bg {
   background-color: #343232;
@@ -155,10 +216,6 @@ small {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-
-
-
-
 }
 
 .btn-custom {
