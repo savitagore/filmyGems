@@ -271,9 +271,11 @@
 
 /* Sticky image styles */
 .sticky-img {
-    position: sticky;
+    /* position: sticky;
     top: 10px;
-    z-index: 10;
+    z-index: 10; */
+    width: 100px;
+    height: 100px;
 }
 
 .linear {
@@ -304,7 +306,10 @@
     padding: 6px 20px;
     margin: 5px;
 }
-
+.sticky-img-wrap {
+    position: fixed;
+    top: 286px;
+}
 .arrow-icon {
     margin: 4px 1px;
     font-size: 20px;
