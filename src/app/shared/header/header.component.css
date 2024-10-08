@@ -267,13 +267,8 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    top: 11px;
-    padding-left: 10px;
-}
-
-.hot {
-    position: relative;
-    /* left: 358px; */
+    padding-left: -3px;
+    padding: 0px 10px;
 }
 
 .hot-choice {
@@ -282,11 +277,6 @@
     border: none;
     font-size: 14px;
     width: 90px;
-}
-
-.hot-checked {
-    position: relative;
-    /* left: 255px; */
 }
 
 .overlay {
