@@ -21,14 +21,13 @@
 .navbar-nav .nav-item {
     margin-bottom: 10px;
 }
-.build-high strong{
-    font-size: 50px;
-    font-weight: bold;
-}
 .build-high p {
     font-size: 18px;
 }
-
+.main-title {
+    font-size: 50px;
+    font-weight: bold;
+}
 
 /* @media (max-width: 576px) {
     .navbar-nav {
@@ -135,9 +134,18 @@
 .search-box .form-control {
     flex: 1;
 }
-
+.searching-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .searching-bar .dropdown {
     margin-left: 10px;
+}
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -191,10 +199,10 @@
     position: relative;
     top: 58px;
 }
-.l{
+/* .l{
     position: relative;
     top: 200px;
-}
+} */
 .icons-join{
     position: absolute;
 }
@@ -213,13 +221,14 @@
     padding: 10px 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     /* width: 963px;  */
-    width: 688px;
+    width: 963px;
     max-width: 100%;
     border: 2px solid transparent;
     transition: border 0.3s ease;
     border-color: gold;
     position: relative;
-    left: 355px;
+    top:24
+    /* left: 355px; */
 }
 .search-box input {
     border: none;
@@ -247,7 +256,8 @@
 }
 .search-box{
     position: relative;
-    left: 355px;
+    /* left: 355px; */
+    top:13px
 }
 
 .audition {
@@ -270,7 +280,7 @@
     height: 10px;
     background-color: #F3AD3B;
     position: relative;
-    top: 66px;
+    top: 80px;
 
 }
 .dropdown-toggle {
@@ -281,12 +291,17 @@
     margin-left: 272px;
 }
 .category-tags {
-    padding-top: 120px;
+    padding-top: 100px;
+}
+.active-cat {
+    background-color: #986708;
+    color: #fff !important;
+    border-radius: 50px;
 }
 
 .category-tags span {
     color: black;
-    padding: 6px 15px;
+    padding: 6px 20px;
     margin: 5px;
 }
 
@@ -295,15 +310,17 @@
     font-size: 20px;
 }
 .category-tags-popular{
-    margin-left: 116px;
+    /* margin-left: 116px; */
 }
 
 .category-tags-popular span {
-    background-color: #f8f9fa;
+    background-color: transparent;
     border: 1px solid #ced4da;
     margin: 3px;
-    border-color: #986708;
+    border-color: #B59E72;
     padding: 4px 10px;
+    color: #93763F;
+    border-radius: 5px;
 }
 
 
@@ -320,14 +337,15 @@
 
 .category {
     background-color: #FFF4DE;
-    height: 309px;
 }
 
 .middle-section-part-1 {
     background-color: #090909;
 }
 
-
+.middle-section {
+    background-color: #FFF4DE;
+}
 
 
 /* Setting fixed image sizes */
