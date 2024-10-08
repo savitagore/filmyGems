@@ -301,7 +301,7 @@
 
 .category-tags span {
     color: black;
-    padding: 6px 15px;
+    padding: 6px 20px;
     margin: 5px;
 }
 
@@ -310,7 +310,7 @@
     font-size: 20px;
 }
 .category-tags-popular{
-    margin-left: 116px;
+    /* margin-left: 116px; */
 }
 
 .category-tags-popular span {
@@ -337,14 +337,15 @@
 
 .category {
     background-color: #FFF4DE;
-    height: 309px;
 }
 
 .middle-section-part-1 {
     background-color: #090909;
 }
 
-
+.middle-section {
+    background-color: #FFF4DE;
+}
 
 
 /* Setting fixed image sizes */
