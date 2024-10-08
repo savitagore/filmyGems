@@ -21,7 +21,7 @@
 .navbar-nav .nav-item {
     margin-bottom: 10px;
 }
-.build-high strong{
+.build-high h1{
     font-size: 50px;
     font-weight: bold;
 }
@@ -139,6 +139,11 @@
 .searching-bar .dropdown {
     margin-left: 10px;
 }
+.search-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 
 /* @media (max-width: 576px) {
@@ -191,10 +196,10 @@
     position: relative;
     top: 58px;
 }
-.l{
+/* .l{
     position: relative;
     top: 200px;
-}
+} */
 .icons-join{
     position: absolute;
 }
@@ -212,14 +217,14 @@
     border-radius: 50px;
     padding: 10px 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    /* width: 963px;  */
-    width: 688px;
+    width: 963px; 
+    /* width: 688px; */
     max-width: 100%;
     border: 2px solid transparent;
     transition: border 0.3s ease;
     border-color: gold;
     position: relative;
-    left: 355px;
+    /* left: 355px; */
 }
 .search-box input {
     border: none;
