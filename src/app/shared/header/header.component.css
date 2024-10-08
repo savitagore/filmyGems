@@ -33,109 +33,6 @@
     font-size: 50px;
     font-weight: bold;
 }
-
-/* @media (max-width: 576px) {
-    .navbar-nav {
-        display: block;
-        text-align: center;
-    }
-
-    .navbar-nav .nav-item {
-        margin-bottom: 10px;
-    }
-
-    .build-high h1 {
-        font-size: 1.3rem;
-    }
-
-    .build-high p {
-        font-size: 0.9rem;
-    }
-
-    .form-control {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .btn-outline-light {
-        width: 100%;
-        margin-top: 5px;
-    }
-
-    .left-dimond img {
-        max-width: 80%;
-        height: auto;
-    }
-}
-
-
-@media (min-width: 577px) and (max-width: 768px) {
-    .navbar-nav {
-        display: block;
-        text-align: center;
-    }
-
-    .navbar-nav .nav-item {
-        margin-bottom: 10px;
-    }
-
-    .build-high h1 {
-        font-size: 1.5rem;
-    }
-
-    .build-high p {
-        font-size: 1rem;
-    }
-
-    .form-control {
-        width: auto;
-    }
-
-    .btn-outline-light {
-        width: auto;
-    }
-
-    .left-dimond img {
-        max-width: 70%;
-        height: auto;
-    }
-} */
-
-
-/* @media (min-width: 769px) and (max-width: 992px) {
-    .navbar-nav {
-        display: flex;
-        justify-content: center;
-    }
-
-    .navbar-nav .nav-item {
-        margin: 0 15px;
-    }
-
-    .build-high h1 {
-        font-size: 1.8rem;
-    }
-
-    .build-high p {
-        font-size: 1.1rem;
-    }
-
-    .form-control {
-        width: auto;
-    }
-
-    .btn-outline-light {
-        width: auto;
-    }
-
-    .left-dimond img {
-        max-width: 60%;
-        height: auto;
-    }
-} */
-
-
-
 .search-box .form-control {
     flex: 1;
 }
@@ -156,32 +53,6 @@
     align-items: center;
 }
 
-
-/* @media (max-width: 576px) {
-
-
-    .search-box .form-control {
-        margin-bottom: 10px;
-    }
-
-    .search-box .dropdown {
-        width: 100%;
-    }
-}
-
-@media (min-width: 577px) and (max-width: 768px) {
-    .searching-bar {
-        margin-top: 15px;
-    }
-
-    .search-box .form-control {
-        margin-right: 10px;
-    }
-} */
-
-
-
-
 .nav-link {
     font-size: 18px;
 }
@@ -192,7 +63,6 @@
 
 .join-ig {
     position: relative;
-    /* left: 256px; */
     text-decoration: none;
 }
 
@@ -212,10 +82,7 @@
     top: 58px;
 }
 
-/* .l{
-    position: relative;
-    top: 200px;
-} */
+
 .icons-join {
     position: absolute;
 }
@@ -273,18 +140,10 @@
 
 .search-box {
     position: relative;
-    /* left: 355px; */
     top: 13px
 }
 
-.audition {
-    position: relative;
-    height: 200px;
-}
 
-.audition {
-    height: 100vh;
-}
 
 /* Sticky image styles */
 .sticky-img {
@@ -338,9 +197,7 @@
     font-size: 20px;
 }
 
-.category-tags-popular {
-    /* margin-left: 116px; */
-}
+
 
 .category-tags-popular span {
     background-color: transparent;
@@ -379,12 +236,7 @@
 }
 
 
-/* Setting fixed image sizes */
-/* .madame-web  {
-    width: 1043px;
-    height: 240px;
-    border-right: none;
-} */
+
 
 .book-my-show {
     width: 241px;
@@ -398,14 +250,6 @@
 
 }
 
-/* .netflex{
-    position: absolute;
-}
-.netflex img {
-    position: relative;
-    left: 1120px;
-    bottom: 61px;
-} */
 .choices {
     position: absolute;
 }
