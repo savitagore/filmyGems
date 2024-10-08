@@ -379,9 +379,7 @@
     .left-dimond {
       display: none;
     }
-    .icons-join  {
-       display: none;
-  }
+  
 
   .main-title {
     font-size: 40px;
@@ -444,14 +442,25 @@
     }
     .icons-join .links-chart {
       position: relative;
-      top: 4px;
+      top: 55px;
   }
+  .linear {
+    height: 10px;
+    background-color: #F3AD3B;
+    position: relative;
+    top: 89px;
+  }
+
+  .search-box {
+    position: relative;
+    top: 23px;
+}
   .main-title {
     font-size: 50px;
     font-weight: bold;
   }
   .build-high p {
-    font-size: 14px;
+    font-size: 18px;
   }
   .right-dimond {
     display: block;
