@@ -151,7 +151,7 @@
     top: 10px;
     z-index: 10; */
     width: 100px;
-    height: 100px;
+    /* height: 100px; */
 }
 
 .linear {
@@ -235,14 +235,22 @@
     background-color: #FFF4DE;
 }
 
+.mademe-web img{
+    height: 240px;
+    border: 1px solid #919191;
+    border-right: none;
+}
 
-
-
-.book-my-show {
+.book-my-show img {
     width: 241px;
     height: 240px;
+    border: 1px solid #919191;
     border-left: none;
+    position: relative;
+    right: 26px;
 }
+
+
 
 .top-gems {
     color: #FFC936;
@@ -251,20 +259,16 @@
 }
 
 .choices {
-    position: absolute;
+    position: relative;
+    top: 42px;
 }
 
 .choices-icons {
     position: relative;
     display: flex;
     justify-content: space-between;
-    top: 11px;
-    padding-left: 10px;
-}
-
-.hot {
-    position: relative;
-    /* left: 358px; */
+    padding-left: -3px;
+    padding: 0px 10px;
 }
 
 .hot-choice {
@@ -273,11 +277,6 @@
     border: none;
     font-size: 14px;
     width: 90px;
-}
-
-.hot-checked {
-    position: relative;
-    /* left: 255px; */
 }
 
 .overlay {
@@ -307,28 +306,7 @@
     border: none;
 }
 
-.check-aliya {
-    position: relative;
-    left: 245px;
-    bottom: 2px;
 
-}
-
-.checked-ranbir {
-    position: relative;
-    left: 567px;
-    ;
-}
-
-.kirti-checked {
-    position: relative;
-    left: 267px;
-}
-
-.all-cheacked {
-    position: relative;
-    left: 200px;
-}
 
 .export {
     background-image: url('/assets/exports/exports_bg.png');
