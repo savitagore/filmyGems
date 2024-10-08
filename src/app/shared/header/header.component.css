@@ -264,7 +264,7 @@
 
 .hot {
     position: relative;
-    left: 358px;
+    /* left: 358px; */
 }
 
 .hot-choice {
@@ -277,7 +277,7 @@
 
 .hot-checked {
     position: relative;
-    left: 255px;
+    /* left: 255px; */
 }
 
 .overlay {
@@ -360,4 +360,91 @@
     height: 495px;
     width: 199px;
 }
+
+@media (min-width: 320px) { 
+    .logo-img{
+        width: 200px;
+    }
+    .left-dimond {
+      display: none;
+    }
+    .icons-join .links-chart {
+      position: relative;
+      top: 4px;
+  }
+  .main-title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .build-high p {
+    font-size: 14px;
+  }
+  .right-dimond {
+    display: none;
+  }
+  }
+  
+  @media (min-width: 576px) { 
+    .img-fluid{
+      width: auto;
+  }
+   }
+  
+  @media (min-width: 768px) { 
+    .img-fluid{
+        width: 200px;
+    }
+    .left-dimond {
+      display: none;
+    }
+    .icons-join .links-chart {
+      position: relative;
+      top: 4px;
+  }
+  .main-title {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .build-high p {
+    font-size: 14px;
+  }
+  .right-dimond {
+    display: none;
+  }
+   }
+  
+  @media (min-width: 992px) { 
+  
+   }
+  
+  
+  @media (min-width: 1200px) { 
+    .img-fluid{
+        width: auto
+    }
+    .left-dimond {
+      display: block;
+    }
+    .icons-join .links-chart {
+      position: relative;
+      top: 4px;
+  }
+  .main-title {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  .build-high p {
+    font-size: 14px;
+  }
+  .right-dimond {
+    display: block;
+  }
+   }
+  
+  
+  @media (min-width: 1400px) { 
+  
+   }
+  
+  
 /*****************************************************/
