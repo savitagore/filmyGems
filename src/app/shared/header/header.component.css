@@ -363,33 +363,72 @@
   }
   
   @media (min-width: 576px) { 
-    .img-fluid{
+    .logo-img{
       width: auto;
   }
    }
   
   @media (min-width: 768px) { 
-    .img-fluid{
+    .navbar-toggler{
+        position: relative;
+    left: 249px;
+    }
+    .logo-img{
         width: 200px;
     }
     .left-dimond {
       display: none;
     }
-    .icons-join .links-chart {
-      position: relative;
-      top: 4px;
+    .icons-join  {
+       display: none;
   }
+
   .main-title {
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
   }
   .build-high p {
-    font-size: 14px;
+    font-size: 16px;
+  }
+  .search-box{
+    position: relative;
+    top: 63px;
+  }
+  .linear{
+    height: 10px;
+    background-color: #F3AD3B;
+    position: relative;
+    top: 127px;
   }
   .right-dimond {
     display: none;
   }
+  .choices-icons{
+    bottom: 10px;
+  }
+  .actor-name{
+    left: 7px;
+    font-size: 12px;
+  }
+  .role{
+    font-size: 10px;
+    left: 7px;
+  }
+  .personal-exports {
+    font-size: 21px;
+    color: #ffffff;
    }
+   .export{
+    height: 82px;
+   }
+   .book-set[_ngcontent-ng-c4043728232] {
+    background-color: #3B90F3;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px;
+    width: 109px;
+   }
+}
   
   @media (min-width: 992px) { 
   
@@ -397,7 +436,7 @@
   
   
   @media (min-width: 1200px) { 
-    .img-fluid{
+    .logo-img{
         width: auto
     }
     .left-dimond {
@@ -423,6 +462,6 @@
   @media (min-width: 1400px) { 
   
    }
-  
+
   
 /*****************************************************/
