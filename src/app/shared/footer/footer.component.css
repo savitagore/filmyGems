@@ -38,16 +38,16 @@ font-size: 14px;
   background: #000000;
 }
 
-.margin {
+/* .margin {
   margin-left: -43px;
-}
-.padd{
+} */
+/* .padd{
   padding-left: 107px;
 
-}
-.icon-margins{
+} */
+/* .icon-margins{
   margin-top: -19px;
-}
+} */
 
 .custom-input {
   color: #333;
@@ -77,10 +77,7 @@ color:#595959;
 .filmy-custom{
 color:#595959;
 }
-.facebook-icons{
-  font-size: 30px;
-  color: #505050;
-}
+
 
 
 .custom-text {
@@ -105,19 +102,24 @@ color:#595959;
 .input-group-append img {
   width: 20px;
   height: auto;
-  /* color: #FFB62A; */
   fill: #FFB62A;
 
 }
 
 .bg-colors {
   background-color: #333;
-  /* color: #FFB62A; */
+
 }
 
 .input-group {
   position: relative;
   width: 100%;
+}
+.join-padding{
+  padding-left: 821px;
+
+}.font-join{
+  margin-top: -87px;
 }
 
 
@@ -211,15 +213,16 @@ small {
 } */
 
 .custom-section {
-  background-color: #ffb62a;
-  background-image: url("/assets/music/music_bg.png");
-  background-position: center;
+  /* background-color: #ffb62a; */
+  background-image: url("/assets/music/group.png");
+  /* background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
+  height: 484px;
 }
 
 .btn-custom {
-  background-color: #ffc107;
+
   border: 1px solid black;
   color: black;
 }
@@ -297,7 +300,7 @@ small {
 }
 
 .btn-custom {
-  max-width: 200px;
+  max-width: 135px;
   width: 100%;
 }
 
@@ -319,7 +322,7 @@ small {
   left: 10px;
 }
 .custom-padding{
-  padding-left: 180px;
+  padding-left: 50px;
 }
 
 .icons {
@@ -330,8 +333,6 @@ small {
   display: flex;
   justify-content: space-between;
   padding:0px  10px;
-
-
 }
 /* .checked-icons {
   position: relative;
@@ -352,7 +353,37 @@ small {
     max-width: 100%;
   }
   .custom-section h1 {
-    font-size: 1.5rem; /* Smaller font size for mobile */
+    font-size: 1.5rem;
 }
 
 }
+
+/* @media (min-width: 425px) {
+
+}
+
+
+@media (min-width: 1440px) {
+
+}
+
+
+@media (min-width: 1200px) {
+
+}
+
+
+@media (min-width: 1024px) {
+  .icons-heart {
+   padding: 0px 10px;
+}
+.icons {
+  position: relative;
+  top: 42px;
+}
+}
+
+
+@media (min-width: 1400px) {
+
+} */
