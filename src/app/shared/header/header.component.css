@@ -15,15 +15,10 @@
 .navbar-nav .nav-link {
     color: #fff;
 }
-
-.navbar-nav {
-    text-align: center;
-    margin-left: 80px;
-}
-
 .navbar-nav .nav-item {
     margin-bottom: 10px;
 }
+
 
 .build-high p {
     font-size: 18px;
@@ -52,11 +47,6 @@
     justify-content: center;
     align-items: center;
 }
-
-/* .nav-link {
-    font-size: 18px;
-} */
-
 .custom-icon {
     font-size: 20px;
 }
@@ -96,15 +86,14 @@
     border-radius: 50px;
     padding: 10px 20px;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    /* width: 963px;  */
     width: 963px;
     max-width: 100%;
     border: 2px solid transparent;
     transition: border 0.3s ease;
     border-color: gold;
     position: relative;
-    top: 24
-        /* left: 355px; */
+    top: 24px;
+      
 }
 
 .search-box input {
@@ -121,7 +110,7 @@
     transition: opacity 0.3s ease;
 }
 
-.search-box input:focus::placeholder {
+.search-box input:hover::placeholder {
     opacity: 0;
 }
 
@@ -131,21 +120,12 @@
     margin-right: 10px;
 
 }
-
 .search-box {
     position: relative;
     top: 13px
 }
-
-
-
-/* Sticky image styles */
 .sticky-img {
-    /* position: sticky;
-    top: 10px;
-    z-index: 10; */
-    width: 100px;
-    /* height: 100px; */
+ width: 100px;  
 }
 
 .linear {
@@ -160,10 +140,6 @@
     border-left: 1px solid #ddd;
     border-radius: 0px 50px 50px 0px;
 }
-
-/* .lights-span {
-    margin-left: 272px;
-} */
 
 .category-tags {
     padding-top: 100px;
@@ -190,9 +166,6 @@
     margin: 4px 1px;
     font-size: 20px;
 }
-
-
-
 .category-tags-popular span {
     background-color: transparent;
     border: 1px solid #ced4da;
@@ -229,19 +202,12 @@
     background-color: #FFF4DE;
 }
 
-.mademe-web img{
-    height: 240px;
-    border: 1px solid #919191;
-    border-right: none;
-}
-
-.book-my-show img {
-    width: 241px;
-    height: 240px;
-    border: 1px solid #919191;
-    border-left: none;
+.cross{
+    display: flex;
+    justify-content: end;
     position: relative;
-    right: 26px;
+    right: 66px;
+    top: 31px;
 }
 
 
@@ -318,15 +284,11 @@
     width: 170px;
 }
 
-.shitan img {
-    height: 505px;
-    border: 1px solid #919191;
+.shitan-img{
+    width: 100%;
 }
 
-.side-img img {
-    height: 495px;
-    width: 199px;
-}
+
 
 @media (min-width: 320px) { 
     .logo-img{
@@ -363,6 +325,11 @@
   .personal-exports{
     font-size: 12px;
   }
+  .cross{
+    height: 10px;
+    right: 5px;
+    top: 13px;
+  }
   }
   
   @media (min-width: 576px) { 
@@ -372,11 +339,8 @@
    }
   
   @media (min-width: 768px) { 
-    /* .navbar-toggler{
-        position: relative;
-    left: 249px;
-    } */
-   
+  
+    /*  */
    .icons-join{
     top: 32px;
     position: relative;
@@ -426,6 +390,7 @@
    }
    .export{
     height: 82px;
+    padding: 5px;
    }
    .book-set {
     background-color: #3B90F3;
@@ -433,6 +398,11 @@
     font-size: 12px;
     padding: 8px;
     width: 109px;
+   }
+   .cross{
+    height: 15px;
+    right: 10px;
+    top: 20px;
    }
 }
   
@@ -444,6 +414,9 @@
   @media (min-width: 1200px) { 
     .logo-img{
         width: 245px;
+    }
+    .navbar-nav{
+        padding: 0px 42px;
     }
     .nav-link {
         font-size: 18px;
@@ -498,6 +471,11 @@
     font-size: 14px;
     left: 19px;
   }
+  .cross{
+    right: 66px;
+    top: 31px;
+    height: 24px;
+  }
   .export{
     height: 120px;
   }
@@ -530,3 +508,22 @@
 
   
 /*****************************************************/
+.dropdown-menu.scroll {
+    max-height: 150px; /* Adjust this value for a smaller height */
+    overflow-y: auto;
+     /* Set dropdown background color to yellow */
+}
+
+/* Customizing the scrollbar */
+.dropdown-menu.scroll::-webkit-scrollbar {
+    width: 8px; 
+    height: 10px;/* Set width for scrollbar */
+}
+
+.dropdown-menu.scroll::-webkit-scrollbar-thumb {
+    background: #ccc; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Rounded corners */
+}
+
+
+
