@@ -53,9 +53,9 @@
     align-items: center;
 }
 
-.nav-link {
+/* .nav-link {
     font-size: 18px;
-}
+} */
 
 .custom-icon {
     font-size: 20px;
@@ -81,12 +81,6 @@
     position: relative;
     top: 58px;
 }
-
-
-.icons-join {
-    position: absolute;
-}
-
 .icons-join .links-chart {
     position: relative;
     top: 52px;
@@ -167,9 +161,9 @@
     border-radius: 0px 50px 50px 0px;
 }
 
-.lights-span {
+/* .lights-span {
     margin-left: 272px;
-}
+} */
 
 .category-tags {
     padding-top: 100px;
@@ -267,7 +261,6 @@
     position: relative;
     display: flex;
     justify-content: space-between;
-    padding-left: -3px;
     padding: 0px 10px;
 }
 
@@ -298,16 +291,12 @@
     left: 19px;
     color: #ffffff;
 }
-
 .view {
     width: 130px;
     height: 48px;
     background-color: #F3AD3B;
     border: none;
 }
-
-
-
 .export {
     background-image: url('/assets/exports/exports_bg.png');
     background-size: cover;
@@ -360,36 +349,92 @@
   .right-dimond {
     display: none;
   }
+  .export{
+    height: 60px;
+    padding: 2px;
+  }
+  .book-set{
+    background-color: #3B90F3;
+    color: #ffffff;
+    font-size: 10px;
+    padding: 3px;
+    width: 35px;
+  }
+  .personal-exports{
+    font-size: 12px;
+  }
   }
   
   @media (min-width: 576px) { 
-    .img-fluid{
+    .logo-img{
       width: auto;
   }
    }
   
   @media (min-width: 768px) { 
-    .img-fluid{
+    /* .navbar-toggler{
+        position: relative;
+    left: 249px;
+    } */
+   
+   .icons-join{
+    top: 32px;
+    position: relative;
+   }
+   .join-ig img {
+    bottom: 36px;
+    left: 17px;
+   }
+    .logo-img{
         width: 200px;
     }
     .left-dimond {
       display: none;
     }
-    .icons-join .links-chart {
-      position: relative;
-      top: 4px;
-  }
+  
   .main-title {
-    font-size: 28px;
+    font-size: 40px;
     font-weight: bold;
   }
   .build-high p {
-    font-size: 14px;
+    font-size: 16px;
+  }
+  .search-box{
+    position: relative;
+    top: 63px;
+  }
+  .linear{
+    top: 127px;
   }
   .right-dimond {
     display: none;
   }
+  .choices-icons{
+    bottom: 10px;
+  }
+  .actor-name{
+    left: 7px;
+    font-size: 12px;
+  }
+  .role{
+    font-size: 10px;
+    left: 7px;
+  }
+  .personal-exports {
+    font-size: 21px;
+    color: #ffffff;
    }
+   .export{
+    height: 82px;
+   }
+   .book-set {
+    background-color: #3B90F3;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 8px;
+    width: 109px;
+   }
+}
   
   @media (min-width: 992px) { 
   
@@ -397,32 +442,91 @@
   
   
   @media (min-width: 1200px) { 
-    .img-fluid{
-        width: auto
+    .logo-img{
+        width: 245px;
     }
+    .nav-link {
+        font-size: 18px;
+        margin: 0px 29px;
+    }
+       /* .linear {
+           top: 92px;
+       } */
+    .icons-join{
+        top: 1px;
+        position: relative;
+       }
+       .join-ig img {
+        bottom: 17px;
+        left: 56px;
+       }
     .left-dimond {
       display: block;
     }
     .icons-join .links-chart {
       position: relative;
-      top: 4px;
+      top: 55px;
   }
+  .linear {
+    height: 10px;
+    background-color: #F3AD3B;
+    position: relative;
+    top: 89px;
+  }
+
+  .search-box {
+    position: relative;
+    top: 23px;
+}
   .main-title {
     font-size: 50px;
     font-weight: bold;
   }
   .build-high p {
-    font-size: 14px;
+    font-size: 18px;
   }
   .right-dimond {
     display: block;
   }
+  .actor-name{
+    bottom: 49px;
+    left: 19px;
+    font-size: 18px;
+  }
+  .role{
+    bottom: 54px;
+    font-size: 14px;
+    left: 19px;
+  }
+  .export{
+    height: 120px;
+  }
+  .personal-exports {
+    font-size: 32px;
+  }
+ .program{
+    padding: 6px 10px;
+ }
+ .book-set{
+    color: #ffffff;
+    font-size: 18px;
+    padding: 12px;
+    width: 170px;
+ }
    }
   
   
-  @media (min-width: 1400px) { 
-  
+  @media (min-width: 1024px) { 
+    /* .logo-img {
+        width: 150px;
+    } */
+    /* .nav-link{
+     font-size: 15px;
+    } */
+    /* .linear {
+        top: 92px;
+    } */
    }
-  
+
   
 /*****************************************************/
