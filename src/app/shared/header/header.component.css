@@ -513,6 +513,9 @@
     overflow-y: auto;
      /* Set dropdown background color to yellow */
 }
+.dropdown-menu li{
+    font-size: 18px;
+}
 
 /* Customizing the scrollbar */
 .dropdown-menu.scroll::-webkit-scrollbar {
@@ -521,8 +524,9 @@
 }
 
 .dropdown-menu.scroll::-webkit-scrollbar-thumb {
-    background: #ccc; /* Color of the scrollbar thumb */
+    background: #986708; /* Color of the scrollbar thumb */
     border-radius: 10px; /* Rounded corners */
+
 }
 
 
