@@ -422,9 +422,7 @@
         font-size: 18px;
         margin: 0px 29px;
     }
-       /* .linear {
-           top: 92px;
-       } */
+      
     .icons-join{
         top: 1px;
         position: relative;
@@ -493,37 +491,10 @@
  }
    }
   
-  
-  @media (min-width: 1024px) { 
-    /* .logo-img {
-        width: 150px;
-    } */
-    /* .nav-link{
-     font-size: 15px;
-    } */
-    /* .linear {
-        top: 92px;
-    } */
-   }
 
-  
-/*****************************************************/
-.dropdown-menu.scroll {
-    max-height: 150px; /* Adjust this value for a smaller height */
-    overflow-y: auto;
-     /* Set dropdown background color to yellow */
-}
-
-/* Customizing the scrollbar */
-.dropdown-menu.scroll::-webkit-scrollbar {
-    width: 8px; 
-    height: 10px;/* Set width for scrollbar */
-}
 
 .dropdown-menu.scroll::-webkit-scrollbar-thumb {
-    background: #ccc; /* Color of the scrollbar thumb */
-    border-radius: 10px; /* Rounded corners */
+    background: #986708; 
+    border-radius: 10px
 }
-
-
-
+ 
