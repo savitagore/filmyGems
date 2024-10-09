@@ -411,7 +411,7 @@
    }
   
   
-  @media (min-width: 1200px) { 
+   @media (min-width: 1200px) { 
     .logo-img{
         width: 245px;
     }
@@ -422,9 +422,7 @@
         font-size: 18px;
         margin: 0px 29px;
     }
-       /* .linear {
-           top: 92px;
-       } */
+      
     .icons-join{
         top: 1px;
         position: relative;
@@ -491,7 +489,7 @@
     padding: 12px;
     width: 170px;
  }
-   }
+   } 
   
   
   @media (min-width: 1024px) { 
