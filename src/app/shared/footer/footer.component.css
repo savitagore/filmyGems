@@ -27,9 +27,7 @@ font-size: 14px;
   height: auto;
   margin-top: 10px;
 }
-.bg-colors{
-  background-color: #5E5E5E;
-}
+
 .footer a {
   transition: color 0.3s ease;
 }
@@ -126,6 +124,13 @@ color:#595959;
 /*--------------------------------------*/
 .bg-all{
   background-color: #090909;
+}
+
+.height-most{
+  height:520px
+}
+.h-fav{
+  height:240px;
 }
 /* .card {
   position: relative;
