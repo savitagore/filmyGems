@@ -220,7 +220,7 @@
 
 .choices {
     position: relative;
-    top: 42px;
+    top: 15px;
 }
 
 .choices-icons {
@@ -243,7 +243,8 @@
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
-    background-size: cover;
+    background-size: cover;
+    border-radius: 10px;
 }
 .overlay {
   position: relative;
@@ -252,6 +253,13 @@
   color: #ffffff;
   background: #00000000
  
+}
+.overlay-kirti{
+  position: relative;
+  top: 438px;
+  left: 10px;
+  color: #ffffff;
+  background: #00000000
 }
 .view {
     width: 130px;
