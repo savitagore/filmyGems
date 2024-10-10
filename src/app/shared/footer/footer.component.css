@@ -173,6 +173,7 @@ small {
   background-color: #ffb62a;
   color: #000;
   font-size: 18px;
+  width: 241px;
 }
 .custom-section {
   background-image: url("/assets/music/group.png");
@@ -319,6 +320,7 @@ border: 1px solid black;
 .load-color {
   background-color: #F3AD3B;
   font-size: 18px;
+  width: 130px;
 }
 
 .groove {
