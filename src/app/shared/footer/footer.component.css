@@ -125,6 +125,7 @@
 
 .h-fav {
   height: 240px;
+  width:100%;
 }
 
 .custom-bg {
@@ -266,9 +267,10 @@ border: 1px solid black;
 
  .kate-opsition {
   position: absolute;
+  /* margin-bottom: -75px; */
 }
 
-.common-kate {
+ .common-kate {
   position: relative;
   bottom: 59px;
   font-size: 20px;
@@ -324,42 +326,29 @@ border: 1px solid black;
   border-color: gray;
 }
 
-
-
-
-/* @media (min-width: 425px) {
-
+ .overlay {
+  position: relative;
+  top: 415px;
+  left: 10px;
+  color: #ffffff;
+  background: #00000000
+ 
 }
-
-
-@media (min-width: 1440px) {
-
+.celibrate-card {
+    height: 520px;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    background-size: cover
 }
-
-
-@media (min-width: 1200px) {
-
-}
-
-
-@media (min-width: 1024px) {
-  .icons-heart {
-   padding: 0px 10px;
-}
-.icons {
+.choices {
   position: relative;
   top: 42px;
 }
+
+.choices-icons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
 }
-
-
-@media (min-width: 1400px) {
-
-} */
-/* .kate-opsition {
-  bottom: 64px;
-position: relative;
-
-  right: 58px;
-
-} */
