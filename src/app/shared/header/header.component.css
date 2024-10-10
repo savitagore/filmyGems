@@ -376,14 +376,7 @@
   .choices-icons{
     bottom: 10px;
   }
-  .actor-name{
-    left: 7px;
-    font-size: 12px;
-  }
-  .role{
-    font-size: 10px;
-    left: 7px;
-  }
+  
   .personal-exports {
     font-size: 21px;
     color: #ffffff;
@@ -458,16 +451,6 @@
   }
   .right-dimond {
     display: block;
-  }
-  .actor-name{
-    bottom: 49px;
-    left: 19px;
-    font-size: 18px;
-  }
-  .role{
-    bottom: 54px;
-    font-size: 14px;
-    left: 19px;
   }
   .cross{
     right: 66px;
