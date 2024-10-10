@@ -5,12 +5,11 @@
   top: 5524px;
   left: 979px;
 }
+
 .logo-size {
   width: 245px;
   height: 67.84px;
 }
-
-
 .company-name {
   color: #986708;
   font-size: 20px;
@@ -18,18 +17,18 @@
   font-weight: bold;
   height: 30px;
 }
-.custom-colors{
-color: #CFCFCF;
-font-size: 14px;
+
+.custom-colors {
+  color: #CFCFCF;
+  font-size: 14px;
 }
+
 .footer-logo {
   max-width: 100%;
   height: auto;
   margin-top: 10px;
 }
-.bg-colors{
-  background-color: #5E5E5E;
-}
+
 .footer a {
   transition: color 0.3s ease;
 }
@@ -37,18 +36,6 @@ font-size: 14px;
 .bg-custom {
   background: #000000;
 }
-
-.margin {
-  margin-left: -43px;
-}
-.padd{
-  padding-left: 107px;
-
-}
-.icon-margins{
-  margin-top: -19px;
-}
-
 .custom-input {
   color: #333;
   border: 1px solid #ccc;
@@ -56,8 +43,8 @@ font-size: 14px;
   margin-left: 136px;
 }
 
-.custom-text{
-color:#595959;
+.custom-text {
+  color: #595959;
 }
 
 @media (max-width: 768px) {
@@ -74,13 +61,10 @@ color:#595959;
   margin-bottom: 2rem;
 }
 
-.filmy-custom{
-color:#595959;
+.filmy-custom {
+  color: #595959;
 }
-.facebook-icons{
-  font-size: 30px;
-  color: #505050;
-}
+
 
 
 .custom-text {
@@ -105,14 +89,13 @@ color:#595959;
 .input-group-append img {
   width: 20px;
   height: auto;
-  /* color: #FFB62A; */
   fill: #FFB62A;
 
 }
 
 .bg-colors {
   background-color: #333;
-  /* color: #FFB62A; */
+
 }
 
 .input-group {
@@ -120,32 +103,30 @@ color:#595959;
   width: 100%;
 }
 
+.join-padding {
+  padding-left: 821px;
+
+}
+
+.font-join {
+  margin-top: -87px;
+}
+
 
 /*--------------------------------------*/
-.bg-all{
+.bg-all {
   background-color: #090909;
 }
-/* .card {
-  position: relative;
+
+.height-most {
+  height: 520px;
+  width: 100%;
 }
 
-.new-label-container {
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
+.h-fav {
+  height: 240px;
+  width:100%;
 }
-
-.btn-danger {
-  background-color: red;
-  border: none;
-  padding: 5px 15px;
-  font-size: 12px;
-} */
-
-
-
-
 
 .custom-bg {
   background-color: #343232;
@@ -191,41 +172,23 @@ small {
 .btn-read-more {
   background-color: #ffb62a;
   color: #000;
-
+  font-size: 18px;
 }
-
-/* .new-label {
-  background-color: #007bff;
-  color: white;
-  padding: 2px 8px;
-  border-radius: 10px;
-  position: absolute;
-  top: 0px
-  right: 10px;
-} */
-
-/* .custom img {
-  height: 400px;
-  background-color: #ffb62a;
-  background-position: center;
-} */
-
 .custom-section {
-  background-color: #ffb62a;
-  background-image: url("/assets/music/music_bg.png");
-  background-position: center;
+  background-image: url("/assets/music/group.png");
   background-size: cover;
   background-repeat: no-repeat;
+  height: 484px;
 }
 
 .btn-custom {
-  background-color: #ffc107;
-  border: 1px solid black;
+border: 1px solid black;
   color: black;
 }
 
 .cutom-font-color {
   color: #ffb62a;
+  font-size: 16px;
 }
 
 .font-custom {
@@ -238,22 +201,18 @@ small {
   text-align: center;
 }
 
-
-/*
-.img-custom {
-  position: relative;
-  bottom: 21px;
-  height: 235px;
-} */
 .card {
   border-radius: 10px;
 
   overflow: hidden;
-}.card-body {
+}
+
+.card-body {
   border-radius: 0 0 10px 10px;
 
   background-color: #333;
 }
+
 .custom-ellipsis {
   /* white-space: nowrap;
   overflow: hidden;
@@ -264,14 +223,18 @@ small {
   height: 70px;
 
 }
+
 .fixed-size-heading {
   font-size: 40px;
   color: #ffffff;
+  padding-top: 8px;
 }
 
 .favorites-font {
   font-size: 24px;
+  color: #FFC936;
 }
+
 @media (max-width: 768px) {
   .font-custom {
     font-size: 24px;
@@ -297,50 +260,45 @@ small {
 }
 
 .btn-custom {
-  max-width: 200px;
+  max-width: 135px;
   width: 100%;
+  font-size: 18px;
 }
 
-.kate-opsition {
+ .kate-opsition {
   position: absolute;
+  /* margin-bottom: -75px; */
 }
 
-.common-kate {
+ .common-kate {
   position: relative;
   bottom: 59px;
   font-size: 20px;
   left: 10px;
 }
 
-.hollywod {
+ .hollywod {
   position: relative;
   bottom: 61px;
   font-size: 14px;
   left: 10px;
 }
-.custom-padding{
-  padding-left: 180px;
+
+.custom-padding {
+  padding-left: 50px;
 }
 
 .icons {
   position: relative;
   top: 42px;
 }
-.icons-heart{
+
+.icons-heart {
   display: flex;
   justify-content: space-between;
-  padding:0px  10px;
-
-
+  padding: 0px 10px;
 }
-/* .checked-icons {
-  position: relative;
-  left: 199px;
-}
-.verified-icons{
-  position: relative;
- left: 490px;
-} */
+
 
 @media (max-width: 768px) {
   .custom-section {
@@ -351,8 +309,46 @@ small {
     font-size: 1rem;
     max-width: 100%;
   }
+
   .custom-section h1 {
-    font-size: 1.5rem; /* Smaller font size for mobile */
+    font-size: 1.5rem;
+  }
+
 }
 
+.load-color {
+  background-color: #F3AD3B;
+  font-size: 18px;
+}
+
+.groove {
+  border-style: groove;
+  border-color: gray;
+}
+
+ .overlay {
+  position: relative;
+  top: 415px;
+  left: 10px;
+  color: #ffffff;
+  background: #00000000
+ 
+}
+.celibrate-card {
+    height: 520px;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    background-size: cover
+}
+.choices {
+  position: relative;
+  top: 42px;
+}
+
+.choices-icons {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 10px;
 }

@@ -247,19 +247,20 @@
     border-radius: 10px;
 }
 .overlay {
-  position: relative;
-  top: 160px;
-  padding: 0px 10px;
-  color: #ffffff;
-  background: #00000000;
+     position: relative;
+    top: 160px;
+    padding: 0px 10px;
+    /* left: 10px; */
+    color: #ffffff;
+    background: #00000014;
 
 }
 .overlay-kirti{
   position: relative;
   top: 438px;
-  padding: 0px 10px;
+  left: 10px;
   color: #ffffff;
-  background:#00000000
+  background:#00000000;
 }
 .view {
     width: 130px;
