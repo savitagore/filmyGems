@@ -173,6 +173,7 @@ small {
   background-color: #ffb62a;
   color: #000;
   font-size: 18px;
+  width: 241px;
 }
 .custom-section {
   background-image: url("/assets/music/group.png");
@@ -319,6 +320,7 @@ border: 1px solid black;
 .load-color {
   background-color: #F3AD3B;
   font-size: 18px;
+  width: 130px;
 }
 
 .groove {
@@ -351,4 +353,19 @@ border: 1px solid black;
   display: flex;
   justify-content: space-between;
   padding: 0px 10px;
+}
+.overlays {
+  position: relative;
+  top: 160px;
+  left: 10px;
+  color: #ffffff;
+  background: #00000000
+ 
+}
+.celibrate-cards {
+    height: 240px;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    background-size: cover
 }

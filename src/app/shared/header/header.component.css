@@ -269,6 +269,8 @@
   left: 10px;
   /* background: #00000000;  */
   color: #ffffff;
+  background: #00000000;
+ 
 }
 .view {
     width: 130px;
@@ -420,7 +422,7 @@
     bottom: 14px;
     left: 42px;
   }
-  
+
 .join-btn {
   border-radius: 50px;
   font-size: 14px;
@@ -528,7 +530,7 @@
     bottom: 14px;
     left: 58px;
   }
-  
+
 .join-btn {
   border-radius: 50px;
   font-size: 14px;
@@ -649,12 +651,12 @@
 }
   
 .dropdown-menu.scroll::-webkit-scrollbar {
-  width: 8px; 
+  width: 8px;
 }
 
 .dropdown-menu.scroll::-webkit-scrollbar-thumb {
-  background: #986708; 
-  border-radius: 10px; 
+  background: #986708;
+  border-radius: 10px;
 }
 
 .dropdown-menu.scroll::-webkit-scrollbar-track {
@@ -663,3 +665,7 @@
 
 
 
+
+.card-img-top {
+  height: 240px;
+}
