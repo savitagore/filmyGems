@@ -249,17 +249,17 @@
 .overlay {
   position: relative;
   top: 160px;
-  left: 10px;
+  padding: 0px 10px;
   color: #ffffff;
-  background: #00000000
- 
+  background: #00000000;
+
 }
 .overlay-kirti{
   position: relative;
   top: 438px;
-  left: 10px;
+  padding: 0px 10px;
   color: #ffffff;
-  background: #00000000
+  background:#00000000
 }
 .view {
     width: 130px;
