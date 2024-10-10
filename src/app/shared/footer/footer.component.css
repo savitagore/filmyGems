@@ -5,12 +5,11 @@
   top: 5524px;
   left: 979px;
 }
+
 .logo-size {
   width: 245px;
   height: 67.84px;
 }
-
-
 .company-name {
   color: #986708;
   font-size: 20px;
@@ -18,10 +17,12 @@
   font-weight: bold;
   height: 30px;
 }
-.custom-colors{
-color: #CFCFCF;
-font-size: 14px;
+
+.custom-colors {
+  color: #CFCFCF;
+  font-size: 14px;
 }
+
 .footer-logo {
   max-width: 100%;
   height: auto;
@@ -35,18 +36,6 @@ font-size: 14px;
 .bg-custom {
   background: #000000;
 }
-
-/* .margin {
-  margin-left: -43px;
-} */
-/* .padd{
-  padding-left: 107px;
-
-} */
-/* .icon-margins{
-  margin-top: -19px;
-} */
-
 .custom-input {
   color: #333;
   border: 1px solid #ccc;
@@ -54,8 +43,8 @@ font-size: 14px;
   margin-left: 136px;
 }
 
-.custom-text{
-color:#595959;
+.custom-text {
+  color: #595959;
 }
 
 @media (max-width: 768px) {
@@ -72,8 +61,8 @@ color:#595959;
   margin-bottom: 2rem;
 }
 
-.filmy-custom{
-color:#595959;
+.filmy-custom {
+  color: #595959;
 }
 
 
@@ -113,46 +102,29 @@ color:#595959;
   position: relative;
   width: 100%;
 }
-.join-padding{
+
+.join-padding {
   padding-left: 821px;
 
-}.font-join{
+}
+
+.font-join {
   margin-top: -87px;
 }
 
 
 /*--------------------------------------*/
-.bg-all{
+.bg-all {
   background-color: #090909;
 }
 
-.height-most{
-  height:520px
-}
-.h-fav{
-  height:240px;
-}
-/* .card {
-  position: relative;
+.height-most {
+  height: 520px
 }
 
-.new-label-container {
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 1;
+.h-fav {
+  height: 240px;
 }
-
-.btn-danger {
-  background-color: red;
-  border: none;
-  padding: 5px 15px;
-  font-size: 12px;
-} */
-
-
-
-
 
 .custom-bg {
   background-color: #343232;
@@ -198,42 +170,23 @@ small {
 .btn-read-more {
   background-color: #ffb62a;
   color: #000;
-
+  font-size: 18px;
 }
-
-/* .new-label {
-  background-color: #007bff;
-  color: white;
-  padding: 2px 8px;
-  border-radius: 10px;
-  position: absolute;
-  top: 0px
-  right: 10px;
-} */
-
-/* .custom img {
-  height: 400px;
-  background-color: #ffb62a;
-  background-position: center;
-} */
-
 .custom-section {
-  /* background-color: #ffb62a; */
   background-image: url("/assets/music/group.png");
-  /* background-position: center; */
   background-size: cover;
   background-repeat: no-repeat;
   height: 484px;
 }
 
 .btn-custom {
-
-  border: 1px solid black;
+border: 1px solid black;
   color: black;
 }
 
 .cutom-font-color {
   color: #ffb62a;
+  font-size: 16px;
 }
 
 .font-custom {
@@ -246,22 +199,18 @@ small {
   text-align: center;
 }
 
-
-/*
-.img-custom {
-  position: relative;
-  bottom: 21px;
-  height: 235px;
-} */
 .card {
   border-radius: 10px;
 
   overflow: hidden;
-}.card-body {
+}
+
+.card-body {
   border-radius: 0 0 10px 10px;
 
   background-color: #333;
 }
+
 .custom-ellipsis {
   /* white-space: nowrap;
   overflow: hidden;
@@ -272,14 +221,18 @@ small {
   height: 70px;
 
 }
+
 .fixed-size-heading {
   font-size: 40px;
   color: #ffffff;
+  padding-top: 8px;
 }
 
 .favorites-font {
   font-size: 24px;
+  color: #FFC936;
 }
+
 @media (max-width: 768px) {
   .font-custom {
     font-size: 24px;
@@ -307,6 +260,7 @@ small {
 .btn-custom {
   max-width: 135px;
   width: 100%;
+  font-size: 18px;
 }
 
 .kate-opsition {
@@ -326,7 +280,8 @@ small {
   font-size: 14px;
   left: 10px;
 }
-.custom-padding{
+
+.custom-padding {
   padding-left: 50px;
 }
 
@@ -334,19 +289,13 @@ small {
   position: relative;
   top: 42px;
 }
-.icons-heart{
+
+.icons-heart {
   display: flex;
   justify-content: space-between;
-  padding:0px  10px;
+  padding: 0px 10px;
 }
-/* .checked-icons {
-  position: relative;
-  left: 199px;
-}
-.verified-icons{
-  position: relative;
- left: 490px;
-} */
+
 
 @media (max-width: 768px) {
   .custom-section {
@@ -357,10 +306,21 @@ small {
     font-size: 1rem;
     max-width: 100%;
   }
+
   .custom-section h1 {
     font-size: 1.5rem;
+  }
+
 }
 
+.load-color {
+  background-color: #F3AD3B;
+  font-size: 18px;
+}
+
+.groove {
+  border-style: groove;
+  border-color: gray;
 }
 
 /* @media (min-width: 425px) {
