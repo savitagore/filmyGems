@@ -491,10 +491,29 @@
  }
    }
   
-
+@media (min-width:1024px) {
+ 
+/* .nav-link {
+  font-size: 18px;
+  margin: 0px 9px;
+} */
+/* .linear {
+  top: 118px;
+}
+.search-box {
+  position: relative;
+  top: 52px;
+} */
+}
 
 .dropdown-menu.scroll::-webkit-scrollbar-thumb {
     background: #986708; 
     border-radius: 10px
 }
- 
+ .kirti-img {
+  height: 520px;
+  width: 331px;
+}
+.card-img-top{
+  height: 240px;
+} 
