@@ -238,24 +238,20 @@
     width: 90px;
 }
 
+.celibrate-card {
+  height: 240px;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
 .overlay {
-    position: absolute;
-}
-
-.actor-name {
-    position: relative;
-    bottom: 49px;
-    left: 19px;
-    font-size: 18px;
-    color: #ffffff;
-}
-
-.role {
-    position: relative;
-    bottom: 54px;
-    font-size: 14px;
-    left: 19px;
-    color: #ffffff;
+  position: relative;
+  top: 160px;
+  left: 10px;
+  color: #ffffff;
+  background: #00000000
+ 
 }
 .view {
     width: 130px;
