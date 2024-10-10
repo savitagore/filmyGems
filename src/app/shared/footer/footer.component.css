@@ -352,3 +352,18 @@ border: 1px solid black;
   justify-content: space-between;
   padding: 0px 10px;
 }
+.overlays {
+  position: relative;
+  top: 160px;
+  left: 10px;
+  color: #ffffff;
+  background: #00000000
+ 
+}
+.celibrate-cards {
+    height: 240px;
+    background-repeat: no-repeat;
+    position: relative;
+    width: 100%;
+    background-size: cover
+}
