@@ -481,19 +481,17 @@
 
   
 /*****************************************************/
-.dropdown-menu.scroll {
-    max-height: 150px; 
-    overflow-y: auto;
-     
-}
 .dropdown-menu.scroll::-webkit-scrollbar {
-    width: 8px; 
-    height: 10px;
+  width: 8px; 
 }
 
 .dropdown-menu.scroll::-webkit-scrollbar-thumb {
-    background: #ccc; 
-    border-radius: 10px; 
+  background: #986708; 
+  border-radius: 10px; 
+}
+
+.dropdown-menu.scroll::-webkit-scrollbar-track {
+  background: #ccc
 }
 
 
