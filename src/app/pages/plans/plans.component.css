@@ -1,3 +1,116 @@
+.container h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #ffffff;
+  }
+  
+  .container p {
+    font-size: 18px;
+    color: #ffffff;
+  }
+.card{
+    height: 602.16px;
+}
+.card-body {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    top: 20px;
+    position: relative;
+  }
+  
+  .mini-line {
+    width: 164.65px;
+    height: 2px;
+    background-color: #FFE500;
+  }
+  
+  .diamond-img img {
+    position: relative;
+    bottom: 55px;
+  }
+  .basic-number{
+    position: relative;
+    bottom: 70px;
+  }
+  .basic-btn {
+    width: 125.25px;
+    background-color: #000000;
+    border-radius: 20px;
+    border: none;
+    color: #ffffff;
+    font-size: 14.8px;
+  }
+  
+.card h3 {
+    font-size: 65.26px;
+    font-weight: bold;
+    color: #FFE600;
+  }
 
+.lists{
+    position: relative;
+    bottom: 51px;
+} 
+.videos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} 
+
+ .videos h5{
+    font-size: 18.5px;
+    color: #869ED4;
+ }
+ .videos span{
+    font-size: 36px;
+    color: #FCD751;
+    font-weight: 200;
+    position: relative;
+    bottom: 10px;
+ }
+ .small-line{
+    height: 2px;
+    width: 65.67px;
+    background-color: #4260A5;
+    position: relative;
+    bottom: 10px;
+ }
+  
+ .subscribe{
+    width: 212.75px;
+    height: 44.4px;
+    border-radius: 50px;
+    font-size: 12.95px;
+    border: 1px solid #238ECB;
+ }
+
+  @media (min-width:320px) {
+    .container h2 {
+        font-size: 21px;
+    }
+    .container p {
+        font-size: 14px;
+    }
+  }
+
+  @media (min-width:768px) {
+    .container h2 {
+        font-size: 30px;
+    }
+    .container p {
+        font-size: 16px;
+    }
+  }
+
+  @media (min-width:1200px) {
+    .container h2 {
+        font-size: 40px;
+      }
+      .container p {
+        font-size: 18px;
+      }
+  }
+  
 
 

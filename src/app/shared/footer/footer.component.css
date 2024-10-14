@@ -29,6 +29,11 @@
   margin-top: 10px;
 }
 
+.logo{
+  position: relative;
+    bottom: 52px;
+}
+
 .footer a {
   transition: color 0.3s ease;
 }
@@ -318,6 +323,8 @@ border: 1px solid black;
   .join-text{
     font-size: 29px;
     font-weight: bold;
+    padding-bottom: 20px;
+    text-align: left;
 
   }
   .company-name {
@@ -328,6 +335,7 @@ border: 1px solid black;
     flex: 0 0 auto;
     width: 49.666667%;
 }
+
 }
 
 
@@ -368,21 +376,22 @@ border: 1px solid black;
 .custom-color {
   font-size: 17px;
 }
-.col-md-2 {
-  flex: 0 0 auto;
-  width: 34.666667%;
-}
+
 .join-text{
   font-size: 50px;
-  font-weight: bold;
+ 
 }
-.col-md-2 {
+/* .logo{
+  position: relative;
+  top: 35px;
+} */
+/* .col-md-2 {
   flex: 0 0 auto;
-  width: 24.666667%;
-}
+ width: 24.666667%;
+} */
 }
 
-@media (min-width: 769px) and (max-width: 992px) {
+/* @media (min-width: 769px) and (max-width: 992px) {
   .font-custom {
     font-size: 26px;
   }
@@ -390,8 +399,19 @@ border: 1px solid black;
   .btn-custom {
     font-size: 18px;
   }
+} */
+@media (min-width:992px) {
+  .join-text{
+    font-size: 55px;
+    text-align: right;
+  }
+  .logo{
+    top: 45px;
+  }
+  .col-md-2{
+    width: 16.13%;
+  }
 }
-
 
 
 
@@ -423,5 +443,10 @@ border: 1px solid black;
   flex: 0 0 auto;
   width: 16.666667%;
 }
+.logo{
+  top: -44px;
 }
-
+}
+.lets-font{
+  font-size: 50px;
+}

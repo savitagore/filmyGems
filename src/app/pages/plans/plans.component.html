@@ -1,15 +1,123 @@
-<section class="header-images" [ngStyle]="{'background-image': 'url(' + backgroundImageUrl + ')'}">
-    <div class="container">
-      <div class="row">
-        <div class="text-center text-white build-high ">
-          <h1 class="main-title ">Unlock Unlimited Access And Endless
-            Possibilities With Our Subscription Plan</h1>
-          <p>High quality Celebrity profile and contact just for you only, what
-            are you waiting for? Let's join us.</p>
-        </div>
-      </div>
-      <div class="horizontal-line">
-        <div class="line"></div>
+<section class="header-images roboto-font" [ngStyle]="{'background-image': 'url(' + backgroundImageUrl + ')'} ">
+  <div class="container">
+    <div class="row">
+      <div class="text-center text-white build-high ">
+        <h1 class="main-title ">Unlock Unlimited Access And Endless
+          Possibilities With Our Subscription Plan</h1>
+        <p>High quality Celebrity profile and contact just for you only, what
+          are you waiting for? Let's join us.</p>
       </div>
     </div>
+    <div class="d-flex  justify-content-center flex-direction-column align-items-center">
+      <div class="line"></div>
+    </div>
+  </div>
+</section>
+
+<section class="bg-middle roboto-font">
+  <div class="container text-center py-5">
+    <h2>Choose your subscription plan</h2>
+    <p>Choose the subscription plan that suits you and your need</p>
+
+    <div class="btn-group mb-4" role="group" aria-label="Subscription plan toggle">
+      <button type="button" class="btn btn-outline-primary">Monthly</button>
+      <button type="button" class="btn btn-outline-primary">Yearly</button>
+    </div>
+
+    <div class="row justify-content-center">
+      <!-- Basic Plan -->
+      <div class="col-md-3">
+        <div class="card text-white bg-primary mb-4">
+          <div class="card-body">
+            <div class="mini-line"></div>
+            <div class="diamond-img">
+              <img src="assets/plans/dimonds/basic.png" alt="" class="img-fluid">
+            </div>
+            <div class="basic-number">
+              <button class=" basic-btn text-center">Basic</button>
+              <h3>199<span class="small">.</span></h3>
+              <img src="assets/plans/dimonds/curve.png" class="img-fluid" alt="">
+            </div>
+            <div class="lists">
+              <div class="videos">
+                <h5>Contact Numbers</h5>
+                <span>5</span>
+                <div class="small-line"></div>
+              </div>
+              <div class="videos">
+                <h5>Customer Support</h5>
+                <span>Yes</span>
+                <div class="small-line"></div>
+              </div>
+              <div class="videos">
+                <h5>Agent Support</h5>
+                <span>Yes</span>
+                <div class="small-line"></div>
+              </div>
+              <div class="videos">
+                <h5>Videos</h5>
+                <span>Yes</span>
+                <div class="small-line"></div>
+              </div>
+              <button class="btn subscribe text-center">Subscribe Now</button>
+              <!-- <a href="#" class="btn btn-outline">Subscribe Now</a> -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Silver Plan -->
+      <div class="col-md-3">
+        <div class="card text-white bg-info mb-4">
+          <div class="card-body">
+            <h3>299<span class="small">.</span></h3>
+            <h5>Silver</h5>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Contact Numbers: 10</li>
+              <li>Customer Support: Yes</li>
+              <li>Agent Support: Yes</li>
+              <li>Videos: No</li>
+            </ul>
+            <a href="#" class="btn btn-outline-light">Subscribe Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Gold Plan -->
+      <div class="col-md-3">
+        <div class="card text-white bg-warning mb-4">
+          <div class="card-body">
+            <div class="ribbon ribbon-top-right"><span>Most Popular</span></div>
+            <h3>599<span class="small">.</span></h3>
+            <h5>Gold</h5>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Contact Numbers: 15</li>
+              <li>Customer Support: Yes</li>
+              <li>Agent Support: Yes</li>
+              <li>Videos: Yes</li>
+            </ul>
+            <a href="#" class="btn btn-outline-dark">Subscribe Now</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Platinum Plan -->
+      <div class="col-md-3">
+        <div class="card text-white bg-danger mb-4">
+          <div class="card-body">
+            <h3>1099<span class="small">.</span></h3>
+            <h5>Platinum</h5>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>Contact Numbers: 20</li>
+              <li>Customer Support: Yes</li>
+              <li>Agent Support: Yes</li>
+              <li>Videos: Yes</li>
+            </ul>
+            <a href="#" class="btn btn-outline-light">Subscribe Now</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </section>
