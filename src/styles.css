@@ -12,7 +12,7 @@
 
 .choices {
   position: relative;
-  top: 42px;
+  top: 14px;
 }
 
 .choices-icons {
@@ -45,5 +45,12 @@
   height: 48px;
   background-color: #F3AD3B;
   border: none;
+  font-size: 18px;
+}
+.main-title {
+  font-size: 50px;
+  font-weight: bold;
+}
+.build-high p {
   font-size: 18px;
 }
