@@ -1,4 +1,4 @@
-<section class="header header-images roboto-font">
+<section class="header  roboto-font header-images"  [ngStyle]="{'background-image': 'url(' + backgroundImageUrl + ')'}">
     <div class="header-Navbar">
         <div class="container">
             <div class="row">
@@ -165,7 +165,7 @@
         </div>
 
         <div class="row pt-4 aos-init aos-animate" data-aos="fade-up">
-            <h2 class="top-gems pb-2">To Gems Showcase</h2>
+            <h5 class="text-h2 pb-2">To Gems Showcase</h5>
             <div class="col-12 col-md-5">
                 <div class="celibrate-card shaid" style="background-image: url('assets/topgems_img/sahid_img.png');" >
                     <div class="choices">
@@ -418,7 +418,7 @@
         </div>
         <div class="row pt-4 justify-content-center align-items-center">
             <div class="col-md-2 view-btn">
-                <button class=" rounded-pill view">View All</button>
+                <button class=" rounded-pill btn-all">View All</button>
             </div>
         </div>
         <div class="row pt-4 aos-init aos-animate" data-aos="fade-up">
