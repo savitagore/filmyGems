@@ -1,8 +1,8 @@
- .header-images {
+ /* .header-images {
    background-image: url('/assets/landing_Img/landing-bg.png');
   background-size: cover;
   height: 448px;
-}
+} */
 
 .navbar {
   padding-top: 36px;
@@ -231,12 +231,11 @@
 }
 
 
-
+/*
 .top-gems {
   color: #FFC936;
   font-size: 25px;
-
-}
+} */
 
 /* .choices {
   position: relative;
@@ -258,14 +257,14 @@
   width: 90px;
 }
 
-.celibrate-card {
+/* .celibrate-card {
   height: 240px;
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
   background-size: cover;
   border-radius: 10px;
-}
+} */
 
 .overlay {
   position: relative;
@@ -292,12 +291,12 @@
 
 }
 
-.view {
+/* .view {
   width: 130px;
   height: 48px;
   background-color: #F3AD3B;
   border: none;
-}
+} */
 
 .export {
   background-image: url('/assets/exports/exports_bg.png');

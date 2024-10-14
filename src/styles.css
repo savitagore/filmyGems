@@ -27,5 +27,23 @@
   left: 10px;
   color: #ffffff;
   background: #00000000;
-
+}
+.celibrate-card {
+  height: 240px;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  border-radius: 10px;
+}
+.text-h2 {
+  color: #FFC936;
+  font-size: 25px;
+}
+.btn-all{
+  width: 130px;
+  height: 48px;
+  background-color: #F3AD3B;
+  border: none;
+  font-size: 18px;
 }
