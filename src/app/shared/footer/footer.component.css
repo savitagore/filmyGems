@@ -106,9 +106,9 @@
 
 
 /*--------------------------------------*/
-.bg-all {
+/* .bg-all {
   background-color: #090909;
-}
+} */
 
 .height-most {
   height: 520px;
@@ -223,10 +223,6 @@ border: 1px solid black;
   padding-top: 8px;
 }
 
-.favorites-font {
-  font-size: 24px;
-  color: #FFC936;
-}
 
 
 .btn-custom {
@@ -237,7 +233,7 @@ border: 1px solid black;
 
  .kate-opsition {
   position: absolute;
-  /* margin-bottom: -75px; */
+
 }
 
  .common-kate {
@@ -271,11 +267,6 @@ border: 1px solid black;
 
 
 
-.load-color {
-  background-color: #F3AD3B;
-  font-size: 18px;
-  width: 130px;
-}
 
 .groove {
   border-style: groove;
@@ -290,19 +281,13 @@ border: 1px solid black;
   background:#00000000
 
  }
-.celibrate-card {
-    height: 520px;
-    background-repeat: no-repeat;
-    position: relative;
-    width: 100%;
-    background-size:cover;
-}
+
 .choices {
   position: relative;
   top: 6px;
 }
 
-.choices-icons {
+ .choices-icons {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -316,34 +301,28 @@ border: 1px solid black;
   background:#00000000
 
 }
-.celibrate-cards {
-  height: 240px;
-  background-repeat: no-repeat;
-  position: relative;
-  width: 100%;
-  background-size: cover;
-}
+
 
 .join-text {
   font-size: 90px;
   font-weight: bold;
   color: #1F2124;
   text-align: right;
-  margin: 0; 
+  margin: 0;
   padding: 0;
   line-height: 1;
 }
 
 @media (min-width:320px) {
-  
+
   .join-text{
     font-size: 29px;
     font-weight: bold;
-   
+
   }
   .company-name {
     font-size: 15px;
-   
+
   }
   .col-md-2 {
     flex: 0 0 auto;
@@ -414,16 +393,6 @@ border: 1px solid black;
 }
 
 
-/* @media(max-width: 1024px){
-  .join-text {
-    font-size: 55px;
-    font-weight: bold;
-}
-.col-md-2 {
-  flex: 0 0 auto;
-  width: 17.666667%;
-}
-} */
 
 
 @media (min-width:1200px) {
@@ -439,7 +408,7 @@ border: 1px solid black;
   font-weight: bold;
   color: #1F2124;
   text-align: right;
-  margin: 0; 
+  margin: 0;
   padding: 0;
   line-height: 1;
 }

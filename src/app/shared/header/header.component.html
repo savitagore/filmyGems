@@ -1,4 +1,4 @@
-<section class="header  header-images roboto-font" >
+<section class="header  roboto-font header-images"  [ngStyle]="{'background-image': 'url(' + backgroundImageUrl + ')'}">
     <div class="header-Navbar">
         <div class="container">
             <div class="row">
@@ -17,7 +17,7 @@
                                         <a class="nav-link text-white " href="#">Create Profile</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link text-white " href="#">Plans</a>
+                                        <a class="nav-link text-white " routerLink="plans">Plans</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link text-white" href="#">About Us</a>
@@ -153,7 +153,7 @@
 </section>
 
 
-<section class="middle-section-part-1 py-3 roboto-font"  >
+<section class="bg-middle pt-3 roboto-font">
     <div class="container">
         <div class="row aos-init aos-animate" data-aos="fade-up">
             <div class="col-12 col-md-12">
@@ -165,7 +165,7 @@
         </div>
 
         <div class="row pt-4 aos-init aos-animate" data-aos="fade-up">
-            <h2 class="top-gems pb-2">To Gems Showcase</h2>
+            <h5 class="text-h2 pb-2">To Gems Showcase</h5>
             <div class="col-12 col-md-5">
                 <div class="celibrate-card shaid" style="background-image: url('assets/topgems_img/sahid_img.png');" >
                     <div class="choices">
@@ -181,7 +181,7 @@
                         <div class="star">
                             <img src="assets/svg-icons/stars.svg" alt="" class="img-fluid">
                         </div>
-                       
+
                         <span class="actor-name">Shahid Kapoor</span>
                         <p class="role">Bollywood Actor</p>
                     </div>
@@ -418,7 +418,7 @@
         </div>
         <div class="row pt-4 justify-content-center align-items-center">
             <div class="col-md-2 view-btn">
-                <button class=" rounded-pill view">View All</button>
+                <button class=" rounded-pill btn-all">View All</button>
             </div>
         </div>
         <div class="row pt-4 aos-init aos-animate" data-aos="fade-up">
@@ -448,7 +448,7 @@
 
         </div>
     </div>
-   
+
 </section>
 <div class="content">
     <router-outlet></router-outlet>

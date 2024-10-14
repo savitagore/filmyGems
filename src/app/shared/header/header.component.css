@@ -1,8 +1,8 @@
-.header-images {
-  background-image: url('/assets/landing_Img/landing-bg.png');
+ /* .header-images {
+   background-image: url('/assets/landing_Img/landing-bg.png');
   background-size: cover;
   height: 448px;
-}
+} */
 
 .navbar {
   padding-top: 36px;
@@ -214,9 +214,9 @@
   background-color: #FFF4DE;
 }
 
-.middle-section-part-1 {
+/* .middle-section-part-1 {
   background-color: #090909;
-}
+} */
 
 .middle-section {
   background-color: #FFF4DE;
@@ -231,14 +231,13 @@
 }
 
 
-
+/*
 .top-gems {
   color: #FFC936;
   font-size: 25px;
+} */
 
-}
-
-.choices {
+/* .choices {
   position: relative;
   top: 15px;
 }
@@ -248,7 +247,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0px 10px;
-}
+} */
 
 .hot-choice {
   background-color: #FFA800;
@@ -258,14 +257,14 @@
   width: 90px;
 }
 
-.celibrate-card {
+/* .celibrate-card {
   height: 240px;
   background-repeat: no-repeat;
   position: relative;
   width: 100%;
   background-size: cover;
   border-radius: 10px;
-}
+} */
 
 .overlay {
   position: relative;
@@ -286,18 +285,18 @@
   position: relative;
   top: 438px;
   left: 10px;
-  background: #00000000; 
+  background: #00000000;
   color: #ffffff;
   background-color: rgba(0, 0, 0, 0.08)
 
 }
 
-.view {
+/* .view {
   width: 130px;
   height: 48px;
   background-color: #F3AD3B;
   border: none;
-}
+} */
 
 .export {
   background-image: url('/assets/exports/exports_bg.png');
@@ -499,7 +498,7 @@
 
   .role {
     font-size: 10px;
-   
+
   }
 
   .personal-exports {
@@ -525,7 +524,7 @@
     right: 10px;
     top: 20px;
   }
- 
+
 }
 
 @media (min-width: 992px) {
@@ -572,7 +571,7 @@
   .dropdown-menu.scroll {
     width: 218px;
   }
- 
+
 }
 
 
@@ -637,7 +636,7 @@
     display: block;
   }
 
-  .actor-name {   
+  .actor-name {
     font-size: 20px;
   }
 
