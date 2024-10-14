@@ -147,6 +147,10 @@
   border-left: 1px solid #ddd;
   border-radius: 0px 50px 50px 0px;
   font-size: 18px;
+  border: none;
+}
+.small-bar{
+  background-color: #C4C4C4;
 }
 
 .dropdown-item {
