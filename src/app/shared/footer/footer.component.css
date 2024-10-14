@@ -278,8 +278,9 @@ border: 1px solid black;
   top: 415px;
   left: 10px;
   color: #ffffff;
-  background:#00000000
-
+  /* background:#00000000; */
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  /* background: linear-gradient(90deg, #000000 0%, #ffffff 100%); */
  }
 
 .choices {
@@ -424,4 +425,9 @@ border: 1px solid black;
   width: 16.666667%;
 }
 }
-
+.gradient-blur {
+  background: linear-gradient(90deg, #000000 0%, #ffffff 100%);
+  filter: blur(28%);
+  width: 300px;
+  height: 300px;
+}
