@@ -47,15 +47,7 @@
   color: #595959;
 }
 
-@media (max-width: 768px) {
-  .contact-img {
-    width: 300px;
-    height: auto;
-    top: initial;
-    left: initial;
-    position: relative;
-  }
-}
+
 
 .footer .col-md-3 {
   margin-bottom: 2rem;
@@ -114,9 +106,9 @@
 
 
 /*--------------------------------------*/
-.bg-all {
+/* .bg-all {
   background-color: #090909;
-}
+} */
 
 .height-most {
   height: 520px;
@@ -173,6 +165,7 @@ small {
   background-color: #ffb62a;
   color: #000;
   font-size: 18px;
+  width: 241px;
 }
 .custom-section {
   background-image: url("/assets/music/group.png");
@@ -235,29 +228,6 @@ border: 1px solid black;
   color: #FFC936;
 }
 
-@media (max-width: 768px) {
-  .font-custom {
-    font-size: 24px;
-  }
-
-  .btn-custom {
-    font-size: 16px;
-  }
-
-  .cutom-font-color {
-    font-size: 20px;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 992px) {
-  .font-custom {
-    font-size: 26px;
-  }
-
-  .btn-custom {
-    font-size: 18px;
-  }
-}
 
 .btn-custom {
   max-width: 135px;
@@ -300,25 +270,11 @@ border: 1px solid black;
 }
 
 
-@media (max-width: 768px) {
-  .custom-section {
-    padding: 20px 0;
-  }
-
-  .sub-text {
-    font-size: 1rem;
-    max-width: 100%;
-  }
-
-  .custom-section h1 {
-    font-size: 1.5rem;
-  }
-
-}
 
 .load-color {
   background-color: #F3AD3B;
   font-size: 18px;
+  width: 130px;
 }
 
 .groove {
@@ -331,19 +287,19 @@ border: 1px solid black;
   top: 415px;
   left: 10px;
   color: #ffffff;
-  background: #00000000
- 
-}
+  background:#00000000
+
+ }
 .celibrate-card {
     height: 520px;
     background-repeat: no-repeat;
     position: relative;
     width: 100%;
-    background-size: cover
+    background-size:cover;
 }
 .choices {
   position: relative;
-  top: 42px;
+  top: 6px;
 }
 
 .choices-icons {
@@ -352,3 +308,151 @@ border: 1px solid black;
   justify-content: space-between;
   padding: 0px 10px;
 }
+.overlays {
+  position: relative;
+  top: 160px;
+  left: 10px;
+  color: #ffffff;
+  background:#00000000
+
+}
+.celibrate-cards {
+  height: 240px;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+}
+
+.join-text {
+  font-size: 90px;
+  font-weight: bold;
+  color: #1F2124;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+@media (min-width:320px) {
+
+  .join-text{
+    font-size: 29px;
+    font-weight: bold;
+
+  }
+  .company-name {
+    font-size: 15px;
+
+  }
+  .col-md-2 {
+    flex: 0 0 auto;
+    width: 49.666667%;
+}
+}
+
+
+@media (max-width: 768px) {
+  .font-custom {
+    font-size: 24px;
+  }
+
+  .btn-custom {
+    font-size: 16px;
+  }
+
+  .cutom-font-color {
+    font-size: 20px;
+  }
+  .custom-section {
+    padding: 20px 0;
+  }
+
+  .sub-text {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .custom-section h1 {
+    font-size: 1.5rem;
+  }
+  .contact-img {
+    width: 300px;
+    height: auto;
+    top: initial;
+    left: initial;
+    position: relative;
+  }
+  .custom-ellipsis {
+    height: 112px;
+}
+.custom-color {
+  font-size: 17px;
+}
+.col-md-2 {
+  flex: 0 0 auto;
+  width: 34.666667%;
+}
+.join-text{
+  font-size: 50px;
+  font-weight: bold;
+}
+.col-md-2 {
+  flex: 0 0 auto;
+  width: 24.666667%;
+}
+}
+
+@media (min-width: 769px) and (max-width: 992px) {
+  .font-custom {
+    font-size: 26px;
+  }
+
+  .btn-custom {
+    font-size: 18px;
+  }
+}
+
+
+/* @media(max-width: 1024px){
+  .join-text {
+    font-size: 55px;
+    font-weight: bold;
+}
+.col-md-2 {
+  flex: 0 0 auto;
+  width: 17.666667%;
+}
+} */
+
+
+@media (min-width:1200px) {
+  .custom-padding {
+    padding-top: 50px;
+}
+.filmy{
+  margin-top: 140px;
+}
+
+.join-text {
+  font-size: 90px;
+  font-weight: bold;
+  color: #1F2124;
+  text-align: right;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+.company-name {
+  color: #986708;
+  font-size: 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  height: 30px;
+}
+.col-md-2 {
+  flex: 0 0 auto;
+  width: 16.666667%;
+}
+}
+

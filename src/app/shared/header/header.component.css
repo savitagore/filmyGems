@@ -1,5 +1,5 @@
-.header-images {
-  background-image: url('/assets/landing_Img/landing-bg.png');
+ .header-images {
+   background-image: url('/assets/landing_Img/landing-bg.png');
   background-size: cover;
   height: 448px;
 }
@@ -19,13 +19,7 @@
 .navbar-nav .nav-item {
   margin-bottom: 10px;
 }
-.join-btn{
-  background-color: #F3AD3B;
-  color: #000000;
-  border-radius: 50px;
-  font-size: 18px;
-  width: 130px;
-}
+
 
 .build-high p {
   font-size: 18px;
@@ -86,6 +80,14 @@
   top: 52px;
 }
 
+.join-btn {
+  background-color: #F3AD3B;
+  color: #000000;
+  border-radius: 50px;
+  font-size: 18px;
+  width: 130px;
+}
+
 .search-container {
   position: absolute;
 
@@ -135,12 +137,6 @@
   position: relative;
   top: 13px
 }
-.dropdown-item{
-  font-size: 18px;
-}
-.dropdown-menu.scroll{
-  width: 225px;
-}
 
 .sticky-img {
   width: 100px;
@@ -157,6 +153,10 @@
 .dropdown-toggle {
   border-left: 1px solid #ddd;
   border-radius: 0px 50px 50px 0px;
+  font-size: 18px;
+}
+
+.dropdown-item {
   font-size: 18px;
 }
 
@@ -214,9 +214,9 @@
   background-color: #FFF4DE;
 }
 
-.middle-section-part-1 {
+/* .middle-section-part-1 {
   background-color: #090909;
-}
+} */
 
 .middle-section {
   background-color: #FFF4DE;
@@ -238,9 +238,9 @@
 
 }
 
-.choices {
+/* .choices {
   position: relative;
-  top: 42px;
+  top: 15px;
 }
 
 .choices-icons {
@@ -248,7 +248,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0px 10px;
-}
+} */
 
 .hot-choice {
   background-color: #FFA800;
@@ -258,13 +258,38 @@
   width: 90px;
 }
 
+.celibrate-card {
+  height: 240px;
+  background-repeat: no-repeat;
+  position: relative;
+  width: 100%;
+  background-size: cover;
+  border-radius: 10px;
+}
+
 .overlay {
   position: relative;
-  bottom: 55px;
-  left: 10px;
+  top: 155px;
+  padding: 0px 10px;
   color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.08)
+}
+
+.overlay-shaid {
+  position: relative;
+  top: 130px;
+  padding: 0px 10px;
+  color: #ffffff;
+}
+
+.overlay-kirti {
+  position: relative;
+  top: 438px;
+  left: 10px;
   background: #00000000;
- 
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.08)
+
 }
 
 .view {
@@ -299,6 +324,16 @@
   width: 100%;
 }
 
+.join-btn {
+  border-radius: 50px;
+  font-size: 14px;
+  width: 85px;
+}
+
+.madme-web {
+  width: 100%;
+}
+
 
 
 @media (min-width: 320px) {
@@ -309,11 +344,13 @@
   .left-dimond {
     display: none;
   }
+
   .join-btn {
     border-radius: 50px;
     font-size: 18px;
     width: 116px;
   }
+
   .join-ig img {
     position: absolute;
     bottom: 17px;
@@ -324,12 +361,14 @@
     position: relative;
     top: 4px;
   }
+
   .dropdown-menu {
     width: 186px;
-}
-.dropdown-menu.scroll {
-  width: 190px;
-}
+  }
+
+  .dropdown-menu.scroll {
+    width: 190px;
+  }
 
   .main-title {
     font-size: 28px;
@@ -366,13 +405,13 @@
     right: 5px;
     top: 13px;
   }
-}
 
-@media (min-width:425px) {
-  .export {
-    height: 85px;
-    padding: 7px;
+  .view-btn {
+    text-align: center;
   }
+  .celibrate-card {
+    margin-bottom: 10px;
+}
 }
 
 @media (min-width:375px) {
@@ -388,12 +427,20 @@
   }
 }
 
+@media (min-width:425px) {
+  .export {
+    height: 85px;
+    padding: 7px;
+  }
+}
+
 
 @media (min-width: 576px) {
   .logo-img {
     width: auto;
   }
 }
+
 
 @media (min-width: 768px) {
   .icons-join {
@@ -405,12 +452,12 @@
     bottom: 14px;
     left: 42px;
   }
-  
-.join-btn {
-  border-radius: 50px;
-  font-size: 14px;
-  width: 85px;
-}
+
+  .join-btn {
+    border-radius: 50px;
+    font-size: 14px;
+    width: 85px;
+  }
 
   .logo-img {
     width: 200px;
@@ -447,13 +494,12 @@
   }
 
   .actor-name {
-    left: 7px;
     font-size: 12px;
   }
 
   .role {
     font-size: 10px;
-    left: 7px;
+
   }
 
   .personal-exports {
@@ -462,7 +508,7 @@
   }
 
   .export {
-    height: 82px;
+    height: 75px;
     padding: 5px;
   }
 
@@ -479,6 +525,7 @@
     right: 10px;
     top: 20px;
   }
+
 }
 
 @media (min-width: 992px) {
@@ -486,6 +533,7 @@
     font-size: 18px;
     margin: 0px 9px;
   }
+
   .collapse {
     padding-left: 20px;
   }
@@ -504,6 +552,7 @@
     padding: 10px;
 
   }
+
   .icons-join {
     position: relative;
     top: 52px;
@@ -513,16 +562,19 @@
     bottom: 14px;
     left: 58px;
   }
-  
-.join-btn {
-  border-radius: 50px;
-  font-size: 14px;
-  width: 95px;
+
+  .join-btn {
+    border-radius: 50px;
+    font-size: 14px;
+    width: 95px;
+  }
+
+  .dropdown-menu.scroll {
+    width: 218px;
+  }
+
 }
-.dropdown-menu.scroll {
-  width: 218px;
-}
-}
+
 
 
 @media (min-width: 1200px) {
@@ -532,20 +584,22 @@
 
   .collapse {
     padding: 0px 24px;
-}
+  }
 
   .nav-link {
     font-size: 18px;
     margin: 0px 29px;
   }
-  .join-btn{
+
+  .join-btn {
     border-radius: 50px;
     font-size: 18px;
     width: 130px;
   }
+
   .join-ig img {
     bottom: 19px;
-        left: 89px;
+    left: 89px;
   }
 
   .left-dimond {
@@ -584,19 +638,15 @@
   }
 
   .actor-name {
-    bottom: 49px;
-    left: 19px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .role {
-    bottom: 54px;
     font-size: 14px;
-    left: 19px;
   }
 
   .cross {
-    right: 66px;
+    right: 13px;
     top: 31px;
     height: 24px;
   }
@@ -622,36 +672,36 @@
 }
 
 @media (min-width:1440px) {
-    .program {
-        padding: 0px 10px;
-    }
-    .collapse{
-      padding: 0px 24px;
+  .program {
+    padding: 0px 10px;
   }
+
+  .collapse {
+    padding: 0px 24px;
+  }
+
   .dropdown-menu.scroll {
     width: 240px;
-}
+  }
 }
 
 .dropdown-menu.scroll::-webkit-scrollbar {
-  width: 8px; 
+  width: 8px;
 }
 
 .dropdown-menu.scroll::-webkit-scrollbar-thumb {
-  background: #986708; 
-  border-radius: 10px; 
+  background: #986708;
+  border-radius: 10px;
 }
 
 .dropdown-menu.scroll::-webkit-scrollbar-track {
   background: #ccc
 }
 
-.kirti-img {
-  height: 577px;
-  width: 100%;
 
-}
 
-.card-img-top {
-  height: 240px;
-}
+/*  */
+
+
+
+
