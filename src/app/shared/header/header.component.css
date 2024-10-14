@@ -1,8 +1,8 @@
-.header-images {
-  background-image: url('/assets/landing_Img/landing-bg.png');
+/* .header-images {
+  /* background-image: url('/assets/landing_Img/landing-bg.png');
   background-size: cover;
   height: 448px;
-}
+} */
 
 .navbar {
   padding-top: 36px;
@@ -214,9 +214,9 @@
   background-color: #FFF4DE;
 }
 
-.middle-section-part-1 {
+/* .middle-section-part-1 {
   background-color: #090909;
-}
+} */
 
 .middle-section {
   background-color: #FFF4DE;
@@ -238,7 +238,7 @@
 
 }
 
-.choices {
+/* .choices {
   position: relative;
   top: 42px;
 }
@@ -248,7 +248,7 @@
   display: flex;
   justify-content: space-between;
   padding: 0px 10px;
-}
+} */
 
 .hot-choice {
   background-color: #FFA800;
@@ -258,14 +258,14 @@
   width: 90px;
 }
 
-.overlay {
+/* .overlay {
   position: relative;
   bottom: 55px;
   left: 10px;
   color: #ffffff;
   background: #00000000;
 
-}
+} */
 
 .view {
   width: 130px;

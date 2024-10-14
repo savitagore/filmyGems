@@ -114,9 +114,9 @@
 
 
 /*--------------------------------------*/
-.bg-all {
+/* .bg-all {
   background-color: #090909;
-}
+} */
 
 .height-most {
   height: 520px;
@@ -328,7 +328,7 @@ border: 1px solid black;
   border-color: gray;
 }
 
- .overlay {
+ /* .overlay {
   position: relative;
   top: 415px;
   left: 10px;
@@ -343,7 +343,7 @@ border: 1px solid black;
     width: 100%;
     background-size: cover
 }
-.choices {
+/* .choices {
   position: relative;
   top: 42px;
 }
@@ -353,7 +353,7 @@ border: 1px solid black;
   display: flex;
   justify-content: space-between;
   padding: 0px 10px;
-}
+} */
 .overlays {
   position: relative;
   top: 160px;
