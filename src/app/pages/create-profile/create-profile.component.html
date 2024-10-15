@@ -1,0 +1,165 @@
+<section class="header-images roboto-font" [ngStyle]="{'background-image': 'url(' + backgroundImageUrl + ')'}">
+
+  <app-navbar></app-navbar>
+  <div class="container">
+    <div class="row">
+      <div class="text-center text-white build-high pt-5">
+        <h1 class="main-title ">Crafting Profiles That Leave An Impression,
+          Not Just A Digital Footprint</h1>
+        <p>Let’s start and create your profile with us for
+          better contacts and services..</p>
+      </div>
+      <div class="d-flex  justify-content-center flex-direction-column align-items-center">
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="div bg-dark text-white pt-5 roboto-font">
+  <div class="container">
+    <h2 class="text-center mb-4 text-profile p-3">Create Your Profile</h2>
+
+    <form >
+      <div class="row" style="height:336px">
+
+        <div class="col-md-4 text-center" style="height:336px">
+          <div class="border rounded bg-color d-flex flex-column align-items-center justify-content-center p-3">
+            <div class="d-flex align-items-center justify-content-center">
+              <div class="d-flex align-items-center justify-content-center" style="width: 170px; height: 200px; background-color: #777777;">
+                <img src="assets/svg-icons/camera.svg" alt="camera icon">
+              </div>
+            </div>
+            <img src="assets/svg-icons/upload.svg" alt="upload icon" class="upload-icon">
+          </div>
+        </div>
+         <div class="col-md-8" style="height:336px">
+          <div class="row g-3 bg-color">
+            <div class="col-md-6">
+               <input type="text" class="form-control bg-color" id="firstName" placeholder="first name" required>
+            </div>
+
+            <div class="col-md-6">
+
+              <input type="text" class="form-control bg-color" id="lastName" placeholder="last name" required>
+            </div>
+
+            <div class="col-md-6">
+
+              <input type="email" class="form-control bg-color " id="email" placeholder="enter your email" required>
+            </div>
+
+            <div class="col-md-6">
+
+              <input type="text" class="form-control bg-color" id="phone" placeholder="enter your phone number" required>
+            </div>
+
+            <div class="col-md-4">
+
+              <input type="text" class="form-control bg-color" id="city" placeholder="enter your city" required>
+            </div>
+
+            <div class="col-md-4">
+
+              <input type="text" class="form-control bg-color" id="zip" placeholder="enter your PIN/ZIP code" required>
+            </div>
+
+            <div class="col-md-4">
+
+              <input type="text" class="form-control bg-color" id="country" placeholder="enter your country" required>
+            </div>
+            <div class="col-md-6  bg-color mb-4 border-0">
+
+              <select class="form-select form-control"   required>
+                <option value="" class="category-color" selected > Category/Gems</option>
+                <option value="artist">Artist</option>
+                <option value="director">Director</option>
+                <option value="casting-director">Casting Director</option>
+                <option value="assistant-director">Assistant Director</option>
+                <option value="associate-director">Associate Director</option>
+                <option value="executive-producer">Executive Producer</option>
+                <option value="production-manager">Production Manager</option>
+                <option value="line-producer">Line Producer</option>
+              </select>
+            </div>
+            <div class="col-md-6 bg-color border-0">
+               <select class="form-select form-control" id="language" required>
+                <option class="bg-warning"value="" selected>Select Language</option>
+                <option value="english">English</option>
+                <option value="spanish">Spanish</option>
+                <option value="french">French</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row bg-color ">
+        <div class="col-6 p-3">
+          <!-- <label class="form-label">Drag & Drop File Upload</label> -->
+        <div class="custom-border  rounded  text-center pt-2">
+          <img src="assets/svg-icons/cloud.svg" alt="" style="width:77px; height: 66px;">
+            <p>Drag & Drop file here or</p>
+            <button type="button" class="btn btn-all rounded-pill">Choose file</button>
+            <p class="mt-2 text-primary">Maximum upload size 2MB</p>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="d-flex flex-column align-items-start p-3">
+              <div class="mb-2 d-flex align-items-center ">
+                  <img src="https://via.placeholder.com/50" alt="image1" class="img-fluid me-2">
+                  <span>image.png</span>
+                  <button type="button" class="btn btn-danger btn-sm ms-2">X</button>
+              </div>
+              <div class="mb-2 d-flex align-items-center">
+                  <img src="https://via.placeholder.com/50" alt="image2" class="img-fluid me-2">
+                  <span>image.png</span>
+                  <button type="button" class="btn btn-danger btn-sm ms-2">X</button>
+              </div>
+              <div class="mb-2 d-flex align-items-center">
+                  <img src="https://via.placeholder.com/50" alt="image3" class="img-fluid me-2">
+                  <span>image.png</span>
+                  <button type="button" class="btn btn-danger btn-sm ms-2">X</button>
+              </div>
+              <div class="mb-2 d-flex align-items-center">
+                  <img src="https://via.placeholder.com/50" alt="video.mp4" class="img-fluid me-2">
+                  <span>video.mp4</span>
+                  <div class="progress ms-2" style="width: 150px;">
+                      <div class="progress-bar bg-warning" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <button type="button" class="btn btn-danger btn-sm ms-2">X</button>
+              </div>
+          </div>
+      </div>
+
+
+      </div>
+
+      <!-- Agreement and Buttons -->
+      <div class="col-12 pt-3">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="termsCheck" required>
+          <label class="form-check-label" for="termsCheck">
+            By signing up, you agree to our <a href="#" class="link-warning">conditions</a> & <a href="#" class="link-warning">privacy policy</a>
+          </label>
+        </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="col-12 text-center mb-3">
+        <button type="button" class="btn btn-outline-light me-2 rounded-pill">Cancel</button>
+        <button type="submit" class="btn btn-all rounded-pill">Save</button>
+      </div>
+    </form>
+    <div class="custom-container  d-flex flex-directio-column align-items-center justify-content-center p-4">
+      <div class="icon-container">
+        <img src="assets/svg-icons/Vector.svg" alt="info icon">
+      </div>
+      <div class="text-container">
+        <p>May our information be kept secure and our online experiences remain private. Cheers to transparency, consent, and encryption - the essential ingredients for a safer digital future!</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section>
