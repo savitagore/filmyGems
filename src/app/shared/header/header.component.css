@@ -133,9 +133,7 @@
   top: 13px
 }
 
-.sticky-img {
-  width: 100px;
-}
+
 
 .linear {
   height: 10px;
@@ -149,6 +147,10 @@
   border-left: 1px solid #ddd;
   border-radius: 0px 50px 50px 0px;
   font-size: 18px;
+  border: none;
+}
+.small-bar{
+  background-color: #C4C4C4;
 }
 
 .dropdown-item {
@@ -236,7 +238,7 @@
   top: 155px;
   padding: 0px 10px;
   color: #ffffff;
-  /* background-color: rgba(0, 0, 0, 0.08) */
+  background-color: rgba(0, 0, 0, 0.08)
 }
 
 .overlay-shaid {
@@ -252,7 +254,7 @@
   left: 10px;
   background: #00000000;
   color: #ffffff;
-  /* background-color: rgba(0, 0, 0, 0.08) */
+  background-color: rgba(0, 0, 0, 0.08)
 
 }
 
@@ -294,6 +296,12 @@
 
 
 @media (min-width: 320px) {
+  .main-title {
+    font-size: 30px;
+  }
+  .build-high p {
+    font-size: 14px;
+  }
   .logo-img {
     width: 200px;
   }
@@ -327,14 +335,6 @@
     width: 190px;
   }
 
-  .main-title {
-    font-size: 28px;
-    font-weight: bold;
-  }
-
-  .build-high p {
-    font-size: 14px;
-  }
 
   .right-dimond {
     display: none;
