@@ -648,10 +648,12 @@
 
 
 .overlay-shaid {
-  position: relative;
-  top: 130px;
+  position: absolute;
   padding: 0px 10px;
   color: #ffffff;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  bottom: 0;
+  width: 100%;
 }
 
 .overlay-kirti {
@@ -698,8 +700,10 @@
 .madme-web {
   width: 100%;
 }
-
-
+.rotate {
+  bottom: 18px;
+  rotate: 68deg;
+}
 
 @media (min-width: 320px) {
   .logo-img {
@@ -854,9 +858,10 @@
     display: none;
   }
 
-  .choices-icons {
+  /* .choices-icons {
     bottom: 10px;
-  }
+    
+  } */
 
   .actor-name {
     font-size: 12px;
@@ -953,7 +958,7 @@
 
   .nav-link {
     font-size: 18px;
-    margin: 0px 29px;
+    margin: 0px 10px;
   }
 
   .join-btn {
@@ -1253,6 +1258,9 @@ border: 1px solid black;
   display: flex;
   justify-content: space-between;
   padding: 0px 10px;
+  z-index: 2;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
+  padding: 10px 5px;
 }
 .overlays {
   position: relative;
@@ -1665,7 +1673,7 @@ border: 1px solid black;
 
   .nav-link {
     font-size: 18px;
-    margin: 0px 29px;
+    margin: 0px 15px;
   }
 
   .join-btn {
