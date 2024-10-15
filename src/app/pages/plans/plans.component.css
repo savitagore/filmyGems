@@ -1,3 +1,149 @@
+.container h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+}
 
+.container p {
+  font-size: 18px;
+  color: #ffffff;
+}
 
+.first-card {
+  background-image: url('/assets/plans/card-1.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 623.44px;
+  border-radius: 15px;
 
+}
+.card-body-plan{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 15px;
+}
+.mini-line {
+  width: 164.65px;
+  height: 2px;
+  background-color: #FFE500;
+  position: absolute;
+  top: 20px;
+}
+
+.dimond-img{
+  position: relative;
+    top: 39px;
+    z-index: 2
+}
+
+.basic-number {
+  position: relative;
+  top: 8px;
+  z-index: 10;
+}
+
+.basic-btn {
+  width: 125.25px;
+  background-color: #000000;
+  border-radius: 20px;
+  border: none;
+  color: #ffffff;
+  font-size: 14.8px;
+}
+
+.card h3 {
+  font-size: 65.26px;
+  font-weight: bold;
+  color: #FFE600;
+}
+
+.videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videos h5 {
+  font-size: 18.5px;
+  color: #869ED4;
+}
+
+.videos span {
+  font-size: 36px;
+  color: #FCD751;
+  font-weight: 200;
+  position: relative;
+  bottom: 10px;
+}
+
+.small-line {
+  height: 2px;
+  width: 65.67px;
+  background-color: #4260A5;
+  position: relative;
+  bottom: 10px;
+}
+
+.subscribe {
+  border-radius: 50px;
+  font-size: 12.95px;
+  border: 1px solid #238ECB;
+  padding: 15px 70px;
+}
+
+.ruppes {
+  position: relative;
+  right: 16px;
+  top: 10px;
+}
+.third-card{
+  background-image: url('/assets/plans/card-2.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 685.04px;
+  border-radius: 15px;
+
+}
+.subscribe-now  {
+  border-radius: 50px;
+  font-size: 12.95px;
+  border: none;
+  padding: 15px 70px;
+  background-color: #FFC936;
+}
+.most{
+  color: #FFC936;
+  font-size: 16.26px;
+}
+
+@media (min-width:320px) {
+  .container h2 {
+    font-size: 21px;
+  }
+
+  .container p {
+    font-size: 14px;
+  }
+}
+
+@media (min-width:768px) {
+  .container h2 {
+    font-size: 30px;
+  }
+
+  .container p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1200px) {
+  .container h2 {
+    font-size: 40px;
+  }
+
+  .container p {
+    font-size: 18px;
+  }
+}

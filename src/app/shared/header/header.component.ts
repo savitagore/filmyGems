@@ -14,7 +14,7 @@ import { NavbarComponent } from '../navbar/navbar.component';
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit  {
-  backgroundImageUrl: string = 'assets/img/landing-img.jpg';
+  backgroundImageUrl: string = 'assets/landing_Img/landing-bg.png';
   ngOnInit() {
     Aos.init({
       duration: 1200,
