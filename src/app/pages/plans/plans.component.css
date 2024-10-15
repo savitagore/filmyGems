@@ -106,6 +106,13 @@
   border-radius: 15px;
 
 }
+.subscribe-now  {
+  border-radius: 50px;
+  font-size: 12.95px;
+  border: none;
+  padding: 15px 70px;
+  background-color: #FFC936;
+}
 .most{
   color: #FFC936;
   font-size: 16.26px;
