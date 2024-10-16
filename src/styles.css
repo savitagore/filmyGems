@@ -84,7 +84,7 @@
  .build-high .main-title {
   font-size: 50px;
   font-weight: bold;
-  
+
 }
 
 .search-box .form-control {
@@ -169,6 +169,12 @@
   border-radius: 50px;
   font-size: 18px;
   width: 130px;
+}
+.join-btn:hover {
+  background-color: #ffb62a;
+}
+.join-btn:active {
+  background-color: #ffb62a;
 }
 .active-cat {
   background-color: #986708;
