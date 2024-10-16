@@ -135,10 +135,11 @@
   position: relative;
   top: 80px;
 }
-.dropdown-toggle {
+.gems-category {
   border-left: 1px solid #ddd;
   border-radius: 0px 50px 50px 0px;
   font-size: 18px;
+  border: none;
 }
 .category-tags {
   padding-top: 100px;
@@ -733,7 +734,7 @@ border: 1px solid black;
   width: 190px;
 }
 
-.main-title {
+.build-high .main-title {
     font-size: 30px;
 }
 
@@ -747,7 +748,6 @@ border: 1px solid black;
 
 .export {
   height: 100px;
-  padding-left: 17px;
 }
 
 .book-set {
@@ -1064,12 +1064,12 @@ border: 1px solid black;
   height: 10px;
   background-color: #F3AD3B;
   position: relative;
-  top: 69px;
+  top: 89px;
 }
 
 .search-box {
   position: relative;
-  top: 0px;
+  top: 23px;
 }
 
 .build-high p {
