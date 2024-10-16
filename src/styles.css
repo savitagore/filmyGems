@@ -84,15 +84,13 @@
  .build-high .main-title {
   font-size: 50px;
   font-weight: bold;
+  
 }
 
 .search-box .form-control {
   flex: 1;
 }
-/* .rotate{
-  bottom: 19px;
-  transform: rotate(55deg);
-} */
+
  .searching-bar {
   display: flex;
   align-items: center;
@@ -683,14 +681,7 @@ border: 1px solid black;
   padding: 10px 5px;
   bottom: 6px;
 }
-.overlays {
-  position: absolute;
-  padding: 0px 10px;
-  color: #ffffff;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-  bottom: 0;
-  width: 100%;
-}
+
 
 
 .join-text {
@@ -797,9 +788,11 @@ border: 1px solid black;
 
 .actor-name {
   font-size: 17px;
+  font-weight: 500;
 }
 .role {
   font-size: 12px;
+  font-weight: 400;
 }
 
   /* footer-media */
@@ -1107,10 +1100,12 @@ border: 1px solid black;
 
 .actor-name {
   font-size: 20px;
+  font-weight: 500;
 }
 
 .role {
   font-size: 14px;
+  font-weight: 400;
 }
 
 
