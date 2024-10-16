@@ -20,13 +20,12 @@
   position: relative;
   top: 14px;
 }
-.overlay {
+/* .overlay {
   position: relative;
   bottom: 55px;
-  left: 10px;
   color: #ffffff;
   background: #00000000;
-}
+} */
 .celibrate-card {
   height: 240px;
   background-repeat: no-repeat;
@@ -69,7 +68,7 @@
   font-size: 18px;
 }
 
-.main-title {
+ .build-high .main-title {
   font-size: 50px;
   font-weight: bold;
 }
@@ -977,9 +976,6 @@ border: 1px solid black;
     margin: 0px 9px;
   }
 
-  .header-name {
-    padding-left: 20px;
-  }
 
   .linear {
     top: 93px;
@@ -1036,9 +1032,7 @@ border: 1px solid black;
   width: 245px;
 }
 
-.header-name {
-  padding: 0px 24px;
-}
+
 
 .pages-name {
   font-size: 18px;
@@ -1078,14 +1072,14 @@ border: 1px solid black;
   top: 0px;
 }
 
-/* .main-title {
+.build-high p {
+  font-size: 18px;
+}
+
+ .build-high .main-title {
   font-size: 50px;
   font-weight: bold;
 }
-
-.build-high p {
-  font-size: 18px;
-} */
 
 .right-dimond {
   display: block;
@@ -1184,9 +1178,7 @@ border: 1px solid black;
     padding: 0px 10px;
   }
 
-  .header-name {
-    padding: 0px 24px;
-  }
+ 
 
   .dropdown-menu.scroll {
     width: 240px;
