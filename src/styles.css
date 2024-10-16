@@ -1,4 +1,4 @@
-
+/* You can add global styles to this file, and also import other style files */
 .roboto-font {
   font-family: 'Roboto';
 }
@@ -13,13 +13,6 @@
 .choices {
   position: relative;
   top: 14px;
-}
-
-.choices-icons {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  padding: 0px 10px;
 }
 .overlay {
   position: relative;
@@ -288,23 +281,23 @@
   color: black;
 }
 
-/* .cutom-font-color {
+.cutom-font-color {
   color: #ffb62a;
   font-size: 16px;
-} */
+}
 
 .font-custom {
   font-size: 30px;
   margin-left: 141px;
 }
-.btn-join-now {
+.btn-custom {
   max-width: 135px;
   width: 100%;
   font-size: 18px;
 }
-/* .custom-padding {
+.custom-padding {
   padding-left: 50px;
-} */
+}
 .join-text {
   font-size: 90px;
   font-weight: bold;
@@ -412,7 +405,7 @@
   padding: 0px 10px;
   color: #ffffff;
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-  bottom: 0;
+  bottom: -1px;
   width: 100%;
 }
 
@@ -457,345 +450,6 @@
   bottom: 18px;
   rotate: 68deg;
 }
-
-@media (min-width: 320px) {
-  .logo-img {
-    width: 200px;
-  }
-
-  .left-dimond {
-    display: none;
-  }
-
-  .join-btn {
-    border-radius: 50px;
-    font-size: 18px;
-    width: 116px;
-  }
-
-  .join-ig img {
-    position: absolute;
-    bottom: 17px;
-    left: 78px;
-  }
-
-  .icons-join .links-chart {
-    position: relative;
-    top: 4px;
-  }
-
-  .dropdown-menu {
-    width: 186px;
-  }
-
-  .dropdown-menu.scroll {
-    width: 190px;
-  }
-
-  .main-title {
-    font-size: 28px;
-    font-weight: bold;
-  }
-
-  .build-high p {
-    font-size: 14px;
-  }
-
-  .right-dimond {
-    display: none;
-  }
-
-  .export {
-    height: 60px;
-    padding: 2px;
-  }
-
-  .book-set {
-    background-color: #3B90F3;
-    color: #ffffff;
-    font-size: 10px;
-    padding: 3px;
-    width: 35px;
-  }
-
-  .cross {
-    height: 10px;
-    right: 5px;
-    top: 13px;
-  }
-
-  .view-btn {
-    text-align: center;
-  }
-  .celibrate-card {
-    margin-bottom: 10px;
-}
-}
-
-@media (min-width:375px) {
-  .export {
-    height: 70px;
-    padding: 7px;
-  }
-
-  .book-set {
-    font-size: 10px;
-    padding: 3px;
-    width: 71px;
-  }
-}
-
-@media (min-width:425px) {
-  .export {
-    height: 85px;
-    padding: 7px;
-  }
-}
-
-
-
-
-
-/* @media (min-width: 768px) {
-  .icons-join {
-    position: relative;
-    top: 44px;
-  }
-
-  .join-ig img {
-    bottom: 14px;
-    left: 42px;
-  }
-
-  .join-btn {
-    border-radius: 50px;
-    font-size: 14px;
-    width: 85px;
-  }
-
-  .logo-img {
-    width: 200px;
-  }
-
-  .left-dimond {
-    display: none;
-  }
-
-  .main-title {
-    font-size: 40px;
-    font-weight: bold;
-  }
-
-  .build-high p {
-    font-size: 16px;
-  }
-
-  .search-box {
-    position: relative;
-    top: 63px;
-  }
-
-  .linear {
-    top: 127px;
-  }
-
-  .right-dimond {
-    display: none;
-  }
-
-
-
-  .actor-name {
-    font-size: 12px;
-  }
-
-  .role {
-    font-size: 10px;
-
-  }
-
-  .personal-exports {
-    font-size: 21px;
-    color: #ffffff;
-  }
-
-  .export {
-    height: 75px;
-    padding: 5px;
-  }
-
-  .book-set {
-    background-color: #3B90F3;
-    color: #ffffff;
-    font-size: 12px;
-    padding: 8px;
-    width: 109px;
-  }
-
-  .cross {
-    height: 15px;
-    right: 10px;
-    top: 20px;
-  }
-
-} */
-
-/* @media (min-width: 992px) {
-  .nav-link {
-    font-size: 18px;
-    margin: 0px 9px;
-  }
-
-  .collapse {
-    padding-left: 20px;
-  }
-
-  .linear {
-    top: 118px;
-  }
-
-  .search-box {
-    position: relative;
-    top: 52px;
-  }
-
-  .export {
-    height: 110px;
-    padding: 10px;
-
-  }
-
-  .icons-join {
-    position: relative;
-    top: 52px;
-  }
-
-  .join-ig img {
-    bottom: 14px;
-    left: 58px;
-  }
-
-  .join-btn {
-    border-radius: 50px;
-    font-size: 14px;
-    width: 95px;
-  }
-
-  .dropdown-menu.scroll {
-    width: 218px;
-  }
-
-} */
-
-
-
-@media (min-width: 1200px) {
-  .logo-img {
-    width: 245px;
-  }
-
-  .collapse {
-    padding: 0px 24px;
-  }
-
-  .nav-link {
-    font-size: 18px;
-    margin: 0px 10px;
-  }
-
-  .join-btn {
-    border-radius: 50px;
-    font-size: 18px;
-    width: 130px;
-  }
-
-  .join-ig img {
-    bottom: 19px;
-    left: 89px;
-  }
-
-  .left-dimond {
-    display: block;
-  }
-
-  .icons-join .links-chart {
-    position: relative;
-    top: 0px;
-    right: 44px;
-  }
-
-  .linear {
-    height: 10px;
-    background-color: #F3AD3B;
-    position: relative;
-    top: 89px;
-  }
-
-  .search-box {
-    position: relative;
-    top: 23px;
-  }
-
-  .main-title {
-    font-size: 50px;
-    font-weight: bold;
-  }
-
-  .build-high p {
-    font-size: 18px;
-  }
-
-  .right-dimond {
-    display: block;
-  }
-
-  .actor-name {
-    font-size: 20px;
-  }
-
-  .role {
-    font-size: 14px;
-  }
-
-  .cross {
-    right: 13px;
-    top: 31px;
-    height: 24px;
-  }
-
-  .export {
-    height: 120px;
-  }
-
-  .personal-exports {
-    font-size: 32px;
-  }
-
-  .program {
-    padding: 6px 10px;
-  }
-
-  .book-set {
-    color: #ffffff;
-    font-size: 18px;
-    padding: 12px;
-    width: 170px;
-  }
-}
-
-/* @media (min-width:1440px) {
-  .program {
-    padding: 0px 10px;
-  }
-
-  .collapse {
-    padding: 0px 24px;
-  }
-
-  .dropdown-menu.scroll {
-    width: 240px;
-  }
-} */
 
 .dropdown-menu.scroll::-webkit-scrollbar {
   width: 8px;
@@ -867,17 +521,17 @@ small {
   font-size: 18px;
   width: 241px;
 }
-/* .custom-section {
+.custom-section {
   background-image: url("/assets/music/group.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 484px;
-} */
+}
 
-/* .btn-custom {
+.btn-custom {
 border: 1px solid black;
   color: black;
-} */
+}
 
 .cutom-font-color {
   color: #ffb62a;
@@ -950,9 +604,9 @@ border: 1px solid black;
   left: 10px;
 }
 
-/* .custom-padding {
+.custom-padding {
   padding-left: 50px;
-} */
+}
 
 .icons {
   position: relative;
@@ -978,12 +632,13 @@ border: 1px solid black;
 
 }
  .overlay-most {
-  position: absolute;
-  padding: 0px 10px;
+  position: relative;
+  top: 415px;
+  left: 10px;
   color: #ffffff;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-  bottom: 0;
-  width: 100%;
+  /* background:#00000000; */
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  /* background: linear-gradient(90deg, #000000 0%, #ffffff 100%); */
  }
 
 .choices {
@@ -999,14 +654,14 @@ border: 1px solid black;
   z-index: 2;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent);
   padding: 10px 5px;
+  bottom: 6px;
 }
 .overlays {
-  position: absolute;
-  padding: 0px 10px;
+  position: relative;
+  top: 160px;
+  left: 10px;
   color: #ffffff;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-  bottom: 0;
-  width: 100%;
+  background:#00000000
 
 }
 
@@ -1131,6 +786,12 @@ border: 1px solid black;
 
 }
 
+@media (min-width:425px) {
+  .export {
+    height: 85px;
+    padding: 7px;
+  }
+}
 @media (min-width:375px) {
   .export {
     height: 70px;
@@ -1143,89 +804,10 @@ border: 1px solid black;
     width: 71px;
   }
 }
-
-@media (min-width:425px) {
-  .export {
-    height: 85px;
-    padding: 7px;
-  }
-}
 @media (min-width: 576px) {
   .logo-img {
     width: auto;
   }
-}
-
-@media (min-width: 992px) {
-  .main-title{
-    font-size: 50px;
-  }
-  .build-high p{
-    font-size: 17px;
-  }
-  .pages-name {
-    font-size: 18px;
-    margin: 0px 9px;
-  }
-
-  .collapse {
-    padding-left: 20px;
-  }
-
-  .linear {
-    top: 93px;
-  }
-
-  .search-box {
-    position: relative;
-    top: 28px;
-  }
-
-  .export {
-    height: 110px;
-    padding: 10px;
-
-  }
-
-  .icons-join {
-    position: relative;
-    top: 52px;
-  }
-
-  .join-ig img {
-    bottom: 14px;
-    left: 58px;
-  }
-
-  .join-btn {
-    border-radius: 50px;
-    font-size: 14px;
-    width: 95px;
-  }
-
-  .dropdown-menu.scroll {
-    width: 218px;
-  }
-  .cross {
-    height: 20px;
-    right: 11px;
-    top: 25px;
-}
-.personal-exports {
-  font-size: 25px;
-}
-.book-set {
-  font-size: 14px;
-  width: 150px;
-  padding: 8px;
-}
-.join-text {
-  font-size: 65px;
-}
-.logo{
-  position: relative;
-  top: 40px;
-}
 }
 
 @media (max-width: 768px) {
@@ -1351,9 +933,9 @@ border: 1px solid black;
     height: 112px;
   }
 
-  /* .custom-color {
+  .custom-color {
     font-size: 17px;
-  } */
+  }
 
  .col-md-2 {
     flex: 0 0 auto;
@@ -1371,6 +953,71 @@ border: 1px solid black;
   }  */
 }
 
+@media (min-width: 992px) {
+  .main-title{
+    font-size: 50px;
+  }
+  .build-high p{
+    font-size: 17px;
+  }
+  .pages-name {
+    font-size: 18px;
+    margin: 0px 9px;
+  }
+
+  .collapse {
+    padding-left: 20px;
+  }
+
+  .linear {
+    top: 93px;
+  }
+
+  .search-box {
+    position: relative;
+    top: 28px;
+  }
+
+  .export {
+    height: 110px;
+    padding: 10px;
+
+  }
+
+  .icons-join {
+    position: relative;
+    top: 52px;
+  }
+
+  .join-ig img {
+    bottom: 14px;
+    left: 58px;
+  }
+
+  .join-btn {
+    border-radius: 50px;
+    font-size: 14px;
+    width: 95px;
+  }
+
+  .dropdown-menu.scroll {
+    width: 218px;
+  }
+  .cross {
+    height: 20px;
+    right: 11px;
+    top: 25px;
+}
+.personal-exports {
+  font-size: 25px;
+}
+.book-set {
+  font-size: 14px;
+  width: 150px;
+  padding: 8px;
+}
+
+}
 @media (min-width:1200px) {
 /* Header-media */
 .logo-img {
@@ -1383,7 +1030,7 @@ border: 1px solid black;
 
 .pages-name {
   font-size: 18px;
-  margin: 0px 29px;
+  margin: 0px 20px;
 }
 
 .join-btn {
@@ -1440,6 +1087,7 @@ border: 1px solid black;
   font-size: 14px;
 }
 
+
 .cross {
   right: 13px;
   top: 31px;
@@ -1465,7 +1113,7 @@ border: 1px solid black;
   width: 170px;
 }
 
-  /* ******* footer-media ******* */
+  /* *** footer-media *** */
   .custom-padding {
     padding-top: 50px;
   }
@@ -1484,13 +1132,13 @@ border: 1px solid black;
     line-height: 1;
   }
 
-  /* .company-name {
+  .company-name {
     color: #986708;
     font-size: 20px;
     border-radius: 5px;
     font-weight: bold;
     height: 30px;
-  } */
+  }
 
   .col-md-2 {
     flex: 0 0 auto;
@@ -1508,285 +1156,12 @@ border: 1px solid black;
   .dropdown-menu.scroll {
     width: 190px;
   }
-
-  .main-title {
-    font-size: 28px;
-    font-weight: bold;
-  }
-
-  .build-high p {
-    font-size: 14px;
-  }
-
-  .right-dimond {
-    display: none;
-  }
-
-  .export {
-    height: 60px;
-    padding: 2px;
-  }
-
-  .book-set {
-    background-color: #3B90F3;
-    color: #ffffff;
-    font-size: 10px;
-    padding: 3px;
-    width: 35px;
-  }
-
-  .personal-exports {
-    font-size: 12px;
-  }
-
-
   .view-btn {
     text-align: center;
   }
   .celibrate-card {
     margin-bottom: 10px;
 }
-}
-
-
-@media (min-width:425px) {
-  .export {
-    height: 85px;
-    padding: 7px;
-  }
-}
-
-
-
-
-
-@media (min-width: 768px) {
-  .icons-join {
-    position: relative;
-    top: 44px;
-  }
-
-  .join-ig img {
-    bottom: 14px;
-    left: 42px;
-  }
-
-  .join-btn {
-    border-radius: 50px;
-    font-size: 14px;
-    width: 85px;
-  }
-
-  .logo-img {
-    width: 200px;
-  }
-
-  .left-dimond {
-    display: none;
-  }
-
-  .main-title {
-    font-size: 40px;
-    font-weight: bold;
-  }
-
-  .build-high p {
-    font-size: 16px;
-  }
-
-  .search-box {
-    position: relative;
-    top: 63px;
-  }
-
-  .linear {
-    top: 127px;
-  }
-
-  .right-dimond {
-    display: none;
-  }
-
-  .choices-icons {
-    bottom: 10px;
-  }
-
-  .actor-name {
-    font-size: 12px;
-  }
-
-  .role {
-    font-size: 10px;
-
-  }
-
-  .personal-exports {
-    font-size: 21px;
-    color: #ffffff;
-  }
-
-  .export {
-    height: 75px;
-    padding: 5px;
-  }
-
-  .book-set {
-    background-color: #3B90F3;
-    color: #ffffff;
-    font-size: 12px;
-    padding: 8px;
-    width: 109px;
-  }
-
-  .cross {
-    height: 15px;
-    right: 10px;
-    top: 20px;
-  }
-
-}
-
-@media (min-width: 992px) {
-  .nav-link {
-    font-size: 18px;
-    margin: 0px 9px;
-  }
-
-  .collapse {
-    padding-left: 20px;
-  }
-
-  .linear {
-    top: 118px;
-  }
-
-  .search-box {
-    position: relative;
-    top: 52px;
-  }
-
-  .export {
-    height: 110px;
-    padding: 10px;
-
-  }
-
-  .icons-join {
-    position: relative;
-    top: 52px;
-  }
-
-  .join-ig img {
-    bottom: 14px;
-    left: 58px;
-  }
-
-  .join-btn {
-    border-radius: 50px;
-    font-size: 14px;
-    width: 95px;
-  }
-
-  .dropdown-menu.scroll {
-    width: 218px;
-  }
-
-}
-
-
-
-@media (min-width: 1200px) {
-  .logo-img {
-    width: 245px;
-  }
-
-  .collapse {
-    padding: 0px 24px;
-  }
-
-  .nav-link {
-    font-size: 18px;
-    margin: 0px 15px;
-  }
-
-  .join-btn {
-    border-radius: 50px;
-    font-size: 18px;
-    width: 130px;
-  }
-
-  .join-ig img {
-    bottom: 19px;
-    left: 89px;
-  }
-
-  .left-dimond {
-    display: block;
-  }
-
-  .icons-join .links-chart {
-    position: relative;
-    top: 0px;
-    right: 44px;
-  }
-
-  .linear {
-    height: 10px;
-    background-color: #F3AD3B;
-    position: relative;
-    top: 89px;
-  }
-
-  .search-box {
-    position: relative;
-    top: 23px;
-  }
-
-  .main-title {
-    font-size: 50px;
-    font-weight: bold;
-  }
-
-  .build-high p {
-    font-size: 18px;
-  }
-
-  .right-dimond {
-    display: block;
-  }
-
-  .actor-name {
-    font-size: 20px;
-  }
-
-  .role {
-    font-size: 14px;
-  }
-
-  .cross {
-    right: 13px;
-    top: 31px;
-    height: 24px;
-  }
-
-  .export {
-    height: 120px;
-  }
-
-  .personal-exports {
-    font-size: 32px;
-  }
-
-  .program {
-    padding: 6px 10px;
-  }
-
-  .book-set {
-    color: #ffffff;
-    font-size: 18px;
-    padding: 12px;
-    width: 170px;
-  }
 }
 
 @media (min-width:1440px) {
@@ -1802,7 +1177,3 @@ border: 1px solid black;
     width: 240px;
   }
 }
-
-
-
-
