@@ -1,30 +1,41 @@
-<section class="header-images roboto-font" [ngStyle]="{'background-image': 'url(' + backgroundImageUrl + ')'} ">
+<section class="plan-images roboto-font" [ngStyle]="{'background-image': 'url(' + backgroundImageUrl + ')'} ">
+  <app-navbar></app-navbar>
   <div class="container">
-    <div class="row">
-      <div class="text-center text-white build-high ">
-        <h1 class="main-title ">Unlock Unlimited Access And Endless
+    <div class="row" style="padding: 128px;">
+      <div class="text-center text-white build-high">
+        <h1 class="main-title ">Unlock Unlimited Access And Endless <br>
           Possibilities With Our Subscription Plan</h1>
         <p>High quality Celebrity profile and contact just for you only, what
           are you waiting for? Let's join us.</p>
       </div>
-    </div>
-    <div class="d-flex  justify-content-center flex-direction-column align-items-center">
-      <div class="line"></div>
+      <div class="d-flex  justify-content-center flex-direction-column align-items-center">
+        <div class="line"></div>
+      </div>
     </div>
   </div>
 </section>
 
 <section class="bg-middle roboto-font">
-  <div class="container text-center py-5">
-    <h2>Choose your subscription plan</h2>
-    <p>Choose the subscription plan that suits you and your need</p>
-
-    <div class="btn-group mb-4" role="group" aria-label="Subscription plan toggle">
+  <div class="container">
+    <div class="row  text-center" style="padding: 100px;">
+      <h2>Choose your subscription plan</h2>
+      <p>Choose the subscription plan that suits you and your need</p>
+    </div>
+    <!-- <div class="btn-group mb-4" role="group" aria-label="Subscription plan toggle">
       <button type="button" class="btn btn-outline-primary">Monthly</button>
       <button type="button" class="btn btn-outline-primary">Yearly</button>
+     </div> -->
+     <div class="row pt-5">
+      <div class="toggle-switch">
+        <button id="monthlyBtn" class="btn btn-monthly">Monthly</button>
+        <button id="yearlyBtn" class="btn btn-yearly active">Yearly</button>
+      </div>
      </div>
-
-    <div class="row justify-content-center pt-5">
+     <!-- <div class="toggle-switch">
+      <button id="monthlyBtn" class="btn btn-monthly">Monthly</button>
+      <button id="yearlyBtn" class="btn btn-yearly active">Yearly</button>
+    </div> -->
+    <div class="row justify-content-center" style="padding-top: 100px;">
       <!-- Basic Plan -->
       <div class="col-md-3">
         <div class="dimond-img">
@@ -107,7 +118,7 @@
 
       <!-- Gold Plan -->
        <div class="col-md-3">
-        <h3 class="most">MOST POPULAR</h3>
+        <h3 class="most text-center">MOST POPULAR</h3>
         <div class="dimond-img">
           <img src="assets/plans/dimonds/gold.png" alt="" class="img-fluid ">
         </div>
