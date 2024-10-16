@@ -108,6 +108,11 @@
   font-size: 12.95px;
   border: 1px solid #238ECB;
   padding: 15px 70px;
+  color: #238ECB;
+  letter-spacing: 2px;
+}
+.subscribe:hover{
+  color: #238ECB;
 }
 
 .ruppes {
@@ -118,6 +123,7 @@
 .gold-card{
   position: relative;
     bottom: 70px;
+    
 }
 .third-card{
   background-image: url('/assets/plans/card-2.png');
@@ -125,6 +131,7 @@
   background-repeat: no-repeat;
   height: 685.04px;
   border-radius: 15px;
+  
 }
 .subscribe-now  {
   border-radius: 50px;
@@ -132,10 +139,13 @@
   border: none;
   padding: 15px 70px;
   background-color: #FFC936;
+  color: #000000;
+  letter-spacing: 2px;
 }
-.subscribe :hover {
-  color: #238ECB;
+.subscribe-now:hover{
+  color: #000000;
 }
+
 .star-badge{
   position: absolute;
   top: 81px;
