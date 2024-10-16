@@ -20,13 +20,12 @@
   position: relative;
   top: 14px;
 }
-.overlay {
+/* .overlay {
   position: relative;
   bottom: 55px;
-  left: 10px;
   color: #ffffff;
   background: #00000000;
-}
+} */
 .celibrate-card {
   height: 240px;
   background-repeat: no-repeat;
@@ -69,7 +68,7 @@
   font-size: 18px;
 }
 
-.main-title {
+ .build-high .main-title {
   font-size: 50px;
   font-weight: bold;
 }
@@ -136,10 +135,11 @@
   position: relative;
   top: 80px;
 }
-.dropdown-toggle {
+.gems-category {
   border-left: 1px solid #ddd;
   border-radius: 0px 50px 50px 0px;
   font-size: 18px;
+  border: none;
 }
 .category-tags {
   padding-top: 100px;
@@ -734,7 +734,7 @@ border: 1px solid black;
   width: 190px;
 }
 
-.main-title {
+.build-high .main-title {
     font-size: 30px;
 }
 
@@ -748,7 +748,6 @@ border: 1px solid black;
 
 .export {
   height: 100px;
-  padding-left: 17px;
 }
 
 .book-set {
@@ -776,7 +775,12 @@ border: 1px solid black;
   margin-bottom: 10px;
 }
 
-
+.actor-name {
+  font-size: 17px;
+}
+.role {
+  font-size: 12px;
+}
 
   /* footer-media */
   .join-text {
@@ -869,14 +873,14 @@ border: 1px solid black;
   bottom: 10px;
 }
 
-.actor-name {
+/* .actor-name {
   font-size: 12px;
 }
 
 .role {
   font-size: 10px;
 
-}
+} */
 
 /* .personal-exports {
   font-size: 21px;
@@ -944,7 +948,7 @@ border: 1px solid black;
     font-size: 17px;
   }
 
- .col-md-2 {
+ .info {
     flex: 0 0 auto;
     width: 34.666667%;
   }
@@ -954,7 +958,7 @@ border: 1px solid black;
     font-weight: bold;
   }
 
-  .col-md-2 {
+  .info {
     flex: 0 0 auto;
     width: 24.666667%;
   }  */
@@ -972,9 +976,6 @@ border: 1px solid black;
     margin: 0px 9px;
   }
 
-  .collapse {
-    padding-left: 20px;
-  }
 
   .linear {
     top: 93px;
@@ -1031,9 +1032,7 @@ border: 1px solid black;
   width: 245px;
 }
 
-.collapse {
-  padding: 0px 24px;
-}
+
 
 .pages-name {
   font-size: 18px;
@@ -1073,13 +1072,13 @@ border: 1px solid black;
   top: 23px;
 }
 
-.main-title {
-  font-size: 50px;
-  font-weight: bold;
-}
-
 .build-high p {
   font-size: 18px;
+}
+
+ .build-high .main-title {
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .right-dimond {
@@ -1121,6 +1120,9 @@ border: 1px solid black;
 }
 
   /* *** footer-media *** */
+  .fixed-size-heading {
+    font-size: 40px;
+  }
   .custom-padding {
     padding-top: 50px;
   }
@@ -1147,7 +1149,7 @@ border: 1px solid black;
     height: 30px;
   }
 
-  .col-md-2 {
+  .info {
     flex: 0 0 auto;
     width: 16.666667%;
   }
@@ -1176,9 +1178,7 @@ border: 1px solid black;
     padding: 0px 10px;
   }
 
-  .collapse {
-    padding: 0px 24px;
-  }
+ 
 
   .dropdown-menu.scroll {
     width: 240px;
