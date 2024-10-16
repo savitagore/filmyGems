@@ -1,4 +1,4 @@
-
+/* You can add global styles to this file, and also import other style files */
 .roboto-font {
   font-family: 'Roboto';
 }
@@ -281,23 +281,23 @@
   color: black;
 }
 
-/* .cutom-font-color {
+.cutom-font-color {
   color: #ffb62a;
   font-size: 16px;
-} */
+}
 
 .font-custom {
   font-size: 30px;
   margin-left: 141px;
 }
-.btn-join-now {
+.btn-custom {
   max-width: 135px;
   width: 100%;
   font-size: 18px;
 }
-/* .custom-padding {
+.custom-padding {
   padding-left: 50px;
-} */
+}
 .join-text {
   font-size: 90px;
   font-weight: bold;
@@ -521,17 +521,17 @@ small {
   font-size: 18px;
   width: 241px;
 }
-/* .custom-section {
+.custom-section {
   background-image: url("/assets/music/group.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 484px;
-} */
+}
 
-/* .btn-custom {
+.btn-custom {
 border: 1px solid black;
   color: black;
-} */
+}
 
 .cutom-font-color {
   color: #ffb62a;
@@ -604,9 +604,9 @@ border: 1px solid black;
   left: 10px;
 }
 
-/* .custom-padding {
+.custom-padding {
   padding-left: 50px;
-} */
+}
 
 .icons {
   position: relative;
@@ -632,12 +632,13 @@ border: 1px solid black;
 
 }
  .overlay-most {
-  position: absolute;
-  padding: 0px 10px;
+  position: relative;
+  top: 415px;
+  left: 10px;
   color: #ffffff;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-  bottom: 0;
-  width: 100%;
+  /* background:#00000000; */
+   background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+  /* background: linear-gradient(90deg, #000000 0%, #ffffff 100%); */
  }
 
 .choices {
@@ -656,12 +657,11 @@ border: 1px solid black;
   bottom: 6px;
 }
 .overlays {
-  position: absolute;
-  padding: 0px 10px;
+  position: relative;
+  top: 160px;
+  left: 10px;
   color: #ffffff;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-  bottom: 0;
-  width: 100%;
+  background:#00000000
 
 }
 
@@ -933,9 +933,9 @@ border: 1px solid black;
     height: 112px;
   }
 
-  /* .custom-color {
+  .custom-color {
     font-size: 17px;
-  } */
+  }
 
  .col-md-2 {
     flex: 0 0 auto;
@@ -1113,7 +1113,7 @@ border: 1px solid black;
   width: 170px;
 }
 
-  /* ******* footer-media ******* */
+  /* *** footer-media *** */
   .custom-padding {
     padding-top: 50px;
   }
@@ -1132,13 +1132,13 @@ border: 1px solid black;
     line-height: 1;
   }
 
-  /* .company-name {
+  .company-name {
     color: #986708;
     font-size: 20px;
     border-radius: 5px;
     font-weight: bold;
     height: 30px;
-  } */
+  }
 
   .col-md-2 {
     flex: 0 0 auto;
@@ -1177,7 +1177,3 @@ border: 1px solid black;
     width: 240px;
   }
 }
-
-
-
-
