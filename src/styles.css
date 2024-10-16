@@ -9,7 +9,13 @@
 .bg-middle{
   background-color: #090909;
 }
+.btn-join-now{
 
+  color: #000000;
+  border-radius: 50px;
+  font-size: 18px;
+  width: 130px;
+}
 .choices {
   position: relative;
   top: 14px;
@@ -657,11 +663,12 @@ border: 1px solid black;
   bottom: 6px;
 }
 .overlays {
-  position: relative;
-  top: 160px;
-  left: 10px;
+  position: absolute;
+  padding: 0px 10px;
   color: #ffffff;
-  background:#00000000
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
+  bottom: 0;
+  width: 100%;
 
 }
 
@@ -1154,7 +1161,7 @@ border: 1px solid black;
   }
   .logo{
     position: relative;
-    top: 4px;
+    bottom: 56px;
   }
 
   .dropdown-menu {
@@ -1185,3 +1192,5 @@ border: 1px solid black;
     width: 240px;
   }
 }
+
+
