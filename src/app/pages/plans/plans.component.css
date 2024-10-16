@@ -1,4 +1,4 @@
-
+/* 
 .plan-images{
   height: 600px;
 }
@@ -159,7 +159,7 @@
   letter-spacing: 3px;
 }
 
-/* montly-yearly btn */
+
 
 .toggle-switch {
   background-color: #555670; 
@@ -190,7 +190,7 @@
 
 
 
-/* media all */
+
 
 @media (min-width:320px) {
   .unlock-title {
@@ -228,4 +228,4 @@
     font-size: 18px;
   }
   
-}
+} */

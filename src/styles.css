@@ -701,6 +701,240 @@ border: 1px solid black;
 }
 
 
+/* ************ Plans Page Css ****************** */
+
+
+.plan-images{
+  height: 600px;
+}
+.unlock-title{
+  padding-top: 163px;
+}
+
+.choose-title{
+  padding-top: 100px;
+}
+
+.choose-title h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.choose-title p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.first-card {
+  background-image: url('/assets/plans/card-1.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 623.44px;
+  border-radius: 15px;
+
+}
+.card-body-plan{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 15px;
+}
+.mini-line {
+  width: 164.65px;
+  height: 2px;
+  background-color: #FFE500;
+  position: absolute;
+  top: 20px;
+}
+
+.dimond-img{
+  position: relative;
+  top: 39px;
+  left: 131px;
+  z-index: 2;
+}
+
+.basic-number {
+  position: relative;
+  top: 8px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.basic-btn {
+  width: 125.25px;
+  background-color: #000000;
+  border-radius: 20px;
+  border: none;
+  color: #ffffff;
+  font-size: 14.8px;
+  letter-spacing: 2px;
+}
+
+.card h3 {
+  font-size: 65.26px;
+  font-weight: bold;
+  color: #FFE600;
+}
+
+.videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videos h5 {
+  font-size: 18.5px;
+  color: #869ED4;
+}
+
+.videos span {
+  font-size: 36px;
+  color: #FCD751;
+  font-weight: 200;
+  position: relative;
+  bottom: 10px;
+}
+
+.small-line {
+  height: 2px;
+  width: 65.67px;
+  background-color: #4260A5;
+  position: relative;
+  bottom: 10px;
+}
+
+.subscribe {
+  border-radius: 50px;
+  font-size: 12.95px;
+  border: 1px solid #238ECB;
+  padding: 15px 70px;
+  color: #238ECB;
+  letter-spacing: 2px;
+}
+.subscribe:hover{
+  color: #238ECB;
+}
+
+.ruppes {
+  position: relative;
+  right: 16px;
+  top: 10px;
+}
+.gold-card{
+  position: relative;
+    bottom: 70px;
+    
+}
+.third-card{
+  background-image: url('/assets/plans/card-2.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 685.04px;
+  border-radius: 15px;
+  
+}
+.subscribe-now  {
+  border-radius: 50px;
+  font-size: 12.95px;
+  border: none;
+  padding: 15px 70px;
+  background-color: #FFC936;
+  color: #000000;
+  letter-spacing: 2px;
+}
+.subscribe-now:hover{
+  color: #000000;
+}
+
+.star-badge{
+  position: absolute;
+  top: 81px;
+  right: 10px;
+  z-index: 2;
+}
+
+.most{
+  color: #FFC936;
+  font-size: 16.26px;
+  letter-spacing: 3px;
+}
+
+
+
+.toggle-switch {
+  background-color: #555670; 
+  border-radius: 50px;
+  display: inline-flex;
+  width: 280px;
+}
+
+.toggle-switch .btn {
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.toggle-switch .btn-monthly {
+  background-color: #555670;
+  color: #96A2B5;
+}
+
+.toggle-switch .btn-yearly {
+  background-color: #F3AD3B;
+  color: #000000;
+ 
+}
+
+
+
+
+
+@media (min-width:320px) {
+  .unlock-title {
+    padding-top: 124px;
+  }
+  .choose-title h2 {
+    font-size: 21px;
+  }
+
+  .choose-title p {
+    font-size: 14px;
+  }
+ 
+}
+
+@media (min-width:768px) {
+  .choose-title h2 {
+    font-size: 30px;
+  }
+
+  .choose-title p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1200px) {
+  .unlock-title {
+    padding-top: 163px;
+  }
+  .choose-title h2 {
+    font-size: 40px;
+  }
+
+  .choose-title p {
+    font-size: 18px;
+  }
+  
+}
+
 /* All medias */
 
 
