@@ -44,6 +44,13 @@
   background-color: #F3AD3B;
   border: none;
   font-size: 18px;
+  font-weight: 500;
+}
+.btn-all:hover {
+  background-color: #ffb62a;
+}
+.btn-all:active {
+  background-color: #ffb62a;
 }
 .line{
   background-color: #FFCF25;
@@ -527,6 +534,13 @@ small {
   color: #000;
   font-size: 18px;
   width: 241px;
+  font-weight: 500;
+}
+.btn-read-more:hover {
+  background-color: #ffb62a;
+}
+.btn-read-more:active {
+  background-color: #ffb62a;
 }
 .custom-section {
   background-image: url("/assets/music/group.png");
@@ -1178,11 +1192,15 @@ border: 1px solid black;
     padding: 0px 10px;
   }
 
- 
+
 
   .dropdown-menu.scroll {
     width: 240px;
   }
 }
+
+
+
+
 
 
