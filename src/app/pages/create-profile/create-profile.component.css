@@ -22,11 +22,20 @@
   font-size: 16px;
    border-radius: 1px solid #7B9DAA;
   width: 100%;
+  position: relative;
+  left:122px;
+}
+.common-all{
+padding: 15px 10px;
+}
+.text-container{
+  padding-left: 15px;
+
 }
 
-.icon-container {
+/* .icon-container {
   margin-right: 15px;
-}
+} */
 
 
 .upload-icon {
@@ -101,6 +110,7 @@
 .mat-error {
   color: red;
 }
+
 
 
 

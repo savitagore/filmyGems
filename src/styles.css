@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
+.active {
+  color: #f39c12;
+  text-decoration: underline;
+}
+
+
 .roboto-font {
   font-family: 'Roboto';
 }
