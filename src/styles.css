@@ -71,15 +71,13 @@
  .build-high .main-title {
   font-size: 50px;
   font-weight: bold;
+  
 }
 
 .search-box .form-control {
   flex: 1;
 }
-/* .rotate{
-  bottom: 19px;
-  transform: rotate(55deg);
-} */
+
  .searching-bar {
   display: flex;
   align-items: center;
