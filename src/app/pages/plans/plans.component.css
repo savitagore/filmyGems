@@ -2,14 +2,21 @@
 .plan-images{
   height: 600px;
 }
+.unlock-title{
+  padding-top: 163px;
+}
 
-.container h2 {
+.choose-title{
+  padding-top: 100px;
+}
+
+.choose-title h2 {
   font-size: 40px;
   font-weight: 600;
   color: #ffffff;
 }
 
-.container p {
+.choose-title p {
   font-size: 18px;
   color: #ffffff;
 }
@@ -108,13 +115,16 @@
   right: 16px;
   top: 10px;
 }
+.gold-card{
+  position: relative;
+    bottom: 70px;
+}
 .third-card{
   background-image: url('/assets/plans/card-2.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 685.04px;
   border-radius: 15px;
-
 }
 .subscribe-now  {
   border-radius: 50px;
@@ -123,10 +133,20 @@
   padding: 15px 70px;
   background-color: #FFC936;
 }
+.subscribe :hover {
+  color: #238ECB;
+}
+.star-badge{
+  position: absolute;
+  top: 81px;
+  right: 10px;
+  z-index: 2;
+}
+
 .most{
   color: #FFC936;
   font-size: 16.26px;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
 }
 
 /* montly-yearly btn */
@@ -163,31 +183,39 @@
 /* media all */
 
 @media (min-width:320px) {
-  .container h2 {
+  .unlock-title {
+    padding-top: 124px;
+  }
+  .choose-title h2 {
     font-size: 21px;
   }
 
-  .container p {
+  .choose-title p {
     font-size: 14px;
   }
+ 
 }
 
 @media (min-width:768px) {
-  .container h2 {
+  .choose-title h2 {
     font-size: 30px;
   }
 
-  .container p {
+  .choose-title p {
     font-size: 16px;
   }
 }
 
 @media (min-width:1200px) {
-  .container h2 {
+  .unlock-title {
+    padding-top: 163px;
+  }
+  .choose-title h2 {
     font-size: 40px;
   }
 
-  .container p {
+  .choose-title p {
     font-size: 18px;
   }
+  
 }
