@@ -895,46 +895,6 @@ border: 1px solid black;
 
 
 
-
-
-@media (min-width:320px) {
-  .unlock-title {
-    padding-top: 124px;
-  }
-  .choose-title h2 {
-    font-size: 21px;
-  }
-
-  .choose-title p {
-    font-size: 14px;
-  }
- 
-}
-
-@media (min-width:768px) {
-  .choose-title h2 {
-    font-size: 30px;
-  }
-
-  .choose-title p {
-    font-size: 16px;
-  }
-}
-
-@media (min-width:1200px) {
-  .unlock-title {
-    padding-top: 163px;
-  }
-  .choose-title h2 {
-    font-size: 40px;
-  }
-
-  .choose-title p {
-    font-size: 18px;
-  }
-  
-}
-
 /* All medias */
 
 
@@ -1046,8 +1006,17 @@ border: 1px solid black;
     font-size: 15px;
 
   }
+/* plan page */
+.unlock-title {
+  padding-top: 124px;
+}
+.choose-title h2 {
+  font-size: 21px;
+}
 
-
+.choose-title p {
+  font-size: 14px;
+}
 }
 
 @media (min-width:425px) {
@@ -1215,6 +1184,16 @@ border: 1px solid black;
     flex: 0 0 auto;
     width: 24.666667%;
   }  */
+
+
+  /* plan css */
+  .choose-title h2 {
+    font-size: 30px;
+  }
+
+  .choose-title p {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1426,6 +1405,19 @@ border: 1px solid black;
   .celibrate-card {
     margin-bottom: 10px;
 }
+
+/* plan css */
+.unlock-title {
+  padding-top: 163px;
+}
+.choose-title h2 {
+  font-size: 40px;
+}
+
+.choose-title p {
+  font-size: 18px;
+}
+
 }
 
 @media (min-width:1440px) {
