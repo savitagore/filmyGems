@@ -905,10 +905,19 @@ border: 1px solid black;
 }
 .profile-color{
   background-color: #3C3D44;
-  color:#969696;
+  /* color:#969696; */
   border:1px solid #969696;
   font-size:400;
 
+}
+.input-color{
+  color:#969696;
+  font-size:400;
+
+}
+
+.drag-drop{
+  background-color: #3C3D44;
 }
 .category-color {
   background-color: #F3AD3B;
@@ -916,7 +925,11 @@ border: 1px solid black;
 .custom-border {
   border: 1px dashed #B4B4B4 !important;
 }
-
+.file-name{
+  color:#CCCCCC;
+  font-size: 16px;
+  font-weight: 400;
+}
 .custom-container {
  background-color: #457b9d;
   color: #DADCDF;
@@ -945,14 +958,15 @@ padding: 15px 10px;
   background-color: #000000;
   border: none;
   font-size: 18px;
+  border:1px solid #ffffff;
 }
 .file-item {
   background-color: #686C6E;
   padding: 8px 10px;
   border-radius: 5px;
   width: 300px;
- display: flex;
-  align-items: center;
+
+
 }
 
 .file-thumbnail {
@@ -969,7 +983,17 @@ padding: 15px 10px;
   font-size: 20px;
 }
 
-
+.select-gold{
+  background-color: #F3AD3B;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+}
+.select-gold option {
+  background-color: white;
+  color: black;
+}
 
 
 
