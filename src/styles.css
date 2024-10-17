@@ -880,7 +880,6 @@ border: 1px solid black;
   border: none;
   border-radius: 50px;
   font-size: 18px;
-  font-weight: bold;
   padding: 10px 40px;
   cursor: pointer;
 }
@@ -893,7 +892,6 @@ border: 1px solid black;
 .toggle-switch .btn-yearly {
   background-color: #F3AD3B;
   color: #000000;
-  text-decoration: none;
 }
 
 
@@ -973,46 +971,6 @@ padding: 15px 10px;
 
 
 
-
-
-
-@media (min-width:320px) {
-  .unlock-title {
-    padding-top: 124px;
-  }
-  .choose-title h2 {
-    font-size: 21px;
-  }
-
-  .choose-title p {
-    font-size: 14px;
-  }
-
-}
-
-@media (min-width:768px) {
-  .choose-title h2 {
-    font-size: 30px;
-  }
-
-  .choose-title p {
-    font-size: 16px;
-  }
-}
-
-@media (min-width:1200px) {
-  .unlock-title {
-    padding-top: 163px;
-  }
-  .choose-title h2 {
-    font-size: 40px;
-  }
-
-  .choose-title p {
-    font-size: 18px;
-  }
-
-}
 
 /* All medias */
 
@@ -1126,6 +1084,19 @@ padding: 15px 10px;
 
   }
 
+  /* plans media */
+  .unlock-title {
+    padding-top: 124px;
+  }
+  .choose-title h2 {
+    font-size: 21px;
+  }
+
+  .choose-title p {
+    font-size: 14px;
+  }
+
+
 /* Create-profile media */
 
 
@@ -1140,16 +1111,7 @@ padding: 15px 10px;
 
 
 /* plan page */
-.unlock-title {
-  padding-top: 124px;
-}
-.choose-title h2 {
-  font-size: 21px;
-}
 
-.choose-title p {
-  font-size: 14px;
-}
 }
 
 @media (min-width:425px) {
@@ -1554,8 +1516,6 @@ padding: 15px 10px;
     width: 240px;
   }
 }
-
-
 
 
 
