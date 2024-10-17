@@ -831,7 +831,7 @@ border: 1px solid black;
 .gold-card{
   position: relative;
     bottom: 70px;
-
+    
 }
 .third-card{
   background-image: url('/assets/plans/card-2.png');
@@ -839,7 +839,7 @@ border: 1px solid black;
   background-repeat: no-repeat;
   height: 685.04px;
   border-radius: 15px;
-
+  
 }
 .subscribe-now  {
   border-radius: 50px;
@@ -870,7 +870,7 @@ border: 1px solid black;
 
 
 .toggle-switch {
-  background-color: #555670;
+  background-color: #555670; 
   border-radius: 50px;
   display: inline-flex;
   width: 280px;
@@ -880,7 +880,6 @@ border: 1px solid black;
   border: none;
   border-radius: 50px;
   font-size: 18px;
-  font-weight: bold;
   padding: 10px 40px;
   cursor: pointer;
 }
@@ -893,7 +892,6 @@ border: 1px solid black;
 .toggle-switch .btn-yearly {
   background-color: #F3AD3B;
   color: #000000;
-
 }
 
 
@@ -908,7 +906,6 @@ border: 1px solid black;
   /* color:#969696; */
   border:1px solid #969696;
   font-size:400;
-
 }
 .input-color{
   color:#969696;
@@ -995,46 +992,6 @@ padding: 15px 10px;
   color: black;
 }
 
-
-
-
-@media (min-width:320px) {
-  .unlock-title {
-    padding-top: 124px;
-  }
-  .choose-title h2 {
-    font-size: 21px;
-  }
-
-  .choose-title p {
-    font-size: 14px;
-  }
-
-}
-
-@media (min-width:768px) {
-  .choose-title h2 {
-    font-size: 30px;
-  }
-
-  .choose-title p {
-    font-size: 16px;
-  }
-}
-
-@media (min-width:1200px) {
-  .unlock-title {
-    padding-top: 163px;
-  }
-  .choose-title h2 {
-    font-size: 40px;
-  }
-
-  .choose-title p {
-    font-size: 18px;
-  }
-
-}
 
 /* All medias */
 
@@ -1148,6 +1105,33 @@ padding: 15px 10px;
 
   }
 
+  /* plans media */
+  .unlock-title {
+    padding-top: 124px;
+  }
+  .choose-title h2 {
+    font-size: 21px;
+  }
+
+  .choose-title p {
+    font-size: 14px;
+  }
+
+
+/* Create-profile media */
+
+
+
+
+
+
+
+
+
+
+
+
+/* plan page */
 
 }
 
@@ -1157,6 +1141,7 @@ padding: 15px 10px;
     padding: 7px;
   }
 }
+
 @media (min-width:375px) {
   .export {
     height: 70px;
@@ -1169,6 +1154,7 @@ padding: 15px 10px;
     width: 71px;
   }
 }
+
 @media (min-width: 576px) {
   .logo-img {
     width: auto;
@@ -1316,6 +1302,16 @@ padding: 15px 10px;
     flex: 0 0 auto;
     width: 24.666667%;
   }  */
+
+
+  /* plan css */
+  .choose-title h2 {
+    font-size: 30px;
+  }
+
+  .choose-title p {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1380,76 +1376,60 @@ padding: 15px 10px;
 }
 
 }
+
 @media (min-width:1200px) {
 /* Header-media */
 .logo-img {
   width: 245px;
 }
-
-
-
 .pages-name {
   font-size: 18px;
   margin: 0px 20px;
 }
-
 .join-btn {
   border-radius: 50px;
   font-size: 18px;
   width: 130px;
 }
-
 .join-ig img {
   bottom: 19px;
   left: 89px;
 }
-
 .left-dimond {
   display: block;
 }
-
 .icons-join .links-chart {
   position: relative;
   top: 0px;
-
 }
-
 .linear {
   height: 10px;
   background-color: #F3AD3B;
   position: relative;
   top: 89px;
 }
-
 .search-box {
   position: relative;
   top: 23px;
 }
-
 .build-high p {
   font-size: 18px;
 }
-
  .build-high .main-title {
   font-size: 50px;
   font-weight: bold;
 }
-
 .right-dimond {
   display: block;
 }
-
 .actor-name {
   font-size: 20px;
   font-weight: 500;
 }
-
 .role {
   font-size: 14px;
   font-weight: 400;
 }
-
-
 .cross {
   right: 13px;
   top: 31px;
@@ -1527,6 +1507,23 @@ padding: 15px 10px;
   .celibrate-card {
     margin-bottom: 10px;
 }
+/* create profile */
+
+
+
+
+/* plan css */
+.unlock-title {
+  padding-top: 163px;
+}
+.choose-title h2 {
+  font-size: 40px;
+}
+
+.choose-title p {
+  font-size: 18px;
+}
+
 }
 
 @media (min-width:1440px) {
@@ -1540,8 +1537,6 @@ padding: 15px 10px;
     width: 240px;
   }
 }
-
-
 
 
 
