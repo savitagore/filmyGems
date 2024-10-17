@@ -1,8 +1,14 @@
-li a.active {
+/* li a.active {
     color: black;
       text-decoration: underline;
         text-decoration-color: gold;
 
       text-underline-offset: 4px;
 
-  }
+  } */
+
+  .nav-link.active {
+    color: yellow !important; /* Force the active link color */
+    font-weight: bold !important; /* Force the font weight */
+}
+
