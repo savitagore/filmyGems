@@ -905,8 +905,10 @@ border: 1px solid black;
   color:#969696;
   border:1px solid #969696;
   font-size:400;
-
 }
+
+
+
 .category-color {
   background-color: #F3AD3B;
 }
@@ -1120,6 +1122,20 @@ padding: 15px 10px;
     font-size: 15px;
 
   }
+
+/* Create-profile media */
+
+
+
+
+
+
+
+
+
+
+
+
 /* plan page */
 .unlock-title {
   padding-top: 124px;
@@ -1139,6 +1155,7 @@ padding: 15px 10px;
     padding: 7px;
   }
 }
+
 @media (min-width:375px) {
   .export {
     height: 70px;
@@ -1151,6 +1168,7 @@ padding: 15px 10px;
     width: 71px;
   }
 }
+
 @media (min-width: 576px) {
   .logo-img {
     width: auto;
@@ -1372,76 +1390,60 @@ padding: 15px 10px;
 }
 
 }
+
 @media (min-width:1200px) {
 /* Header-media */
 .logo-img {
   width: 245px;
 }
-
-
-
 .pages-name {
   font-size: 18px;
   margin: 0px 20px;
 }
-
 .join-btn {
   border-radius: 50px;
   font-size: 18px;
   width: 130px;
 }
-
 .join-ig img {
   bottom: 19px;
   left: 89px;
 }
-
 .left-dimond {
   display: block;
 }
-
 .icons-join .links-chart {
   position: relative;
   top: 0px;
-
 }
-
 .linear {
   height: 10px;
   background-color: #F3AD3B;
   position: relative;
   top: 89px;
 }
-
 .search-box {
   position: relative;
   top: 23px;
 }
-
 .build-high p {
   font-size: 18px;
 }
-
  .build-high .main-title {
   font-size: 50px;
   font-weight: bold;
 }
-
 .right-dimond {
   display: block;
 }
-
 .actor-name {
   font-size: 20px;
   font-weight: 500;
 }
-
 .role {
   font-size: 14px;
   font-weight: 400;
 }
-
-
 .cross {
   right: 13px;
   top: 31px;
@@ -1519,6 +1521,10 @@ padding: 15px 10px;
   .celibrate-card {
     margin-bottom: 10px;
 }
+/* create profile */
+
+
+
 
 /* plan css */
 .unlock-title {
