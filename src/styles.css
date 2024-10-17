@@ -894,6 +894,120 @@ border: 1px solid black;
 }
 
 
+/*************************************Create profile*****************************************/
+
+.text-profile{
+  font-size: 40px;
+  font-weight: 600;
+}
+.profile-color{
+  background-color: #3C3D44;
+  color:#969696;
+  border:1px solid #969696;
+  font-size:400;
+
+}
+.category-color {
+  background-color: #F3AD3B;
+}
+.custom-border {
+  border: 1px dashed #B4B4B4 !important;
+}
+
+.custom-container {
+ background-color: #457b9d;
+  color: #DADCDF;
+  font-size: 16px;
+   border-radius: 1px solid #7B9DAA;
+  width: 100%;
+  position: relative;
+  left:122px;
+}
+.common-all{
+padding: 15px 10px;
+}
+.text-container{
+  padding-left: 15px;
+
+}
+.profiles-text{
+  padding-top: 100px;
+}
+.upload-icon {
+  margin-top: 10px;
+}
+.cancel-btn{
+  width: 200px;
+  height: 48px;
+  background-color: #000000;
+  border: none;
+  font-size: 18px;
+}
+.file-item {
+  background-color: #686C6E;
+  padding: 8px 10px;
+  border-radius: 5px;
+  width: 300px;
+ display: flex;
+  align-items: center;
+}
+
+.file-thumbnail {
+  width: 45px;
+  height: 31px;
+  object-fit: cover;
+  background-color: #3C3D44 !important;
+}
+
+.btn-closes {
+  background-color: transparent;
+   border: none;
+ color:#F86F6F ;
+  font-size: 20px;
+}
+
+
+
+
+
+
+@media (min-width:320px) {
+  .unlock-title {
+    padding-top: 124px;
+  }
+  .choose-title h2 {
+    font-size: 21px;
+  }
+
+  .choose-title p {
+    font-size: 14px;
+  }
+
+}
+
+@media (min-width:768px) {
+  .choose-title h2 {
+    font-size: 30px;
+  }
+
+  .choose-title p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width:1200px) {
+  .unlock-title {
+    padding-top: 163px;
+  }
+  .choose-title h2 {
+    font-size: 40px;
+  }
+
+  .choose-title p {
+    font-size: 18px;
+  }
+
+}
 
 /* All medias */
 
