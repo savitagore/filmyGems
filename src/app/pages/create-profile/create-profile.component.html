@@ -3,13 +3,13 @@
   <div class="container">
     <div class="row">
       <div class="profiles-text">
-      <div class="text-center text-white build-high pt-5">
-        <h1 class="main-title ">Crafting Profiles That Leave An Impression , <br>
-          Not Just A Digital Footprint</h1>
-        <p>Let's start and create your profile with us for <br>
-          better contacts and services..</p>
+        <div class="text-center text-white build-high pt-5">
+          <h1 class="main-title ">Crafting Profiles That Leave An Impression , <br>
+            Not Just A Digital Footprint</h1>
+          <p>Let's start and create your profile with us for <br>
+            better contacts and services..</p>
+        </div>
       </div>
-    </div>
       <div class="d-flex  justify-content-center flex-direction-column align-items-center">
         <div class="line"></div>
       </div>
@@ -19,133 +19,133 @@
 <section class="bg-middle text-white pt-4 roboto-font">
 
   <div class="container">
-      <h2 class="text-center text-profile ">Create Your Profile</h2>
-      <div class="create-profile-page">
-        <form [formGroup]="profileForm">
-          <div class="row pt-3">
-            <div class="col-md-4 text-center">
-              <div class="border-0 rounded profile-color p-2">
-                <div class="d-flex align-items-center justify-content-center pt-3">
-                  <div class="d-flex align-items-center justify-content-center"
-                    style="width: 170px; height: 200px; background-color: #777777;">
-                    <img src="assets/svg-icons/camera.svg" alt="camera icon">
-                  </div>
+    <h2 class="text-center text-profile ">Create Your Profile</h2>
+    <div class="create-profile-page">
+      <form [formGroup]="profileForm">
+        <div class="row pt-3">
+          <div class="col-md-4 text-center">
+            <div class="border-0 rounded profile-color p-2">
+              <div class="d-flex align-items-center justify-content-center pt-3">
+                <div class="d-flex align-items-center justify-content-center"
+                  style="width: 170px; height: 200px; background-color: #777777;">
+                  <img src="assets/svg-icons/camera.svg" alt="camera icon">
                 </div>
-                <img src="assets/svg-icons/upload.svg" alt="upload icon" class="upload-icon">
               </div>
+              <img src="assets/svg-icons/upload.svg" alt="upload icon" class="upload-icon">
             </div>
-            <div class="col-md-8">
-              <div class="row g-4 profile-color rounded border-0 mt-0">
-                <div class="col-12 col-md-6">
-                  <input type="text" class="form-control profile-color input-color" formControlName="firstName" id="firstName"
-                    placeholder="First Name *">
-                  <small
-                    *ngIf="profileForm.get('firstName')?.hasError('required') && (profileForm.get('firstName')?.dirty || profileForm.get('firstName')?.touched)"
-                    class="text-danger">First Name is required.</small>
-                  <small
-                    *ngIf="profileForm.get('firstName')?.hasError('minlength') && (profileForm.get('firstName')?.dirty || profileForm.get('firstName')?.touched)"
-                    class="text-danger">First Name must be at least 3 characters long..</small>
-                </div>
-                <div class="col-12 col-md-6">
-                  <input type="text" class="form-control profile-color" formControlName="lastName" id="lastName"
-                    placeholder="Last Name *">
-                  <small
-                    *ngIf="profileForm.get('lastName')?.hasError('required') && (profileForm.get('lastName')?.dirty || profileForm.get('lastName')?.touched)"
-                    class="text-danger">Last Name is required.</small>
-                  <small
-                    *ngIf="profileForm.get('lastName')?.hasError('minlength') && (profileForm.get('lastName')?.dirty || profileForm.get('lastName')?.touched)"
-                    class="text-danger">Last Name must be at least 3 characters long..</small>
-                </div>
+          </div>
+          <div class="col-md-8">
+            <div class="row g-4 profile-color rounded border-0 mt-0">
+              <div class="col-12 col-md-6">
+                <input type="text" class="form-control profile-color input-color" formControlName="firstName"
+                  id="firstName" placeholder="First Name *">
+                <small
+                  *ngIf="profileForm.get('firstName')?.hasError('required') && (profileForm.get('firstName')?.dirty || profileForm.get('firstName')?.touched)"
+                  class="text-danger">First Name is required.</small>
+                <small
+                  *ngIf="profileForm.get('firstName')?.hasError('minlength') && (profileForm.get('firstName')?.dirty || profileForm.get('firstName')?.touched)"
+                  class="text-danger">First Name must be at least 3 characters long..</small>
+              </div>
+              <div class="col-12 col-md-6">
+                <input type="text" class="form-control profile-color" formControlName="lastName" id="lastName"
+                  placeholder="Last Name *">
+                <small
+                  *ngIf="profileForm.get('lastName')?.hasError('required') && (profileForm.get('lastName')?.dirty || profileForm.get('lastName')?.touched)"
+                  class="text-danger">Last Name is required.</small>
+                <small
+                  *ngIf="profileForm.get('lastName')?.hasError('minlength') && (profileForm.get('lastName')?.dirty || profileForm.get('lastName')?.touched)"
+                  class="text-danger">Last Name must be at least 3 characters long..</small>
+              </div>
 
 
-                <div class="col-12 col-md-6">
-                  <input type="email" class="form-control profile-color" id="email" placeholder="Enter your email *"
-                    formControlName="email">
-                  <small
-                    *ngIf="profileForm.get('email')?.hasError('required') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
-                    class="text-danger">Email is required.</small>
-                  <small
-                    *ngIf="profileForm.get('email')?.hasError('email') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
-                    class="text-danger">Please enter a valid email address.</small>
-                  <small
-                    *ngIf="profileForm.get('email')?.hasError('pattern') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
-                    class="text-danger">Email format is invalid.</small>
-                </div>
+              <div class="col-12 col-md-6">
+                <input type="email" class="form-control profile-color" id="email" placeholder="Enter your email *"
+                  formControlName="email">
+                <small
+                  *ngIf="profileForm.get('email')?.hasError('required') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
+                  class="text-danger">Email is required.</small>
+                <small
+                  *ngIf="profileForm.get('email')?.hasError('email') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
+                  class="text-danger">Please enter a valid email address.</small>
+                <small
+                  *ngIf="profileForm.get('email')?.hasError('pattern') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
+                  class="text-danger">Email format is invalid.</small>
+              </div>
 
 
-                <div class="col-12 col-md-6">
-                  <input type="text" class="form-control profile-color" formControlName="mobile" id="mobile"
-                    placeholder="Mobile Number *">
-                  <div
-                    *ngIf="profileForm.get('mobile')?.invalid && (profileForm.get('mobile')?.dirty || profileForm.get('mobile')?.touched)">
-                    <small *ngIf="profileForm.get('mobile')?.errors?.['required']" class="text-danger">Mobile number is
-                      required.</small>
-                    <small *ngIf="profileForm.get('mobile')?.errors?.['pattern']" class="text-danger">Please enter a valid
-                      10-digit mobile number.</small>
-                  </div>
+              <div class="col-12 col-md-6">
+                <input type="text" class="form-control profile-color" formControlName="mobile" id="mobile"
+                  placeholder="Mobile Number *">
+                <div
+                  *ngIf="profileForm.get('mobile')?.invalid && (profileForm.get('mobile')?.dirty || profileForm.get('mobile')?.touched)">
+                  <small *ngIf="profileForm.get('mobile')?.errors?.['required']" class="text-danger">Mobile number is
+                    required.</small>
+                  <small *ngIf="profileForm.get('mobile')?.errors?.['pattern']" class="text-danger">Please enter a valid
+                    10-digit mobile number.</small>
                 </div>
+              </div>
 
-                <div class="col-12 col-md-4">
-                  <input type="text" class="form-control profile-color" formControlName="city" id="city"
-                    placeholder="Enter City *">
-                  <div
-                    *ngIf="profileForm.get('city')?.invalid && (profileForm.get('city')?.dirty || profileForm.get('city')?.touched)">
-                    <small *ngIf="profileForm.get('city')?.errors?.['required']" class="text-danger">City is
-                      required.</small>
-                  </div>
+              <div class="col-12 col-md-4">
+                <input type="text" class="form-control profile-color" formControlName="city" id="city"
+                  placeholder="Enter City *">
+                <div
+                  *ngIf="profileForm.get('city')?.invalid && (profileForm.get('city')?.dirty || profileForm.get('city')?.touched)">
+                  <small *ngIf="profileForm.get('city')?.errors?.['required']" class="text-danger">City is
+                    required.</small>
                 </div>
+              </div>
 
-                <div class="col-12 col-md-4">
-                  <input type="text" class="form-control profile-color" formControlName="zip" id="zip"
-                    placeholder="Enter ZIP Code *">
-                  <div
-                    *ngIf="profileForm.get('zip')?.invalid && (profileForm.get('zip')?.dirty || profileForm.get('zip')?.touched)">
-                    <small *ngIf="profileForm.get('zip')?.errors?.['required']" class="text-danger">ZIP Code is
-                      required.</small>
-                    <small *ngIf="profileForm.get('zip')?.errors?.['pattern']" class="text-danger">ZIP Code must be 6
-                      digits.</small>
-                  </div>
+              <div class="col-12 col-md-4">
+                <input type="text" class="form-control profile-color" formControlName="zip" id="zip"
+                  placeholder="Enter ZIP Code *">
+                <div
+                  *ngIf="profileForm.get('zip')?.invalid && (profileForm.get('zip')?.dirty || profileForm.get('zip')?.touched)">
+                  <small *ngIf="profileForm.get('zip')?.errors?.['required']" class="text-danger">ZIP Code is
+                    required.</small>
+                  <small *ngIf="profileForm.get('zip')?.errors?.['pattern']" class="text-danger">ZIP Code must be 6
+                    digits.</small>
                 </div>
+              </div>
 
-                <div class="col-12 col-md-4">
-                  <input type="text" class="form-control profile-color" formControlName="country" id="country"
-                    placeholder="Enter Country *">
-                  <div
-                    *ngIf="profileForm.get('country')?.invalid && (profileForm.get('country')?.dirty || profileForm.get('country')?.touched)">
-                    <small *ngIf="profileForm.get('country')?.errors?.['required']" class="text-danger">Country is
-                      required.</small>
-                  </div>
+              <div class="col-12 col-md-4">
+                <input type="text" class="form-control profile-color" formControlName="country" id="country"
+                  placeholder="Enter Country *">
+                <div
+                  *ngIf="profileForm.get('country')?.invalid && (profileForm.get('country')?.dirty || profileForm.get('country')?.touched)">
+                  <small *ngIf="profileForm.get('country')?.errors?.['required']" class="text-danger">Country is
+                    required.</small>
                 </div>
+              </div>
 
-                <div class="col-12 col-md-6 profile-color mb-4 border-0">
-                  <select class="form-select select-gold" >
-                    <option value=""  selected>Category/Gems</option>
-                    <option value="artist">Artist</option>
-                    <option value="director">Director</option>
-                    <option value="casting-director">Casting Director</option>
-                    <option value="assistant-director">Assistant Director</option>
-                    <option value="associate-director">Associate Director</option>
-                    <option value="executive-producer">Executive Producer</option>
-                    <option value="production-manager">Production Manager</option>
-                    <option value="line-producer">Line Producer</option>
-                  </select>
-                </div>
+              <div class="col-12 col-md-6 profile-color mb-4 border-0">
+                <select class="form-select select-gold">
+                  <option value="" selected>Category/Gems</option>
+                  <option value="artist">Artist</option>
+                  <option value="director">Director</option>
+                  <option value="casting-director">Casting Director</option>
+                  <option value="assistant-director">Assistant Director</option>
+                  <option value="associate-director">Associate Director</option>
+                  <option value="executive-producer">Executive Producer</option>
+                  <option value="production-manager">Production Manager</option>
+                  <option value="line-producer">Line Producer</option>
+                </select>
+              </div>
 
-                <div class="col-12 col-md-6 profile-color border-0">
-                  <select class="form-select select-gold" id="language" style="background-color: #F3AD3B;">
-                    <option class="bg-warning" value="" selected>Select Language</option>
-                    <option value="english">English</option>
-                    <option value="spanish">Spanish</option>
-                    <option value="french">French</option>
-                  </select>
-                </div>
+              <div class="col-12 col-md-6 profile-color border-0">
+                <select class="form-select select-gold" id="language" style="background-color: #F3AD3B;">
+                  <option class="bg-warning" value="" selected>Select Language</option>
+                  <option value="english">English</option>
+                  <option value="spanish">Spanish</option>
+                  <option value="french">French</option>
+                </select>
               </div>
             </div>
           </div>
-           <div class="row border-0 rounded pt-5">
-           <div class="drag-drop d-flex justify-content-center align-items-center">
+        </div>
+        <div class="row border-0 rounded pt-5">
+          <div class="drag-drop d-flex justify-content-center align-items-center">
             <div class="col-12 col-md-8 ">
-              <div class="custom-border rounded text-center  profile-color pt-2 "    style="width: 730px; height: 271px;" >
+              <div class="custom-border rounded text-center  profile-color pt-2 " style="width: 730px; height: 271px;">
                 <img src="assets/svg-icons/cloud.svg" alt="" style="width:77px; height:66px;">
                 <p class="file-name" style="font-size:24px">Drag & Drop file here or</p>
                 <button type="button"
@@ -158,8 +158,8 @@
               </div>
             </div>
             <div class="col-12 col-md-4  p-3">
-              <div class="d-flex flex-column " >
-                 <div class="file-item mb-2 d-flex align-items-center">
+              <div class="d-flex flex-column ">
+                <div class="file-item mb-2 d-flex align-items-center">
                   <img src="https://via.placeholder.com/40" alt="Thumbnail" class="img-fluid file-thumbnail me-2">
                   <span class="file-name">image.png</span>
                   <button type="button" class="btn-closes ms-auto">X</button>
@@ -180,72 +180,64 @@
                   </div>
                 </div>
                 <div class="mb-2">
-                   <div class="file-item mb-2 ">
+                  <div class="file-item mb-2 ">
                     <div class="row">
-                    <div class="videos-dives d-flex align-items-center">
-                      <video width="50"  style="background-color: #2B2B2B; height: 31.27px;">
-                        <source src="video.mp4" type="video/mp4">
-                      </video>
+                      <div class="videos-dives d-flex align-items-center">
+                        <video width="50" style="background-color: #2B2B2B; height: 31.27px;">
+                          <source src="video.mp4" type="video/mp4">
+                        </video>
 
-                      <span class="file-name  me-auto">video.mp4</span>
-                      <button type="button" class="btn-closes ms-2">X</button>
-                    </div>
-                    </div>
-                    <div class="row" style="padding: 0px 10px;">
-                    <div class="progress mt-1" style="width: 100%; height: 12px;">
-                      <div class="progress-bar bg-primary" role="progressbar" style="width: 60%;" aria-valuenow="60"
-                        aria-valuemin="-1" aria-valuemax="100">
+                        <span class="file-name  me-auto">video.mp4</span>
+                        <button type="button" class="btn-closes ms-2">X</button>
                       </div>
                     </div>
+                    <div class="row" style="padding: 0px 10px;">
+                      <div class="progress mt-1" style="width: 100%; height: 12px;">
+                        <div class="progress-bar bg-primary" role="progressbar" style="width: 60%;" aria-valuenow="60"
+                          aria-valuemin="-1" aria-valuemax="100">
+                        </div>
+                      </div>
                     </div>
 
 
                   </div>
-
                 </div>
               </div>
             </div>
-           </div>
           </div>
+        </div>
 
-          <div class="col-12 pt-3">
-            <div class="form-check" style="padding-left: 9.9px;">
-              <input class="form-check-input" type="checkbox" id="termsCheck" required>
-              <label class="form-check-label" for="termsCheck">
-                By signing up, you agree to our <a href="#" class="link-primary">conditions</a> & <a href="#"
-                  class="link-primary">privacy policy</a>
-              </label>
-            </div>
+        <div class="col-12 pt-3">
+          <div class="form-check" style="padding-left: 9.9px;">
+            <input class="form-check-input" type="checkbox" id="termsCheck" required>
+            <label class="form-check-label" for="termsCheck">
+              By signing up, you agree to our <a href="#" class="link-primary">conditions</a> & <a href="#"
+                class="link-primary">privacy policy</a>
+            </label>
           </div>
-          <div class="col-12 text-center mb-3 pt-3">
-            <button type="button" class="btn btn-outline-light me-2 rounded-pill cancel-btn">Cancel</button>
-            <button type="submit" class="btn btn-all rounded-pill">Save</button>
+        </div>
+        <div class="col-12 text-center mb-3 pt-3">
+          <button type="button" class="btn btn-outline-light me-2 rounded-pill cancel-btn">Cancel</button>
+          <button type="submit" class="btn btn-all rounded-pill">Save</button>
+        </div>
+
+
+      </form>
+    </div>
+    <div class="custom-container text-container" style="width:930px;">
+      <div class="row  ">
+        <div class="common-all d-flex">
+          <div class="text-error">
+            <img src="assets/svg-icons/Vector.svg" alt="info icon">
           </div>
-
-
-        </form>
+          <div class="text-container">
+            <p>May our information be kept secure and our online experiences remain private. Cheers to transparency,
+              consent, and encryption - the essential ingredients for a safer digital future!</p>
+          </div>
+        </div>
       </div>
-      <div class="custom-container text-container"
-        style="width:930px;">
-        <div class="row  ">
-            <div class="common-all d-flex">
-              <div class="text-error">
-                <img src="assets/svg-icons/Vector.svg" alt="info icon">
-              </div>
-              <div class="text-container">
-                <p>May our information be kept secure and our online experiences remain private. Cheers to transparency,
-                  consent, and encryption - the essential ingredients for a safer digital future!</p>
-              </div>
-            </div>
-          </div>
-
-
-
-      </div>
-
-
+    </div>
   </div>
-
 </section>
 
 
