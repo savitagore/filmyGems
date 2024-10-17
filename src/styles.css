@@ -1,7 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-.active {
-  color: #f39c12;
+
+li.nav-item a.nav-link.active {
+  color:#FFCF25 !important;
   text-decoration: underline;
+  text-decoration-color: #FFCF25;
+  text-underline-offset: 5px;
 }
 
 
