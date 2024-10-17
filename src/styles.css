@@ -890,7 +890,7 @@ border: 1px solid black;
 .toggle-switch .btn-yearly {
   background-color: #F3AD3B;
   color: #000000;
- 
+  text-decoration: none;
 }
 
 
