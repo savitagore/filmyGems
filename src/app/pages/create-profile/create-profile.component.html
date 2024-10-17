@@ -23,7 +23,7 @@
       <form [formGroup]="profileForm">
         <div class="row pt-3" style="height: 336px;">
           <div class="col-md-4 text-center">
-            <div class="border-0 rounded bg-color p-2">
+            <div class="border-0 rounded profile-color p-2">
               <div class="d-flex align-items-center justify-content-center pt-3">
                 <div class="d-flex align-items-center justify-content-center"
                   style="width: 170px; height: 200px; background-color: #777777;">
@@ -34,9 +34,9 @@
             </div>
           </div>
           <div class="col-md-8">
-            <div class="row g-4 bg-color rounded border-0 mt-0">
+            <div class="row g-4 profile-color rounded border-0 mt-0">
               <div class="col-12 col-md-6">
-                <input type="text" class="form-control bg-color" formControlName="firstName" id="firstName"
+                <input type="text" class="form-control profile-color" formControlName="firstName" id="firstName"
                   placeholder="First Name *">
                 <small
                   *ngIf="profileForm.get('firstName')?.hasError('required') && (profileForm.get('firstName')?.dirty || profileForm.get('firstName')?.touched)"
@@ -46,7 +46,7 @@
                   class="text-danger">First Name must be at least 3 characters long..</small>
               </div>
               <div class="col-12 col-md-6">
-                <input type="text" class="form-control bg-color" formControlName="lastName" id="lastName"
+                <input type="text" class="form-control profile-color" formControlName="lastName" id="lastName"
                   placeholder="Last Name *">
                 <small
                   *ngIf="profileForm.get('lastName')?.hasError('required') && (profileForm.get('lastName')?.dirty || profileForm.get('lastName')?.touched)"
@@ -58,7 +58,7 @@
 
 
               <div class="col-12 col-md-6">
-                <input type="email" class="form-control bg-color" id="email" placeholder="Enter your email *"
+                <input type="email" class="form-control profile-color" id="email" placeholder="Enter your email *"
                   formControlName="email">
                 <small
                   *ngIf="profileForm.get('email')?.hasError('required') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
@@ -73,7 +73,7 @@
 
 
               <div class="col-12 col-md-6">
-                <input type="text" class="form-control bg-color" formControlName="mobile" id="mobile"
+                <input type="text" class="form-control profile-color" formControlName="mobile" id="mobile"
                   placeholder="Mobile Number *">
                 <div
                   *ngIf="profileForm.get('mobile')?.invalid && (profileForm.get('mobile')?.dirty || profileForm.get('mobile')?.touched)">
@@ -85,7 +85,7 @@
               </div>
 
               <div class="col-12 col-md-4">
-                <input type="text" class="form-control bg-color" formControlName="city" id="city"
+                <input type="text" class="form-control profile-color" formControlName="city" id="city"
                   placeholder="Enter City *">
                 <div
                   *ngIf="profileForm.get('city')?.invalid && (profileForm.get('city')?.dirty || profileForm.get('city')?.touched)">
@@ -95,7 +95,7 @@
               </div>
 
               <div class="col-12 col-md-4">
-                <input type="text" class="form-control bg-color" formControlName="zip" id="zip"
+                <input type="text" class="form-control profile-color" formControlName="zip" id="zip"
                   placeholder="Enter ZIP Code *">
                 <div
                   *ngIf="profileForm.get('zip')?.invalid && (profileForm.get('zip')?.dirty || profileForm.get('zip')?.touched)">
@@ -107,7 +107,7 @@
               </div>
 
               <div class="col-12 col-md-4">
-                <input type="text" class="form-control bg-color" formControlName="country" id="country"
+                <input type="text" class="form-control profile-color" formControlName="country" id="country"
                   placeholder="Enter Country *">
                 <div
                   *ngIf="profileForm.get('country')?.invalid && (profileForm.get('country')?.dirty || profileForm.get('country')?.touched)">
@@ -116,7 +116,7 @@
                 </div>
               </div>
 
-              <div class="col-12 col-md-6 bg-color mb-4 border-0">
+              <div class="col-12 col-md-6 profile-color mb-4 border-0">
                 <select class="form-select form-control" required>
                   <option value="" class="category-color" selected>Category/Gems</option>
                   <option value="artist">Artist</option>
@@ -135,7 +135,7 @@
                 </p-dropdown> -->
 
 
-              <div class="col-12 col-md-6 bg-color border-0">
+              <div class="col-12 col-md-6 profile-color border-0">
                 <select class="form-select form-control" id="language" required>
                   <option class="bg-warning" value="" selected>Select Language</option>
                   <option value="english">English</option>
@@ -146,7 +146,7 @@
             </div>
           </div>
         </div>
-        <div class="row bg-color border-0 rounded">
+        <div class="row profile-color border-0 rounded">
           <div class="col-12 col-md-6 p-3 ">
             <div class="custom-border rounded text-center pt-2">
               <img src="assets/svg-icons/cloud.svg" alt="" style="width:77px; height:66px;">
