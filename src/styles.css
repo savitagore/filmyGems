@@ -831,7 +831,7 @@ border: 1px solid black;
 .gold-card{
   position: relative;
     bottom: 70px;
-    
+
 }
 .third-card{
   background-image: url('/assets/plans/card-2.png');
@@ -839,7 +839,7 @@ border: 1px solid black;
   background-repeat: no-repeat;
   height: 685.04px;
   border-radius: 15px;
-  
+
 }
 .subscribe-now  {
   border-radius: 50px;
@@ -870,7 +870,7 @@ border: 1px solid black;
 
 
 .toggle-switch {
-  background-color: #555670; 
+  background-color: #555670;
   border-radius: 50px;
   display: inline-flex;
   width: 280px;
@@ -932,9 +932,9 @@ border: 1px solid black;
   color: #DADCDF;
   font-size: 16px;
    border-radius: 1px solid #7B9DAA;
-  width: 100%;
-  position: relative;
-  left:122px;
+  /* width: 100%; */
+  /* position: relative; */
+  /* left:122px; */
 }
 .common-all{
 padding: 15px 10px;
@@ -961,14 +961,12 @@ padding: 15px 10px;
   background-color: #686C6E;
   padding: 8px 10px;
   border-radius: 5px;
-  width: 300px;
+  /* width: 300px; */
 
 
 }
 
 .file-thumbnail {
-  width: 45px;
-  height: 31px;
   object-fit: cover;
   background-color: #3C3D44 !important;
 }
