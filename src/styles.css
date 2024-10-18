@@ -903,15 +903,12 @@ border: 1px solid black;
 }
 .profile-color{
   background-color: #3C3D44;
-  /* color:#969696; */
+
   border:1px solid #969696;
   font-size:400;
 }
-.input-color{
-  color:#969696;
-  font-size:400;
 
-}
+
 
 .drag-drop{
   background-color: #3C3D44;
@@ -932,15 +929,14 @@ border: 1px solid black;
   color: #DADCDF;
   font-size: 16px;
    border-radius: 1px solid #7B9DAA;
-  /* width: 100%; */
-  /* position: relative; */
-  /* left:122px; */
+   padding: 10px 10px;
+
 }
-.common-all{
-padding: 15px 10px;
+input::placeholder {
+  color: #969696 !important;
 }
 .text-container{
-  padding-left: 15px;
+  padding-left: 10px;
 
 }
 .profiles-text{
@@ -959,9 +955,9 @@ padding: 15px 10px;
 }
 .file-item {
   background-color: #686C6E;
-  padding: 8px 10px;
+  padding: 13px 10px;
   border-radius: 5px;
-  /* width: 300px; */
+
 
 
 }
