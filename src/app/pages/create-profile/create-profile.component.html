@@ -118,7 +118,9 @@
                 </div>
 
                 <div class="col-12 col-md-6 profile-color mb-4 border-0">
-                  <select class="form-select select-gold" >
+                  <select class="form-select select-gold scrollable-options" data-bs-spy="scroll" data-bs-target=".dropdown-menu"
+                  data-bs-offset="50" aria-labelledby="dropdownMenuButton1"
+                  style="max-height: 200px; overflow-y: auto;" >
                     <option value=""  selected>Category/Gems</option>
                     <option value="artist">Artist</option>
                     <option value="director">Director</option>
@@ -147,7 +149,7 @@
             <div class="col-12 col-md-8 ">
               <div class="custom-border rounded text-center  profile-color pt-2 " style="width: 730px; height: 271px;">
                 <img src="assets/svg-icons/cloud.svg" alt="" style="width:77px; height:66px;">
-                <p class="file-name" style="font-size:24px">Drag & Drop file here or</p>
+                <p class="file-name" style="font-size:24px">Drag & Drop file here <br> or</p>
                 <button type="button"
                   class="btn btn-all rounded-pill d-flex align-items-center justify-content-center mx-auto">
                   <img src="assets/svg-icons/file-icons.svg" alt="attachment icon" style="width: 20px; height: 20px;"
