@@ -16,8 +16,7 @@
     </div>
   </div>
 </section>
-<section class="bg-middle text-white pt-4 roboto-font">
-
+<section class="bg-middle text-white  roboto-font py-5">
   <div class="container">
     <h2 class="text-center text-profile ">Create Your Profile</h2>
     <div class="create-profile-page">
@@ -37,8 +36,9 @@
           <div class="col-md-8">
             <div class="row g-4 profile-color rounded-4 border-0 mt-0">
               <div class="col-12 col-md-6">
-                <input type="text" class="form-control profile-color input-color" formControlName="firstName"
-                  id="firstName" placeholder="First Name *">
+                <input type="text" class="form-control profile-color " formControlName="firstName" id="firstName"
+                  placeholder="First Name *">
+
                 <small
                   *ngIf="profileForm.get('firstName')?.hasError('required') && (profileForm.get('firstName')?.dirty || profileForm.get('firstName')?.touched)"
                   class="text-danger">First Name is required.</small>
@@ -56,8 +56,6 @@
                   *ngIf="profileForm.get('lastName')?.hasError('minlength') && (profileForm.get('lastName')?.dirty || profileForm.get('lastName')?.touched)"
                   class="text-danger">Last Name must be at least 3 characters long..</small>
               </div>
-
-
               <div class="col-12 col-md-6">
                 <input type="email" class="form-control profile-color" id="email" placeholder="Enter your email *"
                   formControlName="email">
@@ -71,8 +69,6 @@
                   *ngIf="profileForm.get('email')?.hasError('pattern') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
                   class="text-danger">Email format is invalid.</small>
               </div>
-
-
               <div class="col-12 col-md-6">
                 <input type="text" class="form-control profile-color" formControlName="mobile" id="mobile"
                   placeholder="Mobile Number *">
@@ -84,7 +80,6 @@
                     10-digit mobile number.</small>
                 </div>
               </div>
-
               <div class="col-12 col-md-4">
                 <input type="text" class="form-control profile-color" formControlName="city" id="city"
                   placeholder="Enter City *">
@@ -94,7 +89,6 @@
                     required.</small>
                 </div>
               </div>
-
               <div class="col-12 col-md-4">
                 <input type="text" class="form-control profile-color" formControlName="zip" id="zip"
                   placeholder="Enter ZIP Code *">
@@ -106,7 +100,6 @@
                     digits.</small>
                 </div>
               </div>
-
               <div class="col-12 col-md-4">
                 <input type="text" class="form-control profile-color" formControlName="country" id="country"
                   placeholder="Enter Country *">
@@ -116,7 +109,6 @@
                     required.</small>
                 </div>
               </div>
-
               <div class="col-12 col-md-6 profile-color mb-4 border-0">
                 <select class="form-select select-gold scrollable-options" data-bs-spy="scroll"
                   data-bs-target=".dropdown-menu" data-bs-offset="50" aria-labelledby="dropdownMenuButton1"
@@ -132,7 +124,6 @@
                   <option value="line-producer">Line Producer</option>
                 </select>
               </div>
-
               <div class="col-12 col-md-6 profile-color border-0">
                 <select class="form-select select-gold" id="language" style="background-color: #F3AD3B;">
                   <option class="bg-warning" value="" selected>Select Language</option>
@@ -144,106 +135,90 @@
             </div>
           </div>
         </div>
-        <div class="row py-5" >
-          <div class="drag-drop  d-flex justify-content-center align-items-center rounded-4">
-            <div class="col-8 p-3" >
-              <div class="custom-border rounded text-center  profile-color pt-3">
-                <img src="assets/svg-icons/cloud.svg" alt="" style="width:77px; height:66px;">
-                <p class="file-name" style="font-size:24px">Drag & Drop file here <br> or</p>
-                <button type="button"
-                  class="btn btn-all rounded-pill d-flex align-items-center justify-content-center mx-auto">
-                  <img src="assets/svg-icons/file-icons.svg" alt="attachment icon" style="width: 20px; height: 20px;"
-                    class="me-2">
-                  Choose file
-                </button>
-                <p class="mt-2 text-primary">Maximum upload size 2MB</p>
+        <div class="row py-5">
+          <div class="drag-drop d-flex justify-content-center align-items-center rounded-4">
+              <div class="col-lg-8 col-md-8 col-sm-12 p-3">
+                  <div class="custom-border rounded text-center profile-color pt-3">
+                      <img src="assets/svg-icons/cloud.svg" alt="" style="width:77px; height:66px;">
+                      <p class="file-name" style="font-size:24px">Drag & Drop file here <br> or</p>
+                      <button type="button" class="btn btn-all rounded-pill d-flex align-items-center justify-content-center mx-auto">
+                          <img src="assets/svg-icons/file-icons.svg" alt="attachment icon" style="width: 20px; height: 20px;" class="me-2">
+                          Choose file
+                      </button>
+                      <p class="mt-2 text-primary">Maximum upload size 2MB</p>
+                  </div>
               </div>
-            </div>
-            <div class="col-4 p-3">
-
-                <div class="file-item mb-2  d-flex align-items-center pt-2">
-                  <img src="https://via.placeholder.com/40" alt="Thumbnail" class="img-fluid file-thumbnail me-2">
-                  <span class="file-name">image.png</span>
-                  <button type="button" class="btn-closes ms-auto">X</button>
-                </div>
-
-                  <div class="file-item mb-2  d-flex  align-items-center">
-                    <img src="https://via.placeholder.com/40" alt="Thumbnail" class="img-fluid file-thumbnail me-2">
-                    <span class="file-name">image.png</span>
-                    <button class="btn-closes ms-auto">X</button>
-                  </div>
-
-
-                  <div class="file-item mb-2 d-flex align-items-center">
-                    <img src="https://via.placeholder.com/40" alt="Thumbnail" class="img-fluid file-thumbnail me-2">
-                    <span class="file-name">image.png</span>
-                    <button type="button" class="btn-closes ms-auto" aria-label="Close">X</button>
-                  </div>
-
-
-                  <div class="file-item  ">
-                    <div class="row">
-                      <div class="videos-dives d-flex align-items-center">
-                        <video width="50" style="background-color: #2B2B2B; height: 31.27px;">
-                          <source src="video.mp4" type="video/mp4">
-                        </video>
-
-                        <span class="file-name  me-auto">video.mp4</span>
-                        <button type="button" class="btn-closes ms-2">X</button>
+              <div class="col-lg-4 col-md-4 col-sm-12 p-3">
+                  <div class="file-list">
+                      <div class="file-item mb-2 d-flex align-items-center pt-2">
+                          <img src="https://via.placeholder.com/40" alt="Thumbnail" class="img-fluid file-thumbnail me-2">
+                          <span class="file-name">image1.png</span>
+                          <button type="button" class="btn-closes ms-auto">X</button>
                       </div>
-                    </div>
-                    <div class="row" style="padding: 0px 10px;">
-                      <div class="progress mt-1" style="width: 100%; height: 12px;">
-                        <div class="progress-bar bg-primary" role="progressbar" style="width: 60%;" aria-valuenow="60"
-                          aria-valuemin="-1" aria-valuemax="100">
-                        </div>
+                      <div class="file-item mb-2 d-flex align-items-center">
+                          <img src="https://via.placeholder.com/40" alt="Thumbnail" class="img-fluid file-thumbnail me-2">
+                          <span class="file-name">image2.png</span>
+                          <button class="btn-closes ms-auto">X</button>
                       </div>
-                    </div>
+                      <div class="file-item mb-2 d-flex align-items-center">
+                          <img src="https://via.placeholder.com/40" alt="Thumbnail" class="img-fluid file-thumbnail me-2">
+                          <span class="file-name">image3.png</span>
+                          <button type="button" class="btn-closes ms-auto">X</button>
+                      </div>
+                      <div class="file-item">
+                          <div class="row">
+                              <div class="videos-dives d-flex align-items-center">
+                                  <video width="50" style="background-color: #2B2B2B; height: 31.27px;" controls>
+                                      <source src="video.mp4" type="video/mp4">
+                                      Your browser does not support the video tag.
+                                  </video>
+                                  <span class="file-name me-auto">video.mp4</span>
+                                  <button type="button" class="btn-closes ms-2">X</button>
+                              </div>
+                          </div>
+                          <div class="row" style="padding: 0px 10px;">
+                              <div class="progress mt-1" style="width: 100%; height: 12px;">
+                                  <div class="progress-bar bg-primary" role="progressbar" style="width: 60%;" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                              </div>
+                          </div>
+                      </div>
                   </div>
+              </div>
+          </div>
+      </div>
 
-
+        <div class="row">
+          <div class="col-12">
+            <div class="form-check" style="padding-left: 9.9px;">
+              <input class="form-check-input" type="checkbox" id="termsCheck" required>
+              <label class="form-check-label" for="termsCheck">
+                By signing up, you agree to our <a href="#" class="link-primary">conditions</a> & <a href="#"
+                  class="link-primary">privacy policy</a>
+              </label>
             </div>
           </div>
         </div>
         <div class="row">
-          <div class="col-12">
-          <div class="form-check" style="padding-left: 9.9px;">
-            <input class="form-check-input" type="checkbox" id="termsCheck" required>
-            <label class="form-check-label" for="termsCheck">
-              By signing up, you agree to our <a href="#" class="link-primary">conditions</a> & <a href="#"
-                class="link-primary">privacy policy</a>
-            </label>
+          <div class="col-12 text-center mb-3 pt-3">
+            <button type="button" class="btn btn-outline-light me-2 rounded-pill cancel-btn">Cancel</button>
+            <button type="submit" class="btn btn-all rounded-pill">Save</button>
           </div>
         </div>
-        </div>
-       <div class="row">
-        <div class="col-12 text-center mb-3 pt-3">
-          <button type="button" class="btn btn-outline-light me-2 rounded-pill cancel-btn">Cancel</button>
-          <button type="submit" class="btn btn-all rounded-pill">Save</button>
-        </div>
-       </div>
-
-
       </form>
     </div>
-    <div class="custom-container text-container">
-       <div class="row  ">
-       <div class="col-12">
-        <div class="common-all d-flex">
-          <div class="text-error">
+    <div class="row align-items-center justify-content-center mb-5">
+      <div class="col-9">
+        <div class="custom-container d-flex  align-items-center justify-content-center">
+          <div class="text-error pb-3">
             <img src="assets/svg-icons/Vector.svg" alt="info icon">
           </div>
-          <div class="text-container">
+          <div class="text-container ">
             <p>May our information be kept secure and our online experiences remain private. Cheers to transparency,
               consent, and encryption - the essential ingredients for a safer digital future!</p>
           </div>
         </div>
-       </div>
       </div>
-
     </div>
-
-
   </div>
 </section>
 
