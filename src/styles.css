@@ -821,6 +821,7 @@ border: 1px solid black;
 }
 .subscribe:hover{
   color: #238ECB;
+  background-color: #FFC936;
 }
 
 .ruppes {
@@ -852,6 +853,7 @@ border: 1px solid black;
 }
 .subscribe-now:hover{
   color: #000000;
+  background-color: #FFC936;
 }
 
 .star-badge{
@@ -1116,7 +1118,21 @@ padding: 15px 10px;
   .choose-title p {
     font-size: 14px;
   }
-
+.dimond-img{
+  display: none;
+}
+.filmy-card{
+  margin: 10px 0px;
+}
+.most{
+  display: none;
+}
+.gold-card{
+  bottom: 0px;
+}
+.star-badge{
+  display: none;
+}
 
 /* Create-profile media */
 
@@ -1129,9 +1145,6 @@ padding: 15px 10px;
 
 
 
-
-
-/* plan page */
 
 }
 
@@ -1523,7 +1536,21 @@ padding: 15px 10px;
 .choose-title p {
   font-size: 18px;
 }
-
+.dimond-img{
+  display: block;
+}
+.filmy-card{
+  margin:  0px;
+}
+.most{
+  display: block;
+}
+.gold-card{
+  bottom: 70px;
+}
+.star-badge{
+  display: block;
+}
 }
 
 @media (min-width:1440px) {
