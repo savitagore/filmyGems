@@ -8,15 +8,8 @@ li.nav-item a.nav-link.active {
   text-underline-offset: 5px;
 }
 
-.footer-list a {
-  color: inherit; /* Inherit default link color */
-  text-decoration: none; /* Remove underline */
-}
 
-.footer-list a.active {
-  color: #FFC936; /* Set color for active links */
-  text-decoration: underline; /* Underline for active links */
-}
+
 
 
 
@@ -1015,7 +1008,10 @@ input::placeholder {
 }
 .parent-section{
   background: linear-gradient(to bottom, rgb(0 0 0), rgb(0 0 0 / 88%));
- 
+}
+.terms{
+  text-decoration: none;
+
 }
 
 
@@ -1174,6 +1170,7 @@ input::placeholder {
 .star-badge{
   display: none;
 }
+
 
 /* Create-profile media */
 
