@@ -1006,6 +1006,9 @@ input::placeholder {
 .description{
     padding: 62px 0px;
 }
+.parent-section{
+  background: linear-gradient(to bottom, rgb(0 0 0), rgb(0 0 0 / 88%));
+}
 .terms{
   text-decoration: none;
 
