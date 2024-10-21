@@ -9,6 +9,12 @@ li.nav-item a.nav-link.active {
 }
 
 
+
+
+
+
+
+
 .roboto-font {
   font-family: 'Roboto';
 }
@@ -296,12 +302,12 @@ li.nav-item a.nav-link.active {
 }
 
 
-.custom-section {
-  /* background-image: url("/assets/music/group.png"); */
+/* .custom-section {
+  background-image: url("/assets/music/group.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 484px;
-}
+} */
 
 .btn-custom {
   border: 1px solid black;
@@ -556,12 +562,12 @@ small {
 .btn-read-more:active {
   background-color: #ffb62a;
 }
-.custom-section {
+/* .custom-section {
   background-image: url("/assets/music/group.png");
   background-size: cover;
   background-repeat: no-repeat;
   height: 484px;
-}
+} */
 
 .btn-custom {
 border: 1px solid black;
@@ -1002,8 +1008,13 @@ input::placeholder {
 .description{
     padding: 62px 0px;
 }
+.parent-section{
+  background: linear-gradient(to bottom, rgb(0 0 0), rgb(0 0 0 / 88%));
+}
+.terms{
+  text-decoration: none;
 
-
+}
 
 
 
@@ -1160,6 +1171,7 @@ input::placeholder {
 .star-badge{
   display: none;
 }
+
 
 /* Create-profile media */
 
