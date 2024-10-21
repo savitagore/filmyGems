@@ -989,6 +989,37 @@ input::placeholder {
 }
 
 
+/******  Privacy-Policy-page  ***** */
+
+.footer-list li {
+  font-size: 20px;
+  list-style-type: none;
+  color: #ffffff;
+  padding: 10px 0px;
+}
+.description{
+    padding: 62px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* All medias */
 
 
@@ -1381,7 +1412,13 @@ input::placeholder {
   width: 150px;
   padding: 8px;
 }
-
+/* plan page */
+.subscribe{
+  padding: 12px 38px;
+}
+.subscribe-now{
+  padding: 12px 38px;
+}
 }
 
 @media (min-width:1200px) {
@@ -1467,7 +1504,7 @@ input::placeholder {
     font-size: 40px;
   }
   .custom-padding {
-    padding-top: 50px;
+    padding-top: 105px;
   }
 
   .filmy {
@@ -1544,6 +1581,12 @@ input::placeholder {
 }
 .star-badge{
   display: block;
+}
+.subscribe{
+  padding: 15px 70px;
+}
+.subscribe-now{
+  padding: 15px 70px;
 }
 }
 
