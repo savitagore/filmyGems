@@ -120,6 +120,15 @@
 .trusted-divider{
     padding-left: 55px;
 }
+.divider-line{
+    padding: 20px 6px;
+}
+
+.img-divider{
+    border: 1px solid #D3D3D3;
+   
+    height: 42.74px; 
+}
 
 .about-WWR-p{
     font-family: Roboto;
@@ -143,207 +152,17 @@ text-align: left;
     box-shadow: 10px 10px 70px 13px #5e7b93;
 }
 
-@media only screen and (max-width: 1025px) {
-    /* Adjustments for tablets */
-    .header-images-about {
-        height: 628px;
-        background-size: contain;
-        background-repeat: no-repeat;
-    }
-    .about-title {
-        width: 987px;
-        height: 118px;
-        top: 40px;
-        left: 22px;
-        gap: 0px;
-        opacity: 0px;
-        position: absolute;
-    }
-    
-    .main-title-about {
-        font-family: Roboto;
-        font-size: 50px;
-        font-weight: 700;
-        line-height: 58.59px;
-        text-align: center;
-    
-    }
-    
-    .about-subtitle {
-        width: 450px;
-        font-weight: 400;
-        font-size: 18px;
-        height: 42px;
-        top: 176px;
-        left: 300px;
-        gap: 0px;
-        opacity: 0px;
-    
-    }
-    
-    .about-line {
-        background-color: #FFCF25;
-        position: absolute;
-        width: 213px;
-        height: 2px;
-        top: 236px;
-        left: 417px;
-    }
+@media (min-width:320px){
+    .WWR-img-shadow{
+        box-shadow: none;
+        height: 340px;
+    } 
+}
+@media (min-width:1440px){
+    .WWR-img-shadow{
+        border-radius: 30px;
+        box-shadow: 10px 10px 70px 13px #5e7b93;
+        height: 430px;
+    } 
 }
 
-@media only screen and (max-width: 992px) {
-    /* Adjustments for tablets */
-    .header-images-about {
-        height: 500px;
-    }
-    .about-title {
-        width: 600px;
-        top: 100px;
-        left: 100px;
-    }
-
-    .main-title-about {
-        font-size: 35px;
-        line-height: 45px;
-    }
-
-    .about-subtitle {
-        width: 350px;
-        top: 220px;
-        left: 270px;
-    }
-
-    .about-line {
-        width: 150px;
-        top: 280px;
-        left: 300px;
-    }
-}
-
-@media only screen and (max-width: 768px) {
-    /* Adjustments for small tablets and large smartphones */
-    .header-images-about {
-        height: 400px;
-    }
-    .about-title {
-        width: 581px;
-        top: 30px;
-        left: 88px;
-    }
-
-    .main-title-about {
-        font-size: 30px;
-        line-height: 40px;
-    }
-
-    .about-subtitle {
-        width: 460px;
-        top: 162px;
-        left: 176px;
-    }
-
-    .about-line {
-        width: 120px;
-        top: 226px;
-        left: 335px;
-    }
-}
-
-@media only screen and (max-width: 576px) {
-    /* Adjustments for smartphones */
-    .header-images-about {
-        height: 300px;
-    }
-
-    .about-title {
-        width: 100%;
-        top: 18px;
-        left: 0;
-        text-align: center;
-    }
-
-    .main-title-about {
-        font-size: 15px;
-        line-height: 25px;
-    }
-
-    .about-subtitle {
-        width: 100%;
-        top: 72px;
-        font-size: 10px;
-        left: 0;
-        text-align: center;
-    }
-
-    .about-line {
-        width: 100px;
-        top: 104px;
-        left: calc(50% - 50px);
-    }
-}
-
-@media only screen and (max-width: 425px) {
-    /* Adjustments for smartphones */
-    .header-images-about {
-        height: 300px;
-    }
-
-    .about-title {
-        width: 100%;
-        top: 18px;
-        left: 0;
-        text-align: center;
-    }
-
-    .main-title-about {
-        font-size: 15px;
-        line-height: 25px;
-    }
-
-    .about-subtitle {
-        width: 100%;
-        top: 72px;
-        font-size: 10px;
-        left: 0;
-        text-align: center;
-    }
-
-    .about-line {
-        width: 100px;
-        top: 104px;
-        left: calc(50% - 50px);
-    }
-}
-
-@media only screen and (max-width: 320px) {
-    /* Adjustments for smartphones */
-    .header-images-about {
-        height: 300px;
-    }
-
-    .about-title {
-        width: 100%;
-        top: 18px;
-        left: 0;
-        text-align: center;
-    }
-
-    .main-title-about {
-        font-size: 15px;
-        line-height: 25px;
-    }
-
-    .about-subtitle {
-        width: 100%;
-        top: 72px;
-        font-size: 10px;
-        left: 0;
-        text-align: center;
-    }
-
-    .about-line {
-        width: 100px;
-        top: 104px;
-        left: calc(50% - 50px);
-    }
-}

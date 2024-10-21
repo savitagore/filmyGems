@@ -710,6 +710,8 @@ border: 1px solid black;
 
 .plan-images{
   height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .unlock-title{
   padding-top: 163px;
