@@ -5,16 +5,18 @@ import Aos from 'aos';
 import { CommonModule } from '@angular/common';
 import { BlogsComponent } from '../blogs/blogs.component';
 import { NavbarComponent } from '../navbar/navbar.component';
+import { StartjourneyComponent } from '../startjourney/startjourney.component';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [RouterOutlet,FooterComponent,RouterLink ,CommonModule,BlogsComponent,NavbarComponent],
+  imports: [RouterOutlet,FooterComponent,RouterLink ,CommonModule,BlogsComponent,NavbarComponent,StartjourneyComponent],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit  {
   backgroundImageUrl: string = 'assets/landing_Img/landing-bg.png';
+ 
   ngOnInit() {
     Aos.init({
       duration: 1200,

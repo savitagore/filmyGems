@@ -1,10 +1,22 @@
-.container h2 {
+/* 
+.plan-images{
+  height: 600px;
+}
+.unlock-title{
+  padding-top: 163px;
+}
+
+.choose-title{
+  padding-top: 100px;
+}
+
+.choose-title h2 {
   font-size: 40px;
   font-weight: 600;
   color: #ffffff;
 }
 
-.container p {
+.choose-title p {
   font-size: 18px;
   color: #ffffff;
 }
@@ -34,14 +46,18 @@
 
 .dimond-img{
   position: relative;
-    top: 39px;
-    z-index: 2
+  top: 39px;
+  left: 131px;
+  z-index: 2;
 }
 
 .basic-number {
   position: relative;
   top: 8px;
   z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .basic-btn {
@@ -51,6 +67,7 @@
   border: none;
   color: #ffffff;
   font-size: 14.8px;
+  letter-spacing: 2px;
 }
 
 .card h3 {
@@ -91,6 +108,11 @@
   font-size: 12.95px;
   border: 1px solid #238ECB;
   padding: 15px 70px;
+  color: #238ECB;
+  letter-spacing: 2px;
+}
+.subscribe:hover{
+  color: #238ECB;
 }
 
 .ruppes {
@@ -98,13 +120,18 @@
   right: 16px;
   top: 10px;
 }
+.gold-card{
+  position: relative;
+    bottom: 70px;
+    
+}
 .third-card{
   background-image: url('/assets/plans/card-2.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 685.04px;
   border-radius: 15px;
-
+  
 }
 .subscribe-now  {
   border-radius: 50px;
@@ -112,38 +139,95 @@
   border: none;
   padding: 15px 70px;
   background-color: #FFC936;
+  color: #000000;
+  letter-spacing: 2px;
 }
+.subscribe-now:hover{
+  color: #000000;
+}
+
+.star-badge{
+  position: absolute;
+  top: 81px;
+  right: 10px;
+  z-index: 2;
+}
+
 .most{
   color: #FFC936;
   font-size: 16.26px;
+  letter-spacing: 3px;
 }
 
+
+
+
+
+.toggle-switch {
+  background-color: #555670; 
+  border-radius: 50px;
+  display: inline-flex;
+  width: 280px;
+}
+
+.toggle-switch .btn {
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.btn-monthly {
+  background-color: #555670;
+  color: #96A2B5;
+}
+
+.btn-yearly {
+  background-color: #F3AD3B;
+  color: #000000;
+ 
+}
+
+
+
+
+
 @media (min-width:320px) {
-  .container h2 {
+  .unlock-title {
+    padding-top: 124px;
+  }
+  .choose-title h2 {
     font-size: 21px;
   }
 
-  .container p {
+  .choose-title p {
     font-size: 14px;
   }
+ 
 }
 
 @media (min-width:768px) {
-  .container h2 {
+  .choose-title h2 {
     font-size: 30px;
   }
 
-  .container p {
+  .choose-title p {
     font-size: 16px;
   }
 }
 
 @media (min-width:1200px) {
-  .container h2 {
+  .unlock-title {
+    padding-top: 163px;
+  }
+  .choose-title h2 {
     font-size: 40px;
   }
 
-  .container p {
+  .choose-title p {
     font-size: 18px;
   }
-}
+  
+} */

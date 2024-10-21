@@ -1,4 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+
+ /* You can add global styles to this file, and also import other style files */
+
+li.nav-item a.nav-link.active {
+  color:#FFCF25 !important;
+  text-decoration: underline;
+  text-decoration-color: #FFCF25;
+  text-underline-offset: 5px;
+}
+
+
 .roboto-font {
   font-family: 'Roboto';
 }
@@ -44,6 +54,13 @@
   background-color: #F3AD3B;
   border: none;
   font-size: 18px;
+  font-weight: 500;
+}
+.btn-all:hover {
+  background-color: #ffb62a;
+}
+.btn-all:active {
+  background-color: #ffb62a;
 }
 .line{
   background-color: #FFCF25;
@@ -71,15 +88,13 @@
  .build-high .main-title {
   font-size: 50px;
   font-weight: bold;
+
 }
 
 .search-box .form-control {
   flex: 1;
 }
-/* .rotate{
-  bottom: 19px;
-  transform: rotate(55deg);
-} */
+
  .searching-bar {
   display: flex;
   align-items: center;
@@ -158,6 +173,12 @@
   border-radius: 50px;
   font-size: 18px;
   width: 130px;
+}
+.join-btn:hover {
+  background-color: #ffb62a;
+}
+.join-btn:active {
+  background-color: #ffb62a;
 }
 .active-cat {
   background-color: #986708;
@@ -276,7 +297,7 @@
 
 
 .custom-section {
-  background-image: url("/assets/music/group.png");
+  /* background-image: url("/assets/music/group.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   height: 484px;
@@ -527,6 +548,13 @@ small {
   color: #000;
   font-size: 18px;
   width: 241px;
+  font-weight: 500;
+}
+.btn-read-more:hover {
+  background-color: #ffb62a;
+}
+.btn-read-more:active {
+  background-color: #ffb62a;
 }
 .custom-section {
   background-image: url("/assets/music/group.png");
@@ -663,14 +691,7 @@ border: 1px solid black;
   padding: 10px 5px;
   bottom: 6px;
 }
-.overlays {
-  position: absolute;
-  padding: 0px 10px;
-  color: #ffffff;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-  bottom: 0;
-  width: 100%;
-}
+
 
 
 .join-text {
@@ -681,6 +702,290 @@ border: 1px solid black;
   margin: 0;
   padding: 0;
   line-height: 1;
+}
+
+
+/* **** Plans Page Css ****** */
+
+
+.plan-images{
+  height: 600px;
+}
+.unlock-title{
+  padding-top: 163px;
+}
+
+.choose-title{
+  padding-top: 100px;
+}
+
+.choose-title h2 {
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.choose-title p {
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.first-card {
+  background-image: url('/assets/plans/card-1.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 623.44px;
+  border-radius: 15px;
+
+}
+.card-body-plan{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  top: 15px;
+}
+.mini-line {
+  width: 164.65px;
+  height: 2px;
+  background-color: #FFE500;
+  position: absolute;
+  top: 20px;
+}
+
+.dimond-img{
+  position: relative;
+  top: 39px;
+  left: 131px;
+  z-index: 2;
+}
+
+.basic-number {
+  position: relative;
+  top: 8px;
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.basic-btn {
+  width: 125.25px;
+  background-color: #000000;
+  border-radius: 20px;
+  border: none;
+  color: #ffffff;
+  font-size: 14.8px;
+  letter-spacing: 2px;
+}
+
+.card h3 {
+  font-size: 65.26px;
+  font-weight: bold;
+  color: #FFE600;
+}
+
+.videos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.videos h5 {
+  font-size: 18.5px;
+  color: #869ED4;
+}
+
+.videos span {
+  font-size: 36px;
+  color: #FCD751;
+  font-weight: 200;
+  position: relative;
+  bottom: 10px;
+}
+
+.small-line {
+  height: 2px;
+  width: 65.67px;
+  background-color: #4260A5;
+  position: relative;
+  bottom: 10px;
+}
+
+.subscribe {
+  border-radius: 50px;
+  font-size: 12.95px;
+  border: 1px solid #238ECB;
+  padding: 15px 70px;
+  color: #238ECB;
+  letter-spacing: 2px;
+}
+.subscribe:hover{
+  color: #238ECB;
+  background-color: #FFC936;
+}
+
+.ruppes {
+  position: relative;
+  right: 16px;
+  top: 10px;
+}
+.gold-card{
+  position: relative;
+    bottom: 70px;
+}
+.third-card{
+  background-image: url('/assets/plans/card-2.png');
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 685.04px;
+  border-radius: 15px;
+}
+
+.subscribe-now  {
+  border-radius: 50px;
+  font-size: 12.95px;
+  border: none;
+  padding: 15px 70px;
+  background-color: #FFC936;
+  color: #000000;
+  letter-spacing: 2px;
+}
+.subscribe-now:hover{
+  color: #000000;
+  background-color: #FFC936;
+}
+
+.star-badge{
+  position: absolute;
+  top: 81px;
+  right: 10px;
+  z-index: 2;
+}
+
+.most{
+  color: #FFC936;
+  font-size: 16.26px;
+  letter-spacing: 3px;
+}
+
+
+
+.toggle-switch {
+  background-color: #555670;
+  border-radius: 50px;
+  display: inline-flex;
+  width: 280px;
+}
+
+.toggle-switch .btn {
+  border: none;
+  border-radius: 50px;
+  font-size: 18px;
+  padding: 10px 40px;
+  cursor: pointer;
+}
+
+.toggle-switch .btn-monthly {
+  background-color: #555670;
+  color: #96A2B5;
+}
+
+.toggle-switch .btn-yearly {
+  background-color: #F3AD3B;
+  color: #000000;
+}
+
+
+/************Create profile**************/
+
+.text-profile{
+  font-size: 40px;
+  font-weight: 600;
+}
+.profile-color{
+  background-color: #3C3D44;
+
+  border:1px solid #969696;
+  font-size:400;
+}
+
+
+
+.drag-drop{
+  background-color: #3C3D44;
+}
+.category-color {
+  background-color: #F3AD3B;
+}
+.custom-border {
+  border: 1px dashed #B4B4B4 !important;
+}
+.file-name{
+  color:#CCCCCC;
+  font-size: 16px;
+  font-weight: 400;
+}
+.custom-container {
+ background-color: #457b9d;
+  color: #DADCDF;
+  font-size: 16px;
+   border-radius: 1px solid #7B9DAA;
+   padding: 10px 10px;
+
+}
+input::placeholder {
+  color: #969696 !important;
+}
+.text-container{
+  padding-left: 10px;
+
+}
+.profiles-text{
+  padding-top: 100px;
+}
+.upload-icon {
+  margin-top: 10px;
+}
+.cancel-btn{
+  width: 200px;
+  height: 48px;
+  background-color: #000000;
+  border: none;
+  font-size: 18px;
+  border:1px solid #ffffff;
+}
+.file-item {
+  background-color: #686C6E;
+  padding: 10px 10px;
+  border-radius: 5px;
+
+
+
+}
+
+.file-thumbnail {
+  object-fit: cover;
+  background-color: #3C3D44 !important;
+}
+
+.btn-closes {
+  background-color: transparent;
+   border: none;
+ color:#F86F6F ;
+  font-size: 20px;
+}
+
+.select-gold{
+  background-color: #F3AD3B;
+  color: black;
+  border: 1px solid #ccc;
+  padding: 5px;
+  font-size: 16px;
+}
+.select-gold option {
+  background-color: white;
+  color: black;
 }
 
 
@@ -777,9 +1082,11 @@ border: 1px solid black;
 
 .actor-name {
   font-size: 17px;
+  font-weight: 500;
 }
 .role {
   font-size: 12px;
+  font-weight: 400;
 }
 
   /* footer-media */
@@ -794,6 +1101,44 @@ border: 1px solid black;
 
   }
 
+  /* plans media */
+  .unlock-title {
+    padding-top: 124px;
+  }
+  .choose-title h2 {
+    font-size: 21px;
+  }
+
+  .choose-title p {
+    font-size: 14px;
+  }
+.dimond-img{
+  display: none;
+}
+.filmy-card{
+  margin: 10px 0px;
+}
+.most{
+  display: none;
+}
+.gold-card{
+  bottom: 0px;
+}
+.star-badge{
+  display: none;
+}
+
+/* Create-profile media */
+
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -803,6 +1148,7 @@ border: 1px solid black;
     padding: 7px;
   }
 }
+
 @media (min-width:375px) {
   .export {
     height: 70px;
@@ -815,6 +1161,7 @@ border: 1px solid black;
     width: 71px;
   }
 }
+
 @media (min-width: 576px) {
   .logo-img {
     width: auto;
@@ -962,6 +1309,16 @@ border: 1px solid black;
     flex: 0 0 auto;
     width: 24.666667%;
   }  */
+
+
+  /* plan css */
+  .choose-title h2 {
+    font-size: 30px;
+  }
+
+  .choose-title p {
+    font-size: 16px;
+  }
 }
 
 @media (min-width: 992px) {
@@ -1026,74 +1383,60 @@ border: 1px solid black;
 }
 
 }
+
 @media (min-width:1200px) {
 /* Header-media */
 .logo-img {
   width: 245px;
 }
-
-
-
 .pages-name {
   font-size: 18px;
   margin: 0px 20px;
 }
-
 .join-btn {
   border-radius: 50px;
   font-size: 18px;
   width: 130px;
 }
-
 .join-ig img {
   bottom: 19px;
   left: 89px;
 }
-
 .left-dimond {
   display: block;
 }
-
 .icons-join .links-chart {
   position: relative;
   top: 0px;
-
 }
-
 .linear {
   height: 10px;
   background-color: #F3AD3B;
   position: relative;
   top: 89px;
 }
-
 .search-box {
   position: relative;
   top: 23px;
 }
-
 .build-high p {
   font-size: 18px;
 }
-
  .build-high .main-title {
   font-size: 50px;
   font-weight: bold;
 }
-
 .right-dimond {
   display: block;
 }
-
 .actor-name {
   font-size: 20px;
+  font-weight: 500;
 }
-
 .role {
   font-size: 14px;
+  font-weight: 400;
 }
-
-
 .cross {
   right: 13px;
   top: 31px;
@@ -1119,7 +1462,7 @@ border: 1px solid black;
   width: 170px;
 }
 
-  /* *** footer-media *** */
+  /* * footer-media * */
   .fixed-size-heading {
     font-size: 40px;
   }
@@ -1171,6 +1514,37 @@ border: 1px solid black;
   .celibrate-card {
     margin-bottom: 10px;
 }
+/* create profile */
+
+
+
+
+/* plan css */
+.unlock-title {
+  padding-top: 163px;
+}
+.choose-title h2 {
+  font-size: 40px;
+}
+
+.choose-title p {
+  font-size: 18px;
+}
+.dimond-img{
+  display: block;
+}
+.filmy-card{
+  margin:  0px;
+}
+.most{
+  display: block;
+}
+.gold-card{
+  bottom: 70px;
+}
+.star-badge{
+  display: block;
+}
 }
 
 @media (min-width:1440px) {
@@ -1178,11 +1552,9 @@ border: 1px solid black;
     padding: 0px 10px;
   }
 
- 
+
 
   .dropdown-menu.scroll {
     width: 240px;
   }
 }
-
-
