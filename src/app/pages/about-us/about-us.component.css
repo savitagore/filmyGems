@@ -1,0 +1,349 @@
+.col-Css {
+    /* height: 14px; */
+    width: 216px;
+    /* border: 1px solid; */
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #484848;
+
+}
+
+.col-img-bg {
+    background-color: gray;
+    border-radius: 50%;
+    width: 135px;
+    height: 130px;
+    /* position: relative; */
+
+}
+
+/* .col-img-top {
+    position: absolute;
+    margin-top: 80px; 
+ left: 220px; 
+} */
+.col-img-top{
+    /* position: absolute;
+    left: 296px; */
+    margin-top: -160px;
+}
+.col-bottom-Rectangle {
+    /* position: relative; */
+    /* vertical-align: bottom; */
+    background: gray;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    /* left: -12px; */
+}
+
+.col-bottom css {}
+
+.header-images-about {
+    height: 635px;
+    background-size: cover;
+}
+
+.about-title {
+    width: 987px;
+    height: 118px;
+    top: 158px;
+    left: 227px;
+    gap: 0px;
+    opacity: 0px;
+    position: absolute;
+}
+
+.main-title-about {
+    font-family: Roboto;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 58.59px;
+    text-align: center;
+
+}
+
+.about-subtitle {
+    width: 447px;
+    font-weight: 400;
+    font-size: 18px;
+    height: 42px;
+    top: 296px;
+    left: 497px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.about-line {
+    background-color: #FFCF25;
+    position: absolute;
+    width: 213px;
+    height: 2px;
+    top: 360px;
+    left: 614px;
+}
+
+.col-title-h2 {
+    font-family: Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 23.44px;
+    text-align: center;
+    color: #FFC936;
+
+}
+
+/* .col-img-bg:hover, .col-bottom-Rectangle:hover,.col-Css:hover {
+    background-color: #FFC936;
+} */
+/* .col-Css:hover .col-img-bg, */
+.col-Css:hover .col-img-bg ,.col-Css:hover .col-bottom-Rectangle {
+    background-color: orange;
+}
+.aboutPara{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #FFFFFF;
+    /* height: 240px;
+    width: 906px; */
+}
+.about-h3{
+    font-family: Roboto;
+    font-size: 40px;
+    font-weight: 600;
+    /* line-height: 46.88px;   */
+    
+}
+.trusted-divider{
+    padding-left: 55px;
+}
+
+.about-WWR-p{
+    font-family: Roboto;
+font-size: 18px;
+font-weight: 400;
+line-height: 30px;
+text-align: left;
+
+}
+.letsConnect-btn{
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #000000;
+    width: 145px;
+    background: #F3AD3B;
+
+}
+.WWR-img-shadow{
+    border-radius: 30px;
+    box-shadow: 10px 10px 70px 13px #5e7b93;
+}
+
+@media only screen and (max-width: 1025px) {
+    /* Adjustments for tablets */
+    .header-images-about {
+        height: 628px;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+    .about-title {
+        width: 987px;
+        height: 118px;
+        top: 40px;
+        left: 22px;
+        gap: 0px;
+        opacity: 0px;
+        position: absolute;
+    }
+    
+    .main-title-about {
+        font-family: Roboto;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 58.59px;
+        text-align: center;
+    
+    }
+    
+    .about-subtitle {
+        width: 450px;
+        font-weight: 400;
+        font-size: 18px;
+        height: 42px;
+        top: 176px;
+        left: 300px;
+        gap: 0px;
+        opacity: 0px;
+    
+    }
+    
+    .about-line {
+        background-color: #FFCF25;
+        position: absolute;
+        width: 213px;
+        height: 2px;
+        top: 236px;
+        left: 417px;
+    }
+}
+
+@media only screen and (max-width: 992px) {
+    /* Adjustments for tablets */
+    .header-images-about {
+        height: 500px;
+    }
+    .about-title {
+        width: 600px;
+        top: 100px;
+        left: 100px;
+    }
+
+    .main-title-about {
+        font-size: 35px;
+        line-height: 45px;
+    }
+
+    .about-subtitle {
+        width: 350px;
+        top: 220px;
+        left: 270px;
+    }
+
+    .about-line {
+        width: 150px;
+        top: 280px;
+        left: 300px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    /* Adjustments for small tablets and large smartphones */
+    .header-images-about {
+        height: 400px;
+    }
+    .about-title {
+        width: 581px;
+        top: 30px;
+        left: 88px;
+    }
+
+    .main-title-about {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .about-subtitle {
+        width: 460px;
+        top: 162px;
+        left: 176px;
+    }
+
+    .about-line {
+        width: 120px;
+        top: 226px;
+        left: 335px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    /* Adjustments for smartphones */
+    .header-images-about {
+        height: 300px;
+    }
+
+    .about-title {
+        width: 100%;
+        top: 18px;
+        left: 0;
+        text-align: center;
+    }
+
+    .main-title-about {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .about-subtitle {
+        width: 100%;
+        top: 72px;
+        font-size: 10px;
+        left: 0;
+        text-align: center;
+    }
+
+    .about-line {
+        width: 100px;
+        top: 104px;
+        left: calc(50% - 50px);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    /* Adjustments for smartphones */
+    .header-images-about {
+        height: 300px;
+    }
+
+    .about-title {
+        width: 100%;
+        top: 18px;
+        left: 0;
+        text-align: center;
+    }
+
+    .main-title-about {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .about-subtitle {
+        width: 100%;
+        top: 72px;
+        font-size: 10px;
+        left: 0;
+        text-align: center;
+    }
+
+    .about-line {
+        width: 100px;
+        top: 104px;
+        left: calc(50% - 50px);
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    /* Adjustments for smartphones */
+    .header-images-about {
+        height: 300px;
+    }
+
+    .about-title {
+        width: 100%;
+        top: 18px;
+        left: 0;
+        text-align: center;
+    }
+
+    .main-title-about {
+        font-size: 15px;
+        line-height: 25px;
+    }
+
+    .about-subtitle {
+        width: 100%;
+        top: 72px;
+        font-size: 10px;
+        left: 0;
+        text-align: center;
+    }
+
+    .about-line {
+        width: 100px;
+        top: 104px;
+        left: calc(50% - 50px);
+    }
+}
