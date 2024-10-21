@@ -10,15 +10,7 @@
                     <a class="terms text-white" routerLink="/policy"  (click)="toggleSection('privacy')" ariaCurrentWhenActive="page" [ngClass]="{'text-red': !isTermsActive}"   >Privacy Policy</a>
                 </li>
                 <li  class="item">
-                  <a class="terms text-white" (click)="toggleSection('terms')" ariaCurrentWhenActive="page"  style="cursor: pointer;" [ngClass]="{'text-red': isTermsActive}" >Terms of Services</a>
-                </li>
-                <li class="item">
-                  <a class="terms text-white"
-                     (click)="toggleSection('faq')"
-                     style="cursor: pointer;"
-                     [ngClass]="{'text-red': isFaqActive}" >
-                     FAQ
-                  </a>
+                  <a class="terms text-white" (click)="toggleSection('terms')" ariaCurrentWhenActive="page"  style="cursor: pointer;" >Terms</a>
                 </li>
 
                     <!-- <li>FAQ</li> -->
@@ -27,6 +19,7 @@
                     <li>Digital Services Act</li>
                 </ul>
             </div>
+
             <div class="col-md-9"*ngIf="!isTermsActive">
                 <div class="description text-white">
                     <h5>Privacy Policy</h5>
@@ -179,8 +172,7 @@
             </div>
 
             <div class="col-md-9"*ngIf="isTermsActive">
-
-              <div class="description text-white">
+              <div class="description-terms text-white pt-2">
                   <h5>Terms And Services</h5>
                   <p class="para pt-3">Last updated: May 9, 2024</p>
                   <p class="pt-3">We are Pixabay, a Canva Germany GmbH brand ("Pixabay"). This privacy policy applies
@@ -331,65 +323,6 @@
                   </section>
               </div>
             </div>
-            <div class="col-md-9 faq-content" *ngIf="isTermsActive">
-              <h2 id="faqSection1">FAQ</h2>
-              <div class="accordion" id="faqAccordion">
-                  <!-- FAQ 1 -->
-                  <div class="accordion-item">
-                    <h1>HeefxLayout="row wrap"</h1>
-                      <h2 class="accordion-header" id="headingOne">
-                          <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                              Get Started
-                          </button>
-                      </h2>
-                      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
-                          <div class="accordion-body">
-                              This section contains details on how to get started with our service.
-                          </div>
-                      </div>
-                  </div>
-                  <!-- FAQ 2 -->
-                  <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingTwo">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                              License & Terms
-                          </button>
-                      </h2>
-                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
-                          <div class="accordion-body">
-                              Detailed information about our license and terms of use.
-                          </div>
-                      </div>
-                  </div>
-                  <!-- FAQ 3 -->
-                  <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingThree">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                              Upload Guidelines
-                          </button>
-                      </h2>
-                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
-                          <div class="accordion-body">
-                              Guidelines on what types of media are acceptable for uploading.
-                          </div>
-                      </div>
-                  </div>
-                  <!-- Additional FAQ Items -->
-                  <div class="accordion-item">
-                      <h2 class="accordion-header" id="headingFour">
-                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                              Downloads & Donations
-                          </button>
-                      </h2>
-                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
-                          <div class="accordion-body">
-                              Information about downloads and donations.
-                          </div>
-                      </div>
-                  </div>
-                  <!-- Add more FAQ items as needed -->
-              </div>
-          </div>
         </div>
     </div>
 
