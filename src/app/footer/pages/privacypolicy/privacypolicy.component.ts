@@ -12,14 +12,37 @@ import { NavbarComponent } from '../../../shared/navbar/navbar.component';
   styleUrl: './privacypolicy.component.css'
 })
 export class PrivacypolicyComponent {
-  isTermsActive: boolean = false; // Initialize to false to hide by default
+  // isTermsActive: boolean = false;
 
+
+  // toggleSection(section: string) {
+  //   if (section === 'terms') {
+  //     this.isTermsActive = true;
+  //   } else if (section === 'privacy') {
+  //     this.isTermsActive = false;
+  //   }
+  //   else if (section === 'faq') {
+  //     this.isTermsActive = false;
+  //   }
+  // }
+  isTermsActive: boolean = false;
+  isPrivacyActive: boolean = false;
+  isFaqActive: boolean = false; // New state for FAQ
 
   toggleSection(section: string) {
+    // Reset all section states first
+    this.isTermsActive = false;
+    this.isPrivacyActive = false;
+    this.isFaqActive = false;
+
+    // Toggle the active section
     if (section === 'terms') {
-      this.isTermsActive = true;  // Show terms, hide privacy
+      this.isTermsActive = true;
     } else if (section === 'privacy') {
-      this.isTermsActive = false; // Show privacy, hide terms
+      this.isPrivacyActive = true;
+    } else if (section === 'faq') {
+      
+      this.isFaqActive = true;  // Show FAQ section
     }
   }
 }
