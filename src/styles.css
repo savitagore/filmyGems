@@ -839,8 +839,8 @@ border: 1px solid black;
   background-repeat: no-repeat;
   height: 685.04px;
   border-radius: 15px;
-
 }
+
 .subscribe-now  {
   border-radius: 50px;
   font-size: 12.95px;
@@ -956,7 +956,7 @@ input::placeholder {
 }
 .file-item {
   background-color: #686C6E;
-  padding: 13px 10px;
+  padding: 10px 10px;
   border-radius: 5px;
 
 
@@ -1380,7 +1380,13 @@ input::placeholder {
   width: 150px;
   padding: 8px;
 }
-
+/* plan page */
+.subscribe{
+  padding: 12px 38px;
+}
+.subscribe-now{
+  padding: 12px 38px;
+}
 }
 
 @media (min-width:1200px) {
@@ -1529,6 +1535,7 @@ input::placeholder {
 .choose-title p {
   font-size: 18px;
 }
+
 .dimond-img{
   display: block;
 }
@@ -1543,6 +1550,12 @@ input::placeholder {
 }
 .star-badge{
   display: block;
+}
+.subscribe{
+  padding: 15px 70px;
+}
+.subscribe-now{
+  padding: 15px 70px;
 }
 }
 
