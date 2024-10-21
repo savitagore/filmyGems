@@ -1,20 +1,19 @@
-<section class="footer-navbar" style="background-color: #272727;">
+<section class="footer-navbar pb-4" style="background-color: #272727;">
     <app-navbar></app-navbar>
 </section>
-
 <section class="bg-middle roboto-font parent-section pt-5">
     <div class="container">
         <div class="row">
             <div class="col-md-3">
                 <ul class="footer-list">
                   <li class="item ">
-                    <a class="terms text-white" routerLink="/policy"  (click)="toggleSection('privacy')" ariaCurrentWhenActive="page"  >Privacy Policy</a>
+                    <a class="terms text-white" routerLink="/policy"  (click)="toggleSection('privacy')" ariaCurrentWhenActive="page" [ngClass]="{'text-red': !isTermsActive}"   >Privacy Policy</a>
+                </li>
+                <li  class="item">
+                  <a class="terms text-white" (click)="toggleSection('terms')" ariaCurrentWhenActive="page"  style="cursor: pointer;" >Terms</a>
                 </li>
 
-                <li  class="item">
-                  <a class="terms text-white" (click)="toggleSection('terms')" ariaCurrentWhenActive="page"  style="cursor: pointer;" >Terms of Services</a>
-                </li>
-                    <li>FAQ</li>
+                    <!-- <li>FAQ</li> -->
                     <li>License Summary</li>
                     <li>Cookies Policy</li>
                     <li>Digital Services Act</li>
@@ -324,8 +323,6 @@
                   </section>
               </div>
             </div>
-
-
         </div>
     </div>
 
