@@ -1,10 +1,11 @@
+import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FooterComponent } from '../../../shared/footer/footer.component';
+import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 
 @Component({
   selector: 'app-privacypolicy',
   standalone: true,
-  imports: [FooterComponent],
+  imports: [RouterLink,CommonModule,RouterLinkActive],
   templateUrl: './privacypolicy.component.html',
   styleUrl: './privacypolicy.component.css'
 })

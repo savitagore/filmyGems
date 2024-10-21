@@ -2,6 +2,7 @@ import { Routes } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { PlansComponent } from './pages/plans/plans.component';
 import { CreateProfileComponent } from './pages/create-profile/create-profile.component';
+import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { PrivacypolicyComponent } from './footer/pages/privacypolicy/privacypolicy.component';
 
 
@@ -15,8 +16,13 @@ export const routes: Routes = [
     component:CreateProfileComponent
   },
   {
+    path:'about',
+    component:AboutUsComponent
+  },
+    {
     path:'policy',
     component:PrivacypolicyComponent
-  }
+  },
+
 
 ];
