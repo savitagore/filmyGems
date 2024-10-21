@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-startjourney',
@@ -10,5 +10,5 @@ import { Component } from '@angular/core';
 })
 export class StartjourneyComponent {
   // backgroungImage:string='assets/music/group.png';
-  
+  @Input() bgImage: string = 'assets/music/group.png';
 }
