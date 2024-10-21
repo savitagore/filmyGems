@@ -1013,7 +1013,11 @@ input::placeholder {
 .description{
     padding: 62px 0px;
 }
-
+.parent-section{
+  background: linear-gradient(to bottom, rgb(0 0 0), rgb(0 0 0 / 82%));
+  /* background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), transparent); */
+  color: white;
+}
 
 
 
