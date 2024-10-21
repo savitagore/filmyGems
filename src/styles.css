@@ -1,4 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+
+ /* You can add global styles to this file, and also import other style files */
 
 li.nav-item a.nav-link.active {
   color:#FFCF25 !important;
@@ -296,7 +297,7 @@ li.nav-item a.nav-link.active {
 
 
 .custom-section {
-  background-image: url("/assets/music/group.png");
+  /* background-image: url("/assets/music/group.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   height: 484px;
@@ -704,7 +705,7 @@ border: 1px solid black;
 }
 
 
-/* ************ Plans Page Css ****************** */
+/* **** Plans Page Css ****** */
 
 
 .plan-images{
@@ -821,6 +822,7 @@ border: 1px solid black;
 }
 .subscribe:hover{
   color: #238ECB;
+  background-color: #FFC936;
 }
 
 .ruppes {
@@ -831,7 +833,6 @@ border: 1px solid black;
 .gold-card{
   position: relative;
     bottom: 70px;
-
 }
 .third-card{
   background-image: url('/assets/plans/card-2.png');
@@ -839,8 +840,8 @@ border: 1px solid black;
   background-repeat: no-repeat;
   height: 685.04px;
   border-radius: 15px;
-
 }
+
 .subscribe-now  {
   border-radius: 50px;
   font-size: 12.95px;
@@ -852,6 +853,7 @@ border: 1px solid black;
 }
 .subscribe-now:hover{
   color: #000000;
+  background-color: #FFC936;
 }
 
 .star-badge{
@@ -895,7 +897,7 @@ border: 1px solid black;
 }
 
 
-/*************************************Create profile*****************************************/
+/************Create profile**************/
 
 .text-profile{
   font-size: 40px;
@@ -955,7 +957,7 @@ input::placeholder {
 }
 .file-item {
   background-color: #686C6E;
-  padding: 13px 10px;
+  padding: 10px 10px;
   border-radius: 5px;
 
 
@@ -1110,7 +1112,21 @@ input::placeholder {
   .choose-title p {
     font-size: 14px;
   }
-
+.dimond-img{
+  display: none;
+}
+.filmy-card{
+  margin: 10px 0px;
+}
+.most{
+  display: none;
+}
+.gold-card{
+  bottom: 0px;
+}
+.star-badge{
+  display: none;
+}
 
 /* Create-profile media */
 
@@ -1123,9 +1139,6 @@ input::placeholder {
 
 
 
-
-
-/* plan page */
 
 }
 
@@ -1449,7 +1462,7 @@ input::placeholder {
   width: 170px;
 }
 
-  /* *** footer-media *** */
+  /* * footer-media * */
   .fixed-size-heading {
     font-size: 40px;
   }
@@ -1517,7 +1530,21 @@ input::placeholder {
 .choose-title p {
   font-size: 18px;
 }
-
+.dimond-img{
+  display: block;
+}
+.filmy-card{
+  margin:  0px;
+}
+.most{
+  display: block;
+}
+.gold-card{
+  bottom: 70px;
+}
+.star-badge{
+  display: block;
+}
 }
 
 @media (min-width:1440px) {
@@ -1531,7 +1558,3 @@ input::placeholder {
     width: 240px;
   }
 }
-
-
-
-

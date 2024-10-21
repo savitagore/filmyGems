@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
 
 import { FooterComponent } from '../../shared/footer/footer.component';
@@ -7,20 +7,20 @@ import { FooterComponent } from '../../shared/footer/footer.component';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 
 import { FormsModule } from '@angular/forms';
-
-
-
+import { StartjourneyComponent } from '../../shared/startjourney/startjourney.component';
 
 @Component({
   selector: 'app-create-profile',
   standalone: true,
-  imports: [CommonModule,NavbarComponent,FooterComponent, ReactiveFormsModule, FormsModule, ],
+  imports: [CommonModule,NavbarComponent,FooterComponent, ReactiveFormsModule, FormsModule, StartjourneyComponent],
   providers:[],
   templateUrl: './create-profile.component.html',
   styleUrl: './create-profile.component.css'
 })
 export class CreateProfileComponent {
   backgroundImageUrl: string = 'assets/create-profile/bg-main.png';
+  secondBackgroundImage: string = 'assets/create-profile/music-girls.png';
+   @Input() bgImage: string = '';
   profileForm: FormGroup;
 
   constructor(private fb: FormBuilder) {
