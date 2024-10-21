@@ -12,7 +12,7 @@
                 </li>
 
                 <li  class="item">
-                  <a class="terms text-white" (click)="toggleSection('terms')" ariaCurrentWhenActive="page"  style="cursor: pointer;" >Terms</a>
+                  <a class="terms text-white" (click)="toggleSection('terms')" ariaCurrentWhenActive="page"  style="cursor: pointer;" >Terms of Services</a>
                 </li>
                     <li>FAQ</li>
                     <li>License Summary</li>
@@ -20,6 +20,7 @@
                     <li>Digital Services Act</li>
                 </ul>
             </div>
+
             <div class="col-md-9"*ngIf="!isTermsActive">
                 <div class="description text-white">
                     <h5>Privacy Policy</h5>
@@ -172,8 +173,7 @@
             </div>
 
             <div class="col-md-9"*ngIf="isTermsActive">
-
-              <div class="description text-white">
+              <div class="description-terms text-white pt-2">
                   <h5>Terms And Services</h5>
                   <p class="para pt-3">Last updated: May 9, 2024</p>
                   <p class="pt-3">We are Pixabay, a Canva Germany GmbH brand ("Pixabay"). This privacy policy applies
@@ -324,6 +324,8 @@
                   </section>
               </div>
             </div>
+
+
         </div>
     </div>
 
