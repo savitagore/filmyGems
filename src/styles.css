@@ -8,6 +8,19 @@ li.nav-item a.nav-link.active {
   text-underline-offset: 5px;
 }
 
+.footer-list a {
+  color: inherit; /* Inherit default link color */
+  text-decoration: none; /* Remove underline */
+}
+
+.footer-list a.active {
+  color: #FFC936; /* Set color for active links */
+  text-decoration: underline; /* Underline for active links */
+}
+
+
+
+
 
 .roboto-font {
   font-family: 'Roboto';
