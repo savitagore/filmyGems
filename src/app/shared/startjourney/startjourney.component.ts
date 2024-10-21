@@ -9,6 +9,6 @@ import { Component } from '@angular/core';
   styleUrl: './startjourney.component.css'
 })
 export class StartjourneyComponent {
-  backgroungImage:string='assets/music/group.png';
+  // backgroungImage:string='assets/music/group.png';
   
 }

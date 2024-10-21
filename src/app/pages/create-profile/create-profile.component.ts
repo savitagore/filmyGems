@@ -19,8 +19,8 @@ import { StartjourneyComponent } from '../../shared/startjourney/startjourney.co
 })
 export class CreateProfileComponent {
   backgroundImageUrl: string = 'assets/create-profile/bg-main.png';
-  secondBackgroundImage: string = 'assets/create-profile/music-girls.png';
-   @Input() bgImage: string = '';
+  // secondBackgroundImage: string = 'assets/create-profile/music-girls.png';
+  //  @Input() bgImage: string = '';
   profileForm: FormGroup;
 
   constructor(private fb: FormBuilder) {
