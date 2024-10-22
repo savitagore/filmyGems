@@ -19,7 +19,7 @@ import { StartjourneyComponent } from '../../shared/startjourney/startjourney.co
 })
 export class CreateProfileComponent {
   backgroundImageUrl: string = 'assets/create-profile/bg-main.png';
-  bgImage: string = 'assets/create-profile/music-girls.png';
+  bgImage: string = 'assets/create-profile/music-girl.png';
 
   profileForm: FormGroup;
 

@@ -645,9 +645,9 @@ border: 1px solid black;
   left: 10px;
 }
 
-.custom-padding {
+/* .custom-padding {
   padding-left: 50px;
-}
+} */
 
 .icons {
   position: relative;
@@ -1517,9 +1517,9 @@ input::placeholder {
   .fixed-size-heading {
     font-size: 40px;
   }
-  .custom-padding {
+  /* .custom-padding {
     padding-top: 105px;
-  }
+  } */
 
   .filmy {
     margin-top: 140px;
