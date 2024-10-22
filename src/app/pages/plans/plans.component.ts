@@ -13,5 +13,5 @@ import { StartjourneyComponent } from '../../shared/startjourney/startjourney.co
 })
 export class PlansComponent {
   backgroundImageUrl: string = 'assets/img/plans-bg.png';
-  bgImage: string = 'assets/plans/music-img.png';
+  bgImage: string = 'assets/plans/music-plan.png';
 }
