@@ -12,18 +12,16 @@ import { NavbarComponent } from '../../../shared/navbar/navbar.component';
   styleUrl: './privacypolicy.component.css'
 })
 export class PrivacypolicyComponent {
-
-
-
   isTermsActive: boolean = false;
   isPrivacyActive: boolean = true;
   isFaqActive: boolean = false;
+  islicenseActive:boolean=false;
 
   toggleSection(section: string) {
-
     this.isTermsActive = false;
     this.isPrivacyActive = false;
     this.isFaqActive = false;
+    this.islicenseActive=false;
 
 
     if (section === 'terms') {
@@ -32,7 +30,10 @@ export class PrivacypolicyComponent {
       this.isPrivacyActive = true;
     } else if (section === 'faq') {
       this.isFaqActive = true;
-    } else {
+    } else if(section ===  'license'){
+      this.islicenseActive=true;
+    }
+    else {
       console.log('Unknown section:', section);
     }
 
