@@ -21,7 +21,9 @@
               <h5 class="text-uppercase company-name">Company</h5>
               <ul class="list-unstyled ps-0">
                 <li><a href="#" class="custom-colors text-decoration-none">About us</a></li>
-                <li><a href="#" class="custom-colors text-decoration-none">Blogs</a></li>
+                <!-- <li><a href="#" class="custom-colors text-decoration-none">Blogs</a></li> -->
+                <li><a href="#" class="custom-colors text-decoration-none" data-bs-toggle="modal" data-bs-target="#blogModal">Blogs</a></li>
+
                 <li><a href="#" class="custom-colors text-decoration-none">Why FilmyGems?</a></li>
                 <li><a  class="custom-colors text-decoration-none" routerLink="/policy" >Privacy Policy</a></li>
                 <li><a class="custom-colors text-decoration-none">Terms of Use</a></li>
@@ -109,3 +111,21 @@
     </div>
   </footer>
 </section>
+
+<!---Model-->
+<div class="modal fade" id="blogModal" tabindex="-1" aria-labelledby="blogModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-top">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="blogModalLabel">Blog Section</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p>Welcome to our blog section! Here you'll find articles on various topics.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
