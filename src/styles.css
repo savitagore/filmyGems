@@ -1203,13 +1203,6 @@ input::placeholder {
 
 }
 
-@media (min-width:425px) {
-  .export {
-    height: 85px;
-    padding: 7px;
-  }
-}
-
 @media (min-width:375px) {
   .export {
     height: 70px;
@@ -1220,6 +1213,13 @@ input::placeholder {
     font-size: 10px;
     padding: 3px;
     width: 71px;
+  }
+}
+
+@media (min-width:425px) {
+  .export {
+    height: 85px;
+    padding: 7px;
   }
 }
 
