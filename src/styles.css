@@ -645,9 +645,9 @@ border: 1px solid black;
   left: 10px;
 }
 
-.custom-padding {
+/* .custom-padding {
   padding-left: 50px;
-}
+} */
 
 .icons {
   position: relative;
@@ -1013,8 +1013,24 @@ input::placeholder {
 }
 .terms{
   text-decoration: none;
-
 }
+/* ****** FAQ ****** */
+.faq{
+  padding: 0px 20px;
+}
+.get-started{
+  background-color: #090909;
+  color: #ffffff;
+  font-size: 18px;
+  border: 1px solid #333333;
+  border-right: none;
+  border-left: none;
+}
+.accordion-item{
+  border: none;
+}
+
+
 
 
 
@@ -1517,9 +1533,9 @@ input::placeholder {
   .fixed-size-heading {
     font-size: 40px;
   }
-  .custom-padding {
+  /* .custom-padding {
     padding-top: 105px;
-  }
+  } */
 
   .filmy {
     margin-top: 140px;
