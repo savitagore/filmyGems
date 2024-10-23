@@ -1,0 +1,4 @@
+/* Modal positioned at the top of the screen */
+.modal-dialog.modal-dialog-top {
+  margin-top: 50px; /* Adjust this value for vertical positioning */
+}
