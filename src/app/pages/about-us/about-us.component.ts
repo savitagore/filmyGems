@@ -15,5 +15,5 @@ import { StartjourneyComponent } from '../../shared/startjourney/startjourney.co
 export class AboutUsComponent {
 
   backgroundImageUrl: string = 'assets/aboutUs/about-Bg.svg';
-  bgImage: string = 'assets/aboutUs/musicalGirl.png';
+  bgImage: string = 'assets/aboutUs/musical-imgs.png';
 }

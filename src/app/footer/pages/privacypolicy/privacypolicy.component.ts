@@ -12,37 +12,38 @@ import { NavbarComponent } from '../../../shared/navbar/navbar.component';
   styleUrl: './privacypolicy.component.css'
 })
 export class PrivacypolicyComponent {
-  // isTermsActive: boolean = false;
-
-
-  // toggleSection(section: string) {
-  //   if (section === 'terms') {
-  //     this.isTermsActive = true;
-  //   } else if (section === 'privacy') {
-  //     this.isTermsActive = false;
-  //   }
-  //   else if (section === 'faq') {
-  //     this.isTermsActive = false;
-  //   }
-  // }
   isTermsActive: boolean = false;
-  isPrivacyActive: boolean = false;
-  isFaqActive: boolean = false; // New state for FAQ
+  isPrivacyActive: boolean = true;
+  isFaqActive: boolean = false;
+  islicenseActive:boolean=false;
 
   toggleSection(section: string) {
-    // Reset all section states first
     this.isTermsActive = false;
     this.isPrivacyActive = false;
     this.isFaqActive = false;
+    this.islicenseActive=false;
 
-    // Toggle the active section
+
     if (section === 'terms') {
       this.isTermsActive = true;
     } else if (section === 'privacy') {
       this.isPrivacyActive = true;
     } else if (section === 'faq') {
-      
-      this.isFaqActive = true;  // Show FAQ section
+      this.isFaqActive = true;
+    } else if(section ===  'license'){
+      this.islicenseActive=true;
     }
+    else {
+      console.log('Unknown section:', section);
+    }
+
+
+    console.log({
+      isTermsActive: this.isTermsActive,
+      isPrivacyActive: this.isPrivacyActive,
+      isFaqActive: this.isFaqActive
+    });
   }
+
+
 }
