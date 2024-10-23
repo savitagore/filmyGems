@@ -1,6 +1,6 @@
 .col-Css {
     /* height: 14px; */
-    width: 216px;
+    /* width: 216px; */
     /* border: 1px solid; */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -121,7 +121,7 @@
     padding-left: 55px;
 }
 .divider-line{
-    padding: 20px 6px;
+    /* padding: 20px 6px; */
 }
 
 .img-divider{
