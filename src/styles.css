@@ -1015,7 +1015,20 @@ input::placeholder {
   text-decoration: none;
 }
 /* ****** FAQ ****** */
-
+.faq{
+  padding: 0px 20px;
+}
+.get-started{
+  background-color: #090909;
+  color: #ffffff;
+  font-size: 18px;
+  border: 1px solid #333333;
+  border-right: none;
+  border-left: none;
+}
+.accordion-item{
+  border: none;
+}
 
 
 
