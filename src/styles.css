@@ -562,12 +562,7 @@ small {
 .btn-read-more:active {
   background-color: #ffb62a;
 }
-/* .custom-section {
-  background-image: url("/assets/music/group.png");
-  background-size: cover;
-  background-repeat: no-repeat;
-  height: 484px;
-} */
+
 
 .btn-custom {
 border: 1px solid black;
@@ -645,9 +640,7 @@ border: 1px solid black;
   left: 10px;
 }
 
-/* .custom-padding {
-  padding-left: 50px;
-} */
+
 
 .icons {
   position: relative;
@@ -876,9 +869,6 @@ border: 1px solid black;
   font-size: 16.26px;
   letter-spacing: 3px;
 }
-
-
-
 .toggle-switch {
   background-color: #555670;
   border-radius: 50px;
@@ -913,13 +903,9 @@ border: 1px solid black;
 }
 .profile-color{
   background-color: #3C3D44;
-
-  border:1px solid #969696;
+ border:1px solid #969696;
   font-size:400;
 }
-
-
-
 .drag-drop{
   background-color: #3C3D44;
 }
@@ -967,16 +953,12 @@ input::placeholder {
   background-color: #686C6E;
   padding: 10px 10px;
   border-radius: 5px;
-
-
-
 }
 
 .file-thumbnail {
   object-fit: cover;
   background-color: #3C3D44 !important;
 }
-
 .btn-closes {
   background-color: transparent;
    border: none;
@@ -995,6 +977,52 @@ input::placeholder {
   background-color: white;
   color: black;
 }
+/*******************contact-us***********/
+.contact-us{
+  font-size: 40px;
+ font-weight: 700;
+}
+.contact-color{
+  background-color: #2A2A2A;
+  border: none;
+}
+.contries{
+  height:24px;
+
+}
+textarea::placeholder {
+  color: #969696 !important;
+}
+.sell-call{
+  background-image: url("/assets/contactUs/sell-call.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 657px;
+
+}
+.sells{
+  text-align: end;
+    padding-top: 128px;
+    padding-right: 145px;
+}
+
+.divider-contact {
+  border: 1px solid #ffffff;
+  width: 133px;
+}
+.corporate-contact{
+  font-size: 20px;
+  font-weight: bold;
+}
+.usa-blog{
+  border: 1px solid #ffffff;
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+  padding: 0px 10px;
+  height: 88px;
+}
+
 
 
 /******  Privacy-Policy-page  ***** */
@@ -1026,10 +1054,130 @@ input::placeholder {
   border-right: none;
   border-left: none;
 }
+.get-started:active,
+.get-started:focus {
+  background-color:#090909;
+}
+.get-started:not(:focus) {
+  background-color: #090909;
+  color:#ffffff;
+}
 .accordion-item{
   border: none;
 }
+.get-started::after {
+  content: "\f107";
+  color: #FFC936;
+  margin-left: auto;
+}
+.get-started[aria-expanded="true"]::after {
+  transform: rotate(180deg);
+}
+.accordion-button:not(.collapsed)::after {
+  background-image: var(--bs-accordion-btn-active-icon);
+  color:#FFC936;
+  transform: var(--bs-accordion-btn-icon-transform);
+}
+.get-started[aria-expanded="true"] {
+  color: #FFC936;
+}
+.faq-bgcolor{
+  background-color: #090909;
+}
 
+
+ .accordion-button:focus {
+  z-index: auto;
+  border-color: transparent;
+  outline: none;
+  box-shadow: none;
+}
+
+/********************************Audutions Model Pop up*********************/
+.custom-modal-background {
+  background-image: url('/assets/auditions/audi-bg.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+}
+
+.modal-dialog-top {
+  top: 10%;
+}
+
+.modal-content {
+  background-color: transparent;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.modal-dialog {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.audi {
+  padding-left: -37px;
+  position: relative;
+  top: 76px;
+  right: 76px;
+  font-size: 60px;
+}
+
+.modeling {
+  list-style-type: none;
+}
+
+.screen {
+  font-size: 30px;
+}
+
+li::marker {
+  color: #FABD47;
+}
+
+
+/* ********Talent-show   ********* */
+.audits-img{
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+.rcm-blogs{
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.blog-posted{
+  color:#6C6C6C;
+
+}
+
+.post-info {
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  font-size: 14px;
+
+}
+
+.new-badge {
+  background-color: #007bff; /* Blue badge */
+  padding: 4px 17px;
+  border-radius: 12px;
+  margin-right: 10px;
+  font-size: 12px;
+}
+.talent-main{
+  background: linear-gradient(to bottom, rgb(0 0 0), rgb(0 0 0 / 88%));
+}
 
 
 
@@ -1187,6 +1335,10 @@ input::placeholder {
 .star-badge{
   display: none;
 }
+/******contact-us********/
+/* .usa-blog{
+  border: none;
+} */
 
 
 /* Create-profile media */
@@ -1449,6 +1601,10 @@ input::placeholder {
 .subscribe-now{
   padding: 12px 38px;
 }
+/******contact-us********/
+.usa-blog{
+  border: block;
+}
 }
 
 @media (min-width:1200px) {
@@ -1618,6 +1774,9 @@ input::placeholder {
 .subscribe-now{
   padding: 15px 70px;
 }
+.usa-blog{
+  border: block;
+}
 }
 
 @media (min-width:1440px) {
@@ -1631,3 +1790,4 @@ input::placeholder {
     width: 240px;
   }
 }
+

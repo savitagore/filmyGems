@@ -4,14 +4,12 @@ import { CommonModule } from '@angular/common';
 import { FooterComponent } from '../../shared/footer/footer.component';
 
 @Component({
-  selector: 'app-contact-us',
+  selector: 'app-talentshow',
   standalone: true,
   imports: [NavbarComponent,CommonModule,FooterComponent],
-  templateUrl: './contact-us.component.html',
-  styleUrl: './contact-us.component.css'
+  templateUrl: './talentshow.component.html',
+  styleUrl: './talentshow.component.css'
 })
-export class ContactUsComponent {
-  backgroundImageUrl: string = 'assets/contactUs/cantactUS-bg.png';
-
+export class TalentshowComponent {
 
 }
