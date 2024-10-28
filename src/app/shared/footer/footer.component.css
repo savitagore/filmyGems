@@ -1,4 +1,49 @@
-/* Modal positioned at the top of the screen */
-.modal-dialog.modal-dialog-top {
-  margin-top: 50px; /* Adjust this value for vertical positioning */
+/* .custom-modal-background {
+  background-image: url('/assets/auditions/audi-bg.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+
 }
+
+.modal-dialog-top {
+  top: 10%;
+}
+
+.modal-content {
+  background-color: transparent;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.modal-dialog {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.audi {
+  padding-left: -37px;
+  position: relative;
+  top: 76px;
+  right: 76px;
+  font-size: 60px;
+}
+
+.modeling {
+  list-style-type: none;
+}
+
+.screen {
+  font-size: 30px;
+}
+
+li::marker {
+  color: #FABD47;
+} */

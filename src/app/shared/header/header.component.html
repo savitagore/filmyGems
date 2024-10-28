@@ -1,51 +1,49 @@
-<section class="header  roboto-font header-images"  [ngStyle]="{'background-image': 'url(' + backgroundImageUrl + ')'}">
-<app-navbar></app-navbar>
-  <div class="dimond-text pt-5"  >
-        <div class="left-dimond">
-            <img src="assets/landing_Img/diamond_img.png" alt="Diamond" class="img-fluid">
-        </div>
-        <div class="text-center text-white build-high ">
-            <h1 class="main-title " data-aos="fade-up"  >Let's Build Your Connection With High <br> Level Of Celebrities</h1>
-            <p data-aos="fade-up"  >We have more than 10+ million profiles with us, connect with us to get in touch with <br>
-                beautiful and mind-blowing celebrities</p>
-        </div>
+<section class="header  roboto-font header-images" [ngStyle]="{'background-image': 'url(' + backgroundImageUrl + ')'}">
+  <app-navbar></app-navbar>
+  <div class="dimond-text pt-5">
+    <div class="left-dimond">
+      <img src="assets/landing_Img/diamond_img.png" alt="Diamond" class="img-fluid">
     </div>
+    <div class="text-center text-white build-high ">
+      <h1 class="main-title " data-aos="fade-up">Let's Build Your Connection With High <br> Level Of Celebrities</h1>
+      <p data-aos="fade-up">We have more than 10+ million profiles with us, connect with us to get in touch with <br>
+        beautiful and mind-blowing celebrities</p>
+    </div>
+  </div>
   <div class="linear"></div>
-    <div class=" searching-bar  pt-4" data-aos="fade-up">
-        <div class="search-box d-flex align-items-center">
-            <i class="fas fa-search"></i>
-            <input type="text" class="form-control border-0"
-                placeholder="Search by film or profile name or check categories...">
-            <div class="dropdown">
-                <button class="btn gems-category text-dark " type="button" id="dropdownMenuButton1"
-                    data-bs-toggle="dropdown" aria-expanded="false">
-                    Gems Category
-                </button>
-                <ul class="dropdown-menu scroll" data-bs-spy="scroll" data-bs-target=".dropdown-menu"
-                    data-bs-offset="50" aria-labelledby="dropdownMenuButton1"
-                    style="max-height: 200px; overflow-y: auto;">
-                    <li><a class="dropdown-item" href="#">Artist</a></li>
-                    <li><a class="dropdown-item" href="#">Director</a></li>
-                    <li><a class="dropdown-item" href="#">Casting Director</a></li>
-                    <li><a class="dropdown-item" href="#">Assistant Director</a></li>
-                    <li><a class="dropdown-item" href="#">Associate Director</a></li>
-                    <li><a class="dropdown-item" href="#">Executive Producer</a></li>
-                    <li><a class="dropdown-item" href="#">Production Manager</a></li>
-                    <li><a class="dropdown-item" href="#">Artist</a></li>
-                    <li><a class="dropdown-item" href="#">Director</a></li>
-                    <li><a class="dropdown-item" href="#">Casting Director</a></li>
-                    <li><a class="dropdown-item" href="#">Associate Director</a></li>
-                    <li><a class="dropdown-item" href="#">Executive Producer</a></li>
-                </ul>
-            </div>
-
-        </div>
+  <div class=" searching-bar  pt-4" data-aos="fade-up">
+    <div class="search-box d-flex align-items-center">
+      <i class="fas fa-search"></i>
+      <input type="text" class="form-control border-0"
+        placeholder="Search by film or profile name or check categories...">
+      <div class="dropdown">
+        <button class="btn gems-category text-dark " type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Gems Category
+        </button>
+        <ul class="dropdown-menu scroll" data-bs-spy="scroll" data-bs-target=".dropdown-menu" data-bs-offset="50"
+          aria-labelledby="dropdownMenuButton1" style="max-height: 200px; overflow-y: auto;">
+          <li><a class="dropdown-item" href="#">Artist</a></li>
+          <li><a class="dropdown-item" href="#">Director</a></li>
+          <li><a class="dropdown-item" href="#">Casting Director</a></li>
+          <li><a class="dropdown-item" href="#">Assistant Director</a></li>
+          <li><a class="dropdown-item" href="#">Associate Director</a></li>
+          <li><a class="dropdown-item" href="#">Executive Producer</a></li>
+          <li><a class="dropdown-item" href="#">Production Manager</a></li>
+          <li><a class="dropdown-item" href="#">Artist</a></li>
+          <li><a class="dropdown-item" href="#">Director</a></li>
+          <li><a class="dropdown-item" href="#">Casting Director</a></li>
+          <li><a class="dropdown-item" href="#">Associate Director</a></li>
+          <li><a class="dropdown-item" href="#">Executive Producer</a></li>
+        </ul>
+      </div>
     </div>
+  </div>
 </section>
 
 <app-blogs></app-blogs>
 <div class="content">
-    <router-outlet></router-outlet>
+  <router-outlet></router-outlet>
 </div>
 <app-startjourney></app-startjourney>
 <app-footer></app-footer>

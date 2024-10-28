@@ -1,4 +1,3 @@
-
 <section>
   <footer class="footer bg-custom text-light roboto-font">
     <div class="container">
@@ -21,11 +20,10 @@
               <h5 class="text-uppercase company-name">Company</h5>
               <ul class="list-unstyled ps-0">
                 <li><a href="#" class="custom-colors text-decoration-none">About us</a></li>
-                <!-- <li><a href="#" class="custom-colors text-decoration-none">Blogs</a></li> -->
-                <li><a href="#" class="custom-colors text-decoration-none" data-bs-toggle="modal" data-bs-target="#blogModal">Blogs</a></li>
-
+                <li><a href="#" class="custom-colors text-decoration-none" data-bs-toggle="modal"
+                    data-bs-target="#blogModal">Blogs</a></li>
                 <li><a href="#" class="custom-colors text-decoration-none">Why FilmyGems?</a></li>
-                <li><a  class="custom-colors text-decoration-none" routerLink="/policy" >Privacy Policy</a></li>
+                <li><a class="custom-colors text-decoration-none" routerLink="/policy">Privacy Policy</a></li>
                 <li><a class="custom-colors text-decoration-none">Terms of Use</a></li>
               </ul>
             </div><!-- Specialties Column -->
@@ -89,7 +87,6 @@
           <a href="https://www.youtube.com/channel/UCwc159g2Xk7G0Pq-bXPIWvQ" target="_blank">
             <img src="assets/svg-icons/youtube.svg" class="mx-1" alt="Facebook">
           </a>
-
         </div>
         <div class="col-md-4">
           <p class="custom-colors">Get to know about our latest film news</p>
@@ -113,18 +110,34 @@
 </section>
 
 <!---Model-->
-<div class="modal fade" id="blogModal" tabindex="-1" aria-labelledby="blogModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-top">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="blogModalLabel">Blog Section</h5>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="modal fade roboto-font " id="blogModal" tabindex="-1" aria-labelledby="blogModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-top custom-modal-background">
+    <div class="modal-content ">
+      <div class="modal-header d-flex justify-content-centre aligns-items-centre">
+        <div class="logo-audti pt-4" style="padding-left: 126px;">
+          <img src="assets/auditions/audi-logo.png" alt="" class="img-fluid">
+        </div>
+        <div class="cancel-buttons" style="padding-bottom: 60px;">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
       </div>
-      <div class="modal-body">
-        <p>Welcome to our blog section! Here you'll find articles on various topics.</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      <div class="modal-body ">
+        <div class=" d-flex">
+          <img src="assets/svg-icons/audi-speaker.svg" alt=" " class="img-fluid">
+          <div class="audi">
+            <h1>AUDITIONS</h1>
+          </div>
+        </div>
+        <div class="pt-4">
+          <ul class="d-flex">
+            <li class="me-5 modeling" style="font-size:30px">Modelling</li>
+            <li class="me-5 screen"> Screening </li>
+            <li class="me-5 screen">Acting</li>
+          </ul>
+        </div>
+        <div class="get-details pt-3" style="padding-left: 189px;">
+          <button class="btn btn-all rounded-pill">Get Details</button>
+        </div>
       </div>
     </div>
   </div>
