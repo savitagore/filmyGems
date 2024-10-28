@@ -38,6 +38,8 @@ export const routes: Routes = [
 
     path:'artistMain',
     component:ArtistMainPageComponent
+  },
+  {
 
     path:'talent-show',
     component:TalentshowComponent
