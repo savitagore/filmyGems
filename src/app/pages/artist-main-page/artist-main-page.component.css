@@ -1,0 +1,38 @@
+.artist_Nav_bg{
+    background: #272727;
+}
+
+.form-control:focus {
+    box-shadow: none !important;
+    
+}
+
+.focus_Bg_Color{
+    background-color: #333;
+    color: white;
+}
+
+.artist-sidebar-bg{
+    background: #272727;
+}
+
+ 
+  
+.scroll_Bar::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .scroll_Bar::-webkit-scrollbar-thumb {
+     background: #FFCB3F;
+    width: 100px;
+    border-radius: 15px;
+  }
+  
+  .scroll_Bar::-webkit-scrollbar-track {
+    background: #ccc;
+    border-radius: 15px;
+    width: 50px;
+   
+  }
+ 
+  
