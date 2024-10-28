@@ -1,35 +1,13 @@
-.custom-dropdown {
-  position: relative;
-  display: inline-block;
+
+@media (min-width: 320px) and (max-width: 767px)  {
+  .drag-drop {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-.scrollable-options {
-  max-height: 150px; /* Set maximum height */
-  overflow-y: auto;  /* Enable vertical scroll */
-  padding: 8px;
-  border: 1px solid #ccc;
-}
 
-/* Option styling */
-.scrollable-options div {
-  padding: 12px 16px;
-  cursor: pointer;
-}
 
-.scrollable-options div:hover {
-  background-color: #ddd;
-}
 
-/* Optional - Customize the scrollbar */
-.scrollable-options::-webkit-scrollbar {
-  width: 8px;
-}
 
-.scrollable-options::-webkit-scrollbar-thumb {
-  background-color: #d4af37;
-  border-radius: 10px;
-}
 
-.scrollable-options::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}

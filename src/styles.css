@@ -1336,12 +1336,13 @@ li::marker {
   display: none;
 }
 /******contact-us********/
-/* .usa-blog{
-  border: none;
-} */
+
 
 
 /* Create-profile media */
+
+
+
 
 
 
@@ -1379,6 +1380,9 @@ li::marker {
   .logo-img {
     width: auto;
   }
+
+
+
 }
 
 @media (max-width: 768px) {
@@ -1532,6 +1536,10 @@ li::marker {
   .choose-title p {
     font-size: 16px;
   }
+
+  /*********contact us*******/
+
+
 }
 
 @media (min-width: 992px) {
@@ -1602,9 +1610,7 @@ li::marker {
   padding: 12px 38px;
 }
 /******contact-us********/
-.usa-blog{
-  border: block;
-}
+
 }
 
 @media (min-width:1200px) {
@@ -1774,9 +1780,7 @@ li::marker {
 .subscribe-now{
   padding: 15px 70px;
 }
-.usa-blog{
-  border: block;
-}
+
 }
 
 @media (min-width:1440px) {
