@@ -6,6 +6,7 @@ import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { PrivacypolicyComponent } from './footer/pages/privacypolicy/privacypolicy.component';
 import { Component } from '@angular/core';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
+import { ArtistMainPageComponent } from './pages/artist-main-page/artist-main-page.component';
 
 
 export const routes: Routes = [
@@ -28,6 +29,10 @@ export const routes: Routes = [
   {
     path:'contact-us',
     component:ContactUsComponent
+  },
+  {
+    path:'artistMain',
+    component:ArtistMainPageComponent
   }
 
 

@@ -1,0 +1,401 @@
+<!-- Seach bar and navbar section start -->
+<section class="artist_Nav_bg">
+    <app-navbar></app-navbar>
+    <div class=" searching-bar  pt-4">
+        <div class="search-box d-flex align-items-center">
+            <i class="fas fa-search"></i>
+            <input type="text" class="form-control border-0"
+                placeholder="Search by film or profile name or check categories...">
+            <div class="dropdown">
+                <button class="btn gems-category fw-bold text-dark border-start border-3 " type="button"
+                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Gems Category <i class="fa fa-chevron-down text-dark ps-2"></i>
+                </button>
+                <ul class="dropdown-menu scroll" data-bs-spy="scroll" data-bs-target=".dropdown-menu"
+                    data-bs-offset="50" aria-labelledby="dropdownMenuButton1"
+                    style="max-height: 200px; overflow-y: auto;">
+                    <li><a class="dropdown-item" href="#">Artist</a></li>
+                    <li><a class="dropdown-item" href="#">Director</a></li>
+                    <li><a class="dropdown-item" href="#">Casting Director</a></li>
+                    <li><a class="dropdown-item" href="#">Assistant Director</a></li>
+                    <li><a class="dropdown-item" href="#">Associate Director</a></li>
+                    <li><a class="dropdown-item" href="#">Executive Producer</a></li>
+                    <li><a class="dropdown-item" href="#">Production Manager</a></li>
+                    <li><a class="dropdown-item" href="#">Artist</a></li>
+                    <li><a class="dropdown-item" href="#">Director</a></li>
+                    <li><a class="dropdown-item" href="#">Casting Director</a></li>
+                    <li><a class="dropdown-item" href="#">Associate Director</a></li>
+                    <li><a class="dropdown-item" href="#">Executive Producer</a></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- Seach bar and navbar section End -->
+
+<!-- Main Section start -->
+<section class="bg-middle p-5">
+    <div class="container">
+        <div class="row">
+            <!-- Sidebar Start -->
+            <div class="col-3">
+                <div class="row">
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="col-12">
+                                <div class=" d-flex justify-content-between">
+                                    <p class="navbar-brand">Gems Showcase</p>
+                                    <p class="text-white">Clear</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-12">
+                                <div class="artist-sidebar-bg rounded-top-3 p-2">
+                                    <div class="bg-colors rounded-3 border p-2 d-flex align-items-baseline">
+                                        <i class="fa fa-magnifying-glass text-secondary p-2 "></i>
+                                        <input class="bg-colors border-0 form-control focus_Bg_Color" type="search"
+                                            placeholder="Search here.." aria-label="Search">
+                                    </div>
+                                    <div class="">
+                                        <div class="py-2">
+                                            <button class="btn btn-toggle text-light collapsed me-5 pe-5 ps-0"
+                                                type="button">
+                                                Budget
+                                            </button>
+
+                                            <i class="fa fa-chevron-down ps-5 ms-5 navbar-brand collapsed"
+                                                id="#budget-collapse" data-bs-toggle="collapse"
+                                                data-bs-target="#budget-collapse" aria-expanded="false"></i>
+
+
+                                            <ul class="collapse list-unstyled" id="budget-collapse">
+                                                <div class="">
+                                                    <div class=" border rounded-3 bg-colors align-items-baseline pe-2">
+                                                        <button class="btn btn-toggle text-secondary collapsed"
+                                                            type="button" placeholder=" Select your country">
+                                                            Select your country
+                                                        </button>
+
+                                                        <i class="fa fa-chevron-down ps-5 ms-5 navbar-brand collapsed"
+                                                            id="#country-collapse" data-bs-toggle="collapse"
+                                                            data-bs-target="#country-collapse"
+                                                            aria-expanded="false"></i>
+
+                                                        <ul class="collapse list-unstyled ps-3" id="country-collapse">
+                                                            <li><a class="dropdown-item text-light" href="#">India</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item text-light" href="#">London</a>
+                                                            </li>
+                                                            <li><a class="dropdown-item text-light" href="#">America</a>
+                                                            </li>
+                                                        </ul>
+
+                                                    </div>
+                                                </div>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-12">
+                                <div class="artist-sidebar-bg p-2 mt-2 py-4">
+                                    <div class=" d-flex justify-content-between">
+                                        <p class="text-white">Gems Country</p>
+                                        <i class="fa fa-chevron-down navbar-brand  ps-2"></i>
+                                    </div>
+                                    <div class="">
+                                        <div class=" border rounded-3 bg-colors align-items-baseline pe-2">
+                                            <button class="btn btn-toggle text-secondary collapsed" type="button"
+                                                placeholder=" Select your country">
+                                                Select your country
+                                            </button>
+
+                                            <i class="fa fa-chevron-down ps-5 ms-5 navbar-brand collapsed"
+                                                id="#country-collapse" data-bs-toggle="collapse"
+                                                data-bs-target="#country-collapse" aria-expanded="false"></i>
+
+                                            <ul class="collapse list-unstyled ps-3" id="country-collapse">
+                                                <li><a class="dropdown-item text-light" href="#">India</a></li>
+                                                <li><a class="dropdown-item text-light" href="#">London</a></li>
+                                                <li><a class="dropdown-item text-light" href="#">America</a></li>
+                                            </ul>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-12">
+                                <div class="artist-sidebar-bg p-2 mt-2 py-4">
+                                    <div class=" d-flex justify-content-between">
+                                        <p class="text-white">Gems City</p>
+                                        <i class="fa fa-chevron-down navbar-brand  ps-2"></i>
+                                    </div>
+                                    <div class="">
+                                        <div class="border rounded-3 bg-colors align-items-baseline pe-2">
+                                            <button class="btn text-secondary pe-5" type="button"
+                                                placeholder=" Select your country">
+                                                Select your city
+                                            </button>
+                                            <i class="fa fa-chevron-down ps-5 ms-5 navbar-brand collapsed"
+                                                id="#city-collapse" data-bs-toggle="collapse"
+                                                data-bs-target="#city-collapse" aria-expanded="false"></i>
+                                            <ul class="collapse list-unstyled ps-3 text-light" id="city-collapse">
+                                                <li><a class="dropdown-item" href="#">Mumbai</a></li>
+                                                <li><a class="dropdown-item" href="#">Pune</a></li>
+                                                <li><a class="dropdown-item" href="#">Nagpur</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-12">
+                                <div class="artist-sidebar-bg p-2 mt-2 py-2">
+                                    <div class=" d-flex justify-content-between">
+                                        <p class="text-white">Gems Age Range</p>
+                                        <i class="fa fa-chevron-down navbar-brand  ps-2"></i>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div
+                                                class="dropdown border rounded-3  w-100 bg-colors d-flex justify-content-between align-items-baseline pe-2">
+                                                <button class="btn text-light" type="button"
+                                                    placeholder=" Select your country">
+                                                    15
+                                                </button>
+                                                <i class="fa fa-chevron-down ps-2 navbar-brand" id="dropdownMenuButton1"
+                                                    data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">15</a></li>
+                                                    <li><a class="dropdown-item" href="#">25</a></li>
+                                                    <li><a class="dropdown-item" href="#">35</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div
+                                                class="dropdown border rounded-3  w-100 bg-colors d-flex justify-content-between align-items-baseline pe-2">
+                                                <button class="btn text-light" type="button"
+                                                    placeholder=" Select your country">
+                                                    35
+                                                </button>
+                                                <i class="fa fa-chevron-down ps-2 navbar-brand" id="dropdownMenuButton1"
+                                                    data-bs-toggle="dropdown" aria-expanded="false"></i>
+                                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                    <li><a class="dropdown-item" href="#">35</a></li>
+                                                    <li><a class="dropdown-item" href="#">65</a></li>
+                                                    <li><a class="dropdown-item" href="#">95</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="text-light d-flex justify-content-between pt-2">
+                                                <p>Min</p>
+                                                <p>Max</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-12">
+                                <div class="artist-sidebar-bg p-2 mt-2">
+                                        <div class="">
+                                            <button class="btn btn-toggle text-light collapsed me-5 pe-4 ps-0"
+                                                type="button">
+                                                Gems Gender
+                                            </button>
+
+                                            <i class="fa fa-chevron-down ps-5 ms-5 navbar-brand collapsed"
+                                                id="#budget-collapse" data-bs-toggle="collapse"
+                                                data-bs-target="#budget-collapse" aria-expanded="false"></i>
+
+
+                                            <ul class="collapse list-unstyled" id="budget-collapse">
+                                                <div class=" d-flex justify-content-between">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="Male" id="male"
+                                                            value="male">
+                                                        <label class="form-check-label text-light" for="male">
+                                                            Male
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="Female" id="female"
+                                                            value="female">
+                                                        <label class="form-check-label text-light" for="female">
+                                                            Female
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" name="others" id="others"
+                                                            value="others">
+                                                        <label class="form-check-label text-light" for="others">
+                                                            Others
+                                                        </label>
+                                                    </div>
+                                                </div> 
+                                            </ul>
+
+                                        </div>
+                                   </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-12">
+                                <div class="artist-sidebar-bg p-2 mt-2 py-4">
+                                    <button class="btn btn-toggle text-light collapsed me-2 pe-5 ps-0"
+                                    type="button">
+                                    Gems categories
+                                </button>
+
+                                <i class="fa fa-chevron-down ps-5 ms-5 navbar-brand collapsed"
+                                    id="#categories-collapse" data-bs-toggle="collapse"
+                                    data-bs-target="#categories-collapse" aria-expanded="false"></i>
+
+
+                                <!-- <ul class="collapse list-unstyled" id="categories-collapse"> -->
+
+                                
+                                    <!-- <div class="">
+                                        <div class="bg-colors align-items-baseline pe-2"> -->
+                                            <!-- <button class="btn text-secondary pe-5" type="button"
+                                                placeholder=" Select your country">
+                                                Select your city
+                                            </button>
+                                            <i class="fa fa-chevron-down ps-5 ms-5 navbar-brand collapsed"
+                                                id="#city-collapse" data-bs-toggle="collapse"
+                                                data-bs-target="#city-collapse" aria-expanded="false"></i> -->
+                                            <ul class="collapse list-unstyled ps-2 text-light  scroll scroll_Bar py-3"
+                                            id="categories-collapse" style="max-height: 222px; overflow-y: auto; ">
+                                                <li class="p-2"><a class="dropdown-item" href="#"> <input
+                                                            type="checkbox" name="" class="mx-2" id=""> Artist</a></li>
+                                                <li class="p-2"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                            name="" class="mx-2" id=""> Director</a></li>
+                                                <li class="p-2"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                            name="" class="mx-2" id="">Casting Director</a></li>
+                                                <li class="p-2"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                            name="" class="mx-2" id="">Assistant Director</a></li>
+                                                <li class="p-2"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                            name="" class="mx-2" id="">Associate Director</a></li>
+                                                <li class="p-2"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                            name="" class="mx-2" id="">Executive Producer</a></li>
+                                                <li class="p-2"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                            name="" class="mx-2" id="">Production Manager</a></li>
+                                                <li class="p-2"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                            name="" class="mx-2" id="">Artist</a></li>
+                                                <li class="p-2"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                            name="" class="mx-2" id="">Director</a></li>
+                                                <li class="p-2"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                            name="" class="mx-2" id="">Assistant Director</a></li>
+                                                <li class="p-2"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                            name="" class="mx-2" id="">Associate Director</a></li>
+                                                <li class="p-2"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                            name="" class="mx-2" id="">Production Manager</a></li>
+                                                <li class="p-2"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                            name="" class="mx-2" id="">Executive Producer</a></li>
+                                            </ul>
+                                        <!-- </div>
+                                    </div> -->
+                                <!-- </ul> -->
+                                </div>
+                            </div>
+                        </li>
+
+                    </ul>
+                </div>
+
+            </div>
+            <!-- Sidebar Start -->
+
+            <!-- Main Artist card Section Start -->
+            <div class="col-9">
+                <div class="row px-2  pt-5">
+                    <div class="col-3">
+                        <div>
+                            <img class="img-fluid" src="assets/artist-Main-Page/Shahid Kapoor.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <img class="img-fluid" src="assets/artist-Main-Page/Rashmika Mandanna.svg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img class="img-fluid" src="assets/artist-Main-Page/Allu arjun.svg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img class="img-fluid" src="assets/artist-Main-Page/Yash.svg" alt="">
+                    </div>
+
+                    <div class="col-3">
+                        <img src="assets/artist-Main-Page/Sai Tamhankar.svg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/artist-Main-Page/Ayushmann Khurrana.svg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/artist-Main-Page/Sidharth Malhotra.svg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/artist-Main-Page/Sonali Kulkarni.svg" alt="">
+                    </div>
+
+                    <div class="col-3">
+                        <img src="assets/artist-Main-Page/Bhau Kadam.svg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/artist-Main-Page/Amey Wagh.svg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/artist-Main-Page/Dhanush.svg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/artist-Main-Page/Vidya Balan.svg" alt="">
+                    </div>
+
+                    <div class="col-3">
+                        <img src="assets/artist-Main-Page/Vijay.svg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/artist-Main-Page/Ritesh Deshmukh.svg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/artist-Main-Page/Rajpal Yadav.svg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/artist-Main-Page/Shital Singh.svg" alt="">
+                    </div>
+
+                    <div class="col-3">
+                        <img src="assets/artist-Main-Page/Brahmanandam.svg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/artist-Main-Page/Shraddha Kapoor.svg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/artist-Main-Page/Swapnil Joshi.svg" alt="">
+                    </div>
+                    <div class="col-3">
+                        <img src="assets/artist-Main-Page/Supriya Pilgavkar.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- Main Artist card Section Start -->
+
+        </div>
+    </div>
+</section>
+<!-- Main Section End -->
+
+<!-- Footer -->
+<app-footer></app-footer>
