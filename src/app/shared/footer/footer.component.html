@@ -31,7 +31,10 @@
               <h5 class="text-uppercase company-name">Specialties</h5>
               <ul class="list-unstyled">
                 <li><a href="#" class="custom-colors text-decoration-none">All Gems Category</a></li>
-                <li><a href="#" class="custom-colors text-decoration-none">Special Offer</a></li>
+                <!-- <li><a href="#" class="custom-colors text-decoration-none">Special Offer</a></li> -->
+                <!-- <li><a href="#" class="custom-colors text-decoration-none" data-toggle="modal" data-target="#discountModal">Special Offer</a></li> -->
+                <li><a href="#" class="custom-colors text-decoration-none" data-bs-toggle="modal"
+                  data-bs-target="#offerModal">Special Offer</a></li>
                 <li><a href="#" class="custom-colors text-decoration-none">Best Plans</a></li>
                 <li><a href="#" class="custom-colors text-decoration-none">International Gems</a></li>
                 <li><a href="#" class="custom-colors text-decoration-none">Events</a></li>
@@ -110,7 +113,7 @@
 </section>
 
 <!---Model-->
-<div class="modal fade roboto-font " id="blogModal" tabindex="-1" aria-labelledby="blogModalLabel" aria-hidden="true">
+<div  class="modal fade roboto-font " id="blogModal" tabindex="-1" aria-labelledby="blogModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-top custom-modal-background">
     <div class="modal-content ">
       <div class="modal-header d-flex justify-content-centre aligns-items-centre">
@@ -142,3 +145,56 @@
     </div>
   </div>
 </div>
+
+
+<!-------------Offer-------->
+
+
+<!-- <div id="offerModal" class="modal offer-modal">
+  <div class="modal-content modal-content-offer">
+     <div class="row">
+      <div class="col-5" >
+        <img src="assets/offer/offer-girls.png" style="background-color: #FFC936;" alt="">
+      </div>
+      <div class="col-7">
+        <img src="assets/offer/offers.svg" alt="">
+        <img src="assets/offer/images.png" alt="">
+        <img src="assets/offer/kalash.png" alt="">
+      </div>
+     </div>
+  </div>
+</div> -->
+<div id="offerModal" class="modal offer-modal">
+  <div class="modal-content modal-content-offer">
+    <div class="row">
+      <!-- Left Column for Image -->
+      <div class="col-4" style="background-color: #FFC936;">
+        <img src="assets/offer/offer-girls.png" class="offer-girl-img" alt="Offer Girl" >
+      </div>
+      <!-- Right Column for Offer Details -->
+      <div class="col-5" style="background-color: #FFFFFF;">
+        <div class="offer-images-wrapper">
+
+          <div class="flags-images  float-end">
+            <img src="assets/offer/offers.svg" class="offer-discount-img" alt="Offer Discount">
+          </div>
+          <div class="images-ofers float-end">
+            <img src="assets/offer/images.png" class="offer-images" alt="Offer Image">
+          </div>
+         <div class="kalash float-end">
+          <img src="assets/offer/kalash.png" class="offer-kalash" alt="Kalash">
+         </div>
+        </div>
+        <!-- <h2>15% Discount</h2> -->
+        <div class="content-text">
+          <p>Enjoy Festive Discount On Your First Subscription Plan</p>
+        <p>Hurry up, offer is valid till 28th May 2024</p>
+        <button class="subscribe-btn">Subscribe Now</button>
+      </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+

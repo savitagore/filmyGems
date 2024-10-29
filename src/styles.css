@@ -1065,9 +1065,10 @@ textarea::placeholder {
 .accordion-item{
   border: none;
 }
+
 .get-started::after {
   content: "\f107";
-  color: #FFC936;
+  color: #FFC936 !important;
   margin-left: auto;
 }
 .get-started[aria-expanded="true"]::after {
@@ -1075,7 +1076,7 @@ textarea::placeholder {
 }
 .accordion-button:not(.collapsed)::after {
   background-image: var(--bs-accordion-btn-active-icon);
-  color:#FFC936;
+  color:#FFC936 !important;
   transform: var(--bs-accordion-btn-icon-transform);
 }
 .get-started[aria-expanded="true"] {
