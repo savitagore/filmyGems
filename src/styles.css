@@ -1061,7 +1061,8 @@ textarea::placeholder {
 }
 
 .get-started::after {
-  content: "\f107";
+  /* content: "\f107"; */
+  content: "\f078";
   color: #FFC936 !important;
   margin-left: auto;
 }
