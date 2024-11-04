@@ -1059,9 +1059,10 @@ textarea::placeholder {
 .accordion-item{
   border: none;
 }
+
 .get-started::after {
   content: "\f107";
-  color: #FFC936;
+  color: #FFC936 !important;
   margin-left: auto;
 }
 .get-started[aria-expanded="true"]::after {
@@ -1069,7 +1070,7 @@ textarea::placeholder {
 }
 .accordion-button:not(.collapsed)::after {
   background-image: var(--bs-accordion-btn-active-icon);
-  color:#FFC936;
+  color:#FFC936 !important;
   transform: var(--bs-accordion-btn-icon-transform);
 }
 .get-started[aria-expanded="true"] {
@@ -1138,6 +1139,41 @@ li::marker {
   color: #FABD47;
 }
 
+/**************Offer**********************/
+
+.images-ofers {
+
+  position: relative;
+  bottom: 80px;
+  right: 136px;
+
+}
+
+.kalash {
+ position: relative;
+  left: 24px;
+}
+
+.offer {
+  color: #C92D01;
+  font-size: 24px;
+  font-weight: 600;
+}
+.hurry-offer{
+  color: #3F3F3F;
+  font-size: 14px;
+}
+
+.offer-disconuts{
+  position: relative;
+  bottom: 171px;
+}
+.content-text{
+    top: 197px;
+    position: absolute;
+    line-height: 1.2;
+    right: 349px;
+}
 
 /* ********Talent-show   ********* */
 .audits-img{
