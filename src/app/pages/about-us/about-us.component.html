@@ -1,5 +1,9 @@
 <!-- background img section start -->
-<section class="plan-images roboto-font" [ngStyle]="{'background-image': 'url(' + backgroundImageUrl + ')'} ">
+<section class="plan-images roboto-font"  [ngStyle]="{
+    'background-image': 'linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(' + backgroundImageUrl + ')',
+    'background-size': 'cover',
+    'background-position': 'center'
+  }">
     <app-navbar></app-navbar>
     <div class="container">
         <div class="row">
