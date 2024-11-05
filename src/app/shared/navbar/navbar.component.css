@@ -6,4 +6,11 @@ li.nav-item a.nav-link.active {
   text-underline-offset: 5px;
 } */
 
-
+.add-List-btn{
+  background-color: #F3AD3B;
+}
+.modal2-width{
+  width: 450px;
+  height: auto;
+  margin-left: 510px;
+}
