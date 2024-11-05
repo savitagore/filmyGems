@@ -12,6 +12,7 @@ import Aos from 'aos';
 })
 export class FooterComponent implements OnInit  {
 
+
   ngOnInit() {
     Aos.init({
       duration: 1500,

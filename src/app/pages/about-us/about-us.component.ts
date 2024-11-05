@@ -3,12 +3,13 @@ import { Component } from '@angular/core';
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
 import { FooterComponent } from '../../shared/footer/footer.component';
 import { StartjourneyComponent } from '../../shared/startjourney/startjourney.component';
+import { RouterLink } from '@angular/router';
 
 
 @Component({
   selector: 'app-about-us',
   standalone: true,
-  imports: [CommonModule,NavbarComponent,FooterComponent,StartjourneyComponent],
+  imports: [CommonModule,NavbarComponent,FooterComponent,StartjourneyComponent,RouterLink],
   templateUrl: './about-us.component.html',
   styleUrl: './about-us.component.css'
 })
