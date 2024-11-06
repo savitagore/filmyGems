@@ -736,6 +736,12 @@
                     <div class="col-6">
                         <!-- Image Carousel -->
                         <div id="carouselExample" class="carousel slide caro-css" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"></button>
+                              </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="assets/artist-Main-Page/artist-modal.svg" class="d-block rounded-end-4 w-100"
@@ -751,7 +757,15 @@
                                 </div>
                                 <!-- Add more carousel items here if needed -->
                             </div>
-                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            <a class="left carousel-control" href="#carouselExample" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                              </a>
+                              <a class="right carousel-control" href="#carouselExample" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                              </a>
+                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
                                 data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Previous</span>
@@ -760,7 +774,7 @@
                                 data-bs-slide="next">
                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                 <span class="visually-hidden">Next</span>
-                            </button>
+                            </button> -->
                         </div>
                     </div>
                     <div class="col-6">
@@ -799,7 +813,7 @@
                             <div class="d-flex mt-3">
                                 <div class="rounded-2 ps-2 pe-5" style="background: #CEEAF6;">
                                     <h6 class="pt-2">Age</h6>
-                                    <p class="">28 years <br>5 April 1996</p>
+                                    <p class="fw-bold"><strong>28 years </strong> <br>5 April 1996</p>
                                 </div>
                                 <div class="px-3">
                                     <h6 class="sortFont text-dark">Current Projects</h6>
@@ -863,9 +877,9 @@
         </div>
         <div class="modal-body text-center">
 
-<p>Gem’s Contact primary number: +91 9130831462</p>
-<p>Gem’s Contact secondary number: +91 7387775499</p>
-<p>Gem’s Email ID: reshmika.m&#64;gmail.com</p>
+<p class="fw-bold">Gem’s Contact primary number:<span class="fw-bold"> +91 9130831462</span></p>
+<p class="fw-bold">Gem’s Contact secondary number: +91 7387775499</p>
+<p class="fw-bold">Gem’s Email ID: reshmika.m&#64;gmail.com</p>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn border-dark rounded-pill px-3" data-bs-dismiss="modal">Close</button>
@@ -873,3 +887,4 @@
       </div>
     </div>
   </div>
+
