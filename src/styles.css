@@ -576,7 +576,7 @@ overflow: hidden;
 
 .form-control:focus {
   box-shadow: none !important;
-  
+
 }
 
 .focus_Bg_Color{
@@ -612,7 +612,7 @@ text-align: left;
   background: #ccc;
   border-radius: 15px;
   width: 50px;
- 
+
 }
 .sortFont{
   font-family: Roboto;
@@ -639,7 +639,7 @@ font-weight: 400;
 }
 
 .pagin-border{
- border: 2px solid #272727; 
+ border: 2px solid #272727;
  border-radius: 5px;
 }
 
@@ -649,7 +649,7 @@ font-weight: 400;
 }
 
 .page-link:hover{
-  color: #ff9800 !important;   
+  color: #ff9800 !important;
 }
 
 /*Artist profile view Modal css */
