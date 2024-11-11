@@ -1,16 +1,2 @@
 
-.add-List-btn{
-  background-color: #F3AD3B;
-}
-.modal2-width{
-  width: 450px;
-  height: auto;
-  margin-left: 510px;
-}
 
-.carousel-indicators .active {
-  background-color: #FFCF25;
-}
-.carousel-indicators [data-bs-target] {
-  height: 5px !important;
-}
