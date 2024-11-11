@@ -342,6 +342,7 @@
           </section>
         </div>
       </div>
+
       <div class="col-md-9" *ngIf="isFaqActive">
         <div class="description-terms text-white pt-2">
           <h5 class="faq ">FAQ</h5>
@@ -351,7 +352,9 @@
                 <button class="accordion-button  get-started" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   Get Started
+                  <i class="bi bi-chevron-down ms-auto" style="color: red;"></i>
                 </button>
+
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show faq-bgcolor text-white"
                 aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
@@ -360,6 +363,8 @@
                 </div>
               </div>
             </div>
+
+
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed get-started" type="button" data-bs-toggle="collapse"
@@ -627,7 +632,4 @@
     </div>
   </div>
 </section>
-
-
-
 <app-footer></app-footer>

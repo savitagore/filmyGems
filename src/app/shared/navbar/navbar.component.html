@@ -1,4 +1,4 @@
-<div class="header-Navbar">
+<div class="header-Navbar roboto-font">
   <div class="container">
     <div class="row">
       <div class="col-lg-9 col-md-8 col-sm-12 order-lg-1 order-md-1  order-2">
@@ -9,7 +9,7 @@
               aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end header-name " id="mynavbar">
+            <div class="collapse navbar-collapse justify-content-end header-name" id="mynavbar">
               <ul class="navbar-nav pt-3">
                 <li class="nav-item">
                   <a class="nav-link text-white pages-name " routerLink="/profile" routerLinkActive="active"
@@ -32,7 +32,7 @@
           </div>
         </nav>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-12 order-lg-2 order-md-2 order-1 order-sm-3">
+      <div class="col-lg-3 col-md-4 col-sm-12 order-lg-2 order-md-2 order-1 order-sm-3 roboto-font">
         <div class="icons-join">
           <div class="d-flex align-items-center justify-content-center links-chart">
             <a class="text-white mx-3" href="#">
@@ -41,13 +41,13 @@
             <a class="text-white mx-3" href="#">
               <i class="fa-regular fa-bell custom-icon"></i>
             </a>
-            <a class="text-white mx-3" href="#" data-bs-toggle="modal" data-bs-target="#artistModal">
+            <a class="text-white mx-3" href="#" data-bs-toggle="modal" data-bs-target="#profileModal">
               <i class="fa-regular fa-user custom-icon"></i>
             </a>
-            <a href="#" class="join-ig d-flex ">
+            <a class="join-ig d-flex ">
               <img src="assets/landing_Img/login-start.png" alt="Login" class="img-fluid me-2">
-              <img src="assets/landing_Img/login-start.png" alt="Login" class="img-fluid me-2 rotate"> <button
-                class="btn join-btn" type="button">Join Now</button>
+              <img src="assets/landing_Img/login-start.png" alt="Login" class="img-fluid me-2 rotate">
+              <button class="btn join-btn" type="button" routerLink="/sign-up">Join Now</button>
             </a>
           </div>
         </div>
@@ -56,163 +56,68 @@
   </div>
 </div>
 
-<!-- start Model -->
-<div class="modal fade roboto-font " id="artistModal" tabindex="-1" aria-labelledby="artistModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-top bg-light">
-    <div class="modal-content ">
-      <div class="modal-body p-0">
-        <div class="row">
-          <div class="col-6">
-            <!-- Image Carousel -->
-            <div id="carouselExample" class="carousel slide caro-css" data-bs-ride="carousel">
-
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"aria-current="true"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-current="false"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-current="false"></button>
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-current="false"></button>
-               </div>
+<!--------Model Profile ---------->
 
 
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="assets/artist-Main-Page/artist-modal.svg" class="d-block rounded-end-4 w-100"
-                    alt="Profile Image">
-                </div>
-                <div class="carousel-item active">
-                  <img src="assets/artist-Main-Page/artist-pop-1.svg" class="d-block rounded-end-4 w-100"
-                    alt="Profile Image">
-                </div>
-                <div class="carousel-item active">
-                  <img src="assets/artist-Main-Page/artist-pop-2.svg" class="d-block rounded-end-4 w-100"
-                    alt="Profile Image">
-                </div>
-                <!-- Add more carousel items here if needed -->
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
-
-
-
-
-            </div>
-          </div>
-          <div class="col-6">
-            <div class="me-4 mt-4">
-              <!-- Profile Details -->
-              <div class="p-2 rounded-2" style="background: #FCEAC8;">
-                <div class="navbar-brand">
-                  <i class="fa-solid fa-star"></i>
-                  <i class="fa-solid fa-star ps-1"></i>
-                  <i class="fa-solid fa-star ps-1"></i>
-                  <i class="fa-solid fa-star ps-1"></i>
-                  <i class="fa-solid fa-star ps-1"></i>
-                </div>
-                <div class="d-flex justify-content-between align-items-baseline">
-                  <div class="">
-                    <h5 class="modal-title" id="profileModalLabel">Rashmika Mandanna</h5>
-                    <p class="text-muted">Tollywood Actress</p>
-                  </div>
-                  <div class="">
-                    <p>4532 <i class="fa-regular fa-eye"></i></p>
-                  </div>
-                  <div>
-                    <p>5+ <i class="fa-regular fa-images"></i></p>
-                  </div>
-                  <div class="align-items-self-center">
-                    <button class="btn add-List-btn rounded-pill">Add To List</button>
-                  </div>
-                </div>
-              </div>
-              <p class="py-4">Rashmika Mandanna (born 5 April 1996) is an Indian actress who works
-                in Telugu, Kannada, Hindi and Tamil films. She is the recipient of four SIIMA Awards and
-                a Filmfare Award. She featured in the 30 Under 30 list by Forbes India in 2024. Rashmika
-                made her acting debut with the Kannada film Kirik Party (2016), and found further
-                success in the action picture Anjani Putra and romance Chamak (both 2017). She had her
-                first Telugu film release in the romantic comedy Chalo (2018). </p>
-              <div class="d-flex mt-3">
-                <div class="rounded-2 ps-2 pe-5" style="background: #CEEAF6;">
-                  <h6 class="pt-2">Age</h6>
-                  <p> <strong>28 years</strong> <br>5 April 1996</p>
-                </div>
-                <div class="px-3">
-                  <h6 class="sortFont text-dark">Current Projects</h6>
-                  <div class="project-thumbnails d-flex mt-3">
-                    <div class="">
-                      <img src="project1.jpg" class="object-fit-cover rounded-end-3" alt="...">
-                    </div>
-                    <div class="">
-                      <img src="project1.jpg" class="object-fit-cover rounded-end-3" alt="...">
-                    </div>
-                    <div class="">
-                      <img src="project1.jpg" class="object-fit-cover rounded-end-3" alt="...">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="py-3">
-                <div class="dropdown">
-                  <button class="btn btn-primary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false">
-                    Cost for per project
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li class="dropdown-item" href="#">10000000</li>
-                    <li class="dropdown-item" href="#">180000000</li>
-                    <li class="dropdown-item" href="#">500000000</li>
-                  </ul>
-                </div>
-              </div>
-              <div class="mt-3 text-end">
-                <img src="assets/artist-Main-Page/heart.svg" class="me-3">
-                <button class="btn border-dark rounded-pill px-4 py-2 me-3" data-bs-dismiss="modal">Close</button>
-                <button class="btn add-List-btn rounded-pill py-2" data-bs-toggle="modal"
-                  data-bs-target="#exampleModal">Get Details</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- Modal2 On Details Button -->
-
-<!-- Modal -->
-<div class="modal fade roboto-font modal2-width" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog modal-dialog-top bg-light rounded-3">
+<!-- Modal Structure -->
+<div class="modal fade roboto-font" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg bg-white">
     <div class="modal-content">
-      <div class="" style="background: #E4FBC9;">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-header welcome-header d-flex justify-content-between align-items-center m-4 p-2">
+        <div class="ajay-text d-flex justify-content-center align-items-center">
+          <h5 class="welcome pt-1 ps-3">Welcome <strong>Ajay</strong></h5>
         </div>
-        <div class="text-center">
-          <img src="assets/artist-Main-Page/artist-popup2-varified.svg" class="pb-2" alt="Profile Image">
-          <p style="color: #31A740;
-">Enjoy your verified contact details</p>
+        <div class="d-flex justify-content-end align-items-center me-2">
+          <p class="text-center" style="padding-right: 40px; font-size: 18px;"><strong>Last login on</strong> 02 May 2024, 10:32 PM</p>
+          <button class="btn rounded-pill btn-edit">Edit Now</button>
         </div>
-
-
       </div>
-      <div class="modal-body text-center">
+      <div class="modal-body">
+        <div class="container-fluid">
+          <div class="row">
+            <!-- Profile Image and Upload Button -->
+            <div class="col-md-4 text-center">
+              <img src="assets/profile/profile.png" alt="Profile Image" class=" img-fluid mb-2">
+              <!-- <button class="btn btn-light btn-sm">Upload Photo</button> -->
+              <div class="upload">
+                <img src="assets/svg-icons/upload.svg" alt="" class="img-fluid">
 
-        <p>Gem’s Contact primary number: <strong>+91 9130831462</strong></p>
-        <p >Gem’s Contact secondary number: <strong>+91 7387775499</strong></p>
-        <p >Gem’s Email ID:  <strong> reshmika.m&#64;gmail.com</strong></p>
+              </div>
+            </div>
+            <!-- Profile Details Form -->
+            <div class="col-md-8">
+              <form>
+                <div class="mb-3">
+                  <label for="fullName" class="form-label">Full Name</label>
+                  <input type="text" class="form-control" id="fullName" placeholder="Ajay Kumar" value="Ajay Kumar">
+                </div>
+                <div class="mb-3">
+                  <label for="subscriptionPlan" class="form-label">Subscription Plan</label>
+                  <input type="text" class="form-control" id="subscriptionPlan" placeholder="Platinum (₹1999)"
+                    value="Platinum (₹1999)">
+                </div>
+                <div class="mb-3">
+                  <label for="location" class="form-label">Location</label>
+                  <input type="text" class="form-control" id="location" placeholder="Navi Mumbai" value="Navi Mumbai">
+                </div>
+                <div class="mb-3">
+                  <label for="contactNumber" class="form-label">Contact Number</label>
+                  <input type="text" class="form-control" id="contactNumber" placeholder="9800000000"
+                    value="9800000000">
+                </div>
+                <div class="mb-3">
+                  <label for="bio" class="form-label">Bio</label>
+                  <textarea class="form-control" id="bio" rows="4"
+                    placeholder="I am passionate and dedicated...">I am passionate and dedicated, brings complex characters to life on stage and screen. With a rich background in dramatic arts...</textarea>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn border-dark rounded-pill px-3" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save Changes</button>
       </div>
     </div>
   </div>

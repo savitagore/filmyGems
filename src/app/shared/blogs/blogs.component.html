@@ -5,18 +5,35 @@
 <section class="middle-section roboto-font  py-3">
   <div class="container">
     <div class="row">
-      <div class="col-md-12">
-        <div class="category-tags">
-          <i class="fas fa-chevron-left arrow-icon"></i>
+      <!-- <div class="col-md-12">
+        <div class="category-tags" >
+          <i class="fas fa-chevron-left arrow-icon" ></i>
           <span>Artist</span>
           <span class="active-cat">Director</span>
           <span>Casting Director</span>
           <span>Assistant Director</span>
           <span>Associate Director</span>
           <span>Executive Producer</span>
-          <span>Assistant Director</span>
-          <span>Artist</span>
           <i class="fas fa-chevron-right arrow-icon"></i>
+        </div>
+      </div> -->
+      <!-- <div class="col-md-12">
+        <div class="category-tags">
+          <i class="fas fa-chevron-left arrow-icon" (click)="previousCategory()"></i>
+          <span *ngFor="let category of visibleCategories">{{ category }}</span>
+          <i class="fas fa-chevron-right arrow-icon" (click)="nextCategory()"></i>
+        </div>
+      </div> -->
+      <div class="col-md-12">
+        <div class="category-tags">
+          <i class="fas fa-chevron-left arrow-icon" (click)="previousCategory()"></i>
+          <span
+            *ngFor="let category of visibleCategories"
+            [ngClass]="{'active-category': selectedCategory === category}"
+            (click)="selectCategory(category)">
+            {{ category }}
+          </span>
+          <i class="fas fa-chevron-right arrow-icon" (click)="nextCategory()"></i>
         </div>
       </div>
     </div>
