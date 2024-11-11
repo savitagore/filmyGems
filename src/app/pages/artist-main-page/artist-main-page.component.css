@@ -1,4 +1,4 @@
-.artist_Nav_bg{
+/* .artist_Nav_bg{
     background: #272727;
 }
 
@@ -72,16 +72,16 @@ font-weight: 400;
 }
 
 .pagination .page-link:hover {
-    background-color: #272727; /* Change this to your desired background color */
-    border-color: #ff9800; /* Optional: matches border color with background */
+    background-color: #272727;
+    border-color: #ff9800; 
 }
 
 .page-link:hover{
     color: #ff9800 !important;   
-}
+} */
 
 /*Artist profile view Modal css */
-.modal-content {
+/* .modal-content {
     border-radius: 10px;
     overflow: hidden;
   }
@@ -103,7 +103,7 @@ font-weight: 400;
     width: 450px;
     height: auto;
     margin-left: 510px;
-  }
+  } */
 
  
   

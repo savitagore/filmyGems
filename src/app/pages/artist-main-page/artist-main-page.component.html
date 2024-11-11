@@ -1,7 +1,11 @@
 <!-- Seach bar and navbar section start -->
 <section class="artist_Nav_bg">
     <app-navbar></app-navbar>
-    <div class=" searching-bar  pt-4">
+    
+        <app-search-header></app-search-header>
+   
+
+    <!-- <div class=" searching-bar  pt-4">
         <div class="search-box d-flex align-items-center">
             <i class="fas fa-search"></i>
             <input type="text" class="form-control border-0"
@@ -29,7 +33,7 @@
                 </ul>
             </div>
         </div>
-    </div>
+    </div> -->
 </section>
 <!-- Seach bar and navbar section End -->
 
@@ -344,8 +348,8 @@
                         <div class="dropdown text-end mb-0">
                             <button type="button" class="btn border-0 text-light sortFont" data-bs-toggle="dropdown">
                                 Sort by
-                                <i class="fa fa-chevron-down ps-3 navbar-brand collapsed" id="#budget-collapse"
-                                    data-bs-toggle="collapse" data-bs-target="#budget-collapse"
+                                <i class="fa fa-chevron-down ps-3 navbar-brand collapsed" id="#sortBy-collapse"
+                                    data-bs-toggle="collapse" data-bs-target="#sortBy-collapse"
                                     aria-expanded="false"></i>
                             </button>
                             <ul class="dropdown-menu sortFont">
@@ -729,9 +733,9 @@
 <!-- start Model -->
 <div class="modal fade roboto-font " id="artistModal" tabindex="-1" aria-labelledby="artistModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-top bg-light">
+    <div class="modal-dialog modal-dialog-top">
         <div class="modal-content ">
-            <div class="modal-body p-0">
+            <div class="modal-body p-0 bg-light">
                 <div class="row">
                     <div class="col-6">
                         <!-- Image Carousel -->
@@ -741,40 +745,29 @@
                                 <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
                                 <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
                                 <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"></button>
-                              </div>
+                            </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="assets/artist-Main-Page/artist-modal.svg" class="d-block rounded-end-4 w-100"
-                                        alt="Profile Image">
+                                    <img src="assets/artist-Main-Page/artist-modal.svg"
+                                        class="d-block rounded-end-4 w-100" alt="Profile Image">
                                 </div>
                                 <div class="carousel-item active">
-                                    <img src="assets/artist-Main-Page/artist-pop-1.svg" class="d-block rounded-end-4 w-100"
-                                        alt="Profile Image">
+                                    <img src="assets/artist-Main-Page/artist-pop-1.svg"
+                                        class="d-block rounded-end-4 w-100" alt="Profile Image">
                                 </div>
                                 <div class="carousel-item active">
-                                    <img src="assets/artist-Main-Page/artist-pop-2.svg" class="d-block rounded-end-4 w-100"
-                                        alt="Profile Image">
+                                    <img src="assets/artist-Main-Page/artist-pop-2.svg"
+                                        class="d-block rounded-end-4 w-100" alt="Profile Image">
                                 </div>
-                                <!-- Add more carousel items here if needed -->
                             </div>
                             <a class="left carousel-control" href="#carouselExample" data-slide="prev">
                                 <span class="glyphicon glyphicon-chevron-left"></span>
                                 <span class="sr-only">Previous</span>
-                              </a>
-                              <a class="right carousel-control" href="#carouselExample" data-slide="next">
+                            </a>
+                            <a class="right carousel-control" href="#carouselExample" data-slide="next">
                                 <span class="glyphicon glyphicon-chevron-right"></span>
                                 <span class="sr-only">Next</span>
-                              </a>
-                            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                                data-bs-slide="next">
-                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button> -->
+                            </a>
                         </div>
                     </div>
                     <div class="col-6">
@@ -813,30 +806,28 @@
                             <div class="d-flex mt-3">
                                 <div class="rounded-2 ps-2 pe-5" style="background: #CEEAF6;">
                                     <h6 class="pt-2">Age</h6>
-                                    <p class="fw-bold"><strong>28 years </strong> <br>5 April 1996</p>
+                                    <p><strong>28 years </strong> <br>5 April 1996</p>
                                 </div>
                                 <div class="px-3">
                                     <h6 class="sortFont text-dark">Current Projects</h6>
                                     <div class="project-thumbnails d-flex mt-3">
                                         <div class="">
-                                            <img src="project1.jpg" class="object-fit-cover rounded-end-3"
-                                                alt="...">
+                                            <img src="project1.jpg" class="object-fit-cover rounded-end-3" alt="...">
                                         </div>
                                         <div class="">
-                                            <img src="project1.jpg" class="object-fit-cover rounded-end-3"
-                                                alt="...">
+                                            <img src="project1.jpg" class="object-fit-cover rounded-end-3" alt="...">
                                         </div>
                                         <div class="">
-                                            <img src="project1.jpg" class="object-fit-cover rounded-end-3"
-                                                alt="...">
+                                            <img src="project1.jpg" class="object-fit-cover rounded-end-3" alt="...">
                                         </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="py-3">
                                 <div class="dropdown">
-                                    <button class="btn btn-primary dropdown-toggle" type="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button class="btn dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" style="background: #67ABC9;
+">
                                         Cost for per project
                                     </button>
                                     <ul class="dropdown-menu">
@@ -850,7 +841,8 @@
                                 <img src="assets/artist-Main-Page/heart.svg" class="me-3">
                                 <button class="btn border-dark rounded-pill px-4 py-2 me-3"
                                     data-bs-dismiss="modal">Close</button>
-                                <button class="btn add-List-btn rounded-pill py-2" data-bs-toggle="modal" data-bs-target="#exampleModal">Get Details</button>
+                                <button class="btn add-List-btn rounded-pill py-2" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Get Details</button>
                             </div>
                         </div>
                     </div>
@@ -860,31 +852,27 @@
     </div>
 </div>
 <!-- Modal2 On Details Button -->
-<div class="modal fade roboto-font modal2-width" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade roboto-font modal2-width" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
     <div class="modal-dialog modal-dialog-top bg-light rounded-3">
-      <div class="modal-content">
-        <div class="" style="background: #E4FBC9;">
-         <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-content">
+            <div class="" style="background: #E4FBC9;">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="text-center">
+                    <img src="assets/artist-Main-Page/artist-popup2-varified.svg" class="pb-2" alt="Profile Image">
+                    <p style="color: #31A740;">Enjoy your verified contact details</p>
+                </div>
+            </div>
+            <div class="modal-body text-center">
+                <p>Gem’s Contact primary number:<strong> +91 9130831462</strong></p>
+                <p>Gem’s Contact secondary number:<strong> +91 7387775499</strong></p>
+                <p>Gem’s Email ID:<strong> reshmika.m&#64;gmail.com</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn border-dark rounded-pill px-3" data-bs-dismiss="modal">Close</button>
+            </div>
         </div>
-          <div class="text-center">
-            <img src="assets/artist-Main-Page/artist-popup2-varified.svg" class="pb-2"
-          alt="Profile Image">
-          <p style="color: #31A740;
-">Enjoy your verified contact details</p>
-          </div>
-
-        </div>
-        <div class="modal-body text-center">
-
-<p class="fw-bold">Gem’s Contact primary number:<span class="fw-bold"> +91 9130831462</span></p>
-<p class="fw-bold">Gem’s Contact secondary number: +91 7387775499</p>
-<p class="fw-bold">Gem’s Email ID: reshmika.m&#64;gmail.com</p>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn border-dark rounded-pill px-3" data-bs-dismiss="modal">Close</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
+    </div>
+</div>

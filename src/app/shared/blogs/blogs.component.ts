@@ -4,12 +4,13 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
 import { Router } from '@angular/router';
+import { SearchHeaderComponent } from '../search-header/search-header.component';
 
 
 @Component({
   selector: 'app-blogs',
   standalone: true,
-  imports: [RouterLink,CommonModule],
+  imports: [RouterLink,SearchHeaderComponent],
   templateUrl: './blogs.component.html',
   styleUrl: './blogs.component.css'
 })
