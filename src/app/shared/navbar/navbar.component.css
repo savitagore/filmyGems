@@ -1,4 +1,3 @@
-
 /* .add-List-btn{
   background-color: #F3AD3B;
 }
@@ -16,26 +15,66 @@
 } */
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
-      padding-right:0px;
-      padding-left: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
   }
 }
-.welcome-header{
-  background-color:#FFE8A8;
+
+.welcome-header {
+  background-color: #FFE8A8;
   border-radius: 15px;
 }
-.ajay-text{
+
+.ajay-text {
   color: #816C35;
 }
-.btn-edit{
+
+.btn-edit {
   background-color: #FF5C00;
   font-size: 14px;
 }
-p {
-  margin-top: 0 !important;
-   margin-bottom: 0rem !important;
-}
-.welcome{
+
+.last-login {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  padding-right: 40px;
   font-size: 18px;
 }
 
+.welcome {
+  font-size: 18px;
+}
+
+.text-gray {
+  color: #575757;
+}
+
+.modal-body {
+  position: relative;
+  flex: 1 1 auto;
+  padding: 0px;
+}
+
+.bio-text {
+  font-size: 18px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  margin-left: 144px !important;
+
+}
+
+.profile-insta {
+  border: 1px solid #3F3F3F;
+  margin-left: 20px;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  padding: 0px 15px;
+}
+.close{
+  border: 1px solid #000000;
+  padding: 7px 25px;
+  margin: 0px 15px;
+}
+.text-delete{
+  color: #0031FF;
+}
