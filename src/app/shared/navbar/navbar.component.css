@@ -1,2 +1,35 @@
 
+/* .add-List-btn{
+  background-color: #F3AD3B;
+}
+.modal2-width{
+  width: 450px;
+  height: auto;
+  margin-left: 510px;
+}
+
+.carousel-indicators .active {
+  background-color: #FFCF25;
+}
+.carousel-indicators {
+  height: 5px !important;
+} */
+.welcome-header{
+  background-color:#FFE8A8;
+  border-radius: 15px;
+}
+.ajay-text{
+  color: #816C35;
+}
+.btn-edit{
+  background-color: #FF5C00;
+  font-size: 14px;
+}
+p {
+  margin-top: 0 !important;
+   margin-bottom: 0rem !important;
+}
+.welcome{
+  font-size: 18px;
+}
 

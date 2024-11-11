@@ -10,6 +10,7 @@ import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 import { ArtistMainPageComponent } from './pages/artist-main-page/artist-main-page.component';
 
 import { TalentshowComponent } from './pages/talentshow/talentshow.component';
+import { SignupComponent } from './login/pages/signup/signup.component';
 
 
 
@@ -43,6 +44,10 @@ export const routes: Routes = [
     path:'talent-show',
     component:TalentshowComponent
 
+  },
+  {
+    path:'sign-up',
+    component:SignupComponent
   }
 
 

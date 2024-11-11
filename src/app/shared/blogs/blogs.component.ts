@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 
 import { RouterLink } from '@angular/router';
 
@@ -9,7 +10,7 @@ import { SearchHeaderComponent } from '../search-header/search-header.component'
 @Component({
   selector: 'app-blogs',
   standalone: true,
-  imports: [RouterLink],
+  imports: [RouterLink,SearchHeaderComponent,CommonModule],
   templateUrl: './blogs.component.html',
   styleUrl: './blogs.component.css'
 })
@@ -20,4 +21,42 @@ export class BlogsComponent {
   navigateToTalentShow() {
     this.router.navigate(['talent-show']);
   }
+  selectedCategory: string | null = null;
+
+selectCategory(category: string) {
+  this.selectedCategory = category;
+}
+  categories = [
+    'Artist',
+    'Director',
+    'Casting Director',
+    'Assistant Director',
+    'Associate Director',
+    'Executive Producer',
+    'aaaa',
+    'bbbb',
+    'ccc',
+    'dddd'
+  ];
+  currentIndex = 0;
+  visibleCategories: string[] = this.categories.slice(this.currentIndex, this.currentIndex + 7);
+
+  nextCategory() {
+    if (this.currentIndex + 7 < this.categories.length) {
+      this.currentIndex++;
+      this.updateVisibleCategories();
+    }
+  }
+
+  previousCategory() {
+    if (this.currentIndex > 0) {
+      this.currentIndex--;
+      this.updateVisibleCategories();
+    }
+  }
+
+  updateVisibleCategories() {
+    this.visibleCategories = this.categories.slice(this.currentIndex, this.currentIndex + 7);
+  }
+
 }

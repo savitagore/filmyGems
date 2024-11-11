@@ -1,4 +1,4 @@
-<div class="header-Navbar">
+<div class="header-Navbar roboto-font">
   <div class="container">
     <div class="row">
       <div class="col-lg-9 col-md-8 col-sm-12 order-lg-1 order-md-1  order-2">
@@ -9,7 +9,7 @@
               aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end header-name " id="mynavbar">
+            <div class="collapse navbar-collapse justify-content-end header-name" id="mynavbar">
               <ul class="navbar-nav pt-3">
                 <li class="nav-item">
                   <a class="nav-link text-white pages-name " routerLink="/profile" routerLinkActive="active"
@@ -32,7 +32,8 @@
           </div>
         </nav>
       </div>
-      <div class="col-lg-3 col-md-4 col-sm-12 order-lg-2 order-md-2 order-1 order-sm-3">
+
+      <div class="col-lg-3 col-md-4 col-sm-12 order-lg-2 order-md-2 order-1 order-sm-3 roboto-font">
         <div class="icons-join">
           <div class="d-flex align-items-center justify-content-center links-chart">
             <a class="text-white mx-3" href="#">
@@ -41,19 +42,87 @@
             <a class="text-white mx-3" href="#">
               <i class="fa-regular fa-bell custom-icon"></i>
             </a>
-            <a class="text-white mx-3" href="#">
+            <a class="text-white mx-3" href="#" data-bs-toggle="modal" data-bs-target="#profileModal">
+              <!-- <a class="text-white mx-3" href="#"> -->
               <i class="fa-regular fa-user custom-icon"></i>
             </a>
-            <a href="#" class="join-ig d-flex ">
+            <a class="join-ig d-flex ">
               <img src="assets/landing_Img/login-start.png" alt="Login" class="img-fluid me-2">
-              <img src="assets/landing_Img/login-start.png" alt="Login" class="img-fluid me-2 rotate"> <button
-                class="btn join-btn" type="button">Join Now</button>
+              <img src="assets/landing_Img/login-start.png" alt="Login" class="img-fluid me-2 rotate">
+              <button class="btn join-btn" type="button" routerLink="/sign-up">Join Now</button>
             </a>
+
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+
+  <!--------Model Profile ---------->
 
 
+  <!-- Modal Structure -->
+  <div class="modal fade roboto-font" id="profileModal" tabindex="-1" aria-labelledby="profileModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-lg bg-white">
+      <div class="modal-content">
+        <div class="modal-header welcome-header d-flex justify-content-between align-items-center m-4 p-2">
+          <div class="ajay-text d-flex justify-content-center align-items-center">
+            <h5 class="welcome pt-1 ps-3">Welcome <strong>Ajay</strong></h5>
+          </div>
+          <div class="d-flex justify-content-end align-items-center me-2">
+            <p class="text-center" style="padding-right: 40px; font-size: 18px;"><strong>Last login on</strong> 02 May
+              2024, 10:32 PM</p>
+            <button class="btn rounded-pill btn-edit">Edit Now</button>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="container-fluid">
+            <div class="row">
+              <!-- Profile Image and Upload Button -->
+              <div class="col-md-4 text-center">
+                <img src="assets/profile/profile.png" alt="Profile Image" class=" img-fluid mb-2">
+                <!-- <button class="btn btn-light btn-sm">Upload Photo</button> -->
+                <div class="upload">
+                  <img src="assets/svg-icons/upload.svg" alt="" class="img-fluid">
+
+                </div>
+              </div>
+              <!-- Profile Details Form -->
+              <div class="col-md-8">
+                <form>
+                  <div class="mb-3">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="fullName" placeholder="Ajay Kumar" value="Ajay Kumar">
+                  </div>
+                  <div class="mb-3">
+                    <label for="subscriptionPlan" class="form-label">Subscription Plan</label>
+                    <input type="text" class="form-control" id="subscriptionPlan" placeholder="Platinum (₹1999)"
+                      value="Platinum (₹1999)">
+                  </div>
+                  <div class="mb-3">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" class="form-control" id="location" placeholder="Navi Mumbai" value="Navi Mumbai">
+                  </div>
+                  <div class="mb-3">
+                    <label for="contactNumber" class="form-label">Contact Number</label>
+                    <input type="text" class="form-control" id="contactNumber" placeholder="9800000000"
+                      value="9800000000">
+                  </div>
+                  <div class="mb-3">
+                    <label for="bio" class="form-label">Bio</label>
+                    <textarea class="form-control" id="bio" rows="4"
+                      placeholder="I am passionate and dedicated...">I am passionate and dedicated, brings complex characters to life on stage and screen. With a rich background in dramatic arts...</textarea>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Save Changes</button>
+        </div>
+      </div>
+    </div>
+  </div>
