@@ -14,6 +14,12 @@
 .carousel-indicators {
   height: 5px !important;
 } */
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right:0px;
+      padding-left: 0px;
+  }
+}
 .welcome-header{
   background-color:#FFE8A8;
   border-radius: 15px;
