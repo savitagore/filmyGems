@@ -10,7 +10,7 @@ import { SearchHeaderComponent } from '../search-header/search-header.component'
 @Component({
   selector: 'app-blogs',
   standalone: true,
-  imports: [RouterLink,SearchHeaderComponent],
+  imports: [RouterLink,SearchHeaderComponent,CommonModule],
   templateUrl: './blogs.component.html',
   styleUrl: './blogs.component.css'
 })
