@@ -10,13 +10,13 @@
                     <a class="terms text-white" routerLink="/policy"  (click)="toggleSection('privacy')" ariaCurrentWhenActive="page" [ngClass]="{'text-orange': isPrivacyActive, 'text-white': !isPrivacyActive}"  >Privacy Policy</a>
                 </li>
                 <li  class="item">
-                  <a class="terms text-white" (click)="toggleSection('terms')" ariaCurrentWhenActive="page"  style="cursor: pointer;" [ngClass]="{'text-orange': isTermsActive, 'text-white': !isTermsActive}"  >Terms</a>
+                  <a class="terms text-white" (click)="toggleSection('terms')" ariaCurrentWhenActive="page"  style="cursor: pointer;" [ngClass]="{'text-orange': isTermsActive, 'text-white': !isTermsActive}">Terms of Services </a>
                 </li>
                 <li class="item">
                   <a class="terms text-white" (click)="toggleSection('faq')" ariaCurrentWhenActive="page"  style="cursor: pointer;" [ngClass]="{'text-orange': isFaqActive, 'text-white': !isFaqActive}">FAQ</a>
               </li>
               <li class="item">
-                <a class="terms text-white" (click)="toggleSection('license')" ariaCurrentWhenActive="page" style="cursor: pointer;" [ngClass]="{'text-orange': islicense, 'text-white': !islicense}">License Summary</a>
+                <a class="terms text-white" (click)="toggleSection('license')" ariaCurrentWhenActive="page" style="cursor: pointer;" [ngClass]="{'text-orange': islicenseActive, 'text-white': !islicenseActive}">License Summary</a>
             </li>
                     <!-- <li>License Summary</li> -->
                     <li>Cookies Policy</li>
@@ -338,15 +338,47 @@
                 </div>
             </div>
 
-            <div class="col-md-9" *ngIf="isFaqActive">
+            <div class="col-md-9" *ngIf="isFaqActive"  >
                 <div class="description-terms text-white pt-2">
-                    <h5>FAQ</h5>
+                    <h5 class="page-faq">FAQ</h5>
+                    <div class="accordion accordion-flush pt-4" id="accordionFlushExample">
+                        <div class="accordion-item faq-items">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed text-white get-started" type="button" data-bs-toggle="collapse"   data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                Get Started
+                            </button>
+                          </h2>
+                          <!-- <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                          </div> -->
+                        </div>
+                        <div class="accordion-item faq-items">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed get-terms text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                License & Terms
+                            </button>
+                          </h2>
+                          <!-- <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                          </div> -->
+                        </div>
+                        <div class="accordion-item faq-items">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed get-terms text-white" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Upload Guidelines
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                          </div>
+                        </div>
+                      </div>
                 </div>
             </div>
 
 
 
-            <div class="col-md-9">
+            <div class="col-md-9" *ngIf="islicenseActive">
                 <div class="description-terms  text-white pt-2">
                     <h5>License Summary</h5>
                     <p class="pt-3">Last updated: May 9, 2024</p>
@@ -472,11 +504,6 @@
                     <p class="pt-5">This site is protected by reCAPTCHA and the Google <u>Privacy Policy</u> and Terms
                         of Service apply.</p>
                 </div>
-            </div>
-
-              <div class="col-md-9" *ngIf="islicenseActive">
-                <h1>Frequently Asked Questions</h1>
-                <p>Here are the answers to some common questions...</p>
             </div>
         </div>
     </div>

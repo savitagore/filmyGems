@@ -1015,9 +1015,32 @@ input::placeholder {
   text-decoration: none;
 }
 /* ****** FAQ ****** */
+.page-faq{
+  padding: 0px 21px;
+}
+.get-started{
+  background-color: #090909;
+  border: 1px solid #333333;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+.get-terms {
+  background-color: #090909;
+  border: 1px solid #333333;
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
 
+.faq-items{
+  border: none;
+}
 
-
+/* ** text color all****   */
+.text-orange {
+  color: #FFC936;
+}
 
 
 
@@ -1617,4 +1640,5 @@ input::placeholder {
   .dropdown-menu.scroll {
     width: 240px;
   }
+
 }
