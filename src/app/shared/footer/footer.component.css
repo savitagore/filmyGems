@@ -1,0 +1,86 @@
+/* .custom-modal-background {
+  background-image: url('/assets/auditions/audi-bg.png');
+  background-size: cover;
+  background-position: center;
+  color: white;
+
+}
+
+.modal-dialog-top {
+  top: 10%;
+}
+
+.modal-content {
+  background-color: transparent;
+}
+
+.modal-header {
+  border: none;
+}
+
+.modal-footer {
+  border: none;
+}
+
+.modal-dialog {
+  max-width: 1000px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.audi {
+  padding-left: -37px;
+  position: relative;
+  top: 76px;
+  right: 76px;
+  font-size: 60px;
+}
+
+.modeling {
+  list-style-type: none;
+}
+
+.screen {
+  font-size: 30px;
+}
+
+li::marker {
+  color: #FABD47;
+} */
+
+
+/**************Offer**********************/
+
+/* .images-ofers {
+
+  position: relative;
+  bottom: 80px;
+  right: 136px;
+
+}
+
+.kalash {
+ position: relative;
+  left: 24px;
+}
+
+.offer {
+  color: #C92D01;
+  font-size: 24px;
+  font-weight: 600;
+}
+.hurry-offer{
+  color: #3F3F3F;
+  font-size: 14px;
+}
+
+.offer-disconuts{
+  position: relative;
+  bottom: 171px;
+}
+.content-text{
+    top: 197px;
+    position: absolute;
+    line-height: 1.2;
+    right: 349px;
+} */

@@ -1,0 +1,878 @@
+<!-- Seach bar and navbar section start -->
+<section class="artist_Nav_bg">
+    <app-navbar></app-navbar>
+    
+        <app-search-header></app-search-header>
+   
+
+    <!-- <div class=" searching-bar  pt-4">
+        <div class="search-box d-flex align-items-center">
+            <i class="fas fa-search"></i>
+            <input type="text" class="form-control border-0"
+                placeholder="Search by film or profile name or check categories...">
+            <div class="dropdown">
+                <button class="btn gems-category fw-bold text-dark border-start border-3 " type="button"
+                    id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                    Gems Category <i class="fa fa-chevron-down text-dark ps-2"></i>
+                </button>
+                <ul class="dropdown-menu scroll" data-bs-spy="scroll" data-bs-target=".dropdown-menu"
+                    data-bs-offset="50" aria-labelledby="dropdownMenuButton1"
+                    style="max-height: 200px; overflow-y: auto;">
+                    <li><a class="dropdown-item" href="#">Artist</a></li>
+                    <li><a class="dropdown-item" href="#">Director</a></li>
+                    <li><a class="dropdown-item" href="#">Casting Director</a></li>
+                    <li><a class="dropdown-item" href="#">Assistant Director</a></li>
+                    <li><a class="dropdown-item" href="#">Associate Director</a></li>
+                    <li><a class="dropdown-item" href="#">Executive Producer</a></li>
+                    <li><a class="dropdown-item" href="#">Production Manager</a></li>
+                    <li><a class="dropdown-item" href="#">Artist</a></li>
+                    <li><a class="dropdown-item" href="#">Director</a></li>
+                    <li><a class="dropdown-item" href="#">Casting Director</a></li>
+                    <li><a class="dropdown-item" href="#">Associate Director</a></li>
+                    <li><a class="dropdown-item" href="#">Executive Producer</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> -->
+</section>
+<!-- Seach bar and navbar section End -->
+
+<!-- Main Section start -->
+<section class="bg-middle p-lg-5 p-md-5 p-sm-2">
+    <div class="container pt-5">
+        <div class="row">
+            <!-- Sidebar Start -->
+            <div class="col-lg-3 col-md-3 col-sm-12">
+                <div class="row">
+                    <ul class="list-unstyled">
+                        <li>
+                            <div class="col-12">
+                                <div class=" d-flex justify-content-between sortFont">
+                                    <p class="navbar-brand">Gems Showcase</p>
+                                    <p class="text-white">Clear</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-12">
+                                <div class="artist-sidebar-bg rounded-top-3 p-2">
+                                    <div class="bg-colors rounded-3 border p-2 d-flex align-items-baseline">
+                                        <i class="fa fa-magnifying-glass text-secondary "></i>
+                                        <input class="bg-colors border-0 form-control focus_Bg_Color place-H-text"
+                                            type="search" placeholder="Search here.." aria-label="Search">
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-12">
+                                <div class="artist-sidebar-bg">
+                                    <div class="p-2">
+                                        <div class="d-flex justify-content-between align-items-baseline">
+                                            <button class="btn btn-toggle text-light collapsed ps-0" type="button">
+                                                Budget
+                                            </button>
+                                            <i class="fa fa-chevron-down navbar-brand collapsed" id="#budget-collapse"
+                                                data-bs-toggle="collapse" data-bs-target="#budget-collapse"
+                                                aria-expanded="false"></i>
+                                        </div>
+                                        <ul class="collapse list-unstyled" id="budget-collapse">
+                                            <div class="row">
+                                                <!-- Minimum Value -->
+                                                <div class="col-6">
+                                                    <div
+                                                        class="border rounded-3 w-100 bg-colors d-flex justify-content-between align-items-baseline pe-2">
+                                                        <button class="btn text-light" type="button"
+                                                            aria-expanded="false">
+                                                            ₹ 10,000,00
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <!-- Maximum Value -->
+                                                <div class="col-6">
+                                                    <div
+                                                        class="border rounded-3 w-100 bg-colors d-flex justify-content-between align-items-baseline pe-2">
+                                                        <button class="btn text-light" type="button"
+                                                            aria-expanded="false">
+                                                            ₹ 50,000,00
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row p-3">
+                                                <div class="progress" role="progressbar" aria-label="Warning example"
+                                                    aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+                                                    <div class="progress-bar bg-warning" style="width: 75%"></div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between px-1">
+                                                <p class="text-light">Min</p>
+                                                <p class="text-light">Max</p>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-12">
+                                <div class="artist-sidebar-bg p-2 mt-2">
+                                    <div class="d-flex justify-content-between align-items-baseline">
+                                        <button class="btn btn-toggle text-light collapsed ps-0" type="button">
+                                            Gems Country
+                                        </button>
+                                        <i class="fa fa-chevron-down navbar-brand collapsed" id="#country-collapse"
+                                            data-bs-toggle="collapse" data-bs-target="#country-collapse"
+                                            aria-expanded="false"></i>
+                                    </div>
+                                    <ul class="collapse list-unstyled" id="country-collapse">
+                                        <div class="">
+                                            <div class=" border rounded-3 bg-colors align-items-baseline p-2">
+                                                <div class="d-flex justify-content-between align-items-baseline">
+                                                    <button class="btn btn-toggle collapsed place-H-text ps-0"
+                                                        type="button" placeholder=" Select your country">
+                                                        Select your country
+                                                    </button>
+                                                    <i class="fa fa-chevron-down navbar-brand collapsed"
+                                                        id="#country-collapse1" data-bs-toggle="collapse"
+                                                        data-bs-target="#country-collapse1" aria-expanded="false"></i>
+                                                </div>
+                                                <ul class="collapse list-unstyled ps-3" id="country-collapse1">
+                                                    <li><a class="dropdown-item text-light" href="#">India</a></li>
+                                                    <li><a class="dropdown-item text-light" href="#">London</a></li>
+                                                    <li><a class="dropdown-item text-light" href="#">America</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-12">
+                                <div class="artist-sidebar-bg p-2 mt-2">
+                                    <div class="d-flex justify-content-between align-items-baseline">
+                                        <button class="btn btn-toggle text-light collapsed ps-0" type="button">
+                                            Gems City
+                                        </button>
+                                        <i class="fa fa-chevron-down ps-5 ms-4 navbar-brand collapsed"
+                                            id="#country-collapse" data-bs-toggle="collapse"
+                                            data-bs-target="#city-collapse" aria-expanded="false"></i>
+                                    </div>
+                                    <ul class="collapse list-unstyled" id="city-collapse">
+                                        <div class="">
+                                            <div class=" border rounded-3 bg-colors align-items-baseline p-2">
+                                                <div class="d-flex justify-content-between align-items-baseline">
+                                                    <button class="btn btn-toggle ps-0 collapsed place-H-text"
+                                                        type="button" placeholder=" Select your country">
+                                                        Select your city
+                                                    </button>
+                                                    <i class="fa fa-chevron-down ps-5 ms-5 me-0 pe-0 navbar-brand collapsed"
+                                                        id="#city-collapse1" data-bs-toggle="collapse"
+                                                        data-bs-target="#city-collapse1" aria-expanded="false"></i>
+                                                </div>
+                                                <ul class="collapse list-unstyled ps-3" id="city-collapse1">
+                                                    <li><a class="dropdown-item text-light" href="#">India</a></li>
+                                                    <li><a class="dropdown-item text-light" href="#">London</a></li>
+                                                    <li><a class="dropdown-item text-light" href="#">America</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-12">
+                                <div class="artist-sidebar-bg p-2 mt-2">
+                                    <div class="d-flex justify-content-between align-items-baseline">
+                                        <button class="btn btn-toggle text-light collapsed ps-0" type="button">
+                                            Gems Age Range
+                                        </button>
+
+                                        <i class="fa fa-chevron-down ps-4 ms-4 navbar-brand collapsed"
+                                            id="#age-collapse" data-bs-toggle="collapse" data-bs-target="#age-collapse"
+                                            aria-expanded="false"></i>
+                                    </div>
+                                    <ul class="collapse list-unstyled" id="age-collapse">
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div
+                                                    class="dropdown border rounded-3  w-100 bg-colors d-flex justify-content-between align-items-baseline pe-2">
+                                                    <button class="btn text-light" type="button"
+                                                        placeholder=" Select your country">
+                                                        15
+                                                    </button>
+                                                    <i class="fa fa-chevron-down ps-2 navbar-brand"
+                                                        id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                        aria-expanded="false"></i>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                        <li><a class="dropdown-item" href="#">15</a></li>
+                                                        <li><a class="dropdown-item" href="#">25</a></li>
+                                                        <li><a class="dropdown-item" href="#">35</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div
+                                                    class="dropdown border rounded-3  w-100 bg-colors d-flex justify-content-between align-items-baseline pe-2">
+                                                    <button class="btn text-light" type="button"
+                                                        placeholder=" Select your country">
+                                                        35
+                                                    </button>
+                                                    <i class="fa fa-chevron-down ps-2 navbar-brand"
+                                                        id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                                        aria-expanded="false"></i>
+                                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                        <li><a class="dropdown-item" href="#">35</a></li>
+                                                        <li><a class="dropdown-item" href="#">65</a></li>
+                                                        <li><a class="dropdown-item" href="#">95</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <div class="text-light d-flex justify-content-between pt-2">
+                                                    <p>Min</p>
+                                                    <p>Max</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-12">
+                                <div class="artist-sidebar-bg p-2 mt-2">
+                                    <div class="">
+                                        <div class="d-flex justify-content-between align-items-baseline">
+                                            <button class="btn btn-toggle text-light collapsed ps-0" type="button">
+                                                Gems Gender
+                                            </button>
+                                            <i class="fa fa-chevron-down navbar-brand collapsed" id="#gender-collapse"
+                                                data-bs-toggle="collapse" data-bs-target="#gender-collapse"
+                                                aria-expanded="false"></i>
+                                        </div>
+                                        <ul class="collapse list-unstyled" id="gender-collapse">
+                                            <div class=" d-flex justify-content-between">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="Male"
+                                                        id="male" value="male">
+                                                    <label class="form-check-label text-light" for="male">
+                                                        Male
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="Female"
+                                                        id="female" value="female">
+                                                    <label class="form-check-label text-light" for="female">
+                                                        Female
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="others"
+                                                        id="others" value="others">
+                                                    <label class="form-check-label text-light" for="others">
+                                                        Others
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-12">
+                                <div class="artist-sidebar-bg p-2 mt-2 rounded-bottom-3">
+                                    <div class=" d-flex justify-content-between align-items-baseline">
+                                        <button class="btn btn-toggle text-light collapsed ps-0" type="button">
+                                            Gems categories
+                                        </button>
+                                        <i class="fa fa-chevron-down navbar-brand collapsed" id="#categories-collapse"
+                                            data-bs-toggle="collapse" data-bs-target="#categories-collapse"
+                                            aria-expanded="false"></i>
+                                    </div>
+                                    <ul class="collapse list-unstyled ps-2 text-light  scroll scroll_Bar py-2 me-1 mb-4"
+                                        id="categories-collapse" style="max-height: 195px; overflow-y: auto; ">
+                                        <li class="py-1"><a class="dropdown-item" href="#"> <input type="checkbox"
+                                                    name="" class="ms-1 me-3 place-H-text" id="">Artist</a></li>
+                                        <li class="py-1"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                    name="" class="ms-1 me-3 place-H-text" id="">Director</a></li>
+                                        <li class="py-1"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                    name="" class="ms-1 me-3 place-H-text" id="">Casting Director</a>
+                                        </li>
+                                        <li class="py-1"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                    name="" class="ms-1 me-3 place-H-text" id="">Assistant Director</a>
+                                        </li>
+                                        <li class="py-1"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                    name="" class="ms-1 me-3 place-H-text" id="">Associate Director</a>
+                                        </li>
+                                        <li class="py-1"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                    name="" class="ms-1 me-3 place-H-text" id="">Executive Producer</a>
+                                        </li>
+                                        <li class="py-1"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                    name="" class="ms-1 me-3 place-H-text" id="">Production Manager</a>
+                                        </li>
+                                        <li class="py-1"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                    name="" class="ms-1 me-3 place-H-text" id="">Artist</a></li>
+                                        <li class="py-1"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                    name="" class="ms-1 me-3 place-H-text" id="">Director</a></li>
+                                        <li class="py-1"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                    name="" class="ms-1 me-3 place-H-text" id="">Assistant Director</a>
+                                        </li>
+                                        <li class="py-1"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                    name="" class="ms-1 me-3 place-H-text" id="">Associate Director</a>
+                                        </li>
+                                        <li class="py-1"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                    name="" class="ms-1 me-3 place-H-text" id="">Production Manager</a>
+                                        </li>
+                                        <li class="py-1"><a class="dropdown-item" href="#"><input type="checkbox"
+                                                    name="" class="ms-1 me-3 place-H-text" id="">Executive Producer</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Sidebar Start -->
+
+            <!-- Main Artist card Section Start -->
+            <div class="col-lg-9 col-md-9 col-sm-10">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="dropdown text-end mb-0">
+                            <button type="button" class="btn border-0 text-light sortFont" data-bs-toggle="dropdown">
+                                Sort by
+                                <i class="fa fa-chevron-down ps-3 navbar-brand collapsed" id="#sortBy-collapse"
+                                    data-bs-toggle="collapse" data-bs-target="#sortBy-collapse"
+                                    aria-expanded="false"></i>
+                            </button>
+                            <ul class="dropdown-menu sortFont">
+                                <li><a class="dropdown-item p-2 text-secondary" href="#">Low To High (Budget)</a></li>
+                                <li><a class="dropdown-item p-2 text-secondary" href="#">High To Low (Budget)</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-2 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/shahid.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Shahid Kapoor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-2 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/rashmika.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                    <button class="hot-choice-artist-main rounded-pill">Hot Choice</button>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Rashmika Mandanna</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-2 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/allu.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Allu Arjun</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-2 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/Yash.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Yash</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-4 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/saiT.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Sai Tamhankar</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-4 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/ayushman.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Ayushmann Khurrana</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-4 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/Sidharth Malhotra.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Sidharth Malhotra</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-4 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/Sonali Kulkarni.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Sonali Kulkarni</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-4 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/Bhau Kadam.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Bhau Kadam</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-4 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/Amey Wagh.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Amey Wagh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-4 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/Dhanush.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                    <button class="hot-choice-artist-main rounded-pill">Hot Choice</button>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Dhanush</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-4 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/Vidya Balan.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Vidya Balan</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-4 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/Vijay.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                    <button class="hot-choice-artist-main rounded-pill">Hot Choice</button>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Vijay</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-4 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/Ritesh Deshmukh.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Ritesh Deshmukh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-4 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/Rajpal Yadav.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Rajpal Yadav</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-4 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/Shital Singh.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                    <button class="hot-choice-artist-main rounded-pill">Hot Choice</button>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Shital Singh</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-4 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/Brahmanandam.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                    <button class="hot-choice-artist-main rounded-pill">Hot Choice</button>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Brahmanandam</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-4 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/Shraddha Kapoor.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Shraddha Kapoor</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-4 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/Swapnil Joshi.svg');">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                    <button class="hot-choice-artist-main rounded-pill">Hot Choice</button>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Swapnil Joshi</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12">
+                        <div class="celibrate-img mt-lg-4 mt-md-3 mt-4"
+                            style="background-image: url('assets/artist-Main-Page/Supriya Pilgavkar.svg');"
+                            data-bs-toggle="modal" data-bs-target="#artistModal">
+                            <div class="choices">
+                                <div class="choices-icons">
+                                    <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
+                                    <div class="hot">
+                                        <img src="assets/svg-icons/verified.svg" alt="" class="img-fluid p-1">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overlay-star pb-2">
+                                <span class="actor-name">Supriya Pilgavkar</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                        <div class="text-center m-5 ">
+                            <nav aria-label="Page navigation example ">
+                                <ul class="pagination justify-content-center">
+                                    <li class="page-item"><a
+                                            class="page-link bg-middle mx-lg-3 mx-md-2 mx-sm-1 px-lg-3 px-md-3 px-sm-1 py-lg-2 py-md-2  py-sm-1 pagin-border text-secondary"
+                                            href="#"><i class="fa-solid fa-chevron-left"></i></a></li>
+                                    <li class="page-item"><a
+                                            class="page-link bg-middle mx-lg-3 mx-md-2 mx-sm-1 px-lg-3 px-md-3 px-sm-1 py-lg-2 py-md-2  py-sm-1 pagin-border text-secondary"
+                                            href="#">1</a></li>
+                                    <li class="page-item"><a
+                                            class="page-link bg-middle mx-lg-3 mx-md-2 mx-sm-1 px-lg-3 px-md-3 px-sm-1 py-lg-2 py-md-2  py-sm-1 pagin-border text-secondary"
+                                            href="#">2</a></li>
+                                    <li class="page-item"><a
+                                            class="page-link bg-middle mx-lg-3 mx-md-2 mx-sm-1 px-lg-3 px-md-3 px-sm-1 py-lg-2 py-md-2  py-sm-1 pagin-border text-secondary"
+                                            href="#">...</a></li>
+                                    <li class="page-item"><a
+                                            class="page-link bg-middle mx-lg-3 mx-md-2 mx-sm-1 px-lg-3 px-md-3 px-sm-1 py-lg-2 py-md-2  py-sm-1 pagin-border text-secondary"
+                                            href="#">9</a></li>
+                                    <li class="page-item"><a
+                                            class="page-link bg-middle mx-lg-3 mx-md-2 mx-sm-1 px-lg-3 px-md-3 px-sm-1 py-lg-2 py-md-2  py-sm-1 pagin-border text-secondary"
+                                            href="#">10</a></li>
+                                    <li class="page-item"><a
+                                            class="page-link bg-middle mx-lg-3 mx-md-2 mx-sm-1 px-lg-3 px-md-3 px-sm-1 py-lg-2 py-md-2  py-sm-1 pagin-border text-secondary"
+                                            href="#"><i class="fa-solid fa-chevron-right"></i></a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Main Artist card Section end -->
+        </div>
+    </div>
+</section>
+<!-- Main Section End -->
+
+<!-- Footer -->
+<app-footer></app-footer>
+
+
+<!-- start Model -->
+<div class="modal fade roboto-font " id="artistModal" tabindex="-1" aria-labelledby="artistModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-top">
+        <div class="modal-content ">
+            <div class="modal-body p-0 bg-light">
+                <div class="row">
+                    <div class="col-6">
+                        <!-- Image Carousel -->
+                        <div id="carouselExample" class="carousel slide caro-css" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/artist-Main-Page/artist-modal.svg"
+                                        class="d-block rounded-end-4 w-100" alt="Profile Image">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="assets/artist-Main-Page/artist-pop-1.svg"
+                                        class="d-block rounded-end-4 w-100" alt="Profile Image">
+                                </div>
+                                <div class="carousel-item active">
+                                    <img src="assets/artist-Main-Page/artist-pop-2.svg"
+                                        class="d-block rounded-end-4 w-100" alt="Profile Image">
+                                </div>
+                            </div>
+                            <a class="left carousel-control" href="#carouselExample" data-slide="prev">
+                                <span class="glyphicon glyphicon-chevron-left"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="right carousel-control" href="#carouselExample" data-slide="next">
+                                <span class="glyphicon glyphicon-chevron-right"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="me-4 mt-4">
+                            <!-- Profile Details -->
+                            <div class="p-2 rounded-2" style="background: #FCEAC8;">
+                                <div class="navbar-brand">
+                                    <i class="fa-solid fa-star"></i>
+                                    <i class="fa-solid fa-star ps-1"></i>
+                                    <i class="fa-solid fa-star ps-1"></i>
+                                    <i class="fa-solid fa-star ps-1"></i>
+                                    <i class="fa-solid fa-star ps-1"></i>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-baseline">
+                                    <div class="">
+                                        <h5 class="modal-title" id="profileModalLabel">Rashmika Mandanna</h5>
+                                        <p class="text-muted">Tollywood Actress</p>
+                                    </div>
+                                    <div class="">
+                                        <p>4532 <i class="fa-regular fa-eye"></i></p>
+                                    </div>
+                                    <div>
+                                        <p>5+ <i class="fa-regular fa-images"></i></p>
+                                    </div>
+                                    <div class="align-items-self-center">
+                                        <button class="btn add-List-btn rounded-pill">Add To List</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="py-4">Rashmika Mandanna (born 5 April 1996) is an Indian actress who works
+                                in Telugu, Kannada, Hindi and Tamil films. She is the recipient of four SIIMA Awards and
+                                a Filmfare Award. She featured in the 30 Under 30 list by Forbes India in 2024. Rashmika
+                                made her acting debut with the Kannada film Kirik Party (2016), and found further
+                                success in the action picture Anjani Putra and romance Chamak (both 2017). She had her
+                                first Telugu film release in the romantic comedy Chalo (2018). </p>
+                            <div class="d-flex mt-3">
+                                <div class="rounded-2 ps-2 pe-5" style="background: #CEEAF6;">
+                                    <h6 class="pt-2">Age</h6>
+                                    <p><strong>28 years </strong> <br>5 April 1996</p>
+                                </div>
+                                <div class="px-3">
+                                    <h6 class="sortFont text-dark">Current Projects</h6>
+                                    <div class="project-thumbnails d-flex mt-3">
+                                        <div class="">
+                                            <img src="project1.jpg" class="object-fit-cover rounded-end-3" alt="...">
+                                        </div>
+                                        <div class="">
+                                            <img src="project1.jpg" class="object-fit-cover rounded-end-3" alt="...">
+                                        </div>
+                                        <div class="">
+                                            <img src="project1.jpg" class="object-fit-cover rounded-end-3" alt="...">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="py-3">
+                                <div class="dropdown">
+                                    <button class="btn dropdown-toggle" type="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false" style="background: #67ABC9;
+">
+                                        Cost for per project
+                                    </button>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown-item" href="#">10000000</li>
+                                        <li class="dropdown-item" href="#">180000000</li>
+                                        <li class="dropdown-item" href="#">500000000</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="mt-3 text-end">
+                                <img src="assets/artist-Main-Page/heart.svg" class="me-3">
+                                <button class="btn border-dark rounded-pill px-4 py-2 me-3"
+                                    data-bs-dismiss="modal">Close</button>
+                                <button class="btn add-List-btn rounded-pill py-2" data-bs-toggle="modal"
+                                    data-bs-target="#exampleModal">Get Details</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal2 On Details Button -->
+<div class="modal fade roboto-font modal2-width" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-top bg-light rounded-3">
+        <div class="modal-content">
+            <div class="" style="background: #E4FBC9;">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="text-center">
+                    <img src="assets/artist-Main-Page/artist-popup2-varified.svg" class="pb-2" alt="Profile Image">
+                    <p style="color: #31A740;">Enjoy your verified contact details</p>
+                </div>
+            </div>
+            <div class="modal-body text-center">
+                <p>Gem’s Contact primary number:<strong> +91 9130831462</strong></p>
+                <p>Gem’s Contact secondary number:<strong> +91 7387775499</strong></p>
+                <p>Gem’s Email ID:<strong> reshmika.m&#64;gmail.com</strong></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn border-dark rounded-pill px-3" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>

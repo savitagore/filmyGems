@@ -1,11 +1,7 @@
 .col-Css {
-    /* height: 14px; */
-    width: 216px;
-    /* border: 1px solid; */
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background-color: #484848;
-
 }
 
 .col-img-bg {
@@ -13,30 +9,16 @@
     border-radius: 50%;
     width: 135px;
     height: 130px;
-    /* position: relative; */
-
 }
 
-/* .col-img-top {
-    position: absolute;
-    margin-top: 80px; 
- left: 220px; 
-} */
 .col-img-top{
-    /* position: absolute;
-    left: 296px; */
     margin-top: -160px;
 }
 .col-bottom-Rectangle {
-    /* position: relative; */
-    /* vertical-align: bottom; */
     background: gray;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    /* left: -12px; */
 }
-
-.col-bottom css {}
 
 .header-images-about {
     height: 635px;
@@ -59,7 +41,6 @@
     font-weight: 700;
     line-height: 58.59px;
     text-align: center;
-
 }
 
 .about-subtitle {
@@ -71,7 +52,6 @@
     left: 497px;
     gap: 0px;
     opacity: 0px;
-
 }
 
 .about-line {
@@ -93,13 +73,10 @@
 
 }
 
-/* .col-img-bg:hover, .col-bottom-Rectangle:hover,.col-Css:hover {
-    background-color: #FFC936;
-} */
-/* .col-Css:hover .col-img-bg, */
 .col-Css:hover .col-img-bg ,.col-Css:hover .col-bottom-Rectangle {
     background-color: orange;
 }
+
 .aboutPara{
     font-family: Roboto;
     font-size: 18px;
@@ -107,27 +84,23 @@
     line-height: 30px;
     text-align: center;
     color: #FFFFFF;
-    /* height: 240px;
-    width: 906px; */
 }
+
 .about-h3{
     font-family: Roboto;
     font-size: 40px;
-    font-weight: 600;
-    /* line-height: 46.88px;   */
-    
+    font-weight: 600; 
 }
+
 .trusted-divider{
     padding-left: 55px;
-}
-.divider-line{
-    padding: 20px 6px;
 }
 
 .img-divider{
     border: 1px solid #D3D3D3;
    
     height: 42.74px; 
+    display: block;
 }
 
 .about-WWR-p{
@@ -152,11 +125,21 @@ text-align: left;
     box-shadow: 10px 10px 70px 13px #5e7b93;
 }
 
+
+
 @media (min-width:320px){
     .WWR-img-shadow{
         box-shadow: none;
         height: 340px;
+        margin-bottom: 35px;
     } 
+    .img-divider{
+        display: none;
+    }
+    .aboutPara{
+        padding-top: 35px;
+    }
+    
 }
 @media (min-width:1440px){
     .WWR-img-shadow{
@@ -164,5 +147,9 @@ text-align: left;
         box-shadow: 10px 10px 70px 13px #5e7b93;
         height: 430px;
     } 
+    .img-divider{
+        display: block;
+    }
+   
 }
 

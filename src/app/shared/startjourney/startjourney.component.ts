@@ -10,5 +10,5 @@ import { Component, Input } from '@angular/core';
 })
 export class StartjourneyComponent {
   // backgroungImage:string='assets/music/group.png';
-  @Input() bgImage: string = 'assets/music/group.png';
+  @Input() bgImage: string = 'assets/landing_Img/girls-imgs.png';
 }
