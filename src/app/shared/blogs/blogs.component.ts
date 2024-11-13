@@ -23,10 +23,10 @@ export class BlogsComponent {
   }
   selectedCategory: string | null = null;
 
-selectCategory(category: string) {
-  this.selectedCategory = category;
-}
-  categories = [
+  selectCategory(category: string) {
+    this.selectedCategory = category;
+  }
+categories = [
     'Artist',
     'Director',
     'Casting Director',
@@ -38,6 +38,7 @@ selectCategory(category: string) {
     'ccc',
     'dddd'
   ];
+
   currentIndex = 0;
   visibleCategories: string[] = this.categories.slice(this.currentIndex, this.currentIndex + 7);
 
@@ -57,6 +58,8 @@ selectCategory(category: string) {
 
   updateVisibleCategories() {
     this.visibleCategories = this.categories.slice(this.currentIndex, this.currentIndex + 7);
-  }
-
 }
+}
+
+
+

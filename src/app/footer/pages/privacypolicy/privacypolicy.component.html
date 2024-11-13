@@ -13,8 +13,8 @@
           </li>
           <li class="item">
             <a class="terms text-white" (click)="toggleSection('terms')" ariaCurrentWhenActive="page"
-              style="cursor: pointer;"
-              [ngClass]="{'text-orange': isTermsActive, 'text-white': !isTermsActive}">Terms of Service</a>
+              style="cursor: pointer;" [ngClass]="{'text-orange': isTermsActive, 'text-white': !isTermsActive}">Terms of
+              Service</a>
           </li>
           <li class="item">
             <a class="terms text-white" (click)="toggleSection('faq')" ariaCurrentWhenActive="page"
@@ -347,14 +347,12 @@
         <div class="description-terms text-white pt-2">
           <h5 class="faq ">FAQ</h5>
           <div class="accordion pt-4" id="faqAccordion">
-            <div class="accordion-item">
+             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button  get-started" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                   Get Started
-                  <i class="bi bi-chevron-down ms-auto" style="color: red;"></i>
                 </button>
-
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show faq-bgcolor text-white"
                 aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
@@ -363,8 +361,6 @@
                 </div>
               </div>
             </div>
-
-
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed get-started" type="button" data-bs-toggle="collapse"

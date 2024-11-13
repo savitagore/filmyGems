@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectorRef, Component } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, Renderer2 } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
 import { FooterComponent } from '../../../shared/footer/footer.component';
 import { NavbarComponent } from '../../../shared/navbar/navbar.component';
@@ -36,14 +36,25 @@ export class PrivacypolicyComponent {
     else {
       console.log('Unknown section:', section);
     }
-
-
-    console.log({
-      isTermsActive: this.isTermsActive,
-      isPrivacyActive: this.isPrivacyActive,
-      isFaqActive: this.isFaqActive
-    });
   }
 
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
