@@ -1,27 +1,4 @@
-/* .password-toggle-icon {
-    position: absolute;
-    top: 50%;
-    right: 10px;
-    transform: translateY(-50%);
-    cursor: pointer;
-  }
-  
-  .password-toggle-icon i {
-    font-size: 18px;
-    line-height: 1;
-    color: #333;
-    transition: color 0.3s ease-in-out;
-    margin-bottom: 20px;
-  }
-  
-  .password-toggle-icon i:hover {
-    color: #000;
-  }
- .common-linear{
-  border: 5px solid #F3AD3B;
-  position: relative;
-  bottom: 35px;
-} */
+
 
 /* Line */
 .common-linear{
@@ -44,4 +21,13 @@
 }
 .overlay-text {
   font-size: 40px;
+}
+.best-profiles {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-left:0px;
 }

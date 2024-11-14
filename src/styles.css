@@ -1388,6 +1388,7 @@ li::marker {
 .login-signup{
   background-color: #C88A00;
   font-size: 18px;
+
 }
 .login-signup:hover{
   background-color: #C88A00;
@@ -2054,9 +2055,8 @@ li::marker {
   }
 
   /* ******* sign-up page ********** */
-  .signup-dimond {
+  /* .signup-dimond {
     display: flex;
-  }
-  /* .sign-logoform {
-    padding-top: 100px;
+  } */
 
+}
