@@ -5,29 +5,10 @@
 <section class="middle-section roboto-font  py-3">
   <div class="container">
     <div class="row">
-      <!-- <div class="col-md-12">
-        <div class="category-tags" >
-          <i class="fas fa-chevron-left arrow-icon" ></i>
-          <span>Artist</span>
-          <span class="active-cat">Director</span>
-          <span>Casting Director</span>
-          <span>Assistant Director</span>
-          <span>Associate Director</span>
-          <span>Executive Producer</span>
-          <i class="fas fa-chevron-right arrow-icon"></i>
-        </div>
-      </div> -->
-      <!-- <div class="col-md-12">
-        <div class="category-tags">
-          <i class="fas fa-chevron-left arrow-icon" (click)="previousCategory()"></i>
-          <span *ngFor="let category of visibleCategories">{{ category }}</span>
-          <i class="fas fa-chevron-right arrow-icon" (click)="nextCategory()"></i>
-        </div>
-      </div> -->
       <div class="col-md-12">
         <div class="category-tags text-center">
           <i class="fas fa-chevron-left arrow-icon" (click)="previousCategory()"></i>
-          <span
+          <span class="me-4 p-2 ps-3"
             *ngFor="let category of visibleCategories"
             [ngClass]="{
               'active-category': selectedCategory === category,
@@ -41,7 +22,6 @@
           <i class="fas fa-chevron-right arrow-icon" (click)="nextCategory()"></i>
         </div>
       </div>
-
     </div>
     <div class="row pt-5 ms-4">
       <div class="col-md-4">
@@ -76,7 +56,7 @@
   <div class="container">
     <div class="row aos-init aos-animate" data-aos="fade-up">
       <div class="col-12 col-md-12">
-        <div class="cross">
+        <div class="cross d-flex justify-content-end">
           <img src="assets/svg-icons/cros-svg.svg" alt="" class="img-fluid">
         </div>
         <img src="assets/madeweb_img/main-img.png" alt="" class="img-fluid madme-web">
@@ -320,7 +300,7 @@
     </div>
     <div class="row pt-4 aos-init aos-animate" data-aos="fade-up">
       <div class="col-md-12">
-        <div class="export ">
+        <div class="book-seat">
           <div class="program d-flex justify-content-center align-items-center">
             <div class="col-md-3">
               <img src="assets/exports/mask.png" alt="" class="img-fluid ">

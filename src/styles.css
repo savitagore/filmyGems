@@ -89,7 +89,6 @@ li.nav-item a.nav-link.active {
 .build-high .main-title {
   font-size: 50px;
   font-weight: bold;
-
 }
 
 .search-box .form-control {
@@ -142,12 +141,12 @@ li.nav-item a.nav-link.active {
   top: 80px;
 }
 
-.gems-category {
+/* .gems-category {
   border-left: 1px solid #ddd;
   border-radius: 0px 50px 50px 0px;
   font-size: 18px;
   border: none;
-}
+} */
 
 .category-tags {
   padding-top: 100px;
@@ -179,28 +178,28 @@ li.nav-item a.nav-link.active {
   background-color: #ffb62a;
 }
 
-.active-cat {
+/* .active-cat {
   background-color: #986708;
   color: #fff !important;
   border-radius: 50px;
-}
+} */
 
 .arrow-icon {
   margin: 4px 1px;
   font-size: 20px;
 }
 
-.category {
+/* .category {
   background-color: #FFF4DE;
-}
+} */
 
-.contact-img {
+/* .contact-img {
   width: 461px;
   height: 423px;
   position: absolute;
   top: 5524px;
   left: 979px;
-}
+} */
 
 .logo-size {
   width: 245px;
@@ -225,6 +224,9 @@ li.nav-item a.nav-link.active {
   height: auto;
   margin-top: 10px;
 }
+.active-link {
+  color: #FFCF25 !important;
+}
 
 .footer a {
   transition: color 0.3s ease;
@@ -243,10 +245,6 @@ li.nav-item a.nav-link.active {
 
 .custom-text {
   color: #595959;
-}
-
-.footer .col-md-3 {
-  margin-bottom: 2rem;
 }
 
 .filmy-custom {
@@ -269,29 +267,26 @@ li.nav-item a.nav-link.active {
   display: flex;
   align-items: center;
 }
-
 .input-group-append img {
   width: 20px;
   height: auto;
   fill: #FFB62A;
 }
-
 .bg-colors {
   background-color: #333;
 }
-
 .input-group {
   position: relative;
   width: 100%;
 }
 
-.join-padding {
+/* .join-padding {
   padding-left: 821px;
-}
+} */
 
-.font-join {
+/* .font-join {
   margin-top: -87px;
-}
+} */
 
 .btn-custom {
   border: 1px solid black;
@@ -314,9 +309,9 @@ li.nav-item a.nav-link.active {
   font-size: 18px;
 }
 
-.custom-padding {
+/* .custom-padding {
   padding-left: 50px;
-}
+} */
 
 .join-text {
   font-size: 90px;
@@ -337,8 +332,8 @@ li.nav-item a.nav-link.active {
   max-width: 100%;
   transition: border 0.3s ease;
   border: 2px solid #D19631;
-  position: relative;
-  top: 24px;
+  /* position: relative;
+  top: 24px; */
 }
 
 .search-box input {
@@ -362,8 +357,8 @@ font-weight: 400;
 
 .category-tags span {
   color: black;
-  padding: 6px 20px;
-  margin: 5px;
+ /* padding: 6px 20px; */
+  /* margin: 5px; */
 }
 
 .sticky-img-wrap {
@@ -400,8 +395,8 @@ font-weight: 400;
 }
 
 .cross {
-  display: flex;
-  justify-content: end;
+  /* display: flex;
+  justify-content: end; */
   position: relative;
   right: 66px;
   top: 31px;
@@ -433,7 +428,7 @@ font-weight: 400;
   width: 100%;
 }
 
-.export {
+.book-seat {
   background-image: url('/assets/exports/exports_bg.png');
   background-size: cover;
   height: 120px;
@@ -458,9 +453,9 @@ font-weight: 400;
   width: 100%;
 }
 
-.madme-web {
+/* .madme-web {
   width: 100%;
-}
+} */
 
 .rotate {
   bottom: 18px;
@@ -554,10 +549,10 @@ small {
   font-size: 16px;
 }
 
-.font-custom {
+/* .font-custom {
   font-size: 30px;
   margin-left: 141px;
-}
+} */
 
 .header-text,
 .sub-text {
@@ -631,7 +626,6 @@ small {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
   bottom: 0;
   width: 100%;
-
 }
 
 .overlay-most {
@@ -752,9 +746,7 @@ small {
 
 .pagination .page-link:hover {
   background-color: #272727;
-  /* Change this to your desired background color */
   border-color: #ff9800;
-  /* Optional: matches border color with background */
 }
 
 .page-link:hover {
@@ -1045,24 +1037,23 @@ small {
   color: #DADCDF;
   font-size: 16px;
   border-radius: 1px solid #7B9DAA;
-  padding: 10px 10px;
 }
 
 input::placeholder {
   color: #969696 !important;
 }
 
-.text-container {
+/* .text-container {
   padding-left: 10px;
-}
-
+} */
+/*************Contact us *********/
 .profiles-text {
   padding-top: 100px;
 }
 
-.upload-icon {
+/* .upload-icon {
   margin-top: 10px;
-}
+} */
 
 .cancel-btn {
   width: 200px;
@@ -1103,7 +1094,6 @@ input.profile-color:focus {
   background-color: #F3AD3B;
   color: black;
   border: 1px solid #ccc;
-  padding: 5px;
   font-size: 16px;
 }
 
@@ -1159,7 +1149,7 @@ textarea::placeholder {
   border-left: none;
   border-top: none;
   border-bottom: none;
-  padding: 0px 10px;
+  /* padding: 0px 10px; */
   height: 88px;
 }
 
@@ -1752,13 +1742,13 @@ li::marker {
     font-size: 1.5rem;
   }
 
-  .contact-img {
+  /* .contact-img {
     width: 300px;
     height: auto;
     top: initial;
     left: initial;
     position: relative;
-  }
+  } */
 
   .custom-ellipsis {
     height: 112px;
