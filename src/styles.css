@@ -121,12 +121,12 @@ li.nav-item a.nav-link.active {
   position: relative;
   top: 80px;
 }
-.gems-category {
+/* .gems-category {
   border-left: 1px solid #ddd;
   border-radius: 0px 50px 50px 0px;
   font-size: 18px;
   border: none;
-}
+} */
 .category-tags {
   padding-top: 100px;
 }
@@ -286,7 +286,7 @@ li.nav-item a.nav-link.active {
   top: 24px;
 }
 .search-box input {
-  
+
 font-size: 20px;
 font-weight: 400;
 }
