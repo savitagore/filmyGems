@@ -452,9 +452,9 @@ font-weight: 400;
   width: 100%;
 }
 
-/* .madme-web {
+.madme-web {
   width: 100%;
-} */
+}
 
 .rotate {
   bottom: 18px;
@@ -1161,9 +1161,9 @@ textarea::placeholder {
   padding: 10px 0px;
 }
 
-.description {
+/* .description {
   padding: 62px 0px;
-}
+} */
 
 .parent-section {
   background: linear-gradient(to bottom, rgb(0 0 0), rgb(0 0 0 / 88%));
@@ -1249,7 +1249,6 @@ textarea::placeholder {
   background-size: cover;
   background-position: center;
   color: white;
-
 }
 
 .modal-dialog-top {
@@ -1343,22 +1342,16 @@ li::marker {
 
 .blog-posted {
   color: #6C6C6C;
-
 }
 
 .post-info {
-  display: flex;
-  align-items: center;
   color: #ffffff;
   font-size: 14px;
 }
 
 .new-badge {
   background-color: #007bff;
-  /* Blue badge */
-  padding: 4px 17px;
   border-radius: 12px;
-  margin-right: 10px;
   font-size: 12px;
 }
 
