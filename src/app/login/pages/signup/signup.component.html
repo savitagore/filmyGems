@@ -17,6 +17,10 @@
                 Gems with ease.
               </h4>
             </div>
+            <div class="signup-right-dimond" style="position: absolute;top: 724px;">
+              <img src="assets/landing_Img/diamond_img.png" alt="Diamond" class="img-fluid">
+            </div>
+            <!-- <div class="common-linear"></div> -->
             <img src="assets/signup/signup.png" alt="Los Angeles" class="d-block w-100 img-fluid">
           </div>
           <div class="carousel-item">
@@ -32,10 +36,70 @@
         </button>
       </div>
     </div>
-    <div class="col-md-4 " style="background-color: #000000;">
-    <img src="assets/landing_Img/diamond_right.png" alt="" class="img-fluid sign-diamond" >
+    <div class="col-md-4 sign-bg">
+      <div class="signup-dimond">
+        <img src="assets/landing_Img/diamond_right.png" alt="" class="img-fluid">
+      </div>
+      <div class="sign-logoform">
+        <div class="sign-logo text-center">
+          <img src="assets/signup/signup-logo.png" alt="" class="img-fluid">
+        </div>
+        <div class="login-container text-white pt-5 d-flex justify-content-center">
+          <div class="forms-section">
+            <h2>Sign Up</h2>
+            <p>Join with us and get the best profiles!</p>
+            <form>
+              <div class="mb-3">
+                <input type="text" class="form-control text-white" placeholder="full name" required
+                  style="background-color: #0000;">
+              </div>
+              <div class="mb-3">
+                <input type="text" class="form-control text-white" placeholder="mobile number" required
+                  style="background-color: #0000;">
+              </div>
+              <div class="mb-3">
+                <input type="email" class="form-control text-white" placeholder="enter your email" required
+                  style="background-color: #0000;">
+              </div>
+              <div class="mb-3 position-relative">
+                <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white"
+                  placeholder="Enter password" required style="background-color: #000;" />
+                <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)">
+                  <i [ngClass]="showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'"></i>
+                </span>
+              </div>
+              <div class="mb-3 position-relative">
+                <input [type]="showPassword2 ? 'text' : 'password'" class="form-control text-white"
+                  placeholder="Confirm password" required style="background-color: #000;" />
+                <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(2)">
+                  <i [ngClass]="showPassword2 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'"></i>
+                </span>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                <label class="form-check-label" for="termsCheck">
+                  By signing up, you agree to our <a href="#" class="link-primary">conditions</a> & <a href="#"
+                    class="link-primary">privacy policy</a>
+                </label>
+              </div>
+              <div class="col-mb-3 pt-3">
+                <div class="login-btn text-center">
+                  <button class="btn login-signup text-white">Login</button>
+                </div>
+              </div>
+              <div class="col-mb-3 pt-3">
+                <div class="an-account text-center">
+                  <p>If you have already an account?<a href="#" class="link-primary "> Login </a></p>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- <div class="">
+      <img src="assets/landing_Img/diamond_img.png" alt="Diamond" class="img-fluid">
+    </div> -->
   </div>
-
-
 </section>
