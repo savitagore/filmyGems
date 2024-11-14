@@ -1,7 +1,7 @@
 <section class="roboto-font">
   <div class="row g-0">
     <div class="col-md-8">
-      <div id="demo" class="carousel slide" data-bs-ride="carousel">
+      <!-- <div id="demo" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
           <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
@@ -9,21 +9,26 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <div class="uncover  mx-auto">
-              <img src="assets/svg-icons/sign-up.svg" alt="" class="img-fluid mx-auto d-block sign-img">
+            <div class="uncover pt-5">
+              <img src="assets/svg-icons/sign-up.svg"  routerLink="/" alt="Logo" class="ml-5 sign-img">
               <h4 class="text-white fw-light">
                 Uncover the <br>
                 internet's hidden <br>
                 Gems with ease.
               </h4>
             </div>
-            <div class="signup-right-dimond" style="position: absolute;top: 724px;">
+            <div class="signup-right-dimond" style="position: absolute; top: 724px;">
               <img src="assets/landing_Img/diamond_img.png" alt="Diamond" class="img-fluid">
             </div>
-            <!-- <div class="common-linear"></div> -->
             <img src="assets/signup/signup.png" alt="Los Angeles" class="d-block w-100 img-fluid">
           </div>
           <div class="carousel-item">
+            <div class="uncover">
+              <img src="assets/svg-icons/sign-up.svg"  routerLink="/" alt="Logo" class="mx-auto d-block sign-img">
+              <h4 class="text-white fw-light">Fashion is about 
+                dreaming and making 
+                other people dream.</h4>
+            </div>
             <img src="assets/signup/login.png" alt="Chicago" class="d-block w-100 img-fluid">
           </div>
           <div class="carousel-item">
@@ -34,60 +39,108 @@
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
         </button>
-      </div>
+      </div> -->  
+    
+    
+      <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="slider-container">
+                    <img src="assets/signup/signup.png" class="d-block w-100 slider-image" alt="Slide Image">
+                    <div class="overlay-content">
+                      <div class="text-with-icon">
+                        <img src="assets/svg-icons/sign-up.svg" alt="Icon" class="small-icon">
+                        <h4 class="overlay-text fw-light">
+                            Uncover the <br>
+                            internet's hidden <br>
+                            Gems with ease.
+                        </h4>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="carousel-item">
+                <div class="slider-container">
+                    <img src="assets/signup/signup.png" class="d-block w-100 slider-image" alt="Slide Image">
+                    <div class="overlay-content">
+                        <img src="assets/svg-icons/sign-up.svg" alt="Icon" class="small-icon">
+                        <h4 class="overlay-text fw-light">
+                            Explore new <br>
+                            possibilities <br>
+                            every day.
+                        </h4>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+        <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button> -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+        </button>
     </div>
+    </div>
+
     <div class="col-md-4 sign-bg">
-      <div class="signup-dimond">
+      <div class="signup-dimond d-flex justify-content-end">
         <img src="assets/landing_Img/diamond_right.png" alt="" class="img-fluid">
       </div>
-      <div class="sign-logoform">
+      <div class="sign-logoform pt-5">
         <div class="sign-logo text-center">
           <img src="assets/signup/signup-logo.png" alt="" class="img-fluid">
         </div>
-        <div class="login-container text-white pt-5 d-flex justify-content-end">
+        <div class="login-container text-white pt-3 d-flex justify-content-end">
           <div class="forms-section">
             <h2>Sign Up</h2>
             <p>Join with us and get the best profiles!</p>
             <form>
-              <div class="col-md-9 mb-3">
-                <input type="text" class="form-control text-white" placeholder="full name" required
-                  style="background-color: #0000;">
+              <div class="col-md-8 mb-3">
+                <input type="text" class="form-control text-white fill-form" placeholder="full name" required >
               </div>
-              <div class="col-md-9 mb-3">
-                <input type="text" class="form-control text-white" placeholder="mobile number" required
-                  style="background-color: #0000;">
+              <div class="col-md-8 mb-3">
+                <input type="text" class="form-control text-white fill-form" placeholder="mobile number" required >
               </div>
-              <div class="col-md-9 mb-3">
-                <input type="email" class="form-control text-white" placeholder="enter your email" required
-                  style="background-color: #0000;">
+              <div class="col-md-8 mb-3">
+                <input type="email" class="form-control text-white fill-form" placeholder="enter your email" required >
               </div>
-              <div class="col-md-9 mb-3 position-relative">
-                <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white"
-                  placeholder="Enter password" required style="background-color: #000;" />
+              <div class="col-md-8 mb-3 position-relative">
+                <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white fill-form"
+                  placeholder="Enter password" required  />
                 <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)">
                   <i [ngClass]="showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'"></i>
                 </span>
               </div>
-              <div class="col-md-9 mb-3 position-relative">
-                <input [type]="showPassword2 ? 'text' : 'password'" class="form-control text-white"
-                  placeholder="Confirm password" required style="background-color: #000;" />
+              <div class="col-md-8 mb-3 position-relative">
+                <input [type]="showPassword2 ? 'text' : 'password'" class="form-control text-white fill-form"
+                  placeholder="Confirm password" required  />
                 <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(2)">
                   <i [ngClass]="showPassword2 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'"></i>
                 </span>
               </div>
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="termsCheck" required>
-                <label class="form-check-label" for="termsCheck">
-                  By signing up, you agree to our <a href="#" class="link-primary">conditions</a> & <a href="#"
-                    class="link-primary">privacy policy</a>
-                </label>
-              </div>
-              <div class="col-md-9 mb-3 pt-3">
-                <div class="login-btn text-center">
-                  <button class="btn login-signup text-white">Login</button>
+              <div class="col-md-8 mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                  <label class="form-check-label" for="termsCheck">
+                    By signing up, you agree to our <a href="#" class="link-primary">conditions</a> & <a href="#"
+                      class="link-primary">privacy policy</a>
+                  </label>
                 </div>
               </div>
-              <div class="col-md-9 mb-3 pt-3">
+              <div class="col-md-8 mb-3  login-signup text-center">
+                  <button class="btn text-white">Login</button>
+              </div>
+              <div class="col-md-8">
                 <div class="an-account text-center">
                   <p>If you have already an account?<a href="#" class="link-primary "> Login </a></p>
                 </div>
@@ -97,9 +150,6 @@
         </div>
       </div>
     </div>
-
-    <!-- <div class="">
-      <img src="assets/landing_Img/diamond_img.png" alt="Diamond" class="img-fluid">
-    </div> -->
   </div>
+    <div class="common-linear"></div>
 </section>
