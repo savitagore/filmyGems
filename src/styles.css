@@ -342,7 +342,7 @@ li.nav-item a.nav-link.active {
 }
 
 .search-box input {
-  
+
 font-size: 20px;
 font-weight: 400;
 }
@@ -2082,8 +2082,5 @@ li::marker {
   }
   .sign-logoform {
     padding-top: 100px;
-  }
-  .common-linear{
-    display: block;
   }
 }
