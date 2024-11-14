@@ -1,4 +1,4 @@
-.password-toggle-icon {
+/* .password-toggle-icon {
     position: absolute;
     top: 50%;
     right: 10px;
@@ -17,3 +17,8 @@
   .password-toggle-icon i:hover {
     color: #000;
   }
+ .common-linear{
+  border: 5px solid #F3AD3B;
+  position: relative;
+  bottom: 35px;
+} */

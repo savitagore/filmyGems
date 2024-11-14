@@ -1385,14 +1385,14 @@ li::marker {
 /*****sign-up page ******/
 .uncover {
   position: absolute;
-  left: 68.44%;
+  /* left: 68.44%;
   top: 7.6%;
-  transform: translateX(-50%);
+  transform: translateX(-50%); */
 }
-.sign-img {
+/* .sign-img {
   position: relative;
   right: 109px;
-}
+} */
 .signup-dimond {
   position: relative;
   top: 40px;
@@ -1415,6 +1415,29 @@ li::marker {
 .link-primary{
   text-decoration: none;
 }
+.password-toggle-icon {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+.password-toggle-icon i {
+  font-size: 18px;
+  line-height: 1;
+  color: #333;
+  transition: color 0.3s ease-in-out;
+  margin-bottom: 20px;
+}
+.password-toggle-icon i:hover {
+  color: #000;
+}
+.fill-form{
+ background-color: #0000;
+}
+.fill-form:focus{
+  background-color: #0000;
+ }
 /* search-header-css */
 .search-header-dropmenu .dropmenu :hover {
   background-color: #F9F2E3;
@@ -1423,6 +1446,9 @@ li::marker {
 .search-header-dropmenu {
   color: #2F2F33;
 }
+
+
+
 /* All medias */
 
 
@@ -1572,9 +1598,9 @@ li::marker {
   }
 
   /******sign-up********/
-  .uncover {
+  /* .uncover {
     left: 77.44%;
-  }
+  } */
   .sign-img {
     right: 65px;
   }
@@ -1583,6 +1609,9 @@ li::marker {
   }
   .sign-logoform {
     padding-top: 10px;
+  }
+  .common-linear{
+    display: none;
   }
 }
 
@@ -1848,9 +1877,9 @@ li::marker {
   }
 
   /******sign-up********/
-  .uncover {
+  /* .uncover {
     left: 68.44%;
-  }
+  } */
 
   .sign-img {
     right: 109px;
@@ -2053,5 +2082,8 @@ li::marker {
   }
   .sign-logoform {
     padding-top: 100px;
+  }
+  .common-linear{
+    display: block;
   }
 }
