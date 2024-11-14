@@ -1396,7 +1396,6 @@ li::marker {
   padding-top: 100px;
 }
 .login-signup{
-  padding: 10px 195px;
   background-color: #C88A00;
   font-size: 18px;
 }
@@ -1574,9 +1573,6 @@ li::marker {
   }
   .sign-logoform {
     padding-top: 10px;
-  }
-  .login-signup {
-    padding: 10px 135px;
   }
 }
 
@@ -2048,7 +2044,4 @@ li::marker {
   .sign-logoform {
     padding-top: 100px;
   }
-  .login-signup {
-    padding: 10px 195px;
-  }
-}
+
