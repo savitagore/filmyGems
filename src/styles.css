@@ -453,9 +453,9 @@ font-weight: 400;
   width: 100%;
 }
 
-/* .madme-web {
+.madme-web {
   width: 100%;
-} */
+}
 
 .rotate {
   bottom: 18px;
@@ -1386,15 +1386,13 @@ li::marker {
 .signup-dimond {
   position: relative;
   top: 40px;
-  display: flex;
-  justify-content: end;
 }
 .sign-bg {
   background-color: #000000;
 }
-.sign-logoform {
+/* .sign-logoform {
   padding-top: 100px;
-}
+} */
 .login-signup{
   background-color: #C88A00;
   font-size: 18px;
@@ -1597,12 +1595,9 @@ li::marker {
   .signup-dimond {
     display: none;
   }
-  .sign-logoform {
+  /* .sign-logoform {
     padding-top: 10px;
-  }
-  .common-linear{
-    display: none;
-  }
+  } */
 }
 
 @media (min-width:375px) {
@@ -2070,7 +2065,7 @@ li::marker {
   .signup-dimond {
     display: flex;
   }
-  .sign-logoform {
+  /* .sign-logoform {
     padding-top: 100px;
-  }
+  } */
 }
