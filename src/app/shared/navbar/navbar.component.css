@@ -1,18 +1,4 @@
-/* .add-List-btn{
-  background-color: #F3AD3B;
-}
-.modal2-width{
-  width: 450px;
-  height: auto;
-  margin-left: 510px;
-}
 
-.carousel-indicators .active {
-  background-color: #FFCF25;
-}
-.carousel-indicators {
-  height: 5px !important;
-} */
 @media (min-width: 992px) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding-right: 0px;
