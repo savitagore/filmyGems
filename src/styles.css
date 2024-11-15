@@ -1727,60 +1727,48 @@ li::marker {
   .main-title {
     font-size: 50px;
   }
-
   .build-high p {
     font-size: 17px;
   }
-
   .pages-name {
     font-size: 18px;
     margin: 0px 9px;
   }
-
   .linear {
     top: 93px;
   }
-
   .search-box {
     position: relative;
     top: 28px;
   }
-
   .export {
     height: 110px;
     padding: 10px;
   }
-
   .icons-join {
     position: relative;
     top: 58px;
   }
-
   .join-ig img {
     bottom: 14px;
     left: 58px;
   }
-
   .join-btn {
     border-radius: 50px;
     font-size: 14px;
     width: 95px;
   }
-
   .dropdown-menu.scroll {
     width: 218px;
   }
-
   .cross {
     height: 20px;
     right: 11px;
     top: 25px;
   }
-
   .personal-exports {
     font-size: 25px;
   }
-
   .book-set {
     font-size: 14px;
     width: 150px;
@@ -1791,11 +1779,9 @@ li::marker {
   .subscribe {
     padding: 12px 38px;
   }
-
   .subscribe-now {
     padding: 12px 38px;
   }
-
   .dimond-img {
     display: flex;
   }
@@ -1804,18 +1790,18 @@ li::marker {
   .sign-img {
     right: 109px;
   }
-
   .signup-dimond {
     display: flex;
   }
-
   .separator-line {
     top: 687px;
     display: block;
   }
-
   .overlay-content {
     right: 0%;
+  }
+  .separator-line{
+    top: 0px;
   }
 }
 
@@ -1825,85 +1811,68 @@ li::marker {
   .logo-img {
     width: 245px;
   }
-
   .pages-name {
     font-size: 18px;
     margin: 0px 20px;
   }
-
   .join-btn {
     border-radius: 50px;
     font-size: 18px;
     width: 130px;
   }
-
   .join-ig img {
     bottom: 19px;
     left: 89px;
   }
-
   .left-dimond {
     display: block;
   }
-
   .icons-join {
     position: relative;
     top: 52px;
   }
-
   .linear {
     height: 10px;
     background-color: #F3AD3B;
     position: relative;
     top: 89px;
   }
-
   .search-box {
     position: relative;
     top: 23px;
   }
-
   .build-high p {
     font-size: 18px;
   }
-
   .build-high .main-title {
     font-size: 50px;
     font-weight: bold;
   }
-
   .right-dimond {
     display: block;
   }
-
   .actor-name {
     font-size: 20px;
     font-weight: 500;
   }
-
   .role {
     font-size: 14px;
     font-weight: 400;
   }
-
   .cross {
     right: 13px;
     top: 31px;
     height: 24px;
   }
-
   .export {
     height: 120px;
   }
-
   .personal-exports {
     font-size: 32px;
   }
-
   .program {
     padding: 6px 10px;
   }
-
   .book-set {
     color: #ffffff;
     font-size: 18px;
@@ -1915,11 +1884,9 @@ li::marker {
   .fixed-size-heading {
     font-size: 40px;
   }
-
   .filmy {
     margin-top: 140px;
   }
-
   .join-text {
     font-size: 90px;
     font-weight: bold;
@@ -1929,7 +1896,6 @@ li::marker {
     padding: 0;
     line-height: 1;
   }
-
   .company-name {
     color: #986708;
     font-size: 20px;
@@ -1937,29 +1903,23 @@ li::marker {
     font-weight: bold;
     height: 30px;
   }
-
   .info {
     flex: 0 0 auto;
     width: 16.666667%;
   }
-
   .logo {
     position: relative;
     bottom: 56px;
   }
-
   .dropdown-menu {
     width: 186px;
   }
-
   .dropdown-menu.scroll {
     width: 190px;
   }
-
   .view-btn {
     text-align: center;
   }
-
   .celibrate-card {
     margin-bottom: 10px;
   }
@@ -1968,39 +1928,30 @@ li::marker {
   .unlock-title {
     padding-top: 163px;
   }
-
   .choose-title h2 {
     font-size: 40px;
   }
-
   .choose-title p {
     font-size: 18px;
   }
-
   .dimond-img {
     display: flex;
   }
-
   .filmy-card {
     margin: 0px;
   }
-
   .most {
     display: block;
   }
-
   .gold-card {
     bottom: 70px;
   }
-
   .star-badge {
     display: block;
   }
-
   .subscribe {
     padding: 15px 70px;
   }
-
   .subscribe-now {
     padding: 15px 70px;
   }
@@ -2009,27 +1960,22 @@ li::marker {
   .signup-dimond {
     display: flex;
   }
-
   .separator-line {
     top: 815px;
     display: block;
   }
-
   .signup-right-dimond {
-    top: 586px;
+    top: 725px;
   }
-
   .overlay-content {
     top: 7%;
     right: 18%;
   }
-
   .small-icon {
     right: 45px;
     top: 8px;
     display: block;
   }
-
   .overlay-text {
     font-size: 40px;
   }
