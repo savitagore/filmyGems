@@ -1,20 +1,5 @@
 
 
-/* slider */
-/* .overlay-content {
-  position: absolute;
-  top: 7%;
-  right: 18%;
-  color: #FFFFFF;
-}
-.small-icon{
-  position: relative;
-  right: 45px;
-  top: 10px;
-}
-.overlay-text {
-  font-size: 40px;
-} */
 .best-profiles {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -27,10 +12,7 @@
 
 .separator-line {
   flex-grow: 1;
-  /* height: 5px;
-  background-color: #f0a500; */
   border: 5px solid #f0a500;
-  /* top: 687px; */
 }
 
 .carousel-indicators {
@@ -49,12 +31,12 @@
 
 
 .carousel-indicators .custom-dot {
-  width: 7px;
-  border-radius: 50%;
-}
+  width: 14px;
+  border-radius: 100%;
+ }
 
 .carousel-indicators .active.custom-dot {
-  background-color:#FFCF25; /* Active dot color */
+  background-color:#FFCF25;
 }
 .carousel-inner .carousel-item:nth-child(3) .slider-container::after {
   content: '';
