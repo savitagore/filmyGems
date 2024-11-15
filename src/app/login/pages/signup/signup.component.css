@@ -45,13 +45,13 @@
 }
 
 
-.carousel-item:nth-child(3) .slider-container::after {
+/* .carousel-item:nth-child(3) .slider-container::after {
 
 
 .carousel-indicators .custom-dot {
   width: 7px;
   border-radius: 50%;
-}
+} */
 
 .carousel-indicators .active.custom-dot {
   background-color:#FFCF25; /* Active dot color */
