@@ -157,7 +157,7 @@ li.nav-item a.nav-link.active {
   top: 58px;
 }
 
-.icons-join .links-chart {
+.icons-join {
   position: relative;
   top: 52px;
 }
@@ -1367,24 +1367,15 @@ li::marker {
 /*****sign-up page ******/
 .uncover {
   position: absolute;
-  /* left: 68.44%;
-  top: 7.6%;
-  transform: translateX(-50%); */
 }
-/* .sign-img {
-  position: relative;
-  right: 109px;
-} */
 .signup-dimond {
   position: relative;
   top: 40px;
+  display: flex;
 }
 .sign-bg {
   background-color: #000000;
 }
-/* .sign-logoform {
-  padding-top: 100px;
-} */
 .login-signup{
   background-color: #C88A00;
   font-size: 18px;
@@ -1437,7 +1428,6 @@ li::marker {
 
   /* Header-media */
   .icons-join {
-    position: relative;
     top: 14px;
   }
 
@@ -1469,12 +1459,6 @@ li::marker {
     left: 46px;
     top: -23px;
   }
-
-  .icons-join .links-chart {
-    position: relative;
-    top: 4px;
-  }
-
   .dropdown-menu {
     width: 186px;
   }
@@ -1621,12 +1605,6 @@ li::marker {
 
 @media (max-width: 768px) {
   /* Header-media */
-
-  /* .icons-join {
-  position: relative;
-  top: 44px;
-} */
-
   .join-ig img {
     bottom: 14px;
     left: 42px;
@@ -1641,63 +1619,15 @@ li::marker {
   .logo-img {
     width: 200px;
   }
-
   .left-dimond {
     display: none;
   }
-
-  /* .main-title {
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.build-high p {
-  font-size: 16px;
-} */
-
-  /* .search-box {
-  top: 92px;
-}
-
-.linear {
-  top: 127px;
-}  */
-
   .right-dimond {
     display: none;
   }
-
   .choices-icons {
     bottom: 10px;
   }
-
-  /* .actor-name {
-  font-size: 12px;
-}
-
-.role {
-  font-size: 10px;
-
-} */
-
-  /* .personal-exports {
-  font-size: 21px;
-  color: #ffffff;
-}
-
-.export {
-  height: 75px;
-  padding: 5px;
-}
-
-.book-set {
-  background-color: #3B90F3;
-  color: #ffffff;
-  font-size: 12px;
-  padding: 8px;
-  width: 109px;
-} */
-
   .cross {
     height: 15px;
     right: 10px;
@@ -1708,133 +1638,88 @@ li::marker {
   .font-custom {
     font-size: 24px;
   }
-
   .btn-custom {
     font-size: 16px;
   }
-
   .cutom-font-color {
     font-size: 20px;
   }
-
   .custom-section {
     padding: 20px 0;
   }
-
   .sub-text {
     font-size: 1rem;
     max-width: 100%;
   }
-
   .custom-section h1 {
     font-size: 1.5rem;
   }
-
-  /* .contact-img {
-    width: 300px;
-    height: auto;
-    top: initial;
-    left: initial;
-    position: relative;
-  } */
-
   .custom-ellipsis {
     height: 112px;
   }
-
   .custom-color {
     font-size: 17px;
   }
-
   .info {
     flex: 0 0 auto;
     width: 34.666667%;
   }
-
-  /* .join-text {
-    font-size: 50px;
-    font-weight: bold;
-  }
-
-  .info {
-    flex: 0 0 auto;
-    width: 24.666667%;
-  }  */
-
-
   /* plan css */
   .choose-title h2 {
     font-size: 30px;
   }
-
   .choose-title p {
     font-size: 16px;
   }
-
   /*********contact us*******/
-
-
 }
 
 @media (min-width: 992px) {
   .main-title {
     font-size: 50px;
   }
-
   .build-high p {
     font-size: 17px;
   }
-
   .pages-name {
     font-size: 18px;
     margin: 0px 9px;
   }
-
   .linear {
     top: 93px;
   }
-
   .search-box {
     position: relative;
     top: 28px;
   }
-
   .export {
     height: 110px;
     padding: 10px;
-
   }
-
   .icons-join {
     position: relative;
     top: 58px;
   }
-
   .join-ig img {
     bottom: 14px;
     left: 58px;
   }
-
   .join-btn {
     border-radius: 50px;
     font-size: 14px;
     width: 95px;
   }
-
   .dropdown-menu.scroll {
     width: 218px;
   }
-
   .cross {
     height: 20px;
     right: 11px;
     top: 25px;
   }
-
   .personal-exports {
     font-size: 25px;
   }
-
   .book-set {
     font-size: 14px;
     width: 150px;
@@ -1845,24 +1730,16 @@ li::marker {
   .subscribe {
     padding: 12px 38px;
   }
-
   .subscribe-now {
     padding: 12px 38px;
   }
-
   .dimond-img {
     display: flex;
   }
-
   /******sign-up********/
-  /* .uncover {
-    left: 68.44%;
-  } */
-
   .sign-img {
     right: 109px;
   }
-
   .signup-dimond {
     display: flex;
   }
@@ -1874,85 +1751,68 @@ li::marker {
   .logo-img {
     width: 245px;
   }
-
   .pages-name {
     font-size: 18px;
     margin: 0px 20px;
   }
-
   .join-btn {
     border-radius: 50px;
     font-size: 18px;
     width: 130px;
   }
-
   .join-ig img {
     bottom: 19px;
     left: 89px;
   }
-
   .left-dimond {
     display: block;
   }
-
-  .icons-join .links-chart {
+  .icons-join {
     position: relative;
-    top: 0px;
+    top: 52px;
   }
-
   .linear {
     height: 10px;
     background-color: #F3AD3B;
     position: relative;
     top: 89px;
   }
-
   .search-box {
     position: relative;
     top: 23px;
   }
-
   .build-high p {
     font-size: 18px;
   }
-
   .build-high .main-title {
     font-size: 50px;
     font-weight: bold;
   }
-
   .right-dimond {
     display: block;
   }
-
   .actor-name {
     font-size: 20px;
     font-weight: 500;
   }
-
   .role {
     font-size: 14px;
     font-weight: 400;
   }
-
   .cross {
     right: 13px;
     top: 31px;
     height: 24px;
   }
-
   .export {
     height: 120px;
   }
-
   .personal-exports {
     font-size: 32px;
   }
-
   .program {
     padding: 6px 10px;
   }
-
   .book-set {
     color: #ffffff;
     font-size: 18px;
@@ -1964,11 +1824,9 @@ li::marker {
   .fixed-size-heading {
     font-size: 40px;
   }
-
   .filmy {
     margin-top: 140px;
   }
-
   .join-text {
     font-size: 90px;
     font-weight: bold;
@@ -1978,7 +1836,6 @@ li::marker {
     padding: 0;
     line-height: 1;
   }
-
   .company-name {
     color: #986708;
     font-size: 20px;
@@ -1986,29 +1843,23 @@ li::marker {
     font-weight: bold;
     height: 30px;
   }
-
   .info {
     flex: 0 0 auto;
     width: 16.666667%;
   }
-
   .logo {
     position: relative;
     bottom: 56px;
   }
-
   .dropdown-menu {
     width: 186px;
   }
-
   .dropdown-menu.scroll {
     width: 190px;
   }
-
   .view-btn {
     text-align: center;
   }
-
   .celibrate-card {
     margin-bottom: 10px;
   }
@@ -2017,46 +1868,37 @@ li::marker {
   .unlock-title {
     padding-top: 163px;
   }
-
   .choose-title h2 {
     font-size: 40px;
   }
-
   .choose-title p {
     font-size: 18px;
   }
-
   .dimond-img {
     display: flex;
   }
-
   .filmy-card {
     margin: 0px;
   }
-
   .most {
     display: block;
   }
-
   .gold-card {
     bottom: 70px;
   }
-
   .star-badge {
     display: block;
   }
-
   .subscribe {
     padding: 15px 70px;
   }
-
   .subscribe-now {
     padding: 15px 70px;
   }
 
   /* ******* sign-up page ********** */
-  /* .signup-dimond {
+  .signup-dimond {
     display: flex;
-  } */
+  }
 
 }
