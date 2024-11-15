@@ -126,9 +126,11 @@ li.nav-item a.nav-link.active {
 .search-container {
   position: absolute;
 }
+
 .search-box-i {
- color: #aaa;
- }
+  color: #aaa;
+}
+
 .search-box {
   position: relative;
   top: 13px
@@ -157,7 +159,7 @@ li.nav-item a.nav-link.active {
   top: 58px;
 }
 
-.icons-join .links-chart {
+.icons-join {
   position: relative;
   top: 52px;
 }
@@ -224,6 +226,7 @@ li.nav-item a.nav-link.active {
   height: auto;
   margin-top: 10px;
 }
+
 .active-link {
   color: #FFCF25 !important;
 }
@@ -267,14 +270,17 @@ li.nav-item a.nav-link.active {
   display: flex;
   align-items: center;
 }
+
 .input-group-append img {
   width: 20px;
   height: auto;
   fill: #FFB62A;
 }
+
 .bg-colors {
   background-color: #333;
 }
+
 .input-group {
   position: relative;
   width: 100%;
@@ -337,8 +343,8 @@ li.nav-item a.nav-link.active {
 }
 
 .search-box input {
-font-size: 20px;
-font-weight: 400;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .search-box input::placeholder {
@@ -356,7 +362,7 @@ font-weight: 400;
 
 .category-tags span {
   color: black;
- /* padding: 6px 20px; */
+  /* padding: 6px 20px; */
   /* margin: 5px; */
 }
 
@@ -464,6 +470,7 @@ font-weight: 400;
 .dropdown-menu.scroll::-webkit-scrollbar {
   width: 8px;
 }
+
 /* .dropdown-menu.scroll::-webkit-scrollbar-thumb {
   background: #986708;
   border-radius: 10px;
@@ -694,7 +701,8 @@ small {
 .scroll_Bar::-webkit-scrollbar {
   width: 8px;
 }
-.scroll_Bar::-webkit-scrollbar-thumb{
+
+.scroll_Bar::-webkit-scrollbar-thumb {
   background: #FFCB3F !important;
 }
 
@@ -1367,35 +1375,32 @@ li::marker {
 /*****sign-up page ******/
 .uncover {
   position: absolute;
-  /* left: 68.44%;
-  top: 7.6%;
-  transform: translateX(-50%); */
 }
-/* .sign-img {
-  position: relative;
-  right: 109px;
-} */
+
 .signup-dimond {
   position: relative;
   top: 40px;
+  display: flex;
 }
+
 .sign-bg {
   background-color: #000000;
 }
-/* .sign-logoform {
-  padding-top: 100px;
-} */
-.login-signup{
+
+.login-signup {
   background-color: #C88A00;
   font-size: 18px;
 
 }
-.login-signup:hover{
+
+.login-signup:hover {
   background-color: #C88A00;
 }
-.link-primary{
+
+.link-primary {
   text-decoration: none;
 }
+
 .password-toggle-icon {
   position: absolute;
   top: 50%;
@@ -1403,6 +1408,7 @@ li::marker {
   transform: translateY(-50%);
   cursor: pointer;
 }
+
 .password-toggle-icon i {
   font-size: 18px;
   line-height: 1;
@@ -1410,22 +1416,31 @@ li::marker {
   transition: color 0.3s ease-in-out;
   margin-bottom: 20px;
 }
+
 .password-toggle-icon i:hover {
   color: #000;
 }
-.fill-form{
- background-color: #0000;
-}
-.fill-form:focus{
+
+.fill-form {
   background-color: #0000;
- }
+}
+
+.fill-form:focus {
+  background-color: #0000;
+}
+
+.overlay-content {
+  color: #FFFFFF;
+}
+
 /* search-header-css */
 .search-header-dropmenu .dropmenu :hover {
   background-color: #F9F2E3;
 
 }
+
 .search-header-dropmenu {
-  color: #2F2F33;
+  color: #2F2F33;
 }
 
 
@@ -1437,7 +1452,6 @@ li::marker {
 
   /* Header-media */
   .icons-join {
-    position: relative;
     top: 14px;
   }
 
@@ -1468,11 +1482,6 @@ li::marker {
     position: absolute;
     left: 46px;
     top: -23px;
-  }
-
-  .icons-join .links-chart {
-    position: relative;
-    top: 4px;
   }
 
   .dropdown-menu {
@@ -1579,18 +1588,26 @@ li::marker {
   }
 
   /******sign-up********/
-  /* .uncover {
-    left: 77.44%;
-  } */
   .sign-img {
     right: 65px;
   }
+
   .signup-dimond {
     display: none;
   }
-  /* .sign-logoform {
-    padding-top: 10px;
-  } */
+
+  .separator-line {
+    display: none;
+  }
+
+  .overlay-content {
+    top: 12%;
+    right: 0%;
+  }
+
+  .small-icon {
+    display: none;
+  }
 }
 
 @media (min-width:375px) {
@@ -1620,13 +1637,8 @@ li::marker {
 }
 
 @media (max-width: 768px) {
+
   /* Header-media */
-
-  /* .icons-join {
-  position: relative;
-  top: 44px;
-} */
-
   .join-ig img {
     bottom: 14px;
     left: 42px;
@@ -1646,23 +1658,6 @@ li::marker {
     display: none;
   }
 
-  /* .main-title {
-  font-size: 40px;
-  font-weight: bold;
-}
-
-.build-high p {
-  font-size: 16px;
-} */
-
-  /* .search-box {
-  top: 92px;
-}
-
-.linear {
-  top: 127px;
-}  */
-
   .right-dimond {
     display: none;
   }
@@ -1670,33 +1665,6 @@ li::marker {
   .choices-icons {
     bottom: 10px;
   }
-
-  /* .actor-name {
-  font-size: 12px;
-}
-
-.role {
-  font-size: 10px;
-
-} */
-
-  /* .personal-exports {
-  font-size: 21px;
-  color: #ffffff;
-}
-
-.export {
-  height: 75px;
-  padding: 5px;
-}
-
-.book-set {
-  background-color: #3B90F3;
-  color: #ffffff;
-  font-size: 12px;
-  padding: 8px;
-  width: 109px;
-} */
 
   .cross {
     height: 15px;
@@ -1730,14 +1698,6 @@ li::marker {
     font-size: 1.5rem;
   }
 
-  /* .contact-img {
-    width: 300px;
-    height: auto;
-    top: initial;
-    left: initial;
-    position: relative;
-  } */
-
   .custom-ellipsis {
     height: 112px;
   }
@@ -1751,17 +1711,6 @@ li::marker {
     width: 34.666667%;
   }
 
-  /* .join-text {
-    font-size: 50px;
-    font-weight: bold;
-  }
-
-  .info {
-    flex: 0 0 auto;
-    width: 24.666667%;
-  }  */
-
-
   /* plan css */
   .choose-title h2 {
     font-size: 30px;
@@ -1772,8 +1721,6 @@ li::marker {
   }
 
   /*********contact us*******/
-
-
 }
 
 @media (min-width: 992px) {
@@ -1802,7 +1749,6 @@ li::marker {
   .export {
     height: 110px;
     padding: 10px;
-
   }
 
   .icons-join {
@@ -1855,16 +1801,21 @@ li::marker {
   }
 
   /******sign-up********/
-  /* .uncover {
-    left: 68.44%;
-  } */
-
   .sign-img {
     right: 109px;
   }
 
   .signup-dimond {
     display: flex;
+  }
+
+  .separator-line {
+    top: 687px;
+    display: block;
+  }
+
+  .overlay-content {
+    right: 0%;
   }
 }
 
@@ -1895,9 +1846,9 @@ li::marker {
     display: block;
   }
 
-  .icons-join .links-chart {
+  .icons-join {
     position: relative;
-    top: 0px;
+    top: 52px;
   }
 
   .linear {
@@ -2055,8 +2006,31 @@ li::marker {
   }
 
   /* ******* sign-up page ********** */
-  /* .signup-dimond {
+  .signup-dimond {
     display: flex;
-  } */
+  }
 
+  .separator-line {
+    top: 815px;
+    display: block;
+  }
+
+  .signup-right-dimond {
+    top: 586px;
+  }
+
+  .overlay-content {
+    top: 7%;
+    right: 18%;
+  }
+
+  .small-icon {
+    right: 45px;
+    top: 8px;
+    display: block;
+  }
+
+  .overlay-text {
+    font-size: 40px;
+  }
 }
