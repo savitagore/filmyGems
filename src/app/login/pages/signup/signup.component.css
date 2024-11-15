@@ -53,3 +53,13 @@
   margin-bottom: 120px;
   margin-left: 25%;
 }
+
+
+.carousel-indicators .custom-dot {
+  width: 7px;
+  border-radius: 50%;
+}
+
+.carousel-indicators .active.custom-dot {
+  background-color:#FFCF25; /* Active dot color */
+}
