@@ -126,9 +126,11 @@ li.nav-item a.nav-link.active {
 .search-container {
   position: absolute;
 }
+
 .search-box-i {
- color: #aaa;
- }
+  color: #aaa;
+}
+
 .search-box {
   position: relative;
   top: 13px
@@ -224,6 +226,7 @@ li.nav-item a.nav-link.active {
   height: auto;
   margin-top: 10px;
 }
+
 .active-link {
   color: #FFCF25 !important;
 }
@@ -267,14 +270,17 @@ li.nav-item a.nav-link.active {
   display: flex;
   align-items: center;
 }
+
 .input-group-append img {
   width: 20px;
   height: auto;
   fill: #FFB62A;
 }
+
 .bg-colors {
   background-color: #333;
 }
+
 .input-group {
   position: relative;
   width: 100%;
@@ -337,8 +343,8 @@ li.nav-item a.nav-link.active {
 }
 
 .search-box input {
-font-size: 20px;
-font-weight: 400;
+  font-size: 20px;
+  font-weight: 400;
 }
 
 .search-box input::placeholder {
@@ -356,7 +362,7 @@ font-weight: 400;
 
 .category-tags span {
   color: black;
- /* padding: 6px 20px; */
+  /* padding: 6px 20px; */
   /* margin: 5px; */
 }
 
@@ -464,6 +470,7 @@ font-weight: 400;
 .dropdown-menu.scroll::-webkit-scrollbar {
   width: 8px;
 }
+
 /* .dropdown-menu.scroll::-webkit-scrollbar-thumb {
   background: #986708;
   border-radius: 10px;
@@ -694,7 +701,8 @@ small {
 .scroll_Bar::-webkit-scrollbar {
   width: 8px;
 }
-.scroll_Bar::-webkit-scrollbar-thumb{
+
+.scroll_Bar::-webkit-scrollbar-thumb {
   background: #FFCB3F !important;
 }
 
@@ -1368,25 +1376,31 @@ li::marker {
 .uncover {
   position: absolute;
 }
+
 .signup-dimond {
   position: relative;
   top: 40px;
   display: flex;
 }
+
 .sign-bg {
   background-color: #000000;
 }
-.login-signup{
+
+.login-signup {
   background-color: #C88A00;
   font-size: 18px;
 
 }
-.login-signup:hover{
+
+.login-signup:hover {
   background-color: #C88A00;
 }
-.link-primary{
+
+.link-primary {
   text-decoration: none;
 }
+
 .password-toggle-icon {
   position: absolute;
   top: 50%;
@@ -1394,6 +1408,7 @@ li::marker {
   transform: translateY(-50%);
   cursor: pointer;
 }
+
 .password-toggle-icon i {
   font-size: 18px;
   line-height: 1;
@@ -1401,22 +1416,31 @@ li::marker {
   transition: color 0.3s ease-in-out;
   margin-bottom: 20px;
 }
+
 .password-toggle-icon i:hover {
   color: #000;
 }
-.fill-form{
- background-color: #0000;
-}
-.fill-form:focus{
+
+.fill-form {
   background-color: #0000;
- }
+}
+
+.fill-form:focus {
+  background-color: #0000;
+}
+
+.overlay-content {
+  color: #FFFFFF;
+}
+
 /* search-header-css */
 .search-header-dropmenu .dropmenu :hover {
   background-color: #F9F2E3;
 
 }
+
 .search-header-dropmenu {
-  color: #2F2F33;
+  color: #2F2F33;
 }
 
 
@@ -1459,6 +1483,7 @@ li::marker {
     left: 46px;
     top: -23px;
   }
+
   .dropdown-menu {
     width: 186px;
   }
@@ -1563,18 +1588,26 @@ li::marker {
   }
 
   /******sign-up********/
-  /* .uncover {
-    left: 77.44%;
-  } */
   .sign-img {
     right: 65px;
   }
+
   .signup-dimond {
     display: none;
   }
-  /* .sign-logoform {
-    padding-top: 10px;
-  } */
+
+  .separator-line {
+    display: none;
+  }
+
+  .overlay-content {
+    top: 12%;
+    right: 0%;
+  }
+
+  .small-icon {
+    display: none;
+  }
 }
 
 @media (min-width:375px) {
@@ -1604,6 +1637,7 @@ li::marker {
 }
 
 @media (max-width: 768px) {
+
   /* Header-media */
   .join-ig img {
     bottom: 14px;
@@ -1619,15 +1653,19 @@ li::marker {
   .logo-img {
     width: 200px;
   }
+
   .left-dimond {
     display: none;
   }
+
   .right-dimond {
     display: none;
   }
+
   .choices-icons {
     bottom: 10px;
   }
+
   .cross {
     height: 15px;
     right: 10px;
@@ -1638,39 +1676,50 @@ li::marker {
   .font-custom {
     font-size: 24px;
   }
+
   .btn-custom {
     font-size: 16px;
   }
+
   .cutom-font-color {
     font-size: 20px;
   }
+
   .custom-section {
     padding: 20px 0;
   }
+
   .sub-text {
     font-size: 1rem;
     max-width: 100%;
   }
+
   .custom-section h1 {
     font-size: 1.5rem;
   }
+
   .custom-ellipsis {
     height: 112px;
   }
+
   .custom-color {
     font-size: 17px;
   }
+
   .info {
     flex: 0 0 auto;
     width: 34.666667%;
   }
+
   /* plan css */
   .choose-title h2 {
     font-size: 30px;
   }
+
   .choose-title p {
     font-size: 16px;
   }
+
   /*********contact us*******/
 }
 
@@ -1678,48 +1727,60 @@ li::marker {
   .main-title {
     font-size: 50px;
   }
+
   .build-high p {
     font-size: 17px;
   }
+
   .pages-name {
     font-size: 18px;
     margin: 0px 9px;
   }
+
   .linear {
     top: 93px;
   }
+
   .search-box {
     position: relative;
     top: 28px;
   }
+
   .export {
     height: 110px;
     padding: 10px;
   }
+
   .icons-join {
     position: relative;
     top: 58px;
   }
+
   .join-ig img {
     bottom: 14px;
     left: 58px;
   }
+
   .join-btn {
     border-radius: 50px;
     font-size: 14px;
     width: 95px;
   }
+
   .dropdown-menu.scroll {
     width: 218px;
   }
+
   .cross {
     height: 20px;
     right: 11px;
     top: 25px;
   }
+
   .personal-exports {
     font-size: 25px;
   }
+
   .book-set {
     font-size: 14px;
     width: 150px;
@@ -1730,18 +1791,31 @@ li::marker {
   .subscribe {
     padding: 12px 38px;
   }
+
   .subscribe-now {
     padding: 12px 38px;
   }
+
   .dimond-img {
     display: flex;
   }
+
   /******sign-up********/
   .sign-img {
     right: 109px;
   }
+
   .signup-dimond {
     display: flex;
+  }
+
+  .separator-line {
+    top: 687px;
+    display: block;
+  }
+
+  .overlay-content {
+    right: 0%;
   }
 }
 
@@ -1751,68 +1825,85 @@ li::marker {
   .logo-img {
     width: 245px;
   }
+
   .pages-name {
     font-size: 18px;
     margin: 0px 20px;
   }
+
   .join-btn {
     border-radius: 50px;
     font-size: 18px;
     width: 130px;
   }
+
   .join-ig img {
     bottom: 19px;
     left: 89px;
   }
+
   .left-dimond {
     display: block;
   }
+
   .icons-join {
     position: relative;
     top: 52px;
   }
+
   .linear {
     height: 10px;
     background-color: #F3AD3B;
     position: relative;
     top: 89px;
   }
+
   .search-box {
     position: relative;
     top: 23px;
   }
+
   .build-high p {
     font-size: 18px;
   }
+
   .build-high .main-title {
     font-size: 50px;
     font-weight: bold;
   }
+
   .right-dimond {
     display: block;
   }
+
   .actor-name {
     font-size: 20px;
     font-weight: 500;
   }
+
   .role {
     font-size: 14px;
     font-weight: 400;
   }
+
   .cross {
     right: 13px;
     top: 31px;
     height: 24px;
   }
+
   .export {
     height: 120px;
   }
+
   .personal-exports {
     font-size: 32px;
   }
+
   .program {
     padding: 6px 10px;
   }
+
   .book-set {
     color: #ffffff;
     font-size: 18px;
@@ -1824,9 +1915,11 @@ li::marker {
   .fixed-size-heading {
     font-size: 40px;
   }
+
   .filmy {
     margin-top: 140px;
   }
+
   .join-text {
     font-size: 90px;
     font-weight: bold;
@@ -1836,6 +1929,7 @@ li::marker {
     padding: 0;
     line-height: 1;
   }
+
   .company-name {
     color: #986708;
     font-size: 20px;
@@ -1843,23 +1937,29 @@ li::marker {
     font-weight: bold;
     height: 30px;
   }
+
   .info {
     flex: 0 0 auto;
     width: 16.666667%;
   }
+
   .logo {
     position: relative;
     bottom: 56px;
   }
+
   .dropdown-menu {
     width: 186px;
   }
+
   .dropdown-menu.scroll {
     width: 190px;
   }
+
   .view-btn {
     text-align: center;
   }
+
   .celibrate-card {
     margin-bottom: 10px;
   }
@@ -1868,30 +1968,39 @@ li::marker {
   .unlock-title {
     padding-top: 163px;
   }
+
   .choose-title h2 {
     font-size: 40px;
   }
+
   .choose-title p {
     font-size: 18px;
   }
+
   .dimond-img {
     display: flex;
   }
+
   .filmy-card {
     margin: 0px;
   }
+
   .most {
     display: block;
   }
+
   .gold-card {
     bottom: 70px;
   }
+
   .star-badge {
     display: block;
   }
+
   .subscribe {
     padding: 15px 70px;
   }
+
   .subscribe-now {
     padding: 15px 70px;
   }
@@ -1901,4 +2010,27 @@ li::marker {
     display: flex;
   }
 
+  .separator-line {
+    top: 815px;
+    display: block;
+  }
+
+  .signup-right-dimond {
+    top: 586px;
+  }
+
+  .overlay-content {
+    top: 7%;
+    right: 18%;
+  }
+
+  .small-icon {
+    right: 45px;
+    top: 8px;
+    display: block;
+  }
+
+  .overlay-text {
+    font-size: 40px;
+  }
 }

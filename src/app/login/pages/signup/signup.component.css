@@ -1,13 +1,7 @@
 
 
-/* Line */
-.common-linear{
-  border: 5px solid #F3AD3B;
-  top: 815px;
-}
-
 /* slider */
-.overlay-content {
+/* .overlay-content {
   position: absolute;
   top: 7%;
   right: 18%;
@@ -20,7 +14,7 @@
 }
 .overlay-text {
   font-size: 40px;
-}
+} */
 .best-profiles {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -33,10 +27,10 @@
 
 .separator-line {
   flex-grow: 1;
-  height: 5px;
-  background-color: #f0a500;
-  position: absolute;
-  top: 687px;
+  /* height: 5px;
+  background-color: #f0a500; */
+  border: 5px solid #f0a500;
+  /* top: 687px; */
 }
 
 .carousel-indicators {
@@ -51,4 +45,15 @@
   margin-right: 21%;
   margin-bottom: 120px;
   margin-left: 25%;
+}
+
+.carousel-inner .carousel-item:nth-child(3) .slider-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
+  z-index: 1;
 }
