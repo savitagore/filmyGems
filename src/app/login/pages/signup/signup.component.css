@@ -29,8 +29,9 @@
   margin-left: 25%;
 }
 
-
+/*
 .carousel-item:nth-child(3) .slider-container::after {
+} */
 
 
 .carousel-indicators .custom-dot {
@@ -54,7 +55,7 @@
 }
 .carousel-item:nth-child(3) .slider-container .leaf-content h2 {
   color: #FFFFFF !important;
-  z-index: 2; 
+  z-index: 2;
 }
 
 

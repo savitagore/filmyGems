@@ -2,17 +2,18 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
 import { Router } from '@angular/router';
+import { LoginComponent } from '../login/login.component';
 
 @Component({
   selector: 'app-signup',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule,LoginComponent],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.css'
 })
 export class SignupComponent {
   constructor(
-    private fb: FormBuilder,
+
     private router: Router,
 
   ) {}
