@@ -11,45 +11,45 @@ import { ArtistMainPageComponent } from './pages/artist-main-page/artist-main-pa
 
 import { TalentshowComponent } from './pages/talentshow/talentshow.component';
 import { SignupComponent } from './login/pages/signup/signup.component';
-
-
+import { LoginComponent } from './login/pages/login/login.component';
 
 export const routes: Routes = [
   { path: '', component: HeaderComponent },
   {
-    path:'plans',
-    component:PlansComponent
-  },{
-    path:'profile',
-    component:CreateProfileComponent
+    path: 'plans',
+    component: PlansComponent,
   },
   {
-    path:'about',
-    component:AboutUsComponent
-  },
-    {
-    path:'policy',
-    component:PrivacypolicyComponent
+    path: 'profile',
+    component: CreateProfileComponent,
   },
   {
-    path:'contact-us',
-    component:ContactUsComponent
+    path: 'about',
+    component: AboutUsComponent,
   },
   {
-
-    path:'artistMain',
-    component:ArtistMainPageComponent
-    },
-{
-    path:'talent-show',
-    component:TalentshowComponent
-
+    path: 'policy',
+    component: PrivacypolicyComponent,
   },
   {
-    path:'sign-up',
-    component:SignupComponent
+    path: 'contact-us',
+    component: ContactUsComponent,
   },
-
-
+  {
+    path: 'artistMain',
+    component: ArtistMainPageComponent,
+  },
+  {
+    path: 'talent-show',
+    component: TalentshowComponent,
+  },
+  {
+    path: 'sign-up',
+    component: SignupComponent,
+  },
+  {
+    path: 'login',
+    component: LoginComponent,
+  },
 
 ];

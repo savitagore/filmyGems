@@ -1,5 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormBuilder } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signup',
@@ -9,6 +11,11 @@ import { Component } from '@angular/core';
   styleUrl: './signup.component.css'
 })
 export class SignupComponent {
+  constructor(
+    private fb: FormBuilder,
+    private router: Router,
+
+  ) {}
   showPassword1: boolean = false;
   showPassword2: boolean = false;
 
@@ -19,4 +26,11 @@ export class SignupComponent {
       this.showPassword2 = !this.showPassword2;
     }
   }
-}
+  onLogin(): void {
+    {
+     this.router.navigate(['/login']);
+
+     }
+   }
+ }
+
