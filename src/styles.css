@@ -1801,7 +1801,7 @@ li::marker {
     right: 0%;
   }
   .separator-line{
-    top: 0px;
+    top: 683px;
   }
 }
 
@@ -1968,15 +1968,12 @@ li::marker {
     top: 725px;
   }
   .overlay-content {
-    top: 7%;
-    right: 18%;
+    top: 8%;
+    right: 20%;
   }
   .small-icon {
     right: 45px;
     top: 8px;
     display: block;
-  }
-  .overlay-text {
-    font-size: 40px;
   }
 }
