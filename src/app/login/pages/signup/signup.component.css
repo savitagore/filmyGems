@@ -27,10 +27,7 @@
 
 .separator-line {
   flex-grow: 1;
-  /* height: 5px;
-  background-color: #f0a500; */
   border: 5px solid #f0a500;
-  /* top: 687px; */
 }
 
 .carousel-indicators {
@@ -48,6 +45,9 @@
 }
 
 
+.carousel-item:nth-child(3) .slider-container::after {
+
+
 .carousel-indicators .custom-dot {
   width: 7px;
   border-radius: 50%;
@@ -57,6 +57,7 @@
   background-color:#FFCF25; /* Active dot color */
 }
 .carousel-inner .carousel-item:nth-child(3) .slider-container::after {
+
   content: '';
   position: absolute;
   top: 0;
@@ -66,3 +67,9 @@
   background: linear-gradient(to left, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
   z-index: 1;
 }
+.carousel-item:nth-child(3) .slider-container .leaf-content h2 {
+  color: #FFFFFF !important;
+  z-index: 2; 
+}
+
+
