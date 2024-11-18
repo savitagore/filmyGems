@@ -1748,14 +1748,14 @@ li::marker {
     display: flex;
   }
   .separator-line {
-    top: 687px;
+    top: 684px;
     display: block;
   }
   .overlay-content {
     right: 0%;
   }
-  .separator-line{
-    top: 684px;
+  .signup-right-dimond {
+    top: 593px;
   }
 }
 
@@ -1914,13 +1914,13 @@ li::marker {
   .signup-dimond {
     display: flex;
   }
-  .separator-line {
+  /* .separator-line {
     top: 815px;
     display: block;
   }
   .signup-right-dimond {
     top: 725px;
-  }
+  } */
   .overlay-content {
     top: 8%;
     right: 20%;
