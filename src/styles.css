@@ -1397,13 +1397,22 @@ li::marker {
   margin-left: 25%;
 }
 .carousel-indicators .custom-dot {
-  width: 7px;
-  border-radius: 50%;
-}
+  width: 10px;
+  padding: 4px;
+  border-radius: 100%;
+ }
 .carousel-indicators .active.custom-dot {
   background-color:#FFCF25;
 }
-
+.login-signup .btn:active,
+.login-signup .btn:focus {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
+.send-otp{
+  border: 1px solid #FFFFFF;
+}
 /* kk */
 .carousel-inner .carousel-item:nth-child(3) .slider-container::after {
   content: '';
