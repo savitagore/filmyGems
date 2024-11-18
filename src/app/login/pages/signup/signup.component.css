@@ -1,6 +1,6 @@
 
 
-.best-profiles {
+/* .best-profiles {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
   display: flex;
@@ -8,7 +8,7 @@
   margin-top: 0px;
   margin-right: 0px;
   margin-left:0px;
-}
+} */
 
 .separator-line {
   flex-grow: 1;

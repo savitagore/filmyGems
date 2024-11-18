@@ -1,12 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder } from '@angular/forms';
-import { Router } from '@angular/router';
+import { Router, RouterLink } from '@angular/router';
+import { LoginCarasoualComponent } from '../../../Reuseable/login-carasoual/login-carasoual.component';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule,],
+  imports: [CommonModule,RouterLink,LoginCarasoualComponent],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
