@@ -260,7 +260,8 @@ li.nav-item a.nav-link.active {
 }
 
 .bg-colors {
-  background-color: #333;
+  background-color: #4a4a4a;
+  border :1px solid #6a6a6a;
 }
 
 .input-group {
@@ -640,8 +641,8 @@ small {
 }
 
 .focus_Bg_Color {
-  background-color: #333;
-  color: white;
+  /* background-color: #333; */
+  /* color: white; */
 }
 
 .artist-sidebar-bg {
