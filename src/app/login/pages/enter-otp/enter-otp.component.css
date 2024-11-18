@@ -1,0 +1,57 @@
+
+.otp-box{
+  width: 44px;
+  height: 40px;
+  text-align: center;
+  font-size: 30px;
+  border: 1px solid #999;
+  border-radius: 5px;
+  background-color: #111;
+  color: #fff;
+}
+
+.otp-input-group {
+  display: flex;
+
+  gap: 8px;
+  margin: 20px 0;
+}
+
+
+
+.otp-box:focus {
+  border-color: #0056b3;
+  outline: none;
+}
+
+
+
+
+
+.timer {
+  color: #0057FF; /* Cyan */
+  font-size: 20px;
+}
+
+.links {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.try-again {
+  color:  #0057FF;
+  cursor: pointer;
+}
+
+.try-again:hover {
+  text-decoration: underline;
+}
+
+.admin-link {
+  color: #0057FF;
+  text-decoration: none;
+}
+
+.admin-link:hover {
+  text-decoration: underline;
+}

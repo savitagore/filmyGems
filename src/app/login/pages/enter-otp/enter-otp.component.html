@@ -3,19 +3,69 @@
         <div class="col-8">
             <app-login-carasoual></app-login-carasoual>
         </div>
-        <div class="col-4 sign-bg">
+        <!-- <div class="col-4 sign-bg">
             <div class="row best-profiles ps-4  pt-3 text-white">
                 <h4 style="line-height: 0.5;">Enter OTP</h4>
                 <p>Please enter the OTP code we sent at 98123***23</p>
                 <form action="">
-                    <div class="col-10  mb-3">
-                        <input type="text" class="form-control text-white fill-form" placeholder="full name" required>
+
+
+                    <div class="otp-input-group text-center">
+                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 0)" />
+                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 1)" />
+                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 2)" />
+                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 3)" />
+                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 4)" />
+                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 5)" />
                     </div>
                     <div class="col-10 text-center mt-3 login-signup">
-                        <button class="btn text-white">Varify & Login</button>
-                      </div>
-                    <!-- <button class="btn text-white" routerLink="/forgott-pass">Varify & Login</button> -->
-                </form>
+                      <button class="btn text-white" (click)="verifyOTP()">Varify & Login</button>
+                    </div>
+                    <div class="div text-center">
+                      <p class="timer">00:30 sec</p>
+                      <p class="links">
+                        Don’t receive OTP?
+                        <span class="try-again" (click)="resendOTP()">Try Again</span>
+                        <i class="fa fa-refresh"></i>
+                      </p>
+                      <p class="links">
+                        Trouble in login? <a href="#" class="admin-link">Admin</a>
+                      </p>
+                    </div>
+
+
+                  </form>
             </div>
+        </div> -->
+        <div class="col-4 sign-bg d-flex justify-content-center align-items-center">
+          <div class="row best-profiles ps-4 pt-3 text-white text-center">
+            <h4 style="line-height: 0.5;">Enter OTP</h4>
+            <p>Please enter the OTP code we sent at 98123***23</p>
+            <form action="">
+              <div class="otp-input-group">
+                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 0)" />
+                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 1)" />
+                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 2)" />
+                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 3)" />
+                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 4)" />
+                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 5)" />
+              </div>
+              <div class="col-10 text-center mt-3 login-signup">
+                <button class="btn text-white" (click)="verifyOTP()">Verify & Login</button>
+              </div>
+              <div class="text-center">
+                <p class="timer">00:30 sec</p>
+                <p class="links">
+                  Don’t receive OTP?
+                  <span class="try-again" (click)="resendOTP()">Try Again</span>
+                  <i class="fa fa-refresh"></i>
+                </p>
+                <p class="links">
+                  Trouble in login? <a href="#" class="admin-link">Admin</a>
+                </p>
+              </div>
+            </form>
+          </div>
         </div>
+
     </div>
