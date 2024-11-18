@@ -1,4 +1,4 @@
-
+/* 
 
 .best-profiles {
   --bs-gutter-x: 1.5rem;
@@ -36,7 +36,6 @@
   background-color:#FFCF25;
 }
 
-/* kk */
 .carousel-inner .carousel-item:nth-child(3) .slider-container::after {
   content: '';
   position: absolute;
@@ -50,4 +49,4 @@
 .carousel-item:nth-child(3) .slider-container .leaf-content h2 {
   color: #FFFFFF !important;
   z-index: 2;
-}
+} */
