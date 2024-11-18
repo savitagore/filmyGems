@@ -12,6 +12,11 @@ import { ArtistMainPageComponent } from './pages/artist-main-page/artist-main-pa
 import { TalentshowComponent } from './pages/talentshow/talentshow.component';
 import { SignupComponent } from './login/pages/signup/signup.component';
 import { LoginComponent } from './login/pages/login/login.component';
+import { ContinueLoginComponent } from './login/pages/continue-login/continue-login.component';
+import { SendOTPComponent } from './login/pages/send-otp/send-otp.component';
+import { EnterOTPComponent } from './login/pages/enter-otp/enter-otp.component';
+import { ForgottPasswordComponent } from './login/pages/forgott-password/forgott-password.component';
+import { ResetPasswordComponent } from './login/pages/reset-password/reset-password.component';
 
 export const routes: Routes = [
   { path: '', component: HeaderComponent },
@@ -50,6 +55,26 @@ export const routes: Routes = [
   {
     path: 'login',
     component: LoginComponent,
+  },
+  {
+    path: 'send-OTP',
+    component: SendOTPComponent,
+  },
+  {
+    path: 'enter-OTP',
+    component: EnterOTPComponent,
+  },
+  {
+    path: 'forgott-pass',
+    component: ForgottPasswordComponent,
+  },
+  {
+    path: 'reset-pass',
+    component: ResetPasswordComponent,
+  },
+  {
+    path: 'continue & login',
+    component: ContinueLoginComponent,
   },
 
 ];
