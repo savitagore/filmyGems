@@ -11,7 +11,14 @@
 }
 
 
-
+.shaid{
+  background-size: cover;
+  background-position: center;
+  transition: background-size 0.5s ease-in-out;
+}
+.shaid:hover {
+  background-size: 150%; 
+}
 
 
 
