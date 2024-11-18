@@ -12,9 +12,7 @@
 
 .otp-input-group {
   display: flex;
-
   gap: 8px;
-  margin: 20px 0;
 }
 
 
@@ -33,25 +31,16 @@
   font-size: 20px;
 }
 
-.links {
-  margin-top: 10px;
-  font-size: 14px;
-}
 
 .try-again {
   color:  #0057FF;
   cursor: pointer;
 }
 
-.try-again:hover {
-  text-decoration: underline;
-}
+
 
 .admin-link {
   color: #0057FF;
   text-decoration: none;
 }
 
-.admin-link:hover {
-  text-decoration: underline;
-}
