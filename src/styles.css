@@ -1332,10 +1332,6 @@ li::marker {
 .login-signup {
   background-color: #C88A00;
   font-size: 18px;
-
-}
-.login-signup:hover {
-  background-color: #C88A00;
 }
 .link-primary {
   text-decoration: none;
@@ -1424,13 +1420,13 @@ li::marker {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
   z-index: 1;
 }
-.carousel-item:nth-child(3) .slider-container .leaf-content p {
+.carousel-item:nth-child(3) .slider-container .leaf-content h2 {
   color: #FFFFFF !important;
   z-index: 2;
 }
 .all-celebrites{
   top: 10%;
-        right: 10%;
+  right: 20%;
 }
 
 /* search-header-css */
