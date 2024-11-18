@@ -15,6 +15,16 @@ import { FormsModule } from '@angular/forms';
 })
 export class ArtistMainPageComponent {
 
+  categories = [
+    { name: 'Artist', checked: false },
+    { name: 'Director', checked: false },
+    { name: 'Casting Director', checked: false },
+    { name: 'Assistant Director', checked: false },
+    { name: 'Associate Director', checked: false },
+    { name: 'Executive Producer', checked: false },
+    { name: 'Production Manager', checked: false }
+  ];
+
 }
 
 
