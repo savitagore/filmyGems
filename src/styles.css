@@ -1406,6 +1406,12 @@ li::marker {
   outline: none !important;
   box-shadow: none !important;
 }
+
+.send-otp .btn {
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
+}
 .send-otp{
   border: 1px solid #FFFFFF;
 }
