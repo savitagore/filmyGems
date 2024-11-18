@@ -304,8 +304,8 @@
                                     aria-expanded="false"></i>
                             </button>
                             <ul class="dropdown-menu sortFont">
-                                <li><a class="dropdown-item p-2 text-secondary" href="#">Low To High (Budget)</a></li>
-                                <li><a class="dropdown-item p-2 text-secondary" href="#">High To Low (Budget)</a></li>
+                                <li><a class="dropdown-item p-2 text-secondary sortby-css-h" href="">Low To High (Budget)</a></li>
+                                <li><a class="dropdown-item p-2 text-secondary sortby-css-h" href="">High To Low (Budget)</a></li>
                             </ul>
                         </div>
                     </div>
@@ -691,13 +691,16 @@
                     <div class="col-6">
                         <!-- Image Carousel -->
                         <div id="carouselExample" class="carousel slide caro-css" data-bs-ride="carousel">
-                            <div class="carousel-indicators">
-                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0"
-                                    class="active"></button>
-                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1"></button>
-                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2"></button>
-                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3"></button>
-                            </div>
+                            <div class="carousel-indicators ">
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="0" class="active custom-dot me-2"
+                                  aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="1" class="custom-dot me-2"
+                                  aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="2" class="custom-dot me-2"
+                                  aria-label="Slide 3"></button>
+                                  <button type="button" data-bs-target="#carouselExample" data-bs-slide-to="3" class="custom-dot me-2"
+                                  aria-label="Slide 4"></button>
+                              </div>
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
                                     <img src="assets/artist-Main-Page/artist-modal.svg"
@@ -764,13 +767,25 @@
                                     <h6 class="sortFont text-dark">Current Projects</h6>
                                     <div class="project-thumbnails d-flex mt-3">
                                         <div class="">
-                                            <img src="project1.jpg" class="object-fit-cover rounded-end-3" alt="...">
+                                            <video id="videoPlayer" class="rounded-3" style="height: 100px; width: 90px;" controls>
+                                                <source src="https://www.youtube.com/watch?v=OgRoRBLZbUQ" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
                                         </div>
                                         <div class="">
-                                            <img src="project1.jpg" class="object-fit-cover rounded-end-3" alt="...">
+                                            <video id="videoPlayer" class="rounded-3" style="height: 100px; width: 90px;" controls>
+                                                <source src="https://www.youtube.com/watch?v=OgRoRBLZbUQ" type="video/mp4">
+                                                Your browser does not support the video tag.
+                                            </video>
                                         </div>
                                         <div class="">
-                                            <img src="project1.jpg" class="object-fit-cover rounded-end-3" alt="...">
+                                            <iframe id="videoPlayer" class="rounded-3" 
+        style="height: 100px; width: 90px;" 
+        src="https://www.youtube.com/embed/OgRoRBLZbUQ" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-red; encrypted-media; gyroscope; picture-in-picture" 
+        allowfullscreen>
+</iframe>
                                         </div>
                                     </div>
                                 </div>
