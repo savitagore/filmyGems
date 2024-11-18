@@ -657,29 +657,19 @@ small {
   text-align: left;
 
 }
-
 .scroll_Bar::-webkit-scrollbar {
   width: 8px;
 }
-
 .scroll_Bar::-webkit-scrollbar-thumb {
-  background: #FFCB3F !important;
-}
-
-.scroll_Bar::-webkit-scrollbar-thumb {
-  background: #C69734;
-
+  background: #C69734 !important;
   width: 100px;
   border-radius: 15px;
 }
-
 .scroll_Bar::-webkit-scrollbar-track {
   background: #ccc;
   border-radius: 15px;
   width: 50px;
-
 }
-
 .sortFont {
   font-family: Roboto;
   font-size: 18px;
