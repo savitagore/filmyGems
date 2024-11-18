@@ -1,4 +1,4 @@
-/*
+
 
 .best-profiles {
   --bs-gutter-x: 1.5rem;
@@ -48,17 +48,8 @@
   height: 100%;
   background: linear-gradient(to left, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
   z-index: 1;
-} */
+}
 .send-otp{
   border: 1px solid #FFFFFF;
 }
 
-.best-profiles {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-left:0px;
-}
