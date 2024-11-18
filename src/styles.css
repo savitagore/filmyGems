@@ -1425,18 +1425,19 @@ li::marker {
   background: linear-gradient(to left, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45));
   z-index: 1;
 }
-.carousel-item:nth-child(3) .slider-container .leaf-content h2 {
+.carousel-item:nth-child(3) .slider-container .leaf-content p {
   color: #FFFFFF !important;
   z-index: 2;
 }
-
+.all-celebrites{
+  top: 10%;
+        right: 10%;
+}
 
 /* search-header-css */
 .search-header-dropmenu .dropmenu :hover {
   background-color: #F9F2E3;
-
 }
-
 .search-header-dropmenu {
   color: #2F2F33;
 }
@@ -1958,13 +1959,13 @@ li::marker {
   .signup-dimond {
     display: flex;
   }
-  /* .separator-line {
+  .separator-line {
     top: 815px;
     display: block;
   }
   .signup-right-dimond {
     top: 725px;
-  } */
+  }
   .overlay-content {
     top: 8%;
     right: 20%;
