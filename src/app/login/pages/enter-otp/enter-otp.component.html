@@ -1,96 +1,75 @@
 <section class="roboto-font">
-  <div class="row g-0">
-   <div class="col-md-8">
-      <app-login-carasoual></app-login-carasoual>
-    </div>
-    <div class="col-md-4 sign-bg">
-      <div class="justify-content-end signup-dimond">
-        <img src="assets/landing_Img/diamond_right.png"  class="img-fluid">
+    <div class="row g-0">
+      <div class="col-md-8">
+        <app-login-carasoual></app-login-carasoual>
       </div>
-      <div class="text-center">
-        <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/"  class="img-fluid">
-      </div>
-      <!-- <div class="d-flex justify-content-center">
-        <div class="row best-profiles ps-4  text-white pt-4">
-          <h4 style="line-height :0.5;">Login</h4>
-            <p>Welcome back!</p>
-             <form action="">
-              <div class="col-10 mb-4 ">
-                <input type="email" class="form-control text-white fill-form" placeholder="enter your email" required >
+        <div class="col-md-4 sign-bg">
+            <div class="justify-content-end signup-dimond">
+                <img src="assets/landing_Img/diamond_right.png" alt="" class="img-fluid">
               </div>
-              <div class="col-10 mb-2 position-relative">
-                <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white fill-form"
-                  placeholder="Enter password" required />
-                <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)">
-                  <i [ngClass]="showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'"></i>
-                </span>
+              <div class="text-center">
+                <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/"  class="img-fluid">
               </div>
+            <div class="row best-profiles ps-4  pt-3 text-white">
+                <h4 style="line-height: 0.5;">Enter OTP</h4>
+                <p>Please enter the OTP code we sent at 98123***23</p>
+                <form action="">
+                    <div class="otp-input-group text-center">
+                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 0)" />
+                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 1)" />
+                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 2)" />
+                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 3)" />
+                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 4)" />
+                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 5)" />
+                    </div>
+                    <div class="col-10 text-center mt-3 login-signup">
+                      <button class="btn text-white" (click)="verifyOTP()">Varify & Login</button>
+                    </div>
+                    <div class="div text-center">
+                      <p class="timer">00:30 sec</p>
+                      <p class="links">
+                        Don’t receive OTP?
+                        <span class="try-again" (click)="resendOTP()">Try Again</span>
+                        <i class="fa fa-refresh"></i>
+                      </p>
+                      <p class="links">
+                        Trouble in login? <a href="#" class="admin-link">Admin</a>
+                      </p>
+                    </div>
 
-              <div class="col-10">
-                <div class="form-check">
-                  <input class="form-check-input" type="checkbox" id="termsCheck" required>
-                  <label class="form-check-label" for="termsCheck">
-                    Remember me
-                  </label>
-                  <span class="ps-5" style="color: #0057FF;" routerLink="/send-OTP">Forgot Password?</span>
-                </div>
+
+                  </form>
+            </div>
+        </div>
+      <!-- <div class="col-4 sign-bg d-flex justify-content-center align-items-center">
+          <div class="row best-profiles ps-4 pt-3 text-white text-center">
+            <h4 style="line-height: 0.5;">Enter OTP</h4>
+            <p>Please enter the OTP code we sent at 98123***23</p>
+            <form action="">
+              <div class="otp-input-group">
+                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 0)" />
+                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 1)" />
+                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 2)" />
+                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 3)" />
+                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 4)" />
+                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 5)" />
               </div>
-              <div class="col-10 text-center mt-4 mb-3 login-signup">
-                <button  type="button" class="btn text-white">Login</button>
+              <div class="col-10 text-center mt-3 login-signup">
+                <button class="btn text-white" (click)="verifyOTP()">Verify & Login</button>
               </div>
-              <div class="col-10  text-center mt-3 mb-3 send-otp">
-                <button class="btn text-white"  routerLink="/send-OTP">Login with Mobile OTP</button>
+              <div class="text-center">
+                <p class="timer">00:30 sec</p>
+                <p class="links">
+                  Don’t receive OTP?
+                  <span class="try-again" (click)="resendOTP()">Try Again</span>
+                  <i class="fa fa-refresh"></i>
+                </p>
+                <p class="links">
+                  Trouble in login? <a href="#" class="admin-link">Admin</a>
+                </p>
               </div>
-              <div class="ps-5" style="font-size: 14px;">
-                Don’t have an account?  <span style="color: #0057FF;" routerLink="/sign-up">Sign up</span>
-             </div>
             </form>
-        </div>
-      </div> -->
-      <div class="col-md-4 sign-bg">
-        <div class="justify-content-end signup-dimond">
-          <img src="assets/landing_Img/diamond_right.png"  class="img-fluid">
-        </div>
-        <div class="text-center">
-          <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/"  class="img-fluid">
-        </div>
-        <div class="d-flex justify-content-center">
-          <div class="row best-profiles ps-4  text-white pt-4">
-            <h4 style="line-height :0.5;">Enter OTP</h4>
-              <p>Please enter the OTP code we sent at 98123***23</p>
-               <form action="">
-                <div class="otp-input-group text-center">
-                  <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 0)" />
-                  <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 1)" />
-                  <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 2)" />
-                  <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 3)" />
-                  <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 4)" />
-                  <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 5)" />
-                </div>
-                <div class="col-10 text-center mt-3 login-signup">
-                  <button class="btn text-white" (click)="verifyOTP()">Varify & Login</button>
-                </div>
-
-                <div class="ps-5 ms-5">
-                  <p class="timer">00:30 sec</p>
-                </div>
-                <div class="div ps-5">
-                  <p class="links">
-                    Don’t receive OTP?
-                    <span class="try-again" (click)="resendOTP()">Try Again</span>
-                    <i class="fa fa-refresh"></i>
-                  </p>
-                  <p class="links">
-                    Trouble in login? <a href="#" class="admin-link">Admin</a>
-                  </p>
-                </div>
-
-              </form>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="separator-line position-absolute"></div>
-  </div>
-</section>
-
+        </div> -->
+       </div>
+    </section>
