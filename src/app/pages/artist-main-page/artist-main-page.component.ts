@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
   styleUrl: './artist-main-page.component.css'
 })
 export class ArtistMainPageComponent {
+  
 
   categories = [
     { name: 'Artist', checked: false },
