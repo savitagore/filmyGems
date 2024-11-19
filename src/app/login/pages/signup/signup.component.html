@@ -1,62 +1,63 @@
-<section class="roboto-font">
-  <div class="row g-0">
-    <div class="col-md-8">
+<div class="container-fluid roboto-font">
+  <div class="row">
+    <div class="col-lg-7 col-md-7 col-sm-12 g-0">
       <app-login-carasoual></app-login-carasoual>
     </div>
-    <div class="col-md-4 sign-bg">
+    <div class="col-lg-5 col-md-5 col-sm-12 sign-bg roboto-font">
       <div class="justify-content-end signup-dimond">
         <img src="assets/landing_Img/diamond_right.png" alt="" class="img-fluid">
       </div>
-      <div class="text-center pt-5">
-        <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/"  class="img-fluid">
+      <div
+        class="text-center ms-lg-4 ms-md-4 ms-sm-0 ps-lg-3 ps-md-3 ps-sm-0 mb-lg-0 mb-md-0 mb-3 mt-lg-0 mt-md-0 mt-3">
+        <img src="assets/logo-img/gem_logo_without baseline.png" alt="" class="img-fluid">
       </div>
-      <div class="d-flex justify-content-center">
-        <div class="row best-profiles ps-4  pt-4 text-white">
-          <h4 style="line-height: 0.5;">Sign Up</h4>
-          <p>Join with us and get the best profiles!</p>
-          <form action="">
-            <div class="col-10  mb-3">
-              <input type="text" class="form-control text-white fill-form" placeholder="full name" required>
+      <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-10 col-sm-12">
+          <div class="text-white mt-lg-5 mt-md-5 mt-sm-3 mb-3">
+            <h4 style="line-height: 0.5;">Sign Up</h4>
+            <p class="role py-lg-2 py-md-2 py-sm-2">Join with us and get the best profiles!</p>
+          </div>
+          <div class="mb-3 position-relative">
+            <input type="text" class="form-control text-white fill-form" placeholder="full name" required>
+          </div>
+          <div class="mb-3 position-relative">
+            <input type="text" class="form-control text-white fill-form" placeholder="mobile number" required>
+          </div>
+          <div class="mb-3 position-relative">
+            <input type="email" class="form-control text-white fill-form" placeholder="enter your email" required>
+          </div>
+          <div class="mb-3 position-relative">
+            <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white fill-form"
+              placeholder="Enter password" required />
+            <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)">
+              <i [ngClass]="showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'"></i>
+            </span>
+          </div>
+          <div class="mb-3 position-relative">
+            <input [type]="showPassword2 ? 'text' : 'password'" class="form-control text-white fill-form"
+              placeholder="Confirm password" required />
+            <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(2)">
+              <i [ngClass]="showPassword2 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'"></i>
+            </span>
+          </div>
+          <div class="mb-3 position-relative">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="termsCheck" required>
+              <label class="form-check-label text-white" for="termsCheck">
+                By signing up, you agree to our <a href="#" class="link-primary">conditions</a> & <a href="#"
+                  class="link-primary">privacy policy</a>
+              </label>
             </div>
-            <div class="col-10 mb-3">
-              <input type="text" class="form-control text-white fill-form" placeholder="mobile number" required>
-            </div>
-            <div class="col-10 mb-3">
-              <input type="email" class="form-control text-white fill-form" placeholder="enter your email" required>
-            </div>
-            <div class="col-10 mb-3 position-relative">
-              <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white fill-form"
-                placeholder="Enter password" required />
-              <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)">
-                <i [ngClass]="showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'"></i>
-              </span>
-            </div>
-            <div class="col-10 mb-3 position-relative">
-              <input [type]="showPassword2 ? 'text' : 'password'" class="form-control text-white fill-form"
-                placeholder="Confirm password" required />
-              <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(2)">
-                <i [ngClass]="showPassword2 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'"></i>
-              </span>
-            </div>
-            <div class="col-10 mb-2">
-              <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="termsCheck" required>
-                <label class="form-check-label" for="termsCheck">
-                  By signing up, you agree to our <a href="#" class="link-primary">conditions</a> & <a href="#"
-                    class="link-primary">privacy policy</a>
-                </label>
-              </div>
-            </div>
-            <div class="col-10 text-center mt-3 login-signup">
-              <button class="btn text-white" (click)="onLogin()">Login</button>
-            </div>
-            <div class="ps-4 mt-3" style="font-size: 14px;">
-              If you have already an account? <span style="color: #0057FF;" routerLink="/login">Login</span>
-            </div>
-          </form>
+          </div>
+          <div class=" text-center login-signup rounded-2 mb-lg-2 mb-md-2 mb-2 my-lg-2 my-md-2 my-sm-1">
+            <button class="btn text-white" (click)="onLogin()">Login</button>
+          </div>
+          <div class="text-center text-white pt-3" style="font-size: 14px;">
+            If you have already an account? <span style="color: #0057FF;" routerLink="/login">Login</span>
+          </div>
         </div>
       </div>
     </div>
     <div class="separator-line position-absolute"></div>
   </div>
-</section>
+</div>
