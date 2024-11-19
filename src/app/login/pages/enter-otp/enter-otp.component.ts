@@ -1,11 +1,13 @@
 import { Component } from '@angular/core';
 import { LoginCarasoualComponent } from '../../../Reuseable/login-carasoual/login-carasoual.component';
 import { Router, RouterLink } from '@angular/router';
+import { InputOtpModule } from 'primeng/inputotp';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-enter-otp',
   standalone: true,
-  imports: [LoginCarasoualComponent,RouterLink],
+  imports: [LoginCarasoualComponent,RouterLink,InputOtpModule,FormsModule],
   templateUrl: './enter-otp.component.html',
   styleUrl: './enter-otp.component.css'
 })
@@ -13,6 +15,7 @@ export class EnterOTPComponent {
   constructor( private router: Router,){
 
   }
+  value : any
   otp: string[] = ['', '', '', ''];
 
   moveToNext(event: any, index: number): void {
@@ -27,14 +30,14 @@ export class EnterOTPComponent {
 
   verifyOTP(): void {
     const otpValue = this.otp.join('');
-    console.log('Entered OTP:', otpValue);
+
 
     this.router.navigate(['/forgott-pass']);
-    // Add OTP verification logic here
+
   }
 
   resendOTP(): void {
-    console.log('Resend OTP');
-    // Implement OTP resend logic here
+
+
   }
 }

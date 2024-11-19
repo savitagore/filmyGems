@@ -15,12 +15,15 @@
                 <p>Please enter the OTP code we sent at 98123***23</p>
                 <form action="">
                     <div class="otp-input-group text-center">
-                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 0)" />
+                      <!-- <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 0)" />
                       <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 1)" />
                       <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 2)" />
                       <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 3)" />
                       <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 4)" />
-                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 5)" />
+                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 5)" /> -->
+                      <!-- <p-inputOtp [(ngModel)]="value" name="otp" /> -->
+                      <p-inputOtp [(ngModel)]="value" name="otp" [length]="6" class="custom-otp"></p-inputOtp>
+
                     </div>
                     <div class="col-10 text-center mt-3 login-signup">
                       <button class="btn text-white" (click)="verifyOTP()">Varify & Login</button>
