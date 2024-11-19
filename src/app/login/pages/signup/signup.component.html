@@ -13,34 +13,34 @@
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-7 col-md-10 col-sm-12">
-          <div class="text-white mt-lg-5 mt-md-5 mt-sm-3 mb-3">
-            <h4 style="line-height: 0.5;">Sign Up</h4>
-            <p class="role py-lg-2 py-md-2 py-sm-2">Join with us and get the best profiles!</p>
+          <div class="text-white ">
+            <h4 style="line-height: 0.3;">Sign Up</h4>
+            <p>Join with us and get the best profiles!</p>
           </div>
-          <div class="mb-3 position-relative">
+          <div class="mb-2">
             <input type="text" class="form-control text-white fill-form" placeholder="full name" required>
           </div>
-          <div class="mb-3 position-relative">
+          <div class="mb-2">
             <input type="text" class="form-control text-white fill-form" placeholder="mobile number" required>
           </div>
-          <div class="mb-3 position-relative">
+          <div class="mb-2 ">
             <input type="email" class="form-control text-white fill-form" placeholder="enter your email" required>
           </div>
-          <div class="mb-3 position-relative">
+          <div class="mb-2 position-relative">
             <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white fill-form"
               placeholder="Enter password" required />
             <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)">
               <i [ngClass]="showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'"></i>
             </span>
           </div>
-          <div class="mb-3 position-relative">
+          <div class="mb-2 position-relative">
             <input [type]="showPassword2 ? 'text' : 'password'" class="form-control text-white fill-form"
               placeholder="Confirm password" required />
             <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(2)">
               <i [ngClass]="showPassword2 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'"></i>
             </span>
           </div>
-          <div class="mb-3 position-relative">
+          <div class="mb-2 position-relative">
             <div class="form-check">
               <input class="form-check-input" type="checkbox" id="termsCheck" required>
               <label class="form-check-label text-white" for="termsCheck">
