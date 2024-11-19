@@ -1361,6 +1361,7 @@ li::marker {
   position: relative;
   top: 40px;
   display: flex;
+  left: 12px;
 }
 .sign-bg {
   background-color: #000000;
@@ -2007,11 +2008,11 @@ li::marker {
     display: flex;
   }
   .separator-line {
-    top: 815px;
+    top: 719px;
     display: block;
   }
   .signup-right-dimond {
-    top: 725px;
+    top: 490px;
   }
   .overlay-content {
     top: 8%;
