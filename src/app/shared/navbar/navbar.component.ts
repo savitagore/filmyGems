@@ -1,18 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink,RouterLinkActive,CommonModule,ReactiveFormsModule],
+  imports: [RouterLink,RouterLinkActive,CommonModule,ReactiveFormsModule,FormsModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
   isEditMode = false;
   profileForm: FormGroup;
+
 
   constructor(private fb: FormBuilder) {
     this.profileForm = this.fb.group({
