@@ -73,7 +73,7 @@ export const routes: Routes = [
     component: ResetPasswordComponent,
   },
   {
-    path: 'continue & login',
+    path: 'continue-login',
     component: ContinueLoginComponent,
   },
 

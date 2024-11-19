@@ -162,7 +162,18 @@
                         {{ profileForm.get('bio')?.value }}
                       </div>
                     </div>
-                    <p class="text-muted">Weekly Newsletter :</p>
+                    <p class="text-muted pt-2">Weekly Newsletter : <img src="assets/svg-icons/toogle buttons.svg" alt="">
+                      </p>
+
+
+
+
+
+
+
+
+
+
                   </div>
                 </div>
                 <form *ngIf="isEditMode" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
