@@ -2006,10 +2006,10 @@ li::marker {
   .signup-dimond {
     display: flex;
   }
-  /* .separator-line {
+  .separator-line {
     top: 815px;
     display: block;
-  } */
+  }
   .signup-right-dimond {
     top: 725px;
   }
