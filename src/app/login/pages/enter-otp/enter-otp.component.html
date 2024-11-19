@@ -1,80 +1,42 @@
-<section class="roboto-font">
-    <div class="row g-0">
-      <div class="col-md-8">
-        <app-login-carasoual></app-login-carasoual>
+<div class="container-fluid roboto-font">
+  <div class="row">
+    <div class="col-lg-7 col-md-7 col-sm-12 g-0">
+      <app-login-carasoual></app-login-carasoual>
+    </div>
+    <div class="col-lg-5 col-md-5 col-sm-12 sign-bg roboto-font">
+      <div class="justify-content-end signup-dimond">
+        <img src="assets/landing_Img/diamond_right.png" alt="" class="img-fluid">
       </div>
-        <div class="col-md-4 sign-bg">
-            <div class="justify-content-end signup-dimond">
-                <img src="assets/landing_Img/diamond_right.png" alt="" class="img-fluid">
-              </div>
-              <div class="text-center pt-5">
-                <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/"  class="img-fluid">
-              </div>
-            <div class="row best-profiles ps-4  pt-3 text-white">
-                <h4 style="line-height: 0.5;">Enter OTP</h4>
-                <p>Please enter the OTP code we sent at 98123***23</p>
-                <form action="">
-                    <div class="otp-input-group text-center">
-                      <!-- <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 0)" />
-                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 1)" />
-                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 2)" />
-                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 3)" />
-                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 4)" />
-                      <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 5)" /> -->
-                      <!-- <p-inputOtp [(ngModel)]="value" name="otp" /> -->
-                      <p-inputOtp [(ngModel)]="value" name="otp" [length]="6" class="custom-otp"></p-inputOtp>
-
-                    </div>
-                    <div class="col-10 text-center mt-3 login-signup">
-                      <button class="btn text-white" (click)="verifyOTP()">Varify & Login</button>
-                    </div>
-                    <div class="ms-5 ps-5 pt-2">
-                      <p class="timer">00:30 sec</p>
-
-                    </div>
-
-                    <div class="ps-5">
-                      <p class="links ">
-                        Don’t receive OTP?
-                        <span class="try-again" (click)="resendOTP()">Try Again</span>
-                        <i class="fa fa-refresh ps-2"></i>
-                      </p>
-                      <p class="links ms-4">
-                        Trouble in login? <a href="#" class="admin-link">Admin</a>
-                      </p>
-                    </div>
-                  </form>
-            </div>
-        </div>
-      <!-- <div class="col-4 sign-bg d-flex justify-content-center align-items-center">
-          <div class="row best-profiles ps-4 pt-3 text-white text-center">
-            <h4 style="line-height: 0.5;">Enter OTP</h4>
-            <p>Please enter the OTP code we sent at 98123***23</p>
-            <form action="">
-              <div class="otp-input-group">
-                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 0)" />
-                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 1)" />
-                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 2)" />
-                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 3)" />
-                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 4)" />
-                <input maxlength="1" type="text" class="otp-box" (input)="moveToNext($event, 5)" />
-              </div>
-              <div class="col-10 text-center mt-3 login-signup">
-                <button class="btn text-white" (click)="verifyOTP()">Verify & Login</button>
-              </div>
-              <div class="text-center">
-                <p class="timer">00:30 sec</p>
-                <p class="links">
-                  Don’t receive OTP?
-                  <span class="try-again" (click)="resendOTP()">Try Again</span>
-                  <i class="fa fa-refresh"></i>
-                </p>
-                <p class="links">
-                  Trouble in login? <a href="#" class="admin-link">Admin</a>
-                </p>
-              </div>
-            </form>
+      <div
+        class="text-center ms-lg-4 ms-md-4 ms-sm-0 ps-lg-3 ps-md-3 ps-sm-0 mb-lg-0 mb-md-0 mb-3 mt-lg-0 mt-md-0 mt-3">
+        <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/" alt="" class="img-fluid">
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-7 col-md-10 col-sm-12">
+          <div class="text-white mt-lg-5 mt-md-5 mt-sm-3 mb-3">
+            <h4 style="line-height :0.2;">Enter OTP</h4>
+            <p class="role py-lg-2 py-md-2 py-sm-2">
+              Please enter the OTP code we sent at 98123***23!</p>
           </div>
-        </div> -->
-       </div>
-    </section>
+          <div class="otp-input-group text-center">
+            <p-inputOtp [(ngModel)]="value" name="otp" [length]="6" class="custom-otp"></p-inputOtp>
+          </div>
+          <div class=" text-center login-signup rounded-2 mt-3">
+            <button class="btn text-white" (click)="verifyOTP()">Varify & Login</button>
+          </div>
+          <div class="text-center">
+            <p class="timer">00:30 sec</p>
+            <p class="links text-white">
+              Don’t receive OTP?
+              <span class="try-again" (click)="resendOTP()">Try Again</span>
+              <i class="fa fa-refresh ps-2"></i>
+            </p>
+          </div>
+          <div class="text-center text-white pt-2" style="font-size: 14px;">
+            Trouble in login? <a href="#" class="admin-link">Admin</a> </div>
+        </div>
+      </div>
+    </div>
+    <div class="separator-line position-absolute"></div>
+  </div>
+</div>
