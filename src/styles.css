@@ -647,22 +647,22 @@ small {
   background-position: center;
   transition: background-size 0.5s ease-in-out, border 0.5s ease-in-out;
   background-repeat: no-repeat;
-  border: none; 
+  border: none;
 }
 .shaid:hover {
-  background-size: 150%; 
-  border-width: 2px;  
-  border-style: solid; 
-  border-color: #fff; 
+  background-size: 150%;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #fff;
 }
 .animi {
-  z-index: 10; 
-  top: 149px; 
-  transition: opacity 0.3s ease; 
-  opacity: 0; 
+  z-index: 10;
+  top: 149px;
+  transition: opacity 0.3s ease;
+  opacity: 0;
 }
 .celibrate-card:hover .animi {
-  opacity: 1; 
+  opacity: 1;
 }
 
 
@@ -1398,33 +1398,23 @@ li::marker {
 .overlay-content {
   color: #FFFFFF;
 }
-.best-profiles {
-  --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
-  display: flex;
-  flex-wrap: wrap;
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-left:0px;
-}
+
 .separator-line {
   flex-grow: 1;
   height: 10px;
   background: linear-gradient(
     to right,
-    #b46d13 0%, 
-    #f3ad3b 12%, 
-    #f7dd80 31%, 
-    #fbdb62 45%, 
-    #f3ad3b 55%, 
-    #cc8f36 68%, 
-    #f3ad3b 76%, 
-    #f4d175 83%, 
+    #b46d13 0%,
+    #f3ad3b 12%,
+    #f7dd80 31%,
+    #fbdb62 45%,
+    #f3ad3b 55%,
+    #cc8f36 68%,
+    #f3ad3b 76%,
+    #f4d175 83%,
     #b9721a 99%
   );
 }
-
-
 .carousel-indicators {
   position: absolute;
   right: 0;
