@@ -148,13 +148,14 @@
               <div class="col-md-9">
                 <div *ngIf="!isEditMode">
                   <div class="profile-card">
-                    <p>Full Name: <strong  class="ms-5 ps-5">{{ profileForm.get('fullName')?.value
+                    <p>Full Name: <strong  class="ms-4 ps-5 p-1">{{ profileForm.get('fullName')?.value
                         }}</strong></p>
-                    <p>Subscription Plan: <strong  class="ps-5">{{
+                    <p class="">Subscription Plan: <strong  class="ps-3">{{
                         profileForm.get('subscriptionPlan')?.value }}</strong></p>
-                    <p>Location: <strong  class="ms-5 ps-5">{{ profileForm.get('location')?.value
-                        }}</strong></p>
-                    <p>Contact Number: <strong  class="ms-5">{{
+                    <p>
+                      Location: <strong class="ms-5 ps-4 custom-left-margin">{{ profileForm.get('location')?.value }}</strong>
+
+                    <p>Contact Number: <strong  class="ms-4 ">{{
                         profileForm.get('contactNumber')?.value }}</strong></p>
                     <div class="bio-section d-flex">
                       <p>Bio: </p>
@@ -162,8 +163,12 @@
                         {{ profileForm.get('bio')?.value }}
                       </div>
                     </div>
-                    <p class="text-muted pt-2">Weekly Newsletter : <img src="assets/svg-icons/toogle buttons.svg" alt="">
-                      </p>
+                    <!-- <p class="text-muted pt-2">Weekly Newsletter : <img src="assets/svg-icons/toogle buttons.svg" alt="">
+                      </p> -->
+                      <label class="switch">
+                        <input type="checkbox" [(ngModel)]="isToggled">
+                        <span class="slider"></span>
+                      </label>
                   </div>
                 </div>
                 <form *ngIf="isEditMode" [formGroup]="profileForm" (ngSubmit)="onSubmit()">

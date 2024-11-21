@@ -25,6 +25,8 @@ export class NavbarComponent {
       ]
     });
   }
+
+  isToggled: Boolean = false;
   toggleEditMode() {
     this.isEditMode = !this.isEditMode;
   }
