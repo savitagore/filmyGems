@@ -995,6 +995,7 @@ small {
   padding: 10px 40px;
   cursor: pointer;
 }
+
 .btn-monthly-active {
   background-color: #f3ad3b;
   color: #000000;
@@ -1005,13 +1006,15 @@ small {
   color: #000000;
 }
 
-.btn-monthly:focus, .btn-yearly:focus {
+.btn-monthly:focus,
+.btn-yearly:focus {
   outline: none;
   background-color: #f3ad3b;
   color: #000000;
 }
 
-.btn-monthly:active, .btn-yearly:active {
+.btn-monthly:active,
+.btn-yearly:active {
   background-color: #f3ad3b;
   color: #000000;
 }
@@ -1305,37 +1308,29 @@ li::marker {
 /**************Offer**********************/
 
 .images-ofers {
-  position: relative;
-  bottom: 80px;
-  right: 136px;
+  right: 367px;
+  top: 46px;
 }
-
-.kalash {
-  position: relative;
-  left: 24px;
+.offer-girl{
+  left: 45px;
+  top: 88px;
 }
-
 .offer {
   color: #C92D01;
   font-size: 24px;
   font-weight: 600;
 }
-
 .hurry-offer {
   color: #3F3F3F;
-  font-size: 14px;
+ line-height: 0.2;
 }
-
 .offer-disconuts {
-  position: relative;
-  bottom: 171px;
-}
-
-.content-text {
-  top: 197px;
   position: absolute;
-  line-height: 1.2;
-  right: 349px;
+  top: 31px;
+  left: 56px;
+}
+.content-text {
+  top: 93px;
 }
 
 /* ********Talent-show   ********* */
@@ -1899,11 +1894,12 @@ li::marker {
     height: 100px;
     width: 68px;
   }
+
   /*login line*/
   .separator-line {
     top: 615px;
     display: block;
-}
+  }
 }
 
 @media (min-width:1200px) {
