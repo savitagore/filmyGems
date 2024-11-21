@@ -27,16 +27,16 @@
     </div>
     <div class="row pt-5">
       <div class="toggle-switch">
-        <button id="monthlyBtn" class="btn btn-monthly" [ngClass]="{ 'btn-monthly-active': isMonthly }"
+        <button id="monthlyBtn" class="btn btn-monthly" [ngClass]="{ 'btn-monthly-active':isMonthly }"
           (click)="toggleView('monthly')">
           Monthly
         </button>
-        <button id="yearlyBtn" class="btn btn-yearly" [ngClass]="{ 'btn-yearly-active': !isMonthly }"
+        <button id="yearlyBtn" class="btn btn-yearly" [ngClass]="{ 'btn-yearly-active':!isMonthly }"
           (click)="toggleView('yearly')">
           Yearly
         </button>
       </div>
-      <div class="row justify-content-center yearly" style="padding-top: 100px;" *ngIf="!isMonthly">
+      <div class="row justify-content-center yearly" style="padding-top: 100px;" *ngIf="isMonthly">
         <div class="col-12 col-sm-6 col-md-3 mb-4 filmy-card">
           <div class="dimond-img">
             <img src="assets/plans/dimonds/basic.png" alt="" class="img-fluid">
@@ -206,7 +206,7 @@
         </div>
       </div>
 
-      <div class="row justify-content-center monthiy" style="padding-top: 100px;" *ngIf="isMonthly">
+      <div class="row justify-content-center monthiy" style="padding-top: 100px;" *ngIf="!isMonthly">
          <div class="col-12 col-sm-6 col-md-3 mb-4 filmy-card">
           <div class="dimond-img">
             <img src="assets/plans/dimonds/basic.png" alt="" class="img-fluid">

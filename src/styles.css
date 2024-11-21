@@ -995,31 +995,25 @@ small {
   padding: 10px 40px;
   cursor: pointer;
 }
-
-/* .toggle-switch .btn-monthly {
-  background-color: #555670;
-  color: #96A2B5;
-} */
-
-/* .toggle-switch .btn-yearly {
-  background-color: #F3AD3B;
-  color: #000000;
-} */
-/* .btn-monthly-active {
+.btn-monthly-active {
   background-color: #f3ad3b;
   color: #000000;
-} */
+}
 
-/* Yearly button active style */
-/* .btn-yearly-active {
+.btn-yearly-active {
   background-color: #f3ad3b;
   color: #000000;
-} */
-.btn:not(:focus):not(.btn-monthly-active):not(.btn-yearly-active) {
+}
+
+.btn-monthly:focus, .btn-yearly:focus {
+  outline: none;
   background-color: #f3ad3b;
-  /* Light gray */
   color: #000000;
-  /* Dark gray */
+}
+
+.btn-monthly:active, .btn-yearly:active {
+  background-color: #f3ad3b;
+  color: #000000;
 }
 
 /************Create profile**************/
@@ -1901,7 +1895,7 @@ li::marker {
   }
 
   .signup-right-dimond {
-    top: 538px;
+    top: 475px;
     height: 100px;
     width: 68px;
   }
