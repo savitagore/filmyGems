@@ -1359,7 +1359,7 @@ li::marker {
 }
 .signup-dimond {
   position: relative;
-  top: 40px;
+  top: 56px;
   display: flex;
 }
 .sign-bg {
@@ -1847,7 +1847,9 @@ li::marker {
     right: 0%;
   }
   .signup-right-dimond {
-    top: 593px;
+    top: 538px;
+        height: 100px;
+        width: 68px;
   }
 }
 
@@ -2011,7 +2013,7 @@ li::marker {
     display: block;
   } */
   .signup-right-dimond {
-    top: 725px;
+    /* top: 725px; */
   }
   .overlay-content {
     top: 8%;
