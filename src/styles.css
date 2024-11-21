@@ -1361,7 +1361,7 @@ li::marker {
   position: relative;
   top: 56px;
   display: flex;
-  left: 12px;
+  /* left: 12px; */
 }
 .sign-bg {
   background-color: #000000;
