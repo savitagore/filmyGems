@@ -14,8 +14,6 @@ import { RouterLink, RouterLinkActive } from '@angular/router';
 export class NavbarComponent {
   isEditMode = false;
   profileForm: FormGroup;
-
-
   constructor(private fb: FormBuilder) {
     this.profileForm = this.fb.group({
       fullName: ['Ajay Kumar'],
@@ -27,7 +25,6 @@ export class NavbarComponent {
       ]
     });
   }
-
   toggleEditMode() {
     this.isEditMode = !this.isEditMode;
   }
