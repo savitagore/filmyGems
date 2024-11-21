@@ -1398,6 +1398,8 @@ li::marker {
 .login-signup {
   background-color: #C88A00;
   font-size: 18px;
+  position: relative;
+
 }
 
 .link-primary {
@@ -2102,7 +2104,7 @@ li::marker {
   }
 
   .signup-right-dimond {
-    top: 725px;
+    /* top: 725px; */
   }
 
   .overlay-content {
