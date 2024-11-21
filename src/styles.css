@@ -1382,7 +1382,7 @@ li::marker {
   position: relative;
   top: 56px;
   display: flex;
-  /* left: 12px; */
+  left: 12px;
 }
 
 .sign-bg {
@@ -1899,6 +1899,11 @@ li::marker {
     height: 100px;
     width: 68px;
   }
+  /*login line*/
+  .separator-line {
+    top: 615px;
+    display: block;
+}
 }
 
 @media (min-width:1200px) {
@@ -1963,10 +1968,10 @@ li::marker {
     font-weight: 500;
   }
 
-  .role {
+  /* .role {
     font-size: 14px;
     font-weight: 400;
-  }
+  } */
 
   .cross {
     right: 13px;
@@ -2092,10 +2097,10 @@ li::marker {
     display: flex;
   }
 
-  .separator-line {
+  /* .separator-line {
     top: 719px;
     display: block;
-  }
+  } */
 
   .signup-right-dimond {
     /* top: 725px; */
