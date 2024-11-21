@@ -1462,7 +1462,7 @@ li::marker {
 }
 
 .carousel-indicators .custom-dot {
-  width: 10px;
+  width: 7px;
   padding: 4px;
   border-radius: 100%;
 }

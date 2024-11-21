@@ -1,5 +1,4 @@
-
- <section class="footer-navbar pb-4" style="background-color: #272727;">
+<section class="footer-navbar pb-4" style="background-color: #272727;">
   <app-navbar></app-navbar>
 </section>
 
@@ -8,20 +7,32 @@
   <div class="container">
     <div class="row">
       <div class="col-2">
-        <div class="audits">
+        <!-- <div class="audits">
           <img src="assets/blogs/img-1.png" alt="" class="img-fluid audits-img">
-          <p class="text-white pt-2">A Useful Guide On How To Avoid Coding Audits...</p>
+          <p class="text-white pt-2" [pTooltip]="text"  tooltipPosition="right">
+            {{ truncatedText }}...
+          </p>
         </div>
         <div class="audits">
           <img src="assets/blogs/img-2.png" alt="" class="img-fluid audits-img">
-          <p class="text-white  pt-2">A Guide To The Documentation
-            Guidelines Required...</p>
+          <p class="text-white  pt-2" [pTooltip]="text"  tooltipPosition="right">
+            {{ truncateText(text, 10) }}...</p>
         </div>
         <div class="audits">
           <img src="assets/blogs/img-3.png" alt="" class="img-fluid audits-img">
-          <p class="text-white  pt-2">RCM Strategies That Can Help in Improving Revenue...
+          <p class="text-white  pt-2"[pTooltip]="text"  tooltipPosition="right">
+            {{ truncateText(text, 10) }}...</p>
+        </div> -->
+        <div *ngFor="let blog of blogs" class="audits">
+          <img [src]="blog.image" alt="Blog Image" class="img-fluid audits-img">
+          <p
+            class="text-white pt-2"
+            [pTooltip]="blog.text"
+            tooltipPosition="right">
+            {{ truncateText(blog.text, 10) }}...
           </p>
         </div>
+
       </div>
       <div class="col-1"> </div>
       <div class="col-9">
