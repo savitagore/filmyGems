@@ -261,13 +261,14 @@ li.nav-item a.nav-link.active {
 
 .bg-colors {
   background-color: #4a4a4a;
-  border :1px solid #6a6a6a;
+  border: 1px solid #6a6a6a;
 }
 
 .input-group {
   position: relative;
   width: 100%;
 }
+
 .btn-custom {
   border: 1px solid black;
   color: black;
@@ -629,6 +630,7 @@ small {
   padding: 0;
   line-height: 1;
 }
+
 .active-category {
   background-color: #986708;
   color: #fff !important;
@@ -642,25 +644,28 @@ small {
 }
 
 
-.shaid{
+.shaid {
   background-size: cover;
   background-position: center;
   transition: background-size 0.5s ease-in-out, border 0.5s ease-in-out;
   background-repeat: no-repeat;
   border: none;
 }
+
 .shaid:hover {
   background-size: 150%;
   border-width: 2px;
   border-style: solid;
   border-color: #fff;
 }
+
 .animi {
   z-index: 10;
   top: 149px;
   transition: opacity 0.3s ease;
   opacity: 0;
 }
+
 .celibrate-card:hover .animi {
   opacity: 1;
 }
@@ -694,19 +699,23 @@ small {
   text-align: left;
 
 }
+
 .scroll_Bar::-webkit-scrollbar {
   width: 8px;
 }
+
 .scroll_Bar::-webkit-scrollbar-thumb {
   background: #C69734 !important;
   width: 100px;
   border-radius: 15px;
 }
+
 .scroll_Bar::-webkit-scrollbar-track {
   background: #ccc;
   border-radius: 15px;
   width: 50px;
 }
+
 .sortFont {
   font-family: Roboto;
   font-size: 18px;
@@ -974,7 +983,9 @@ small {
   background-color: #555670;
   border-radius: 50px;
   display: inline-flex;
-  width: 280px;
+  width: 274px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .toggle-switch .btn {
@@ -985,16 +996,31 @@ small {
   cursor: pointer;
 }
 
-.toggle-switch .btn-monthly {
+/* .toggle-switch .btn-monthly {
   background-color: #555670;
   color: #96A2B5;
-}
+} */
 
-.toggle-switch .btn-yearly {
+/* .toggle-switch .btn-yearly {
   background-color: #F3AD3B;
   color: #000000;
-}
+} */
+/* .btn-monthly-active {
+  background-color: #f3ad3b;
+  color: #000000;
+} */
 
+/* Yearly button active style */
+/* .btn-yearly-active {
+  background-color: #f3ad3b;
+  color: #000000;
+} */
+.btn:not(:focus):not(.btn-monthly-active):not(.btn-yearly-active) {
+  background-color: #f3ad3b;
+  /* Light gray */
+  color: #000000;
+  /* Dark gray */
+}
 
 /************Create profile**************/
 .text-profile {
@@ -1357,22 +1383,27 @@ li::marker {
 .uncover {
   position: absolute;
 }
+
 .signup-dimond {
   position: relative;
   top: 56px;
   display: flex;
   left: 12px;
 }
+
 .sign-bg {
   background-color: #000000;
 }
+
 .login-signup {
   background-color: #C88A00;
   font-size: 18px;
 }
+
 .link-primary {
   text-decoration: none;
 }
+
 .password-toggle-icon {
   position: absolute;
   top: 50%;
@@ -1380,6 +1411,7 @@ li::marker {
   transform: translateY(-50%);
   cursor: pointer;
 }
+
 .password-toggle-icon i {
   font-size: 18px;
   line-height: 1;
@@ -1387,15 +1419,19 @@ li::marker {
   transition: color 0.3s ease-in-out;
   margin-bottom: 20px;
 }
+
 .password-toggle-icon i:hover {
   color: #000;
 }
+
 .fill-form {
   background-color: #0000;
 }
+
 .fill-form:focus {
   background-color: #0000;
 }
+
 .overlay-content {
   color: #FFFFFF;
 }
@@ -1403,19 +1439,18 @@ li::marker {
 .separator-line {
   flex-grow: 1;
   height: 10px;
-  background: linear-gradient(
-    to right,
-    #b46d13 0%,
-    #f3ad3b 12%,
-    #f7dd80 31%,
-    #fbdb62 45%,
-    #f3ad3b 55%,
-    #cc8f36 68%,
-    #f3ad3b 76%,
-    #f4d175 83%,
-    #b9721a 99%
-  );
+  background: linear-gradient(to right,
+      #b46d13 0%,
+      #f3ad3b 12%,
+      #f7dd80 31%,
+      #fbdb62 45%,
+      #f3ad3b 55%,
+      #cc8f36 68%,
+      #f3ad3b 76%,
+      #f4d175 83%,
+      #b9721a 99%);
 }
+
 .carousel-indicators {
   position: absolute;
   right: 0;
@@ -1429,14 +1464,17 @@ li::marker {
   margin-bottom: 120px;
   margin-left: 25%;
 }
+
 .carousel-indicators .custom-dot {
   width: 10px;
   padding: 4px;
   border-radius: 100%;
- }
-.carousel-indicators .active.custom-dot {
-  background-color:#FFCF25;
 }
+
+.carousel-indicators .active.custom-dot {
+  background-color: #FFCF25;
+}
+
 .login-signup .btn:active,
 .login-signup .btn:focus {
   border: none !important;
@@ -1449,9 +1487,11 @@ li::marker {
   outline: none !important;
   box-shadow: none !important;
 }
-.send-otp{
+
+.send-otp {
   border: 1px solid #FFFFFF;
 }
+
 /* kk */
 .carousel-inner .carousel-item:nth-child(3) .slider-container::after {
   content: '';
@@ -1460,14 +1500,16 @@ li::marker {
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.15), rgba(0, 0, 0,0.15));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15));
   z-index: 1;
 }
+
 .carousel-item:nth-child(3) .slider-container .leaf-content h2 {
   color: #FFFFFF !important;
   z-index: 2;
 }
-.all-celebrites{
+
+.all-celebrites {
   top: 10%;
   right: 20%;
 }
@@ -1476,6 +1518,7 @@ li::marker {
 .search-header-dropmenu .dropmenu :hover {
   background-color: #F9F2E3;
 }
+
 .search-header-dropmenu {
   color: #2F2F33;
 }
@@ -1764,48 +1807,60 @@ li::marker {
   .main-title {
     font-size: 50px;
   }
+
   .build-high p {
     font-size: 17px;
   }
+
   .pages-name {
     font-size: 18px;
     margin: 0px 9px;
   }
+
   .linear {
     top: 93px;
   }
+
   .search-box {
     position: relative;
     top: 28px;
   }
+
   .export {
     height: 110px;
     padding: 10px;
   }
+
   .icons-join {
     position: relative;
     top: 58px;
   }
+
   .join-ig img {
     bottom: 14px;
     left: 58px;
   }
+
   .join-btn {
     border-radius: 50px;
     font-size: 14px;
     width: 95px;
   }
+
   .dropdown-menu.scroll {
     width: 218px;
   }
+
   .cross {
     height: 20px;
     right: 11px;
     top: 25px;
   }
+
   .personal-exports {
     font-size: 25px;
   }
+
   .book-set {
     font-size: 14px;
     width: 150px;
@@ -1816,9 +1871,11 @@ li::marker {
   .subscribe {
     padding: 12px 38px;
   }
+
   .subscribe-now {
     padding: 12px 38px;
   }
+
   .dimond-img {
     display: flex;
   }
@@ -1827,20 +1884,24 @@ li::marker {
   .sign-img {
     right: 109px;
   }
+
   .signup-dimond {
     display: flex;
   }
+
   .separator-line {
     top: 684px;
     display: block;
   }
+
   .overlay-content {
     right: 0%;
   }
+
   .signup-right-dimond {
     top: 538px;
-        height: 100px;
-        width: 68px;
+    height: 100px;
+    width: 68px;
   }
 }
 
@@ -1850,68 +1911,85 @@ li::marker {
   .logo-img {
     width: 245px;
   }
+
   .pages-name {
     font-size: 18px;
     margin: 0px 20px;
   }
+
   .join-btn {
     border-radius: 50px;
     font-size: 18px;
     width: 130px;
   }
+
   .join-ig img {
     bottom: 19px;
     left: 89px;
   }
+
   .left-dimond {
     display: block;
   }
+
   .icons-join {
     position: relative;
     top: 52px;
   }
+
   .linear {
     height: 10px;
     background-color: #F3AD3B;
     position: relative;
     top: 89px;
   }
+
   .search-box {
     position: relative;
     top: 23px;
   }
+
   .build-high p {
     font-size: 18px;
   }
+
   .build-high .main-title {
     font-size: 50px;
     font-weight: bold;
   }
+
   .right-dimond {
     display: block;
   }
+
   .actor-name {
     font-size: 20px;
     font-weight: 500;
   }
+
   .role {
     font-size: 14px;
     font-weight: 400;
   }
+
   .cross {
     right: 13px;
     top: 31px;
     height: 24px;
   }
+
   .export {
     height: 120px;
   }
+
   .personal-exports {
     font-size: 32px;
   }
+
   .program {
     padding: 6px 10px;
   }
+
   .book-set {
     color: #ffffff;
     font-size: 18px;
@@ -1923,9 +2001,11 @@ li::marker {
   .fixed-size-heading {
     font-size: 40px;
   }
+
   .filmy {
     margin-top: 140px;
   }
+
   .join-text {
     font-size: 90px;
     font-weight: bold;
@@ -1935,6 +2015,7 @@ li::marker {
     padding: 0;
     line-height: 1;
   }
+
   .company-name {
     color: #986708;
     font-size: 20px;
@@ -1942,23 +2023,29 @@ li::marker {
     font-weight: bold;
     height: 30px;
   }
+
   .info {
     flex: 0 0 auto;
     width: 16.666667%;
   }
+
   .logo {
     position: relative;
     bottom: 56px;
   }
+
   .dropdown-menu {
     width: 186px;
   }
+
   .dropdown-menu.scroll {
     width: 190px;
   }
+
   .view-btn {
     text-align: center;
   }
+
   .celibrate-card {
     margin-bottom: 10px;
   }
@@ -1967,30 +2054,39 @@ li::marker {
   .unlock-title {
     padding-top: 163px;
   }
+
   .choose-title h2 {
     font-size: 40px;
   }
+
   .choose-title p {
     font-size: 18px;
   }
+
   .dimond-img {
     display: flex;
   }
+
   .filmy-card {
     margin: 0px;
   }
+
   .most {
     display: block;
   }
+
   .gold-card {
     bottom: 70px;
   }
+
   .star-badge {
     display: block;
   }
+
   .subscribe {
     padding: 15px 70px;
   }
+
   .subscribe-now {
     padding: 15px 70px;
   }
@@ -1999,17 +2095,21 @@ li::marker {
   .signup-dimond {
     display: flex;
   }
+
   .separator-line {
     top: 719px;
     display: block;
   }
+
   .signup-right-dimond {
     top: 725px;
   }
+
   .overlay-content {
     top: 8%;
     right: 20%;
   }
+
   .small-icon {
     right: 45px;
     top: 8px;
