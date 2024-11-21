@@ -27,7 +27,7 @@ export class ResetPasswordComponent {
       this.showPassword2 = !this.showPassword2;
     }
   }
-  OnLogin(){
+  continueLogin(){
     this.router.navigate(['/continue-login']);
   }
 }
