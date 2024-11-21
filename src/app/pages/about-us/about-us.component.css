@@ -129,7 +129,8 @@ text-align: left;
 
 @media (min-width:320px){
     .WWR-img-shadow{
-        box-shadow: none;
+        border-radius: 30px;
+    box-shadow: 10px 10px 70px 13px #5e7b93;
         height: 340px;
         margin-bottom: 35px;
     } 
