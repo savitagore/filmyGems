@@ -14,4 +14,9 @@ import { StartjourneyComponent } from '../../shared/startjourney/startjourney.co
 export class PlansComponent {
   backgroundImageUrl: string = 'assets/img/plans-bg.png';
   bgImage: string = 'assets/plans/music-imgs.png';
+  isMonthly :Boolean= true;
+  toggleView(view: string): void {
+    // Toggle based on the string value ('monthly' or 'yearly')
+    this.isMonthly = (view === 'monthly');
+  }
 }
