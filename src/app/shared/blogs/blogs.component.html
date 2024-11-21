@@ -8,24 +8,21 @@
       <div class="col-md-12">
         <div class="category-tags text-center">
           <i class="fas fa-chevron-left arrow-icon" (click)="previousCategory()"></i>
-          <span class="me-4 p-2 ps-3"
-            *ngFor="let category of visibleCategories"
-            [ngClass]="{
+          <span class="me-4 p-2 ps-3" *ngFor="let category of visibleCategories" [ngClass]="{
               'active-category': selectedCategory === category,
               'category': true,
               'director-category': category === 'Director' && selectedCategory !== 'Director',
 
-             }"
-            (click)="selectCategory(category)">
+             }" (click)="selectCategory(category)">
             {{ category }}
           </span>
           <i class="fas fa-chevron-right arrow-icon" (click)="nextCategory()"></i>
         </div>
       </div>
     </div>
-    <div class="row pt-5 ms-4">
-      <div class="col-md-4">
-        <h4 class="popular-gems-text text-dark">Popular Gems Categories</h4>
+    <div class="row pt-5 ms-5">
+      <div class="col-md-4" style="flex: 0 0 auto; width: 28.333333%;">
+        <h4 class="popular-gems-text text-dark ms-5 mb-2">Popular Gems Categories</h4>
       </div>
       <div class="col-md-7">
         <div class="category-tags-popular">
@@ -65,7 +62,8 @@
     <div class="row pt-4 aos-init aos-animate" data-aos="fade-up">
       <h5 class="text-h2 pb-2">To Gems Showcase</h5>
       <div class="col-12 col-md-5">
-        <div class="celibrate-card shaid" style="background-image: url('assets/topgems_img/sahid_img.png');" data-bs-toggle="modal" data-bs-target="#artistModal">
+        <div class="celibrate-card shaid" style="background-image: url('assets/topgems_img/sahid_img.png');"
+          data-bs-toggle="modal" data-bs-target="#artistModal">
           <div class="choices">
             <div class="choices-icons">
               <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
@@ -78,11 +76,11 @@
           <div class="overlay-star">
             <div class="star">
               <img src="assets/svg-icons/stars.svg" alt="" class="img-fluid">
-            </div> 
+            </div>
             <span class="actor-name">Shahid Kapoor</span>
             <p class="role">Bollywood Actor</p>
           </div>
-       
+
           <div class="animi d-flex justify-content-end position-relative text-white">
             <div class="number-eye pe-3">
               <span>1298</span>
@@ -93,7 +91,7 @@
               <i class="fa-solid fa-photo-film ps-2"></i>
             </div>
           </div>
-       
+
         </div>
       </div>
       <div class="col-md-3">
@@ -559,11 +557,12 @@
             <div id="carouselExample" class="carousel slide caro-css" data-bs-ride="carousel">
 
               <div class="carousel-indicators">
-                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"aria-current="true"></button>
+                <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"
+                  aria-current="true"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-current="false"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-current="false"></button>
                 <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-current="false"></button>
-               </div>
+              </div>
 
 
               <div class="carousel-inner">
@@ -652,8 +651,8 @@
               </div>
               <div class="py-3">
                 <div class="dropdown">
-                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                    aria-expanded="false" style="background: #67ABC9;">
+                  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
+                    style="background: #67ABC9;">
                     Cost for per project
                   </button>
                   <ul class="dropdown-menu">
@@ -674,7 +673,8 @@
         </div>
       </div>
     </div>
-  </div>
+      
+  </div>
 </div>
 
 <!-- Modal2 On Details Button -->
@@ -700,7 +700,7 @@
 
         <p>Gem’s Contact primary number: <strong>+91 9130831462</strong></p>
         <p>Gem’s Contact secondary number: <strong>+91 7387775499</strong></p>
-        <p>Gem’s Email ID:  <strong> reshmika.m&#64;gmail.com</strong></p>
+        <p>Gem’s Email ID: <strong> reshmika.m&#64;gmail.com</strong></p>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn border-dark rounded-pill px-3" data-bs-dismiss="modal">Close</button>
@@ -708,4 +708,3 @@
     </div>
   </div>
 </div>
-
