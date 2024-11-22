@@ -1234,11 +1234,11 @@ textarea::placeholder {
   transform: rotate(180deg);
 }
 
-.accordion-button:not(.collapsed)::after {
+/* .accordion-button:not(.collapsed)::after {
   background-image: var(--bs-accordion-btn-active-icon);
   color: #FFC936 !important;
   transform: var(--bs-accordion-btn-icon-transform);
-}
+} */
 
 .get-started[aria-expanded="true"] {
   color: #FFC936;
