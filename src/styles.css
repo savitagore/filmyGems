@@ -1307,30 +1307,25 @@ li::marker {
 
 /**************Offer**********************/
 
-.images-ofers {
-  right: 367px;
-  top: 46px;
+.modal-dialog-offer {
+  max-width: 900px;
+  width: 100%;
 }
-.offer-girl{
-  left: 45px;
-  top: 88px;
-}
-.offer {
-  color: #C92D01;
-  font-size: 24px;
-  font-weight: 600;
-}
-.hurry-offer {
-  color: #3F3F3F;
- line-height: 0.2;
-}
-.offer-disconuts {
+.offer-close {
   position: absolute;
-  top: 31px;
-  left: 56px;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
 }
-.content-text {
-  top: 93px;
+.discount-circle {
+  bottom: 67px;
+}
+.enjoy-content {
+  bottom: 68px;
+}
+.offer-girl {
+  padding-top: 92px;
+  left: 72px;
 }
 
 /* ********Talent-show   ********* */
