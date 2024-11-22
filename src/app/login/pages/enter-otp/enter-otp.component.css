@@ -3,22 +3,14 @@
   color: #0057FF;
   font-size: 20px;
 }
-
-
 .try-again {
   color:  #0057FF;
   cursor: pointer;
 }
-
-
-
 .admin-link {
   color: #0057FF;
   text-decoration: none;
 }
-
-
-
 :host ::ng-deep p-inputOtp .p-inputtext {
   background-color: #000000 !important;
   color: #ffffff !important;
@@ -27,7 +19,6 @@
   font-size: 20px;
   width: 45px;
 }
-
 :host ::ng-deep .custom-otp .p-inputtext:focus {
   border: 2px solid #0066FF !important;
 outline: none !important;

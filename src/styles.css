@@ -235,6 +235,12 @@ li.nav-item a.nav-link.active {
 .filmy-custom {
   color: #595959;
 }
+.custom-text:focus,
+.custom-text:active {
+  background-color: #4a4a4a;
+
+  outline: none;
+}
 
 .custom-text {
   padding-right: 40px;
@@ -263,6 +269,10 @@ li.nav-item a.nav-link.active {
   background-color: #4a4a4a;
   border: 1px solid #6a6a6a;
 }
+/* .bg-colors:focus {
+  background-color: #4a4a4a;
+  outline: none;
+} */
 
 .input-group {
   position: relative;
