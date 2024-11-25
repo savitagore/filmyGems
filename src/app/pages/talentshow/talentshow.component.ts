@@ -12,12 +12,11 @@ import { TooltipModule } from 'primeng/tooltip';
   styleUrl: './talentshow.component.css'
 })
 export class TalentshowComponent {
-  // fullText: string = "A Useful Guide On How To Avoid Coding Audits...";
-  // truncatedText: string = this.fullText.slice(0, 20);
+
   blogs = [
     {
       image: 'assets/blogs/img-1.png',
-      text: 'A Useful Guide On How To Avoid Coding Audits...'
+      text: 'A Useful Guide On How To Avoid Coding Audits'
     },
     {
       image: 'assets/blogs/img-2.png',
