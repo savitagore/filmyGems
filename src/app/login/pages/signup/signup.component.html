@@ -41,55 +41,42 @@
                 <span *ngIf="email?.errors?.['pattern']">Please enter a valid email.</span>
               </span>
             </div>
-            <!-- <div class="mb-2 position-relative">
-              <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white fill-form"
-                placeholder="Enter password" required />
-              <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)">
-                <i [ngClass]="showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'"></i>
-              </span>
-            </div>
             <div class="mb-2 position-relative">
-              <input [type]="showPassword2 ? 'text' : 'password'" class="form-control text-white fill-form"
-                placeholder="Confirm password" required />
-              <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(2)">
-                <i [ngClass]="showPassword2 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'"></i>
-              </span>
-            </div> -->
-
-              <div class="mb-2 position-relative">
               <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white fill-form"
                 formControlName="password" placeholder="Enter password" />
-              <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)">
+              <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)"
+                [ngStyle]="{
+                'margin-bottom': signupForm.get('password')?.errors?.['pattern'] ? '21px' : '0',
+                'padding-bottom': signupForm.get('password')?.errors?.['pattern'] ? '17px' : '0'
+              }">
                 <i [ngClass]="
-                    showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
-                  "></i>
+                  showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
+                "></i>
               </span>
               <span *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched"
                 class="text-danger">
-                <span *ngIf="signupForm.get('password')?.errors?.['pattern']">
-                 At least one letter, one number, and one special character.
+                <span class="text-center" *ngIf="signupForm.get('password')?.errors?.['pattern']"
+                  style="font-size: 11px;">
+                  At least one letter, one number, and one special character.
                 </span>
               </span>
             </div>
-
-
             <div class="mb-2 position-relative">
               <input [type]="showPassword2 ? 'text' : 'password'" class="form-control text-white fill-form"
                 formControlName="confirmPassword" placeholder="Confirm password" />
               <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(2)">
                 <i [ngClass]="
-                    showPassword2 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
-                  "></i>
+                  showPassword2 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
+                " [ngStyle]="{
+                  'padding-bottom': signupForm.errors?.['passwordsMismatch'] && signupForm.get('confirmPassword')?.touched ? '21px' : '0'
+                }"></i>
               </span>
-              <span *ngIf="signupForm.errors?.['passwordsMismatch'] && signupForm.get('confirmPassword')?.touched"
+              <span class="text-center"
+                *ngIf="signupForm.errors?.['passwordsMismatch'] && signupForm.get('confirmPassword')?.touched"
                 class="text-danger">
                 <span>Passwords do not match.</span>
               </span>
             </div>
-
-
-
-
             <div class="position-relative">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="termsCheck" required>
