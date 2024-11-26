@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
+
 import {
   FormBuilder,
   FormGroup,
@@ -10,6 +11,7 @@ import {
 import { Router, RouterLink } from '@angular/router';
 import { LoginComponent } from '../login/login.component';
 import { LoginCarasoualComponent } from '../../../Reuseable/login-carasoual/login-carasoual.component';
+import { Tooltip } from 'primeng/tooltip';
 
 @Component({
   selector: 'app-signup',
@@ -73,6 +75,11 @@ export class SignupComponent {
       this.showPassword2 = !this.showPassword2;
     }
   }
+
+
+
+
+
   onLogin(): void {
     {
       this.router.navigate(['/login']);
