@@ -10,7 +10,6 @@ import {
 import { Router, RouterLink } from '@angular/router';
 import { LoginComponent } from '../login/login.component';
 import { LoginCarasoualComponent } from '../../../Reuseable/login-carasoual/login-carasoual.component';
-import { PasswordModule } from 'primeng/password';
 
 @Component({
   selector: 'app-signup',
@@ -21,7 +20,6 @@ import { PasswordModule } from 'primeng/password';
     RouterLink,
     LoginCarasoualComponent,
     ReactiveFormsModule,
-    PasswordModule,
   ],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.css',
@@ -38,9 +36,7 @@ export class SignupComponent {
         fullName: ['', [Validators.required, Validators.minLength(5)]],
         mobile: [  '', [Validators.required, Validators.pattern('^[0-9]{10}$')], Validators.maxLength(10),],
         email: [ '', [  Validators.required,  Validators.pattern( '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$' ),],],
-        // password: ['', [Validators.required, Validators.minLength(6)]],
-        password: [ '',[ Validators.required, Validators.minLength(8), Validators.pattern( '^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$' ), ],
-        ],
+        password: [ '',[ Validators.required, Validators.minLength(8), Validators.pattern( '^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$' ), ], ],
         confirmPassword: ['', Validators.required],
         termsCheck: [false, Validators.requiredTrue],
       },

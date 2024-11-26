@@ -95,15 +95,6 @@ li.nav-item a.nav-link.active {
   flex: 1;
 }
 
-/* .searching-bar .dropdown {
-  margin-left: 10px;
-}
-
-.search-box {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 .custom-icon {
   font-size: 20px;
 }
@@ -142,13 +133,6 @@ li.nav-item a.nav-link.active {
   position: relative;
   top: 80px;
 }
-
-/* .gems-category {
-  border-left: 1px solid #ddd;
-  border-radius: 0px 50px 50px 0px;
-  font-size: 18px;
-  border: none;
-} */
 
 .category-tags {
   padding-top: 100px;
@@ -269,11 +253,6 @@ li.nav-item a.nav-link.active {
   background-color: #4a4a4a;
   border: 1px solid #6a6a6a;
 }
-/* .bg-colors:focus {
-  background-color: #4a4a4a;
-  outline: none;
-} */
-
 .input-group {
   position: relative;
   width: 100%;
@@ -319,8 +298,6 @@ li.nav-item a.nav-link.active {
   max-width: 100%;
   transition: border 0.3s ease;
   border: 2px solid #D19631;
-  /* position: relative;
-  top: 24px; */
 }
 
 .search-box input {
@@ -448,10 +425,6 @@ li.nav-item a.nav-link.active {
   width: 8px;
 }
 
-/* .dropdown-menu.scroll::-webkit-scrollbar-thumb {
-  background: #986708;
-  border-radius: 10px;
-} */
 .dropdown-menu.scroll::-webkit-scrollbar-track {
   background: #ccc
 }
@@ -1445,8 +1418,8 @@ li::marker {
 }
 
 .carousel-indicators .custom-dot {
-  width: 7px;
-  padding: 4px;
+  width: 5px;
+  padding: 5px;
   border-radius: 100%;
 }
 
