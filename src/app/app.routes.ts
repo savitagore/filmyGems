@@ -19,7 +19,7 @@ import { ForgottPasswordComponent } from './login/pages/forgott-password/forgott
 import { ResetPasswordComponent } from './login/pages/reset-password/reset-password.component';
 
 export const routes: Routes = [
-  { path: ' ', component: HeaderComponent },
+  { path: '', component: HeaderComponent },
   {
     path: 'plans',
     component: PlansComponent,
