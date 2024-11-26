@@ -16,7 +16,7 @@ import { SearchHeaderComponent } from '../search-header/search-header.component'
   styleUrl: './header.component.css'
 })
 export class HeaderComponent implements OnInit  {
-  backgroundImageUrl: string = 'assets/landing_Img/landing-bg.png';
+  backgroundImageUrl: string = 'assets/landing_Img/landing-img-bg.png';
  
   ngOnInit() {
     Aos.init({
