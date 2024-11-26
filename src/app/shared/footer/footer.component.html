@@ -19,24 +19,31 @@
             <div class="col-md-2 info col-4">
               <h5 class="text-uppercase company-name">Company</h5>
               <ul class="list-unstyled ps-0">
-                <li><a routerLink="/about" routerLinkActive="active-link" class="custom-colors text-decoration-none">About us</a></li>
+                <li><a routerLink="/about" routerLinkActive="active-link"
+                    class="custom-colors text-decoration-none">About us</a></li>
                 <!-- <li><a href="#" class="custom-colors text-decoration-none" data-bs-toggle="modal"
                     data-bs-target="#blogModal">Blogs</a></li> -->
-                    <li><a routerLink="/talent-show" routerLinkActive="active-link" class="custom-colors text-decoration-none">Blogs</a></li>
+                <li><a routerLink="/talent-show" routerLinkActive="active-link"
+                    class="custom-colors text-decoration-none">Blogs</a></li>
                 <li><a href="#" class="custom-colors text-decoration-none">Why FilmyGems?</a></li>
-                <li><a class="custom-colors text-decoration-none" routerLinkActive="active-link" routerLink="/policy">Privacy Policy</a></li>
+                <li><a class="custom-colors text-decoration-none" routerLinkActive="active-link"
+                    routerLink="/policy">Privacy Policy</a></li>
                 <li><a class="custom-colors text-decoration-none">Terms of Use</a></li>
               </ul>
             </div><!-- Specialties Column -->
             <div class="col-md-3 col-4 mb-4">
               <h5 class="text-uppercase company-name">Specialties</h5>
               <ul class="list-unstyled">
-                <li><a href="#" class="custom-colors text-decoration-none" routerLinkActive="active-link" >All Gems Category</a></li>
-                <li><a  class="custom-colors text-decoration-none" data-bs-toggle="modal"
+                <li><a href="#" class="custom-colors text-decoration-none" routerLinkActive="active-link">All Gems
+                    Category</a></li>
+                <li><a class="custom-colors text-decoration-none" data-bs-toggle="modal"
                     data-bs-target="#offerModal">Special Offer</a></li>
-                <li><a href="#" class="custom-colors text-decoration-none" routerLink="/plans" routerLinkActive="active-link">Best Plans</a></li>
-                <li><a href="#" class="custom-colors text-decoration-none" routerLinkActive="active-link" >International Gems</a></li>
-                <li><a href="#" class="custom-colors text-decoration-none" routerLinkActive="active-link">Events</a></li>
+                <li><a href="#" class="custom-colors text-decoration-none" routerLink="/plans"
+                    routerLinkActive="active-link">Best Plans</a></li>
+                <li><a href="#" class="custom-colors text-decoration-none" routerLinkActive="active-link">International
+                    Gems</a></li>
+                <li><a href="#" class="custom-colors text-decoration-none" routerLinkActive="active-link">Events</a>
+                </li>
               </ul>
             </div>
             <!-- Careers Column -->
@@ -53,7 +60,8 @@
               <h5 class="text-uppercase company-name">Contact</h5>
               <ul class="list-unstyled">
                 <li><a href="tel:+911688555666" class="custom-colors text-decoration-none">+91 16885 55666</a></li>
-                <li><a href="mailto:info@filmygems.com" class="custom-colors text-decoration-none">info&#64;filmygems.com</a>
+                <li><a href="mailto:info@filmygems.com"
+                    class="custom-colors text-decoration-none">info&#64;filmygems.com</a>
                 </li>
                 <li><a href="https://www.filmygems.com" class="custom-colors text-decoration-none">www.filmygems.com</a>
                 </li>
@@ -112,14 +120,14 @@
 </section>
 
 <!---Model-->
-  <div class="modal fade roboto-font " id="blogModal" tabindex="-1" aria-labelledby="blogModalLabel" aria-hidden="true">
+<div class="modal fade roboto-font " id="blogModal" tabindex="-1" aria-labelledby="blogModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-top custom-modal-background">
     <div class="modal-content ">
       <div class="modal-header d-flex justify-content-centre aligns-items-centre">
         <div class="logo-audti pt-4" style="padding-left: 126px;">
           <img src="assets/auditions/audi-logo.png" alt="" class="img-fluid">
         </div>
-        <div  style="padding-bottom: 60px;">
+        <div style="padding-bottom: 60px;">
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
       </div>
@@ -147,44 +155,37 @@
 
 
 <!-------------Offer-------->
- <div id="offerModal" class="modal fade offer-modal" tabindex="-1" aria-labelledby="offerModalLabel" aria-hidden="true">
+<!-- <div id="offerModal" class="modal fade offer-modal" tabindex="-1" aria-labelledby="offerModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content modal-content-offer">
       <div class="row">
         <div class="col-4" style="background-color: #FFC936;">
-          <img src="assets/offer/offer-girls.png" class="offer-girl-img img-fluid" alt="Offer Girl">
+          <div class="offer-girl position-relative">
+            <img src="assets/offer/offer-girls.png" class="offer-girl-img img-fluid" alt="Offer Girl">
+          </div>
         </div>
         <div class="col-5" style="background-color: #FFFFFF;">
-
-          <div>
+          <div class="modal-header">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
-
-
-
-
-          <div class="offer-images-wrapper" style="    position: relative; bottom: 35px;">
-            <div class="flags-images  float-end">
+          <div class="offer-images-wrapper">
+            <div class="flags-images" style="position: relative; bottom: 29px; left: 25px;">
               <img src="assets/offer/offers.svg" class="offer-discount-img img-fluid" alt="Offer Discount">
             </div>
-            <div class="images-ofers float-end">
+            <div class="images-ofers position-absolute">
               <img src="assets/offer/images.png" class="offer-images img-fluid" alt="Offer Image">
               <div class="offer-disconuts text-center">
-                <h2 class="text-white" style="line-height: 0.6;">15%</h2>
-                <h3 class="text-white fw-bold" style="font-size: 16px;">Discount</h3>
+                <h1 class="text-white" style="line-height: 0.6;">15%</h1>
+                <h2 class="text-white fw-bold" style="font-size: 16px;">Discount</h2>
+                <img src="assets/offer/kalash.png" class="offer-kalash img-fluid" alt="Kalash">
               </div>
             </div>
-            <div class="kalash float-end">
-              <img src="assets/offer/kalash.png" class="offer-kalash img-fluid" alt="Kalash">
+            <div class="content-text text-center position-relative">
+              <h3 class="enjoy-festive ps-4" style="color: #C92D01;">Enjoy Festive Discount On
+                Your First Subscription Plan</h3>
+              <p class="hurry-offer">Hurry up, offer is valid till 28th May 2024</p>
             </div>
-          </div>
-          <div class="content-text pt-4 text-center">
-            <p class="offer text-center " style="    margin-bottom: 5px;">Enjoy Festive Discount On <br> Your First
-              Subscription Plan</p>
-            <div class="hurry-offers">
-              <p class="hurry-offer text-center">Hurry up, offer is valid till 28th May 2024</p>
-            </div>
-            <div class="subscribe-btn text-center pt-3">
+            <div class="subscribe-btn text-center pb-4" style="padding-top: 148px;">
               <button class="subscribe-btn btn-all rounded-pill">Subscribe Now</button>
             </div>
           </div>
@@ -192,49 +193,38 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 
-
-<div id="offerModal" class="modal fade offer-modal" tabindex="-1" aria-labelledby="offerModalLabel" aria-hidden="true">
-  <div class="modal-dialog modal-dialog-centered">
+<div id="offerModal" class="modal fade" tabindex="-1" aria-labelledby="offerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-lg modal-dialog-offer">
     <div class="modal-content modal-content-offer">
-      <div class="row">
-        <div class="col-4" style="background-color: #FFC936;">
-          <img src="assets/offer/offer-girls.png" class="offer-girl-img img-fluid" alt="Offer Girl">
+      <div class="row g-0">
+        <div class="col-lg-5 col-md-12 " style="background-color: #FFC936;">
+          <div class="offer-girl position-relative">
+            <img src="assets/offer/offer-girls.png" class="img-fluid" alt="Offer Girl">
+          </div>
         </div>
-        <div class="col-5" style="background-color: #FFFFFF;">
-          <!-- Close button -->
-            <button type="button" class="btn-close float-end" data-bs-dismiss="modal" aria-label="Close" ></button>
-
-            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-
-           <div class="offer-images-wrapper" style="position: relative; bottom: 35px;">
-            <div class="flags-images float-end">
-              <img src="assets/offer/offers.svg" class="offer-discount-img img-fluid" alt="Offer Discount">
-            </div>
-            <div class="images-ofers float-end">
-              <img src="assets/offer/images.png" class="offer-images img-fluid" alt="Offer Image">
-              <div class="offer-discounts text-center">
-                <h2 class="text-white" style="line-height: 0.6;">15%</h2>
-                <h3 class="text-white fw-bold" style="font-size: 16px;">Discount</h3>
-              </div>
-            </div>
-            <div class="kalash float-end">
-              <img src="assets/offer/kalash.png" class="offer-kalash img-fluid" alt="Kalash">
+        <div class="col-lg-7 col-md-12" style="background-color: #FFFFFF;">
+          <button type="button" class="btn-close float-end offer-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="d-flex justify-content-end">
+            <img src="assets/offer/offers.svg" class="img-fluid mb-3" alt="Offer Flag">
+          </div>
+          <div class="text-center position-relative discount-circle">
+            <img src="assets/offer/images.png" class="img-fluid mb-3" alt="Offer Circle">
+            <div class="position-absolute top-50 start-50 translate-middle">
+              <h1 class="text-white m-0">15%</h1>
+              <p class="text-white fw-bold m-0" style="font-size: 16px;">Discount</p>
+              <img src="assets/offer/kalash.png" class="img-fluid mt-2" alt="Kalash">
             </div>
           </div>
-
-          <div class="content-text pt-4 text-center">
-            <p class="offer text-center" style="margin-bottom: 5px;">
-              Enjoy Festive Discount On <br> Your First Subscription Plan
-            </p>
-            <div class="hurry-offers">
-              <p class="hurry-offer text-center">Hurry up, offer is valid till 28th May 2024</p>
-            </div>
-            <div class="subscribe-btn text-center pt-3">
+          <div class="enjoy-content text-center position-relative">
+            <h3 class="fw-bold" style="color: #C92D01;">Enjoy Festive Discount On <br> Your First Subscription Plan</h3>
+            <p class="text-muted">Hurry up, offer is valid till 28th May 2024</p>
+            <div class="pt-2">
               <button class="subscribe-btn btn-all rounded-pill">Subscribe Now</button>
             </div>
+            <!-- <button class="subscribe-btn btn-all rounded-pill">Subscribe Now</button> -->
           </div>
         </div>
       </div>
