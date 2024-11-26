@@ -17,23 +17,7 @@
             <h4 style="line-height: 0.3;">Sign Up</h4>
             <p>Join with us and get the best profiles!</p>
           </div>
-          <form [formGroup]="signupForm">
-            <div class="mb-2">
-              <input type="text" class="form-control text-white fill-form" placeholder="Full Name"
-                formControlName="fullName" />
-              <span *ngIf="fullName?.invalid && (fullName?.dirty || fullName?.touched)" class="text-danger">
-                <span *ngIf="fullName?.errors?.['required']">Full Name is required.</span>
-                <span *ngIf="fullName?.errors?.['minlength']">Full Name at least 5 characters long.</span>
-              </span>
-            </div>
-          
-          <div class=" text-center login-signup rounded-2 mb-lg-2 mb-md-2 mb-2 my-lg-2 my-md-2 my-sm-1">
-            <button class="btn text-white" (click)="onLogin()">Login</button>
-          </div>
-          <div class="text-center text-white pt-1" style="font-size: 14px;">
-            If you have already an account? <span style="color: #0057FF;" routerLink="/login">Login</span>
-          </div>
-        </form>
+         
     </div>
     <div class="separator-line" style="border: 5px solid orange;position: absolute;top: 99vh;"></div>
   </div>
