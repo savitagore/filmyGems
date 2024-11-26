@@ -8,7 +8,7 @@
         <img src="assets/landing_Img/right-top-dimond.png" alt="" class="img-fluid">
       </div>
       <div class="text-center">
-        <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/" alt="" class="img-fluid">
+        <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/" class="img-fluid">
       </div>
       <div class="row justify-content-center">
         <div class="col-lg-7 col-md-10 col-sm-12">
@@ -24,6 +24,8 @@
                 <span *ngIf="fullName?.errors?.['required']">Full Name is required.</span>
                 <span *ngIf="fullName?.errors?.['minlength']">Full Name at least 5 characters long.</span>
               </span>
+
+
             </div>
             <div class="mb-2">
               <input type="text" class="form-control text-white fill-form" placeholder="Mobile Number"
