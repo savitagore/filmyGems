@@ -16,44 +16,83 @@
             <h4 style="line-height: 0.3;">Sign Up</h4>
             <p>Join with us and get the best profiles!</p>
           </div>
-          <div class="mb-2">
-            <input type="text" class="form-control text-white fill-form" placeholder="full name" required>
-          </div>
-          <div class="mb-2">
-            <input type="text" class="form-control text-white fill-form" placeholder="mobile number" required>
-          </div>
-          <div class="mb-2 ">
-            <input type="email" class="form-control text-white fill-form" placeholder="enter your email" required>
-          </div>
-          <div class="mb-2 position-relative">
-            <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white fill-form"
-              placeholder="Enter password" required />
-            <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)">
-              <i [ngClass]="showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'"></i>
-            </span>
-          </div>
-          <div class="mb-2 position-relative">
-            <input [type]="showPassword2 ? 'text' : 'password'" class="form-control text-white fill-form"
-              placeholder="Confirm password" required />
-            <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(2)">
-              <i [ngClass]="showPassword2 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'"></i>
-            </span>
-          </div>
-          <div class="position-relative">
-            <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="termsCheck" required>
-              <label class="form-check-label text-white" for="termsCheck">
-                By signing up, you agree to our <a href="#" class="link-primary">conditions</a> & <a href="#"
-                  class="link-primary">privacy policy</a>
-              </label>
+          <form [formGroup]="signupForm">
+            <div class="mb-2">
+              <input type="text" class="form-control text-white fill-form" placeholder="Full Name"
+                formControlName="fullName" />
+              <span *ngIf="fullName?.invalid && (fullName?.dirty || fullName?.touched)" class="text-danger">
+                <span *ngIf="fullName?.errors?.['required']">Full Name is required.</span>
+                <span *ngIf="fullName?.errors?.['minlength']">Full Name at least 5 characters long.</span>
+              </span>
             </div>
-          </div>
-          <div class=" text-center login-signup rounded-1">
-            <button class="btn text-white" (click)="onLogin()">Login</button>
-          </div>
-          <div class="text-center text-white" style="font-size: 14px;">
-            If you have already an account? <span style="color: #0057FF;" routerLink="/login">Login</span>
-          </div>
+            <div class="mb-2">
+              <input type="text" class="form-control text-white fill-form" placeholder="Mobile Number"
+                formControlName="mobile" (input)="onMobileInput($event)" />
+              <span *ngIf="mobile?.invalid && (mobile?.dirty || mobile?.touched)" class="text-danger">
+                <span *ngIf="mobile?.errors?.['required']">Mobile number is required.</span>
+                <span *ngIf="mobile?.errors?.['pattern']">Mobile number must10 digits.</span>
+              </span>
+            </div>
+            <div class="mb-2">
+              <input type="email" class="form-control text-white fill-form" placeholder="Enter your email"
+                formControlName="email" />
+              <span *ngIf="email?.invalid && (email?.dirty || email?.touched)" class="text-danger">
+                <span *ngIf="email?.errors?.['required']">Email is required.</span>
+                <span *ngIf="email?.errors?.['pattern']">Please enter a valid email.</span>
+              </span>
+            </div>
+            <div class="mb-2 position-relative">
+              <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white fill-form"
+                formControlName="password" placeholder="Enter password" />
+              <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)"
+                [ngStyle]="{
+                'margin-bottom': signupForm.get('password')?.errors?.['pattern'] ? '21px' : '0',
+                'padding-bottom': signupForm.get('password')?.errors?.['pattern'] ? '17px' : '0'
+              }">
+                <i [ngClass]="
+                  showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
+                "></i>
+              </span>
+              <span *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched"
+                class="text-danger">
+                <span class="text-center" *ngIf="signupForm.get('password')?.errors?.['pattern']"
+                  style="font-size: 11px;">
+                  At least one letter, one number, and one special character.
+                </span>
+              </span>
+            </div>
+            <div class="mb-2 position-relative">
+              <input [type]="showPassword2 ? 'text' : 'password'" class="form-control text-white fill-form"
+                formControlName="confirmPassword" placeholder="Confirm password" />
+              <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(2)">
+                <i [ngClass]="
+                  showPassword2 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
+                " [ngStyle]="{
+                  'padding-bottom': signupForm.errors?.['passwordsMismatch'] && signupForm.get('confirmPassword')?.touched ? '21px' : '0'
+                }"></i>
+              </span>
+              <span class="text-center"
+                *ngIf="signupForm.errors?.['passwordsMismatch'] && signupForm.get('confirmPassword')?.touched"
+                class="text-danger">
+                <span>Passwords do not match.</span>
+              </span>
+            </div>
+            <div class="position-relative">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                <label class="form-check-label text-white" for="termsCheck">
+                  By signing up, you agree to our <a href="#" class="link-primary">conditions</a> & <a href="#"
+                    class="link-primary">privacy policy</a>
+                </label>
+              </div>
+            </div>
+            <div class=" text-center login-signup rounded-1">
+              <button class="btn text-white" (click)="onLogin()">Login</button>
+            </div>
+            <div class="text-center text-white" style="font-size: 14px;">
+              If you have already an account? <span style="color: #0057FF;" routerLink="/login">Login</span>
+            </div>
+          </form>
         </div>
       </div>
     </div>

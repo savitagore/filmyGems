@@ -1224,23 +1224,6 @@ textarea::placeholder {
   border: none;
 }
 
-/* .accordion:after {
-  content: '\002B';
-  color: red;
-} */
-
-/* .get-started::after {
-  content: "\f107";
-
-  color: #FFC936 !important;
-  margin-left: auto;
-} */
-/* .get-started::after {
-
-  content: "\f078";
-  color: pink !important;
-  margin-left: auto;
-} */
 .get-started[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
@@ -1903,7 +1886,7 @@ li::marker {
 
   /*login line*/
   .separator-line {
-    top: 615px;
+    top: 663px;
     display: block;
   }
 }
