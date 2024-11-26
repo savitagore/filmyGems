@@ -1337,7 +1337,7 @@ li::marker {
 
 .signup-dimond {
   position: relative;
-  top: 56px;
+  /* top: 56px; */
   display: flex;
   left: 12px;
 }
@@ -1859,7 +1859,7 @@ li::marker {
 
   /*login line*/
   .separator-line {
-    top: 610px;
+    top: 559px;
     display: block;
   }
 }
