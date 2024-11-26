@@ -1379,9 +1379,9 @@ li::marker {
 }
 
 .signup-dimond {
-  position: relative;
-  top: 56px;
-  display: flex;
+  /* position: relative; */
+  /* top: 30px; */
+  /* display: flex; */
   /* left: 12px; */
 }
 
@@ -1895,7 +1895,7 @@ li::marker {
   }
 
   .signup-right-dimond {
-    top: 475px;
+    top: 465px;
     height: 100px;
     width: 68px;
   }
