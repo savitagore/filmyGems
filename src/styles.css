@@ -1180,26 +1180,21 @@ textarea::placeholder {
 .get-started[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
-
-/* .accordion-button:not(.collapsed)::after {
-  background-image: var(--bs-accordion-btn-active-icon);
-  color: #FFC936 !important;
-  transform: var(--bs-accordion-btn-icon-transform);
-} */
-
 .get-started[aria-expanded="true"] {
   color: #FFC936;
 }
-
 .faq-bgcolor {
   background-color: #090909;
 }
-
 .accordion-button:focus {
   z-index: auto;
   border-color: transparent;
   outline: none;
   box-shadow: none;
+}
+.navbar-brand:focus {
+  color: #ffd700; 
+  text-decoration: none; 
 }
 
 /********************************Audutions Model Pop up*********************/
