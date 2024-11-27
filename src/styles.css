@@ -1860,10 +1860,8 @@ li::marker {
   }
 
   /*login line*/
-
   .separator-line {
-    top: 559px !important;
-    display: block !important;
+    top: 559px !important; /* Override top value for 992px screens */
   }
 }
 
