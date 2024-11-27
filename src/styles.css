@@ -1390,6 +1390,11 @@ li::marker {
 }
 
 .separator-line {
+  top: 652px !important; /* Default for 1200px and above */
+  display: block !important;
+}
+
+.separator-line {
   flex-grow: 1;
   height: 10px;
   background: linear-gradient(to right,
@@ -2052,12 +2057,10 @@ li::marker {
   .signup-dimond {
     display: flex;
   }
-
-  .separator-line {
-    top: 652px;
-    display: block;
-  }
-
+  /* .separator-line {
+    top: 652px !important;
+    display: block !important;
+  } */
   .signup-right-dimond {
     /* top: 725px; */
   }
@@ -2073,3 +2076,6 @@ li::marker {
     display: block;
   }
 }
+
+
+
