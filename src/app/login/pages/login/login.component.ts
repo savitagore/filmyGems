@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { AbstractControl, FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { LoginCarasoualComponent } from '../../../Reuseable/login-carasoual/login-carasoual.component';
 import { SignupvalidationService } from '../../../core/Services/signupValidation/signupvalidation.service';
@@ -9,7 +9,7 @@ import { TooltipModule } from 'primeng/tooltip';
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule,RouterLink,LoginCarasoualComponent,TooltipModule],
+  imports: [CommonModule,RouterLink,LoginCarasoualComponent,TooltipModule,ReactiveFormsModule],
   providers:[SignupvalidationService],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
@@ -17,10 +17,10 @@ import { TooltipModule } from 'primeng/tooltip';
 export class LoginComponent {
   showPassword1: boolean = false;
   showPassword2: boolean = false;
-  signupForm: FormGroup;
+  loginForm: FormGroup;
 
   constructor( private fb: FormBuilder, private router: Router, private signupService:SignupvalidationService) {
-    this.signupForm = this.fb.group(
+    this.loginForm = this.fb.group(
       {
         email: [ '', [  Validators.required,  Validators.pattern( '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$' ),],],
         password: [ '',[ Validators.required, Validators.minLength(8), Validators.pattern( '^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$' ), ], ],
@@ -29,9 +29,11 @@ export class LoginComponent {
     );
   }
   get email() {
-    return this.signupForm.get('email');
+    return this.loginForm.get('email');
   }
-
+  get password() {
+    return this.loginForm.get('password');
+  }
   togglePassword(fieldNumber: number) {
     if (fieldNumber === 1) {
       this.showPassword1 = !this.showPassword1;
