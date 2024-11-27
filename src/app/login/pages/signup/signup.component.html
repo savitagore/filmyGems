@@ -21,41 +21,57 @@
           <form [formGroup]="signupForm">
             <div class="mb-2">
               <input type="text" class="form-control text-white fill-form" placeholder="Full Name"
-                formControlName="fullName"  pTooltip="{{ getTooltipMessage() }}"
-                tooltipPosition="top"  tooltipStyleClass="customtooltip"
-               />
+                formControlName="fullName"/>
+              <span *ngIf="fullName?.invalid && (fullName?.dirty || fullName?.touched)" class="text-danger">
+                {{ getFullNameErrorMessage() }}
+              </span>
             </div>
             <div class="mb-2">
               <input type="text" class="form-control text-white fill-form" placeholder="Mobile Number"
-                formControlName="mobile" (input)="onMobileInput($event)"   pTooltip="{{ getMobileTooltipMessage() }}"  tooltipPosition="top"  tooltipStyleClass="customtooltip"/>
-              </div>
-            <div class="mb-2">
-              <input type="email" class="form-control text-white fill-form" placeholder="Enter your email"
-                formControlName="email"  pTooltip="{{ getEmailTooltipMessage() }}" tooltipPosition="top"  tooltipStyleClass="customtooltip" />
+                formControlName="mobile" (input)="onMobileInput($event)"/>
+              <span *ngIf="mobile?.invalid && (mobile?.dirty || mobile?.touched)" class="text-danger">
+                {{ getMobileTooltipMessage() }}
+              </span>
             </div>
-            <div class="mb-2 position-relative">
+             <div class="mb-2">
+              <input type="email" class="form-control text-white fill-form" placeholder="Enter your email"
+                formControlName="email" />
+              <span *ngIf="email?.invalid && (email?.dirty || email?.touched)" class="text-danger">
+                {{getEmailTooltipMessage() }}
+              </span>
+            </div>
+             <div class="mb-2 position-relative">
               <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white fill-form"
-                formControlName="password" placeholder="Enter password"   pTooltip="{{ getPasswordPatternTooltip() }}"  tooltipPosition="top"  tooltipStyleClass="customtooltip" />
+                formControlName="password" placeholder="Enter password"  />
               <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)"
                 [ngStyle]="{
-                'padding-bottom': signupForm.get('password')?.errors?.['pattern'] ? '21px' : '0'
+                'padding-bottom': signupForm.get('password')?.errors?.['pattern'] ? '40px' : '0'
               }">
                 <i [ngClass]="
                   showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
                 "></i>
               </span>
+              <span *ngIf="password?.invalid && (password?.dirty || password?.touched)" class="text-danger">
+                {{getPasswordPatternTooltip() }}
+              </span>
             </div>
-            <div class="mb-2 position-relative">
+             <div class="mb-2 position-relative">
               <input [type]="showPassword2 ? 'text' : 'password'" class="form-control text-white fill-form"
                 formControlName="confirmPassword" placeholder="Confirm password" />
-              <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(2)"   pTooltip="{{ getPasswordMismatchTooltip() }}" tooltipPosition="top"  tooltipStyleClass="customtooltip">
+              <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(2)">
                 <i [ngClass]="
                   showPassword2 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
                 " [ngStyle]="{
-                  'padding-bottom': signupForm.errors?.['passwordsMismatch'] && signupForm.get('confirmPassword')?.touched ? '21px' : '0'
+                  'padding-bottom': signupForm.errors?.['passwordsMismatch'] && signupForm.get('confirmPassword')?.touched ? '40px' : '0',
+                  'padding-top': signupForm.errors?.['passwordsMismatch'] && signupForm.get('confirmPassword')?.touched ? '33px' : '0'
+
                 }"></i>
               </span>
+              <span *ngIf="confirmPassword?.invalid && (confirmPassword?.dirty || confirmPassword?.touched)" class="text-danger">
+                {{getPasswordMismatchTooltip()}}
+              </span>
             </div>
+
             <div class="position-relative">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="termsCheck" required>
@@ -65,13 +81,16 @@
                 </label>
               </div>
             </div>
+
             <div class=" text-center login-signup rounded-1">
               <button class="btn text-white" (click)="onLogin()">Login</button>
             </div>
+
             <div class="text-center text-white" style="font-size: 14px;">
               If you have already an account? <span style="color: #0057FF;" routerLink="/login">Login</span>
             </div>
           </form>
+
         </div>
       </div>
     </div>
