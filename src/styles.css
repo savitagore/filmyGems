@@ -1842,10 +1842,7 @@ li::marker {
     display: flex;
   }
 
-  .separator-line {
-    top: 684px;
-    display: block;
-  }
+
 
   .overlay-content {
     right: 0%;
@@ -1858,9 +1855,10 @@ li::marker {
   }
 
   /*login line*/
+
   .separator-line {
-    top: 559px;
-    display: block;
+    top: 559px !important;
+    display: block !important;
   }
 }
 
@@ -2055,10 +2053,10 @@ li::marker {
     display: flex;
   }
 
-  /* .separator-line {
-    top: 719px;
+  .separator-line {
+    top: 652px;
     display: block;
-  } */
+  }
 
   .signup-right-dimond {
     /* top: 725px; */
