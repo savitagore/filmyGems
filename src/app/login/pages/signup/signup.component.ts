@@ -34,7 +34,7 @@ export class SignupComponent {
   signupForm: FormGroup;
   showPassword1: boolean = false;
   showPassword2: boolean = false;
-  value!: string;
+
   constructor(private router: Router, private fb: FormBuilder,private signupService:SignupvalidationService) {
     this.signupForm = this.fb.group(
       {
