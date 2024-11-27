@@ -4,21 +4,25 @@
       <app-login-carasoual></app-login-carasoual>
     </div>
     <div class="col-lg-5 col-md-5 col-sm-12 sign-bg">
-      <div class="justify-content-end signup-dimond ">
-        <img src="assets/landing_Img/right-top-dimond.png" alt="" class="img-fluid">
-      </div>
-      <div class="text-center  mt-3">
-        <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/" alt="" class="img-fluid">
+      <div class="row justify-content-between g-0">
+        <div class="col-8 text-end align-self-center">
+          <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/" alt="" class="img-fluid">
+        </div>
+        <div class="col-4 d-flex justify-content-end  signup-dimond">
+          <img src="assets/profile/diamond.png" alt="" class="img-fluid">
+        </div>
       </div>
       <div class="row justify-content-center g-0">
         <div class="col-lg-7 col-md-10 col-sm-12">
-          <div class="text-white pt-5">
-            <h4 style="line-height :0.2;">Enter OTP</h4>
+          <div class="text-white ">
+            <h4 style="line-height :0.5;">Enter OTP</h4>
             <p class="role">
               Please enter the OTP code we sent at 98123***23!</p>
           </div>
+         <form action="">
           <div class="otp-input-group text-center">
             <p-inputOtp [(ngModel)]="value" name="otp" [length]="6" class="custom-otp"></p-inputOtp>
+            <span *ngIf="errorMessage" class="text-danger mt-2">{{ errorMessage }}</span>
           </div>
           <div class=" text-center login-signup rounded-1 mt-3">
             <button class="btn text-white" (click)="verifyOTP()">Varify & Login</button>
@@ -31,6 +35,7 @@
               <i class="fa fa-refresh ps-2"></i>
             </p>
           </div>
+         </form>
           <div class="text-center text-white pt-1" style="font-size: 14px;">
             Trouble in login? <a href="#" class="admin-link">Admin</a> </div>
         </div>

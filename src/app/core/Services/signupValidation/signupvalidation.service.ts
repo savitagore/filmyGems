@@ -7,8 +7,24 @@ import { AbstractControl } from '@angular/forms';
 })
 export class SignupvalidationService {
 
-
+  errorMessage: string = '';
   constructor() {}
+
+  validateOtp(otp: string): boolean {
+    const otpRegex = /^[0-9]{6}$/;
+    if (otpRegex.test(otp)) {
+      this.errorMessage = '';
+      return true;
+    } else {
+      this.errorMessage = 'Invalid OTP. Please enter a 6-digit code.';
+      return false;
+    }
+  }
+
+  getErrorMessage(): string {
+    return this.errorMessage;
+  }
+
 
   getFullNameErrorMessage(control: AbstractControl): string {
     if (control.hasError('required')) {
