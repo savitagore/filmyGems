@@ -791,13 +791,16 @@ small {
   color: #ffffff;
 }
 
-/* .first-card {
-  background-image: url('/assets/plans/card-1.png');
+.first-card {
+  background-image: url(/assets/plans/card-1.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 623.44px;
+  width: 100%;
   border-radius: 15px;
-} */
+  padding: 0;
+  margin: 0; 
+}
 
 .card-body-plan {
   display: flex;
@@ -900,13 +903,15 @@ small {
   bottom: 70px;
 }
 
-/* .third-card {
+.third-card {
   background-image: url('/assets/plans/card-2.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 685.04px;
+  width: 100%;
   border-radius: 15px;
-} */
+  margin: 0 auto; 
+}
 
 .subscribe-now {
   border-radius: 50px;
