@@ -1,5 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
 
+
 li.nav-item a.nav-link.active {
   color: #FFCF25 !important;
   text-decoration: underline;
@@ -1389,10 +1390,7 @@ li::marker {
   color: #FFFFFF;
 }
 
-.separator-line {
-  top: 652px !important; /* Default for 1200px and above */
-  display: block !important;
-}
+
 
 .separator-line {
   flex-grow: 1;
@@ -1449,7 +1447,10 @@ li::marker {
 .send-otp {
   border: 1px solid #FFFFFF;
 }
-
+.customtooltip.p-tooltip .p-tooltip-text {
+  background-color: #ffffff!important;
+  color: red !important;
+}
 /* kk */
 .carousel-inner .carousel-item:nth-child(3) .slider-container::after {
   content: '';
@@ -1861,7 +1862,8 @@ li::marker {
 
   /*login line*/
   .separator-line {
-    top: 559px !important; /* Override top value for 992px screens */
+    top: 559px !important;
+    display: block !important;
   }
 }
 

@@ -12,27 +12,27 @@
           <img src="assets/profile/diamond.png" alt="" class="img-fluid">
         </div>
       </div>
-      <!-- <div class="justify-content-end signup-dimond">
-        <img src="assets/landing_Img/right-top-dimond.png" class="img-fluid">
-      </div>
-      <div class="text-center  mt-3">
-        <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/" alt="" class="img-fluid">
-      </div> -->
       <div class="row justify-content-center">
         <div class="col-lg-7 col-md-10 col-sm-12">
           <div class="text-white pt-2">
-            <h4 style="line-height :0.2;">Login</h4>
+            <h4 style="line-height :0.5;">Login</h4>
             <p class="role ">
               Welcome back!</p>
           </div>
-          <div class="mb-3">
-            <input type="email" class="form-control text-white fill-form" placeholder="enter your email" required>
+          <div class="mb-2">
+            <input type="email" class="form-control text-white fill-form" placeholder="Enter your email"
+              formControlName="email"  pTooltip="{{ getEmailTooltipMessage() }}" tooltipPosition="top"  tooltipStyleClass="customtooltip" />
           </div>
           <div class="mb-2 position-relative">
             <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white fill-form"
-              placeholder="Enter password" required />
-            <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)">
-              <i [ngClass]="showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'"></i>
+              formControlName="password" placeholder="Enter password"   pTooltip="{{ getPasswordPatternTooltip() }}"  tooltipPosition="top"  tooltipStyleClass="customtooltip" />
+            <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)"
+              [ngStyle]="{
+              'padding-bottom': signupForm.get('password')?.errors?.['pattern'] ? '21px' : '0'
+            }">
+              <i [ngClass]="
+                showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
+              "></i>
             </span>
           </div>
           <div class="mb-3">

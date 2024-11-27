@@ -3,7 +3,7 @@
     <div class="col-lg-7 col-md-7 col-sm-12 g-0">
       <app-login-carasoual></app-login-carasoual>
     </div>
-    <div class="col-5  sign-bg">
+    <div class="col-lg-5 col-md-5 col-sm-12 sign-bg">
       <div class="row justify-content-between g-0">
         <div class="col-8 text-end align-self-center">
           <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/" alt="" class="img-fluid">
@@ -15,37 +15,27 @@
       <div class="row justify-content-center g-0">
         <div class="col-lg-7 col-md-10 col-sm-12">
           <div class="text-white">
-            <h4 style="line-height: 0.3;">Sign Up</h4>
+            <h4 style="line-height: 0.5;">Sign Up</h4>
             <p>Join with us and get the best profiles!</p>
           </div>
           <form [formGroup]="signupForm">
             <div class="mb-2">
               <input type="text" class="form-control text-white fill-form" placeholder="Full Name"
-                formControlName="fullName" />
-              <span *ngIf="fullName?.invalid && (fullName?.dirty || fullName?.touched)" class="text-danger">
-                <span *ngIf="fullName?.errors?.['required']">Full Name is required.</span>
-                <span *ngIf="fullName?.errors?.['minlength']">Full Name at least 5 characters long.</span>
-              </span>
+                formControlName="fullName"  pTooltip="{{ getTooltipMessage() }}"
+                tooltipPosition="top"  tooltipStyleClass="customtooltip"
+               />
             </div>
             <div class="mb-2">
               <input type="text" class="form-control text-white fill-form" placeholder="Mobile Number"
-                formControlName="mobile" (input)="onMobileInput($event)" />
-              <span *ngIf="mobile?.invalid && (mobile?.dirty || mobile?.touched)" class="text-danger">
-                <span *ngIf="mobile?.errors?.['required']">Mobile number is required.</span>
-                <span *ngIf="mobile?.errors?.['pattern']">Mobile number must10 digits.</span>
-              </span>
-            </div>
+                formControlName="mobile" (input)="onMobileInput($event)"   pTooltip="{{ getMobileTooltipMessage() }}"  tooltipPosition="top"  tooltipStyleClass="customtooltip"/>
+              </div>
             <div class="mb-2">
               <input type="email" class="form-control text-white fill-form" placeholder="Enter your email"
-                formControlName="email" />
-              <span *ngIf="email?.invalid && (email?.dirty || email?.touched)" class="text-danger">
-                <span *ngIf="email?.errors?.['required']">Email is required.</span>
-                <span *ngIf="email?.errors?.['pattern']">Please enter a valid email.</span>
-              </span>
+                formControlName="email"  pTooltip="{{ getEmailTooltipMessage() }}" tooltipPosition="top"  tooltipStyleClass="customtooltip" />
             </div>
             <div class="mb-2 position-relative">
               <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white fill-form"
-                formControlName="password" placeholder="Enter password" />
+                formControlName="password" placeholder="Enter password"   pTooltip="{{ getPasswordPatternTooltip() }}"  tooltipPosition="top"  tooltipStyleClass="customtooltip" />
               <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)"
                 [ngStyle]="{
                 'padding-bottom': signupForm.get('password')?.errors?.['pattern'] ? '21px' : '0'
@@ -54,28 +44,16 @@
                   showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
                 "></i>
               </span>
-              <span *ngIf="signupForm.get('password')?.invalid && signupForm.get('password')?.touched"
-                class="text-danger">
-                <span class="text-center" *ngIf="signupForm.get('password')?.errors?.['pattern']"
-                  style="font-size: 11px;">
-                  At least one letter, one number, and one special character.
-                </span>
-              </span>
             </div>
             <div class="mb-2 position-relative">
               <input [type]="showPassword2 ? 'text' : 'password'" class="form-control text-white fill-form"
                 formControlName="confirmPassword" placeholder="Confirm password" />
-              <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(2)">
+              <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(2)"   pTooltip="{{ getPasswordMismatchTooltip() }}" tooltipPosition="top"  tooltipStyleClass="customtooltip">
                 <i [ngClass]="
                   showPassword2 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
                 " [ngStyle]="{
                   'padding-bottom': signupForm.errors?.['passwordsMismatch'] && signupForm.get('confirmPassword')?.touched ? '21px' : '0'
                 }"></i>
-              </span>
-              <span class="text-center"
-                *ngIf="signupForm.errors?.['passwordsMismatch'] && signupForm.get('confirmPassword')?.touched"
-                class="text-danger">
-                <span>Passwords do not match.</span>
               </span>
             </div>
             <div class="position-relative">
