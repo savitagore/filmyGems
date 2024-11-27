@@ -325,9 +325,6 @@ li.nav-item a.nav-link.active {
   display: inline-block;
   margin-bottom: 10px;
 }
-.active {
-  background-color: #B59F72;
-}
 
 .right-dimond {
   position: absolute;
@@ -915,7 +912,7 @@ small {
   border-radius: 50px;
   font-size: 12.95px;
   border: none;
-  padding: 15px 70px;
+  padding: 15px 50px;
   background-color: #FFC936;
   color: #000000;
   letter-spacing: 2px;
@@ -929,7 +926,7 @@ small {
 .star-badge {
   position: absolute;
   top: 81px;
-  right: 38px;
+  right: 20px;
   z-index: 2;
 }
 
@@ -1808,11 +1805,6 @@ li::marker {
   .subscribe {
     padding: 12px 38px;
   }
-
-  .subscribe-now {
-    padding: 12px 38px;
-  }
-
   .dimond-img {
     display: flex;
   }
@@ -2025,10 +2017,9 @@ li::marker {
   .subscribe {
     padding: 12px 50px;
   }
-
   .subscribe-now {
-    padding: 15px 70px;
-  }
+    padding: 15px 60px;
+}
 
   /* ******* sign-up page ********** */
   .signup-dimond {
