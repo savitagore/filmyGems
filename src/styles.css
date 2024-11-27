@@ -263,23 +263,10 @@ li.nav-item a.nav-link.active {
   border: 1px solid black;
   color: black;
 }
-
-.cutom-font-color {
-  color: #ffb62a;
-  font-size: 16px;
-}
-
 .font-custom {
   font-size: 30px;
   margin-left: 141px;
 }
-
-.btn-custom {
-  max-width: 135px;
-  width: 100%;
-  font-size: 18px;
-}
-
 .join-text {
   font-size: 90px;
   font-weight: bold;
@@ -289,7 +276,6 @@ li.nav-item a.nav-link.active {
   padding: 0;
   line-height: 1;
 }
-
 .search-box {
   background-color: white;
   border-radius: 50px;
@@ -339,6 +325,9 @@ li.nav-item a.nav-link.active {
   border-radius: 5px;
   display: inline-block;
   margin-bottom: 10px;
+}
+.active {
+  background-color: #B59F72;
 }
 
 .right-dimond {
@@ -496,16 +485,15 @@ small {
   background-color: #ffb62a;
 }
 
-.btn-custom {
-  border: 1px solid black;
-  color: black;
-}
+
 
 .cutom-font-color {
   color: #ffb62a;
   font-size: 16px;
 }
-
+.cutom-font-color:hover {
+  color: #ffb62a;
+}
 .header-text,
 .sub-text {
   text-align: center;
@@ -604,17 +592,6 @@ small {
   padding: 10px 5px;
   bottom: 6px;
 }
-
-.join-text {
-  font-size: 90px;
-  font-weight: bold;
-  color: #1F2124;
-  text-align: right;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-}
-
 .active-category {
   background-color: #986708;
   color: #fff !important;
@@ -818,13 +795,13 @@ small {
   color: #ffffff;
 }
 
-.first-card {
+/* .first-card {
   background-image: url('/assets/plans/card-1.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 623.44px;
   border-radius: 15px;
-}
+} */
 
 .card-body-plan {
   display: flex;
@@ -906,7 +883,7 @@ small {
   border-radius: 50px;
   font-size: 12.95px;
   border: 1px solid #238ECB;
-  padding: 15px 70px;
+  padding: 12px 50px;
   color: #238ECB;
   letter-spacing: 2px;
 }
@@ -927,13 +904,13 @@ small {
   bottom: 70px;
 }
 
-.third-card {
+/* .third-card {
   background-image: url('/assets/plans/card-2.png');
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 685.04px;
   border-radius: 15px;
-}
+} */
 
 .subscribe-now {
   border-radius: 50px;
@@ -953,7 +930,7 @@ small {
 .star-badge {
   position: absolute;
   top: 81px;
-  right: 10px;
+  right: 38px;
   z-index: 2;
 }
 
@@ -1543,6 +1520,8 @@ li::marker {
     display: none;
   }
 
+  
+
   .export {
     height: 100px;
   }
@@ -2046,7 +2025,7 @@ li::marker {
   }
 
   .subscribe {
-    padding: 15px 70px;
+    padding: 12px 50px;
   }
 
   .subscribe-now {

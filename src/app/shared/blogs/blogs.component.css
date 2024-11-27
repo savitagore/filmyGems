@@ -1,9 +1,12 @@
 @media (max-width: 320px) {
   .popular-cat-wrap span {
-    display: none; /* Hide all spans by default */
+    display: none; 
   }
 
   .popular-cat-wrap span:nth-child(-n+3) {
-    display: inline-block; /* Show only the first 3 spans */
+    display: inline-block; 
   }
 }
+/* .active {
+  background-color: #B59F72;
+} */
