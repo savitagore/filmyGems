@@ -10,7 +10,7 @@ export class SignupvalidationService {
 
   constructor() {}
 
-  getFullNameErrorMessage(control: any): string {
+  getFullNameErrorMessage(control: AbstractControl): string {
     if (control.hasError('required')) {
       return 'Full Name is required.';
     } else if (control.hasError('minlength')) {
@@ -26,6 +26,7 @@ export class SignupvalidationService {
     }
     return '';
   }
+
   getEmailErrorMessage(control: AbstractControl): string {
     if (control.hasError('required')) {
       return 'Email is required.';

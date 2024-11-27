@@ -58,7 +58,7 @@ export class SignupComponent {
     const password = control.get('password');
     const confirmPassword = control.get('confirmPassword');
     if (password?.value !== confirmPassword?.value) {
-      return { passwordsMismatch: true }; // Custom error key
+      return { passwordsMismatch: true };
     }
     return null;
   }
@@ -66,10 +66,14 @@ export class SignupComponent {
   onMobileInput(event: any): void {
     const input = event.target;
     const value = input.value;
+    const values = event.target.value;
+    event.target.value = values.replace(/[^0-9]/g, '');
     if (value.length > 9) {
       input.blur();
     }
   }
+
+
   get fullName() {
     return this.signupForm.get('fullName');
   }
@@ -79,9 +83,15 @@ export class SignupComponent {
   get email() {
     return this.signupForm.get('email');
   }
+  get password() {
+    return this.signupForm.get('password');
+  }
+  get confirmPassword() {
+    return this.signupForm.get('confirmPassword');
+  }
 
-  getTooltipMessage(): string {
-    return this.signupService.getFullNameErrorMessage(this.fullName);
+  getFullNameErrorMessage(): string {
+    return this.signupService.getFullNameErrorMessage(this.fullName as AbstractControl);
   }
   getMobileTooltipMessage(): string {
     return this.signupService.getMobileErrorMessage(this.mobile as AbstractControl);
