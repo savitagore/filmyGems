@@ -3,9 +3,14 @@
     <div class="col-lg-7 col-md-7 col-sm-12 g-0">
       <app-login-carasoual></app-login-carasoual>
     </div>
-    <div class="col-lg-5 col-md-5 col-sm-12 sign-bg roboto-font g-0">
-      <div class="justify-content-end signup-dimond">
-        <img src="assets/landing_Img/right-top-dimond.png" alt="" class="img-fluid">
+    <div class="col-lg-5 col-md-5 col-sm-12 sign-bg">
+      <div class="row justify-content-between g-0">
+        <div class="col-8 text-end align-self-center">
+          <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/" alt="" class="img-fluid">
+        </div>
+        <div class="col-4 d-flex justify-content-end  signup-dimond">
+          <img src="assets/profile/diamond.png" alt="" class="img-fluid">
+        </div>
       </div>
       <div
         class="text-center ms-lg-4 ms-md-4 ms-sm-0 ps-lg-3 ps-md-3 ps-sm-0 mb-lg-0 mb-md-0 mb-3 mt-lg-3 mt-md-3 mt-3 ">
@@ -14,10 +19,84 @@
       <div class="row justify-content-center">
         <div class="col-lg-7 col-md-10 col-sm-12">
           <div class="text-white">
-            <h4 style="line-height: 0.3;">Sign Up</h4>
+            <h4 style="line-height: 0.5;">Sign Up</h4>
             <p>Join with us and get the best profiles!</p>
           </div>
-         
+          <form [formGroup]="signupForm">
+            <div class="mb-2">
+              <input type="text" class="form-control text-white fill-form" placeholder="Full Name"
+                formControlName="fullName"/>
+              <span *ngIf="fullName?.invalid && (fullName?.dirty || fullName?.touched)" class="text-danger">
+                {{ getFullNameErrorMessage() }}
+              </span>
+            </div>
+            <div class="mb-2">
+              <input type="text" class="form-control text-white fill-form" placeholder="Mobile Number"
+                formControlName="mobile" (input)="onMobileInput($event)"/>
+              <span *ngIf="mobile?.invalid && (mobile?.dirty || mobile?.touched)" class="text-danger">
+                {{ getMobileTooltipMessage() }}
+              </span>
+            </div>
+             <div class="mb-2">
+              <input type="email" class="form-control text-white fill-form" placeholder="Enter your email"
+                formControlName="email" />
+              <span *ngIf="email?.invalid && (email?.dirty || email?.touched)" class="text-danger">
+                {{getEmailTooltipMessage() }}
+              </span>
+            </div>
+             <div class="mb-2 position-relative">
+              <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white fill-form"
+                formControlName="password" placeholder="Enter password"  />
+              <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)"
+                [ngStyle]="{
+                'padding-bottom': signupForm.get('password')?.errors?.['pattern'] ? '40px' : '0'
+              }">
+                <i [ngClass]="
+                  showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
+                "></i>
+              </span>
+              <span *ngIf="password?.invalid && (password?.dirty || password?.touched)" class="text-danger">
+                {{getPasswordPatternTooltip() }}
+              </span>
+            </div>
+             <div class="mb-2 position-relative">
+              <input [type]="showPassword2 ? 'text' : 'password'" class="form-control text-white fill-form"
+                formControlName="confirmPassword" placeholder="Confirm password" />
+              <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(2)">
+                <i [ngClass]="
+                  showPassword2 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
+                " [ngStyle]="{
+                  'padding-bottom': signupForm.errors?.['passwordsMismatch'] && signupForm.get('confirmPassword')?.touched ? '40px' : '0',
+                  'padding-top': signupForm.errors?.['passwordsMismatch'] && signupForm.get('confirmPassword')?.touched ? '33px' : '0'
+
+                }"></i>
+              </span>
+              <span *ngIf="confirmPassword?.invalid && (confirmPassword?.dirty || confirmPassword?.touched)" class="text-danger">
+                {{getPasswordMismatchTooltip()}}
+              </span>
+            </div>
+
+            <div class="position-relative">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                <label class="form-check-label text-white" for="termsCheck">
+                  By signing up, you agree to our <a href="#" class="link-primary">conditions</a> & <a href="#"
+                    class="link-primary">privacy policy</a>
+                </label>
+              </div>
+            </div>
+
+            <div class=" text-center login-signup rounded-1">
+              <button class="btn text-white" (click)="onLogin()">Login</button>
+            </div>
+
+            <div class="text-center text-white" style="font-size: 14px;">
+              If you have already an account? <span style="color: #0057FF;" routerLink="/login">Login</span>
+            </div>
+          </form>
+
+        </div>
+      </div>
     </div>
     <div class="separator-line" style="border: 5px solid orange;position: absolute;top: 99vh;"></div>
   </div>

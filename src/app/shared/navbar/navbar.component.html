@@ -1,62 +1,4 @@
 <div class="header-Navbar roboto-font">
-  <!-- <div class="container">
-    <div class="row">
-      <div class="col-lg-9 col-md-8 col-sm-12 order-lg-1 order-md-1  order-2">
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid d-flex justify-content-between align-items-center">
-            <img src="assets/logo-img/main-logo.png" routerLink="/" alt="Logo" class="img-fluid logo-img">
-            <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"
-              aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end header-name" id="mynavbar">
-              <ul class="navbar-nav pt-3">
-                <li class="nav-item">
-                  <a class="nav-link text-white pages-name " routerLink="/profile" routerLinkActive="active"
-                    ariaCurrentWhenActive="page">Create Profile</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white pages-name" routerLink="/plans" routerLinkActive="active"
-                    ariaCurrentWhenActive="page">Plans</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white pages-name" routerLink="/about" routerLinkActive="active"
-                    ariaCurrentWhenActive="page">About Us</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-white pages-name" routerLink="/contact-us" routerLinkActive="active"
-                    ariaCurrentWhenActive="page">Contact Us</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </nav>
-      </div>
-
-      <div class="col-lg-3 col-md-4 col-sm-12 order-lg-2 order-md-2 order-1 order-sm-3 roboto-font">
-        <div class="icons-join">
-          <div class="d-flex align-items-center justify-content-center links-chart">
-            <a class="text-white mx-3" href="#">
-              <i class="fa-solid fa-cart-shopping custom-icon"></i>
-            </a>
-            <a class="text-white mx-3" href="#">
-              <i class="fa-regular fa-bell custom-icon"></i>
-            </a>
-            <a class="text-white mx-3" href="#" data-bs-toggle="modal" data-bs-target="#profileModal">
-
-              <i class="fa-regular fa-user custom-icon"></i>
-            </a>
-            <a class="join-ig d-flex ">
-              <img src="assets/landing_Img/login-start.png" alt="Login" class="img-fluid me-2">
-              <img src="assets/landing_Img/login-start.png" alt="Login" class="img-fluid me-2 rotate">
-              <button class="btn join-btn" type="button" routerLink="/sign-up">Join Now</button>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div> -->
-
   <div class="container">
     <div class="row">
       <div class="col-lg-3 col-md-3 col-sm-12 justify-content-center align-items-center d-flex pt-4">
@@ -129,7 +71,7 @@
           <div class="d-flex justify-content-end align-items-center me-2">
             <p class="last-login text-center me-4"><strong class="last-on">Last login on</strong> 02 May 2024, 10:32 PM
             </p>
-            <button class="btn rounded-pill btn-edit" (click)="toggleEditMode()">Edit Now</button>
+            <button class="btn rounded-pill btn-edit" type="button" (click)="toggleEditMode()">Edit Now</button>
           </div>
         </div>
         <div class="modal-body">
@@ -170,10 +112,6 @@
                         <span class="slider"></span>
                       </label>
                     </p>
-                    <!-- <label class="switch">
-                      <input type="checkbox" [(ngModel)]="isToggled">
-                      <span class="slider"></span>
-                    </label> -->
                   </div>
                 </div>
                 <form *ngIf="isEditMode" [formGroup]="profileForm" (ngSubmit)="onSubmit()">

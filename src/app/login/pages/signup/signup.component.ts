@@ -1,17 +1,18 @@
+import { TooltipModule } from 'primeng/tooltip';
+
 import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 
 import {
+  AbstractControl,
   FormBuilder,
   FormGroup,
-  FormsModule,
   ReactiveFormsModule,
-  Validators,
-} from '@angular/forms';
+  Validators,} from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { LoginComponent } from '../login/login.component';
 import { LoginCarasoualComponent } from '../../../Reuseable/login-carasoual/login-carasoual.component';
-import { Tooltip } from 'primeng/tooltip';
+import { SignupvalidationService } from '../../../core/Services/signupValidation/signupvalidation.service';
 
 
 @Component({
@@ -23,7 +24,9 @@ import { Tooltip } from 'primeng/tooltip';
     RouterLink,
     LoginCarasoualComponent,
     ReactiveFormsModule,
+    TooltipModule
   ],
+  providers:[SignupvalidationService],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.css',
   encapsulation: ViewEncapsulation.None,
@@ -32,8 +35,8 @@ export class SignupComponent {
   signupForm: FormGroup;
   showPassword1: boolean = false;
   showPassword2: boolean = false;
-  value!: string;
-  constructor(private router: Router, private fb: FormBuilder) {
+
+  constructor(private router: Router, private fb: FormBuilder,private signupService:SignupvalidationService) {
     this.signupForm = this.fb.group(
       {
         fullName: ['', [Validators.required, Validators.minLength(5)]],
@@ -52,14 +55,26 @@ export class SignupComponent {
     const confirmPassword = group.get('confirmPassword')?.value;
     return password === confirmPassword ? null : { passwordsMismatch: true };
   }
+  passwordMatchValidator(control: FormGroup): { [key: string]: boolean } | null {
+    const password = control.get('password');
+    const confirmPassword = control.get('confirmPassword');
+    if (password?.value !== confirmPassword?.value) {
+      return { passwordsMismatch: true };
+    }
+    return null;
+  }
 
   onMobileInput(event: any): void {
     const input = event.target;
     const value = input.value;
+    const values = event.target.value;
+    event.target.value = values.replace(/[^0-9]/g, '');
     if (value.length > 9) {
       input.blur();
     }
   }
+
+
   get fullName() {
     return this.signupForm.get('fullName');
   }
@@ -68,6 +83,28 @@ export class SignupComponent {
   }
   get email() {
     return this.signupForm.get('email');
+  }
+  get password() {
+    return this.signupForm.get('password');
+  }
+  get confirmPassword() {
+    return this.signupForm.get('confirmPassword');
+  }
+
+  getFullNameErrorMessage(): string {
+    return this.signupService.getFullNameErrorMessage(this.fullName as AbstractControl);
+  }
+  getMobileTooltipMessage(): string {
+    return this.signupService.getMobileErrorMessage(this.mobile as AbstractControl);
+  }
+  getEmailTooltipMessage(): string {
+    return this.signupService.getEmailErrorMessage(this.email as AbstractControl);
+  }
+  getPasswordPatternTooltip(): string {
+    return this.signupService.getPasswordPatternErrorMessage();
+  }
+  getPasswordMismatchTooltip(): string {
+    return this.signupService.getPasswordMismatchErrorMessage();
   }
   togglePassword(fieldNumber: number) {
     if (fieldNumber === 1) {

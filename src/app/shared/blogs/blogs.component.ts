@@ -42,6 +42,7 @@ categories = [
   currentIndex = 0;
   visibleCategories: string[] = this.categories.slice(this.currentIndex, this.currentIndex + 7);
 
+
   nextCategory() {
     if (this.currentIndex + 7 < this.categories.length) {
       this.currentIndex++;

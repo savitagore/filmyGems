@@ -6,3 +6,12 @@
 .dropdown-item {
   color: #2F2F33;
 }
+/* Add a smooth transition to the icon */
+.fa-chevron-down {
+  transition: transform 0.3s ease;
+}
+
+/* Rotate the icon when the dropdown is expanded */
+[aria-expanded="true"] .fa-chevron-down {
+  transform: rotate(180deg);
+}
