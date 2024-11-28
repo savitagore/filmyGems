@@ -1444,6 +1444,9 @@ li::marker {
     padding: 3px;
     width: 71px;
   }
+  .build-high .main-title {
+    font-size: 29px;
+  }
 }
 
 @media (min-width:425px) {
