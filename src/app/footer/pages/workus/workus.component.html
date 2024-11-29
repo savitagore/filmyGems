@@ -1,7 +1,7 @@
 <section class="footer-navbar pb-4" style="background-color: #272727;">
   <app-navbar></app-navbar>
 </section>
-<section class="bg-middle roboto-font parent-section">
+<section class="bg-middle roboto-font">
   <div class="container">
     <div class="row pt-5">
       <div class="col-md-12">
@@ -72,10 +72,160 @@
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-12">
-        
+    <div class="row justify-content-center align-items-center pt-4">
+      <div class="col-md-10">
+        <div class="card workus-card">
+          <div class="card-header">
+            <div class="row align-items-center">
+              <div class="col-md-9 ps-5 pt-4 text-white">
+                <h5>Design Director</h5>
+                <p>Pune, Maharashtra, India</p>
+              </div>
+              <div class="col-md-3">
+                <button class="btn text-white rounded-pill job " type="button" (click)="toggleJobDescription()"
+                  [ngStyle]="{'background-color': isDescriptionVisible ? '#F3AD3B' : ''}">
+                  {{ buttonText }}</button>
+              </div>
+            </div>
+          </div>
+          <div class="ps-5 text-white" *ngIf="isDescriptionVisible">
+            <h4>About the Role:</h4>
+            <p>Have a deep understanding of CX, Design beyond screens and colours Have Experience with design ops and
+              Leading design teams to successful product launches.Are efficient at managing the entire Digital Product
+              Design process from Customer Research, Competitive UX analysis, Product articulation, down to the detail
+              of Digital Product Design execution.Are keen to work with Product Management to create and validate
+              inspiring platform/product visions, derived from business needs, market opportunities, and technology
+              trends.Can translate business requirements and customer experience into features and functions that drive
+              the platform/product roadmap.</p>
+            <p>Deliver platform product and associated artefacts that set the standard for engineering excellence and
+              technical product management including API designs, solutions architecture definitions and specifications,
+              including contributions for industry specifications.</p>
+            <p>Are adept at working with Technical Program Managers, Developers, UI designers, to define the details
+              behind the business requirements.</p>
+            <h4>What You WIl do:</h4>
+            <p>Act as the voice of the business customer and accountable for multiple Products Consult, counsel and be
+              able to influence stakeholders on design concepts,, product requirements, and acceptance criteria. Lead
+              the interfacing with principle engineers to translate product requirements into technical specifications
+              ensuring architecture, data and delivery alignment minimising time to market. Drive rapid prototyping,
+              iterative design and delivery for a suite of MasterCard products and/or services. Ensure technical,
+              customer, and business goals are in line with business requirements. Balance trade-offs between competing
+              interests using judgement, data, and experience. Tackle hard problems in new spaces, bringing clarity to
+              ambiguity and complexity and demonstrating ways to simplify.</p>
+            <h4>What you will get:</h4>
+            <p>An opportunity to be a core team member with a growth path A fast-growth environment with a world-class
+              visual design quality A place where you matter, and are not just a cog in the wheel An encouraging,
+              informal and comfortable working environment A place where flexibility can be earned and work-life balance
+              ensured Competitive Compensation</p>
+            <h4>You will learn:</h4>
+            <ul class="workus-li">
+              <li>How to build a design and build a global quality next generation product ground-up</li>
+              <li>How to build a Design-led organization ground-up</li>
+              <li>How to build a Zero to one product, not just enhance or add features</li>
+            </ul>
+            <h4>What are the Qualifications you need?</h4>
+            <p>Proficiency with visual design programs such as Figma / Adobe XD and Prototyping tools. Ability to work
+              effectively in a collaborative environment to create top-performing interfaces. Ability to think through
+              product propositions ground-up considering the entire product eco-system Must have Customer-oriented
+              data-led problem-solving skills Ability to prioritise and manage multiple milestones and projects
+              efficiently Ability to work with and influence senior stakeholders Professional written and interpersonal
+              skills.</p>
+          </div>
+          <div class="card-footer ps-5 pt-3 text-white" style="background-color: #3A3838;" *ngIf="isDescriptionVisible">
+            <h4 style="color: #FFC936;">Our Hiring Process:</h4>
+            <div class="our-process pt-3" style="line-height: normal;">
+              <p>1.You Apply and answer a couple of quick questions [5 min]</p>
+              <p>2.Recruiter screen [10 min</p>
+              <p>3.Hiring Manager screen [30 min]</p>
+              <p>4.Skills assessment take-home challenge [30 min]</p>
+              <p>5.Confirmation Stage: [30 min] Peer interview [30 min]</p>
+              <p>6.Final Stage Onboarding call [15 min]</p>
+              <p>7.We make you an offer and proceed for Background Verification.</p>
+            </div>
+            <div class="d-flex justify-content-end pb-2 pe-4">
+              <button class="btn apply-now rounded-pill text-white">Apply Job</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
+
+<!-- second -->
+<div class="row justify-content-center align-items-center pt-4">
+  <div class="col-md-10">
+    <div class="card workus-card">
+      <div class="card-header">
+        <div class="row align-items-center">
+          <div class="col-md-9 ps-5 pt-4 text-white">
+            <h5>Design Director</h5>
+            <p>Pune, Maharashtra, India</p>
+          </div>
+          <div class="col-md-3">
+            <button class="btn text-white rounded-pill job " type="button" (click)="toggleJobDescription()"
+              [ngStyle]="{'background-color': isDescriptionVisible ? '#F3AD3B' : ''}">
+              {{ buttonText }}</button>
+          </div>
+        </div>
+      </div>
+      <div class="ps-5 text-white" *ngIf="isDescriptionVisible">
+        <h4>About the Role:</h4>
+        <p>Have a deep understanding of CX, Design beyond screens and colours Have Experience with design ops and
+          Leading design teams to successful product launches.Are efficient at managing the entire Digital Product
+          Design process from Customer Research, Competitive UX analysis, Product articulation, down to the detail
+          of Digital Product Design execution.Are keen to work with Product Management to create and validate
+          inspiring platform/product visions, derived from business needs, market opportunities, and technology
+          trends.Can translate business requirements and customer experience into features and functions that drive
+          the platform/product roadmap.</p>
+        <p>Deliver platform product and associated artefacts that set the standard for engineering excellence and
+          technical product management including API designs, solutions architecture definitions and specifications,
+          including contributions for industry specifications.</p>
+        <p>Are adept at working with Technical Program Managers, Developers, UI designers, to define the details
+          behind the business requirements.</p>
+        <h4>What You WIl do:</h4>
+        <p>Act as the voice of the business customer and accountable for multiple Products Consult, counsel and be
+          able to influence stakeholders on design concepts,, product requirements, and acceptance criteria. Lead
+          the interfacing with principle engineers to translate product requirements into technical specifications
+          ensuring architecture, data and delivery alignment minimising time to market. Drive rapid prototyping,
+          iterative design and delivery for a suite of MasterCard products and/or services. Ensure technical,
+          customer, and business goals are in line with business requirements. Balance trade-offs between competing
+          interests using judgement, data, and experience. Tackle hard problems in new spaces, bringing clarity to
+          ambiguity and complexity and demonstrating ways to simplify.</p>
+        <h4>What you will get:</h4>
+        <p>An opportunity to be a core team member with a growth path A fast-growth environment with a world-class
+          visual design quality A place where you matter, and are not just a cog in the wheel An encouraging,
+          informal and comfortable working environment A place where flexibility can be earned and work-life balance
+          ensured Competitive Compensation</p>
+        <h4>You will learn:</h4>
+        <ul class="workus-li">
+          <li>How to build a design and build a global quality next generation product ground-up</li>
+          <li>How to build a Design-led organization ground-up</li>
+          <li>How to build a Zero to one product, not just enhance or add features</li>
+        </ul>
+        <h4>What are the Qualifications you need?</h4>
+        <p>Proficiency with visual design programs such as Figma / Adobe XD and Prototyping tools. Ability to work
+          effectively in a collaborative environment to create top-performing interfaces. Ability to think through
+          product propositions ground-up considering the entire product eco-system Must have Customer-oriented
+          data-led problem-solving skills Ability to prioritise and manage multiple milestones and projects
+          efficiently Ability to work with and influence senior stakeholders Professional written and interpersonal
+          skills.</p>
+      </div>
+      <div class="card-footer ps-5 pt-3 text-white" style="background-color: #3A3838;" *ngIf="isDescriptionVisible">
+        <h4 style="color: #FFC936;">Our Hiring Process:</h4>
+        <div class="our-process pt-3" style="line-height: normal;">
+          <p>1.You Apply and answer a couple of quick questions [5 min]</p>
+          <p>2.Recruiter screen [10 min</p>
+          <p>3.Hiring Manager screen [30 min]</p>
+          <p>4.Skills assessment take-home challenge [30 min]</p>
+          <p>5.Confirmation Stage: [30 min] Peer interview [30 min]</p>
+          <p>6.Final Stage Onboarding call [15 min]</p>
+          <p>7.We make you an offer and proceed for Background Verification.</p>
+        </div>
+        <div class="d-flex justify-content-end pb-2 pe-4">
+          <button class="btn apply-now rounded-pill text-white">Apply Job</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
   </div>
 </section>
