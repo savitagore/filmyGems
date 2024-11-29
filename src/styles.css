@@ -1641,6 +1641,11 @@ li::marker {
     top: 559px !important;
     display: block !important;
   }
+
+  /* works us */
+  .health{
+    padding-left: 200px;
+  }
 }
 
 @media (min-width:1200px) {
