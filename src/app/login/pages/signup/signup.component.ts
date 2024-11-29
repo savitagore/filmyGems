@@ -14,6 +14,7 @@ import { LoginComponent } from '../login/login.component';
 import { LoginCarasoualComponent } from '../../../Reuseable/login-carasoual/login-carasoual.component';
 import { SignupvalidationService } from '../../../core/Services/signupValidation/signupvalidation.service';
 
+
 @Component({
   selector: 'app-signup',
   standalone: true,

@@ -31,16 +31,21 @@ categories = [
     'Director',
     'Casting Director',
     'Assistant Director',
+    'Production Manager',
+    'Executive Producer',
     'Associate Director',
     'Executive Producer',
-    'aaaa',
-    'bbbb',
-    'ccc',
-    'dddd'
+    'Associate Director',
+    'Executive Producer',
+    'Casting Director',
+    'Assistant Director',
+    'Associate Director',
+    'Executive Producer',
+    
   ];
 
   currentIndex = 0;
-  visibleCategories: string[] = this.categories.slice(this.currentIndex, this.currentIndex + 7);
+  visibleCategories: string[] = this.categories.slice(this.currentIndex, this.currentIndex +7);
 
 
   nextCategory() {
