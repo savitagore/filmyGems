@@ -14,11 +14,4 @@
         background-color: #F9F2E3;
      
    }
-   i.fa-chevron-down[aria-expanded="true"] {
-    transform: rotate(180deg);
-}
-
-/* Rotated state when dropdown is open */
-#sortBy-collapse {
-  transform: rotate(180deg);
-}
+  

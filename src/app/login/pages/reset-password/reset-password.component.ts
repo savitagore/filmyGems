@@ -35,18 +35,7 @@ export class ResetPasswordComponent {
       this.showPassword2 = !this.showPassword2;
     }
   }
-  // continueLogin(){
-  //   this.router.navigate(['/continue-login']);
-  // }
-
-  // togglePassword(field: number) {
-  //   if (field === 1) {
-  //     this.showPassword1 = !this.showPassword1;
-  //   } else {
-  //     this.showPassword2 = !this.showPassword2;
-  //   }
-  // }
-
+  
   passwordMatchValidator(group: FormGroup) {
     const newPassword = group.get('newPassword')?.value;
     const confirmPassword = group.get('confirmPassword')?.value;

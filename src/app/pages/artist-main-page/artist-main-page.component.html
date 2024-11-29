@@ -311,9 +311,9 @@
                         <div class="dropdown text-end mb-0">
                             <button type="button" class="btn border-0 text-light sortFont" data-bs-toggle="dropdown">
                                 Sort by
-                                <i class="fa fa-chevron-down ps-3 navbar-brand collapsed" id="#sortBy-collapse"
+                                <i class="fa fa-chevron-down navbar-brand collapsed" id="#sortBy-collapse"
                                     data-bs-toggle="collapse" data-bs-target="#sortBy-collapse"
-                                    aria-expanded="false" style="  transition: transform 0.3s ease;"></i>
+                                    aria-expanded="false"  style="color: #FFC936;transition: transform 0.3s ease;"></i>
                             </button>
                             <ul class="dropdown-menu sortFont">
                                 <li><a class="dropdown-item p-2 text-secondary sortby-css-h" href="">Low To High (Budget)</a></li>
@@ -696,11 +696,11 @@
 <!-- start Model -->
 <div class="modal fade roboto-font" id="artistModal" tabindex="-1" aria-labelledby="artistModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-top">
+    <div class="modal-dialog">
         <div class="modal-content ">
             <div class="modal-body p-0 bg-light">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-5">
                         <!-- Image Carousel -->
                         <div id="carouselExample" class="carousel slide caro-css" data-bs-ride="carousel">
                             <div class="carousel-indicators ">
@@ -727,17 +727,19 @@
                                         class="d-block rounded-end-4 w-100" alt="Profile Image">
                                 </div>
                             </div>
-                            <a class="left carousel-control" href="#carouselExample" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
-                            <a class="right carousel-control" href="#carouselExample" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                          </button>
+                          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                          </button>
                         </div>
                     </div>
-                    <div class="col-6">
+                    <div class="col-7">
                         <div class="me-4 mt-4">
                             <!-- Profile Details -->
                             <div class="p-2 rounded-2" style="background: #FCEAC8;">
@@ -764,51 +766,48 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="py-4">Rashmika Mandanna (born 5 April 1996) is an Indian actress who works
+                            <p class="pt-3">Rashmika Mandanna (born 5 April 1996) is an Indian actress who works
                                 in Telugu, Kannada, Hindi and Tamil films. She is the recipient of four SIIMA Awards and
                                 a Filmfare Award. She featured in the 30 Under 30 list by Forbes India in 2024. Rashmika
                                 made her acting debut with the Kannada film Kirik Party (2016), and found further
                                 success in the action picture Anjani Putra and romance Chamak (both 2017). She had her
                                 first Telugu film release in the romantic comedy Chalo (2018). </p>
-                            <div class="d-flex mt-3">
-                                <div class="rounded-2 ps-2 pe-5" style="background: #CEEAF6;">
-                                    <h6 class="pt-2">Age</h6>
-                                    <p><strong>28 years </strong> <br>5 April 1996</p>
+                            <div class="row mt-1 ps-2">
+                                <div class="col-4 rounded-2 m-0" style="background: #CEEAF6;">
+                                    <h6 class="pt-2 pb-3">Age</h6>
+                                    <strong>28 years </strong>
+                                    <p class="m-0">5 April 1996</p>
                                 </div>
-                                <div class="px-3">
+                                <div class=" col-8 px-3">
                                     <h6 class="sortFont text-dark">Current Projects</h6>
                                     <div class="project-thumbnails d-flex mt-3">
                                         <div class="">
-                                            <video id="videoPlayer" class="rounded-3" style="height: 100px; width: 90px;" controls>
+                                            <video id="videoPlayer" class="rounded-3" style="height: 60px; width: 95px;" controls>
                                                 <source src="https://www.youtube.com/watch?v=OgRoRBLZbUQ" type="video/mp4">
                                                 Your browser does not support the video tag.
                                             </video>
                                         </div>
                                         <div class="">
-                                            <video id="videoPlayer" class="rounded-3" style="height: 100px; width: 90px;" controls>
+                                            <video id="videoPlayer" class="rounded-3" style="height: 60px; width: 95px;" controls>
                                                 <source src="https://www.youtube.com/watch?v=OgRoRBLZbUQ" type="video/mp4">
                                                 Your browser does not support the video tag.
                                             </video>
                                         </div>
                                         <div class="">
-                                            <iframe id="videoPlayer" class="rounded-3" 
-        style="height: 100px; width: 90px;" 
-        src="https://www.youtube.com/embed/OgRoRBLZbUQ" 
-        frameborder="0" 
-        allow="accelerometer; autoplay; clipboard-red; encrypted-media; gyroscope; picture-in-picture" 
-        allowfullscreen>
-</iframe>
+                                            <iframe id="videoPlayer" class="rounded-3"style="height: 60px; width: 95px;"             
+                                            src="https://www.youtube.com/embed/OgRoRBLZbUQ"frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-red; encrypted-media; gyroscope; picture-in-picture"allowfullscreen>
+                                          </iframe>
                                         </div>
                                     </div>
                                 </div>
-
-                            </div>
-                            <div class="py-3">
+</div>
+                            <div class="pt-3">
                                 <div class="dropdown">
-                                    <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false" style="background: #67ABC9;
-">
+                                    <button class="btn text-light rounded-3" type="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false" style="background: #67ABC9;">
                                         Cost for per project
+                                        <i class="fa fa-chevron-down text-light ms-1"></i>
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li class="dropdown-item" href="#">10000000</li>
@@ -816,14 +815,15 @@
                                         <li class="dropdown-item" href="#">500000000</li>
                                     </ul>
                                 </div>
+                                <div class=" text-end">
+                                    <img src="assets/artist-Main-Page/heart.svg" class="me-3">
+                                    <button class="btn border-dark rounded-pill px-4 py-2 me-3"
+                                        data-bs-dismiss="modal">Close</button>
+                                    <button class="btn add-List-btn rounded-pill py-2" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">Get Details</button>
+                                </div>
                             </div>
-                            <div class="mt-3 text-end">
-                                <img src="assets/artist-Main-Page/heart.svg" class="me-3">
-                                <button class="btn border-dark rounded-pill px-4 py-2 me-3"
-                                    data-bs-dismiss="modal">Close</button>
-                                <button class="btn add-List-btn rounded-pill py-2" data-bs-toggle="modal"
-                                    data-bs-target="#exampleModal">Get Details</button>
-                            </div>
+                           
                         </div>
                     </div>
                 </div>
@@ -834,7 +834,7 @@
 <!-- Modal2 On Details Button -->
 <div class="modal fade roboto-font modal2-width" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
     aria-hidden="true">
-    <div class="modal-dialog modal-dialog-top bg-light rounded-3">
+    <div class="modal-dialog bg-light rounded-3">
         <div class="modal-content">
             <div class="" style="background: #E4FBC9;">
                 <div class="modal-header">
