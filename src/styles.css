@@ -1618,6 +1618,9 @@ text-align: left;
     padding: 3px;
     width: 71px;
   }
+  .build-high .main-title {
+    font-size: 29px;
+  }
 }
 
 @media (min-width:425px) {
@@ -1811,6 +1814,11 @@ text-align: left;
   .separator-line {
     top: 559px !important;
     display: block !important;
+  }
+
+  /* works us */
+  .health{
+    padding-left: 200px;
   }
 }
 
