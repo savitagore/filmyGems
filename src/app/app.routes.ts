@@ -17,6 +17,7 @@ import { SendOTPComponent } from './login/pages/send-otp/send-otp.component';
 import { EnterOTPComponent } from './login/pages/enter-otp/enter-otp.component';
 import { ForgottPasswordComponent } from './login/pages/forgott-password/forgott-password.component';
 import { ResetPasswordComponent } from './login/pages/reset-password/reset-password.component';
+import { WorkusComponent } from './footer/pages/workus/workus.component';
 
 export const routes: Routes = [
   { path: '', component: HeaderComponent },
@@ -76,5 +77,8 @@ export const routes: Routes = [
     path: 'continue-login',
     component: ContinueLoginComponent,
   },
-
+  {
+    path:'work-us',
+    component: WorkusComponent
+  }
 ];
