@@ -1,0 +1,77 @@
+{
+    "gems": [
+      {
+        "id": 1,
+        "name": "Shahid Kapoor",
+        "image": "shahid_kapoor.jpg",
+        "isHotChoice": true,
+        "isVarified": false,
+        "country": "India",
+        "city": "Mumbai",
+        "age": 35,
+        "gender": "Male",
+        "categories": ["Artist"]
+      }
+    ],
+
+    "filters": {
+        "sortBy": {
+        "Low-High-Budget": 100000,
+        "High-Low-Budget": 10000000
+      },
+      "budgetRange": {
+        "min": 100000,
+        "max": 10000000
+      },
+      "ageRange": {
+        "min": 15,
+        "max": 60
+      },
+      "countries": ["India", "USA"],
+      "cities": ["Mumbai", "Bangalore", "Hyderabad"],
+      "categoriesList": ["Artist", "Director", "Casting Director", "Assistant Director", "Associate Director", "Executive Producer"],
+      "sortOptions": ["Low to High (Budget)", "High to Low (Budget)"]
+    },
+
+    "1st-Modal":[
+        {
+            "name": "Rashmika Mandanna",
+            "age": 28,
+            "dateOfBirth": "1996-04-05",
+            "occupation": "Actress",
+            "industry": "Tollywood",
+            "description": "",
+            "rating":"",
+            "no-Of-views": 5,
+            "no-OfMedia-add": 5,
+            "awards": [
+              "SIIMA Award",
+              "Filmfare Award"
+            ],
+            "ratings":"",
+            "no-Of-viewrs": 2,
+            "no-OfMedia-added": 5,
+            "projects": [
+              {
+                "title": "Kirik Party",
+                "year": 2016,
+                "language": "Kannada"
+              }
+              
+            ],
+            "image": "https://example.com/rashmika_mandanna.jpg" 
+          }
+    ],
+   
+    "2nd-Modal":[
+        { 
+        "primary_number": "+91 9130831462",
+        "secondary_number": "+91 7387775499",
+        "email": "reshmika.m@gmail.com"
+    }
+   ]
+  }
+
+
+  
+  

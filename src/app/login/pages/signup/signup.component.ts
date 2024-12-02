@@ -114,10 +114,6 @@ export class SignupComponent {
     }
   }
 
-
-
-
-
   onLogin(): void {
     {
       this.router.navigate(['/login']);
