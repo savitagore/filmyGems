@@ -1,0 +1,8 @@
+{
+  "fields": [
+    {
+      "type": "otp",
+      "length": 6
+   }
+  ]
+}
