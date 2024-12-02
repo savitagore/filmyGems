@@ -22,7 +22,8 @@
 }
 .job{
   border: 1px solid #ffffff;
-  padding: 10px 70px;
+  /* padding: 10px 70px; */
+  width: 200px;
 }
 .workus-li li::marker{
      color:#FFFFFF ;
