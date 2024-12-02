@@ -1,0 +1,21 @@
+{
+  "contactForm": {
+    "firstName": "",
+    "lastName": "",
+    "email": "",
+    "phoneNumber": "",
+    "subject": "",
+    "message": ""
+  },
+  "mapLocation": {
+    "coordinates": {
+      "latitude": "44.0064",
+      "longitude": "-106.9561"
+    },
+    "label": "ST-1200",
+    "region": "Montana, USA"
+  }
+
+
+}
+
