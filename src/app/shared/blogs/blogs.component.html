@@ -8,8 +8,8 @@
     <div class="row">
       <div class="col-md-12">
         <div class="category-tags text-center">
-          <i class="fas fa-chevron-left arrow-icon me-4" (click)="previousCategory()"></i>
-          <span class="p-2 me-5" *ngFor="let category of visibleCategories" [ngClass]="{
+          <i class="fas fa-chevron-left arrow-icon me-3" (click)="previousCategory()"></i>
+          <span class="p-2 me-3" *ngFor="let category of visibleCategories" [ngClass]="{
               'active-category': selectedCategory === category,
               'category': true,
               'director-category': category === 'Director' && selectedCategory !== 'Director',}" (click)="selectCategory(category)">
