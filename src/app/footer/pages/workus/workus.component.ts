@@ -5,20 +5,40 @@ import { CommonModule } from '@angular/common';
 @Component({
   selector: 'app-workus',
   standalone: true,
-  imports: [CommonModule,NavbarComponent],
+  imports: [CommonModule, NavbarComponent],
   templateUrl: './workus.component.html',
-  styleUrl: './workus.component.css'
+  styleUrl: './workus.component.css',
 })
 export class WorkusComponent {
-  isDescriptionVisible = false;
+  jobs = [
+    {
+      id: 1,
+      title: 'Product Designer',
+      location: 'New York, USA',
+    },
+    {
+      id: 2,
+      title: 'Software Engineer',
+      location: 'London, UK',
+    },
+    {
+      id: 3,
+      title: 'Data Analyst',
+      location: 'Sydney, Australia',
+    },
+    {
+      id: 4,
+      title: 'Content Designer',
+      location: 'pune',
+    },
+  ];
 
-  // Button text state
-  buttonText = 'View Job';
+  visibilityState: { [key: number]: boolean } = {};
+  toggleJobDescription(jobId: number): void {
+    this.visibilityState[jobId] = !this.visibilityState[jobId];
+  }
 
-  // Function to toggle visibility of job description and footer
-  toggleJobDescription() {
-    this.isDescriptionVisible = !this.isDescriptionVisible;
-    // Change button text when clicked
-    this.buttonText = this.isDescriptionVisible ? 'Apply Job' : 'View Job';
+  isDescriptionVisible(jobId: number): boolean {
+    return !!this.visibilityState[jobId];
   }
 }
