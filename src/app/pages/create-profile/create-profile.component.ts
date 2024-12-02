@@ -8,11 +8,6 @@ import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 
 import { StartjourneyComponent } from '../../shared/startjourney/startjourney.component';
 
-
-
-
-
-
 @Component({
   selector: 'app-create-profile',
   standalone: true,

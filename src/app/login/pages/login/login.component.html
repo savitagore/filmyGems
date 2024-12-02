@@ -33,8 +33,7 @@
                 formControlName="password" placeholder="Enter password"  />
               <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)"
                 [ngStyle]="{
-                'padding-bottom': loginForm.get('password')?.errors?.['pattern'] ? '40px' : '0'
-              }">
+                'padding-bottom': loginForm.get('password')?.errors?.['pattern'] ? '40px' : '0'}">
                 <i [ngClass]="
                   showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
                 "></i>
