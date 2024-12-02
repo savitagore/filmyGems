@@ -41,15 +41,15 @@ categories = [
     'Assistant Director',
     'Associate Director',
     'Executive Producer',
-    
+
   ];
 
   currentIndex = 0;
-  visibleCategories: string[] = this.categories.slice(this.currentIndex, this.currentIndex +7);
+  visibleCategories: string[] = this.categories.slice(this.currentIndex, this.currentIndex +6);
 
 
   nextCategory() {
-    if (this.currentIndex + 7 < this.categories.length) {
+    if (this.currentIndex + 6 < this.categories.length) {
       this.currentIndex++;
       this.updateVisibleCategories();
     }
@@ -63,7 +63,7 @@ categories = [
   }
 
   updateVisibleCategories() {
-    this.visibleCategories = this.categories.slice(this.currentIndex, this.currentIndex + 7);
+    this.visibleCategories = this.categories.slice(this.currentIndex, this.currentIndex + 6);
 }
 }
 
