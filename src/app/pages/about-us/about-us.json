@@ -1,0 +1,32 @@
+{
+    "whatWeOffer": [
+      {
+        "title": "Top Event Management",
+        "icon": "icon-top-event-management.svg"
+      }
+    ],
+
+    "trustedBy": [
+      {
+        "name": "20th Century Studios",
+        "logo": "logo-20th-century-studios.svg"
+      }
+    ],
+
+    "partneredBy": [
+    {
+      "name": "Netflix",
+      "logo": "logo-netflix.svg"
+    }
+   ],
+
+   "whoWeAre": {
+    "title": "Who We Are?",
+    "description": "At FilmCams, we thrive on the aspiration to offer a community of complete assistance for all cinematic endeavors. Our journey began...",
+    "image": "who-we-are-image.jpg"
+  }
+
+  }
+
+ 
+  
