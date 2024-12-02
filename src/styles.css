@@ -933,6 +933,12 @@ input::placeholder {
   font-size: 18px;
   border: 1px solid #ffffff;
 }
+.cancel-btn:hover{
+  background-color: #000000;
+  color: #FFFFFF;
+  --bs-btn-active-color: inherit;
+  --bs-btn-active-bg: transparent;
+}
 input.profile-color:hover {
   background-color: #3C3D44;
 }
@@ -982,7 +988,7 @@ textarea::placeholder {
 }
 .sell-call {
   background-image: url("/assets/contactUs/sell-call.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   height: 657px;
 }
