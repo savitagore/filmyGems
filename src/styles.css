@@ -978,7 +978,13 @@ input.profile-color:focus {
 }
 .contact-color {
   background-color: #2A2A2A;
+  color: #969696;
   border: none;
+}
+.contact-color:focus {
+  background-color: #2A2A2A; 
+  color: #969696; 
+  outline: none;
 }
 .contries {
   height: 24px;
