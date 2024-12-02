@@ -45,11 +45,11 @@ categories = [
   ];
 
   currentIndex = 0;
-  visibleCategories: string[] = this.categories.slice(this.currentIndex, this.currentIndex +6);
+  visibleCategories: string[] = this.categories.slice(this.currentIndex, this.currentIndex +7);
 
 
   nextCategory() {
-    if (this.currentIndex + 6 < this.categories.length) {
+    if (this.currentIndex + 7 < this.categories.length) {
       this.currentIndex++;
       this.updateVisibleCategories();
     }
@@ -63,7 +63,7 @@ categories = [
   }
 
   updateVisibleCategories() {
-    this.visibleCategories = this.categories.slice(this.currentIndex, this.currentIndex + 6);
+    this.visibleCategories = this.categories.slice(this.currentIndex, this.currentIndex + 7);
 }
 }
 
