@@ -93,7 +93,7 @@ input:checked + .slider:before {
 .bio-text {
   font-size: 18px;
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-  margin-left: 144px !important;
+  margin-left: 119px !important;
 }
 
 .profile-insta {
@@ -108,4 +108,8 @@ input:checked + .slider:before {
 }
 .text-delete{
   color: #0031FF;
+}
+
+.custom-left-margin{
+  padding-left: 78px;
 }
