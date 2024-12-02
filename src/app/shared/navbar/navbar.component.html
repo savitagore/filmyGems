@@ -114,7 +114,7 @@
                     </p>
                   </div>
                 </div>
-                <form *ngIf="isEditMode" [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+                <form *ngIf="isEditMode" [formGroup]="profileForm">
                   <div class="mb-3">
                     <label for="fullName" class="form-label">Full Name</label>
                     <input type="text" class="form-control" id="fullName" formControlName="fullName">

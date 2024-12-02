@@ -1,0 +1,51 @@
+{
+  "corporateOffices": [
+    {
+      "country": "USA",
+      "address": "2493 Forest Meadows, CT SE, Grand Rapids, MI, 49546 USA",
+      "contact": "+616 7245366",
+      "email": "usa@filmygems.com"
+    },
+    {
+      "country": "Dubai",
+      "address": "Al Barsha Rd, Al Barsha, Dubai (UAE)",
+      "contact": "+971 526260095",
+      "email": "uae@filmygems.com"
+    },
+    {
+      "country": "London",
+      "address": "Regent's Park, London, NW1 8SA, UK",
+      "contact": "+44 794210454",
+      "email": "uk@filmygems.com"
+    },
+    {
+      "country": "New Zealand",
+      "address": "6921 Hunters Park Drive, Three Kings, Auckland 1024",
+      "contact": "+64 27 333 3300",
+      "email": "nz@filmygems.com"
+    },
+    {
+      "country": "Norway",
+      "address": "",
+      "contact": "+44 794210454",
+      "email": "norway@filmygems.com"
+    },
+    {
+      "country": "India",
+      "locations": [
+        {
+          "city": "Pune",
+          "address": "Shree Ganesh AEC, Office 304, Kokane Chowk, Pune 411017",
+          "contact": "+91 7387775499",
+          "email": "pune@filmygems.com"
+        },
+        {
+          "city": "Mumbai",
+          "address": "Kharghar, Navi Mumbai 410210",
+          "contact": "",
+          "email": ""
+        }
+      ]
+    }
+  ]
+}
