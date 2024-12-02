@@ -434,6 +434,10 @@ li.nav-item a.nav-link.active {
   font-size: 14px;
   padding: 0px;
 }
+.custom-read:hover{
+  color: #FFB62A;
+  border: none;
+}
 .custom-fontp {
   font-size: 16px;
 }
