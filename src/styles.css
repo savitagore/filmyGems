@@ -49,12 +49,11 @@ li.nav-item a.nav-link.active {
 }
 
 .btn-all {
-  width: 200px;
-  height: 48px;
   background-color: #F3AD3B;
   border: none;
   font-size: 18px;
   font-weight: 500;
+  padding: 10px 50px;
 }
 
 .btn-all:hover {
