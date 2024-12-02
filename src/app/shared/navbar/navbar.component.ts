@@ -38,7 +38,12 @@ export class NavbarComponent {
     }
   }
 
+// 
+sidebarOpen: boolean = false; // Flag to control sidebar state
 
-
+// Toggle sidebar visibility
+toggleSidebar() {
+  this.sidebarOpen = !this.sidebarOpen;
+}
 
 }
