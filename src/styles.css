@@ -28,7 +28,10 @@ li.nav-item a.nav-link.active {
   font-size: 18px;
   width: 172px;
 }
-
+.btn-join-now:hover{
+  border: 1px sold #000000;
+  color: #000;
+}
 .choices {
   position: relative;
   top: 14px;
@@ -58,6 +61,7 @@ li.nav-item a.nav-link.active {
 
 .btn-all:hover {
   background-color: #ffb62a;
+  color: #000000;
 }
 
 .btn-all:active {
@@ -954,11 +958,13 @@ input::placeholder {
   --bs-btn-active-color: inherit;
   --bs-btn-active-bg: transparent;
 }
-input.profile-color:hover {
-  background-color: #3C3D44;
+.profile-color{
+  color: #969696;
 }
-input.profile-color:focus {
+input.profile-color:hover,
+input.profile-color:focus  {
   background-color: #3C3D44;
+  color: #969696;
 }
 .file-item {
   background-color: #686C6E;
