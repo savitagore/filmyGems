@@ -1,0 +1,15 @@
+[
+    {
+      "img-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "imageUrl": "assets/images/party.jpg"
+    },
+    {
+        "img-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        "imageUrl": "assets/images/party.jpg"
+      },
+      {
+        "img-description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+        "imageUrl": "assets/images/party.jpg"
+      }
+  ]
+  
