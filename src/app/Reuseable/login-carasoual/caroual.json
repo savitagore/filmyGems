@@ -1,0 +1,17 @@
+{
+  "carouselImages": [
+    {
+      "src": "assets/signup/signup2.png",
+      "alt": "Slide Image 1"
+    },
+    {
+      "src": "assets/signup/login1.png",
+      "alt": "Slide Image 2"
+    },
+    {
+      "src": "assets/signup/send1.png",
+      "alt": "Slide Image 3"
+    }
+  ]
+}
+

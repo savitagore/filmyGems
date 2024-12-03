@@ -1,0 +1,42 @@
+{
+
+  "profile": {
+    "id":"",
+    "photo": "",
+    "firstName": "",
+    "lastName": "",
+    "email": "",
+    "mobileNumber": "",
+    "city": "",
+    "zipCode": "",
+    "country": "",
+    "category":[],
+    "language": []
+  },
+
+  "uploads": [
+    {
+      "fileName": "image1.png",
+      "type": "image",
+      "size": "40x40"
+    },
+    {
+      "fileName": "image2.png",
+      "type": "image",
+      "size": "40x40"
+    },
+    {
+      "fileName": "image3.png",
+      "type": "image",
+      "size": "40x40"
+    },
+    {
+      "fileName": "video.mp4",
+      "type": "video",
+      "progress": "75%"
+    }
+  ],
+  "agreement": {
+    "accepted": false
+  }
+}

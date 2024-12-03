@@ -1,0 +1,29 @@
+{
+  "page": {
+    "title": "Contact Page",
+    "sections": [
+      {
+        "id": "talk-to-sales",
+        "title": "Talk to Sales",
+        "description": "Interested in our services? Just pick up the phone to chat with a member of our sales team.",
+        "email": "sales@filmygems.com"
+      },
+      {
+        "id": "customer-support",
+        "title": "Contact Customer Support",
+        "description": "Sometimes you need a little help from your friends. Or our support representative. Don't worry, we're here for you.",
+        "button": {
+          "text": "Contact Support",
+          "color": "#fdbf00",
+          "action": "mailto:support@filmygems.com"
+        }
+      }
+    ],
+    "image": {
+      "src": "assets/images/sales-representative.jpg",
+      "alt": "Woman talking on phone",
+      "position": "left"
+    }
+
+  }
+}

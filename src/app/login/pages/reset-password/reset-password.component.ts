@@ -23,13 +23,13 @@ export class ResetPasswordComponent {
 //       [
 //         Validators.required,
 //         Validators.minLength(8),
-//         Validators.pattern(/^(?=.*[A-Z])(?=.*\d).+$/), 
+//         Validators.pattern(/^(?=.*[A-Z])(?=.*\d).+$/),
 //       ],
 //     ],
 //     confirmPassword: ['', [Validators.required]],
 //   }, { validators: this.passwordMatchValidator });
 // }
- 
+
 
 constructor(private router: Router, private fb: FormBuilder,private signupService:SignupvalidationService) {
   this.resetPasswordForm = this.fb.group(
@@ -40,7 +40,9 @@ constructor(private router: Router, private fb: FormBuilder,private signupServic
     { validator: this.matchPasswords }
   );
 }
-  togglePassword(fieldNumber: number) {
+
+
+togglePassword(fieldNumber: number) {
     if (fieldNumber === 1) {
       this.showPassword1 = !this.showPassword1;
     } else if (fieldNumber === 2) {
@@ -81,7 +83,7 @@ constructor(private router: Router, private fb: FormBuilder,private signupServic
   get confirmPassword() {
     return this.resetPasswordForm.get('confirmPassword');
   }
- 
+
   getPasswordPatternTooltip(): string {
     return this.signupService.getPasswordPatternErrorMessage();
   }

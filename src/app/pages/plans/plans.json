@@ -1,0 +1,18 @@
+{
+    "id": 1, 
+    "plan-name": "Basic,silver,gold,platinium(dimonds as per plan)", 
+    "price_monthly": 199, 
+    "price_yearly": 1999,
+    "contact_numbers": 5, 
+    "customer_support": true, 
+    "agent_support": false,
+    "videos": false, 
+    "is_most_popular": false, 
+    "is_featured": false, 
+    "is_active": true, 
+    "description": "Basic plan with essential features", 
+    "benefits": [
+        "Limited contact numbers",
+        "Basic customer support"
+    ]
+}
