@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
@@ -13,8 +13,15 @@ import { FormsModule } from '@angular/forms';
   templateUrl: './artist-main-page.component.html',
   styleUrl: './artist-main-page.component.css'
 })
-export class ArtistMainPageComponent {
-  
+export class ArtistMainPageComponent{
+  currentBudget: number = 1000000; // Initial budget
+    minBudget = 1000000;
+    maxBudget = 5000000;
+    progress: number = 0;
+
+    updateProgress() {
+        this.progress = ((this.currentBudget - this.minBudget) / (this.maxBudget - this.minBudget)) * 100;
+    }
 
   categories = [
     { name: 'Artist', checked: false },
