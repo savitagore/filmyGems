@@ -573,17 +573,17 @@ small {
   border-radius: 50px;
 }
 .shaid {
-  background-size: cover;
+  background-size: cover; 
   background-position: center;
-  transition: background-size 0.5s ease-in-out, border 0.5s ease-in-out;
   background-repeat: no-repeat;
   border: none;
+  transition: background-size 0.5s ease, background 0.5s ease, border 0.3s ease;
+  overflow: hidden; 
 }
 .shaid:hover {
-  background-size: 150%;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #fff;
+  background-size: 150%; 
+  background-position: center; 
+  border: 2px solid #ffffff;
 }
 /* shaid model popup */
 .image-overlay::before {
