@@ -18,50 +18,76 @@
 </section>
 <section class="bg-middle roboto-font">
   <div class="container">
-    <div class="row pt-5">
-      <div class="col-12">
-        <h3 class="contact-us text-white">Contact Us</h3>
-      </div>
-      <div class="col-lg-6 pt-3">
-        <div class="row">
-          <div class="col-6">
-            <input type="text" class="form-control contact-color" id="firstName" placeholder="First Name *">
-          </div>
-          <div class="col-6">
-            <input type="text" class="form-control contact-color" id="lastName" placeholder="Last Name *">
-          </div>
+    <form [formGroup]="contactForm">
+      <div class="row pt-5">
+        <div class="col-12">
+          <h3 class="contact-us text-white">Contact Us</h3>
         </div>
-        <div class="row pt-3">
-          <div class="col-6">
-            <input type="email" class="form-control contact-color" id="email" placeholder="Email *">
+
+        <div class="col-lg-6 pt-3">
+          <div class="row">
+            <div class="col-6">
+              <input type="text" class="form-control contact-color" formControlName="firstName"
+                placeholder="First Name *">
+              <div *ngIf="formControls.firstName.invalid && formControls.firstName.touched" class="text-danger">
+                First Name is required and must contain only letters.
+              </div>
+            </div>
+            <div class="col-6">
+              <input type="text" class="form-control contact-color" formControlName="lastName"
+                placeholder="Last Name *">
+              <div *ngIf="formControls.lastName.invalid && formControls.lastName.touched" class="text-danger">
+                Last Name is required and must contain only letters.
+              </div>
+            </div>
           </div>
-          <div class="col-6">
-            <input type="tel" class="form-control contact-color" id="phone" placeholder="Phone Number *">
+
+          <div class="row pt-3">
+            <div class="col-6">
+              <input type="email" class="form-control contact-color" formControlName="email" placeholder="Email *">
+              <div *ngIf="formControls.email.invalid && formControls.email.touched" class="text-danger">
+                A valid email address is required.
+              </div>
+            </div>
+            <div class="col-6">
+              <input type="tel" class="form-control contact-color" formControlName="phone" placeholder="Phone Number *"
+                (input)="onPhoneInput($event)">
+              <div *ngIf="formControls.phone.invalid && formControls.phone.touched" class="text-danger">
+                <div *ngIf="formControls.phone.errors?.required">Phone number is required.</div>
+                <div *ngIf="formControls.phone.errors?.pattern">Phone number must be a 10-digit number.</div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row pt-3">
-          <div class="col-12">
-            <input type="text" class="form-control contact-color" id="subject" placeholder="Subject *">
+          <div class="row pt-3">
+            <div class="col-12">
+              <input type="text" class="form-control contact-color" formControlName="subject" placeholder="Subject *">
+              <div *ngIf="formControls.subject.invalid && formControls.subject.touched" class="text-danger">
+                Subject is required.
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="row pt-3">
-          <div class="col-12">
-            <div class="form-floating">
-              <textarea class="form-control contact-color" placeholder="Your message*" id="floatingTextarea"
-                style="height: 127px;"></textarea>
+          <div class="row pt-3">
+            <div class="col-12">
+              <div class="form-floating">
+                <textarea class="form-control contact-color" formControlName="message" placeholder="Your message*"
+                  style="height: 127px;"></textarea>
+                <div *ngIf="formControls.message.invalid && formControls.message.touched" class="text-danger">
+                  Message is required and should have at least 10 characters.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row pt-3">
+            <div class="col-12">
+              <button class="btn btn-all rounded-pill" type="button">Submit</button>
             </div>
           </div>
         </div>
-        <div class="row pt-3">
-          <div class="col-12">
-            <button class="btn btn-all rounded-pill" type="button">Submit</button>
-          </div>
+        <div class="col-lg-6 pt-3">
+          <img src="assets/contactUs/map.png" alt="Map" class="img-fluid">
         </div>
       </div>
-      <div class="col-lg-6 pt-3">
-        <img src="assets/contactUs/map.png" alt="Map" class="img-fluid">
-      </div>
-    </div>
+    </form>
     <div class="row pt-5">
       <div class="col-12">
         <h3 class="corporate-contact text-white">Corporate Offices:</h3>
@@ -167,7 +193,7 @@
         <div class="col-md-6  d-flex flex-column justify-content-center align-items-center" style="padding-top: 75px;">
           <h3 class="corporate-contact">Talk to Sales</h3>
           <p class="pt-2 ">Interested in our services? Just pick up the phone to chat</p>
-          <p >with a member of our sales team.</p>
+          <p>with a member of our sales team.</p>
           <p class="pb-4"><u>sales&#64;filmygems.com</u></p>
           <hr class="divider-contact">
           <h3 class="corporate-contact pt-4">Contact Customer Support</h3>

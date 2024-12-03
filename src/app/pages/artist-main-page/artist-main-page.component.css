@@ -14,4 +14,13 @@
         background-color: #F9F2E3;
      
    }
+   
+
+.progress-value {
+    color: orange; /* Change color to orange */
+    height: 100%; /* Ensure it fills the height of the progress bar */
+    transition: width 0.3s ease-in-out; /* Smooth transition for width changes */
+    border-radius: 5px; /* Optional: for rounded corners */
+}
+
   

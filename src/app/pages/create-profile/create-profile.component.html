@@ -69,9 +69,6 @@
                   *ngIf="profileForm.get('email')?.hasError('pattern') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
                   class="text-danger">Email format is invalid.</small>
               </div>
-
-
-
               <div class="col-12 col-md-6">
                 <input type="text" class="form-control profile-color" formControlName="mobile" id="mobile"
                   placeholder="Mobile Number *">
@@ -112,7 +109,7 @@
                     required.</small>
                 </div>
               </div>
-             <div class="col-12 col-md-6 profile-color mb-4 border-0">
+              <div class="col-12 col-md-6 profile-color mb-4 border-0">
                 <select class="form-select select-gold scrollable-options" data-bs-spy="scroll"
                   data-bs-target="dropdown-menu" data-bs-offset="50" aria-labelledby="dropdownMenuButton1"
                   style="max-height: 200px; overflow-y: auto;">
@@ -127,8 +124,6 @@
                   <option value="line-producer">Line Producer</option>
                 </select>
               </div>
-
-
               <div class="col-12 col-md-6 profile-color border-0">
                 <select class="form-select select-gold" id="language" style="background-color: #F3AD3B;">
                   <option class="bg-warning" value="" selected>Select Language</option>
@@ -137,8 +132,6 @@
                   <option value="french">French</option>
                 </select>
               </div>
-
-
             </div>
           </div>
         </div>
@@ -162,7 +155,7 @@
                 <div class="file-item mb-2 d-flex align-items-center pt-2">
                   <img src="https://via.placeholder.com/40" alt="Thumbnail" class="img-fluid file-thumbnail me-2">
                   <span class="file-name">image1.png</span>
-                  <button type="button" class="btn-closes ms-auto" >X</button>
+                  <button type="button" class="btn-closes ms-auto">X</button>
                 </div>
                 <div class="file-item mb-2 d-flex align-items-center">
                   <img src="https://via.placeholder.com/40" alt="Thumbnail" class="img-fluid file-thumbnail me-2">
@@ -191,6 +184,9 @@
                         aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
                   </div>
+
+
+
                 </div>
               </div>
             </div>
@@ -209,7 +205,8 @@
         </div>
         <div class="row">
           <div class="col-12 text-center mb-3 pt-3">
-            <button type="button" class="btn btn-outline-light me-2 rounded-pill cancel-btn cancel-moblie">Cancel</button>
+            <button type="button"
+              class="btn btn-outline-light me-2 rounded-pill cancel-btn cancel-moblie">Cancel</button>
             <button type="button" class="btn btn-all rounded-pill">Save</button>
           </div>
         </div>
