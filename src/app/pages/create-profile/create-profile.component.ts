@@ -5,16 +5,21 @@ import { NavbarComponent } from '../../shared/navbar/navbar.component';
 import { FooterComponent } from '../../shared/footer/footer.component';
 
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
-import { ProgressBar } from 'primeng/progressbar';
+import { ProgressBar, ProgressBarModule } from 'primeng/progressbar';
 
 import { StartjourneyComponent } from '../../shared/startjourney/startjourney.component';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { HttpClientModule } from '@angular/common/http';
+import { FileUploadModule } from 'primeng/fileupload';
+import { ButtonModule } from 'primeng/button';
+import { BadgeModule } from 'primeng/badge';
 
 @Component({
   selector: 'app-create-profile',
   standalone: true,
-  imports: [CommonModule,NavbarComponent,FooterComponent, ReactiveFormsModule, FormsModule, StartjourneyComponent,],
+  imports: [CommonModule,NavbarComponent,FooterComponent, ReactiveFormsModule, FormsModule, StartjourneyComponent,
+    FileUploadModule, ButtonModule, BadgeModule, ProgressBarModule, ToastModule, HttpClientModule],
   providers: [MessageService],
   templateUrl: './create-profile.component.html',
   styleUrl: './create-profile.component.css'
@@ -40,8 +45,6 @@ export class CreateProfileComponent  {
       country: ['', [Validators.required]]
     });
   }
-
-
 
 }
 

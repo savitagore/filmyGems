@@ -5,16 +5,18 @@ import { InputOtpModule } from 'primeng/inputotp';
 import { FormsModule } from '@angular/forms';
 import { SignupvalidationService } from '../../../core/Services/signupValidation/signupvalidation.service';
 import { CommonModule } from '@angular/common';
+import { MaskPhoneNumberPipe } from '../../../core/Pipe/mask-phone-number.pipe';
 
 @Component({
   selector: 'app-enter-otp',
   standalone: true,
-  imports: [LoginCarasoualComponent,RouterLink,InputOtpModule,FormsModule,CommonModule],
+  imports: [LoginCarasoualComponent,RouterLink,InputOtpModule,FormsModule,CommonModule,MaskPhoneNumberPipe],
   providers:[SignupvalidationService],
   templateUrl: './enter-otp.component.html',
   styleUrl: './enter-otp.component.css'
 })
 export class EnterOTPComponent {
+  phoneNumber: string = '98123xxxx23';
   value : any
   otp: string[] = ['', '', '', ''];
   constructor( private router: Router,private signupService:SignupvalidationService){}
@@ -43,4 +45,6 @@ export class EnterOTPComponent {
 
 
   }
+
+
 }
