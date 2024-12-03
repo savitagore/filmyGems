@@ -1,28 +1,34 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component, Input, NgZone, OnInit } from '@angular/core';
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
 
 import { FooterComponent } from '../../shared/footer/footer.component';
 
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { ProgressBar } from 'primeng/progressbar';
 
 import { StartjourneyComponent } from '../../shared/startjourney/startjourney.component';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 @Component({
   selector: 'app-create-profile',
   standalone: true,
-  imports: [CommonModule,NavbarComponent,FooterComponent, ReactiveFormsModule, FormsModule, StartjourneyComponent, ],
-  providers:[],
+  imports: [CommonModule,NavbarComponent,FooterComponent, ReactiveFormsModule, FormsModule, StartjourneyComponent,],
+  providers: [MessageService],
   templateUrl: './create-profile.component.html',
   styleUrl: './create-profile.component.css'
 })
-export class CreateProfileComponent {
+export class CreateProfileComponent  {
+
+
+
   backgroundImageUrl: string = 'assets/create-profile/bg-main.png';
   bgImage: string = 'assets/create-profile/music-girl.png';
 
   profileForm: FormGroup;
 
-  constructor(private fb: FormBuilder) {
+  constructor(private fb: FormBuilder,private messageService: MessageService, private ngZone: NgZone) {
 
     this.profileForm = this.fb.group({
       email: ['', [Validators.required, Validators.email, Validators.pattern('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$')]],
@@ -34,6 +40,8 @@ export class CreateProfileComponent {
       country: ['', [Validators.required]]
     });
   }
+
+
 
 }
 
