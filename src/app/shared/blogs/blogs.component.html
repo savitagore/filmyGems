@@ -12,7 +12,8 @@
           <span class="p-2 me-3" *ngFor="let category of visibleCategories" [ngClass]="{
               'active-category': selectedCategory === category,
               'category': true,
-              'director-category': category === 'Director' && selectedCategory !== 'Director',}" (click)="selectCategory(category)">
+              'director-category': category === 'Director' && selectedCategory !== 'Director',}"
+            (click)="selectCategory(category)">
             {{ category }}
           </span>
           <i class="fas fa-chevron-right arrow-icon " (click)="nextCategory()"></i>
@@ -554,7 +555,9 @@
           <div class="col-md-8">
               <div class="text-start text-white ">
                   <h3 class="about-h3 ">Why FilmyGems?</h3>
-                  <p class="about-WWR-p">At FilmyGems, we're more than just a platform; we're a community of cinephiles<br> passionate about cinema in all its forms. Our journey began with a simple mission: to <br>celebrate the magic of movies and connect audiences with the finest cinematic<br> experiences. With a vast library spanning genres and eras, we offer a treasure trove of<br> cinematic gems waiting to be discovered. From timeless classics to avant-garde<br> masterpieces, we curate a diverse selection that caters to every taste.  </p>
+                  <p class="about-WWR-p">At FilmyGems, we're more than just a platform; we're a community of cinephiles<br> passionate about cinema in all its forms. Our journey began with a simple mission: to <br>celebrate the magic of movies and connect audiences with the finest cinematic<br> experiences. With a vast library spanning genres and eras, we offer a treasure trove of<br> cinematic gems waiting to be discovered. From timeless classics to avant-garde<br> masterpieces, we curate a diverse selection that caters to every taste. 
+
+                   </p>
                   <p class="about-WWR-p"> Join us in exploring the captivating world of film, where every frame tells a story and<br> every viewing is an adventure. Welcome to FilmyGems.</p>
                   <div>
                       <button class="btn letsConnect-btn mt-5 p-2" type="button" routerLink="/contact-us">Let's Connect</button>
@@ -666,7 +669,7 @@
                                             </video>
                                         </div>
                                         <div class="">
-                                            <iframe id="videoPlayer" class="rounded-3"style="height: 60px; width: 95px;"
+                                            <iframe id="videoPlayer" class="rounded-3"style="height: 60px; width: 95px;"             
                                             src="https://www.youtube.com/embed/OgRoRBLZbUQ"frameborder="0"
                                             allow="accelerometer; autoplay; clipboard-red; encrypted-media; gyroscope; picture-in-picture"allowfullscreen>
                                           </iframe>
@@ -695,7 +698,7 @@
                                         data-bs-target="#exampleModal">Get Details</button>
                                 </div>
                             </div>
-
+                           
                         </div>
                     </div>
                 </div>
