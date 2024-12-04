@@ -21,7 +21,7 @@ export class NavbarComponent {
       location: ['Navi Mumbai'],
       contactNumber: ['9800000000'],
       bio: [
-     'I am Passionate and dedicated, brings complex characters to life on stage and screen. With a rich background in dramatic arts and a talent for evoking deep emotions, I’m captivates audiences, leaving a lasting impact. An artist committed to storytelling,  and continue to push the boundaries of performance.'
+       'I am Passionate and dedicated, brings complex characters to life on stage and screen. With a rich background in dramatic arts and a talent for evoking deep emotions, I’m captivates audiences, leaving a lasting impact. An artist committed to storytelling,  and continue to push the boundaries of performance.'
       ]
     });
   }
@@ -38,7 +38,7 @@ export class NavbarComponent {
     }
   }
 
-// 
+//
 sidebarOpen: boolean = false; // Flag to control sidebar state
 
 // Toggle sidebar visibility

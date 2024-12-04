@@ -21,4 +21,18 @@
     
 }
 
-  
+
+.cele-zoom{
+  background-size: cover; 
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  transition: background-size 0.5s ease;
+ 
+}
+.cele-zoom:hover{
+  background-size: 120%; 
+}
+
+
+

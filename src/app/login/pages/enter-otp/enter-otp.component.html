@@ -14,10 +14,11 @@
       </div>
       <div class="row justify-content-center g-0">
         <div class="col-lg-7 col-md-10 col-sm-12">
-          <div class="text-white ">
-            <h4 style="line-height :0.5;">Enter OTP</h4>
+          <div class="text-white">
+            <h4 style="line-height: 0.5;">Enter OTP</h4>
             <p class="role">
-              Please enter the OTP code we sent at 98123***23!</p>
+              Please enter the OTP code we sent at {{ phoneNumber | maskPhoneNumber }} !
+            </p>
           </div>
          <form action="">
           <div class="otp-input-group text-center">
