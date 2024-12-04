@@ -572,19 +572,24 @@ small {
   color: white;
   border-radius: 50px;
 }
+
 .shaid {
-  background-size: cover; 
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
-  transition: background-size 0.5s ease, background 0.5s ease, border 0.3s ease;
-  overflow: hidden; 
+  transition: background-size 0.4s ease, background-position 0.4s ease, border 0.4s ease; 
+  overflow: hidden;
+  position: relative;
 }
+
 .shaid:hover {
   background-size: 150%; 
   background-position: center; 
-  border: 2px solid #ffffff;
+  border: 1px solid #ffffff;
 }
+
+
 /* shaid model popup */
 .image-overlay::before {
   content: "";
@@ -1573,6 +1578,25 @@ text-align: left;
  
 }
 
+/* landing mademeweb */
+.madeweb {
+  background-image: url('/assets/landing_Img/madme.png'); 
+  background-size: cover; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  height: 600px; 
+  width: 100%; 
+}
+.trailer{
+  background-color: #000000;
+}
+.primium{
+  background-color:#660000;
+}
+
+.buy-btn{
+  background-color: #ff0040;
+}
 
 
 /* All medias */
