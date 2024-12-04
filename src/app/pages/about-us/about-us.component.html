@@ -152,56 +152,20 @@
 
 <!-- Trusted By Section start -->
 <section class="bg-middle">
-    <div class="container">
-        <h3 class="about-h3 text-center text-white py-5">Trusted by</h3>
-        <div class="row mx-5 ">
-            <div class="col-lg-2 col-md-6 col-sm-12">
-                <div class=" d-flex justify-content-lg-between justify-content-md-center align-items-center">
-                    <img src="assets/aboutUs/trusted-Img1.svg" class="ps-3" alt="about-US-partner-img1">
-                    <div class="divider-line ">
-                        <div class="img-divider"> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-12">
-                <div class="d-flex justify-content-lg-between justify-content-md-center align-items-center">
-                    <img src="assets/aboutUs/trusted-Img2.svg" alt="about-US-trusted-img2" class="ms-2">
-                    <div class="divider-line">
-                        <div class="img-divider"> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-12">
-                <div class="d-flex justify-content-lg-between justify-content-md-center align-items-center">
-                    <img src="assets/aboutUs/trusted-Img3.svg" alt="about-US-trusted-img3" class="ms-2">
-                    <div class="divider-line">
-                        <div class="img-divider"> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-12">
-                <div class=" d-flex justify-content-lg-between justify-content-md-center align-items-center pt-2">
-                    <img src="assets/aboutUs/trusted-Img4.svg" alt="about-US-trusted-img4" class="ms-3">
-                    <div class="divider-line">
-                        <div class="img-divider"> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-12 p-0">
-                <div class=" d-flex justify-content-lg-between justify-content-md-center align-items-center pt-2">
-                    <img src="assets/aboutUs/trusted-Img5.svg" alt="about-US-trusted-img5" class="pe-3">
-                    <div class="divider-line">
-                        <div class="img-divider"> </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-6 col-sm-12">
-                <div class="d-flex justify-content-lg-between justify-content-md-center">
-                    <img src="assets/aboutUs/trusted-Img6.svg" alt="about-US-trusted-img6" class="ps-3">
-                </div>
-            </div>
+  <div class="container">
+    <h3 class="about-h3 text-center text-white pt-4">Trusted by</h3>
+    <div class="row align-items-center mt-4">
+      <i class="fas fa-chevron-left arrow-icon text-light fs-3 col-auto" (click)="prevImage()"></i>
+      <div class="col-10 text-center">
+        <div class="row">
+          <div class="col" *ngFor="let image of visibleImages">
+            <img [src]="image" class="img-fluid" alt="trusted-by-image">
+          </div>
         </div>
+      </div>
+      <i class="fas fa-chevron-right arrow-icon text-light fs-3 col-auto align-items-end" (click)="nextImage()"></i>
     </div>
+  </div>
 </section>
 <!-- Trusted By Section end -->
 

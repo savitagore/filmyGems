@@ -15,19 +15,17 @@ import { FileUploadModule } from 'primeng/fileupload';
 import { ButtonModule } from 'primeng/button';
 import { BadgeModule } from 'primeng/badge';
 
+
 @Component({
   selector: 'app-create-profile',
   standalone: true,
   imports: [CommonModule,NavbarComponent,FooterComponent, ReactiveFormsModule, FormsModule, StartjourneyComponent,
-    FileUploadModule, ButtonModule, BadgeModule, ProgressBarModule, ToastModule, HttpClientModule],
+    FileUploadModule, ButtonModule, BadgeModule, ProgressBarModule, ToastModule,],
   providers: [MessageService],
   templateUrl: './create-profile.component.html',
   styleUrl: './create-profile.component.css'
 })
 export class CreateProfileComponent  {
-
-
-
   backgroundImageUrl: string = 'assets/create-profile/bg-main.png';
   bgImage: string = 'assets/create-profile/music-girl.png';
 
