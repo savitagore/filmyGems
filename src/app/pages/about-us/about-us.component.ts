@@ -76,4 +76,39 @@ export class AboutUsComponent {
       this.currentIndex + 5
     );
   }
+
+  partners = [
+    { img: 'assets/aboutUs/partner-img1.svg', alt: 'Partner 1' },
+    { img: 'assets/aboutUs/partner-img2.svg', alt: 'Partner 2' },
+    { img: 'assets/aboutUs/partner-img3.svg', alt: 'Partner 3' },
+    { img: 'assets/aboutUs/partner-img4.svg', alt: 'Partner 4' },
+    { img: 'assets/aboutUs/partner-img5.svg', alt: 'Partner 5' },
+    { img: 'assets/aboutUs/partner-img6.svg', alt: 'Partner 6' },
+    { img: 'assets/aboutUs/partner-img7.svg', alt: 'Partner 7' }
+  ];
+
+  startIndex = 0;
+  visiblePartners: { img: string; alt: string }[] = [];
+
+  ngOnInit() {
+    this.updateVisiblePartners();
+  }
+
+  updateVisiblePartners() {
+    this.visiblePartners = this.partners.slice(this.startIndex, this.startIndex + 5);
+  }
+
+  nextPartners() {
+    if (this.startIndex + 1 < this.partners.length) {
+      this.startIndex++;
+      this.updateVisiblePartners();
+    }
+  }
+
+  prevPartners() {
+    if (this.startIndex > 0) {
+      this.startIndex--;
+      this.updateVisiblePartners();
+    }
+  }
 }
