@@ -151,14 +151,18 @@
                 <div *ngIf="!isEditMode">
                   <div class="profile-card">
                     <p>Full Name: <strong class="ms-4 ps-5 p-1">{{ profileForm.get('fullName')?.value
-                        }}</strong></p>
+                      | maskPhoneNumber:'text'}}</strong></p>
                     <p class="">Subscription Plan: <strong class="ps-3">{{
                         profileForm.get('subscriptionPlan')?.value }}</strong></p>
                     <p>
                       Location: <strong class="custom-left-margin">{{ profileForm.get('location')?.value
                         }}</strong>
-                    <p>Contact Number: <strong class="ms-4 ">{{
-                        profileForm.get('contactNumber')?.value }}</strong></p>
+                    <!-- <p>Contact Number: <strong class="ms-4 ">{{
+                        profileForm.get('contactNumber')?.value }}</strong></p> -->
+                        <p>Contact Number:
+                          <strong class="ms-4">{{ profileForm.get('contactNumber')?.value | maskPhoneNumber:'number' }}</strong>
+                      </p>
+
                     <div class="bio-section d-flex">
                       <p>Bio: </p>
                       <div class="p-1 rounded bg-white border bio-text">
