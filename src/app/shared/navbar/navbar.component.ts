@@ -2,12 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { MaskPhoneNumberPipe } from '../../core/Pipe/mask-phone-number.pipe';
 
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink,RouterLinkActive,CommonModule,ReactiveFormsModule,FormsModule],
+  imports: [RouterLink,RouterLinkActive,CommonModule,ReactiveFormsModule,FormsModule,MaskPhoneNumberPipe],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
@@ -27,6 +28,21 @@ export class NavbarComponent {
   }
 
   isToggled: Boolean = false;
+  isMenuOpen = false;
+
+
+  toggleMenu() {
+    const toggleButton = document.getElementById('toggle');
+    const navbarMenu = document.getElementById('mynavbar');
+
+    // Toggle the 'on' class for the toggle button
+    toggleButton?.classList.toggle('on');
+
+    // Optionally, toggle the visibility of the menu (if needed)
+    navbarMenu?.classList.toggle('show');
+  }
+
+
   toggleEditMode() {
     this.isEditMode = !this.isEditMode;
   }

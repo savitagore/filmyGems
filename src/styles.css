@@ -32,6 +32,77 @@ li.nav-item a.nav-link.active {
   border: 1px sold #000000;
   color: #000;
 }
+/* navbar collapse btn */
+#toggle {
+  display: block;
+  width: 60px;
+  height: 42px;
+}
+
+#toggle span {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: #F3AD3B;
+  transition: all 0.3s;
+  backface-visibility: hidden;
+  border-radius: 2px;
+}
+
+#toggle span:before, #toggle span:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: #F3AD3B;
+  transition: all 0.3s;
+  border-radius: 2px;
+}
+
+#toggle span:before {
+  top: -9px;
+}
+
+#toggle span:after {
+  top: 9px;
+}
+
+
+#toggle.on span {
+  background-color: transparent;
+}
+#toggle.on span:before {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+#toggle.on span:after {
+  transform: rotate(-45deg) translate(7px, -8px);
+}
+
+
+@media (min-width: 992px) {
+  #toggle {
+    display: none;
+  }
+}
+
+
+@media (max-width: 991px) {
+  .navbar-collapse {
+    display: none;
+  }
+
+  .navbar-collapse.show {
+    display: block;
+  }
+}
+
+
+#toggle.on + .navbar-collapse {
+  display: block !important;
+}
+
 .choices {
   position: relative;
   top: 14px;
@@ -572,19 +643,26 @@ small {
   color: white;
   border-radius: 50px;
 }
-.shaid {
-  background-size: cover; 
+
+.img-hover-zoom--bg {
+  position: relative;
+  overflow: hidden;
+  background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
-  transition: background-size 0.5s ease, background 0.5s ease, border 0.3s ease;
-  overflow: hidden; 
+  transition: background-size 0.4s ease, background-position 0.4s ease, border 0.4s ease;
+  overflow: hidden;
+  position: relative;
 }
+
 .shaid:hover {
-  background-size: 150%; 
-  background-position: center; 
-  border: 2px solid #ffffff;
+  background-size: 150%;
+  background-position: center;
+  border: 1px solid #ffffff;
 }
+
+
 /* shaid model popup */
 .image-overlay::before {
   content: "";
@@ -747,7 +825,7 @@ small {
   width: 100%;
   border-radius: 15px;
   padding: 0;
-  margin: 0; 
+  margin: 0;
 }
 .card-body-plan {
   display: flex;
@@ -843,7 +921,7 @@ small {
   height: 685.04px;
   width: 100%;
   border-radius: 15px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 .subscribe-now {
   border-radius: 50px;
@@ -884,25 +962,31 @@ small {
   font-size: 18px;
   padding: 10px 40px;
   cursor: pointer;
+  color: #ffffff;
 }
 .btn-monthly-active {
   background-color: #f3ad3b;
-  color: #000000;
+  color: #fff;
 }
 .btn-yearly-active {
   background-color: #f3ad3b;
-  color: #000000;
+  color: #fff;
+}
+.btn-monthly:hover,
+.btn-yearly:hover {
+  outline: none;
+  color: #fff;
 }
 .btn-monthly:focus,
 .btn-yearly:focus {
   outline: none;
   background-color: #f3ad3b;
-  color: #000000;
+  color: #fff;
 }
 .btn-monthly:active,
 .btn-yearly:active {
   background-color: #f3ad3b;
-  color: #000000;
+  color: #fff;
 }
 
 /************Create profile**************/
@@ -1003,8 +1087,8 @@ input.profile-color:focus  {
   border: none;
 }
 .contact-color:focus {
-  background-color: #2A2A2A; 
-  color: #969696; 
+  background-color: #2A2A2A;
+  color: #969696;
   outline: none;
 }
 .contries {
@@ -1098,8 +1182,8 @@ textarea::placeholder {
   box-shadow: none;
 }
 .navbar-brand:focus {
-  color: #ffd700; 
-  text-decoration: none; 
+  color: #ffd700;
+  text-decoration: none;
 }
 
 /********************************Audutions Model Pop up*********************/
@@ -1508,7 +1592,7 @@ transform: rotate(180deg);
 .about-h3{
   font-family: Roboto;
   font-size: 40px;
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 .trusted-divider{
@@ -1517,8 +1601,8 @@ transform: rotate(180deg);
 
 .img-divider{
   border: 1px solid #D3D3D3;
- 
-  height: 42.74px; 
+
+  height: 42.74px;
   display: block;
 }
 
@@ -1552,27 +1636,46 @@ text-align: left;
   box-shadow: 10px 10px 70px 13px #5e7b93;
       height: 340px;
       margin-bottom: 35px;
-  } 
+  }
   .img-divider{
       display: none;
   }
   .aboutPara{
       padding-top: 35px;
   }
-  
+
 }
 @media (min-width:1440px){
   .WWR-img-shadow{
       border-radius: 30px;
       box-shadow: 10px 10px 70px 13px #5e7b93;
       height: 430px;
-  } 
+  }
   .img-divider{
       display: block;
   }
- 
+
 }
 
+/* landing mademeweb */
+.madeweb {
+  background-image: url('/assets/landing_Img/madme.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  width: 100%;
+}
+.trailer{
+  background-color: #000000;
+}
+.primium{
+  background-color:#660000;
+}
+
+.buy-btn{
+  background-color: #ff0040;
+}
 
 
 /* All medias */
@@ -2140,7 +2243,7 @@ text-align: left;
   .signup-dimond {
     display: flex;
   }
-  
+
 
   .overlay-content {
     top: 8%;

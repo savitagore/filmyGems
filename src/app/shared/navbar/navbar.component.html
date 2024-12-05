@@ -5,7 +5,7 @@
         <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/" alt="Logo" class="img-fluid logo-img">
       </div>
       <div class="col-lg-6 col-md-8 col-sm-12 order-lg-1 order-md-1  order-2">
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <!-- <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container-fluid d-flex justify-content-between align-items-center">
             <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar"
               aria-controls="mynavbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,7 +32,66 @@
               </ul>
             </div>
           </div>
+        </nav> -->
+
+        <!-- <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid d-flex justify-content-between align-items-center">
+            <button class="navbar-toggler  custom-toggler" type="button" (click)="isMenuOpen = !isMenuOpen"
+              aria-controls="mynavbar" [attr.aria-expanded]="isMenuOpen" aria-label="Toggle navigation">
+              <i class="fas" [ngClass]="isMenuOpen ? 'fa-times ' : 'fa-bars '"></i>
+          </button>
+            <div class="collapse navbar-collapse justify-content-end header-name" [ngClass]="{'show': isMenuOpen}" id="mynavbar">
+              <ul class="navbar-nav pt-3">
+                <li class="nav-item">
+                  <a class="nav-link text-white pages-name" routerLink="/profile" routerLinkActive="active"
+                    ariaCurrentWhenActive="page">Create Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white pages-name" routerLink="/plans" routerLinkActive="active"
+                    ariaCurrentWhenActive="page">Plans</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white pages-name" routerLink="/about" routerLinkActive="active"
+                    ariaCurrentWhenActive="page">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white pages-name" routerLink="/contact-us" routerLinkActive="active"
+                    ariaCurrentWhenActive="page">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav> -->
+        
+
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <div class="container-fluid d-flex justify-content-between align-items-center">
+            <!-- Custom Toggle Button -->
+            <button id="toggle" class="navbar-toggler " type="button" (click)="toggleMenu()">
+              <span></span>
+            </button>
+            
+            <!-- Navbar Menu -->
+            <div class="collapse navbar-collapse justify-content-end header-name" id="mynavbar">
+              <ul class="navbar-nav pt-3">
+                <li class="nav-item">
+                  <a class="nav-link text-white pages-name" routerLink="/profile" routerLinkActive="active" ariaCurrentWhenActive="page">Create Profile</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white pages-name" routerLink="/plans" routerLinkActive="active" ariaCurrentWhenActive="page">Plans</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white pages-name" routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white pages-name" routerLink="/contact-us" routerLinkActive="active" ariaCurrentWhenActive="page">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </nav>
+        
+        
       </div>
       <div class="col-lg-3 col-md-4 col-sm-12 order-lg-2 order-md-2 order-1 order-sm-3 roboto-font">
         <div class="icons-join">
@@ -55,7 +114,7 @@
         </div>
       </div>
     </div>
-  </div>
+</div>
   <!--------Model Profile ---------->
 
 
@@ -92,15 +151,18 @@
                 <div *ngIf="!isEditMode">
                   <div class="profile-card">
                     <p>Full Name: <strong class="ms-4 ps-5 p-1">{{ profileForm.get('fullName')?.value
-                        }}</strong></p>
+                      | maskPhoneNumber:'text'}}</strong></p>
                     <p class="">Subscription Plan: <strong class="ps-3">{{
                         profileForm.get('subscriptionPlan')?.value }}</strong></p>
                     <p>
                       Location: <strong class="custom-left-margin">{{ profileForm.get('location')?.value
                         }}</strong>
+                    <!-- <p>Contact Number: <strong class="ms-4 ">{{
+                        profileForm.get('contactNumber')?.value }}</strong></p> -->
+                        <p>Contact Number:
+                          <strong class="ms-4">{{ profileForm.get('contactNumber')?.value | maskPhoneNumber:'number' }}</strong>
+                      </p>
 
-                    <p>Contact Number: <strong class="ms-4 ">{{
-                        profileForm.get('contactNumber')?.value }}</strong></p>
                     <div class="bio-section d-flex">
                       <p>Bio: </p>
                       <div class="p-1 rounded bg-white border bio-text">

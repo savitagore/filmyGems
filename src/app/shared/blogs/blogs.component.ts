@@ -5,12 +5,13 @@ import { RouterLink } from '@angular/router';
 
 import { Router } from '@angular/router';
 import { SearchHeaderComponent } from '../search-header/search-header.component';
+import { MaskPhoneNumberPipe } from '../../core/Pipe/mask-phone-number.pipe';
 
 
 @Component({
   selector: 'app-blogs',
   standalone: true,
-  imports: [RouterLink,SearchHeaderComponent,CommonModule],
+  imports: [RouterLink,SearchHeaderComponent,CommonModule,MaskPhoneNumberPipe],
   templateUrl: './blogs.component.html',
   styleUrl: './blogs.component.css'
 })

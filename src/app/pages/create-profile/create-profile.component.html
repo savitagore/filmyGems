@@ -28,7 +28,7 @@
             <div class="border-0 rounded-4 profile-color p-2">
               <div class="d-flex align-items-center justify-content-center pt-3">
                 <div class="d-flex align-items-center justify-content-center"
-                  style="width: 170px; height: 200px; background-color: #777777;">
+                  style="width: 270px; height: 335px; background-color: #777777;">
                   <img src="assets/svg-icons/camera.svg" alt="camera icon">
                 </div>
               </div>
@@ -72,13 +72,13 @@
               <div class="col-12 col-md-6">
                 <input type="text" class="form-control profile-color" formControlName="mobile" id="mobile"
                   placeholder="Mobile Number *">
-                <div
+                <small
                   *ngIf="profileForm.get('mobile')?.invalid && (profileForm.get('mobile')?.dirty || profileForm.get('mobile')?.touched)">
                   <small *ngIf="profileForm.get('mobile')?.errors?.['required']" class="text-danger">Mobile number is
                     required.</small>
                   <small *ngIf="profileForm.get('mobile')?.errors?.['pattern']" class="text-danger">Please enter a valid
                     10-digit mobile number.</small>
-                </div>
+                </small>
               </div>
               <div class="col-12 col-md-4">
                 <input type="text" class="form-control profile-color" formControlName="city" id="city"
@@ -92,23 +92,43 @@
               <div class="col-12 col-md-4">
                 <input type="text" class="form-control profile-color" formControlName="zip" id="zip"
                   placeholder="Enter ZIP Code *">
-                <div
+                <span
                   *ngIf="profileForm.get('zip')?.invalid && (profileForm.get('zip')?.dirty || profileForm.get('zip')?.touched)">
                   <small *ngIf="profileForm.get('zip')?.errors?.['required']" class="text-danger">ZIP Code is
                     required.</small>
                   <small *ngIf="profileForm.get('zip')?.errors?.['pattern']" class="text-danger">ZIP Code must be 6
                     digits.</small>
-                </div>
+                </span>
               </div>
               <div class="col-12 col-md-4">
                 <input type="text" class="form-control profile-color" formControlName="country" id="country"
                   placeholder="Enter Country *">
-                <div
+                <span
                   *ngIf="profileForm.get('country')?.invalid && (profileForm.get('country')?.dirty || profileForm.get('country')?.touched)">
                   <small *ngIf="profileForm.get('country')?.errors?.['required']" class="text-danger">Country is
                     required.</small>
-                </div>
+                </span>
               </div>
+
+              <div class="col-12 col-md-6">
+                <input type="text" class="form-control profile-color" id="facebookUrl"
+                  placeholder="facebookUrl *">
+              </div>
+
+              <div class="col-12 col-md-6">
+                <input type="text" class="form-control profile-color" id="instaUrl"
+                  placeholder="instaUrl *">
+              </div>
+              <div class="col-12 col-md-6">
+                <input type="date" class="form-control profile-color" id="DOB"
+                  placeholder="DOB *">
+              </div>
+              <div class="col-12 col-md-6">
+                <input type="text" class="form-control profile-color" id="Id Cards"
+                  placeholder="Id Cards *">
+              </div>
+
+
               <div class="col-12 col-md-6 profile-color mb-4 border-0">
                 <select class="form-select select-gold scrollable-options" data-bs-spy="scroll"
                   data-bs-target="dropdown-menu" data-bs-offset="50" aria-labelledby="dropdownMenuButton1"
@@ -135,6 +155,8 @@
             </div>
           </div>
         </div>
+
+
         <div class="row py-5">
           <div class="drag-drop d-flex  rounded-4">
             <div class="  col-lg-8 col-md-8 col-sm-12 p-3">
