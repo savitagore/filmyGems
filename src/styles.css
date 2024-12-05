@@ -578,14 +578,14 @@ small {
   background-position: center;
   background-repeat: no-repeat;
   border: none;
-  transition: background-size 0.4s ease, background-position 0.4s ease, border 0.4s ease; 
+  transition: background-size 0.4s ease, background-position 0.4s ease, border 0.4s ease;
   overflow: hidden;
   position: relative;
 }
 
 .shaid:hover {
-  background-size: 150%; 
-  background-position: center; 
+  background-size: 150%;
+  background-position: center;
   border: 1px solid #ffffff;
 }
 
@@ -752,7 +752,7 @@ small {
   width: 100%;
   border-radius: 15px;
   padding: 0;
-  margin: 0; 
+  margin: 0;
 }
 .card-body-plan {
   display: flex;
@@ -848,7 +848,7 @@ small {
   height: 685.04px;
   width: 100%;
   border-radius: 15px;
-  margin: 0 auto; 
+  margin: 0 auto;
 }
 .subscribe-now {
   border-radius: 50px;
@@ -889,25 +889,31 @@ small {
   font-size: 18px;
   padding: 10px 40px;
   cursor: pointer;
+  color: #ffffff;
 }
 .btn-monthly-active {
   background-color: #f3ad3b;
-  color: #000000;
+  color: #fff;
 }
 .btn-yearly-active {
   background-color: #f3ad3b;
-  color: #000000;
+  color: #fff;
+}
+.btn-monthly:hover,
+.btn-yearly:hover {
+  outline: none;
+  color: #fff;
 }
 .btn-monthly:focus,
 .btn-yearly:focus {
   outline: none;
   background-color: #f3ad3b;
-  color: #000000;
+  color: #fff;
 }
 .btn-monthly:active,
 .btn-yearly:active {
   background-color: #f3ad3b;
-  color: #000000;
+  color: #fff;
 }
 
 /************Create profile**************/
@@ -1008,8 +1014,8 @@ input.profile-color:focus  {
   border: none;
 }
 .contact-color:focus {
-  background-color: #2A2A2A; 
-  color: #969696; 
+  background-color: #2A2A2A;
+  color: #969696;
   outline: none;
 }
 .contries {
@@ -1103,8 +1109,8 @@ textarea::placeholder {
   box-shadow: none;
 }
 .navbar-brand:focus {
-  color: #ffd700; 
-  text-decoration: none; 
+  color: #ffd700;
+  text-decoration: none;
 }
 
 /********************************Audutions Model Pop up*********************/
@@ -1513,7 +1519,7 @@ transform: rotate(180deg);
 .about-h3{
   font-family: Roboto;
   font-size: 40px;
-  font-weight: 600; 
+  font-weight: 600;
 }
 
 .trusted-divider{
@@ -1522,8 +1528,8 @@ transform: rotate(180deg);
 
 .img-divider{
   border: 1px solid #D3D3D3;
- 
-  height: 42.74px; 
+
+  height: 42.74px;
   display: block;
 }
 
@@ -1557,35 +1563,35 @@ text-align: left;
   box-shadow: 10px 10px 70px 13px #5e7b93;
       height: 340px;
       margin-bottom: 35px;
-  } 
+  }
   .img-divider{
       display: none;
   }
   .aboutPara{
       padding-top: 35px;
   }
-  
+
 }
 @media (min-width:1440px){
   .WWR-img-shadow{
       border-radius: 30px;
       box-shadow: 10px 10px 70px 13px #5e7b93;
       height: 430px;
-  } 
+  }
   .img-divider{
       display: block;
   }
- 
+
 }
 
 /* landing mademeweb */
 .madeweb {
-  background-image: url('/assets/landing_Img/madme.png'); 
-  background-size: cover; 
-  background-repeat: no-repeat; 
-  background-position: center; 
-  height: 600px; 
-  width: 100%; 
+  background-image: url('/assets/landing_Img/madme.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  width: 100%;
 }
 .trailer{
   background-color: #000000;
@@ -2164,7 +2170,7 @@ text-align: left;
   .signup-dimond {
     display: flex;
   }
-  
+
 
   .overlay-content {
     top: 8%;

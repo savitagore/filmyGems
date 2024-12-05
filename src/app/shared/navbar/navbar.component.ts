@@ -2,12 +2,13 @@ import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RouterLink, RouterLinkActive } from '@angular/router';
+import { MaskPhoneNumberPipe } from '../../core/Pipe/mask-phone-number.pipe';
 
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [RouterLink,RouterLinkActive,CommonModule,ReactiveFormsModule,FormsModule],
+  imports: [RouterLink,RouterLinkActive,CommonModule,ReactiveFormsModule,FormsModule,MaskPhoneNumberPipe],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
