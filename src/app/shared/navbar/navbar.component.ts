@@ -28,6 +28,21 @@ export class NavbarComponent {
   }
 
   isToggled: Boolean = false;
+  isMenuOpen = false;
+
+
+  toggleMenu() {
+    const toggleButton = document.getElementById('toggle');
+    const navbarMenu = document.getElementById('mynavbar');
+
+    // Toggle the 'on' class for the toggle button
+    toggleButton?.classList.toggle('on');
+
+    // Optionally, toggle the visibility of the menu (if needed)
+    navbarMenu?.classList.toggle('show');
+  }
+
+
   toggleEditMode() {
     this.isEditMode = !this.isEditMode;
   }
