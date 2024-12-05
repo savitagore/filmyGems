@@ -6,9 +6,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class MaskPhoneNumberPipe implements PipeTransform {
   transform(value: string): string {
-    debugger
     if (value && value.length >= 10) {
-      return value.substring(0, 5) + '***' + value.substring(value.length - 2);
+      return value.substring(0, 2) + '*********' + value.substring(value.length - 0);
     }
     return value;
   }
