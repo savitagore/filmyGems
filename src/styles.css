@@ -656,7 +656,7 @@ small {
   position: relative;
 }
 
-.shaid:hover {
+.img-hover-zoom--bg:hover {
   background-size: 150%;
   background-position: center;
   border: 1px solid #ffffff;
@@ -1654,12 +1654,11 @@ text-align: left;
   .img-divider{
       display: block;
   }
-
 }
 
 /* landing mademeweb */
 .madeweb {
-  background-image: url('/assets/landing_Img/madme.png');
+  background-image: url('/assets/landing_Img/made.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1672,7 +1671,6 @@ text-align: left;
 .primium{
   background-color:#660000;
 }
-
 .buy-btn{
   background-color: #ff0040;
 }
