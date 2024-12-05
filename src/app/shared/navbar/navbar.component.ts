@@ -27,6 +27,7 @@ export class NavbarComponent {
   }
 
   isToggled: Boolean = false;
+  isMenuOpen = false;
   toggleEditMode() {
     this.isEditMode = !this.isEditMode;
   }

@@ -6,6 +6,35 @@
 }
 
 
+/* Default styles for the navbar-toggler */
+.navbar-toggler {
+  position: relative;
+  border: none;
+  padding: 0;
+}
+
+/* Font Awesome icons inside the toggle button */
+.collapse {
+  transition: all 0.3s ease;
+}
+.collapse.show {
+  display: block !important;
+}
+.navbar-toggler .navbar-toggler-icon {
+  display: none;
+}
+.navbar-toggler i {
+  color: #FFFFFF;
+  transition: transform 0.5s ease;
+}
+.navbar-toggler i {
+  color: white; 
+  font-size: 35px; 
+}
+.navbar-toggler i:hover {
+  color: #F3AD3B; 
+}
+
 
 
 
