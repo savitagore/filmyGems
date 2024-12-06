@@ -13,7 +13,9 @@ import { Router, RouterLink } from '@angular/router';
 import { LoginComponent } from '../login/login.component';
 import { LoginCarasoualComponent } from '../../../Reuseable/login-carasoual/login-carasoual.component';
 import { SignupvalidationService } from '../../../core/Services/signupValidation/signupvalidation.service';
-
+import { MessageService } from 'primeng/api';
+import { ToastModule } from 'primeng/toast';
+import { NotificationServiceService } from '../../../core/Services/Notification/notification-service.service'
 
 @Component({
   selector: 'app-signup',
@@ -24,19 +26,21 @@ import { SignupvalidationService } from '../../../core/Services/signupValidation
     RouterLink,
     LoginCarasoualComponent,
     ReactiveFormsModule,
-    TooltipModule
+    TooltipModule,
+    ToastModule,
   ],
-  providers:[SignupvalidationService],
+  providers:[SignupvalidationService,NotificationServiceService],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.css',
   encapsulation: ViewEncapsulation.None,
 })
 export class SignupComponent {
   signupForm: FormGroup;
+  savedData: any[] = [];
   showPassword1: boolean = false;
   showPassword2: boolean = false;
 
-  constructor(private router: Router, private fb: FormBuilder,private signupService:SignupvalidationService) {
+  constructor(private router: Router, private fb: FormBuilder,private signupService:SignupvalidationService,private notificationService: NotificationServiceService) {
     this.signupForm = this.fb.group(
       {
         fullName: ['', [Validators.required, Validators.minLength(5)]],
@@ -114,9 +118,33 @@ export class SignupComponent {
     }
   }
 
+  // onLogin(): void {
+  //   {
+  //     this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Message Content' });
+
+  //     this.router.navigate(['/login']);
+  //   }
+  // }
   onLogin(): void {
-    {
+    if (this.signupForm.valid) {
+      this.savedData.push(this.signupForm.value);
+      // this.messageService.add({
+      //   severity: 'success',
+      //   summary: 'Success',
+      //   detail: 'Data saved successfully!',
+      // });
+      this.notificationService.showSuccess('Success', 'Data saved successfully!');
+
       this.router.navigate(['/login']);
+    } else {
+      //   this.messageService.add({
+      //   severity: 'warn',
+      //   summary: 'Validation Error',
+      //   detail: 'Please fill out the form correctly.',
+      // });
+      this.notificationService.showWarning('Validation Error', 'Please fill out the form correctly.');
+
     }
+
   }
 }

@@ -1,14 +1,17 @@
 @media (max-width: 320px) {
   .popular-cat-wrap span {
-    display: none; 
+    display: none;
   }
 
   .popular-cat-wrap span:nth-child(-n+3) {
-    display: inline-block; 
+    display: inline-block;
   }
 }
 
 
+.about-WWR-p {
+  white-space: pre-line; /* Preserve newlines and respect text wrapping */
+}
 
 
 
