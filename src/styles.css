@@ -28,10 +28,11 @@ li.nav-item a.nav-link.active {
   font-size: 18px;
   width: 172px;
 }
-.btn-join-now:hover{
-  border: 1px sold #000000;
-  color: #000;
+.btn-join-now:hover, .btn-join-now:focus {
+  border: 1px solid #000000; 
+  color: #000000;
 }
+
 /* navbar collapse btn */
 #toggle {
   display: block;
@@ -1668,10 +1669,21 @@ text-align: left;
 .trailer{
   background-color: #000000;
 }
+.trailer:hover{
+  background-color: #000000;
+}
 .primium{
   background-color:#660000;
 }
+.primium:hover,
+.primium:active{
+  background-color: #660000;
+}
 .buy-btn{
+  background-color: #ff0040;
+}
+.buy-btn:hover,
+.buy-btn:active{
   background-color: #ff0040;
 }
 
