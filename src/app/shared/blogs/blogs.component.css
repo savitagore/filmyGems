@@ -9,9 +9,18 @@
 }
 
 
-.about-WWR-p {
-  white-space: pre-line; /* Preserve newlines and respect text wrapping */
+.release{
+  border: 1px solid darkgray;
+    padding: 20px;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
 }
-
+.release-prime{
+  padding-top: 150px;
+}
+.prime img{
+  height: 100px;
+}
 
 
