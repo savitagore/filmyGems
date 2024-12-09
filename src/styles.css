@@ -29,7 +29,7 @@ li.nav-item a.nav-link.active {
   width: 172px;
 }
 .btn-join-now:hover, .btn-join-now:focus {
-  border: 1px solid #000000; 
+  border: 1px solid #000000;
   color: #000000;
 }
 
@@ -1074,6 +1074,14 @@ input.profile-color:focus  {
 }
 .select-gold option {
   background-color: white;
+  color: black;
+}
+.select-gold option :hover{
+  background-color: #F9F2E3;
+  color: black;
+}
+.select-gold option :active{
+  background-color: #F9F2E3;
   color: black;
 }
 
