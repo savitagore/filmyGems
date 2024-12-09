@@ -40,9 +40,31 @@
   background-color: #3C3D44;
 }
 
-
+.custom-profiles {
+  width: 50%;
+  max-width: 500px;
+}
 @media (min-width: 320px) and (max-width: 767px)  {
-
+  .custom-profiles {
+    width: 100%;
+    max-width: 500px;
+  }
+  .custom-padding {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+  .row {
+    padding-left: 11px !important;
+    padding-right: 11px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  .custom-bottom{
+    margin-bottom:15px;
+    padding: 0px !important;
+  }
   .profile-page{
     padding-bottom: 20px;
   }
