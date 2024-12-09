@@ -21,144 +21,9 @@
 <section class="bg-middle text-white  roboto-font py-5">
   <div class="container">
     <h2 class="text-center text-profile ">Create Your Profile</h2>
-    <div class="create-profile-page">
+    <div class="create-profile-page  rounded-4">
       <form [formGroup]="profileForm">
-        <!-- <div class="row pt-3">
-          <div class="col-md-4 text-center profile-page">
-            <div class="border-0 rounded-4 profile-color p-2">
-              <div class="d-flex align-items-center justify-content-center pt-3">
-                <div class="d-flex align-items-center justify-content-center"
-                  style="width: 270px; height: 335px; background-color: #777777;">
-                  <img src="assets/svg-icons/camera.svg" alt="camera icon">
-                </div>
-              </div>
-              <img src="assets/svg-icons/upload.svg" alt="upload icon" class="me-2">
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="row g-4 profile-color rounded-4 border-0 mt-0">
-              <div class="col-12 col-md-6">
-                <input type="text" class="form-control profile-color " formControlName="firstName" id="firstName"
-                  placeholder="First Name *"><small
-                  *ngIf="profileForm.get('firstName')?.hasError('required') && (profileForm.get('firstName')?.dirty || profileForm.get('firstName')?.touched)"
-                  class="text-danger">First Name is required.</small>
-                <small
-                  *ngIf="profileForm.get('firstName')?.hasError('minlength') && (profileForm.get('firstName')?.dirty || profileForm.get('firstName')?.touched)"
-                  class="text-danger">First Name must be at least 3 characters long..</small>
-              </div>
-              <div class="col-12 col-md-6">
-                <input type="text" class="form-control profile-color" formControlName="lastName" id="lastName"
-                  placeholder="Last Name *">
-                <small
-                  *ngIf="profileForm.get('lastName')?.hasError('required') && (profileForm.get('lastName')?.dirty || profileForm.get('lastName')?.touched)"
-                  class="text-danger">Last Name is required.</small>
-                <small
-                  *ngIf="profileForm.get('lastName')?.hasError('minlength') && (profileForm.get('lastName')?.dirty || profileForm.get('lastName')?.touched)"
-                  class="text-danger">Last Name must be at least 3 characters long..</small>
-              </div>
-              <div class="col-12 col-md-6">
-                <input type="email" class="form-control profile-color" id="email" placeholder="Enter your email *"
-                  formControlName="email">
-                <small
-                  *ngIf="profileForm.get('email')?.hasError('required') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
-                  class="text-danger">Email is required.</small>
-                <small
-                  *ngIf="profileForm.get('email')?.hasError('email') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
-                  class="text-danger">Please enter a valid email address.</small>
-                <small
-                  *ngIf="profileForm.get('email')?.hasError('pattern') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
-                  class="text-danger">Email format is invalid.</small>
-              </div>
-              <div class="col-12 col-md-6">
-                <input type="text" class="form-control profile-color" formControlName="mobile" id="mobile"
-                  placeholder="Mobile Number *">
-                <small
-                  *ngIf="profileForm.get('mobile')?.invalid && (profileForm.get('mobile')?.dirty || profileForm.get('mobile')?.touched)">
-                  <small *ngIf="profileForm.get('mobile')?.errors?.['required']" class="text-danger">Mobile number is
-                    required.</small>
-                  <small *ngIf="profileForm.get('mobile')?.errors?.['pattern']" class="text-danger">Please enter a valid
-                    10-digit mobile number.</small>
-                </small>
-              </div>
-              <div class="col-12 col-md-4">
-                <input type="text" class="form-control profile-color" formControlName="city" id="city"
-                  placeholder="Enter City *">
-                <div
-                  *ngIf="profileForm.get('city')?.invalid && (profileForm.get('city')?.dirty || profileForm.get('city')?.touched)">
-                  <small *ngIf="profileForm.get('city')?.errors?.['required']" class="text-danger">City is
-                    required.</small>
-                </div>
-              </div>
-              <div class="col-12 col-md-4">
-                <input type="text" class="form-control profile-color" formControlName="zip" id="zip"
-                  placeholder="Enter ZIP Code *">
-                <span
-                  *ngIf="profileForm.get('zip')?.invalid && (profileForm.get('zip')?.dirty || profileForm.get('zip')?.touched)">
-                  <small *ngIf="profileForm.get('zip')?.errors?.['required']" class="text-danger">ZIP Code is
-                    required.</small>
-                  <small *ngIf="profileForm.get('zip')?.errors?.['pattern']" class="text-danger">ZIP Code must be 6
-                    digits.</small>
-                </span>
-              </div>
-              <div class="col-12 col-md-4">
-                <input type="text" class="form-control profile-color" formControlName="country" id="country"
-                  placeholder="Enter Country *">
-                <span
-                  *ngIf="profileForm.get('country')?.invalid && (profileForm.get('country')?.dirty || profileForm.get('country')?.touched)">
-                  <small *ngIf="profileForm.get('country')?.errors?.['required']" class="text-danger">Country is
-                    required.</small>
-                </span>
-              </div>
-
-              <div class="col-12 col-md-6">
-                <input type="text" class="form-control profile-color" id="facebookUrl"
-                  placeholder="facebookUrl *">
-              </div>
-
-              <div class="col-12 col-md-6">
-                <input type="text" class="form-control profile-color" id="instaUrl"
-                  placeholder="instaUrl *">
-              </div>
-              <div class="col-12 col-md-6">
-                <input type="text" class="form-control profile-color" id="DOB"
-                  placeholder="DOB *">
-              </div>
-              <div class="col-12 col-md-6">
-                <input type="text" class="form-control profile-color" id="Id Proof"
-                  placeholder="Id Cards *">
-              </div>
-
-
-              <div class="col-12 col-md-6 profile-color mb-4 border-0">
-                <select class="form-select select-gold scrollable-options" data-bs-spy="scroll"
-                  data-bs-target="dropdown-menu" data-bs-offset="50" aria-labelledby="dropdownMenuButton1"
-                  style="max-height: 200px; overflow-y: auto;">
-                  <option value="" selected>Category/Gems</option>
-                  <option value="artist">Artist</option>
-                  <option value="director">Director</option>
-                  <option value="casting-director">Casting Director</option>
-                  <option value="assistant-director">Assistant Director</option>
-                  <option value="associate-director">Associate Director</option>
-                  <option value="executive-producer">Executive Producer</option>
-                  <option value="production-manager">Production Manager</option>
-                  <option value="line-producer">Line Producer</option>
-                </select>
-              </div>
-              <div class="col-12 col-md-6 profile-color border-0">
-                <select class="form-select select-gold" id="language" style="background-color: #F3AD3B;">
-                  <option class="bg-warning" value="" selected>Select Language</option>
-                  <option value="english">English</option>
-                  <option value="spanish">Spanish</option>
-                  <option value="french">French</option>
-                </select>
-              </div>
-            </div>
-          </div>
-        </div> -->
-
-
-
-        <div class="row pt-3 justify-content-center  profile-color border-0 ">
+        <div class="row pt-3 justify-content-center  profile-color border-0 rounded-4 ">
           <div class="col-12 col-md-8 d-flex">
             <div class="border-0  profile-color p-3 d-flex flex-column align-items-center ps-5 ms-5">
               <div class="d-flex align-items-center justify-content-center flex-column rounded-4 border-1"
@@ -169,16 +34,14 @@
                 <img src="assets/svg-icons/upload.svg" alt="upload icon">
               </div>
             </div>
-            <div class="ms-4">
-              <div class="mb-3 pt-5">
-                <div class="col-12">
-                  <input type="text" class="form-control profile-color" formControlName="firstName" id="firstName"
-                    placeholder="First Name *">
-                </div>
+            <div class="ms-4 pt-4" style="width: 50%;">
+              <div class="mb-3 mt-5">
+                <input type="text" class="form-control profile-color full-width-input" formControlName="firstName"
+                  id="firstName" placeholder="First Name *">
               </div>
-              <div>
-                <input type="text" class="form-control profile-color" formControlName="firstName" id="firstName"
-                  placeholder="First Name *">
+              <div class="mt-4">
+                <input type="text" class="form-control profile-color" formControlName="lastName" id="lastName"
+                  placeholder="Last Name *">
               </div>
             </div>
           </div>
@@ -210,9 +73,12 @@
             </div>
           </div>
           <div class="row p-3">
-            <div class="col-12 col-md-4 ">
-              <input type="text" class="form-control profile-color" formControlName="zip" id="zip"
-                placeholder=" date of birth  (dd/mm/yyyy)">
+            <div class="col-12 col-md-4">
+              <!-- <input type="text" class="form-control profile-color " formControlName="zip" id="zip"
+                placeholder=" date of birth  (dd/mm/yyyy)"> -->
+              <!-- <input type="date" class="form-control profile-color" formControlName="dob" id="dob"
+                placeholder="Date of birth (dd/mm/yyyy)" /> -->
+              <p-calendar class="profile-color"  [iconDisplay]="'input'" [showIcon]="true" inputId="icondisplay" placeholder="date of birth  (dd/mm/yyyy)"/>
             </div>
             <div class="col-12 col-md-4 ">
               <select class="form-select select-gold" id="language" style="background-color: #F3AD3B;">
@@ -232,42 +98,36 @@
           </div>
           <div class="row p-3">
             <div class="col-12 col-md-4">
-              <input type="text" class="form-control profile-color"  id="facebook url"
-                placeholder="facebook url">
+              <input type="text" class="form-control profile-color" id="facebook url" placeholder="facebook url">
             </div>
             <div class="col-12 col-md-4">
-              <input type="text" class="form-control profile-color"  id="facebook url"
-                placeholder="insta url">
+              <input type="text" class="form-control profile-color" id="facebook url" placeholder="insta url">
             </div>
             <div class="col-12 col-md-4">
-              <input type="text" class="form-control profile-color"  id="facebook url"
-                placeholder="twitter url">
+              <input type="text" class="form-control profile-color" id="facebook url" placeholder="twitter url">
             </div>
-
           </div>
           <div class="row p-3">
             <div class="col-12 col-md-4">
-              <input type="text" class="form-control profile-color"  id="youtube url"
-                placeholder="youtube url">
+              <input type="text" class="form-control profile-color" id="youtube url" placeholder="youtube url">
             </div>
             <div class="col-12 col-md-4">
-              <input type="text" class="form-control profile-color"  id="imdb id"
-                placeholder="imdb id">
+              <input type="text" class="form-control profile-color" id="imdb id" placeholder="imdb id">
             </div>
             <div class="col-12 col-md-4">
-              <input type="text" class="form-control profile-color"  id="wikipedia id"
-                placeholder="wikipedia id">
+              <input type="text" class="form-control profile-color" id="wikipedia id" placeholder="wikipedia id">
             </div>
           </div>
-          <!-- <div class="row p-3">
+          <div class="row p-3">
             <div class="col-12 col-md-8">
               <div class="form-floating">
-                <textarea class="form-control profile-color" formControlName="message" placeholder="type your details bio here..."
-                  style="height: 127px;"></textarea>
+                <textarea class="form-control profile-color rounded-2 p-3 custom-textarea"
+                  placeholder="Type your details bio here..." style="height: 127px;"></textarea>
               </div>
             </div>
             <div class="col-12 col-md-4">
-              <select class="form-select select-gold scrollable-options" data-bs-spy="scroll">
+              <div class="dropdown-container">
+                <select class="form-select select-gold scrollable-options mb-3" data-bs-spy="scroll">
                   <option value="" selected>Category/Gems</option>
                   <option value="artist">Artist</option>
                   <option value="director">Director</option>
@@ -278,75 +138,16 @@
                   <option value="production-manager">Production Manager</option>
                   <option value="line-producer">Line Producer</option>
                 </select>
-            </div>
-            <div class="col-12 col-md-4 profile-color border-0">
-              <select class="form-select select-gold" id="language" style="background-color: #F3AD3B;">
-                <option class="bg-warning" value="" selected>Select Language</option>
-                <option value="english">English</option>
-                <option value="spanish">Spanish</option>
-                <option value="french">French</option>
-              </select>
-            </div>
-          </div> -->
-          <div class="row p-3">
-            <!-- Left Textarea -->
-            <div class="col-12 col-md-8">
-              <div class="form-floating">
-                <textarea
-                  class="form-control profile-color"
-                  formControlName="message"
-                  placeholder="type your details bio here..."
-                  style="height: 127px;"
-                ></textarea>
+                <select class="form-select select-gold" id="language" style="background-color: #F3AD3B;">
+                  <option class="bg-warning" value="" selected>Select Language</option>
+                  <option value="english">English</option>
+                  <option value="spanish">Spanish</option>
+                  <option value="french">French</option>
+                </select>
               </div>
             </div>
-
-            <!-- Category/Gems Dropdown -->
-            <div class="col-12 col-md-4">
-              <select class="form-select select-gold scrollable-options" data-bs-spy="scroll">
-                <option value="" selected>Category/Gems</option>
-                <option value="artist">Artist</option>
-                <option value="director">Director</option>
-                <option value="casting-director">Casting Director</option>
-                <option value="assistant-director">Assistant Director</option>
-                <option value="associate-director">Associate Director</option>
-                <option value="executive-producer">Executive Producer</option>
-                <option value="production-manager">Production Manager</option>
-                <option value="line-producer">Line Producer</option>
-              </select>
-            </div>
-
-            <!-- Language Dropdown Below Category/Gems -->
-            <div class="col-12 col-md-4 mt-3">
-              <select class="form-select select-gold" id="language" style="background-color: #F3AD3B;">
-                <option class="bg-warning" value="" selected>Select Language</option>
-                <option value="english">English</option>
-                <option value="spanish">Spanish</option>
-                <option value="french">French</option>
-              </select>
-            </div>
           </div>
-
-
         </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
         <div class="row py-5">
           <div class="drag-drop d-flex  rounded-4">
             <div class="  col-lg-8 col-md-8 col-sm-12 p-3">

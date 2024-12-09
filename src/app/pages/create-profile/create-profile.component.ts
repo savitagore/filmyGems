@@ -14,13 +14,13 @@ import { HttpClientModule } from '@angular/common/http';
 import { FileUploadModule } from 'primeng/fileupload';
 import { ButtonModule } from 'primeng/button';
 import { BadgeModule } from 'primeng/badge';
-
+import { CalendarModule } from 'primeng/calendar';
 
 @Component({
   selector: 'app-create-profile',
   standalone: true,
   imports: [CommonModule,NavbarComponent,FooterComponent, ReactiveFormsModule, FormsModule, StartjourneyComponent,
-    FileUploadModule, ButtonModule, BadgeModule, ProgressBarModule, ToastModule,],
+    FileUploadModule, ButtonModule, BadgeModule, ProgressBarModule, ToastModule,CalendarModule],
   providers: [MessageService],
   templateUrl: './create-profile.component.html',
   styleUrl: './create-profile.component.css'

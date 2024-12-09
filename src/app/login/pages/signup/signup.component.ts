@@ -8,14 +8,15 @@ import {
   FormBuilder,
   FormGroup,
   ReactiveFormsModule,
-  Validators,} from '@angular/forms';
+  Validators,
+} from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
 import { LoginComponent } from '../login/login.component';
 import { LoginCarasoualComponent } from '../../../Reuseable/login-carasoual/login-carasoual.component';
 import { SignupvalidationService } from '../../../core/Services/signupValidation/signupvalidation.service';
 import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
-import { NotificationServiceService } from '../../../core/Services/Notification/notification-service.service'
+import { NotificationServiceService } from '../../../core/Services/Notification/notification-service.service';
 
 @Component({
   selector: 'app-signup',
@@ -29,7 +30,7 @@ import { NotificationServiceService } from '../../../core/Services/Notification/
     TooltipModule,
     ToastModule,
   ],
-  providers:[SignupvalidationService,NotificationServiceService],
+  providers: [SignupvalidationService, NotificationServiceService],
   templateUrl: './signup.component.html',
   styleUrl: './signup.component.css',
   encapsulation: ViewEncapsulation.None,
@@ -40,13 +41,39 @@ export class SignupComponent {
   showPassword1: boolean = false;
   showPassword2: boolean = false;
 
-  constructor(private router: Router, private fb: FormBuilder,private signupService:SignupvalidationService,private notificationService: NotificationServiceService) {
+  constructor(
+    private router: Router,
+    private fb: FormBuilder,
+    private signupService: SignupvalidationService,
+    private notificationService: NotificationServiceService
+  ) {
     this.signupForm = this.fb.group(
       {
         fullName: ['', [Validators.required, Validators.minLength(5)]],
-        mobile: [  '', [Validators.required, Validators.pattern('^[0-9]{10}$')], Validators.maxLength(10),],
-        email: [ '', [  Validators.required,  Validators.pattern( '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$' ),],],
-        password: [ '',[ Validators.required, Validators.minLength(8), Validators.pattern( '^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$' ), ], ],
+        mobile: [
+          '',
+          [Validators.required, Validators.pattern('^[0-9]{10}$')],
+          Validators.maxLength(10),
+        ],
+        email: [
+          '',
+          [
+            Validators.required,
+            Validators.pattern(
+              '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$'
+            ),
+          ],
+        ],
+        password: [
+          '',
+          [
+            Validators.required,
+            Validators.minLength(8),
+            Validators.pattern(
+              '^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*?&])[A-Za-z\\d@$!%*?&]{8,}$'
+            ),
+          ],
+        ],
         confirmPassword: ['', Validators.required],
         termsCheck: [false, Validators.requiredTrue],
       },
@@ -59,7 +86,9 @@ export class SignupComponent {
     const confirmPassword = group.get('confirmPassword')?.value;
     return password === confirmPassword ? null : { passwordsMismatch: true };
   }
-  passwordMatchValidator(control: FormGroup): { [key: string]: boolean } | null {
+  passwordMatchValidator(
+    control: FormGroup
+  ): { [key: string]: boolean } | null {
     const password = control.get('password');
     const confirmPassword = control.get('confirmPassword');
     if (password?.value !== confirmPassword?.value) {
@@ -78,7 +107,6 @@ export class SignupComponent {
     }
   }
 
-
   get fullName() {
     return this.signupForm.get('fullName');
   }
@@ -96,13 +124,19 @@ export class SignupComponent {
   }
 
   getFullNameErrorMessage(): string {
-    return this.signupService.getFullNameErrorMessage(this.fullName as AbstractControl);
+    return this.signupService.getFullNameErrorMessage(
+      this.fullName as AbstractControl
+    );
   }
   getMobileTooltipMessage(): string {
-    return this.signupService.getMobileErrorMessage(this.mobile as AbstractControl);
+    return this.signupService.getMobileErrorMessage(
+      this.mobile as AbstractControl
+    );
   }
   getEmailTooltipMessage(): string {
-    return this.signupService.getEmailErrorMessage(this.email as AbstractControl);
+    return this.signupService.getEmailErrorMessage(
+      this.email as AbstractControl
+    );
   }
   getPasswordPatternTooltip(): string {
     return this.signupService.getPasswordPatternErrorMessage();
@@ -118,33 +152,9 @@ export class SignupComponent {
     }
   }
 
-  // onLogin(): void {
-  //   {
-  //     this.messageService.add({ severity: 'success', summary: 'Success', detail: 'Message Content' });
-
-  //     this.router.navigate(['/login']);
-  //   }
-  // }
   onLogin(): void {
-    if (this.signupForm.valid) {
-      this.savedData.push(this.signupForm.value);
-      // this.messageService.add({
-      //   severity: 'success',
-      //   summary: 'Success',
-      //   detail: 'Data saved successfully!',
-      // });
-      this.notificationService.showSuccess('Success', 'Data saved successfully!');
-
-      this.router.navigate(['/login']);
-    } else {
-      //   this.messageService.add({
-      //   severity: 'warn',
-      //   summary: 'Validation Error',
-      //   detail: 'Please fill out the form correctly.',
-      // });
-      this.notificationService.showWarning('Validation Error', 'Please fill out the form correctly.');
-
-    }
-
+    //  this.notificationService.showSuccess('Success', 'Data saved successfully!');
+    this.router.navigate(['/login']);
+    //this.notificationService.showWarning('Validation Error', 'Please fill out the form correctly.');
   }
 }
