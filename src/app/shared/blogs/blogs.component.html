@@ -49,7 +49,7 @@
   </div>
 </section>
 
-<section class="bg-middle pt-5 roboto-font">
+<!-- <section class="bg-middle pt-5 roboto-font">
   <div class="container">
     <div class="row aos-init aos-animate" data-aos="fade-up">
       <div class="col-12 col-md-12 madeweb">
@@ -103,15 +103,81 @@
       </div>
     </div>
   </div>
+</section> -->
+
+<section class="bg-middle pt-5 roboto-font">
+  <div class="container">
+    <div id="movieSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2800">
+      <div class="carousel-indicators">
+        <button *ngFor="let movie of movies; let i = index" type="button" [attr.data-bs-target]="'#movieSlider'"
+          [attr.data-bs-slide-to]="i" [class.active]="i === 0"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item" *ngFor="let movie of movies; let i = index" [class.active]="i === 0">
+          <div class="row madeweb" [style.backgroundImage]="'url(' + movie.poster + ')'">
+            <div class="col-md-2">
+              <div class="pt-3 ps-3">
+                <button class="btn text-white d-flex align-items-center justify-content-center rounded-3 trailer"
+                  type="button" >
+                  <i class="fa-solid fa-play"></i>
+                  <h5 class="mx-1 mb-0">Trailer ({{ movie.trailerCount }})</h5>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-10">
+              <div class="d-flex justify-content-end pt-4">
+                <div class="trailer-card text-white">
+                  <div class="video-container">
+                    <video *ngIf="activeTrailerIndex === i" [src]="movie.trailerUrl" controls autoplay
+                      class="video-player"></video>
+                    <!-- <img *ngIf="activeTrailerIndex !== i" [src]="movie.poster" alt="Poster" class="img-fluid" /> -->
+                  </div>
+                  <h4>{{ movie.title }}</h4>
+                  <h6>Language: {{ movie.language }}</h6>
+                  <h6>Time: {{ movie.duration }}</h6>
+                  <div class="buy pt-3">
+                    <button class="btn buy-btn ps-3 pe-3 text-white me-3" type="button">
+                      Rent ${{ movie.rent }}
+                    </button>
+                    <button class="btn buy-btn ps-3 pe-3 text-white" type="button">
+                      Buy ${{ movie.buy }}
+                    </button>
+                  </div>
+                  <div class="prime d-flex align-items-center">
+                    <h3 class="text-white release pe-4">{{movie.release}}</h3>
+                    <a href="">
+                      <img src="assets/landing_Img/prime.png" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Controls -->
+      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#movieSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#movieSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button> -->
+    </div>
+  </div>
 </section>
+
+
 
 <section class="bg-middle pt-3 roboto-font">
   <div class="container">
     <div class="row pt-4 aos-init aos-animate" data-aos="fade-up">
       <h5 class="text-h2 pb-2">To Gems Showcase</h5>
       <div class="col-12 col-md-5">
-        <div class="celibrate-card  img-hover-zoom--bg" style="background-image: url('assets/topgems_img/sahid_img.png');"
-          data-bs-toggle="modal" data-bs-target="#artistModal">
+        <div class="celibrate-card  img-hover-zoom--bg"
+          style="background-image: url('assets/topgems_img/sahid_img.png');" data-bs-toggle="modal"
+          data-bs-target="#artistModal">
           <div class="choices">
             <div class="choices-icons">
               <img src="assets/svg-icons/heart.svg" alt="" class="img-fluid">
@@ -126,7 +192,7 @@
               <img src="assets/svg-icons/stars.svg" alt="" class="img-fluid">
             </div>
             <!-- <span class="actor-name">Shahid Kapoor</span> -->
-            <span class="actor-name">{{ 'Shahid Kapoor'  | maskPhoneNumber:'text' }}</span>
+            <span class="actor-name">{{ 'Shahid Kapoor' | maskPhoneNumber:'text' }}</span>
             <p class="role">Bollywood Actor</p>
           </div>
           <div class="animi d-flex justify-content-end position-relative text-white">
