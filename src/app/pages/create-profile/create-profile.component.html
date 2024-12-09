@@ -24,7 +24,7 @@
     <div class="create-profile-page  rounded-4">
       <form [formGroup]="profileForm">
         <div class="row pt-3 justify-content-center  profile-color border-0 rounded-4 ">
-          <div class="col-12 col-md-8 d-flex">
+          <!-- <div class="col-12 col-md-8 d-flex">
             <div class="border-0  profile-color p-3 d-flex flex-column align-items-center ps-5 ms-5">
               <div class="d-flex align-items-center justify-content-center flex-column rounded-4 border-1"
                 style="width: 170px; height: 200px; background-color: #777777; position: relative;">
@@ -44,43 +44,62 @@
                   placeholder="Last Name *">
               </div>
             </div>
+          </div> -->
+          <div class="col-12 col-md-8 d-flex flex-column flex-md-row">
+            <div class="border-0 profile-color p-3 d-flex flex-column align-items-center ps-5 ms-5 custom-padding">
+              <div class="d-flex align-items-center justify-content-center flex-column rounded-4 border-1 custom-center"
+                style="width: 170px; height: 200px; background-color: #777777; position: relative;">
+                <img src="assets/svg-icons/camera.svg" alt="camera icon">
+              </div>
+              <div class="mt-3">
+                <img src="assets/svg-icons/upload.svg" alt="upload icon">
+              </div>
+
+            </div>
+            <!-- Form Section -->
+            <div class="pt-4 custom-profiles" >
+              <div class="mb-3 mt-5">
+                <input type="text" class="form-control profile-color full-width-input" formControlName="firstName"
+                  id="firstName" placeholder="First Name *">
+              </div>
+              <div class="mt-4 custom-bottom">
+                <input type="text" class="form-control profile-color" formControlName="lastName" id="lastName"
+                  placeholder="Last Name *">
+              </div>
+            </div>
           </div>
-          <div class="row  p-3 ">
-            <div class="col-12 col-md-4">
+          <div class="row  p-3">
+            <div class="col-12 col-md-4 custom-bottom">
               <input type="email" class="form-control profile-color" id="email" placeholder="Enter your email *"
                 formControlName="email">
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 custom-bottom">
               <input type="text" class="form-control profile-color" formControlName="mobile" id="mobile"
                 placeholder="Mobile Number *">
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 custom-bottom">
               <input type="text" class="form-control profile-color" formControlName="city" id="city"
                 placeholder="Enter City *">
             </div>
           </div>
           <div class="row p-3">
-            <div class="col-12 col-md-4 ">
+            <div class="col-12 col-md-4 custom-bottom">
               <input type="text" class="form-control profile-color" formControlName="zip" id="zip"
                 placeholder="Enter ZIP Code *">
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 custom-bottom">
               <input type="text" class="form-control profile-color" formControlName="country" id="country"
                 placeholder="Enter Country *">
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 custom-bottom">
               <input type="text" class="form-control profile-color" id="facebook id" placeholder="facebook id">
             </div>
           </div>
           <div class="row p-3">
-            <div class="col-12 col-md-4">
-              <!-- <input type="text" class="form-control profile-color " formControlName="zip" id="zip"
-                placeholder=" date of birth  (dd/mm/yyyy)"> -->
-              <!-- <input type="date" class="form-control profile-color" formControlName="dob" id="dob"
-                placeholder="Date of birth (dd/mm/yyyy)" /> -->
+            <div class="col-12 col-md-4 custom-bottom">
               <p-calendar class="profile-color"  [iconDisplay]="'input'" [showIcon]="true" inputId="icondisplay" placeholder="date of birth  (dd/mm/yyyy)"/>
             </div>
-            <div class="col-12 col-md-4 ">
+            <div class="col-12 col-md-4 custom-bottom">
               <select class="form-select select-gold" id="language" style="background-color: #F3AD3B;">
                 <option class="bg-warning" value="" selected>identification type</option>
                 <option value="Aadhar">Aadhar Card</option>
@@ -90,42 +109,42 @@
                 <option value="RationCard">Others</option>
               </select>
             </div>
-            <div class="col-12 col-md-4 d-flex align-items-center">
+            <div class="col-12 col-md-4 d-flex align-items-center custom-bottom">
               <img src="assets/svg-icons/file-upload-icons.svg" alt="" class="upload-icon">
               <small class="ps-2 mt-2" style="font-size: 16px;">Upload file (png/jpeg/pdf)<br>File size must be
                 up to 2MB</small>
             </div>
           </div>
           <div class="row p-3">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 custom-bottom">
               <input type="text" class="form-control profile-color" id="facebook url" placeholder="facebook url">
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 custom-bottom">
               <input type="text" class="form-control profile-color" id="facebook url" placeholder="insta url">
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 custom-bottom">
               <input type="text" class="form-control profile-color" id="facebook url" placeholder="twitter url">
             </div>
           </div>
           <div class="row p-3">
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 custom-bottom">
               <input type="text" class="form-control profile-color" id="youtube url" placeholder="youtube url">
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 custom-bottom">
               <input type="text" class="form-control profile-color" id="imdb id" placeholder="imdb id">
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 custom-bottom">
               <input type="text" class="form-control profile-color" id="wikipedia id" placeholder="wikipedia id">
             </div>
           </div>
           <div class="row p-3">
-            <div class="col-12 col-md-8">
+            <div class="col-12 col-md-8 custom-bottom">
               <div class="form-floating">
                 <textarea class="form-control profile-color rounded-2 p-3 custom-textarea"
                   placeholder="Type your details bio here..." style="height: 127px;"></textarea>
               </div>
             </div>
-            <div class="col-12 col-md-4">
+            <div class="col-12 col-md-4 custom-bottom">
               <div class="dropdown-container">
                 <select class="form-select select-gold scrollable-options mb-3" data-bs-spy="scroll">
                   <option value="" selected>Category/Gems</option>
