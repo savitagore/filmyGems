@@ -1,5 +1,48 @@
 
+.full-width-input {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+::ng-deep .p-calendar {
+  background-color: #3C3D44;
+  width: 100%;
+}
+
+::ng-deep .p-calendar .p-inputtext,
+::ng-deep .p-calendar{
+  background-color: #3C3D44 !important; color: #969696 !important;
+}
+
+::ng-deep .p-calendar .p-datepicker-prev .pi,
+::ng-deep .p-calendar .p-datepicker-next .pi,
+::ng-deep .p-calendar .p-calendar-btn .pi {
+  color: #B4B7BC !important;
+}
+
+
+
+.custom-textarea {
+  background-color: #3C3D44;
+  color: #969696 !important;
+}
+
+.custom-textarea:hover {
+  background-color: #3C3D44;
+}
+
+.custom-textarea:focus {
+  background-color: #3C3D44;
+  outline: none;
+}
+
+.custom-textarea:active {
+  background-color: #3C3D44;
+}
+
+
 @media (min-width: 320px) and (max-width: 767px)  {
+
   .profile-page{
     padding-bottom: 20px;
   }
