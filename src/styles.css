@@ -1701,25 +1701,22 @@ text-align: left;
   background-position: center;
   height: 600px;
   width: 100%;
+  color: #FFFFFF;
+}
+.release{
+  border: 1px solid darkgray;
+    border-left: none;
+    border-top: none;
+    border-bottom: none;
+}
+.prime img{
+  height: 100px;
 }
 .trailer {
   background-color: #000000;
 }
 .trailer:hover {
   background-color: #000000;
-}
-/* .video-container {
-  position: relative;
-  width: 100%;
-  height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-.video-player {
-  max-width: 100%;
-  height: auto;
-  border-radius: 10px;
 }
 .buy-btn {
   background-color: #ff0040;
