@@ -24,27 +24,6 @@
     <div class="create-profile-page  rounded-4">
       <form [formGroup]="profileForm">
         <div class="row pt-3 justify-content-center  profile-color border-0 rounded-4 ">
-          <!-- <div class="col-12 col-md-8 d-flex">
-            <div class="border-0  profile-color p-3 d-flex flex-column align-items-center ps-5 ms-5">
-              <div class="d-flex align-items-center justify-content-center flex-column rounded-4 border-1"
-                style="width: 170px; height: 200px; background-color: #777777; position: relative;">
-                <img src="assets/svg-icons/camera.svg" alt="camera icon">
-              </div>
-              <div class="mt-3">
-                <img src="assets/svg-icons/upload.svg" alt="upload icon">
-              </div>
-            </div>
-            <div class="ms-4 pt-4" style="width: 50%;">
-              <div class="mb-3 mt-5">
-                <input type="text" class="form-control profile-color full-width-input" formControlName="firstName"
-                  id="firstName" placeholder="First Name *">
-              </div>
-              <div class="mt-4">
-                <input type="text" class="form-control profile-color" formControlName="lastName" id="lastName"
-                  placeholder="Last Name *">
-              </div>
-            </div>
-          </div> -->
           <div class="col-12 col-md-8 d-flex flex-column flex-md-row">
             <div class="border-0 profile-color p-3 d-flex flex-column align-items-center ps-5 ms-5 custom-padding">
               <div class="d-flex align-items-center justify-content-center flex-column rounded-4 border-1 custom-center"
@@ -56,9 +35,8 @@
               </div>
 
             </div>
-            <!-- Form Section -->
-            <div class="pt-4 custom-profiles" >
-              <div class="mb-3 mt-5">
+            <div class="pt-4 custom-profiles">
+              <div class="mb-3 mt-5 profile-last">
                 <input type="text" class="form-control profile-color full-width-input" formControlName="firstName"
                   id="firstName" placeholder="First Name *">
               </div>
@@ -97,7 +75,8 @@
           </div>
           <div class="row p-3">
             <div class="col-12 col-md-4 custom-bottom">
-              <p-calendar class="profile-color"  [iconDisplay]="'input'" [showIcon]="true" inputId="icondisplay" placeholder="date of birth  (dd/mm/yyyy)"/>
+              <p-calendar class="profile-color" [iconDisplay]="'input'" [showIcon]="true" inputId="icondisplay"
+                placeholder="date of birth  (dd/mm/yyyy)" />
             </div>
             <div class="col-12 col-md-4 custom-bottom">
               <select class="form-select select-gold" id="language" style="background-color: #F3AD3B;">
@@ -146,8 +125,8 @@
             </div>
             <div class="col-12 col-md-4 custom-bottom">
               <div class="dropdown-container">
-                <select class="form-select select-gold scrollable-options mb-3" data-bs-spy="scroll">
-                  <option value="" selected>Category/Gems</option>
+                <select  class="form-select select-gold scrollable-options mb-3" data-bs-spy="scroll">
+                  <option multiple value="" selected>Category/Gems</option>
                   <option value="artist">Artist</option>
                   <option value="director">Director</option>
                   <option value="casting-director">Casting Director</option>
@@ -167,7 +146,7 @@
             </div>
           </div>
         </div>
-        <div class="row py-5">
+        <div class="row py-5 file-upload">
           <div class="drag-drop d-flex  rounded-4">
             <div class="  col-lg-8 col-md-8 col-sm-12 p-3">
               <div class="rounded-4 custom-border profile-color text-center pt-3">
