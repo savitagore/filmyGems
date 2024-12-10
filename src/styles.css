@@ -207,7 +207,7 @@ li.nav-item a.nav-link.active {
   height: 10px;
   background-color: #F3AD3B;
   position: relative;
-  top: 80px;
+
 }
 
 .category-tags {
@@ -672,6 +672,7 @@ small {
 .img-hover-zoom--bg {
   position: relative;
   overflow: hidden;
+
   background-size: 100% ; /* Ensures the image covers the entire area */
   background-position: center; /* Center the image */
   background-repeat: no-repeat;
@@ -950,7 +951,7 @@ small {
   border-radius: 50px;
   font-size: 12.95px;
   border: none;
-  padding: 15px 50px;
+  /* padding: 15px 50px; */
   background-color: #FFC936;
   color: #000000;
   letter-spacing: 2px;
@@ -2048,12 +2049,14 @@ text-align: left;
   }
 
   .linear {
-    top: 93px;
+    /* top: 93px; */
+    top: 152px;
   }
 
   .search-box {
     position: relative;
-    top: 28px;
+    /* top: 28px; */
+    top: 81px;
   }
 
   .export {
@@ -2099,6 +2102,9 @@ text-align: left;
 
   /* plan page */
   .subscribe {
+    padding: 12px 38px;
+  }
+  .subscribe-now{
     padding: 12px 38px;
   }
   .dimond-img {
