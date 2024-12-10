@@ -58,7 +58,7 @@ categories = [
       buy: 200,
       trailerCount: 3,
       poster: '/assets/landing_Img/push.jpg',
-      trailerUrl: '/assets/movies/madame-web-trailer.mp4'
+      trailerUrl: '/https://youtu.be/aj0TXpTgbUM?si=Y64mmsJL5v5dYsEY'
     },
     {
       title: 'Madame Web',
@@ -73,7 +73,7 @@ categories = [
     },
     {
       title: 'KRRISH 4',
-      release: '1 MARCH',
+      release: '1 MAR',
       language: 'Hindi,English',
       duration: '2h 28m',
       rent: 120,
