@@ -11,7 +11,7 @@ import { MaskPhoneNumberPipe } from '../../core/Pipe/mask-phone-number.pipe';
 @Component({
   selector: 'app-blogs',
   standalone: true,
-  imports: [RouterLink,SearchHeaderComponent,CommonModule,MaskPhoneNumberPipe],
+  imports: [RouterLink,CommonModule,MaskPhoneNumberPipe],
   templateUrl: './blogs.component.html',
   styleUrl: './blogs.component.css'
 })
@@ -47,6 +47,50 @@ categories = [
 
   currentIndex = 0;
   visibleCategories: string[] = this.categories.slice(this.currentIndex, this.currentIndex +7);
+
+  movies = [
+    {
+      title: 'Pushpa: The Rule - Part 2',
+      release: '6 DEC',
+      language: 'English, Hindi',
+      duration: '3h 15m',
+      rent: 100,
+      buy: 200,
+      trailerCount: 3,
+      poster: '/assets/landing_Img/push.jpg',
+      trailerUrl: '/https://youtu.be/aj0TXpTgbUM?si=Y64mmsJL5v5dYsEY'
+    },
+    {
+      title: 'Madame Web',
+      release: '12 FEB',
+      language: 'English,Hindi',
+      duration: '1h 56m',
+      rent: 150,
+      buy: 250,
+      trailerCount: 2,
+      poster: '/assets/landing_Img/made.jpg',
+      trailerUrl: '/assets/movies/avengers-trailer.mp4'
+    },
+    {
+      title: 'KRRISH 4',
+      release: '1 MAR',
+      language: 'Hindi,English',
+      duration: '2h 28m',
+      rent: 120,
+      buy: 220,
+      trailerCount: 4,
+      poster: '/assets/landing_Img/krrish.jpg',
+      trailerUrl: '/assets/movies/inception-trailer.mp4'
+    }
+  ];
+
+  activeTrailerIndex: number | null = null;
+
+  playTrailer(index: number): void {
+    this.activeTrailerIndex = index;
+  }
+
+
 
 
   nextCategory() {
