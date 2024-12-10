@@ -343,7 +343,6 @@ li.nav-item a.nav-link.active {
   margin-left: 141px;
 }
 .join-text {
-  font-size: 90px;
   font-weight: bold;
   color: #1F2124;
   text-align: right;
@@ -651,39 +650,20 @@ small {
   border-radius: 50px;
 }
 
-/* .img-hover-zoom--bg {
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: none;
-  transition: background-size 0.4s ease, background-position 0.4s ease, border 0.4s ease;
-  overflow: hidden;
-  position: relative;
-}
-
-.img-hover-zoom--bg:hover {
-  background-size: 150%;
-  background-position: center;
-  border: 1px solid #ffffff;
-} */
 .img-hover-zoom--bg {
   position: relative;
   overflow: hidden;
-
-  background-size: 100% ; /* Ensures the image covers the entire area */
-  background-position: center; /* Center the image */
+  background-size: 100%;
+  background-position: center; 
   background-repeat: no-repeat;
   border: none;
   transition: background-size 0.4s ease, background-position 0.4s ease, border 0.4s ease;
 }
 
 .img-hover-zoom--bg:hover {
-  background-size: 150%; /* Zoom effect on hover */
+  background-size: 150%; 
   background-position: center;
-  border: 1px solid #ffffff; /* Optional border effect */
+  border: 1px solid #ffffff;
 }
 
 
@@ -2090,6 +2070,10 @@ text-align: left;
     font-size: 14px;
     width: 150px;
     padding: 8px;
+  }
+  /* footer */
+  .join-text{
+    font-size: 72px;
   }
 
   /* plan page */
