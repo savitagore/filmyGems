@@ -2112,6 +2112,9 @@ text-align: left;
   .health{
     padding-left: 200px;
   }
+  .job{
+    width: 150px;
+  }
 }
 
 @media (min-width:1200px) {
@@ -2313,6 +2316,10 @@ text-align: left;
     right: 45px;
     top: 8px;
     display: block;
+  }
+/* Work us page */
+  .job{
+    width: 200px;
   }
 }
 

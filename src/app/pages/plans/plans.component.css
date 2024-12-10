@@ -1,1 +1,6 @@
-
+@media (max-width:1024px) {
+    .star-badge {
+        top: 101px;
+        right: 0px;
+    }
+}
