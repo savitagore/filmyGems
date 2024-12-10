@@ -9,18 +9,25 @@
 }
 
 
-.release{
-  border: 1px solid darkgray;
-    padding: 20px;
-    border-left: none;
-    border-top: none;
-    border-bottom: none;
+@media (max-width: 320px) {
+  .img-hover-zoom--bg{
+    background-size: cover;
+  }
 }
-.release-prime{
-  padding-top: 150px;
+@media (max-width: 1024px) {
+  .img-hover-zoom--bg{
+    background-size: cover;
+  }
+  .mask{
+    padding-top: 17px;
+  }
+  
 }
-.prime img{
-  height: 100px;
+@media (max-width: 992px) and (max-width: 1024px) {
+  .linear {
+      top: 152px;
+  }
+  .img-hover-zoom--bg{
+    background-size: cover;
+  }
 }
-
-
