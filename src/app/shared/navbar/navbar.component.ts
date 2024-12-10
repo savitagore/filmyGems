@@ -30,6 +30,13 @@ export class NavbarComponent {
   isToggled: Boolean = false;
   isMenuOpen = false;
 
+  menuOpen: boolean = false;
+
+  toggleMenu1() {
+    this.menuOpen = !this.menuOpen;
+  }
+
+
 
   toggleMenu() {
     const toggleButton = document.getElementById('toggle');

@@ -49,8 +49,9 @@
   </div>
 </section>
 
+<!-- Book my Show with functionality -->
 
-<section class="bg-middle pt-5 roboto-font">
+<!-- <section class="bg-middle pt-5 roboto-font">
   <div class="container">
     <div id="movieSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
       <div class="carousel-indicators">
@@ -75,7 +76,7 @@
                   <div class="video-container">
                     <video *ngIf="activeTrailerIndex === i" [src]="movie.trailerUrl" controls autoplay
                       class="video-player"></video>
-                    <!-- <img *ngIf="activeTrailerIndex !== i" [src]="movie.poster" alt="Poster" class="img-fluid" /> -->
+                    <img *ngIf="activeTrailerIndex !== i" [src]="movie.poster" alt="Poster" class="img-fluid" />
                   </div>
                   <h4>{{ movie.title }}</h4>
                   <h6>Language: {{ movie.language }}</h6>
@@ -97,36 +98,11 @@
                 </div>
               </div>
             </div>
-            <div class="d-flex justify-content-between">
+            <div class="d-flex">
               <div class="trailer-card text-white ps-4">
                 <div class="video-container">
-                  <video *ngIf="activeTrailerIndex === i" [src]="movie.trailerUrl" controls autoplay
-                    class="video-player"></video>
-                  <!-- <img *ngIf="activeTrailerIndex !== i" [src]="movie.poster" alt="Poster" class="img-fluid" /> -->
-                </div>
-                <h4>{{ movie.title }}</h4>
-                <h6>Language: {{ movie.language }}</h6>
-                <h6>Time: {{ movie.duration }}</h6>
-                <div class="buy pt-3">
-                  <button class="btn buy-btn ps-3 pe-3 text-white me-3" type="button">
-                    Rent ${{ movie.rent }}
-                  </button>
-                  <button class="btn buy-btn ps-3 pe-3 text-white" type="button">
-                    Buy ${{ movie.buy }}
-                  </button>
-                </div>
-                <div class="prime d-flex align-items-center">
-                  <h5 class="text-white release pe-4">{{movie.release}}</h5>
-                  <a href="">
-                    <img src="assets/landing_Img/prime.png" alt="" class="img-fluid">
-                  </a>
-                </div>
-              </div>
-              <div class="trailer-card text-white">
-                <div class="video-container">
-                  <video *ngIf="activeTrailerIndex === i" [src]="movie.trailerUrl" controls autoplay
-                    class="video-player"></video>
-                  <!-- <img *ngIf="activeTrailerIndex !== i" [src]="movie.poster" alt="Poster" class="img-fluid" /> -->
+                  <video *ngIf="activeTrailerIndex === i" [src]="movie.trailerUrl" controls autoplay class="video-player"></video>
+                  <img *ngIf="activeTrailerIndex !== i" [src]="movie.poster" alt="Poster" class="img-fluid" />
                 </div>
                 <h4>{{ movie.title }}</h4>
                 <h6>Language: {{ movie.language }}</h6>
@@ -150,17 +126,135 @@
           </div>
         </div>
       </div>
-      <!-- Controls -->
-      <!-- <button class="carousel-control-prev" type="button" data-bs-target="#movieSlider" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#movieSlider" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button> -->
     </div>
   </div>
+</section> -->
+
+
+<!-- Normal slider with Book my show images -->
+<section class="bg-middle pt-5 roboto-font">
+  <div class="container mt-5">
+    <div id="movieSlider" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#movieSlider" data-bs-slide-to="0" class="active custom-dot me-2" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#movieSlider" data-bs-slide-to="1" class="custom-dot me-2" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#movieSlider" data-bs-slide-to="2" class="custom-dot me-2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <!-- First Slide -->
+        <div class="carousel-item active">
+          <div class="row madeweb" style="background-image: url('assets/landing_Img/push.jpg');">
+            <div class="col-md-2">
+              <div class="pt-3 ps-3">
+                <button class="btn text-white d-flex align-items-center justify-content-center rounded-3 trailer" type="button">
+                  <i class="fa-solid fa-play"></i>
+                  <h5 class="mx-1 mb-0">Trailer (3)</h5>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-10">
+              <div class="d-flex justify-content-end pt-4 flex-wrap">
+                <div class="trailer-card text-white">
+                  <h4>Pushpa: The Rule - Part 2</h4>
+                  <h6>Language: English, Hindi</h6>
+                  <h6>Time: 3h 15m</h6>
+                  <div class="buy pt-3">
+                    <button class="btn buy-btn ps-3 pe-3 text-white me-3" type="button">
+                      Rent $100
+                    </button>
+                    <button class="btn buy-btn ps-3 pe-3 text-white" type="button">
+                      Buy $200
+                    </button>
+                  </div>
+                  <div class="prime d-flex align-items-center">
+                    <h5 class="text-white release pe-4">6 DEC</h5>
+                    <a href="#">
+                      <img src="assets/landing_Img/prime.png" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Second Slide -->
+        <div class="carousel-item">
+          <div class="row madeweb" style="background-image: url('assets/landing_Img/made.jpg');">
+            <div class="col-md-12">
+              <div class="pt-3 ps-3">
+                <button class="btn text-white d-flex align-items-center justify-content-center rounded-3 trailer" type="button">
+                  <i class="fa-solid fa-play"></i>
+                  <h5 class="mx-1 mb-0">Trailer (2)</h5>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-12 pt-5">
+              <div class="d-flex ps-4">
+                <div class="trailer-card text-white">
+                  <h4>Madame Web</h4>
+                  <h6>Language: English, Hindi</h6>
+                  <h6>Time: 1h 56m</h6>
+                  <div class="buy pt-3">
+                    <button class="btn buy-btn ps-3 pe-3 text-white me-3" type="button">
+                      Rent $150
+                    </button>
+                    <button class="btn buy-btn ps-3 pe-3 text-white" type="button">
+                      Buy $250
+                    </button>
+                  </div>
+                  <div class="prime d-flex align-items-center">
+                    <h5 class="text-white release pe-4">12 FEB</h5>
+                    <a href="#">
+                      <img src="assets/landing_Img/prime.png" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+  
+        <!-- Third Slide -->
+        <div class="carousel-item">
+          <div class="row madeweb" style="background-image: url('assets/landing_Img/krrish.jpg');">
+            <div class="col-md-2">
+              <div class="pt-3 ps-3">
+                <button class="btn text-white d-flex align-items-center justify-content-center rounded-3 trailer" type="button">
+                  <i class="fa-solid fa-play"></i>
+                  <h5 class="mx-1 mb-0">Trailer (4)</h5>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-12 pt-5">
+              <div class="d-flex justify-content-end  flex-wrap">
+                <div class="trailer-card text-white">
+                  <h4>KRRISH 4</h4>
+                  <h6>Language: Hindi, English</h6>
+                  <h6>Time: 2h 28m</h6>
+                  <div class="buy pt-3">
+                    <button class="btn buy-btn ps-3 pe-3 text-white me-3" type="button">
+                      Rent $120
+                    </button>
+                    <button class="btn buy-btn ps-3 pe-3 text-white" type="button">
+                      Buy $220
+                    </button>
+                  </div>
+                  <div class="prime d-flex align-items-center">
+                    <h5 class="text-white release pe-4">1 MAR</h5>
+                    <a href="#">
+                      <img src="assets/landing_Img/prime.png" alt="" class="img-fluid">
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </section>
 
 

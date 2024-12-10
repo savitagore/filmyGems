@@ -13,17 +13,16 @@
   .health{
     padding-left: 0px;
   }
+  .work-health{
+    padding-left: 0 !important;
+  }
 }
 
 .workus-card{
-  background-color: unset !important;
   border: 1px solid #FFFFFF;
-  --bs-card-cap-padding-y: 0;
 }
 .job{
   border: 1px solid #ffffff;
-  /* padding: 10px 70px; */
-  width: 200px;
 }
 .workus-li li::marker{
      color:#FFFFFF ;
