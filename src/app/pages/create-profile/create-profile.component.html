@@ -33,16 +33,27 @@
               <div class="mt-3">
                 <img src="assets/svg-icons/upload.svg" alt="upload icon">
               </div>
-
             </div>
             <div class="pt-4 custom-profiles">
               <div class="mb-3 mt-5 profile-last">
                 <input type="text" class="form-control profile-color full-width-input" formControlName="firstName"
                   id="firstName" placeholder="First Name *">
+                <small
+                  *ngIf="profileForm.get('firstName')?.hasError('required') && (profileForm.get('firstName')?.dirty || profileForm.get('firstName')?.touched)"
+                  class="text-danger">First Name is required.</small>
+                <small
+                  *ngIf="profileForm.get('firstName')?.hasError('minlength') && (profileForm.get('firstName')?.dirty || profileForm.get('firstName')?.touched)"
+                  class="text-danger">First Name must be at least 3 characters long..</small>
               </div>
               <div class="mt-4 custom-bottom">
                 <input type="text" class="form-control profile-color" formControlName="lastName" id="lastName"
                   placeholder="Last Name *">
+                <small
+                  *ngIf="profileForm.get('lastName')?.hasError('required') && (profileForm.get('lastName')?.dirty || profileForm.get('lastName')?.touched)"
+                  class="text-danger">Last Name is required.</small>
+                <small
+                  *ngIf="profileForm.get('lastName')?.hasError('minlength') && (profileForm.get('lastName')?.dirty || profileForm.get('lastName')?.touched)"
+                  class="text-danger">Last Name must be at least 3 characters long..</small>
               </div>
             </div>
           </div>
@@ -50,24 +61,64 @@
             <div class="col-12 col-md-4 custom-bottom">
               <input type="email" class="form-control profile-color" id="email" placeholder="Enter your email *"
                 formControlName="email">
+              <small
+                *ngIf="profileForm.get('email')?.hasError('required') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
+                class="text-danger">Email is required.</small>
+              <small
+                *ngIf="profileForm.get('email')?.hasError('email') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
+                class="text-danger">Please enter a valid email address.</small>
+              <small
+                *ngIf="profileForm.get('email')?.hasError('pattern') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
+                class="text-danger">Email format is invalid.</small>
             </div>
             <div class="col-12 col-md-4 custom-bottom">
               <input type="text" class="form-control profile-color" formControlName="mobile" id="mobile"
-                placeholder="Mobile Number *">
+                placeholder="Mobile Number *" pattern="\d*" maxlength="10"
+                onkeypress="return event.charCode >= 48 && event.charCode <= 57" />
+              <small
+                *ngIf="profileForm.get('mobile')?.invalid && (profileForm.get('mobile')?.dirty || profileForm.get('mobile')?.touched)">
+                <small *ngIf="profileForm.get('mobile')?.errors?.['required']" class="text-danger">
+                  Mobile number is required.
+                </small>
+                <small *ngIf="profileForm.get('mobile')?.errors?.['pattern']" class="text-danger">
+                  Please enter a valid 10-digit mobile number.
+                </small>
+              </small>
             </div>
+
             <div class="col-12 col-md-4 custom-bottom">
               <input type="text" class="form-control profile-color" formControlName="city" id="city"
                 placeholder="Enter City *">
+              <div
+                *ngIf="profileForm.get('city')?.invalid && (profileForm.get('city')?.dirty || profileForm.get('city')?.touched)">
+                <small *ngIf="profileForm.get('city')?.errors?.['required']" class="text-danger">City is
+                  required.</small>
+              </div>
             </div>
           </div>
           <div class="row p-3">
             <div class="col-12 col-md-4 custom-bottom">
               <input type="text" class="form-control profile-color" formControlName="zip" id="zip"
-                placeholder="Enter ZIP Code *">
+                placeholder="Enter ZIP Code *" maxlength="6" pattern="\d{6}"
+                onkeypress="return event.charCode >= 48 && event.charCode <= 57" />
+              <span
+                *ngIf="profileForm.get('zip')?.invalid && (profileForm.get('zip')?.dirty || profileForm.get('zip')?.touched)">
+                <small *ngIf="profileForm.get('zip')?.errors?.['required']" class="text-danger">
+                  ZIP Code is required.
+                </small>
+                <small *ngIf="profileForm.get('zip')?.errors?.['pattern']" class="text-danger">
+                  ZIP Code must be 6 digits.
+                </small>
+              </span>
             </div>
             <div class="col-12 col-md-4 custom-bottom">
               <input type="text" class="form-control profile-color" formControlName="country" id="country"
                 placeholder="Enter Country *">
+              <span
+                *ngIf="profileForm.get('country')?.invalid && (profileForm.get('country')?.dirty || profileForm.get('country')?.touched)">
+                <small *ngIf="profileForm.get('country')?.errors?.['required']" class="text-danger">Country is
+                  required.</small>
+              </span>
             </div>
             <div class="col-12 col-md-4 custom-bottom">
               <input type="text" class="form-control profile-color" id="facebook id" placeholder="facebook id">
@@ -125,7 +176,7 @@
             </div>
             <div class="col-12 col-md-4 custom-bottom">
               <div class="dropdown-container">
-                <select  class="form-select select-gold scrollable-options mb-3" data-bs-spy="scroll">
+                <select class="form-select select-gold scrollable-options mb-3" data-bs-spy="scroll">
                   <option multiple value="" selected>Category/Gems</option>
                   <option value="artist">Artist</option>
                   <option value="director">Director</option>
@@ -215,7 +266,13 @@
           <div class="col-12 text-center mb-3 pt-3">
             <button type="button"
               class="btn btn-outline-light me-2 rounded-pill cancel-btn cancel-moblie">Cancel</button>
-            <button type="button" class="btn btn-all rounded-pill">Save</button>
+            <p-toast />
+            <p-confirmDialog />
+            <button type="button" class="btn btn-all rounded-pill" (click)="confirm1($event)">
+              Save
+            </button>
+            <!-- <p-button (onClick)="confirm1($event)" label="Save"  class="btn-all rounded-pill" /> -->
+            <!-- <button type="button" class="btn btn-all rounded-pill" (onClick)="confirm1($event)">Save</button> -->
           </div>
         </div>
       </form>
