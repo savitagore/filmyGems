@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component } from '@angular/core';
 
 @Component({
   selector: 'app-login-carasoual',
@@ -7,6 +7,13 @@ import { Component } from '@angular/core';
   templateUrl: './login-carasoual.component.html',
   styleUrl: './login-carasoual.component.css'
 })
-export class LoginCarasoualComponent {
-
+export class LoginCarasoualComponent implements AfterViewInit {
+  ngAfterViewInit() {
+    // Declare the bootstrap variable
+    const carouselElement = document.querySelector('#carouselExample');
+    const carousel = (window as any).bootstrap.Carousel(carouselElement, {
+      interval: 1000, // Slide every 1 second
+      ride: 'carousel'
+    });
+  }
 }
