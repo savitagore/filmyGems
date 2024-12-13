@@ -57,14 +57,14 @@ export class AboutUsComponent {
   );
 
   nextImage() {
-    if (this.currentIndex + 1 < this.images.length) {
+    if (this.currentIndex + 5 < this.images.length) {
       this.currentIndex += 1;
       this.updateVisibleImages();
     }
   }
 
   prevImage() {
-    if (this.currentIndex >= 1) {
+    if (this.currentIndex >= 5) {
       this.currentIndex -= 1;
       this.updateVisibleImages();
     }
@@ -99,14 +99,14 @@ export class AboutUsComponent {
   }
 
   nextPartners() {
-    if (this.startIndex + 1 < this.partners.length) {
+    if (this.startIndex + 5 < this.partners.length) {
       this.startIndex++;
       this.updateVisiblePartners();
     }
   }
 
   prevPartners() {
-    if (this.startIndex > 0) {
+    if (this.startIndex > 5) {
       this.startIndex--;
       this.updateVisiblePartners();
     }

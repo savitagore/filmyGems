@@ -207,7 +207,7 @@ li.nav-item a.nav-link.active {
   height: 10px;
   background-color: #F3AD3B;
   position: relative;
-  top: 80px;
+
 }
 
 .category-tags {
@@ -343,7 +343,6 @@ li.nav-item a.nav-link.active {
   margin-left: 141px;
 }
 .join-text {
-  font-size: 90px;
   font-weight: bold;
   color: #1F2124;
   text-align: right;
@@ -651,38 +650,20 @@ small {
   border-radius: 50px;
 }
 
-/* .img-hover-zoom--bg {
-  position: relative;
-  overflow: hidden;
-  background-size: cover;
-  background-size: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  border: none;
-  transition: background-size 0.4s ease, background-position 0.4s ease, border 0.4s ease;
-  overflow: hidden;
-  position: relative;
-}
-
-.img-hover-zoom--bg:hover {
-  background-size: 150%;
-  background-position: center;
-  border: 1px solid #ffffff;
-} */
 .img-hover-zoom--bg {
   position: relative;
   overflow: hidden;
-  background-size: 100% ; /* Ensures the image covers the entire area */
-  background-position: center; /* Center the image */
+  background-size: 100%;
+  background-position: center; 
   background-repeat: no-repeat;
   border: none;
   transition: background-size 0.4s ease, background-position 0.4s ease, border 0.4s ease;
 }
 
 .img-hover-zoom--bg:hover {
-  background-size: 150%; /* Zoom effect on hover */
+  background-size: 150%; 
   background-position: center;
-  border: 1px solid #ffffff; /* Optional border effect */
+  border: 1px solid #ffffff;
 }
 
 
@@ -950,7 +931,7 @@ small {
   border-radius: 50px;
   font-size: 12.95px;
   border: none;
-  padding: 15px 50px;
+  /* padding: 15px 50px; */
   background-color: #FFC936;
   color: #000000;
   letter-spacing: 2px;
@@ -2048,12 +2029,14 @@ text-align: left;
   }
 
   .linear {
-    top: 93px;
+    /* top: 93px; */
+    top: 152px;
   }
 
   .search-box {
     position: relative;
-    top: 28px;
+    /* top: 28px; */
+    top: 81px;
   }
 
   .export {
@@ -2096,9 +2079,16 @@ text-align: left;
     width: 150px;
     padding: 8px;
   }
+  /* footer */
+  .join-text{
+    font-size: 72px;
+  }
 
   /* plan page */
   .subscribe {
+    padding: 12px 38px;
+  }
+  .subscribe-now{
     padding: 12px 38px;
   }
   .dimond-img {
@@ -2129,6 +2119,9 @@ text-align: left;
   /* works us */
   .health{
     padding-left: 200px;
+  }
+  .job{
+    width: 150px;
   }
 }
 
@@ -2331,6 +2324,10 @@ text-align: left;
     right: 45px;
     top: 8px;
     display: block;
+  }
+/* Work us page */
+  .job{
+    width: 200px;
   }
 }
 
