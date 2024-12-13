@@ -18,6 +18,10 @@ import { EnterOTPComponent } from './login/pages/enter-otp/enter-otp.component';
 import { ForgottPasswordComponent } from './login/pages/forgott-password/forgott-password.component';
 import { ResetPasswordComponent } from './login/pages/reset-password/reset-password.component';
 import { WorkusComponent } from './footer/pages/workus/workus.component';
+import { DashboardComponent } from './Admin-Dashboard/admin/dashboard/dashboard.component';
+import { SidebarComponent } from './Admin-Dashboard/admin/sidebar/sidebar.component';
+import { AdminSettingsComponent } from './Admin-Dashboard/pages/admin-settings/admin-settings.component';
+import { UserSettingsComponent } from './Admin-Dashboard/pages/user-settings/user-settings.component';
 
 export const routes: Routes = [
   { path: '', component: HeaderComponent },
@@ -80,5 +84,22 @@ export const routes: Routes = [
   {
     path:'work-us',
     component: WorkusComponent
+  },
+ 
+  {
+    path:'dashboard',
+    component:DashboardComponent
+  },
+  {
+    path:'sidebar',
+    component:SidebarComponent
+  },
+  {
+    path:'admin',
+    component:AdminSettingsComponent
+  },
+  {
+    path:'user',
+    component:UserSettingsComponent
   }
 ];

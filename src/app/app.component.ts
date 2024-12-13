@@ -3,9 +3,10 @@ import { RouterOutlet } from '@angular/router';
 import { HeaderComponent } from './shared/header/header.component';
 import { FooterComponent } from './shared/footer/footer.component';
 import { CommonModule } from '@angular/common';
-import { SidebarComponent } from './dashboard/pages/sidebar/sidebar.component';
+
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { SidebarComponent } from './Admin-Dashboard/admin/sidebar/sidebar.component';
 
 @Component({
   selector: 'app-root',
@@ -17,5 +18,17 @@ import { MessageService } from 'primeng/api';
 })
 export class AppComponent {
   title = 'FilmyGems';
+  
+  // isSidebarOpen = false;
+  isSidenavOpen: boolean = false;
+ 
+
+  openNav() {
+    this.isSidenavOpen = true;
+  }
+
+  closeNav() {
+    this.isSidenavOpen = false;
+  }
 
 }

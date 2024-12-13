@@ -1,0 +1,217 @@
+<div class="container-fluid">
+  <div class="row">
+    <!-- <div class="col-lg-2 col-md-2 col-6">
+      
+
+      <app-side-bar></app-side-bar>
+
+    </div> -->
+    <div class="col-lg-12 col-md-12 col-6">
+
+      <div class="row sidebar-wraper">
+        <div class="col-6">
+          <h4 class="text-secondary">Welcome Back,Jimmy!</h4>
+          <p class="text-white">23 Oct 2023-10:15 AM</p>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+          <i class="fa-solid fa-gear text-white iconHeader align-self-center"></i>
+          <i class="fa-solid fa-bell text-white iconHeader align-self-center"></i>
+          <img
+            src="https://media.istockphoto.com/id/1364917563/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=2048x2048&w=is&k=20&c=uEaEqFvI74GpTWzcRCiDMR3qWqS2qVzKQREVBgmcxao="
+            alt="" class="imgProfile align-self-center">
+          <div class="align-self-center profileContent">
+            <blockquote class="text-white m-0">Jimmy Rock</blockquote>
+            <p class="headerProfileAdmin m-0">Super Admin</p>
+          </div>
+        </div>
+      </div>
+      <div class="row flex p-4">
+        <div class="col-6">
+          <span class="p-input-icon-right ml-auto rounded-5">
+            <input pInputText type="text" class="p-2" [(ngModel)]="searchValue" placeholder="Search keyword" />
+            <i class="pi pi-search"></i>
+          </span>
+        </div>
+        <div class="col-6 d-flex justify-content-end">
+
+          <i class="fa-solid fa-filter filterButton"></i>
+
+          <div class="dropdown text-end mb-0">
+            <button class="btn btnCss" data-bs-toggle="dropdown">
+              <i class="fa fa-download"></i> Download Data
+            </button>
+            <ul class="dropdown-menu p-0">
+              <li><a class="dropdown-item p-2 downloadBtn-css-h colorAll border-bottom" href=""><img
+                    src="assets/images/xcel.svg" alt="" class="px-2">Excel Format</a></li>
+              <li><a class="dropdown-item p-2 downloadBtn-css-h colorAll" href=""><img src="assets/images/pdf.svg"
+                    alt="" class="px-2">PDF Format</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="section cardContainer p-5">
+        <div class="row justify-content-between">
+          <div class="">
+            <div class="card card-content cardimg1 rounded-2">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-12 d-flex">
+                    <img src="assets/images/card-icon-1.jpg" alt="" class="card-icon">
+                    <h6 class="align-self-center card-heading">Total Registrations</h6>
+                  </div>
+                </div>
+                <div class="row py-3">
+                  <div class="col-12">
+                    <h3>1 + cr</h3>
+                  </div>
+                </div>
+                <p>+21k this week</p>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="card card-content cardimg2 rounded-2">
+
+              <div class="card-body">
+
+                <div class="row">
+                  <div class="col-12 d-flex">
+                    <img src="assets/images/card-icon-2.jpg" alt="" class="card-icon">
+                    <h6 class="align-self-center card-heading">Total Registrations</h6>
+                  </div>
+                </div>
+                <div class="row py-">
+                  <div class="col-12">
+                    <h3>1 + Lacs</h3>
+                  </div>
+                </div>
+                <p>+21k this week</p>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="card card-content cardimg3 rounded-2">
+
+              <div class="card-body">
+
+                <div class="row">
+                  <div class="col-12 d-flex">
+                    <img src="assets/images/card-icon-3.jpg" alt="" class="card-icon">
+                    <h6 class="align-self-center card-heading">Total Registrations</h6>
+                  </div>
+                </div>
+                <div class="row py-">
+                  <div class="col-12">
+                    <h3>50 Lacs</h3>
+                  </div>
+                </div>
+                <p>+21k this week</p>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="card card-content cardimg4 rounded-2">
+
+              <div class="card-body">
+
+                <div class="row">
+                  <div class="col-12 d-flex">
+                    <img src="assets/images/card-icon-4.jpg" alt="" class="card-icon">
+                    <h6 class="align-self-center card-heading">Total Registrations</h6>
+                  </div>
+                </div>
+                <div class="row py-">
+                  <div class="col-12">
+                    <h3>30 + Lacs</h3>
+                  </div>
+                </div>
+                <p>+21k this week</p>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="card card-content cardimg5 rounded-2">
+
+              <div class="card-body">
+
+                <div class="row">
+                  <div class="col-12 d-flex">
+                    <img src="assets/images/card-icon-5.jpg" alt="" class="card-icon">
+                    <h6 class="align-self-center card-heading fw-1">Total Registrations</h6>
+                  </div>
+                </div>
+                <div class="row py-">
+                  <div class="col-12">
+                    <h3>20 + Lacs</h3>
+                  </div>
+                </div>
+                <p>+21k this week</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- charts section -->
+        <div class="py-3">
+          <div class="row">
+            <div class="col-12 p-0">
+              <div class="d-flex">
+                <div class="card polarChart1  " style="width: 535px;">
+                  <div class="row">
+                    <div class="col-6">
+                      <h6 class="py-2 ps-2" style="color: white; text-align: center;">Countrywise Revenue</h6>
+                    </div>
+                    <div class="col-6">
+                      <div class="row">
+                        <!-- Header with dots -->
+                        <div class="col-12 d-flex align-items-center justify-content-center">
+                          <div class="d-flex py-2">
+                            <span *ngFor="let label of labels" class="d-flex align-items-center mx-2">
+                              <!-- Colored dot -->
+                              <span
+                                style="display: inline-block; width: 10px; height: 10px; border-radius: 50%; margin-right: 5px;"
+                                [style.background-color]="label.color">
+                              </span>
+                              <span style="color: white; font-size: 14px;">{{ label.name }}</span>
+                            </span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-d-flex p-jc-center">
+                    <div class="p-2" style="max-width: 900px;">
+                      <p-chart type="bar" [data]="data" [options]="options"></p-chart>
+                    </div>
+                  </div>
+                </div>
+                <div class="card polarChart1 mx-2" style="width: 500px;">
+                  <div class="card">
+                    <p-chart type="bar" [data]="basicData" [options]="basicOptions" />
+                  </div>
+                </div>
+                <div class="card polarChart1 p-5" style="width: 325px;">
+                  <div class="card flex justify-center">
+                    <p-chart type="doughnut" [data]="data" [options]="options" class="w-full md:w-[30rem]" />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+         <!-- last section -->
+         <div class="row ">
+          <div class="col-8">
+            <div class="card rounded-1 polarChart1">
+              <p class="text-white">Hii</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card rounded-1 polarChart1">
+              <p class="text-white">Hii</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
