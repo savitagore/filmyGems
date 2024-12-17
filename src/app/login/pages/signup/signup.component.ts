@@ -5,9 +5,11 @@ import { Component, ViewEncapsulation } from '@angular/core';
 
 import {
   AbstractControl,
+  AsyncValidatorFn,
   FormBuilder,
   FormGroup,
   ReactiveFormsModule,
+  ValidationErrors,
   Validators,
 } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
@@ -17,6 +19,7 @@ import { SignupvalidationService } from '../../../core/Services/signupValidation
 import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
 import { NotificationServiceService } from '../../../core/Services/Notification/notification-service.service';
+import { Observable, catchError, map, of } from 'rxjs';
 
 @Component({
   selector: 'app-signup',
@@ -37,7 +40,6 @@ import { NotificationServiceService } from '../../../core/Services/Notification/
 })
 export class SignupComponent {
   signupForm: FormGroup;
-  savedData: any[] = [];
   showPassword1: boolean = false;
   showPassword2: boolean = false;
 
@@ -53,16 +55,13 @@ export class SignupComponent {
         mobile: [
           '',
           [Validators.required, Validators.pattern('^[0-9]{10}$')],
-          Validators.maxLength(10),
         ],
         email: [
           '',
           [
             Validators.required,
-            Validators.pattern(
-              '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$'
-            ),
-          ],
+            Validators.pattern('^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$')
+          ]
         ],
         password: [
           '',
@@ -80,8 +79,7 @@ export class SignupComponent {
       { validator: this.matchPasswords }
     );
   }
-
-  matchPasswords(group: FormGroup) {
+  matchPasswords(group: FormGroup): { [key: string]: boolean } | null {
     const password = group.get('password')?.value;
     const confirmPassword = group.get('confirmPassword')?.value;
     return password === confirmPassword ? null : { passwordsMismatch: true };
@@ -97,53 +95,38 @@ export class SignupComponent {
     return null;
   }
 
+
+
   onMobileInput(event: any): void {
     const input = event.target;
-    const value = input.value;
-    const values = event.target.value;
-    event.target.value = values.replace(/[^0-9]/g, '');
-    if (value.length > 9) {
-      input.blur();
-    }
-  }
-
-  get fullName() {
-    return this.signupForm.get('fullName');
-  }
-  get mobile() {
-    return this.signupForm.get('mobile');
-  }
-  get email() {
-    return this.signupForm.get('email');
-  }
-  get password() {
-    return this.signupForm.get('password');
-  }
-  get confirmPassword() {
-    return this.signupForm.get('confirmPassword');
+    input.value = input.value.replace(/[^0-9]/g, '').slice(0, 10);
+    this.signupForm.get('mobile')?.setValue(input.value);
   }
 
   getFullNameErrorMessage(): string {
-    return this.signupService.getFullNameErrorMessage(
-      this.fullName as AbstractControl
-    );
+    const control = this.signupForm.get('fullName');
+    return control ? this.signupService.getFullNameErrorMessage(control) : '';
   }
+
   getMobileTooltipMessage(): string {
-    return this.signupService.getMobileErrorMessage(
-      this.mobile as AbstractControl
-    );
+    const control = this.signupForm.get('mobile');
+    return control ? this.signupService.getMobileErrorMessage(control) : '';
   }
+
   getEmailTooltipMessage(): string {
-    return this.signupService.getEmailErrorMessage(
-      this.email as AbstractControl
-    );
+    const control = this.signupForm.get('email');
+    return control ? this.signupService.getEmailErrorMessage(control) : '';
   }
+
   getPasswordPatternTooltip(): string {
     return this.signupService.getPasswordPatternErrorMessage();
   }
+
   getPasswordMismatchTooltip(): string {
-    return this.signupService.getPasswordMismatchErrorMessage();
+    const control = this.signupForm.get('confirmPassword');
+    return control ? this.signupService.getPasswordMismatchErrorMessage() : '';
   }
+
   togglePassword(fieldNumber: number) {
     if (fieldNumber === 1) {
       this.showPassword1 = !this.showPassword1;
@@ -153,8 +136,19 @@ export class SignupComponent {
   }
 
   onLogin(): void {
-    //  this.notificationService.showSuccess('Success', 'Data saved successfully!');
-    this.router.navigate(['/login']);
-    //this.notificationService.showWarning('Validation Error', 'Please fill out the form correctly.');
+    if (this.signupForm.valid) {
+      console.log('Form Data:', this.signupForm.value);
+      this.router.navigate(['/login']);
+    } else {
+      console.error('Form is invalid. Check errors below:');
+      Object.keys(this.signupForm.controls).forEach((key) => {
+        const control = this.signupForm.get(key);
+        if (control?.invalid) {
+          console.error(`Control "${key}" is invalid:`, control.errors);
+        }
+      });
+    }
   }
+
 }
+
