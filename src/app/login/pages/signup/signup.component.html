@@ -5,16 +5,12 @@
     </div>
     <div class="col-lg-5 col-md-5 col-sm-12 sign-bg">
       <div class="row justify-content-center g-0">
-        <!-- <div class="col-8 text-end align-self-center">
-          <div class="signup-logo" style="padding-left: 13px;">
-            <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/" alt="" class="img-fluid" >
-          </div>
-        </div> -->
-        <div class="col-8 pt-4" style="padding-left:10px">
-          <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/" alt="" class="img-fluid ms-5 ps-5" >
+        <div class="col-8 pt-4 med-sm">
+          <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/" alt=""
+            class="img-fluid ms-5 ps-5 login-padding">
         </div>
         <div class="col-4 d-flex justify-content-end  signup-dimond">
-          <img src="assets/signup/diamond.png" alt="" class="img-fluid" >
+          <img src="assets/signup/diamond.png" alt="" class="img-fluid">
         </div>
       </div>
       <div class="row justify-content-center">
@@ -25,39 +21,44 @@
           </div>
           <form [formGroup]="signupForm">
             <div class="mb-2">
-              <input type="text" class="form-control text-white fill-form" placeholder="Full Name"
+              <input type="text" class="form-control text-white fill-form" placeholder="Full Name" name="fullName"
                 formControlName="fullName" />
-              <span *ngIf="fullName?.invalid && (fullName?.dirty || fullName?.touched)" class="text-danger">
+              <span
+                *ngIf="signupForm.controls['fullName'].invalid && (signupForm.controls['fullName'].dirty || signupForm.controls['fullName'].touched)"
+                class="text-danger">
                 {{ getFullNameErrorMessage() }}
               </span>
             </div>
             <div class="mb-2">
-              <input type="text" class="form-control text-white fill-form" placeholder="Mobile Number"
+              <input type="text" class="form-control text-white fill-form" placeholder="Mobile Number" name="mobile"
                 formControlName="mobile" (input)="onMobileInput($event)" />
-              <span *ngIf="mobile?.invalid && (mobile?.dirty || mobile?.touched)" class="text-danger">
+              <span
+                *ngIf="signupForm.controls['mobile'].invalid && (signupForm.controls['mobile'].dirty || signupForm.controls['mobile'].touched)"
+                class="text-danger">
                 {{ getMobileTooltipMessage() }}
               </span>
             </div>
             <div class="mb-2">
               <input type="email" class="form-control text-white fill-form" placeholder="Enter your email"
                 formControlName="email" />
-              <span *ngIf="email?.invalid && (email?.dirty || email?.touched)" class="text-danger">
-                {{getEmailTooltipMessage() }}
+              <span
+                *ngIf="signupForm.controls['email'].invalid && (signupForm.controls['email'].dirty || signupForm.controls['email'].touched)"
+                class="text-danger">
+                {{ getEmailTooltipMessage() }}
               </span>
             </div>
             <div class="mb-2 position-relative">
               <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white fill-form"
                 formControlName="password" placeholder="Enter password" />
-              <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)"
-                [ngStyle]="{
-                'padding-bottom': signupForm.get('password')?.errors?.['pattern'] ? '40px' : '0'
-              }">
+              <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)">
                 <i [ngClass]="
                   showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
                 "></i>
               </span>
-              <span *ngIf="password?.invalid && (password?.dirty || password?.touched)" class="text-danger">
-                {{getPasswordPatternTooltip() }}
+              <span *ngIf="signupForm.controls['password'].invalid &&
+                           (signupForm.controls['password'].dirty || signupForm.controls['password'].touched)"
+                class="text-danger">
+                {{ getPasswordPatternTooltip() }}
               </span>
             </div>
             <div class="mb-2 position-relative">
@@ -66,26 +67,23 @@
               <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(2)">
                 <i [ngClass]="
                   showPassword2 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
-                "
-                  [ngStyle]="{
-                  'padding-bottom': signupForm.errors?.['passwordsMismatch'] && signupForm.get('confirmPassword')?.touched ? '40px' : '0',
-                  'padding-top': signupForm.errors?.['passwordsMismatch'] && signupForm.get('confirmPassword')?.touched ? '33px' : '0' }"></i>
+                "></i>
               </span>
-              <span *ngIf="confirmPassword?.invalid && (confirmPassword?.dirty || confirmPassword?.touched)"
+              <span *ngIf="signupForm.hasError('passwordsMismatch') && signupForm.controls['confirmPassword'].touched"
                 class="text-danger">
-                {{getPasswordMismatchTooltip()}}
+                {{ getPasswordMismatchTooltip() }}
               </span>
             </div>
             <div class="position-relative">
               <div class="form-check">
-                <input class="form-check-input" type="checkbox" id="termsCheck" required>
+                <input class="form-check-input" type="checkbox" id="termsCheck" formControlName="termsCheck" />
                 <label class="form-check-label text-white" for="termsCheck">
                   By signing up, you agree to our <a href="#" class="link-primary">conditions</a> & <a
                     routerLink="/policy" class="link-primary">privacy policy</a>
                 </label>
               </div>
             </div>
-            <div class=" text-center login-signup rounded-1">
+            <div class="text-center login-signup rounded-1">
               <p-toast />
               <button class="btn text-white" (click)="onLogin()">Login</button>
             </div>
@@ -93,6 +91,7 @@
               If you have already an account? <span style="color: #0057FF;" routerLink="/login">Login</span>
             </div>
           </form>
+
         </div>
       </div>
     </div>

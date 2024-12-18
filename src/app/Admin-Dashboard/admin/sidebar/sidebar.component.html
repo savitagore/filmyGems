@@ -1,0 +1,71 @@
+<div class="sidebar">
+  <div class="sidebar-header">
+    <img src="assets/images/logo1.png" routerLink="/" class="p-3 mb-5" alt="">
+  </div>
+  <ul class="sidebar-nav list-unstyled">
+    <li>
+      <div class="side-div pt-3 pb-2">
+        <p class="text-white" routerLink="dashboard"><i class="bi bi-columns-gap side-icons-start"></i>Dashboard</p>
+      </div>
+    </li>
+    <li>
+      <div class="d-flex align-items-baseline ul-btn-bg pt-3 side-div">
+        <i class="bi bi-universal-access-circle side-icons-start"></i>
+        <p class="text-white border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse1"
+          aria-expanded="false">
+          Super Admin
+        </p>
+        <i class="fa-solid fa-chevron-right side-icons-end collapsed rotated-icon" data-bs-toggle="collapse"
+          data-bs-target="#home-collapse1" aria-expanded="false"></i>
+      </div>
+      <div class="collapse" id="home-collapse1">
+        <ul class="btn-toggle-nav list-unstyled">
+          <li><a class="dropdown-item" routerLink="adminS"><i
+                class="list-margin bi bi-person-gear side-icons-start"></i>Admin Settings</a></li>
+          <li><a class="dropdown-item" routerLink="userS"><i
+                class="list-margin bi bi-person-square side-icons-start"></i>User Settings</a></li>
+          <li><a class="dropdown-item"><i class="list-margin fa-solid fa-hippo side-icons-start"></i>Accounts</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="d-flex align-items-baseline ul-btn-bg pt-3 side-div">
+        <i class="fa-solid fa-user-tie side-icons-start"></i>
+        <p class="text-white border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse2"
+          aria-expanded="false">
+          Admin
+        </p>
+        <i class="fa-solid fa-chevron-right side-icons-end collapsed rotated-icon" data-bs-toggle="collapse"
+          data-bs-target="#home-collapse2" aria-expanded="false"></i>
+      </div>
+      <div class="collapse" id="home-collapse2">
+        <ul class="btn-toggle-nav list-unstyled">
+          <li><a class="dropdown-item" routerLink="adminSetting"><i
+                class="list-margin bi bi-person-gear side-icons-start"></i>Profiles</a></li>
+        </ul>
+      </div>
+    </li>
+    <li>
+      <div class="d-flex align-items-baseline ul-btn-bg pt-3 side-div">
+        <i class="bi bi-patch-check side-icons-start"></i>
+        <p class="text-white border-0 collapsed" data-bs-toggle="collapse" data-bs-target="#home-collapse3"
+          aria-expanded="false">
+          My Selections
+        </p>
+        <i class="fa-solid fa-chevron-right side-icons-end collapsed rotated-icon" data-bs-toggle="collapse"
+          data-bs-target="#home-collapse3" aria-expanded="false"></i>
+      </div>
+      <div class="collapse" id="home-collapse3">
+        <ul class="btn-toggle-nav list-unstyled">
+          <li><a class="dropdown-item" routerLink="adminSetting"><i
+                class="list-margin bi bi-person-gear side-icons-start"></i>Test</a></li>
+        </ul>
+      </div>
+    </li>
+  </ul>
+  <!-- <div class="row logoutCss pb-5">
+      <div class="col-12">
+        <a class="text-white" href=""><i class="fa-solid fa-right-from-bracket logout_icon"></i> Logout</a>
+      </div>
+    </div> -->
+</div>

@@ -4,7 +4,6 @@ import { PlansComponent } from './pages/plans/plans.component';
 import { CreateProfileComponent } from './pages/create-profile/create-profile.component';
 import { AboutUsComponent } from './pages/about-us/about-us.component';
 import { PrivacypolicyComponent } from './footer/pages/privacypolicy/privacypolicy.component';
-import { Component } from '@angular/core';
 import { ContactUsComponent } from './pages/contact-us/contact-us.component';
 
 import { ArtistMainPageComponent } from './pages/artist-main-page/artist-main-page.component';
@@ -18,9 +17,15 @@ import { EnterOTPComponent } from './login/pages/enter-otp/enter-otp.component';
 import { ForgottPasswordComponent } from './login/pages/forgott-password/forgott-password.component';
 import { ResetPasswordComponent } from './login/pages/reset-password/reset-password.component';
 import { WorkusComponent } from './footer/pages/workus/workus.component';
+// import { AdminComponent } from './Admin-Dashboard/admin/admin.component';
+// import { SidebarComponent } from './Admin-Dashboard/admin/sidebar/sidebar.component';
 
 export const routes: Routes = [
-  { path: '', component: HeaderComponent },
+  
+  { path: '', 
+    component: HeaderComponent
+    
+   },
   {
     path: 'plans',
     component: PlansComponent,
@@ -78,7 +83,54 @@ export const routes: Routes = [
     component: ContinueLoginComponent,
   },
   {
-    path:'work-us',
+    path: 'work-us',
     component: WorkusComponent
+  },
+  // {
+  //   path: 'admin',
+  //   loadChildren: () => import('./Admin-Dashboard/admin/admin.module').then(m => m.AdminModule)
+  // }
+
+  {
+    path: '',
+    redirectTo: '/home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'admin',
+    loadChildren: () => import('./Admin-Dashboard/admin/admin-routing.module').then(m => m.AdminRoutingModule)
+  },
+  {
+    path: '**',
+    redirectTo: '/home'
   }
+
+  // {
+  //   path: '',
+  //   redirectTo: '/home',
+  //   pathMatch: 'full'
+  // },
+  // {
+  //   path: 'admin',
+  //   loadChildren: () => import('./admin/admin.module').then(m => m.AdminModule)
+  // },
+  // {
+  //   path: '**',
+  //   redirectTo: '/home'
+  // }
+
+
+  // {
+  //   path: '',
+  //   redirectTo: '/home', // Default route
+  //   pathMatch: 'full'
+  // },
+  // {
+  //   path: 'admin',
+  //   component: AdminComponent
+  // },
+  // {
+  //   path: '**',
+  //   redirectTo: '/home' // Fallback for unknown routes
+  // }
 ];
