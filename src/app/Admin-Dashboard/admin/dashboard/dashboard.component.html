@@ -1,17 +1,12 @@
 <div class="container-fluid">
   <div class="row">
-    <!-- <div class="col-lg-2 col-md-2 col-6">
-      
-
-      <app-side-bar></app-side-bar>
-
-    </div> -->
     <div class="col-lg-12 col-md-12 col-6">
-
       <div class="row sidebar-wraper">
         <div class="col-6">
-          <h4 class="text-secondary">Welcome Back,Jimmy!</h4>
-          <p class="text-white">23 Oct 2023-10:15 AM</p>
+          <div class="ps-4">
+            <h4 class="text-secondary pt-3">Welcome Back,Jimmy!</h4>
+            <p class="text-white">23 Oct 2023-10:15 AM</p>
+          </div>
         </div>
         <div class="col-6 d-flex justify-content-end">
           <i class="fa-solid fa-gear text-white iconHeader align-self-center"></i>
@@ -33,9 +28,7 @@
           </span>
         </div>
         <div class="col-6 d-flex justify-content-end">
-
           <i class="fa-solid fa-filter filterButton"></i>
-
           <div class="dropdown text-end mb-0">
             <button class="btn btnCss" data-bs-toggle="dropdown">
               <i class="fa fa-download"></i> Download Data
@@ -50,10 +43,10 @@
         </div>
       </div>
       <div class="section cardContainer p-5">
-        <div class="row justify-content-between">
+        <div class="d-flex justify-content-between">
           <div class="">
             <div class="card card-content cardimg1 rounded-2">
-              <div class="card-body">
+              <div class="card-body-dashboard p-4">
                 <div class="row">
                   <div class="col-12 d-flex">
                     <img src="assets/images/card-icon-1.jpg" alt="" class="card-icon">
@@ -62,7 +55,7 @@
                 </div>
                 <div class="row py-3">
                   <div class="col-12">
-                    <h3>1 + cr</h3>
+                    <h4>1 + cr</h4>
                   </div>
                 </div>
                 <p>+21k this week</p>
@@ -71,9 +64,7 @@
           </div>
           <div class="">
             <div class="card card-content cardimg2 rounded-2">
-
-              <div class="card-body">
-
+              <div class="card-body-dashboard p-4">
                 <div class="row">
                   <div class="col-12 d-flex">
                     <img src="assets/images/card-icon-2.jpg" alt="" class="card-icon">
@@ -82,7 +73,7 @@
                 </div>
                 <div class="row py-">
                   <div class="col-12">
-                    <h3>1 + Lacs</h3>
+                    <h4>1 + Lacs</h4>
                   </div>
                 </div>
                 <p>+21k this week</p>
@@ -91,9 +82,7 @@
           </div>
           <div class="">
             <div class="card card-content cardimg3 rounded-2">
-
-              <div class="card-body">
-
+              <div class="card-body-dashboard p-4">
                 <div class="row">
                   <div class="col-12 d-flex">
                     <img src="assets/images/card-icon-3.jpg" alt="" class="card-icon">
@@ -102,7 +91,7 @@
                 </div>
                 <div class="row py-">
                   <div class="col-12">
-                    <h3>50 Lacs</h3>
+                    <h4>50 Lacs</h4>
                   </div>
                 </div>
                 <p>+21k this week</p>
@@ -111,9 +100,7 @@
           </div>
           <div class="">
             <div class="card card-content cardimg4 rounded-2">
-
-              <div class="card-body">
-
+              <div class="card-body-dashboard p-4">
                 <div class="row">
                   <div class="col-12 d-flex">
                     <img src="assets/images/card-icon-4.jpg" alt="" class="card-icon">
@@ -122,7 +109,7 @@
                 </div>
                 <div class="row py-">
                   <div class="col-12">
-                    <h3>30 + Lacs</h3>
+                    <h4>30 + Lacs</h4>
                   </div>
                 </div>
                 <p>+21k this week</p>
@@ -131,9 +118,7 @@
           </div>
           <div class="">
             <div class="card card-content cardimg5 rounded-2">
-
-              <div class="card-body">
-
+              <div class="card-body-dashboard p-4">
                 <div class="row">
                   <div class="col-12 d-flex">
                     <img src="assets/images/card-icon-5.jpg" alt="" class="card-icon">
@@ -142,7 +127,7 @@
                 </div>
                 <div class="row py-">
                   <div class="col-12">
-                    <h3>20 + Lacs</h3>
+                    <h4>20 + Lacs</h4>
                   </div>
                 </div>
                 <p>+21k this week</p>
@@ -152,7 +137,7 @@
         </div>
 
         <!-- charts section -->
-        <div class="py-3">
+        <div class="p-3">
           <div class="row">
             <div class="col-12 p-0">
               <div class="d-flex">
@@ -190,7 +175,7 @@
                     <p-chart type="bar" [data]="basicData" [options]="basicOptions" />
                   </div>
                 </div>
-                <div class="card polarChart1 p-5" style="width: 325px;">
+                <div class="card polarChart1 p-5" style="width: 350px;">
                   <div class="card flex justify-center">
                     <p-chart type="doughnut" [data]="data" [options]="options" class="w-full md:w-[30rem]" />
                   </div>
@@ -199,11 +184,66 @@
             </div>
           </div>
         </div>
-         <!-- last section -->
-         <div class="row ">
+        <!-- last section -->
+        <div class="row ">
           <div class="col-8">
-            <div class="card rounded-1 polarChart1">
-              <p class="text-white">Hii</p>
+            <div class="card rounded-1 polarChart1 p-3">
+              <div class="row">
+              <div class="col-6">
+                <p class="text-white">Admin Profile Settings</p>
+              </div>
+              <div class="col-6 text-end">
+                <a class="text-primary">View All</a>
+              </div>
+              </div>
+              
+                
+                <p-table
+                  [value]="adminProfiles"
+                  [scrollable]="true"
+                  scrollHeight="250px"
+                  responsiveLayout="scroll"
+                >
+                  <ng-template pTemplate="header">
+                    <tr class="p-0">
+                      <th>Admin Name</th>
+                      <th>Email ID</th>
+                      <th>Contact Number</th>
+                      <th>Location</th>
+                      <th>Status</th>
+                      <th>Action</th>
+                    </tr>
+                  </ng-template>
+              
+                  <ng-template pTemplate="body" let-admin>
+                    <tr style="height: 15px;">
+                      <td><p>{{ admin.name }}</p></td>
+                      <td>{{ admin.email }}</td>
+                      <td>{{ admin.contact }}</td>
+                      <td>{{ admin.location }}</td>
+                      <td>
+                        <span
+                          [ngClass]="{
+                            'available-chip': admin.status === 'Available',
+                            'deleted-chip': admin.status === 'Deleted',
+                            'offline-chip': admin.status === 'Offline'
+                          }"
+                          class="status-chip"
+                        >
+                          {{ admin.status }}
+                        </span>
+                      </td>
+                      <td>
+                        <button  pButton type="button" icon="pi pi-pencil" class="p-button-text" (click)="onEdit()"></button>
+                            <button pButton type="button" icon="pi pi-check" class="p-button-text" (click)="onSave(adminProfiles)"></button>
+                            <button pButton type="button" icon="pi pi-times" class="p-button-text" (click)="onCancel()"></button>
+                            <button pButton type="button" icon="pi pi-trash" class="p-button-text" style="color: #d21919;" (click)="onDelete()"></button>
+                      </td>
+                    </tr>
+                  </ng-template>
+                </p-table>
+              
+              
             </div>
           </div>
           <div class="col-4">

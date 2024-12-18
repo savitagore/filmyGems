@@ -1,218 +1,171 @@
-/* The side navigation menu */
-/* .sidebar-wraper{
-  background-color:black;
-}
-.sideLogo {
-  margin-top: 15px;
-  margin-bottom: 75px;
-  margin-left: 15px;
-} */
-
 /* Sidebar links */
 .sidebar a {
-    display: block;
-    color: rgb(236, 232, 232);
-    padding-right: 80px;
-    padding: 16px;
-    text-decoration: none;
-    border-bottom: 0px solid #3A3D44;
-    border-top: 0px solid #3A3D44;
-  }
-  
-  .sidebar i {
-    color: #F1F5F7 !important;
-  }
-  .toggle-btn {
-    position: fixed;
-    bottom: 100px;
-    left: 248px;
-    background-color: #ff9900;
-    color: #fff;
-    border: none;
-    cursor: pointer;
-    /* padding: -1px; */
-    border-radius: 50%;
-    z-index: 1000;
-    transition: left 0.3s ease;
-  }
-  
-  .sidebar.collapsed ~ .toggle-btn {
-    left: 70px;
-  }
-  
-  .side-div:hover:not(.active) {
-    background-color: #555;
-    /* text-decoration: orange !important; */
-    border-inline-start: 8px solid orange;
-    transition: none; 
-  }
-  /* .sidebar p:hover:not(.active) {
-    color: orange !important;
-  } */
-  
-  .sidebar a:hover:not(.active) {
-    background-color: #555;
-    color: orange;
-    border-left: 8px solid orange;
-    transition: none; 
-  }
-  /* .chavron-btn-h :hovernot(.active){
-    border: none;
-  } */
-  
-  .sidebar-css ul {
-    border: none;
-  }
-  .ul-btn-bg{
-    background-color:black;
-  }
-  .side-icons-start{
-    padding-left: 35px;
-    padding-right:15px;
-  }
-  .side-icons-end{
-    margin-right: 15px;
-    margin-left: auto;
-  }
-  .list-margin{
-    padding-left: 30px;
-  }
-  .logoutCss {
-    background-color:black;
-   position: fixed;
-   padding-left: 38px;
-   bottom: 0;
-  }
-  .logout-icon{
-   padding-right: 20px; 
-  }
-  
-  #dropCss {
-    height: max-content !important;
-  }
-  
-  .imgProfile {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 2px solid #ccc;
-  }
-  
-  .iconHeader {
-    margin-right: 25px;
-  }
-  
-  .profileContent {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-  
-  .headerProfileAdmin {
-    color: #9F9F9F;
-  }
-  
-  .cardContainer {
-    gap: 0px;
-    border-radius: 12px 0px 0px 0px;
-    background: #F1F5F7;
-    margin: 25px;
-  }
-  
-  .card-content {
-    width: 286.85px;
-    height: 207px;
-    gap: 0px;
-    opacity: 0px;
-  }
-  
-  .cardimg1 {
-    background-image: url('/assets/images/card1.jpg');
-    background-size: cover;
-  
-  }
-  
-  .cardimg2 {
-    background-image: url('/assets/images/card2.jpg');
-    background-size: cover;
-  
-  }
-  
-  .cardimg3 {
-    background-image: url('/assets/images/card3.jpg');
-    background-size: cover;
-  
-  }
-  
-  .cardimg4 {
-    background-image: url('/assets/images/card4.jpg');
-    background-size: cover;
-  
-  }
-  
-  .cardimg5 {
-    background-image: url('/assets/images/card5.jpg');
-    background-size: cover;
-  
-  }
-  
-  .card-icon {
-    height: 60px;
-    width: 60px;
-    margin-right: 10px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 1px solid #ccc;
-  }
-  
-  .card-heading {
-    font-weight: 700;
-  }
-  
-  /* [aria-expanded="true"] .fa-chevron-right {
-    transform: rotate(90deg);
-  } */
-  .rotated-icon[aria-expanded="true"] {
-    transform: rotate(90deg);
-    transition: transform 0.3s ease;
-  }
-  
-  
-  /* test */
-  /* .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 256px;
-    height: 100vh;
-    background-color:black;
-    color: #fff;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease-in-out;
-  
-    &.open {
-      transform: translateX(0);
-    }
-  } */
-  
-  
-  .open-toggle-btn{
-    /* position: relative;
-    bottom: 128px;
-    right: 20px; */
-    background: orange;
-    /* left: 249px; */
-    border: 1px solid orange;
-    border-radius: 50px;
-  
-  }
-  
-  
-  
-  
-  
-      
-  
-  
-      
-      
+  display: block;
+  color: rgb(236, 232, 232);
+  padding-right: 80px;
+  padding: 16px;
+  text-decoration: none;
+  border-bottom: 0px solid #3A3D44;
+  border-top: 0px solid #3A3D44;
+}
+
+.sidebar i {
+  color: #F1F5F7 !important;
+}
+
+.toggle-btn {
+  position: fixed;
+  bottom: 100px;
+  left: 248px;
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 1000;
+  transition: left 0.3s ease;
+}
+
+.sidebar.collapsed~.toggle-btn {
+  left: 70px;
+}
+
+.side-div:hover:not(.active) {
+  background-color: #555;
+  border-inline-start: 8px solid orange;
+  transition: none;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: orange;
+  border-left: 8px solid orange;
+  transition: none;
+}
+
+.sidebar-css ul {
+  border: none;
+}
+
+.ul-btn-bg {
+  background-color: black;
+}
+
+.side-icons-start {
+  padding-left: 35px;
+  padding-right: 15px;
+}
+
+.side-icons-end {
+  margin-right: 15px;
+  margin-left: auto;
+}
+
+.list-margin {
+  padding-left: 30px;
+}
+
+.logoutCss {
+  background-color: black;
+  position: fixed;
+  padding-left: 38px;
+  bottom: 0;
+}
+
+.logout-icon {
+  padding-right: 20px;
+}
+
+#dropCss {
+  height: max-content !important;
+}
+
+.imgProfile {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.iconHeader {
+  margin-right: 25px;
+}
+
+.profileContent {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.headerProfileAdmin {
+  color: #9F9F9F;
+}
+
+.cardContainer {
+  gap: 0px;
+  border-radius: 12px 0px 0px 0px;
+  background: #F1F5F7;
+  margin: 25px;
+}
+
+.card-content {
+  width: 286.85px;
+  height: 207px;
+  gap: 0px;
+  opacity: 0px;
+}
+
+.cardimg1 {
+  background-image: url('/assets/images/card1.jpg');
+  background-size: cover;
+
+}
+
+.cardimg2 {
+  background-image: url('/assets/images/card2.jpg');
+  background-size: cover;
+
+}
+
+.cardimg3 {
+  background-image: url('/assets/images/card3.jpg');
+  background-size: cover;
+
+}
+
+.cardimg4 {
+  background-image: url('/assets/images/card4.jpg');
+  background-size: cover;
+
+}
+
+.cardimg5 {
+  background-image: url('/assets/images/card5.jpg');
+  background-size: cover;
+
+}
+
+.card-icon {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.card-heading {
+  font-weight: 700;
+}
+
+.rotated-icon[aria-expanded="true"] {
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.open-toggle-btn {
+  background: orange;
+  border: 1px solid orange;
+  border-radius: 50px;
+
+}

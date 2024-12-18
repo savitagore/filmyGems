@@ -1,24 +1,68 @@
 import { Component } from '@angular/core';
-import { ChangeDetectorRef, effect, inject, Inject, Input, OnInit, PLATFORM_ID } from '@angular/core';
+import { ChangeDetectorRef, inject,OnInit, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { RouterLink, RouterOutlet } from '@angular/router';
-import { ButtonModule } from 'primeng/button';
-import { IconFieldModule } from 'primeng/iconfield';
+import { Button, ButtonModule } from 'primeng/button';
+import { IconField, IconFieldModule } from 'primeng/iconfield';
 import { InputIconModule } from 'primeng/inputicon';
 import { ChartModule } from 'primeng/chart';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
+import { TableModule } from 'primeng/table';
 
 @Component({
   selector: 'app-dashboard',
   standalone: true,
-  imports: [FormsModule, ButtonModule, IconFieldModule, InputIconModule, ButtonModule, ChartModule, CommonModule],
+  imports: [FormsModule, ButtonModule, IconFieldModule, InputIconModule, ButtonModule, ChartModule, CommonModule,TableModule],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.css'
 })
 export class DashboardComponent implements OnInit {
-  // searchValue: string | undefined;
-  sidebarVisible: boolean = false;
+  adminProfiles = [
+    {
+      name: 'Ajay Kamar',
+      email: 'ajay.k@gmail.com',
+      contact: '+91 98881988200',
+      location: 'Mumbai, India',
+      status: 'Available',
+    },
+    {
+      name: 'Jhon Thompson',
+      email: 'jhon.t@hotmail.com',
+      contact: '+1 4357 7753 32',
+      location: 'New York, USA',
+      status: 'Deleted',
+    },
+    {
+      name: 'Walker Nelson',
+      email: 'w.nelson@gmail.com',
+      contact: '+64 8643 9085',
+      location: 'Hamilton, New Zealand',
+      status: 'Offline',
+    },
+    {
+      name: 'Ajay Kamar',
+      email: 'ajay.k@gmail.com',
+      contact: '+91 98881988200',
+      location: 'Mumbai, India',
+      status: 'Available',
+    },
+    {
+      name: 'Jhon Thompson',
+      email: 'jhon.t@hotmail.com',
+      contact: '+1 4357 7753 32',
+      location: 'New York, USA',
+      status: 'Deleted',
+    },
+    {
+      name: 'Walker Nelson',
+      email: 'w.nelson@gmail.com',
+      contact: '+64 8643 9085',
+      location: 'Hamilton, New Zealand',
+      status: 'Offline',
+    },
+  ];
 
+  
+  sidebarVisible: boolean = false;
   isSidebarVisible: boolean = true;
   searchValue: string = '';
 
@@ -107,22 +151,7 @@ export class DashboardComponent implements OnInit {
 
     platformId = inject(PLATFORM_ID);
 
-    // configService = inject(AppConfigService);
-
     constructor(private cd: ChangeDetectorRef) {}
-
-    // themeEffect = effect(() => {
-    //     if (this.configService.transitionComplete()) {
-    //         if (this.designerService.preset()) {
-    //             this.initChart();
-    //         }
-    //     }
-    // });
-
-    // ngOnInit() {
-    //     this.initChart();
-    // }
-
     initChart() {
         if (isPlatformBrowser(this.platformId)) {
             const documentStyle = getComputedStyle(document.documentElement);
@@ -178,6 +207,36 @@ export class DashboardComponent implements OnInit {
             };
             this.cd.markForCheck()
         }
+    }
+
+
+    // admin setting table
+    editedRowIndex: number | null = null;
+  
+    // Enable editing for the selected row
+    onEdit() {
+      // this.editedRowIndex = index;
+    }
+    
+    // Save the changes made to the product
+    onSave(customers: any) {
+      this.editedRowIndex = null;
+      console.log('Product saved:', customers);
+    }
+    
+    // Cancel editing and revert changes
+    onCancel() {
+      this.editedRowIndex = null;
+    }
+    // onDelete(admin: any) {
+    //   console.log('Delete clicked for:', admin);
+    // }
+    
+    // Delete the selected row
+    onDelete() {
+      confirm("Are you want to delete this profile...?")
+      // this.adminProfiles.splice(index, 1);
+      // console.log('Product deleted at index:', index);
     }
 }
 

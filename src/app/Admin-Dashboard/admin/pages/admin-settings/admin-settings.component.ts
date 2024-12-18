@@ -15,7 +15,6 @@ import { FormsModule } from '@angular/forms';
 import { SliderModule } from 'primeng/slider';
 import { RouterOutlet } from '@angular/router';
 import { DialogModule } from 'primeng/dialog';
-import { SidebarComponent } from '../../admin/sidebar/sidebar.component';
 import { CustomerServiceService } from '../../core/service/customer-service.service';
 import { Customer, Representative } from '../../core/interface/customer.model';
 

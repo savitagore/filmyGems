@@ -1,0 +1,22 @@
+<div id="mySidenav" class="sidenav" [style.width]="isSidenavOpen ? '266px' : '0'">
+    <a href="javascript:void(0)" class="closebtn" (click)="closeNav()">&times;</a>
+    <app-sidebar></app-sidebar>
+  </div>
+  
+  <div  id="main" [style.marginLeft]="isSidenavOpen ? '250px' : '0'">
+    <router-outlet></router-outlet>
+     <!-- <app-dashboard></app-dashboard> -->
+    <button class="btn open-toggle-btn">
+      <i class="fa-solid fa-chevron-right text-white"
+         (click)="openNav()"
+         *ngIf="!isSidenavOpen"
+         style="transition: transform 0.3s ease;">
+      </i>
+      <i class="fa-solid fa-chevron-left text-white"
+         (click)="closeNav()"
+         *ngIf="isSidenavOpen"
+         style="transition: transform 0.3s ease;">
+      </i>
+    </button>
+    
+  </div>
