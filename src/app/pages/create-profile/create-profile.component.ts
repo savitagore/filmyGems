@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, NgZone, OnInit } from '@angular/core';
+import { AfterViewInit, Component, ElementRef, Input, NgZone, OnInit, Renderer2 } from '@angular/core';
 import { NavbarComponent } from '../../shared/navbar/navbar.component';
 
 import { FooterComponent } from '../../shared/footer/footer.component';
@@ -46,19 +46,24 @@ import { ConfirmDialogModule } from 'primeng/confirmdialog';
   templateUrl: './create-profile.component.html',
   styleUrl: './create-profile.component.css',
 })
-export class CreateProfileComponent {
+export class CreateProfileComponent  {
   backgroundImageUrl: string = 'assets/create-profile/bg-main.png';
   bgImage: string = 'assets/create-profile/music-girl.png';
 
   profileForm: FormGroup;
 
+
+  inputStates: { [key: string]: boolean } = {};
+
+  onInputChange(event: any, fieldName: string): void {
+    this.inputStates[fieldName] = !!event.target.value.trim();
+  }
   constructor(
     private fb: FormBuilder,
     private messageService: MessageService,
     private confirmationService: ConfirmationService,
-    private ngZone: NgZone
-  ) {
-    this.profileForm = this.fb.group({
+    ) {
+    this.profileForm = this.fb.group  ({
       email: [
         '',
         [
@@ -77,6 +82,7 @@ export class CreateProfileComponent {
       country: ['', [Validators.required]],
     });
   }
+
   confirm1(event: Event) {
     this.confirmationService.confirm({
       target: event.target as EventTarget,

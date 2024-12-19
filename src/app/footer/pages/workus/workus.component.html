@@ -71,7 +71,7 @@
       </div>
       <div class="row justify-content-center align-items-center pt-4">
         <div class="col-md-10 mb-4" *ngFor="let job of jobs">
-          <div class=" workus-card">
+          <div class="workus-card">
             <div class="card-header">
               <div class="row align-items-center">
                 <div class="col-md-9 ps-5 pt-4 text-white">
@@ -89,17 +89,18 @@
             </div>
             <div class="ps-5 text-white" *ngIf="isDescriptionVisible(job.id)">
               <h4>About the Role:</h4>
-              <p>Have a deep understanding of CX, Design beyond screens and colours...</p>
+              <p>{{ job.aboutRole }}</p>
               <h4>What You Will Do:</h4>
-              <p>Act as the voice of the business customer...</p>
+              <p>{{ job.responsibilities }}</p>
               <h4>What You Will Get:</h4>
-              <p>An opportunity to be a core team member...</p>
+              <p>{{ job.benefits }}</p>
               <h4>You Will Learn:</h4>
               <ul class="workus-li">
-                <li>How to build a design and build a global quality next-generation product...</li>
+                <li *ngFor="let item of job.learn">{{ item }}</li>
               </ul>
+
               <h4>Qualifications You Need:</h4>
-              <p>Proficiency with visual design programs such as Figma...</p>
+              <p>{{ job.qualifications }}</p>
             </div>
             <div class="card-footer ps-5 pt-3 text-white" style="background-color: #3A3838;"
               *ngIf="isDescriptionVisible(job.id)">

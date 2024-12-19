@@ -54,7 +54,9 @@ togglePassword(fieldNumber: number) {
     const confirmPassword = group.get('confirmPassword')?.value;
     return password === confirmPassword ? null : { passwordsMismatch: true };
   }
-  passwordMatchValidator(control: FormGroup): { [key: string]: boolean } | null {
+  passwordMatchValidator(
+    control: FormGroup
+  ): { [key: string]: boolean } | null {
     const password = control.get('password');
     const confirmPassword = control.get('confirmPassword');
     if (password?.value !== confirmPassword?.value) {
@@ -77,18 +79,26 @@ togglePassword(fieldNumber: number) {
       this.resetPasswordForm.markAllAsTouched(); // Highlight errors
     }
   }
-  get password() {
-    return this.resetPasswordForm.get('password');
-  }
-  get confirmPassword() {
-    return this.resetPasswordForm.get('confirmPassword');
-  }
+  // get password() {
+  //   return this.resetPasswordForm.get('password');
+  // }
+  // get confirmPassword() {
+  //   return this.resetPasswordForm.get('confirmPassword');
+  // }
 
+  // getPasswordPatternTooltip(): string {
+  //   return this.signupService.getPasswordPatternErrorMessage();
+  // }
+  // getPasswordMismatchTooltip(): string {
+  //   return this.signupService.getPasswordMismatchErrorMessage();
+  // }
   getPasswordPatternTooltip(): string {
     return this.signupService.getPasswordPatternErrorMessage();
   }
+
   getPasswordMismatchTooltip(): string {
-    return this.signupService.getPasswordMismatchErrorMessage();
+    const control = this.resetPasswordForm.get('confirmPassword');
+    return control ? this.signupService.getPasswordMismatchErrorMessage() : '';
   }
 }
 

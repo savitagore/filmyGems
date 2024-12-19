@@ -36,8 +36,13 @@
             </div>
             <div class="pt-4 custom-profiles">
               <div class="mb-3 mt-5 profile-last">
-                <input type="text" class="form-control profile-color full-width-input" formControlName="firstName"
-                  id="firstName" placeholder="First Name *">
+                <div class="form-group">
+                  <input type="text" class="form-control profile-color full-width-input" formControlName="firstName"
+                    id="firstName" placeholder="" (input)="onInputChange($event, 'firstName')" />
+                  <label [class.hidden]="inputStates['firstName']" for="firstName" class="custom-placeholder">
+                    First Name <span class="text-danger">*</span>
+                  </label>
+                </div>
                 <small
                   *ngIf="profileForm.get('firstName')?.hasError('required') && (profileForm.get('firstName')?.dirty || profileForm.get('firstName')?.touched)"
                   class="text-danger">First Name is required.</small>
@@ -46,8 +51,13 @@
                   class="text-danger">First Name must be at least 3 characters long..</small>
               </div>
               <div class="mt-4 custom-bottom">
-                <input type="text" class="form-control profile-color" formControlName="lastName" id="lastName"
-                  placeholder="Last Name *">
+                  <div class="form-group">
+                    <input type="text" class="form-control profile-color full-width-input" formControlName="lastName"
+                      id="lastName" placeholder="" (input)="onInputChange($event, 'lastName')"/>
+                    <label [class.hidden]="inputStates['lastName']" for="lastName" class="custom-placeholder">
+                      Last Name <span class="text-danger">*</span>
+                    </label>
+                  </div>
                 <small
                   *ngIf="profileForm.get('lastName')?.hasError('required') && (profileForm.get('lastName')?.dirty || profileForm.get('lastName')?.touched)"
                   class="text-danger">Last Name is required.</small>
@@ -59,8 +69,13 @@
           </div>
           <div class="row  p-3">
             <div class="col-12 col-md-4 custom-bottom">
-              <input type="email" class="form-control profile-color" id="email" placeholder="Enter your email *"
-                formControlName="email">
+                <div class="form-group">
+                  <input type="text" class="form-control profile-color full-width-input" formControlName="email"
+                    id="email" placeholder="" (input)="onInputChange($event, 'email')" />
+                  <label [class.hidden]="inputStates['email']" for="email" class="custom-placeholder">
+                    Email <span class="text-danger">*</span>
+                  </label>
+                </div>
               <small
                 *ngIf="profileForm.get('email')?.hasError('required') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
                 class="text-danger">Email is required.</small>
@@ -72,9 +87,14 @@
                 class="text-danger">Email format is invalid.</small>
             </div>
             <div class="col-12 col-md-4 custom-bottom">
-              <input type="text" class="form-control profile-color" formControlName="mobile" id="mobile"
-                placeholder="Mobile Number *" pattern="\d*" maxlength="10"
-                onkeypress="return event.charCode >= 48 && event.charCode <= 57" />
+                <div class="form-group">
+                  <input type="text" class="form-control profile-color full-width-input" formControlName="mobile"
+                    id="mobile"  (input)="onInputChange($event, 'mobile')" copattern="\d*" maxlength="10"
+                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" />
+                  <label [class.hidden]="inputStates['mobile']" for="mobile" class="custom-placeholder">
+                    Mobile Number <span class="text-danger">*</span>
+                  </label>
+                </div>
               <small
                 *ngIf="profileForm.get('mobile')?.invalid && (profileForm.get('mobile')?.dirty || profileForm.get('mobile')?.touched)">
                 <small *ngIf="profileForm.get('mobile')?.errors?.['required']" class="text-danger">
@@ -85,10 +105,14 @@
                 </small>
               </small>
             </div>
-
             <div class="col-12 col-md-4 custom-bottom">
-              <input type="text" class="form-control profile-color" formControlName="city" id="city"
-                placeholder="Enter City *">
+                <div class="form-group">
+                  <input type="text" class="form-control profile-color full-width-input" formControlName="city"
+                    id="city"  (input)="onInputChange($event, 'city')" />
+                  <label [class.hidden]="inputStates['city']" for="city" class="custom-placeholder">
+                    Enter City  <span class="text-danger">*</span>
+                  </label>
+                </div>
               <div
                 *ngIf="profileForm.get('city')?.invalid && (profileForm.get('city')?.dirty || profileForm.get('city')?.touched)">
                 <small *ngIf="profileForm.get('city')?.errors?.['required']" class="text-danger">City is
@@ -98,9 +122,14 @@
           </div>
           <div class="row p-3">
             <div class="col-12 col-md-4 custom-bottom">
-              <input type="text" class="form-control profile-color" formControlName="zip" id="zip"
-                placeholder="Enter ZIP Code *" maxlength="6" pattern="\d{6}"
-                onkeypress="return event.charCode >= 48 && event.charCode <= 57" />
+                <div class="form-group">
+                  <input type="text" class="form-control profile-color full-width-input" formControlName="zip"
+                    id="zip"  (input)="onInputChange($event, 'zip')" maxlength="6" pattern="\d{6}"
+                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" />
+                  <label [class.hidden]="inputStates['zip']" for="zip" class="custom-placeholder">
+                    Enter ZIP Code <span class="text-danger">*</span>
+                  </label>
+                </div>
               <span
                 *ngIf="profileForm.get('zip')?.invalid && (profileForm.get('zip')?.dirty || profileForm.get('zip')?.touched)">
                 <small *ngIf="profileForm.get('zip')?.errors?.['required']" class="text-danger">
@@ -112,8 +141,13 @@
               </span>
             </div>
             <div class="col-12 col-md-4 custom-bottom">
-              <input type="text" class="form-control profile-color" formControlName="country" id="country"
-                placeholder="Enter Country *">
+                <div class="form-group">
+                  <input type="text" class="form-control profile-color full-width-input" formControlName="country"
+                    id="country"  (input)="onInputChange($event, 'country')" />
+                  <label [class.hidden]="inputStates['country']" for="country" class="custom-placeholder">
+                    Enter Country  <span class="text-danger">*</span>
+                  </label>
+                </div>
               <span
                 *ngIf="profileForm.get('country')?.invalid && (profileForm.get('country')?.dirty || profileForm.get('country')?.touched)">
                 <small *ngIf="profileForm.get('country')?.errors?.['required']" class="text-danger">Country is
@@ -270,7 +304,7 @@
             <p-confirmDialog />
             <button type="button" class="btn btn-all rounded-pill" (click)="confirm1($event)" style="width:200px">
               Save
-            </button >
+            </button>
             <!-- <p-button (onClick)="confirm1($event)" label="Save"  class="btn-all rounded-pill" /> -->
             <!-- <button type="button" class="btn btn-all rounded-pill" (onClick)="confirm1($event)">Save</button> -->
           </div>

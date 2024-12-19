@@ -1,40 +1,57 @@
 import { Component } from '@angular/core';
 import { LoginCarasoualComponent } from '../../../Reuseable/login-carasoual/login-carasoual.component';
 import { Router, RouterLink } from '@angular/router';
-import { AbstractControl, FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
+import {
+  AbstractControl,
+  FormBuilder,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators,
+} from '@angular/forms';
 import { SignupvalidationService } from '../../../core/Services/signupValidation/signupvalidation.service';
 import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-send-otp',
   standalone: true,
-  imports: [LoginCarasoualComponent,RouterLink ,ReactiveFormsModule,CommonModule],
-  providers:[SignupvalidationService],
+  imports: [
+    LoginCarasoualComponent,
+    RouterLink,
+    ReactiveFormsModule,
+    CommonModule,
+  ],
+  providers: [SignupvalidationService],
   templateUrl: './send-otp.component.html',
-  styleUrl: './send-otp.component.css'
+  styleUrl: './send-otp.component.css',
 })
 export class SendOTPComponent {
   sentotpForm: FormGroup;
-  constructor(private router: Router, private fb: FormBuilder,private signupService:SignupvalidationService) {
-    this.sentotpForm = this.fb.group(
-      {
-        mobile: [  '', [Validators.required, Validators.pattern('^[0-9]{10}$')], Validators.maxLength(10),],
-      },
-    );
+  constructor(
+    private router: Router,
+    private fb: FormBuilder,
+    private signupService: SignupvalidationService
+  ) {
+    this.sentotpForm = this.fb.group({
+      mobile: ['', [Validators.required, Validators.pattern('^[0-9]{10}$')]],
+    });
   }
   onMobileInput(event: any): void {
     const input = event.target;
-    const value = input.value;
-    const values = event.target.value;
-    event.target.value = values.replace(/[^0-9]/g, '');
-    if (value.length > 9) {
-      input.blur();
-    }
+    input.value = input.value.replace(/[^0-9]/g, '').slice(0, 10);
+    this.sentotpForm.get('mobile')?.setValue(input.value);
   }
-  get mobile() {
-    return this.sentotpForm.get('mobile');
-  }
+
   getMobileTooltipMessage(): string {
-    return this.signupService.getMobileErrorMessage(this.mobile as AbstractControl);
+    const control = this.sentotpForm.get('mobile');
+    return control ? this.signupService.getMobileErrorMessage(control) : '';
+  }
+  sendOTP(){
+    if (this.sentotpForm.valid) {
+      console.log('Form Data:', this.sentotpForm.value);
+      this.router.navigate(['/enter-OTP']);
+    } else {
+      console.error('Form is invalid. Check errors below:');
+
+    }
   }
 }

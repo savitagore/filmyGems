@@ -3,13 +3,14 @@
     <div class="col-lg-7 col-md-7 col-sm-12 g-0">
       <app-login-carasoual></app-login-carasoual>
     </div>
-   <div class="col-lg-5 col-md-5 col-sm-12 sign-bg">
+    <div class="col-lg-5 col-md-5 col-sm-12 sign-bg">
       <div class="row justify-content-between g-0">
-        <div class="col-8 pt-4 med-sm" >
-          <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/" alt="" class="img-fluid ms-5 ps-5 login-padding" >
+        <div class="col-8 pt-4 med-sm">
+          <img src="assets/logo-img/gem_logo_without baseline.png" routerLink="/" alt=""
+            class="img-fluid ms-5 ps-5 login-padding">
         </div>
         <div class="col-4 d-flex justify-content-end  signup-dimond">
-          <img src="assets/signup/diamond.png" alt="" class="img-fluid" >
+          <img src="assets/signup/diamond.png" alt="" class="img-fluid">
         </div>
       </div>
       <div class="row justify-content-center">
@@ -19,18 +20,19 @@
             <p class="role ">
               Welcome back!</p>
           </div>
-
-       <form [formGroup]="loginForm">
+          <form [formGroup]="loginForm">
             <div class="mb-2">
               <input type="email" class="form-control text-white fill-form" placeholder="Enter your email"
                 formControlName="email" />
-              <span *ngIf="email?.invalid && (email?.dirty || email?.touched)" class="text-danger">
-                {{getEmailTooltipMessage() }}
+              <span
+                *ngIf="loginForm.controls['email'].invalid && (loginForm.controls['email'].dirty || loginForm.controls['email'].touched)"
+                class="text-danger">
+                {{ getEmailTooltipMessage() }}
               </span>
             </div>
-             <div class="mb-2 position-relative">
+            <div class="mb-2 position-relative">
               <input [type]="showPassword1 ? 'text' : 'password'" class="form-control text-white fill-form"
-                formControlName="password" placeholder="Enter password"  />
+                formControlName="password" placeholder="Enter password" />
               <span class="position-absolute end-0 top-50 translate-middle-y pe-3" (click)="togglePassword(1)"
                 [ngStyle]="{
                 'padding-bottom': loginForm.get('password')?.errors?.['pattern'] ? '40px' : '0'}">
@@ -38,8 +40,9 @@
                   showPassword1 ? 'fas fa-eye-slash text-white' : 'fas fa-eye text-white'
                 "></i>
               </span>
-              <span *ngIf="password?.invalid && (password?.dirty || password?.touched)" class="text-danger">
-                {{getPasswordPatternTooltip() }}
+              <span *ngIf="loginForm.controls['password'].invalid &&
+              (loginForm.controls['password'].dirty || loginForm.controls['password'].touched)" class="text-danger">
+                {{ getPasswordPatternTooltip() }}
               </span>
             </div>
             <div class="mb-3">
@@ -50,7 +53,7 @@
               <span class="ps-4" style="color: #0057FF;" routerLink="/send-OTP">Forgot Password?</span>
             </div>
             <div class="text-center login-signup rounded-1 mb-3">
-              <button type="button" class="btn text-white">Login</button>
+              <button type="button" class="btn text-white" (click)="onLogin()">Login</button>
             </div>
             <div class="text-center  send-otp rounded-1 ">
               <button class="btn text-white" routerLink="/send-OTP">Login with Mobile OTP</button>
@@ -59,12 +62,9 @@
               Don’t have an account? <span style="color: #0057FF;" routerLink="/sign-up">Sign up</span>
             </div>
           </form>
-
-
         </div>
       </div>
     </div>
-
     <div class="separator-line position-absolute"></div>
   </div>
 </div>

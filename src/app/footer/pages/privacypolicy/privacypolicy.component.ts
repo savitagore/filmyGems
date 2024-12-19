@@ -16,13 +16,16 @@ export class PrivacypolicyComponent {
   isPrivacyActive: boolean = true;
   isFaqActive: boolean = false;
   islicenseActive:boolean=false;
+  isDigitalService:boolean=false;
+  isCookiesPolicy:boolean=false
 
   toggleSection(section: string) {
     this.isTermsActive = false;
     this.isPrivacyActive = false;
     this.isFaqActive = false;
     this.islicenseActive=false;
-
+    this.isDigitalService=false;
+    this.isCookiesPolicy=false
 
     if (section === 'terms') {
       this.isTermsActive = true;
@@ -33,6 +36,13 @@ export class PrivacypolicyComponent {
     } else if(section ===  'license'){
       this.islicenseActive=true;
     }
+    else if(section ===  'digital'){
+      this.isDigitalService=true;
+    }
+    else if(section ===  'cookies'){
+      this.isCookiesPolicy=true;
+    }
+
     else {
       console.log('Unknown section:', section);
     }

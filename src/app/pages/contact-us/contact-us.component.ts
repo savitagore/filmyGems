@@ -15,7 +15,11 @@ export class ContactUsComponent implements OnInit{
   backgroundImageUrl: string = 'assets/contactUs/cantactUS-bg.png';
 
   contactForm!: FormGroup;
+  inputStates: { [key: string]: boolean } = {};
 
+  onInputChange(event: any, fieldName: string): void {
+    this.inputStates[fieldName] = !!event.target.value.trim();
+  }
   constructor(private fb: FormBuilder) {}
 
   ngOnInit(): void {

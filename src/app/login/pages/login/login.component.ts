@@ -28,12 +28,7 @@ export class LoginComponent {
 
     );
   }
-  get email() {
-    return this.loginForm.get('email');
-  }
-  get password() {
-    return this.loginForm.get('password');
-  }
+
   togglePassword(fieldNumber: number) {
     if (fieldNumber === 1) {
       this.showPassword1 = !this.showPassword1;
@@ -41,12 +36,25 @@ export class LoginComponent {
       this.showPassword2 = !this.showPassword2;
     }
   }
+
   getEmailTooltipMessage(): string {
-    return this.signupService.getEmailErrorMessage(this.email as AbstractControl);
+    const control = this.loginForm.get('email');
+    return control ? this.signupService.getEmailErrorMessage(control) : '';
   }
   getPasswordPatternTooltip(): string {
     return this.signupService.getPasswordPatternErrorMessage();
   }
+  onLogin(): void {
+    if (this.loginForm.valid) {
+      console.log('Form Data:', this.loginForm.value);
+    } else {
+      console.log('Form is invalid. Please fill all required fields correctly.');
+      this.loginForm.markAllAsTouched();
+    }
+  }
+
+
 }
+
 
 

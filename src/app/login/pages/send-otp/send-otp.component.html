@@ -23,12 +23,14 @@
           <div class="mb-2">
             <input type="text" class="form-control text-white fill-form" placeholder="Mobile Number"
               formControlName="mobile" (input)="onMobileInput($event)"/>
-            <span *ngIf="mobile?.invalid && (mobile?.dirty || mobile?.touched)" class="text-danger">
+              <span
+              *ngIf="sentotpForm.controls['mobile'].invalid && (sentotpForm.controls['mobile'].dirty || sentotpForm.controls['mobile'].touched)"
+              class="text-danger">
               {{ getMobileTooltipMessage() }}
             </span>
           </div>
           <div class="text-center login-signup rounded-1 mb-3">
-            <button class="btn text-white" routerLink="/enter-OTP">Send OTP</button>
+            <button class="btn text-white" (click)="sendOTP()">Send OTP</button>
           </div>
           <div class="text-center text-white pt-2" style="font-size: 14px;">
             Trouble in login? <span style="color: #0057FF;" routerLink="/login">Admin</span>

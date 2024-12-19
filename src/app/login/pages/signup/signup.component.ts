@@ -4,12 +4,9 @@ import { CommonModule } from '@angular/common';
 import { Component, ViewEncapsulation } from '@angular/core';
 
 import {
-  AbstractControl,
-  AsyncValidatorFn,
   FormBuilder,
   FormGroup,
   ReactiveFormsModule,
-  ValidationErrors,
   Validators,
 } from '@angular/forms';
 import { Router, RouterLink } from '@angular/router';
@@ -141,12 +138,7 @@ export class SignupComponent {
       this.router.navigate(['/login']);
     } else {
       console.error('Form is invalid. Check errors below:');
-      Object.keys(this.signupForm.controls).forEach((key) => {
-        const control = this.signupForm.get(key);
-        if (control?.invalid) {
-          console.error(`Control "${key}" is invalid:`, control.errors);
-        }
-      });
+
     }
   }
 
