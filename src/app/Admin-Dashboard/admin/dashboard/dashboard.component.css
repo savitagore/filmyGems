@@ -1,0 +1,236 @@
+/* The side navigation menu */
+.sidebar-wraper {
+  background-color: black;
+}
+
+.colorAll {
+  color: black;
+}
+
+.downloadBtn-css-h:hover {
+  background: #FFEDBA;
+}
+
+.sideLogo {
+  margin-top: 15px;
+  margin-bottom: 75px;
+  margin-left: 20px;
+}
+
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: rgb(236, 232, 232);
+  padding-right: 80px;
+  padding: 16px;
+  padding-left: 38px;
+  text-decoration: none;
+  border: 1px solid #3A3D44;
+}
+
+.btn-side-m {
+  text-align: start;
+}
+
+.sidebar i {
+  padding-right: 20px;
+  color: #F1F5F7 !important;
+}
+
+/* Links on mouse-over */
+.sidebar button:hover:not(.active) {
+  background-color: #555;
+  color: orange;
+  border-left: 6px solid orange;
+
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: orange;
+  border-left: 6px solid orange;
+
+}
+
+.sidebar ul {
+  border: none;
+}
+
+#dropCss {
+  height: max-content !important;
+}
+
+.imgProfile {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #ccc;
+}
+
+.iconHeader {
+  margin-right: 25px;
+}
+
+.profileContent {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.headerProfileAdmin {
+  color: #9F9F9F;
+}
+
+
+.filterButton {
+  border-radius: 50px;
+  padding: 18px;
+  border: 1px solid white;
+  background-color: #e8f0f0;
+}
+
+/* Download Button */
+.btnCss {
+  background-color: #F3AD3B;
+  border: none;
+  color: #000000;
+  padding: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  border-radius: 50px;
+  font-weight: 500;
+  margin-left: 25px;
+}
+
+.cardContainer {
+  border-radius: 12px 0px 0px 0px;
+  background: #F1F5F7;
+  margin: 25px;
+}
+
+.card-content {
+  width: 215px;
+  height: 190px;
+  opacity: 0px;
+}
+
+.cardimg1 {
+  background-image: url('/assets/images/card1.jpg');
+  background-size: cover;
+
+}
+
+.cardimg2 {
+  background-image: url('/assets/images/card2.jpg');
+  background-size: cover;
+
+}
+
+.cardimg3 {
+  background-image: url('/assets/images/card3.jpg');
+  background-size: cover;
+
+}
+
+.cardimg4 {
+  background-image: url('/assets/images/card4.jpg');
+  background-size: cover;
+
+}
+
+.cardimg5 {
+  background-image: url('/assets/images/card5.jpg');
+  background-size: cover;
+
+}
+
+.card-icon {
+  height: 60px;
+  width: 60px;
+  margin-right: 10px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 1px solid #ccc;
+}
+
+.card-heading {
+  font-weight: 700;
+}
+
+.polarChart1 {
+  background: #252525;
+}
+
+/* pichart */
+p {
+  font-family: Lato;
+}
+
+.test {
+  font-family: Lato;
+}
+
+.container {
+  display: grid;
+
+}
+
+.item {
+  width: 100%;
+}
+
+.item-margin {
+  height: 50vh;
+  border-bottom: 1px solid salmon;
+}
+
+/* testing */
+.dashboard {
+  background-color: #f8f9fa;
+  padding: 15px;
+  height: 100vh;
+  transition: margin-left 0.3s ease;
+}
+
+
+/* table admin settings */
+/* Scrollable table style */
+/* .card {
+  margin: 20px;
+  padding: 20px;
+  background-color: #2c2c2c;
+  color: white;
+  border-radius: 8px;
+} */
+
+.p-table th {
+  background-color: #222;
+  color: white;
+}
+
+.status-chip {
+  padding: 5px 10px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+  text-transform: capitalize;
+}
+
+.available-chip {
+  background-color: #28a745;
+  color: white;
+}
+
+.deleted-chip {
+  background-color: #dc3545;
+  color: white;
+}
+
+.offline-chip {
+  background-color: #6c757d;
+  color: white;
+}
+
+/* Action buttons */
+.p-button {
+  margin: 0 5px;
+}

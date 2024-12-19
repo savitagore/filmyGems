@@ -6,6 +6,9 @@
   .popular-cat-wrap span:nth-child(-n+3) {
     display: inline-block;
   }
+  /* .mask-c-section{
+    padding-left: 0 !important;
+  } */
 }
 
 
