@@ -12,41 +12,82 @@ import { NavbarComponent } from '../../../shared/navbar/navbar.component';
   styleUrl: './privacypolicy.component.css'
 })
 export class PrivacypolicyComponent {
+  // isTermsActive: boolean = false;
+  // isPrivacyActive: boolean = true;
+  // isFaqActive: boolean = false;
+  // islicenseActive:boolean=false;
+  // isDigitalService:boolean=false;
+  // isCookiesPolicy:boolean=false
+
+  // toggleSection(section: string) {
+  //   this.isTermsActive = false;
+  //   this.isPrivacyActive = false;
+  //   this.isFaqActive = false;
+  //   this.islicenseActive=false;
+  //   this.isDigitalService=false;
+  //   this.isCookiesPolicy=false
+
+  //   if (section === 'terms') {
+  //     this.isTermsActive = true;
+  //   } else if (section === 'privacy') {
+  //     this.isPrivacyActive = true;
+  //   } else if (section === 'faq') {
+  //     this.isFaqActive = true;
+  //   } else if(section ===  'license'){
+  //     this.islicenseActive=true;
+  //   }
+  //   else if(section ===  'digital'){
+  //     this.isDigitalService=true;
+  //   }
+  //   else if(section ===  'cookies'){
+  //     this.isCookiesPolicy=true;
+  //   }
+
+  //   else {
+  //     console.log('Unknown section:', section);
+  //   }
+  // }
+
   isTermsActive: boolean = false;
   isPrivacyActive: boolean = true;
   isFaqActive: boolean = false;
-  islicenseActive:boolean=false;
-  isDigitalService:boolean=false;
-  isCookiesPolicy:boolean=false
+  islicenseActive: boolean = false;
+  isDigitalService: boolean = false;
+  isCookiesPolicy: boolean = false;
 
   toggleSection(section: string) {
+    // Reset all states
     this.isTermsActive = false;
     this.isPrivacyActive = false;
     this.isFaqActive = false;
-    this.islicenseActive=false;
-    this.isDigitalService=false;
-    this.isCookiesPolicy=false
+    this.islicenseActive = false;
+    this.isDigitalService = false;
+    this.isCookiesPolicy = false;
 
-    if (section === 'terms') {
-      this.isTermsActive = true;
-    } else if (section === 'privacy') {
-      this.isPrivacyActive = true;
-    } else if (section === 'faq') {
-      this.isFaqActive = true;
-    } else if(section ===  'license'){
-      this.islicenseActive=true;
-    }
-    else if(section ===  'digital'){
-      this.isDigitalService=true;
-    }
-    else if(section ===  'cookies'){
-      this.isCookiesPolicy=true;
-    }
-
-    else {
-      console.log('Unknown section:', section);
+    // Set the specific section to active
+    switch (section) {
+      case 'terms':
+        this.isTermsActive = true;
+        break;
+      case 'privacy':
+        this.isPrivacyActive = true;
+        break;
+      case 'faq':
+        this.isFaqActive = true;
+        break;
+      case 'license':
+        this.islicenseActive = true;
+        break;
+      case 'digital':
+        this.isDigitalService = true;
+        break;
+      case 'cookies':
+        this.isCookiesPolicy = true;
+        break;
     }
   }
+
+
 
 }
 

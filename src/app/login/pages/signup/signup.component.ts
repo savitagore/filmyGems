@@ -17,6 +17,7 @@ import { MessageService } from 'primeng/api';
 import { ToastModule } from 'primeng/toast';
 import { NotificationServiceService } from '../../../core/Services/Notification/notification-service.service';
 import { Observable, catchError, map, of } from 'rxjs';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-signup',
@@ -29,6 +30,7 @@ import { Observable, catchError, map, of } from 'rxjs';
     ReactiveFormsModule,
     TooltipModule,
     ToastModule,
+    HttpClientModule
   ],
   providers: [SignupvalidationService, NotificationServiceService],
   templateUrl: './signup.component.html',
@@ -44,7 +46,8 @@ export class SignupComponent {
     private router: Router,
     private fb: FormBuilder,
     private signupService: SignupvalidationService,
-    private notificationService: NotificationServiceService
+    private notificationService: NotificationServiceService,
+    private http:HttpClient
   ) {
     this.signupForm = this.fb.group(
       {
@@ -71,7 +74,7 @@ export class SignupComponent {
           ],
         ],
         confirmPassword: ['', Validators.required],
-        termsCheck: [false, Validators.requiredTrue],
+        termsCheck: [],
       },
       { validator: this.matchPasswords }
     );
@@ -132,13 +135,30 @@ export class SignupComponent {
     }
   }
 
+  // onLogin(): void {
+  //   if (this.signupForm.valid) {
+  //     console.log('Form Data:', this.signupForm.value);
+  //     this.router.navigate(['/login']);
+  //   } else {
+  //     console.error('Form is invalid. Check errors below:');
+
+  //   }
+  // }
   onLogin(): void {
     if (this.signupForm.valid) {
-      console.log('Form Data:', this.signupForm.value);
-      this.router.navigate(['/login']);
+      const formData = this.signupForm.value;
+      this.http.post('https://localhost:7197/api/Filmygems/CreateUser', formData).subscribe({
+        next: (response) => {
+          alert("User created successfully");
+          console.log('User created successfully:', response);
+          this.router.navigate(['/login']);
+        },
+        error: (error) => {
+          console.error('Error creating user:', error);
+        }
+      });
     } else {
       console.error('Form is invalid. Check errors below:');
-
     }
   }
 

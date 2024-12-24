@@ -799,9 +799,9 @@ small {
 .carousel-indicators .active {
   background-color: #FFCF25;
 }
-.carousel-indicators {
+/* .carousel-indicators {
   height: 5px !important;
-}
+} */
 
 
 /* **** Plans Page Css ****** */
@@ -1362,10 +1362,7 @@ background-color: #FF5C00;
 .welcome {
   font-size: 18px;
 }
-.med-sm{
-  padding-left: 10px;
 
-}
 
 .text-gray {
   color: #575757;
@@ -1953,17 +1950,7 @@ text-align: left;
 @media (max-width: 768px) {
 
   /* Login page */
-  .med-sm{
-    padding: 0px !important;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .login-padding{
-    padding: 0px !important;
-    margin: 0px !important;
 
-  }
   .separator-line {
     display: none !important;
   }
@@ -2153,7 +2140,7 @@ text-align: left;
 
   /*login line*/
   .separator-line {
-    top: 531px !important;
+    top: 561px !important;
     display: block !important;
   }
 

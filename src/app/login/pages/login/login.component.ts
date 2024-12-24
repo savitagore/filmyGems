@@ -5,11 +5,12 @@ import { Router, RouterLink } from '@angular/router';
 import { LoginCarasoualComponent } from '../../../Reuseable/login-carasoual/login-carasoual.component';
 import { SignupvalidationService } from '../../../core/Services/signupValidation/signupvalidation.service';
 import { TooltipModule } from 'primeng/tooltip';
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [CommonModule,RouterLink,LoginCarasoualComponent,TooltipModule,ReactiveFormsModule],
+  imports: [CommonModule,RouterLink,LoginCarasoualComponent,TooltipModule,ReactiveFormsModule,HttpClientModule],
   providers:[SignupvalidationService],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
@@ -19,7 +20,7 @@ export class LoginComponent {
   showPassword2: boolean = false;
   loginForm: FormGroup;
 
-  constructor( private fb: FormBuilder, private router: Router, private signupService:SignupvalidationService) {
+  constructor( private fb: FormBuilder, private router: Router, private signupService:SignupvalidationService,private http:HttpClient) {
     this.loginForm = this.fb.group(
       {
         email: [ '', [  Validators.required,  Validators.pattern( '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+.[a-zA-Z]{2,}$' ),],],
@@ -44,15 +45,42 @@ export class LoginComponent {
   getPasswordPatternTooltip(): string {
     return this.signupService.getPasswordPatternErrorMessage();
   }
+  // onLogin(): void {
+  //   if (this.loginForm.valid) {
+  //     console.log('Form Data:', this.loginForm.value);
+  //   } else {
+  //     console.log('Form is invalid. Please fill all required fields correctly.');
+  //     this.loginForm.markAllAsTouched();
+  //   }
+  // }
+
   onLogin(): void {
     if (this.loginForm.valid) {
-      console.log('Form Data:', this.loginForm.value);
+      const loginData = this.loginForm.value;
+
+      this.http.post('https://localhost:7197/api/Filmygems/Login', loginData)
+        .subscribe({
+          next: (response: any) => {
+            console.log('Login successful!', response);
+
+            if (response.result) {
+              // Handle successful login, e.g., save the token or navigate to another page
+              localStorage.setItem('token', response.data?.Token);
+              alert('Login successful!');
+            } else {
+              alert(response.message || 'Login failed. Please try again.');
+            }
+          },
+          error: (error) => {
+            console.error('Error during login:', error);
+            alert('An error occurred during login. Please try again.');
+          }
+        });
     } else {
       console.log('Form is invalid. Please fill all required fields correctly.');
       this.loginForm.markAllAsTouched();
     }
   }
-
 
 }
 
