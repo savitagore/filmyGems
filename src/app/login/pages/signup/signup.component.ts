@@ -135,32 +135,16 @@ export class SignupComponent {
     }
   }
 
-  // onLogin(): void {
-  //   if (this.signupForm.valid) {
-  //     console.log('Form Data:', this.signupForm.value);
-  //     this.router.navigate(['/login']);
-  //   } else {
-  //     console.error('Form is invalid. Check errors below:');
-
-  //   }
-  // }
   onLogin(): void {
     if (this.signupForm.valid) {
-      const formData = this.signupForm.value;
-      this.http.post('https://localhost:7197/api/Filmygems/CreateUser', formData).subscribe({
-        next: (response) => {
-          alert("User created successfully");
-          console.log('User created successfully:', response);
-          this.router.navigate(['/login']);
-        },
-        error: (error) => {
-          console.error('Error creating user:', error);
-        }
-      });
+      console.log('Form Data:', this.signupForm.value);
+      this.router.navigate(['/login']);
     } else {
       console.error('Form is invalid. Check errors below:');
+
     }
   }
+
 
 }
 

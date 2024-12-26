@@ -53,11 +53,7 @@ export class CreateProfileComponent  {
   profileForm: FormGroup;
 
 
-  inputStates: { [key: string]: boolean } = {};
 
-  onInputChange(event: any, fieldName: string): void {
-    this.inputStates[fieldName] = !!event.target.value.trim();
-  }
   constructor(
     private fb: FormBuilder,
     private messageService: MessageService,

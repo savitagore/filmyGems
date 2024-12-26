@@ -64,7 +64,6 @@ export class LoginComponent {
             console.log('Login successful!', response);
 
             if (response.result) {
-              // Handle successful login, e.g., save the token or navigate to another page
               localStorage.setItem('token', response.data?.Token);
               alert('Login successful!');
             } else {

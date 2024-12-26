@@ -38,10 +38,7 @@
               <div class="mb-3 mt-5 profile-last">
                 <div class="form-group">
                   <input type="text" class="form-control profile-color full-width-input" formControlName="firstName"
-                    id="firstName" placeholder="" (input)="onInputChange($event, 'firstName')" />
-                  <label [class.hidden]="inputStates['firstName']" for="firstName" class="custom-placeholder">
-                    First Name <span class="text-danger">*</span>
-                  </label>
+                    id="firstName" placeholder="First Name *"  />
                 </div>
                 <small
                   *ngIf="profileForm.get('firstName')?.hasError('required') && (profileForm.get('firstName')?.dirty || profileForm.get('firstName')?.touched)"
@@ -53,10 +50,8 @@
               <div class="mt-4 custom-bottom">
                   <div class="form-group">
                     <input type="text" class="form-control profile-color full-width-input" formControlName="lastName"
-                      id="lastName" placeholder="" (input)="onInputChange($event, 'lastName')"/>
-                    <label [class.hidden]="inputStates['lastName']" for="lastName" class="custom-placeholder">
-                      Last Name <span class="text-danger">*</span>
-                    </label>
+                      id="lastName" placeholder="Last Name *" />
+
                   </div>
                 <small
                   *ngIf="profileForm.get('lastName')?.hasError('required') && (profileForm.get('lastName')?.dirty || profileForm.get('lastName')?.touched)"
@@ -71,10 +66,7 @@
             <div class="col-12 col-md-4 custom-bottom">
                 <div class="form-group">
                   <input type="text" class="form-control profile-color full-width-input" formControlName="email"
-                    id="email" placeholder="" (input)="onInputChange($event, 'email')" />
-                  <label [class.hidden]="inputStates['email']" for="email" class="custom-placeholder">
-                    Email <span class="text-danger">*</span>
-                  </label>
+                    id="email" placeholder="Email *"  />
                 </div>
               <small
                 *ngIf="profileForm.get('email')?.hasError('required') && (profileForm.get('email')?.dirty || profileForm.get('email')?.touched)"
@@ -89,11 +81,7 @@
             <div class="col-12 col-md-4 custom-bottom">
                 <div class="form-group">
                   <input type="text" class="form-control profile-color full-width-input" formControlName="mobile"
-                    id="mobile"  (input)="onInputChange($event, 'mobile')" copattern="\d*" maxlength="10"
-                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" />
-                  <label [class.hidden]="inputStates['mobile']" for="mobile" class="custom-placeholder">
-                    Mobile Number <span class="text-danger">*</span>
-                  </label>
+                    id="mobile"  placeholder="Moblie *" />
                 </div>
               <small
                 *ngIf="profileForm.get('mobile')?.invalid && (profileForm.get('mobile')?.dirty || profileForm.get('mobile')?.touched)">
@@ -108,10 +96,7 @@
             <div class="col-12 col-md-4 custom-bottom">
                 <div class="form-group">
                   <input type="text" class="form-control profile-color full-width-input" formControlName="city"
-                    id="city"  (input)="onInputChange($event, 'city')" />
-                  <label [class.hidden]="inputStates['city']" for="city" class="custom-placeholder">
-                    Enter City  <span class="text-danger">*</span>
-                  </label>
+                    id="city"  placeholder="City *" />
                 </div>
               <div
                 *ngIf="profileForm.get('city')?.invalid && (profileForm.get('city')?.dirty || profileForm.get('city')?.touched)">
@@ -124,11 +109,7 @@
             <div class="col-12 col-md-4 custom-bottom">
                 <div class="form-group">
                   <input type="text" class="form-control profile-color full-width-input" formControlName="zip"
-                    id="zip"  (input)="onInputChange($event, 'zip')" maxlength="6" pattern="\d{6}"
-                    onkeypress="return event.charCode >= 48 && event.charCode <= 57" />
-                  <label [class.hidden]="inputStates['zip']" for="zip" class="custom-placeholder">
-                    Enter ZIP Code <span class="text-danger">*</span>
-                  </label>
+                    id="zip" placeholder="Enter Zip Code *"  />
                 </div>
               <span
                 *ngIf="profileForm.get('zip')?.invalid && (profileForm.get('zip')?.dirty || profileForm.get('zip')?.touched)">
@@ -143,10 +124,8 @@
             <div class="col-12 col-md-4 custom-bottom">
                 <div class="form-group">
                   <input type="text" class="form-control profile-color full-width-input" formControlName="country"
-                    id="country"  (input)="onInputChange($event, 'country')" />
-                  <label [class.hidden]="inputStates['country']" for="country" class="custom-placeholder">
-                    Enter Country  <span class="text-danger">*</span>
-                  </label>
+                    id="country" placeholder="Country *"  />
+
                 </div>
               <span
                 *ngIf="profileForm.get('country')?.invalid && (profileForm.get('country')?.dirty || profileForm.get('country')?.touched)">
