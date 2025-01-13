@@ -234,10 +234,14 @@
                         </span>
                       </td>
                       <td>
-                        <button  pButton type="button" icon="pi pi-pencil" class="p-button-text" (click)="onEdit()"></button>
-                            <button pButton type="button" icon="pi pi-check" class="p-button-text" (click)="onSave(adminProfiles)"></button>
-                            <button pButton type="button" icon="pi pi-times" class="p-button-text" (click)="onCancel()"></button>
-                            <button pButton type="button" icon="pi pi-trash" class="p-button-text" style="color: #d21919;" (click)="onDelete()"></button>
+                        <!-- <button *ngIf="editedRowIndex !== i" pButton type="button" icon="pi pi-pencil" class="p-button-text"
+                          (click)="onEdit(i)"></button>
+                        <button *ngIf="editedRowIndex === i" pButton type="button" icon="pi pi-check" class="p-button-text"
+                          (click)="onSave(customers)"></button>
+                        <button *ngIf="editedRowIndex === i" pButton type="button" icon="pi pi-times" class="p-button-text"
+                          (click)="onCancel()"></button>
+                        <button pButton type="button" icon="pi pi-trash" class="p-button-text" style="color: #d21919;"
+                          (click)="onDelete(i)"></button> -->
                       </td>
                     </tr>
                   </ng-template>
@@ -255,3 +259,4 @@
       </div>
     </div>
   </div>
+  

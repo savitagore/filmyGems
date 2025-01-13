@@ -1203,7 +1203,7 @@ textarea::placeholder {
 }
 
 /********************************Audutions Model Pop up*********************/
-.custom-modal-background {
+/* .custom-modal-background {
   background-image: url('/assets/auditions/audi-bg.png');
   background-size: cover;
   background-position: center;
@@ -1241,7 +1241,7 @@ textarea::placeholder {
 }
 li::marker {
   color: #FABD47;
-}
+} */
 
 /**************Offer**********************/
 .modal-dialog-offer {

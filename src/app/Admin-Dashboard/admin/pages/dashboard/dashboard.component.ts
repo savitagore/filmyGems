@@ -7,6 +7,8 @@ import { InputIconModule } from 'primeng/inputicon';
 import { ChartModule } from 'primeng/chart';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { TableModule } from 'primeng/table';
+import { RouterOutlet } from '@angular/router';
+import { Customer } from '../../core/interface/customer.model';
 
 @Component({
   selector: 'app-dashboard',
@@ -212,32 +214,31 @@ export class DashboardComponent implements OnInit {
 
     // admin setting table
     editedRowIndex: number | null = null;
+    customers!: Customer[];
   
     // Enable editing for the selected row
-    onEdit() {
-      // this.editedRowIndex = index;
-    }
-    
-    // Save the changes made to the product
-    onSave(customers: any) {
-      this.editedRowIndex = null;
-      console.log('Product saved:', customers);
-    }
-    
-    // Cancel editing and revert changes
-    onCancel() {
-      this.editedRowIndex = null;
-    }
-    // onDelete(admin: any) {
-    //   console.log('Delete clicked for:', admin);
-    // }
-    
-    // Delete the selected row
-    onDelete() {
-      confirm("Are you want to delete this profile...?")
-      // this.adminProfiles.splice(index, 1);
-      // console.log('Product deleted at index:', index);
-    }
+     // Enable editing for the selected row
+  onEdit(index: number) {
+    this.editedRowIndex = index;
+  }
+  
+  // Save the changes made to the product
+  onSave(customers: any) {
+    this.editedRowIndex = null;
+    console.log('Product saved:', customers);
+  }
+  
+  // Cancel editing and revert changes
+  onCancel() {
+    this.editedRowIndex = null;
+  }
+  
+  // Delete the selected row
+  onDelete(index: number) {
+    confirm("Are you want to delete this User..?")
+    this.customers.splice(index, 1);
+    console.log('Product deleted at index:', index);
+  }
 }
 
 

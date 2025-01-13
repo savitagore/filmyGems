@@ -12,12 +12,13 @@ import { FormsModule } from '@angular/forms';
 import { SliderModule } from 'primeng/slider';
 import { CustomerServiceService } from '../../core/service/customer-service.service';
 import { Customer, Representative } from '../../core/interface/customer.model';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-user-settings',
   standalone: true,
   imports: [ButtonModule,InputTextModule,TableModule, FormsModule, CommonModule, InputTextModule, TagModule, 
-    DropdownModule, MultiSelectModule, ProgressBarModule, ButtonModule,SliderModule],
+    DropdownModule, MultiSelectModule, ProgressBarModule, ButtonModule,SliderModule,RouterOutlet],
   templateUrl: './user-settings.component.html',
   styleUrl: './user-settings.component.css'
 })
@@ -42,7 +43,6 @@ export class UserSettingsComponent implements OnInit {
       this.customerService.getCustomersLarge().then((customers) => {
           this.customers = customers;
           this.loading = false;
-  
           this.customers.forEach((customer) => (customer.date = new Date(<Date>customer.date)));
       });
   

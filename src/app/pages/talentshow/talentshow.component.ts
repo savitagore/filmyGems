@@ -1,7 +1,7 @@
 import { AfterViewInit, Component } from '@angular/core';
-import { NavbarComponent } from '../../shared/navbar/navbar.component';
+import { NavbarComponent } from '../../Reuseable/navbar/navbar.component';
 import { CommonModule } from '@angular/common';
-import { FooterComponent } from '../../shared/footer/footer.component';
+import { FooterComponent } from '../../Reuseable/footer/footer.component';
 import { TooltipModule } from 'primeng/tooltip';
 
 @Component({

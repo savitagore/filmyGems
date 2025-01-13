@@ -1,9 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
-import { NavbarComponent } from '../../shared/navbar/navbar.component';
-import { FooterComponent } from '../../shared/footer/footer.component';
-import { SearchHeaderComponent } from '../../shared/search-header/search-header.component';
+import { NavbarComponent } from '../../Reuseable/navbar/navbar.component';
+import { FooterComponent } from '../../Reuseable/footer/footer.component';
+import { SearchHeaderComponent } from '../../Reuseable/search-header/search-header.component';
 import { FormsModule } from '@angular/forms';
 
 @Component({

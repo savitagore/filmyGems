@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, NgZone, OnInit } from '@angular/core';
-import { NavbarComponent } from '../../shared/navbar/navbar.component';
+import { NavbarComponent } from '../../Reuseable/navbar/navbar.component';
 
-import { FooterComponent } from '../../shared/footer/footer.component';
+import { FooterComponent } from '../../Reuseable/footer/footer.component';
 
 import {
   FormBuilder,
@@ -12,8 +12,6 @@ import {
   Validators,
 } from '@angular/forms';
 import { ProgressBar, ProgressBarModule } from 'primeng/progressbar';
-
-import { StartjourneyComponent } from '../../shared/startjourney/startjourney.component';
 import { ToastModule } from 'primeng/toast';
 import { ConfirmationService, MessageService } from 'primeng/api';
 import { HttpClientModule } from '@angular/common/http';
@@ -22,6 +20,7 @@ import { ButtonModule } from 'primeng/button';
 import { BadgeModule } from 'primeng/badge';
 import { CalendarModule } from 'primeng/calendar';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { StartjourneyComponent } from '../../Reuseable/startjourney/startjourney.component';
 
 @Component({
   selector: 'app-create-profile',

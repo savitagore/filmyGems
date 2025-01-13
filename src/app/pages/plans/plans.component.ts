@@ -1,8 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { NavbarComponent } from '../../shared/navbar/navbar.component';
-import { FooterComponent } from '../../shared/footer/footer.component';
-import { StartjourneyComponent } from '../../shared/startjourney/startjourney.component';
+import { NavbarComponent } from '../../Reuseable/navbar/navbar.component';
+import { FooterComponent } from '../../Reuseable/footer/footer.component';
+import { StartjourneyComponent } from '../../Reuseable/startjourney/startjourney.component';
+
 
 @Component({
   selector: 'app-plans',

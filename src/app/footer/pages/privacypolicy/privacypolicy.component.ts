@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, Renderer2 } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive } from '@angular/router';
-import { FooterComponent } from '../../../shared/footer/footer.component';
-import { NavbarComponent } from '../../../shared/navbar/navbar.component';
+import { FooterComponent } from '../../../Reuseable/footer/footer.component';
+import { NavbarComponent } from '../../../Reuseable/navbar/navbar.component';
 
 @Component({
   selector: 'app-privacypolicy',

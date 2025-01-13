@@ -27,14 +27,14 @@
     </div>
     <div class="row pt-5">
       <div class="toggle-switch">
-        <button id="monthlyBtn" type="button" class="btn btn-monthly" [ngClass]="{ 'btn-monthly-active':isMonthly }"
+        <!-- <button id="monthlyBtn" type="button" class="btn btn-monthly" [ngClass]="{ 'btn-monthly-active':isMonthly }"
           (click)="toggleView('monthly')">
           Monthly
         </button>
         <button id="yearlyBtn" type="button" class="btn btn-yearly" [ngClass]="{ 'btn-yearly-active':!isMonthly }"
           (click)="toggleView('yearly')">
           Yearly
-        </button>
+        </button> -->
       </div>
       <div class="row justify-content-center yearly" style="padding-top: 100px;" *ngIf="isMonthly">
         <div class="col-12 col-sm-6 col-md-3 mb-4 filmy-card">
@@ -119,7 +119,7 @@
         </div>
         <div class="col-12 col-sm-6 col-md-3 mb-4 filmy-card">
           <div class="gold-card">
-            <h3 class="most text-center">MOST POPULAR Monthy</h3>
+            <h3 class="most text-center">MOST POPULAR </h3>
             <div class="star-badge">
               <img src="assets/svg-icons/card-star.svg" alt="" class="img-fluid gold-star">
             </div>
@@ -289,7 +289,7 @@
         </div>  -->
         <div class="col-12 col-sm-6 col-md-3 mb-4 filmy-card">
           <div class="gold-card">
-            <h3 class="most text-center">MOST POPULAR Yearly</h3>
+            <h3 class="most text-center">MOST POPULAR</h3>
             <div class="star-badge">
               <img src="assets/svg-icons/card-star.svg" alt="" class="img-fluid gold-star">
             </div>
