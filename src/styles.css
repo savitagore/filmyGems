@@ -696,7 +696,7 @@ small {
 .artist_Nav_bg {
   background: #272727;
 }
-.form-control:focus {
+.artist-form-control:focus {
   box-shadow: none !important;
 }
 .focus_Bg_Color {
